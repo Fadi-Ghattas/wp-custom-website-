@@ -38,7 +38,7 @@ class GMEX_Easy_Payment_Admin {
 
         $this->plugin_name = $plugin_name;
         $this->version = $version;
-        $this->load_dependencies();        
+        $this->load_dependencies();
         $this->define_constants();
     }
 
@@ -54,6 +54,7 @@ class GMEX_Easy_Payment_Admin {
 
         require_once plugin_dir_path(dirname(__FILE__)) . 'admin/partials/easy-payment-admin-widget.php';
     }
+
     private function define_constants() {
         if (!defined('EP_WORDPRESS_LOG_DIR')) {
             define('EP_WORDPRESS_LOG_DIR', ABSPATH . 'easy-payment-logs/');
@@ -98,19 +99,19 @@ class GMEX_Easy_Payment_Admin {
                                     <tr>
                                         <td>
                                             <select style="height: 38px;" name="easy_paypal_currency_think" id="easy_paypal_currency_think" class="easy-payment-field-style easy-payment-class-select">
-                                                <?php 
-                                                   $options = '<option value="none">Select Currency</option>';
-                                                   $selected_currency = get_option('easy_payment_currency');
-                                                   $currency_code = GMEX_Easy_Payment_General_Setting::get_easy_payment_currencies(); 
-                                                   foreach ($currency_code as $code => $name) {
-                                                       $selected = "";
-                                                        $currency = GMEX_Easy_Payment_General_Setting::get_easy_payment_symbol($code);
-                                                        if($selected_currency == $code){
-                                                            $selected="selected";
-                                                        }
-                                                        $options .= '<option value="'.$code.'" '.$selected.'>'.$name.' ('.$currency.')</option>';
-                                                    }                                                   
-                                                   echo $options;
+                                                <?php
+                                                $options = '<option value="none">Select Currency</option>';
+                                                $selected_currency = get_option('easy_payment_currency');
+                                                $currency_code = GMEX_Easy_Payment_General_Setting::get_easy_payment_currencies();
+                                                foreach ($currency_code as $code => $name) {
+                                                    $selected = "";
+                                                    $currency = GMEX_Easy_Payment_General_Setting::get_easy_payment_symbol($code);
+                                                    if ($selected_currency == $code) {
+                                                        $selected = "selected";
+                                                    }
+                                                    $options .= '<option value="' . $code . '" ' . $selected . '>' . $name . ' (' . $currency . ')</option>';
+                                                }
+                                                echo $options;
                                                 ?>
                                             </select>
                                         </td>
@@ -167,7 +168,7 @@ class GMEX_Easy_Payment_Admin {
                         <a href="#create_custom_shortcode">Create Custom Shortcode</a>
                         <div id="create_custom_shortcode" style=" height: 330px;overflow: auto;" class="easy-payment-accordion">
                             <div class="wrap" style="margin:0px;">                                
-                                
+
                                 <table id="easy-payment-table-0" class="widefat" data-custom="0" style="box-shadow: inset 0 0 10px green;">
                                     <tr>
                                         <td colspan="2">
@@ -202,4 +203,5 @@ class GMEX_Easy_Payment_Admin {
         </div>
         <?php
     }
+
 }

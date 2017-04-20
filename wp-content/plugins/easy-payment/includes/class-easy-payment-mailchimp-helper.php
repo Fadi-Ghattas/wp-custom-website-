@@ -41,7 +41,7 @@ class GMEX_Easy_Payment_MailChimp_Helper {
         $merge_vars = array('FNAME' => $first_name, 'LNAME' => $last_name);
 
         if (isset($apikey) && !empty($apikey)) {
-             include_once 'class-easy-payment-mcapi.php';
+            include_once 'class-easy-payment-mcapi.php';
             $api = new GMEX_Easy_Payment_MailChimp_MCAPI($apikey);
 
             $retval = $api->listSubscribe($listId, $payer_email, $merge_vars, $email_type = 'html');

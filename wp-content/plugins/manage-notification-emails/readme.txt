@@ -3,8 +3,8 @@ Contributors: (Virgial)
 Tags: notification,notify,email,user,password,moderator,postauthor,admin,e-mail,switch
 Requires at least: 4.0.0
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYG56SLWNG42N
-Tested up to: 4.4
-Stable tag: 1.2.0
+Tested up to: 4.7
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,9 @@ Disable or enable the Wordpress notification e-mails (new user, changed password
 == Description ==
 
 With this plugin you can switch the different Wordpress notification e-mails on and off, like options as the new user and password change notifications send by Wordpress to the administrator and user. Works perfectly in combination with a lot of other plugins!
+
+Watch this nice tut made by Robert Orzanna: https://www.youtube.com/watch?v=66UkQKgSFio
+
 
 **The options you can manage are:**
 
@@ -25,12 +28,6 @@ With this plugin you can switch the different Wordpress notification e-mails on 
 7. E-mail address change notification to user
 8. Forgotten password e-mail to user
 9. Forgotten password e-mail to administrator
-
-
-**Coming soon:**
-
-1. E-mail logging
-2. html styling option for notification e-mails send to users
 
 
 Want regular updates? Feel free to support me with a small donation :-)
@@ -61,11 +58,16 @@ If you're one of the early installers, than you'll be happy to see that de new u
 
 == Changelog ==
 
-= 1.2.0 = 
+= 1.3.0 =
+ADDED: passing through the $notify variable, available sinds 4.6. This is for other plugins to override default sending to admin or user. Only useful if sending within this plugin is activated. 
+UPDATED: updated with the newer pluggable send functions of wordpress 4.7.
+FIXED: Missing blogname in user email
+
+= 1.2.0 =
 ADDED: Manage sending password forgot e-mail to registered user.
 ADDED: Manage sending password forgot e-mail to administrator.
 
-= 1.1.0 = 
+= 1.1.0 =
 FIXED: Checking password change notification to admin now works.
 ADDED: Splitted the manage option for new user notification e-mail into user and admin e-mail.
 UPDATED: Clearified some comments and fixed some typo's.

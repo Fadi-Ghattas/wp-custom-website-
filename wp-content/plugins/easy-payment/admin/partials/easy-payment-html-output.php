@@ -20,7 +20,7 @@ class GMEX_Easy_Payment_Html_output {
 
         if (!empty($options)) {
             foreach ($options as $value) {
-                $custom_class_added ='';
+                $custom_class_added = '';
                 if ("easy_payment_custom_button" == $value['id']) {
                     $custom_class_added = 'class_easy_payment_custom_button';
                 }
@@ -77,7 +77,7 @@ class GMEX_Easy_Payment_Html_output {
                 } elseif ($description && in_array($value['type'], array('checkbox'))) {
                     $description = wp_kses_post($description);
                 } elseif ($description) {
-                    $description = '<span class="description '.$custom_class_added.'">' . wp_kses_post($description) . '</span>';
+                    $description = '<span class="description ' . $custom_class_added . '">' . wp_kses_post($description) . '</span>';
                 }
 
                 if (isset($value['placeholder']) && !empty($value['placeholder'])) {
@@ -119,7 +119,7 @@ class GMEX_Easy_Payment_Html_output {
 
                         $type = $value['type'];
                         $class = '';
-                        
+
                         $option_value = self::get_option($value['id'], $value['default']);
 
                         if ($value['type'] == 'color') {
@@ -128,8 +128,8 @@ class GMEX_Easy_Payment_Html_output {
                             $description .= '<div id="colorPickerDiv_' . esc_attr($value['id']) . '" class="colorpickdiv" style="z-index: 100;background:#eee;border:1px solid #ccc;position:absolute;display:none;"></div>';
                         }
                         ?>  
-                     
-                          <tr valign="top">
+
+                        <tr valign="top">
                             <th scope="row" class="titledesc">
                                 <label for="<?php echo esc_attr($value['id']); ?>" class="<?php echo esc_attr($custom_class_added); ?>"><?php echo esc_html($value['title']); ?></label>
                                 <?php echo $tip; ?>
@@ -141,13 +141,13 @@ class GMEX_Easy_Payment_Html_output {
                                     type="<?php echo esc_attr($type); ?>"
                                     style="<?php echo esc_attr($value['css']); ?>"
                                     value="<?php echo esc_attr($option_value); ?>"
-                                    class="<?php echo esc_attr($value['class'].' '.$custom_class_added); ?>"
+                                    class="<?php echo esc_attr($value['class'] . ' ' . $custom_class_added); ?>"
                                     placeholder="<?php echo esc_attr($placeholder); ?>"
                                     <?php echo implode(' ', $custom_attributes); ?>
                                     /> <?php echo $description; ?>
                             </td>
                         </tr>                    
-                     <?php
+                        <?php
                         break;
 
                     // Textarea
@@ -485,9 +485,3 @@ class GMEX_Easy_Payment_Html_output {
 }
 
 GMEX_Easy_Payment_Html_output::init();
-
-
-
-
-
-

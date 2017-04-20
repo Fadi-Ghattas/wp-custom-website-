@@ -3,8 +3,8 @@ Contributors: codepress, tschutter, davidmosterd, engelen, dungengronovius
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDZRSYLQ4Z76J
 Tags: plugins, wordpress, admin, column, columns, custom columns, custom fields, image, dashboard, sortable, filters, posts, media, users, pages, posttypes, manage columns, wp-admin
 Requires at least: 3.5
-Tested up to: 4.4.2
-Stable tag: 2.5.3
+Tested up to: 4.6.1
+Stable tag: 2.5.6.4
 
 Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 
@@ -12,8 +12,9 @@ Customise columns on the administration screens for post(types), pages, media, c
 
 Manage and organize columns in the posts, users, comments and media lists in the WordPress admin panel. Transform the WordPress admin screens into beautiful, clear overviews.
 
-> #### Admin Columns Pro
-> The free version of Admin Columns does not support sorting, filtering and inline editing and has no priority support. [Admin Columns Pro](https://www.admincolumns.com/?utm_source=wordpressorg&utm_medium=readme&utm_content=blockquote&utm_campaign=cpac-pluginpage) offers these features, direct e-mail support and several add-ons.
+> Looking for the possibility of **sorting and filtering** your columns, and integrations for **WooCommerce** and **Advanced Custom Fields** columns? **[Admin Columns Pro](https://www.admincolumns.com/?utm_source=wordpressorg&utm_medium=readme&utm_content=blockquote&utm_campaign=cpac-pluginpage)** offers these features and many more!
+>
+> It also includes priority support from our support team and direct inline editing of your posts, users and categories. [What are you waiting for?](https://www.admincolumns.com/?utm_source=wordpressorg&utm_medium=readme&utm_content=blockquote-what-waiting-for&utm_campaign=cpac-pluginpage)
 
 [vimeo http://vimeo.com/96885841]
 
@@ -131,6 +132,7 @@ Admin Columns can change your post (posts, pages and custom post types), user, c
 * Taxonomy
 * Width
 
+
 = Comment columns =
 
 * Actions
@@ -199,16 +201,52 @@ You can find a list of the available actions and filters (and examples on how to
 
 == Screenshots ==
 
-1. Settings page for Post(type) columns.
-2. Posts Screen with the customized sortable columns.
-3. Settings page for the Media Library columns.
-4. Media Screen with the customized sortable columns.
-5. Settings page for Users columns.
-6. Users Screen with the customized sortable columns.
-7. Settings page showing the different displaying types for custom field.
-8. Posts Screen with custom fields.
+1. Easily add new columns to your posts screen.
+2. Settings page for Post(type) columns.
+3. Posts Screen with the customized sortable columns.
+4. Settings page for the Media Library columns.
+5. Media Screen with the customized sortable columns.
+6. Settings page for Users columns.
+7. Users Screen with the customized sortable columns.
+8. Settings page showing the different displaying types for custom field.
+9. Posts Screen with custom fields.
 
 == Changelog ==
+
+= 2.5.6.4 =
+* [Update] Updated promo banner
+
+= 2.5.6.3 =
+* [Added] Filter for suppressing admin notices, use: `add_filter( 'cac/suppress_site_wide_notices', '__return_true' )`
+* [Fixed] Only enable our plugin for taxonomies that are available in the admin
+
+= 2.5.6.2 =
+* [Fixed] Hotfix cleanup.
+
+= 2.5.6.1 =
+* [Fixed] Hotfix. Version 2.5.6 did not display the stored column settings, which has been hotfixed.
+
+= 2.5.6 =
+* [Fixed] Row actions are now only added to the first column when the primary column isn't available
+* [Fixed] The true/false field option for the Custom Field column will display a cross icon when the value is empty or zero
+
+= 2.5.5 =
+* [Improved] Columns with empty values will now display a dash symbol
+* [Fixed] Excerpt column: The label "Excerpt from content" will now only display when the post has content
+
+= 2.5.4.1 =
+* [Fixed] Columns can be marked as original, in case the default has been replaced by an ac-column
+
+= 2.5.4 =
+* [Fixed] Edit columns button will be positioned correctly on the Trash page
+* [Fixed] Obsolete images have been removed
+* [Fixed] Roles names column will display the available translation
+* [Fixed] Content type label (next to store settings) is displayed correctly when translations are loaded
+* [Fixed] After using quick edit the column values will be populated correctly again
+* [Fixed] WPML will correctly display it's "+" icons again. Make sure to add/remove the column.
+* [Improved Messages on the settings screen (when using restore columns) are now displayed directly above the columns
+* [Improved] Excerpt column will now display a label "excerpt from content" when the actual excerpt field is empty
+* [Added] New filter 'cac/get_posts/post_status' has been added to change post_status when using `CPAC_Storage_model::get_posts()``
 
 = 2.5.3 =
 * [Fixed] Fixes an issue with some 3rd party column not being visible
@@ -235,10 +273,10 @@ You can find a list of the available actions and filters (and examples on how to
 * [Fixed] Columns with an imagesize selection setting will have the a default option selected
 * [Removed] Removed loading columns through 'load-edit.php' filter
 * [Added] Column settings are now stored without the need to refresh the page (through ajax)
-* [Added] You can disable the columns delete confirmation through this filter 'ac/delete_confirmation'
+* [Added] You can disable the columns delete confirmation through this filter `ac/delete_confirmation`
 * [Improved] The width of default columns (e.g. date and author) are now displayed
 * [Improved] bbPress columns are loaded correctly
-* [Updated] All languages files have been updated from Transifex (https://www.transifex.com/codepress/admin-columns)
+* [Updated] All languages files have been updated from [Transifex](https://www.transifex.com/codepress/admin-columns)
 *
 * [Developer notes]
 * [Refactor] CPAC now is a singleton class
@@ -273,10 +311,10 @@ You can find a list of the available actions and filters (and examples on how to
 
 = 2.4.9 =
 * [Added] Display format Url added to Custom Fields
-* [Added] Allow the use of before and after fields for all columns. Use add_filter( 'cac/column/properties/use_before_after', '__return_true' ).
+* [Added] Allow the use of before and after fields for all columns. Use `add_filter( 'cac/column/properties/use_before_after', '__return_true' )`.
 * [Fixed] Removed Field Groups from post types
 * [Fixed] Removed additional avatars from the comments view
-* [Added] Added the option to replace the Custom Field select menu with a text input. Use add_filter( 'cac/column/meta/use_text_input', '__return_true' ).
+* [Added] Added the option to replace the Custom Field select menu with a text input. Use `add_filter( 'cac/column/meta/use_text_input', '__return_true' )`.
 
 = 2.4.8 =
 * [Updated] Hidden custom fields are now grouped as "Hidden" in the dropdown list
@@ -348,7 +386,7 @@ You can find a list of the available actions and filters (and examples on how to
 * [Fixed] Fixed media actions column
 
 = 2.3.2 =
-* [Updated] All translations from Transifex - ttps://www.transifex.com/projects/p/admin-columns
+* [Updated] All translations from [Transifex](https://www.transifex.com/projects/p/admin-columns)
 * [Updated] 100% Spanish translation thanks to Carlos
 * [Updated] Custom Fields will now display an icon for file attachments in the correct specified dimensions
 * [Added] Public methods to CPAC_Column; get_type(), is_type(), is_field_type(), get_field_type()

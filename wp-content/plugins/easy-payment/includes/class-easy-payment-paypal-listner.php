@@ -106,6 +106,12 @@ class GMEX_Easy_Payment_PayPal_listner {
          */
         global $wp;
 
+        $debug = (get_option('easy_payment_debug_log') == 'yes') ? 'yes' : 'no';
+        if ('yes' == $debug) {
+            $log = new Easy_Payment_Logger();
+            $log->add('easy_payment_ipn_response_callback', print_r($posted, true));
+        }
+
         if (isset($posted) && !empty($posted)) {
 
             if (isset($posted['txn_id'])) {

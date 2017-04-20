@@ -2,14 +2,14 @@
 /*
 Plugin Name: Preloader
 Plugin URI: http://wp-plugins.in/the-preloader
-Description: Add preloader to your website easily, responsive and retina, full customize, compatible with all major browsers.
-Version: 1.0.7
+Description: Add preloader to your website easily, responsive and retina, full customization, compatible with all major browsers.
+Version: 1.0.9
 Author: Alobaidi
 Author URI: http://wp-plugins.in
 License: GPLv2 or later
 */
 
-/*  Copyright 2015 Alobaidi (email: wp-plugins@outlook.com)
+/*  Copyright 2016 Alobaidi (email: wp-plugins@outlook.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -37,7 +37,7 @@ function WPTime_preloader_plugin_row_meta( $links, $file ) {
 		$new_links = array(
 						'<a href="http://wp-plugins.in/the-preloader" target="_blank">Explanation of Use</a>',
 						'<a href="https://profiles.wordpress.org/alobaidi#content-plugins" target="_blank">More Plugins</a>',
-						'<a href="http://j.mp/ET_WPTime_ref_pl" target="_blank">Elegant Themes</a>',
+						'<a href="http://bit.ly/2o2aVOc" target="_blank">Elegant Themes</a>',
 					);
 		
 		$links = array_merge( $links, $new_links );
@@ -80,9 +80,16 @@ add_filter( 'plugin_action_links', 'WPTime_preloader_plugin_action_links', 10, 5
 
 
 // Set default setting of display preloader (default is full website)
-if( !get_option('wptpreloader_screen') ){
-	update_option('wptpreloader_screen', 'full');
+function WPTime_plugin_preloader_init(){
+	if( !get_option('wptpreloader_screen') ){
+		update_option('wptpreloader_screen', 'full');
+	}
+
+	if( !function_exists('is_woocommerce') and get_option('wptpreloader_screen') == 'woocommerce' ){
+        update_option('wptpreloader_screen', 'full');
+    }
 }
+add_action('init', 'WPTime_plugin_preloader_init');
 
 
 // Include Settings page
@@ -91,6 +98,20 @@ include( plugin_dir_path(__FILE__).'/settings.php' );
 
 // Include JavaScript
 function WPTime_plugin_preloader_script(){	
+
+	if( function_exists('is_woocommerce') ){
+		$woocommerce = is_woocommerce();
+		$checkout = is_checkout();
+		$cart = is_cart();
+		$account = is_account_page();
+		$view = is_view_order_page();
+	}else{
+		$woocommerce = false;
+		$checkout = false;
+		$cart = false;
+		$account = false;
+		$view = false;
+	}
 
 	if(
 		get_option( 'wptpreloader_screen' ) == 'full'
@@ -102,10 +123,9 @@ function WPTime_plugin_preloader_script(){
 		or get_option( 'wptpreloader_screen' ) == 'tags' and is_tag()
 		or get_option( 'wptpreloader_screen' ) == 'attachment' and is_attachment()
 		or get_option( 'wptpreloader_screen' ) == '404error' and is_404()
+		or get_option( 'wptpreloader_screen' ) == 'woocommerce' and ( $woocommerce === true or $checkout === true or $cart === true or $account === true or $view === true)
 	){
-
 		wp_enqueue_script( 'wptime-plugin-preloader-script', plugins_url( '/js/preloader-script.js', __FILE__ ), array('jquery'), null, false);
-
 	}
 
 }
@@ -126,6 +146,20 @@ function WPTime_plugin_preloader_css(){
 	}else{
 		$preloader_image = plugins_url( '/images/preloader.GIF', __FILE__ );
 	}
+
+	if( function_exists('is_woocommerce') ){
+		$woocommerce = is_woocommerce();
+		$checkout = is_checkout();
+		$cart = is_cart();
+		$account = is_account_page();
+		$view = is_view_order_page();
+	}else{
+		$woocommerce = false;
+		$checkout = false;
+		$cart = false;
+		$account = false;
+		$view = false;
+	}
 	
 	if(
 		get_option( 'wptpreloader_screen' ) == 'full'
@@ -137,8 +171,10 @@ function WPTime_plugin_preloader_css(){
 		or get_option( 'wptpreloader_screen' ) == 'tags' and is_tag()
 		or get_option( 'wptpreloader_screen' ) == 'attachment' and is_attachment()
 		or get_option( 'wptpreloader_screen' ) == '404error' and is_404()
+		or get_option( 'wptpreloader_screen' ) == 'woocommerce' and ( $woocommerce === true or $checkout === true or $cart === true or $account === true or $view === true)
 	){
-		
+		$image_width = apply_filters('wpt_thepreloader_image_size_get_width', '64');
+		$image_height = apply_filters('wpt_thepreloader_image_size_get_height', '64');
 	?>
     	<style type="text/css">
 			#wptime-plugin-preloader{
@@ -148,10 +184,10 @@ function WPTime_plugin_preloader_css(){
 			 	right: 0;
 			 	bottom: 0;
 				background:url(<?php echo $preloader_image; ?>) no-repeat <?php echo $background_color; ?> 50%;
-				-moz-background-size:64px 64px;
-				-o-background-size:64px 64px;
-				-webkit-background-size:64px 64px;
-				background-size:64px 64px;
+				-moz-background-size:<?php echo $image_width; ?>px <?php echo $image_height; ?>px;
+				-o-background-size:<?php echo $image_width; ?>px <?php echo $image_height; ?>px;
+				-webkit-background-size:<?php echo $image_width; ?>px <?php echo $image_height; ?>px;
+				background-size:<?php echo $image_width; ?>px <?php echo $image_height; ?>px;
 				z-index: 99998;
 				width:100%;
 				height:100%;
@@ -171,5 +207,3 @@ function WPTime_plugin_preloader_css(){
 	
 }
 add_action('wp_head', 'WPTime_plugin_preloader_css');
-
-?>

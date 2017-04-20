@@ -1,15 +1,45 @@
 === Share Buttons by AddThis ===
 Contributors: abramsm, srijith.v, vipinss, dnrahamim, jgrodel, bradaddthiscom, mkitzman, addthis_paul, addthis_matt, addthis_elsa, ribin_addthis, AddThis_Mike
-Tags: bookmarking, email sharing, facebook, linkedin, pinterest, share, sharing buttons, social marketing, social tools, twitter, whatsapp
+Tags: AddThis, bookmark, bookmarking, Facebook, LinkedIn, mobile, mobile sharing, Pinterest, plugin, share, share button, share buttons, share buttons plugin, sharing, sharing buttons, sharing sidebar, sidebar, social buttons, social tools, twitter, widget
 Requires at least: 3.0
-Tested up to: 4.4.2
-Stable tag: 5.3.1
+Tested up to: 4.7.3
+Stable tag: 5.3.5
 
-Share buttons from AddThis help you get more traffic from sharing through social networks.
+Increase social traffic to your website with WordPress share buttons that connect directly to over 200 social networks.
+
+
 
 == Description ==
 
-The best share buttons on the web are now available for your WordPress site. Promote your content easily by sharing to over 200 of the most popular social networking and bookmarking sites (like Facebook Share, Facebook Like, Twitter, Pinterest, Google+, WhatsApp, LinkedIn and more). Clean, customizable and simple share buttons are unobtrusive, quick to load and recognized all over the web.
+Get more of your website’s content shared on social media by installing the AddThis WordPress share buttons plugin. With AddThis, your users can easily share your content on the most popular social networks, including Facebook, Twitter, Pinterest, and more. You can also choose whether to display these share buttons on your homepage, category page, archive page, and other WordPress pages or posts.
+
+With the AddThis WordPress share buttons plugin, you get:
+
+= Share Buttons =
+
+* Position buttons above or below your content
+* Choose between several button styles and sizes
+* Include share counts to encourage your visitors to share
+* Personalize which sharing services appear or pick them yourself
+
+= Sharing Sidebar =
+
+* Choose which side of your page it appears on
+* Control how many buttons show up in the sidebar
+
+= Mobile Sharing Toolbar =
+
+* Position the toolbar at the top or bottom of your page
+* Turn on or off displayed share count
+* Control how many buttons appear
+
+<a href="https://www.addthis.com/register">Create a registered account</a> with AddThis to access the AddThis mode for this plugin, which offers additional share button configurations and analytics via the AddThis dashboard. Analytics include your top performing content, services and tools.
+
+Also be sure to check out the <a href="https://wordpress.org/plugins/addthis-follow/">AddThis WordPress follow button plugin</a>, which is great for getting your website visitors to follow you on the most popular social networks, including Facebook, Twitter, Instagram, Snapchat, and more.
+
+<a href="http://www.addthis.com/academy/">AddThis Academy</a> | <a href="http://www.addthis.com/privacy">Privacy Policy</a>
+
+
 
 == Installation ==
 
@@ -27,6 +57,8 @@ For a manual installation via FTP:
 To upload the plugin through WordPress, instead of FTP:
 
 1. Upload the downloaded zip file on the 'Add New' plugins screen (see the 'Upload' tab) in your WordPress admin area and activate.
+
+
 
 == Frequently Asked Questions ==
 
@@ -63,6 +95,8 @@ We currently support over 200 services, from email and blogging platforms to soc
 = How do I remove AddThis from a page =
 In the screen options you can enable the AddThis meta box. Check the box and save if you've already published that page or post to disable AddThis on that page or post.
 
+
+
 == Screenshots ==
 
 1. Sharing Tools tab on the plugin settings page (WordPress mode)
@@ -74,7 +108,26 @@ In the screen options you can enable the AddThis meta box. Check the box and sav
 6. Tool Gallery on the AddThis Dashboard
 7. Customization options on the AddThis Dashboard
 
+
+
 == Changelog ==
+
+= 5.3.5 =
+* Removing data-title and addthis:title attributes from inline tool HTML so that Open Graph tags can be used.
+* Replacing deprecated update_usermeta with update_user_meta
+* Replacing deprecated delete_usermeta with delete_user_meta
+* Updating link to configure tools at AddThis.com
+* Compatibility improvements for <a href="https://wordpress.org/plugins/addthis-follow/">Follow Buttons by AddThis</a>, <a href="https://wordpress.org/plugins/addthis-related-posts/">Related Posts by AddThis</a>, <a href="https://wordpress.org/plugins/addthis-all/">Website Tools by AddThis</a> & <a href="https://wordpress.org/plugins/addthis-smart-layers/">Smart Layers by AddThis</a>.
+
+= 5.3.4 =
+* Removing reporting of WordPress version for non-admin users
+
+= 5.3.3 =
+* Fixing PHP Notice: Undefined variable: displaySidebar in AddThisConfigs.php on line 450
+* Replacing a silly use of mysql_real_escape_string in title field value sanitization of widgets with sanitize_text_field, for improved PHP7 support
+
+= 5.3.2 =
+* Potential Yoast fix. <a href="mailto:help@addthis.com">Please let us know</a> if you still have issues with this plugin and Yoast after upgrading.
 
 = 5.3.1 =
 * Disabling the mobile version of the Sharing Sidebar when the Mobile Sharing Toolbar is enabled
@@ -414,7 +467,20 @@ Fixed nondeterministic bug with the_title(), causing the title to occasionally a
  * Updated settings management to use nonces
 
 
+
 == Upgrade Notice ==
+
+= 5.3.5 =
+Removing data-title and addthis:title attributes from inline tool HTML so that Open Graph tags can be used. Replacing some deprecated functions. Compatibility improvements for <a href="https://wordpress.org/plugins/addthis-follow/">Follow Buttons by AddThis</a>, <a href="https://wordpress.org/plugins/addthis-related-posts/">Related Posts by AddThis</a>, <a href="https://wordpress.org/plugins/addthis-all/">Website Tools by AddThis</a> & <a href="https://wordpress.org/plugins/addthis-smart-layers/">Smart Layers by AddThis</a>.
+
+= 5.3.4 =
+Removing reporting of WordPress version for non-admin users.
+
+= 5.3.3 =
+Fixing PHP Notice: Undefined variable: displaySidebar in AddThisConfigs.php on line 450. Replacing a silly use of mysql_real_escape_string in title field value sanitization of widgets with sanitize_text_field, for improved PHP7 support.
+
+= 5.3.2 =
+Potential Yoast fix. <a href="mailto:help@addthis.com">Please let us know</a> if you still have issues with this plugin and Yoast after upgrading.
 
 = 5.3.1 =
 Disabling the mobile version of the Sharing Sidebar when the Mobile Sharing Toolbar is enabled
@@ -645,4 +711,3 @@ Bug fixes, more filters, small tweak to options.
 
 = 2.0.0 =
 More and better options for sharing widgets.  Redesigned analytics dashboard widget and interface.
-

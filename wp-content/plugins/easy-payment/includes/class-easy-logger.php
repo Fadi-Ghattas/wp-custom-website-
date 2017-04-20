@@ -68,7 +68,7 @@ class Easy_Payment_Logger {
      * Get file path    
      */
     public function autoresponder_get_log_file_path($handle) {
-        return trailingslashit(EP_WORDPRESS_LOG_DIR) . $handle . '-' . sanitize_file_name(wp_hash($handle)) . '.log';
+        return trailingslashit(EP_WORDPRESS_LOG_DIR) . $handle . '.log';
     }
 
 }

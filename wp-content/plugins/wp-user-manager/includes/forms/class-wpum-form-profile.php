@@ -212,7 +212,7 @@ class WPUM_Form_Profile extends WPUM_Form {
 		self::$fields = array(
 			'profile' => wpum_get_account_fields()
 		);
-
+		
 	}
 
 	/**
@@ -444,7 +444,7 @@ class WPUM_Form_Profile extends WPUM_Form {
 
 		// Get the tabs
 		$current_account_tab = wpum_get_current_account_tab();
-		$all_tabs = array_keys( wpum_get_account_page_tabs() );
+		$all_tabs            = array_keys( wpum_get_account_page_tabs() );
 
 		// Get fields
 		self::get_profile_fields();

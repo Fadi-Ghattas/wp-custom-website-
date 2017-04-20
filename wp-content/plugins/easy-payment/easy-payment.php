@@ -4,11 +4,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Easy Payment
- * Plugin URI:        http://mbjtechnolabs.com
+ * Plugin URI:        https://www.premiumdev.com/
  * Description:       Easy to use add a PayPal Payment button as a Page, Post and Widget with a shortcode
- * Version:           1.1.1
+ * Version:           1.1.7
  * Author:            mbj-webdevelopment
- * Author URI:        http://www.mbjtechnolabs.com
+ * Author URI:        https://www.premiumdev.com/
  * License:           GNU General Public License v3.0
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       easy-payment
@@ -78,5 +78,4 @@ function run_easy_payment() {
     $plugin = new GMEX_Easy_Payment();
     $plugin->run();
 }
-
 run_easy_payment();

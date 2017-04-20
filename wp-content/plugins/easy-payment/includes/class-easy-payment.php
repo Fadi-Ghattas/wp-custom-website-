@@ -49,7 +49,7 @@ class GMEX_Easy_Payment {
     public function __construct() {
 
         $this->plugin_name = 'easy-payment';
-        $this->version = '1.1.1';
+        $this->version = '1.1.7';
 
         $this->load_dependencies();
         $this->set_locale();
@@ -63,14 +63,15 @@ class GMEX_Easy_Payment {
 
         add_action('easy_payment_api_ipn_handler', array($this, 'easy_payment_api_ipn_handler'));
         $prefix = is_network_admin() ? 'network_admin_' : '';
-        add_filter("{$prefix}plugin_action_links_" . PPW_PLUGIN_BASENAME, array($this, 'plugin_action_links'), 10, 4);
+        add_filter("{$prefix}plugin_action_links_" . PPW_PLUGIN_BASENAME, array($this, 'easy_payment_plugin_action_links'), 10, 4);
 
         add_filter('widget_text', 'do_shortcode');
     }
 
-    public function plugin_action_links($actions, $plugin_file, $plugin_data, $context) {
+    public function easy_payment_plugin_action_links($actions, $plugin_file, $plugin_data, $context) {
         $custom_actions = array(
             'configure' => sprintf('<a href="%s">%s</a>', admin_url('options-general.php?page=easy-payment'), __('Configure', 'easy-payment')),
+            'docs' => sprintf('<a href="%s" target="_blank">%s</a>', 'https://www.premiumdev.com/product/easy-paypal-payment/', __('Docs', 'donation-button')),
             'support' => sprintf('<a href="%s" target="_blank">%s</a>', 'http://wordpress.org/support/plugin/easy-payment/', __('Support', 'easy-payment')),
             'review' => sprintf('<a href="%s" target="_blank">%s</a>', 'http://wordpress.org/support/view/plugin-reviews/easy-payment', __('Write a Review', 'easy-payment')),
         );
@@ -122,7 +123,7 @@ class GMEX_Easy_Payment {
         require_once plugin_dir_path(dirname(__FILE__)) . 'admin/partials/class-easy-payment-list.php';
         require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-easy-payment-mailchimp-helper.php';
         require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-easy-logger.php';
-        
+
 
         $this->loader = new GMEX_Easy_Payment_Loader();
     }
@@ -154,7 +155,7 @@ class GMEX_Easy_Payment {
     private function define_admin_hooks() {
 
         $plugin_admin = new GMEX_Easy_Payment_Admin($this->get_plugin_name(), $this->get_version());
-        
+
         $this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_styles');
         $this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts');
         $this->loader->add_filter('woocommerce_paypal_args', $plugin_admin, 'easy_payment_woocommerce_standard_parameters', 99, 1);
@@ -171,7 +172,7 @@ class GMEX_Easy_Payment {
     private function define_public_hooks() {
 
         $plugin_public = new GMEX_Easy_Payment_Public($this->get_plugin_name(), $this->get_version());
-        
+
 
         //$this->loader->add_filter('widget_text', $plugin_public, 'do_shortcode');
     }
@@ -277,59 +278,67 @@ class GMEX_Easy_Payment {
     }
 
     public function easy_payment_send_notification_mail($posted) {
-        
+
         $log = new Easy_Payment_Logger();
-        $log->add('Easy Paypal', 'step1');
+
+
         $template = get_option('easy_payments_email_body_text');
-
         $template_value = isset($template) ? $template : get_option('easy_payments_email_body_text_pre');
-
         $parse_templated = $this->easy_payment_template_vars_replacement($template_value, $posted);
-        $log->add('Easy Paypal', 'step2');
-
-
         $from_name = get_option('easy_payments_email_from_name');
         $from_name_value = isset($from_name) ? $from_name : 'From';
-
         $sender_address = get_option('easy_payments_email_from_address');
         $sender_address_value = isset($sender_address) ? $sender_address : get_option('admin_email');
-        $log->add('Easy Paypal', 'step3');
 
         if (isset($from_name_value) && !empty($from_name_value)) {
             $headers = "From: " . $from_name_value . " <" . $sender_address_value . ">";
-            $log->add('Easy Paypal', 'step4');
         }
-
-
         if (isset($posted['payer_email']) && !empty($posted['payer_email'])) {
             $subject = get_option('easy_payments_email_subject');
             $subject_value = isset($subject) ? $subject : 'Thank you for your payment';
-            $log->add('Easy Paypal', $subject_value);
             $enable_admin = get_option('easy_payments_admin_notification');
-            $admin_email = get_option('admin_email');
-            $log->add('Easy Paypal', $admin_email);
+
+            $recipients_email_arr = explode(',', trim(get_option('easy_payments_recipients_notification')));
+
+            $admin_email = "";
+            if ($enable_admin == 'yes') {
+                $admin_email = get_option('admin_email');
+            }
+            $payer_email = $posted['payer_email'];
+            if (isset($admin_email) && !empty($admin_email)) {
+                array_push($recipients_email_arr, $admin_email);
+            }
+            if (isset($payer_email) && !empty($payer_email)) {
+                array_push($recipients_email_arr, $payer_email);
+            }
+
             if (isset($headers) && !empty($headers)) {
-                wp_mail($posted['payer_email'], $subject_value, $parse_templated, $headers);
-                $log->add('Easy Paypal', 'step5');
-                if ($enable_admin) {
-                    wp_mail($admin_email, $subject_value, $parse_templated, $headers);
-                     $log->add('Easy Paypal', 'step6');
-                }
+                $this->easy_payment_send_recipients_notification_mail($recipients_email_arr, $subject_value, $parse_templated, $headers);
             } else {
-                $log->add('Easy Paypal', 'step7');
-                wp_mail($posted['payer_email'], $subject_value, $parse_templated);
-                if ($enable_admin) {
-                    $log->add('Easy Paypal', 'step8');
-                    wp_mail($admin_email, $subject_value, $parse_templated);
+                $this->easy_payment_send_recipients_notification_mail($recipients_email_arr, $subject_value, $parse_templated, '');
+            }
+        }
+    }
+
+    public static function easy_payment_send_recipients_notification_mail($recipients_email_arr, $subject_value, $parse_templated, $headers) {
+
+
+        //$log = new Easy_Payment_Logger();
+
+        $recipients_email_arr = array_unique($recipients_email_arr);
+        //$log->add('easy_payment_ipn_mail', print_r($recipients_email_arr,true));
+        if (!empty($recipients_email_arr)) {
+            foreach ($recipients_email_arr as $recipient_email) {
+                try {
+                    wp_mail($recipient_email, $subject_value, $parse_templated, $headers);
+                } catch (Exception $e) {
+                    
                 }
             }
-            //remove_filter('wp_mail_content_type', 'set_html_content_type');
         }
     }
 
     public function easy_payment_template_vars_replacement($template, $posted) {
-
-
 
         $to_replace = array(
             'blog_url' => get_option('siteurl'),

@@ -13,7 +13,7 @@ class GMEX_Easy_Payment_Deactivator {
      * @since    1.0.0
      */
     public static function deactivate() {
-       
+        
     }
 
 }

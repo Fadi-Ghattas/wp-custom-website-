@@ -35,9 +35,7 @@ class GMEX_Easy_Payment_List {
         if (post_type_exists('easy_payment_list')) {
             return;
         }
-
         do_action('easy_payment_register_post_type');
-
         register_post_type('easy_payment_list', apply_filters('easy_payment_register_post_type_ipn', array(
             'labels' => array(
                 'name' => __('Payment List', 'easy_payment'),
@@ -100,7 +98,7 @@ class GMEX_Easy_Payment_List {
     public static function easy_payment_add_easy_payment_list_columns($existing_columns) {
         $columns = array();
         $columns['cb'] = '<input type="checkbox" />';
-		$columns['custom'] = _x('Post ID', 'column name');
+        $columns['custom'] = _x('Post ID', 'column name');
         $columns['title'] = _x('Transaction ID', 'column name');
         $columns['first_name'] = _x('Name / Company', 'column name');
         $columns['mc_gross'] = __('Amount', 'column name');
@@ -135,10 +133,10 @@ class GMEX_Easy_Payment_List {
 
             case 'payment_status' :
                 echo esc_attr(get_post_meta($post->ID, 'payment_status', true));
-                break;	
-		
-	    case 'custom' :				
-                echo '<a target="_blank" href="'.get_permalink(get_post_meta($post->ID, 'custom', true)).'">'.get_post_meta($post->ID, 'custom', true).'</a>';
+                break;
+
+            case 'custom' :
+                echo '<a target="_blank" href="' . get_permalink(get_post_meta($post->ID, 'custom', true)) . '">' . get_post_meta($post->ID, 'custom', true) . '</a>';
                 break;
         }
     }
@@ -174,7 +172,6 @@ class GMEX_Easy_Payment_List {
             'txn_type' => 'txn_type',
             'payment_status' => 'payment_status',
             'custom' => 'custom',
-
         );
 
         return wp_parse_args($custom, $columns);

@@ -411,10 +411,10 @@ if (!class_exists('AddThisConfigs')) {
                 return $addThisLayersVariable;
             }
 
+            $displaySidebar = false;
             if (!empty($this->configs['addthis_sidebar_enabled'])) {
                 $templateType = _addthis_determine_template_type();
 
-                $displaySidebar = false;
                 if (is_string($templateType)) {
                     $fieldList = $this->getFieldsForContentTypeSharingLocations($templateType, 'sidebar');
                     $fieldName = $fieldList[0]['fieldName'];
@@ -505,13 +505,13 @@ if (!class_exists('AddThisConfigs')) {
             $pluginInfo = array();
             $pluginInfo['info_status'] = 'enabled';
             $pluginInfo['cms_name'] = $this->cmsInterface->getCmsName();
-            $pluginInfo['cms_version'] = $this->cmsInterface->getCmsVersion();
             $pluginInfo['plugin_name'] = $this->cmsInterface->plugin->getName();
             $pluginInfo['plugin_version'] = $this->cmsInterface->getPluginVersion();
             $pluginInfo['anonymous_profile_id'] = $this->getAnonymousProfileId();
 
             if (current_user_can('install_plugins')) {
                 $pluginInfo['php_version'] = phpversion();
+                $pluginInfo['cms_version'] = $this->cmsInterface->getCmsVersion();
             }
 
             // including select configs

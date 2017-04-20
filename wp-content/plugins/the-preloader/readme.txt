@@ -1,30 +1,35 @@
 === Preloader ===
 Contributors: Alobaidi
-Donate link: http://j.mp/WPTime_donations
-Tags: preloader, preload, responsive, retina, customize, custom, customizer, customizing, jquery, css3, loading, load, loader, image, images, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
+Donate link: http://pay.wp-plugins.in/donations
+Tags: preloader, preload, loader, loading, load
 Requires at least: 3.4.0
-Tested up to: 4.4.2
-Stable tag: 1.0.7
+Tested up to: 4.7.3
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add preloader to your website easily, responsive and retina, full customize, compatible with all major browsers.
+Add preloader to your website easily, responsive and retina, full customization, compatible with all major browsers.
 
 == Description ==
 
 ### Preloader 
 
-Add preloader to your website easily, responsive and retina, full customize, compatible with all major browsers.
+Add preloader to your website easily, responsive and retina, full customization, compatible with all major browsers.
 
 ### The Features
 
 * Fully Responsive.
 * Retina Ready.
-* Full Customize.
-* 9 Options to display preloader in full website or in posts only or in pages only, etc.
+* Full Customization.
+* 10 Options to display Preloader (display it in the entire website or in posts only or in pages only, etc).
+* WooCommerce Support.
 * jQuery & CSS3.
-* Compatible with Google Chrome, FireFox, Opera, Safari, IE9, IE10, IE11 and with mobile devices like iPad, iPhone, Android, etc.
+* Compatible with Google Chrome, FireFox, Opera, Safari, IE9, IE10, IE11, and with mobile devices like iPad, iPhone, Android, etc.
 * Easy to use.
+
+### Extensions
+
+* Change Preloader image width and height, buy [Image Size Extension](http://wp-plugins.in/PreloaderImageSizeExtension) for $1.99 only.
 
 ### Live Demo
 
@@ -34,13 +39,6 @@ Add preloader to your website easily, responsive and retina, full customize, com
 
 * [Please rate Preloader plugin](https://wordpress.org/support/view/plugin-reviews/the-preloader#postform)
 * [Read people reviews](https://wordpress.org/support/view/plugin-reviews/the-preloader)
-
-### See Also
-
-* [Collection of 87 themes for $69 only.](http://j.mp/ET_WPTime)
-* [Premium WordPress themes on Creative Market.](http://j.mp/CM_WPTime)
-* [Premium WordPress themes on Themeforest.](http://j.mp/TF_WPTime)
-* [Premium WordPress plugins on Codecanyon.](http://j.mp/CC_WPTime)
 
 ### More Plugins
 
@@ -53,11 +51,13 @@ Add preloader to your website easily, responsive and retina, full customize, com
 1. Upload 'the-preloader' folder to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to Plugins menu > Preloader.
-4. Enter your background color code and your preloader image link.
-5. Choose display preloader, default is "In Full Website".
-6. Open header.php file for your theme and insert preloader html element after body tag.
+4. Enter your background color code and your Preloader image link.
+5. Choose display Preloader, default is "In The Entire Website".
+6. Open header.php file for your theme and insert Preloader HTML element after body tag.
 
-[Read explanation of use.](http://wp-plugins.in/the-preloader)
+[Read explanation of use](http://wp-plugins.in/the-preloader)
+
+You can change Preloader image width and height, buy [Image Size Extension](http://wp-plugins.in/PreloaderImageSizeExtension) for $1.99 only.
 
 == Frequently Asked Questions ==
 
@@ -68,6 +68,18 @@ Add preloader to your website easily, responsive and retina, full customize, com
 * [Or on Twitter.](http://wp-plugins.in/1L6zCZL)
 
 == Changelog ==
+
+= 1.0.9 =
+
+1. Fixing header.php file URL on the settings page.
+2. WooCommerce support (new option on the settings page).
+3. Improving Preloader speed in JavaScript.
+
+You can change Preloader image width and height, buy [Image Size Extension](http://wp-plugins.in/PreloaderImageSizeExtension) for $1.99 only.
+
+= 1.0.8 =
+
+* Preloader Image Size Extension is ready! Now you can change Preloader image width and height. Update this plugin and buy [Image Size Extension](http://wp-plugins.in/PreloaderImageSizeExtension) for $1.99 on PayPal. [Read Extension Usage..](http://wp-plugins.in/the-preloader)
 
 = 1.0.7 =
 

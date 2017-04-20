@@ -61,6 +61,14 @@ Store Admin";
                 'id' => 'easy_payments_admin_notification'
             ),
             array(
+                'title' => __('Recipient(s)', 'easy-payment'),
+                'type' => 'text',
+                'css' => 'min-width:300px;',
+                'desc' => __('Enter recipients (comma separated) for this email, defualt to ' . get_option('admin_email'), 'easy-payment'),
+                'id' => 'easy_payments_recipients_notification',
+                'default' => get_option('admin_email')
+            ),
+            array(
                 'title' => __('"From" Name', 'easy-payment'),
                 'desc' => '',
                 'id' => 'easy_payments_email_from_name',
@@ -152,7 +160,7 @@ Store Admin";
         foreach ($currency_code_options as $code => $name) {
             $currency_code_options[$code] = $name . ' (' . self::get_easy_payment_symbol($code) . ')';
         }
-        
+
         $get_button_value = get_option('easy_payment_button_image');
 
         $fields[] = array('title' => __('PayPal Account Setup', 'easy-payment'), 'type' => 'title', 'desc' => '', 'id' => 'general_options');
@@ -166,9 +174,6 @@ Store Admin";
             'css' => 'min-width:300px;',
             'desc' => sprintf(__('PayPal sandbox can be used to test payments. Sign up for a developer account <a href="%s">here</a>.', 'easy-payment'), 'https://developer.paypal.com/'),
         );
-
-
-
         $fields[] = array(
             'title' => __('PayPal Email Address or Merchant Account ID', 'easy-payment'),
             'type' => 'text',
@@ -235,7 +240,15 @@ Store Admin";
             'class' => 'input-text regular-input'
         );
 
-       
+        $fields[] = array(
+            'title' => __('Debug', 'easy-payment'),
+            'type' => 'checkbox',
+            'id' => 'easy_payment_debug_log',
+            'default' => 'no',
+            'desc' => __('Enable logging <code>/wp-content/uploads/easy-payment-logs/</code>', 'easy-payment'),
+        );
+
+
         $fields[] = array('type' => 'sectionend', 'id' => 'general_options');
 
         $fields[] = array('title' => __('Payment Button', 'easy-payment'), 'type' => 'title', 'desc' => '', 'id' => 'general_options');
@@ -251,8 +264,8 @@ Store Admin";
                 'button2' => __('<img style="vertical-align: middle;" alt="large" src="https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_LG.gif">', 'easy-payment'),
                 'button3' => __('Custom Button ( If you select this option then pleae enter url in Custom Button textbox, Otherwise payment button will not display. )', 'easy-payment')
             ),
-        );    
-                   
+        );
+
         $fields[] = array(
             'title' => __('Custom Button', 'easy-payment'),
             'type' => 'text',
@@ -262,8 +275,8 @@ Store Admin";
             'css' => 'min-width:300px;',
             'class' => 'input-text regular-input'
         );
-            
-       
+
+
         $fields[] = array('type' => 'sectionend', 'id' => 'general_options');
         return $fields;
     }
@@ -499,8 +512,7 @@ Store Admin";
 
         return apply_filters('easy_payment_currency_symbol', $currency_symbol, $currency);
     }
-    
-       
+
     public static function easy_payment_mcapi_setting_fields() {
 
         $fields[] = array('title' => __('MailChimp Integration', 'easy-payment'), 'type' => 'title', 'desc' => '', 'id' => 'general_options');
@@ -530,7 +542,7 @@ Store Admin";
             'id' => 'easy_payments_force_refresh',
             'type' => 'checkbox',
         );
-        
+
         $fields[] = array('type' => 'sectionend', 'id' => 'general_options');
         return $fields;
     }
@@ -552,7 +564,7 @@ Store Admin";
      *  Get List from MailChimp
      */
     public static function easy_payments_angelleye_get_mailchimp_lists_old($apikey) {
-        
+
         $mailchimp_lists = unserialize(get_transient('mailchimp_mailinglist'));
 
         if (empty($mailchimp_lists) || get_option('easy_payments_force_refresh') == 'yes') {
@@ -581,7 +593,7 @@ Store Admin";
         }
         return $mailchimp_lists;
     }
-    
+
     public static function easy_payments_angelleye_get_mailchimp_lists($apikey) {
         $mailchimp_lists = array();
         $enable_mailchimp = get_option('enable_mailchimp');
@@ -619,5 +631,7 @@ Store Admin";
         $Html_output->save_fields($mcapi_setting_fields);
         //self::easy_payments_angelleye_get_mailchimp_lists(get_option('mailchimp_api_key'));
     }
+
 }
+
 GMEX_Easy_Payment_General_Setting::init();

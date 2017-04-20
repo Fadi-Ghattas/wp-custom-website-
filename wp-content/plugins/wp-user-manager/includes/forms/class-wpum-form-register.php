@@ -46,12 +46,8 @@ class WPUM_Form_Register extends WPUM_Form {
 
 			add_filter( 'wpum/form/validate=register', array( __CLASS__, 'validate_password' ), 10, 3 );
 
-			if( wpum_get_option('display_password_meter_registration') ) {
-				add_action( 'wpum/form/register/after/field=password', 'wpum_psw_indicator', 10 );
-			}
-
 			if( wpum_get_option('login_after_registration') ) {
-				add_action( 'wpum/form/register/success', array( __CLASS__, 'do_login' ), 11, 3 );
+				add_action( 'wpum/form/register/done', array( __CLASS__, 'do_login' ), 11, 3 );
 			}
 
 		}
@@ -99,7 +95,7 @@ class WPUM_Form_Register extends WPUM_Form {
 		} elseif( ! wpum_get_option('login_after_registration') || ! wpum_get_option( 'custom_passwords' ) ) {
 
 			if( wpum_get_option( 'registration_redirect' ) )
-				add_action( 'wpum/form/register/success', array( __CLASS__, 'redirect_on_success' ), 9999, 3 );
+				add_action( 'wpum/form/register/done', array( __CLASS__, 'redirect_on_success' ), 9999, 3 );
 
 		}
 
@@ -289,6 +285,7 @@ class WPUM_Form_Register extends WPUM_Form {
 			'options'     => wpum_get_allowed_user_roles(),
 			'description' => __('Select your user role', 'wpum'),
 			'priority'    => 9999,
+			'value'       => get_option( 'default_role' )
 		);
 
 		return $fields;
@@ -345,9 +342,7 @@ class WPUM_Form_Register extends WPUM_Form {
 		// Check for nicknames if permalink structure requires unique nicknames.
 		if( get_option('wpum_permalink') == 'nickname'  ) :
 
-			$current_user = wp_get_current_user();
-
-			if( $username !== $current_user->user_nicename && wpum_nickname_exists( $username ) )
+			if( wpum_nickname_exists( $nickname ) )
 				return new WP_Error( 'username-validation-error', __( 'This nickname cannot be used.', 'wpum' ) );
 
 		endif;
@@ -440,15 +435,18 @@ class WPUM_Form_Register extends WPUM_Form {
 		if( self::$random_password ) {
 
 			$do_user = self::random_psw_registration( $username, $email );
+			$pwd     = $do_user['pwd'];
 
 		} else {
 
-			$pwd = $values['register']['password'];
+			$pwd     = $values['register']['password'];
 			$do_user = wp_create_user( $username, $pwd, $email );
 
 		}
 
-		// Check for errors
+		// Check for errors.
+		$do_user = isset( $do_user['do_user'] ) ? $do_user['do_user'] : $do_user;
+
 		if ( is_wp_error( $do_user ) ) {
 
 			foreach ($do_user->errors as $error) {
@@ -470,11 +468,6 @@ class WPUM_Form_Register extends WPUM_Form {
 			if( array_key_exists( 'description' , $values['register'] ) )
 				update_user_meta( $user_id, 'description', $values['register']['description'] );
 
-			// Send notification if password is manually added by the user.
-			if( ! self::$random_password ):
-				wpum_new_user_notification( $do_user, $pwd );
-			endif;
-
 			if( self::$random_password ) :
 				self::add_confirmation( apply_filters( 'wpum/form/register/success/message', __( 'Registration complete. We have sent you a confirmation email with your password.', 'wpum' ) ) );
 			else :
@@ -483,6 +476,12 @@ class WPUM_Form_Register extends WPUM_Form {
 
 			// Add ability to extend registration process.
 			do_action( "wpum/form/register/success" , $user_id, $values );
+
+			// Send notification if password is manually added by the user.
+			wpum_new_user_notification( $do_user, $pwd );
+
+			// Needed to close the registration process properly.
+			do_action( "wpum/form/register/done" , $user_id, $values );
 
 		}
 
@@ -503,11 +502,7 @@ class WPUM_Form_Register extends WPUM_Form {
 
 		$do_user = wp_create_user( $username, $pwd, $email );
 
-		if( ! is_wp_error( $do_user ) ) {
-			wpum_new_user_notification( $do_user, $pwd );
-		}
-
-		return $do_user;
+		return array( 'do_user' => $do_user, 'pwd' => $pwd );
 
 	}
 

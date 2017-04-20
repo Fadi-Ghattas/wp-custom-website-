@@ -594,7 +594,7 @@ msgid "Easy Payment"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://mbjtechnolabs.com"
+msgid "https://www.premiumdev.com/"
 msgstr ""
 
 #. Description of the plugin/theme

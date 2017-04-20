@@ -2,8 +2,8 @@
 Contributors: mbj-webdevelopment
 Tags: Accept payment for services or product, buy now, currency, payment, paypal, paypal donation, paypal for wordpress, paypal integration, PayPal payment, paypal plugin for wordpress, wordpress paypal
 Requires at least: 3.0.1
-Tested up to: 4.4
-Stable tag: 1.1.1
+Tested up to: 4.6
+Stable tag: 1.1.7
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -116,6 +116,18 @@ Easy steps to install the plugin:
 *	Yes. 
 
 == Changelog ==
+= 1.1.7 =
+*   Tested up to: 4.6 Easy PayPal Payment working fine.
+= 1.1.6 =
+*   Easy Payment working very well.
+= 1.1.5 =
+*   Add some functionality.
+= 1.1.4 =
+*   Email notification.
+= 1.1.3 =
+*   Tested up to 4.5
+= 1.1.2 =
+*   Payment insert into payment list.
 = 1.1.1 =
 *   Email functionlaity not working on paypal live mode.
 = 1.1.0 =

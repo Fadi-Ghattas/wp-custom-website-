@@ -35,7 +35,6 @@ class GMEX_Easy_Payment_Admin_Widget extends WP_Widget {
                 case 'button3':
                     $button_url = !empty($easy_payment_custom_button) ? $easy_payment_custom_button : 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
                     break;
-               
             }
         } elseif (isset($easy_payment_custom_button) && !empty($easy_payment_custom_button)) {
             $button_url = $easy_payment_custom_button;
@@ -70,7 +69,7 @@ class GMEX_Easy_Payment_Admin_Widget extends WP_Widget {
         $easy_payment_button_label = get_option('easy_payment_button_label');
 
 
-       if (isset($easy_payment_button_image) && !empty($easy_payment_button_image)) {
+        if (isset($easy_payment_button_image) && !empty($easy_payment_button_image)) {
             switch ($easy_payment_button_image) {
                 case 'button1':
                     $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
@@ -81,7 +80,6 @@ class GMEX_Easy_Payment_Admin_Widget extends WP_Widget {
                 case 'button3':
                     $button_url = !empty($easy_payment_custom_button) ? $easy_payment_custom_button : 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
                     break;
-               
             }
         } elseif (isset($easy_payment_custom_button) && !empty($easy_payment_custom_button)) {
             $button_url = $easy_payment_custom_button;
@@ -117,7 +115,7 @@ class GMEX_Easy_Payment_Admin_Widget extends WP_Widget {
             $output .= '<input type="hidden" name="item_name" value="cup of coffee">';
         }
 
-       if (isset($easy_payment_amount) && !empty($easy_payment_amount)) {
+        if (isset($easy_payment_amount) && !empty($easy_payment_amount)) {
             $output .= '<input type="hidden" name="amount" value="' . esc_attr($easy_payment_amount) . '">';
         }
 

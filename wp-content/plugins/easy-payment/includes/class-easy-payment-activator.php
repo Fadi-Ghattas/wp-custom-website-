@@ -13,8 +13,9 @@ class GMEX_Easy_Payment_Activator {
      * @since    1.0.0
      */
     public static function activate() {
-       self::create_files();
+        self::create_files();
     }
+
     private static function create_files() {
         $upload_dir = wp_upload_dir();
         $files = array(
