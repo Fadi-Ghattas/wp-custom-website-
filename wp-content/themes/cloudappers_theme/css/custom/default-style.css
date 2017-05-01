@@ -2,7 +2,6 @@
 version:   1.0
 date:      20/04/2017
 */
-
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html, body {
@@ -58,19 +57,16 @@ p {
     position: absolute;
     width: 153px;
     height: 47px;
-    transition: 1s;
 }
 
-
 .c-btn:hover {
-    background-image: -moz-linear-gradient( -60deg, rgb(255,93,22) 0%, rgb(255,156,112) 100%);
-    background-image: -webkit-linear-gradient( -60deg, rgb(255,93,22) 0%, rgb(255,156,112) 100%);
-    background-image: -ms-linear-gradient( -60deg, rgb(255,93,22) 0%, rgb(255,156,112) 100%);
-    transition: 1s;
+    background-image: -moz-linear-gradient(-60deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+    background-image: -webkit-linear-gradient(-60deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+    background-image: -ms-linear-gradient(-60deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
 }
 
 /*Header*/
-.dmbs-top-menu {
+.navbar-inverse {
     padding-top: 26px;
 }
 
@@ -84,16 +80,33 @@ p {
     height: auto;
 }
 
+.navbar-inverse .navbar-nav > li > a {
+    line-height: 47px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > li.c-btn {
+    margin-left: 38px;
+}
+
 .navbar-inverse .navbar-nav > li.c-btn > a {
     color: white;
 }
-.navbar-inverse .navbar-nav > li.c-btn > a:hover{
+
+.navbar-inverse .navbar-nav > li.c-btn > a:hover {
     color: white;
 }
 
 .navbar-nav {
     float: right;
     padding-top: 10px;
+    font-weight: bold;
+}
+
+.nav > li:not(.c-btn) > a {
+    padding-left: 21px;
+    padding-right: 21px;
 }
 
 .navbar-inverse {
