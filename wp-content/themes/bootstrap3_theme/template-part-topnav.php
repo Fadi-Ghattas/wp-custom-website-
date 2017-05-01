@@ -5,7 +5,14 @@
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
+                        <a class="logo-mob hidden-lg hidden-md hidden-sm" href="<?php echo home_url(); ?>">
+                            <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon.svg'  ?>" alt="CloudAppers" />
+                        </a>
+                        <a class="logo-desk" href="<?php echo home_url(); ?>">
+                            <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png'  ?>" alt="CloudAppers" />
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-1-collapse">
                             <span class="sr-only"><?php _e('Toggle navigation', 'devdmbootstrap3'); ?></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
