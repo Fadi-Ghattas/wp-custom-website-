@@ -3,11 +3,17 @@ version:   1.0
 date:      20/04/2017
 */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 html, body {
     padding: 0;
     margin: 0;
     display: block;
     min-height: 100%;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 *, *:hover, *:active, *:focus {
@@ -39,6 +45,55 @@ p {
 
 }
 
+/*General*/
+
+.c-btn {
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-image: -moz-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+    box-shadow: 0px 16px 19.74px 1.26px rgba(210, 210, 210, 0.5);
+    position: absolute;
+    width: 153px;
+    height: 47px;
+}
+
 /*Header*/
+.dmbs-top-menu {
+    padding-top: 26px;
+}
+
+.logo-desk {
+    display: inline-block;
+    width: 280px;
+}
+
+.logo-desk img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-nav {
+    float: right;
+    padding-top: 10px;
+}
+
+.navbar-inverse {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #4c4d4f;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #ff5f19;
+    transition: 0.5s;
+}
 
 /*Footer*/
