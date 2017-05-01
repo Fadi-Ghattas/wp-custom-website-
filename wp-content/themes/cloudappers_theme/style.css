@@ -1,0 +1,61 @@
+/*
+Theme Name: CloudAppers
+Theme URI: http://cloudappers.com/
+Author: CloudAppers.com
+Author URI: http://cloudappers.com/
+Description: A versatile and responsive Bootstrap WordPress starter theme FOR DEVELOPERS based on Twitter Bootstrap 3.3.4.
+Version: 1.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, right-sidebar, fluid-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, theme-options, translation-ready
+Text Domain: cloudappers
+
+/****************** Special Blank CSS classes for child themes to use without disturbing core bootstrap styles ****************/
+
+.dmbs-container {
+
+}
+
+.dmbs-header {
+
+}
+
+.dmbs-header-img {
+
+}
+
+.dmbs-header-text {
+
+}
+
+.dmbs-top-menu {
+
+}
+
+.dmbs-content {
+
+}
+
+.dmbs-main {
+
+}
+
+.dmbs-left {
+
+}
+
+.dmbs-right {
+
+}
+
+.dmbs-footer-menu {
+
+}
+
+.dmbs-author-credits {
+
+}
+
+.dmbs-footer {
+
+}
