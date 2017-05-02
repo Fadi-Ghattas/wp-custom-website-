@@ -189,3 +189,9 @@ p {
 .home .slid-content p {
     line-height: 29px;
 }
+
+@media (min-width: 1200px) {
+    .home .slide img {
+        width: 100%;
+    }
+}

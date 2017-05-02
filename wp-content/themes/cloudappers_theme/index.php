@@ -5,7 +5,11 @@
 <section class="slider-container">
     <div class="home-slider">
         <div class="slide">
-            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>">
+            <picture>
+                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" media="(min-width: 750px)">
+                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-mob.jpg' ;?>" media="(max-width: 749px)">
+                <img src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" >
+            </picture>
             <div class="container slide-desc">
                 <div class="row">
                     <div class="col-lg-12">
@@ -25,7 +29,11 @@
             </div>
         </div>
         <div class="slide">
-            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>">
+            <picture>
+                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" media="(min-width: 750px)">
+                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-mob.jpg' ;?>" media="(max-width: 749px)">
+                <img src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" >
+            </picture>
             <div class="container slide-desc">
                 <div class="row">
                     <div class="col-lg-12">
@@ -45,7 +53,11 @@
             </div>
         </div>
         <div class="slide">
-            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>">
+            <picture>
+                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" media="(min-width: 750px)">
+                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-mob.jpg' ;?>" media="(max-width: 749px)">
+                <img src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" >
+            </picture>
             <div class="container slide-desc">
                 <div class="row">
                     <div class="col-lg-12">
