@@ -1,5 +1,5 @@
 <?php if (has_nav_menu('main_menu')) : ?>
-
+<section class="top-header">
     <div class="container">
         <div class="row">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -35,5 +35,5 @@
             </nav>
         </div>
     </div>
-
+</section>
 <?php endif; ?>
