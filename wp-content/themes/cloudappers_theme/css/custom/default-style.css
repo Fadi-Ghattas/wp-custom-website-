@@ -192,6 +192,47 @@ p {
     margin-top: 22px;
 }
 
+.home .showcase {
+    background-image: -moz-linear-gradient(0deg, rgb(36, 57, 73) 0%, rgb(81, 127, 164) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(36, 57, 73) 0%, rgb(81, 127, 164) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(36, 57, 73) 0%, rgb(81, 127, 164) 100%);
+    min-height: 248px;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.home .showcase p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.home .showcase > p:first-child {
+    letter-spacing: 1.92px;
+}
+
+.home .showcase a {
+    max-width: 390px;
+    width: 100%;
+    height: auto;
+    padding: 15px 0 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 25px 0;
+}
+
+.home .showcase a span {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 2.933;
+    color: rgb(118, 55, 26);
+    letter-spacing: 0.75px;
+    display: block;
+}
+
 @media (min-width: 1200px) {
     .home .slide img {
         width: 100%;

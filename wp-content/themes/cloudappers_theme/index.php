@@ -6,9 +6,11 @@
     <div class="home-slider">
         <div class="slide">
             <picture>
-                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" media="(min-width: 750px)">
-                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-mob.jpg' ;?>" media="(max-width: 749px)">
-                <img src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" >
+                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
+                        media="(min-width: 750px)">
+                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
+                        media="(max-width: 749px)">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
             </picture>
             <div class="container slide-desc">
                 <div class="row">
@@ -30,9 +32,11 @@
         </div>
         <div class="slide">
             <picture>
-                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" media="(min-width: 750px)">
-                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-mob.jpg' ;?>" media="(max-width: 749px)">
-                <img src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" >
+                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
+                        media="(min-width: 750px)">
+                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
+                        media="(max-width: 749px)">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
             </picture>
             <div class="container slide-desc">
                 <div class="row">
@@ -54,9 +58,11 @@
         </div>
         <div class="slide">
             <picture>
-                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" media="(min-width: 750px)">
-                <source srcset="<?php echo get_stylesheet_directory_uri().'/img/home-mob.jpg' ;?>" media="(max-width: 749px)">
-                <img src="<?php echo get_stylesheet_directory_uri().'/img/home-s1.jpg' ;?>" >
+                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
+                        media="(min-width: 750px)">
+                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
+                        media="(max-width: 749px)">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
             </picture>
             <div class="container slide-desc">
                 <div class="row">
@@ -77,6 +83,22 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="showcase">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Don’t have time to browse our site? Well aren’t you important!</p>
+                <a class="c-btn" href="#">
+                    Download our Digital Showcase<span>for offline viewing</span>
+                </a>
+                <p>#AintNobodyGotTimeForThat</p>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 
