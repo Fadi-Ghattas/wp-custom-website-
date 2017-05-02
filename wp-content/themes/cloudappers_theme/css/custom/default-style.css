@@ -142,18 +142,23 @@ p {
 /*Footer*/
 
 /*Home*/
-.home .home-slider  {
+.home .home-slider {
     height: 880px;
     width: 100%;
 }
 
 .home .slide-desc {
     position: absolute;
-    top: auto;
+    top: 60%;
     bottom: 0;
     right: 0;
     left: 0;
     color: white;
+    transform: translate(0, -60%);
+}
+
+.home .slide {
+    position: relative;
 }
 
 .home .slide img {
