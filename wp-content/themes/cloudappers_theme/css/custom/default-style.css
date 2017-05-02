@@ -268,6 +268,46 @@ p {
     display: inline-block;
 }
 
+.home .what-we-do .row > div {
+    min-height: 385px;
+    padding: 0
+}
+
+.home .what-we-do .row > div > a {
+    padding: 15px;
+    display: inline-block;
+}
+
+.home .what-we-do img {
+    width: 70px;
+}
+
+.home .what-we-do .row > div:first-child {
+    border-top: 3px solid rgb(255, 161, 6);
+}
+
+.home .what-we-do .row > div:first-child a {
+    border-right: 0.5px solid rgb(231, 243, 247);
+}
+
+.home .what-we-do .row > div:nth-child(2) {
+    border-top: 3px solid rgb(37, 169, 198);
+
+}
+
+.home .what-we-do .row > div:nth-child(2) a {
+    border-right: 0.5px solid rgb(231, 243, 247);
+    border-left: 0.5px solid rgb(231, 243, 247);
+}
+
+.home .what-we-do .row > div:last-child  {
+    border-top: 3px solid rgb(255, 94, 24);
+}
+
+.home .what-we-do .row > div:nth-child(2) a {
+    border-left: 0.5px solid rgb(231, 243, 247);
+}
+
 @media (min-width: 1200px) {
     .home .slide img {
         width: 100%;
