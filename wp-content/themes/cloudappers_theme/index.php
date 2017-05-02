@@ -97,8 +97,44 @@
             </div>
         </div>
     </div>
+</section>
 
-
+<section class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <a href="#" class="item"><img class="img-responsive"
+                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+            </div>
+        </div>
+    </div>
+    <div class="view-all"><a class="" href="">VIEW ALL CLIENTS</a></div>
 </section>
 
 
