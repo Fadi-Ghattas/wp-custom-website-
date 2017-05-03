@@ -42,7 +42,7 @@ h4 {
 }
 
 p {
-
+    margin: 0px;
 }
 
 /*General*/
@@ -358,6 +358,71 @@ section.what-we-do:before {
     top: 0;
     display: block;
 }
+
+/*services page start*/
+section.ca-page-header {
+    min-height: 792px;
+    max-height: 792px;
+    background-size: cover;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.ca-page-header .container {
+    align-self: center;
+}
+
+section.ca-page-header p {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+section.ca-page-header .title {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+section.ca-page-header .sub-title {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 108px;
+}
+
+section.ca-page-banner {
+    background: #81c0ee;
+    min-height: 222px;
+    max-height: 222px;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.ca-page-banner .container {
+    align-self: center;
+}
+
+section.ca-page-banner p {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+/*services page end*/
 
 @media (min-width: 1200px) {
     .home .slide img {
