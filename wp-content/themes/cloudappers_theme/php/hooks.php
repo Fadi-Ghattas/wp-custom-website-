@@ -10,13 +10,13 @@ function project_custom_setup()
 {
     //adding images sizes
     add_theme_support('post-thumbnails');
-    //add_image_size('template-small-size', 358, 222, true);
+    add_image_size('project-slide', 1170, 992, true);
 
     //remove admin bar
-    add_filter('show_admin_bar', '__return_false');
+    //add_filter('show_admin_bar', '__return_false');
 }
 
-//add_action( 'after_setup_theme', 'project_custom_setup' );
+add_action( 'after_setup_theme', 'project_custom_setup' );
 
 function project_custom_login_logo()
 {
