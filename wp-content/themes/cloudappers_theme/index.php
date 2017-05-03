@@ -189,7 +189,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 project-info">
-                <a href="" class="c-btn">Recent Project</a>
+                <a href="" >Recent Project</a>
                 <h5>Drawdeck / Arts and Prints</h5>
                 <h6> E-Commerce Website</h6>
             </div>
@@ -226,7 +226,7 @@
 
         </div>
     </div>
-    <div class="view-all"><a href="">VIEW ALL CLIENTS</a></div>
+    <div class="view-all"><a href="">VIEW FULL SHOWCASE</a></div>
 </section>
 
 
