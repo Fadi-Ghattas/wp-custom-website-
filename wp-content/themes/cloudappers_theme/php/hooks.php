@@ -54,10 +54,9 @@ function remove_editor_init() {
 	if ( isset( $post_id ) ) {
 		// Get the template of the current post.
 		$template_file = get_post_meta( $post_id, '_wp_page_template', true );
-		echo $template_file;
-		die();
+		$template_file = explode('/', $template_file);
 		// Example of removing page editor for page-your-template.php template.
-		if (  'services.php' === $template_file ) {
+		if (  'services.php' === $template_file[sizeof($template_file)-1] ) {
 			remove_post_type_support( 'page', 'editor' );
 			// Other features can also be removed in addition to the editor. See: https://codex.wordpress.org/Function_Reference/remove_post_type_support.
 		}
