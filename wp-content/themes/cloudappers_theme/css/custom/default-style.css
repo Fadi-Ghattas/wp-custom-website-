@@ -243,6 +243,14 @@ p {
     text-align: center;
 }
 
+.home .clients .client-row a:first-child {
+    margin-left: 0;
+}
+
+.home .clients .client-row a:last-child {
+    margin-right: 0;
+}
+
 .home .clients .container {
     padding: 60px 0;
 }
@@ -251,7 +259,7 @@ p {
     width: 100px;
     height: 70px;
     display: inline-block;
-    margin: 0 29px;
+    margin: 0 36px;
 }
 
 .home .clients .view-all {
@@ -274,8 +282,16 @@ p {
 }
 
 .home .what-we-do .row > div > a {
-    padding: 15px;
+    padding: 33px 15px 15px 33px;
     display: inline-block;
+    color: black;
+    min-height: 380px;
+}
+
+.home .what-we-do .row p {
+    color: #5d5f74;
+    font-size: 16px;
+    line-height: 1.875;
 }
 
 .home .what-we-do img {
@@ -288,6 +304,11 @@ p {
 
 .home .what-we-do .row > div:first-child a {
     border-right: 0.5px solid rgb(231, 243, 247);
+    padding-left: 15px;
+}
+
+.home .what-we-do .row > div:first-child p {
+    padding-right: 25px;
 }
 
 .home .what-we-do .row > div:nth-child(2) {
@@ -300,12 +321,42 @@ p {
     border-left: 0.5px solid rgb(231, 243, 247);
 }
 
-.home .what-we-do .row > div:last-child  {
+.home .what-we-do .row > div:last-child {
     border-top: 3px solid rgb(255, 94, 24);
 }
 
 .home .what-we-do .row > div:nth-child(2) a {
     border-left: 0.5px solid rgb(231, 243, 247);
+}
+
+.home .what-we-do .more {
+    bottom: 39px;
+    position: absolute;
+    width: 39px;
+    height: 18px;
+}
+
+.home .what-we-do h1 {
+    margin-bottom: 19px;
+    margin-top: 8px;
+    font-size: 26px;
+    line-height: 1.308;
+
+}
+
+.home .what-we-do {
+    position: relative
+}
+
+section.what-we-do:before {
+    background: linear-gradient(to right, #ffa106 25%, #ffa106 25%, #ffa106 50%, #ff5e18 50%, #ff5e18 75%, #ff5e18 75%);
+    position: absolute;
+    content: '';
+    height: 3px;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: block;
 }
 
 @media (min-width: 1200px) {
