@@ -103,34 +103,38 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                <a href="#" class="item"><img class="img-responsive"
-                                              src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                <div class="client-row">
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                </div>
+                <div class="client-row">
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                    <a href="#" class="item"><img class="img-responsive"
+                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -148,7 +152,8 @@
                         killer
                         iOS and Android apps.
                     </p>
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
+                    <img class="more"
+                         src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
                 </a>
             </div>
             <div class="design col-lg-4">
@@ -159,7 +164,8 @@
                         devices, a
                         web app is the answer.
                     </p>
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
+                    <img class="more"
+                         src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
                 </a>
             </div>
             <div class="consultancy col-lg-4">
@@ -170,7 +176,8 @@
                         businesses
                         and what they actually experience.
                     </p>
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
+                    <img class="more"
+                         src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
                 </a>
             </div>
         </div>
