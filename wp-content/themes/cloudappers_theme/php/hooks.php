@@ -28,3 +28,15 @@ function project_custom_login_logo()
 //add_action('login_head', 'project_custom_login_logo');
 
 
+add_action( 'admin_head', 'hide_editor' );
+
+function hide_editor()
+{
+	global $pagenow;
+	if (!('post.php' == $pagenow)) return;
+
+	global $post;
+//	// Get the Post ID.
+//	$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
+//	if (!isset($post_id)) return;
+}
