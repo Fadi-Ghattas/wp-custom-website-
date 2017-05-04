@@ -435,7 +435,7 @@ section.ca-page-banner p {
     font-weight: bold;
     display: inline-block;
     color: #3c566a;
-    background: url("../../img/viewall.png") no-repeat left ;
+    background: url("../../img/viewall.png") no-repeat left;
     background-size: 37px 31px;
     padding-left: 50px;
 }
@@ -447,6 +447,7 @@ section.ca-page-banner p {
 
 .home .showyou .container {
     margin-top: -300px;
+    margin-bottom: 29px;
     color: white;
 }
 
@@ -457,7 +458,7 @@ section.ca-page-banner p {
     bottom: 0;
     right: 0;
     left: 0;
-    transition: 0.3s ;
+    transition: 0.3s;
 }
 
 .home .showyou .projects > div:hover img {
@@ -479,8 +480,20 @@ section.ca-page-banner p {
     background-color: rgb(255, 97, 28);
 }
 
-.home .showyou .project-info a:hover {
-    background-color: rgba(255, 97, 28,0.9);
+.home .showyou a.project-link {
+    float: right;
+    background: url(../../img/link.png) no-repeat bottom center;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home .showyou .project-info a:hover:not(.project-link) {
+    background-color: rgba(255, 97, 28, 0.9);
     transition: 0.3s;
 }
 
@@ -560,6 +573,16 @@ section.ca-page-banner p {
     background-image: -webkit-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
     background-image: -ms-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
 
+}
+
+.rotate-animation {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.rotate-animation:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 @media (min-width: 1200px) {
