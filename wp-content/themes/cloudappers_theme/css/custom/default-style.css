@@ -589,8 +589,108 @@ section.ca-page-banner p {
     transform: rotate(180deg);
 }
 
+section.services .service-item {
+    margin-top: 68px;
+}
+
+section.services .service-item a {
+    color: #5d5f74;
+}
+
+section.services .service-item a:hover {
+    color: #5d5f74;
+}
+
+section.services .service-item .icon {
+    height: 54px;
+    margin-bottom: 17px;
+}
+
+section.services .service-item .description {
+    min-height: 160px;
+    max-height: 160px;
+}
+
+section.services .service-item .description,
+section.services .service-item p {
+    color: #5d5f74;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left !important;
+    text-align: -moz-left !important;
+    text-align: -webkit-left !important;
+}
+
+section.services .service-item .title {
+    color: #202020;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+section.services .service-item .more {
+    width: 39px;
+    height: 18px;
+}
+
 @media (min-width: 1200px) {
     .home .slide img {
         width: 100%;
     }
+}
+
+/*md*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    /*.container{background: red; z-index: 5}*/
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 992px) {
+    /*.container{background: yellow; z-index: 5}*/
+    section.services .service-item {
+        text-align: center;
+        text-align: -moz-center;
+        text-align: -webkit-center;
+    }
+
+    section.services .service-item p {
+        text-align: center !important;
+        text-align: -moz-center !important;
+        text-align: -webkit-center !important;
+    }
+}
+
+/*xs*/
+@media (max-width: 768px) {
+    /*.container{background: green; z-index: 5}*/
+    section.services .service-item {
+        text-align: center;
+        text-align: -moz-center;
+        text-align: -webkit-center;
+    }
+
+    section.services .service-item p {
+        text-align: center !important;
+        text-align: -moz-center !important;
+        text-align: -webkit-center !important;
+    }
+}
+
+/*xs*/
+/* Extra Small Devices, Phones */
+@media(max-width: 480px) {
+    /*.container{background: purple; z-index: 5}*/
+    section.ca-page-banner p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/*xs*/
+/* Custom, iPhone Retina */
+@media(max-width : 320px){
+    /*.container{background: orange; z-index: 5}*/
 }
