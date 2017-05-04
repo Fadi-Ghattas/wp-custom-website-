@@ -654,6 +654,7 @@ section.ca-page-banner p {
 .home .team .members > div {
     padding: 0;
     height: 280px;
+    overflow: hidden;
 }
 
 .home .team .members .member-info {
@@ -663,6 +664,8 @@ section.ca-page-banner p {
     left: 0;
     transform: translate(0, -50%);
     visibility: hidden;
+    width: 100%;
+    opacity:0;
 }
 
 .home .team .members .member-info h5 {
@@ -678,16 +681,16 @@ section.ca-page-banner p {
     width: 100%;
     height: 100%;
     float: left;
-    transition: 0.5s;
 }
 
 .home .team .members > div:hover img {
-    opacity: 0;
-    transition: 0.5s;
+    visibility:hidden;
 }
 
 .home .team .members > div:hover .member-info {
     visibility: visible;
+    transition: 0.5s;
+    opacity:1;
 }
 
 .home .team .join a {
@@ -849,6 +852,26 @@ section.services .service-item .more {
     height: 60px;
     display: block;
     margin: 0 auto;
+}
+
+
+.home .team .members > div:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+.home .team .members > div:hover:before {
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 }
 
 /*Mobile layout*/
