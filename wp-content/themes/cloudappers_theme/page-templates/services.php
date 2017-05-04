@@ -41,12 +41,13 @@ $services = Service::viewAll();
 				<?php foreach ($services as $service) {
 					$title = (!empty($service['service_card_title']) ? $service['service_card_title'] : $service['post_title']);
 					$description = (!empty($service['service_card_description']) ? $service['service_card_description'] : $service['service_description']);
+					$description = limit_text_as_expert($service['id'], $description, 33, '#5d5f74', 0);
 					?>
 					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 service-item">
 							<a href="<?php echo get_permalink($service['id']); ?>">
-								<img src="<?php echo esc_url($service['service_icon']['url']); ?>" alt="<?php echo $title; ?>">
+								<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" alt="<?php echo $title; ?>">
 								<p class="title"><?php echo  $title; ?></p>
-								<p class="description"><?php echo  $description; ?></p>
+								<div class="description"><?php echo  $description; ?></div>
 								<img class="more" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg'); ?>"/>
 							</a>
 					</article>

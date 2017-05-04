@@ -18,12 +18,16 @@ html, body {
 
 *, *:hover, *:active, *:focus {
     outline: none;
+    outline-offset: 0px;
 }
 
-a:hover, a:active, a.focus {
+a:hover, a:active, a:focus {
     text-decoration: none !important;
     cursor: pointer;
+    outline: none;
+    outline-offset: 0px;
 }
+
 
 h1 {
 
@@ -560,6 +564,55 @@ section.ca-page-banner p {
     background-image: -webkit-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
     background-image: -ms-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
 
+}
+
+
+
+section.services .service-item {
+    margin-top: 68px;
+}
+
+section.services .service-item a {
+    color: #5d5f74;
+}
+
+section.services .service-item a:hover {
+    color: #5d5f74;
+}
+
+section.services .service-item .icon {
+    height: 54px;
+    margin-bottom: 17px;
+}
+
+section.services .service-item .description {
+    min-height: 160px;
+    max-height: 160px;
+}
+
+section.services .service-item .description,
+section.services .service-item p {
+    color: #5d5f74;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left !important;
+    text-align: -moz-left !important;
+    text-align: -webkit-left !important;
+}
+
+section.services .service-item .title {
+    color: #202020;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+section.services .service-item .more {
+    width: 39px;
+    height: 18px;
 }
 
 @media (min-width: 1200px) {
