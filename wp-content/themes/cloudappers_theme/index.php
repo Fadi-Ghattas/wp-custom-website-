@@ -199,7 +199,7 @@
             <div class="col-lg-4">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/img/p1.jpg' ?>" alt="">
                 <a href="#">
-                    <div>
+                    <div class="bg-rotate">
                         <h5>Furniture4u</h5>
                         <h6>E-Commerce Website</h6>
                     </div>
@@ -208,7 +208,7 @@
             <div class="col-lg-4">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/img/p2.jpg' ?>" alt="">
                 <a href="">
-                    <div>
+                    <div class="bg-rotate">
                         <h5>Furniture4u</h5>
                         <h6>E-Commerce Website</h6>
                     </div>
@@ -217,7 +217,7 @@
             <div class="col-lg-4">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/img/p3.jpg' ?>" alt="">
                 <a href="">
-                    <div>
+                    <div class="bg-rotate">
                         <h5>Furniture4u</h5>
                         <h6>E-Commerce Website</h6>
                     </div>

@@ -543,10 +543,16 @@ section.ca-page-banner p {
     top: 50%;
     bottom: 0;
     transform: translate(0, -50%);
-    background: url("../../img/link.png") no-repeat bottom center;
-    background-size: 60px 60px;
-    padding-bottom: 81px;
+    /*background: url("../../img/link.png") no-repeat bottom center;*/
+    /*background-size: 60px 60px;*/
+    /*padding-bottom: 81px;*/
+}
 
+.home .showyou .projects > div:hover .bg-rotate:after {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
 
 .home .showyou .projects a > div h5 {
@@ -732,6 +738,16 @@ section.services .service-item .more {
 .rotate:hover {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.bg-rotate:after {
+    background: url(../../img/link.png) no-repeat bottom center;
+    background-size: 60px 60px;
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
 }
 
 /*Mobile layout*/
