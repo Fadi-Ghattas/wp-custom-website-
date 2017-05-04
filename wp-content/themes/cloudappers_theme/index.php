@@ -189,11 +189,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 project-info">
-                <a href="" >Recent Project</a>
+                <a href="">Recent Project</a>
                 <h5>Drawdeck / Arts and Prints</h5>
                 <h6> E-Commerce Website</h6>
+                <a class="project-link rotate-animation" href=""></a>
             </div>
-            <a href=""></a>
         </div>
         <div class="row projects">
             <div class="col-lg-4">

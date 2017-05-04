@@ -439,7 +439,7 @@ section.ca-page-banner p {
     font-weight: bold;
     display: inline-block;
     color: #3c566a;
-    background: url("../../img/viewall.png") no-repeat left ;
+    background: url("../../img/viewall.png") no-repeat left;
     background-size: 37px 31px;
     padding-left: 50px;
 }
@@ -451,6 +451,7 @@ section.ca-page-banner p {
 
 .home .showyou .container {
     margin-top: -300px;
+    margin-bottom: 29px;
     color: white;
 }
 
@@ -461,7 +462,7 @@ section.ca-page-banner p {
     bottom: 0;
     right: 0;
     left: 0;
-    transition: 0.3s ;
+    transition: 0.3s;
 }
 
 .home .showyou .projects > div:hover img {
@@ -483,8 +484,20 @@ section.ca-page-banner p {
     background-color: rgb(255, 97, 28);
 }
 
-.home .showyou .project-info a:hover {
-    background-color: rgba(255, 97, 28,0.9);
+.home .showyou a.project-link {
+    float: right;
+    background: url(../../img/link.png) no-repeat bottom center;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home .showyou .project-info a:hover:not(.project-link) {
+    background-color: rgba(255, 97, 28, 0.9);
     transition: 0.3s;
 }
 
@@ -566,53 +579,14 @@ section.ca-page-banner p {
 
 }
 
-
-
-section.services .service-item {
-    margin-top: 68px;
+.rotate-animation {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
-section.services .service-item a {
-    color: #5d5f74;
-}
-
-section.services .service-item a:hover {
-    color: #5d5f74;
-}
-
-section.services .service-item .icon {
-    height: 54px;
-    margin-bottom: 17px;
-}
-
-section.services .service-item .description {
-    min-height: 160px;
-    max-height: 160px;
-}
-
-section.services .service-item .description,
-section.services .service-item p {
-    color: #5d5f74;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: left !important;
-    text-align: -moz-left !important;
-    text-align: -webkit-left !important;
-}
-
-section.services .service-item .title {
-    color: #202020;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    margin-bottom: 22px;
-}
-
-section.services .service-item .more {
-    width: 39px;
-    height: 18px;
+.rotate-animation:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 @media (min-width: 1200px) {
