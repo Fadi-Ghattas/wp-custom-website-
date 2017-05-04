@@ -47,7 +47,7 @@ $services = Service::viewAll();
 					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 service-item">
 							<a href="<?php echo get_permalink($service['id']); ?>">
 								<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" alt="<?php echo $title; ?>">
-								<p class="title"><?php echo  $title; ?></p>
+								<h1 class="title"><?php echo  $title; ?></h1>
 								<div class="description"><?php echo  $description; ?></div>
 								<img class="more" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg'); ?>"/>
 							</a>

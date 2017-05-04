@@ -11,6 +11,7 @@ function project_scripts()
 	//CSS
 //	wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize/normalize.min.css', [], '1.0');
 	wp_enqueue_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap/bootstrap/bootstrap.min.css', [], '1.0');
+//	wp_enqueue_style('equal-height-columns', get_template_directory_uri() . '/css/bootstrap/bootstrap/equal-height-columns.css', [], '1.0');
 	//wp_enqueue_style('wowcss', get_template_directory_uri() . '/css/wow/animate.min.css', [], '1.0');
 	wp_enqueue_style('formValidationcss', get_template_directory_uri() . '/css/bootstrap/bootstrap/formValidation.min.css', [], '1.0');
 	wp_enqueue_style('fontawesomecss', get_template_directory_uri() . '/css/font-awesome/font-awesome.min.css', [], '1.0');
@@ -33,6 +34,7 @@ function project_scripts()
 	//wp_enqueue_script('sweet', get_template_directory_uri() . '/js/sweetalert2/sweetalert2.min.js', array('jquery-min'), '1', true);
 
 	wp_enqueue_script('helpers_js', get_template_directory_uri() . '/js/custom/helpers.js', ['jquery-min'], '1.0', FALSE);
+	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '1.0', FALSE);
 	wp_enqueue_script('ajax_js', get_template_directory_uri() . '/js/custom/ajax.js', ['jquery-min'], '1.0', FALSE);
 	wp_enqueue_script('theme_js', get_template_directory_uri() . '/js/custom/theme.js', ['jquery-min'], '1.0', FALSE);
 	wp_localize_script('project_script_const', 'script_const', ['ajaxurl' => admin_url('admin-ajax.php')]);
