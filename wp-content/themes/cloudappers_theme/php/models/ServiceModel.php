@@ -7,5 +7,5 @@
  */
 class ServiceModel extends PodsModel
 {
-
+	public $pod_name = 'service';
 }

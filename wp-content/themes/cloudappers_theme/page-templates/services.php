@@ -10,9 +10,11 @@
 get_header();
 get_template_part('template-part', 'topnav');
 $pageOptions = acf_get_group_fields(get_the_ID());
+$pageShowCases = ProjectModel::getProjectsAsShowCasesForPage($pageOptions['services_page_show_cases']);
 $services = Service::viewAll();
+
 ?>
-<!--	<section class="ca-page-header" style="background: url(--><?php //echo esc_url($pageOptions['services_page_header_image']['url']); ?>/*) no-repeat center;">*/
+
 	<section class="ca-page-header parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_url($pageOptions['services_page_header_image']['url']); ?>">
 		<div class="container">
 			<div class="row">
@@ -34,7 +36,6 @@ $services = Service::viewAll();
 		</div>
 	</section>
 
-
 	<section class="services">
 		<div class="container">
 			<div class="row">
@@ -55,5 +56,18 @@ $services = Service::viewAll();
 			</div>
 		</div>
 	</section>
+
+	<section class="show-cases">
+		<div class="container">
+			<div class="row">
+				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item">
+					<figure>
+						<img src="" >
+					</figure>
+				</article>
+			</div>
+		</div>
+	</section>
+
 <?php
 get_footer();
