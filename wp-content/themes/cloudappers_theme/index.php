@@ -143,7 +143,7 @@
 
 <section class="what-we-do">
     <div class="container">
-        <div class="row">
+        <div class="row col-eq-height">
             <div class="app col-lg-4">
                 <a href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-nativeapp-icon@3x.svg' ?>"/>
@@ -174,7 +174,7 @@
                     <h1>Digital Consultancy</h1>
                     <p>We help companies close the gap between what consumers demand and expect digitally from
                         businesses
-                        and what they actually experience.
+                        and what they actually experience
                     </p>
                     <img class="more"
                          src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
@@ -192,7 +192,7 @@
                 <a href="">Recent Project</a>
                 <h5>Drawdeck / Arts and Prints</h5>
                 <h6> E-Commerce Website</h6>
-                <a class="project-link rotate-animation" href=""></a>
+                <a class="project-link rotate" href=""></a>
             </div>
         </div>
         <div class="row projects">
@@ -227,6 +227,72 @@
         </div>
     </div>
     <div class="view-all"><a href="">VIEW FULL SHOWCASE</a></div>
+</section>
+
+<section class="prefooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Ready to make your idea happen?</h1>
+                <p>That's the spirit! Let's make history together</p>
+                <a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <div class="container">
+        <div class="row title">
+            <div class="col-lg-12">
+                <h1>TEAM</h1>
+                <p>Meet our Geeks from around the Globe.</p>
+            </div>
+        </div>
+        <div class="row department">
+            <div class="col-lg-12 ">
+                <a href="" class="active">
+                    <img src="<?php echo get_template_directory_uri() . '/img/designer-icon@3x.svg' ?>"/>
+                    10 ui. ux designers
+                </a>
+                <a href="">
+                    <img src="<?php echo get_template_directory_uri() . '/img/dev-ico.png' ?>"/>
+                    15 developers
+                </a>
+                <a href="">
+                    <img src="<?php echo get_template_directory_uri() . '/img/marketing-geeks-icon@3x.svg' ?>"/>
+                    12 marketing geeks
+                </a>
+            </div>
+        </div>
+        <div class="row members">
+            <div class="col-lg-3">
+                <img src=""/>
+                <div>
+                    <h5></h5>
+                    <h6></h6>
+                </div>
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+        </div>
+        <div class="row create">
+            <div class="col-lg-12">
+                <h2>I want to create amazing things with you !</h2>
+                <a href="">TAKE ME IN</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 

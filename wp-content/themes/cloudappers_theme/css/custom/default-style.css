@@ -28,7 +28,6 @@ a:hover, a:active, a:focus {
     outline-offset: 0px;
 }
 
-
 h1 {
 
 }
@@ -350,15 +349,17 @@ section.ca-page-banner p {
 
 .home .what-we-do .row > div > a {
     padding: 33px 15px 15px 33px;
-    display: inline-block;
+    display: block;
     color: black;
     min-height: 380px;
+    height: 100%;
 }
 
 .home .what-we-do .row p {
     color: #5d5f74;
     font-size: 16px;
     line-height: 1.875;
+    padding-bottom: 75px;
 }
 
 .home .what-we-do img {
@@ -383,6 +384,10 @@ section.ca-page-banner p {
 
 }
 
+.home .what-we-do .row > div:last-child a {
+    border-left: 0.5px solid rgb(231, 243, 247);
+}
+
 .home .what-we-do .row > div:nth-child(2) a {
     border-right: 0.5px solid rgb(231, 243, 247);
     border-left: 0.5px solid rgb(231, 243, 247);
@@ -390,10 +395,6 @@ section.ca-page-banner p {
 
 .home .what-we-do .row > div:last-child {
     border-top: 3px solid rgb(255, 94, 24);
-}
-
-.home .what-we-do .row > div:nth-child(2) a {
-    border-left: 0.5px solid rgb(231, 243, 247);
 }
 
 .home .what-we-do .more {
@@ -463,6 +464,10 @@ section.ca-page-banner p {
     right: 0;
     left: 0;
     transition: 0.3s;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 15px;
 }
 
 .home .showyou .projects > div:hover img {
@@ -579,15 +584,51 @@ section.ca-page-banner p {
 
 }
 
-.rotate-animation {
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
+.team {
+    background: url("../../img/team.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 1670px;
+    color: white;
+    text-align: center;
 }
 
-.rotate-animation:hover {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+.team .title h1 {
+    font-size: 74px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.946;
 }
+
+.team .title p {
+    font-size: 23px;
+    line-height: 2.609;
+    text-align: center;
+}
+
+.team .department a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.25;
+    text-align: center;
+    display: inline-block;
+    color: white;
+}
+
+.team .department a:not(.active) {
+    opacity: 0.5;
+}
+
+.team .department div:hover:not(.active) {
+    opacity: 1;
+}
+
+.team .department img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*services*/
 
 section.services .service-item {
     margin-top: 68px;
@@ -636,6 +677,64 @@ section.services .service-item .more {
     height: 18px;
 }
 
+/*Footer*/
+
+.prefooter {
+    background: url("../../img/prefooter.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 357px;
+    color: white;
+    padding: 80px 0;
+}
+
+.prefooter h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    margin: 0;
+}
+
+.prefooter p {
+    font-size: 26px;
+    line-height: 2;
+}
+
+.prefooter a {
+    width: 269px;
+    height: 54px;
+    margin-top: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 54px;
+    text-align: center;
+}
+
+/*General*/
+.col-eq-height {
+    display: table;
+}
+
+.col-eq-height [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    height: 100%;
+}
+
+/*Animation*/
+.rotate {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*Mobile layout*/
+
 @media (min-width: 1200px) {
     .home .slide img {
         width: 100%;
@@ -681,7 +780,7 @@ section.services .service-item .more {
 
 /*xs*/
 /* Extra Small Devices, Phones */
-@media(max-width: 480px) {
+@media (max-width: 480px) {
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-banner p {
         font-size: 20px;
@@ -691,6 +790,6 @@ section.services .service-item .more {
 
 /*xs*/
 /* Custom, iPhone Retina */
-@media(max-width : 320px){
+@media (max-width: 320px) {
     /*.container{background: orange; z-index: 5}*/
 }
