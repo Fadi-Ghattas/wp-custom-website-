@@ -192,7 +192,7 @@
                 <a href="">Recent Project</a>
                 <h5>Drawdeck / Arts and Prints</h5>
                 <h6> E-Commerce Website</h6>
-                <a class="project-link rotate-animation" href=""></a>
+                <a class="project-link rotate" href=""></a>
             </div>
         </div>
         <div class="row projects">
@@ -227,6 +227,18 @@
         </div>
     </div>
     <div class="view-all"><a href="">VIEW FULL SHOWCASE</a></div>
+</section>
+
+<section class="prefooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Ready to make your idea happen?</h1>
+                <p>That's the spirit! Let's make history together</p>
+                <a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 
