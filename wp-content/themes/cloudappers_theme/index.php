@@ -339,6 +339,80 @@
     </div>
 </section>
 
+<section class="contact col-eq-height">
+    <div class="col-lg-6">
+        <div id="map">
+
+        </div>
+        <div class="address">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6>DUBAI</h6>
+                        <div class="details">
+                            <p class="address-details">Office 523. Building 8 <br>
+                                Dubai Media City
+                            </p>
+                            <p class="mob">+971 4 4438279</p>
+                            <p class="phone">+971 55 8826003</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="3">take me there</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="form">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>say hello!</h1>
+                        <form method="post" action="">
+                            <div class="form-group place-lbl">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+<!--                                <label for="name">Name</label>-->
+                            </div>
+                            <div class="form-group place-lbl">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+<!--                                <label for="email">E-mail</label>-->
+                            </div>
+                            <div class="form-group note">
+                                <label for="note">What we need to know?</label>
+                                <input type="text" class="form-control" id="note">
+                            </div>
+                            <button type="submit" class="c-btn">GET IN TOUCH</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="<?php echo get_template_directory_uri().'/img/CA-full-logo.png'?>">
+            <p>© 2008-2017 CloudAppers. All Rights Reserved</p>
+        </div>
+    </div>
+</section>
+
+<!--Google map-->
+<script>
+    function initMap() {
+        var url = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: url
+        });
+        var marker = new google.maps.Marker({
+            position: url,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap">
+</script>
 
 <?php get_footer(); ?>
 
