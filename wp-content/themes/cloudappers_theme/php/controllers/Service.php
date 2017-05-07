@@ -8,7 +8,6 @@
 
 class Service
 {
-	public $pod_name = 'service';
 
 	public static function view()
 	{
@@ -40,7 +39,7 @@ class Service
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, service_is_featured.meta_value DESC'];
 
-		$services = ServiceModel::search( (new Service)->pod_name, $fields, $filters);
+		$services = ServiceModel::search( (new ServiceModel)->pod_name, $fields, $filters);
 
 		return $services;
 	}

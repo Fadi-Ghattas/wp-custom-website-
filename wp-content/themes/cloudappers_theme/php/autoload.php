@@ -23,3 +23,7 @@ require_once("$dirName/views/ViewTemplate.php");
 require_once("$dirName/models/ServiceModel.php");
 require_once("$dirName/controllers/Service.php");
 require_once("$dirName/views/ServiceView.php");
+
+require_once("$dirName/models/ProjectModel.php");
+//require_once("$dirName/controllers/Service.php");
+//require_once("$dirName/views/ServiceView.php");

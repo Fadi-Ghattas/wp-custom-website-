@@ -1,3 +1,3 @@
-$j = jQuery.noConflict();
-$j(function () {
+jQuery(function ($) {
+
 });
