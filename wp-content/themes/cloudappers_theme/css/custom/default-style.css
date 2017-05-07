@@ -533,14 +533,12 @@ section.ca-page-banner p {
     transition: all 1s;
 }
 
-
-
 .top-header.small img.img-float {
     visibility: visible;
-    width: 45px;
+    width: 58px;
     right: 100%;
     left: 0;
-    top: 10px;
+    top: 3px;
     opacity: 1;
     transition: all 1s;
 }
@@ -1527,7 +1525,7 @@ section.some-of-show-cases .overlay h6 {
 /*Footer*/
 
 .prefooter {
-    /*background: url("../../img/prefooter.jpg") no-repeat center;*/
+    background: url("../../img/prefooter.jpg") no-repeat center;
     background-size: cover;
     min-height: 357px;
     color: white;
