@@ -21,7 +21,7 @@ function project_scripts()
 	wp_enqueue_style('fontawesomecss', get_template_directory_uri() . '/css/font-awesome/font-awesome.min.css', [], '1.0');
 	wp_enqueue_style('slick-css', get_template_directory_uri() . '/css/slick-slider/slick.css', [], '3.4');
 	wp_enqueue_style('slick-theme', get_template_directory_uri() . '/css/slick-slider/slick-theme.css', [], '3.4');
-	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '1.1');
+	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '1.2');
 
 	//JQUERY
 	wp_enqueue_script('jquery-min', get_template_directory_uri() . '/js/jquery/jquery-2.2.2.min.js', [], '2.2.2', FALSE);
