@@ -249,44 +249,88 @@
                 <p>Meet our Geeks from around the Globe.</p>
             </div>
         </div>
-        <div class="row department">
-            <div class="col-lg-12 ">
-                <a href="" class="active">
-                    <img src="<?php echo get_template_directory_uri() . '/img/designer-icon@3x.svg' ?>"/>
-                    10 ui. ux designers
-                </a>
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri() . '/img/dev-ico.png' ?>"/>
-                    15 developers
-                </a>
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri() . '/img/marketing-geeks-icon@3x.svg' ?>"/>
-                    12 marketing geeks
-                </a>
-            </div>
-        </div>
+        <!--        <div class="row department">-->
+        <!--            <div class="col-lg-12 ">-->
+        <!--                <a href="" class="active">-->
+        <!--                    <img src="-->
+        <?php //echo get_template_directory_uri() . '/img/designer-icon@3x.svg' ?><!--"/>-->
+        <!--                    10 ui. ux designers-->
+        <!--                </a>-->
+        <!--                <a href="">-->
+        <!--                    <img src="--><?php //echo get_template_directory_uri() . '/img/dev-ico.png' ?><!--"/>-->
+        <!--                    15 developers-->
+        <!--                </a>-->
+        <!--                <a href="">-->
+        <!--                    <img src="-->
+        <?php //echo get_template_directory_uri() . '/img/marketing-geeks-icon@3x.svg' ?><!--"/>-->
+        <!--                    12 marketing geeks-->
+        <!--                </a>-->
+        <!--            </div>-->
+        <!--        </div>-->
         <div class="row members">
-            <div class="col-lg-3">
-                <img src=""/>
-                <div>
-                    <h5></h5>
-                    <h6></h6>
+            <div class="col-lg-3 gradient-purple">
+                <img src="<?php echo get_template_directory_uri() . '/img/2.png' ?>"/>
+
+                <figcaption>
+
+                </figcaption>
+
+                <div class="member-info">
+                    <h5>Eyad</h5>
+                    <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3">
-
+            <div class="col-lg-3 gradient-pink">
+                <img src="<?php echo get_template_directory_uri() . '/img/2-2.png' ?>"/>
+                <div class="member-info">
+                    <h5>Sandra</h5>
+                    <h6>Web Developer</h6>
+                </div>
             </div>
-            <div class="col-lg-3">
-
+            <div class="col-lg-3 gradient-green">
+                <img src="<?php echo get_template_directory_uri() . '/img/1-2.png' ?>"/>
+                <div class="member-info">
+                    <h5>Mohammed</h5>
+                    <h6>Web Developer</h6>
+                </div>
             </div>
-            <div class="col-lg-3">
-
+            <div class="col-lg-3 gradient-purple">
+                <img src="<?php echo get_template_directory_uri() . '/img/3-1.png' ?>"/>
+                <div class="member-info">
+                    <h5>Hisham</h5>
+                    <h6>Web Developer</h6>
+                </div>
             </div>
-            <div class="col-lg-3">
-
+            <div class="col-lg-3 gradient-pink">
+                <img src="<?php echo get_template_directory_uri() . '/img/4.png' ?>"/>
+                <div class="member-info">
+                    <h5>Aghiad</h5>
+                    <h6>Web Developer</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 gradient-green">
+                <img src="<?php echo get_template_directory_uri() . '/img/2-1.png' ?>"/>
+                <div class="member-info">
+                    <h5>Rana</h5>
+                    <h6>Web Developer</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 gradient-purple">
+                <img src="<?php echo get_template_directory_uri() . '/img/4-1.png' ?>"/>
+                <div class="member-info">
+                    <h5>Ann</h5>
+                    <h6>Web Developer</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 gradient-pink">
+                <img src="<?php echo get_template_directory_uri() . '/img/4-2.png' ?>"/>
+                <div class="member-info">
+                    <h5>Fadi</h5>
+                    <h6>Web Developer</h6>
+                </div>
             </div>
         </div>
-        <div class="row create">
+        <div class="row join">
             <div class="col-lg-12">
                 <h2>I want to create amazing things with you !</h2>
                 <a href="">TAKE ME IN</a>
