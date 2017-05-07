@@ -422,6 +422,7 @@ section.ca-page-header .sub-title {
 }
 
 section.ca-page-banner {
+    position: relative;
     background: #81c0ee;
     min-height: 222px;
     max-height: 222px;
@@ -431,6 +432,16 @@ section.ca-page-banner {
     height: 100%;
     flex-direction: column;
     justify-content: center;
+}
+
+section.ca-page-banner .vertical-line {
+    border-left: 1px solid #ff6a28;
+    width: 1px;
+    height: 90px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 section.ca-page-banner .container {
