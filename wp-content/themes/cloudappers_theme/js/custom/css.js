@@ -73,5 +73,14 @@ jQuery(function ($) {
 		arrows: false
 	});
 
+    //Menu resize
+    $(document).on("scroll", function () {
+        if ($(document).scrollTop() > 100) {
+            $(".top-header").addClass("small");
+        } else {
+            $(".top-header").removeClass("small")
+        }
+    });
+
 });
 

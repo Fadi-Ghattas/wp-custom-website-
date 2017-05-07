@@ -182,6 +182,7 @@
             </div>
         </div>
     </div>
+    <div class="view-all"><a href="">VIEW ALL</a></div>
 </section>
 
 <section class="showyou">
@@ -399,10 +400,11 @@
 <!--Google map-->
 <script>
     function initMap() {
-        var url = {lat: -25.363, lng: 131.044};
+        var url = {lat: 25.229481, lng: 55.310456};
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: url
+            zoom: 5,
+            center: url,
+            disableDefaultUI: true
         });
         var marker = new google.maps.Marker({
             position: url,

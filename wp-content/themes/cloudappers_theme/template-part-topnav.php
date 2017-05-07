@@ -10,6 +10,7 @@
                         </a>
                         <a class="logo-desk" href="<?php echo home_url(); ?>">
                             <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png'  ?>" alt="CloudAppers" />
+                            <img class="img-float" src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg'  ?>" alt="CloudAppers" />
                         </a>
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
                                 data-target=".navbar-1-collapse">
