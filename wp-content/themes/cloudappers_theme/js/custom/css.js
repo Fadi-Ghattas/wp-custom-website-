@@ -2,20 +2,9 @@ jQuery.lazyLoadXT.autoInit = false;
 // jQuery.lazyLoadXT.bgAttr = 'data-image-src';
 
 jQuery.lazyLoadXT.onshow = function () {
-	// if (jQuery(this).hasClass('parallax-lazy-background'))
-	// {
-	// 	jQuery(this).parallax({imageSrc: jQuery(this).attr('data-image-src')});
-	// }
 };
 
-
 jQuery.lazyLoadXT.onload = function () {
-
-	// if (jQuery(this).hasClass('parallax-lazy-background'))
-	// {
-	// 	jQuery(this).parallax({imageSrc: jQuery(this).attr('data-image-src')});
-	// 	// jQuery(this).removeAttr('style');
-	// }
 
 	if (jQuery(this).hasClass('img-lazy')) {
 		jQuery(this).removeClass('lazy-not-loaded');
@@ -38,24 +27,9 @@ jQuery(function ($) {
 		return mode === 'above' ? above : (mode === 'below' ? below : !above && !below);
 	}
 
-
-
-	// $('.parallax-lazy-background').each(function (index) {
-	// 	if (checkVisible($(this))) {
-	// 	$(this).lazyLoadXT({show: false});
-	// 	}
-	// });
+	$('.lazy-background').lazyLoadXT({show: false});
 
 	$(window).on('scroll resize load', function () {
-
-		$('.lazy-background').lazyLoadXT({show: false});
-
-		// $('.parallax-lazy-background').each(function (index) {
-		// 	$(this).parallax({imageSrc: $(this).attr('data-image-src')});
-		// 	// if (checkVisible($(this))) {
-		// 	// 	$(this).lazyLoadXT({show: false});
-		// 	// }
-		// });
 
 		$('.img-lazy').each(function (index) {
 			if (checkVisible($(this))) {

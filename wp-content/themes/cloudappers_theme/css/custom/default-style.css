@@ -120,7 +120,7 @@ p {
 .red-card-hover:hover figure img,
 .purple-card-hover:hover figure img
 {
-    opacity: 0.3;
+    opacity: 0.08;
 }
 
 .green-card-hover:hover .bg-rotate:after,
