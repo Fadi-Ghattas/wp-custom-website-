@@ -190,7 +190,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 project-info">
-                <a href="">Recent Project</a>
+                <a href="" class="c-btn">Recent Project</a>
                 <h5>Drawdeck / Arts and Prints</h5>
                 <h6> E-Commerce Website</h6>
                 <a class="project-link rotate" href=""></a>
@@ -334,7 +334,7 @@
         <div class="row join">
             <div class="col-lg-12">
                 <h2>I want to create amazing things with you !</h2>
-                <a href="">TAKE ME IN</a>
+                <a href="" class="c-rbtn">TAKE ME IN</a>
             </div>
         </div>
     </div>
@@ -359,7 +359,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <a href="3">take me there</a>
+                        <a href="" class="c-rbtn" >take me there</a>
                     </div>
                 </div>
             </div>
