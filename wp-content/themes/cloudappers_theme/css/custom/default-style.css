@@ -499,6 +499,43 @@ section.ca-page-banner p {
 
 /*General*/
 
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    height: 8px;
+    width: 44px;
+    border-radius: 4px;
+    margin-top: 4px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+    right: 0;
+}
+#nav-toggle span:before {
+    top: -24px;
+    width: 54px;
+}
+#nav-toggle span:after {
+    bottom: -20px;
+    width: 54px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 0.5s ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
 .c-btn {
     display: inline-block;
     color: #f3fcfe;
@@ -730,7 +767,7 @@ header, nav, header img {
 
 .home .slider-container,
 .home .home-slider,
-.slick-list {
+.home .slick-list {
     height: 100vh;
 }
 
@@ -1216,8 +1253,13 @@ header, nav, header img {
 
 .home .team .members img {
     width: 100%;
-    height: 100%;
-    float: left;
+    height: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .home .team .members > div:hover img {
@@ -1798,7 +1840,51 @@ section.some-of-show-cases .overlay h6 {
 
 /*xs*/
 @media (max-width: 768px) {
-    /*.container{background: green; z-index: 5}*/
+
+    /*Menu*/
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background: transparent;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border: transparent;
+        text-align: right;
+        position: relative;
+        width: 66px;
+        height: 49px;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: transparent;
+    }
+
+    .navbar-toggle {
+        margin-right: 20px;
+    }
+
+    .navbar-toggle .icon-bar {
+        height: 8px;
+        width: 54px;
+        border-radius: 4px;
+    }
+
+    .navbar-toggle .icon-bar:nth-child(3) {
+        width: 44px;
+        display: inline-block;
+    }
+
+    .logo-mob {
+        width: 102px;
+        height: 99px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .top-header {
+        background: transparent;
+    }
+
+    /*Services*/
     section.services .service-item {
         text-align: center;
         text-align: -moz-center;
@@ -1860,3 +1946,7 @@ section.some-of-show-cases .overlay h6 {
 @media (max-width: 320px) {
     /*.container{background: orange; z-index: 5}*/
 }
+
+
+
+

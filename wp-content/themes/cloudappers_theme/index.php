@@ -7,9 +7,9 @@
         <div class="slide">
             <picture>
                 <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
-                        media="(min-width: 750px)">
+                        media="(min-width: 768px)">
                 <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
-                        media="(max-width: 749px)">
+                        media="(max-width: 767px)">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
             </picture>
             <div class="container slide-desc">
@@ -269,7 +269,7 @@
         <!--            </div>-->
         <!--        </div>-->
         <div class="row members">
-            <div class="col-lg-3 gradient-purple">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-purple">
                 <img src="<?php echo get_template_directory_uri() . '/img/2.png' ?>"/>
 
                 <figcaption>
@@ -281,49 +281,49 @@
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-pink">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-pink">
                 <img src="<?php echo get_template_directory_uri() . '/img/2-2.png' ?>"/>
                 <div class="member-info">
                     <h5>Sandra</h5>
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-green">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-green">
                 <img src="<?php echo get_template_directory_uri() . '/img/1-2.png' ?>"/>
                 <div class="member-info">
                     <h5>Mohammed</h5>
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-purple">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-purple">
                 <img src="<?php echo get_template_directory_uri() . '/img/3-1.png' ?>"/>
                 <div class="member-info">
                     <h5>Hisham</h5>
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-pink">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-pink">
                 <img src="<?php echo get_template_directory_uri() . '/img/4.png' ?>"/>
                 <div class="member-info">
                     <h5>Aghiad</h5>
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-green">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-green">
                 <img src="<?php echo get_template_directory_uri() . '/img/2-1.png' ?>"/>
                 <div class="member-info">
                     <h5>Rana</h5>
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-purple">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-purple">
                 <img src="<?php echo get_template_directory_uri() . '/img/4-1.png' ?>"/>
                 <div class="member-info">
                     <h5>Ann</h5>
                     <h6>Web Developer</h6>
                 </div>
             </div>
-            <div class="col-lg-3 gradient-pink">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-pink">
                 <img src="<?php echo get_template_directory_uri() . '/img/4-2.png' ?>"/>
                 <div class="member-info">
                     <h5>Fadi</h5>
