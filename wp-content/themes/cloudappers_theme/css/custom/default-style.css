@@ -821,7 +821,10 @@ header, nav, header img {
 
 .home .slid-content p {
     line-height: 29px;
-    margin-top: 22px;
+}
+
+.home .slid-content .description {
+    margin-top: 25px;
 }
 
 .home .showcase {
@@ -875,18 +878,28 @@ header, nav, header img {
     text-align: center;
 }
 
-
-
-
 .home .clients .container {
     padding: 60px 0;
 }
 
 .home .clients .item {
-    width: 10%;
-    height: 70px;
+    width: 117px;
+    height: 117px;
     display: inline-block;
     margin: 0 23px;
+    position: relative;
+}
+
+.home .clients .item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 
 .home .clients .view-all {
@@ -1774,7 +1787,6 @@ section.some-of-show-cases .overlay h6 {
         height: 100%;
     }
 }
-
 
 /*md*/
 @media (min-width: 768px) and (max-width: 1200px) {
