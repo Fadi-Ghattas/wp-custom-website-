@@ -48,6 +48,11 @@ p {
     margin: 0px;
 }
 
+figure {
+    width: 100%;
+    height: 100%;
+}
+
 section.ca-page-header {
     min-height: 792px;
     background-size: cover;
@@ -724,16 +729,16 @@ header, nav, header img {
     font-size: 18px;
 }
 
-.home .team .members img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
+/*.home .team .members img {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+/*}*/
 
 .home .team .members > div:hover img {
     visibility: hidden;
@@ -1441,6 +1446,13 @@ section.some-of-show-cases .overlay h6 {
     transform: rotate(180deg);
 }
 
+.gradient-purple,
+.gradient-pink,
+.gradient-green {
+    width: 100%;
+    height: 100%;
+}
+
 .gradient-purple {
     background-image: -moz-linear-gradient(45deg, rgb(246, 200, 246) 0%, rgb(218, 221, 250) 50%, rgb(241, 244, 249) 100%);
     background-image: -webkit-linear-gradient(45deg, rgb(246, 200, 246) 0%, rgb(218, 221, 250) 50%, rgb(241, 244, 249) 100%);
@@ -1774,6 +1786,8 @@ section.some-of-show-cases .overlay h6 {
 .lazy-loader {
     /*background:url(loading.gif) 50% 50% no-repeat #fafafa;*/
     background: #f1f1f1;
+    height: 100%;
+    width: 100%;
 }
 
 .lazy-loader-effect {
@@ -1796,6 +1810,7 @@ section.some-of-show-cases .overlay h6 {
     animation: e 1.2s infinite ease-in-out; /* IE 10+, Fx 29+ */
     border-radius: 3px;
     background-color: #007cc5;
+    /*z-index: 1;*/
 }
 
 .lazy-not-loaded {
