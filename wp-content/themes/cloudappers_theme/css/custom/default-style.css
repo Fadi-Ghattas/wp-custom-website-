@@ -247,12 +247,12 @@ header, nav, header img {
 
 .home .slide-desc {
     position: absolute;
-    top: 60%;
-    bottom: 0;
+    top: 0;
+    bottom: 50%;
     right: 0;
     left: 0;
     color: white;
-    transform: translate(0, -60%);
+    transform: translate(0, 50%);
 }
 
 .home .slide {
@@ -345,16 +345,14 @@ header, nav, header img {
     text-align: center;
 }
 
-.home .clients .container {
-    padding: 60px 0;
-}
-
 .home .clients .item {
-    width: 117px;
     height: 117px;
     display: inline-block;
-    margin: 0 23px;
-    position: relative;
+}
+
+.home .clients .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .home .clients .item img {
@@ -384,16 +382,11 @@ header, nav, header img {
     display: inline-block;
 }
 
-.home .what-we-do .row > div {
-    min-height: 385px;
-    padding: 0
-}
-
 .home .what-we-do .row > div > a {
-    padding: 33px 15px 15px 33px;
+    padding: 30px;
     display: block;
     color: black;
-    min-height: 380px;
+    /*min-height: 380px;*/
     height: 100%;
 }
 
@@ -413,27 +406,8 @@ header, nav, header img {
     border-top: 3px solid rgb(255, 161, 6);
 }
 
-.home .what-we-do .row > div:first-child a {
-    border-right: 0.5px solid rgb(231, 243, 247);
-    padding-left: 15px;
-}
-
-.home .what-we-do .row > div:first-child p {
-    padding-right: 25px;
-}
-
 .home .what-we-do .row > div:nth-child(2) {
     border-top: 3px solid rgb(37, 169, 198);
-    transition: 1s;
-}
-
-.home .what-we-do .row > div:last-child a {
-    border-left: 0.5px solid rgb(231, 243, 247);
-}
-
-.home .what-we-do .row > div:nth-child(2) a {
-    border-right: 0.5px solid rgb(231, 243, 247);
-    border-left: 0.5px solid rgb(231, 243, 247);
 }
 
 .home .what-we-do .row > div:last-child {
@@ -1187,13 +1161,58 @@ section.some-of-show-cases .overlay h6 {
     text-align: center;
 }
 
-
 /*Mobile layout*/
 
 .logo-mob {
     width: 65px;
     display: inline-block;
     margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .home .what-we-do .row > div > a {
+        padding: 33px 15px 15px 33px;
+    }
+
+    .home .what-we-do .row > div {
+        padding: 0
+    }
+
+    .home .what-we-do .row > div:first-child p {
+        padding-right: 25px;
+    }
+
+    .home .what-we-do .row > div:first-child a {
+        padding-left: 15px;
+    }
+
+    .home .what-we-do .row > div:first-child a {
+        border-right: 0.5px solid rgb(231, 243, 247);
+    }
+
+    .home .what-we-do .row > div:last-child a {
+        border-left: 0.5px solid rgb(231, 243, 247);
+    }
+
+    .home .what-we-do .row > div:nth-child(2) a {
+        border-right: 0.5px solid rgb(231, 243, 247);
+        border-left: 0.5px solid rgb(231, 243, 247);
+    }
+
+}
+
+@media (min-width: 992px) {
+    /*General*/
+    .col-eq-height {
+        display: table;
+    }
+
+    .col-eq-height [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1207,17 +1226,14 @@ section.some-of-show-cases .overlay h6 {
         height: auto;
     }
 
-    /*General*/
-    .col-eq-height {
-        display: table;
+    .home .clients .item {
+        width: 117px;
+        height: 117px;
+        display: inline-block;
+        margin: 0 23px;
+        position: relative;
     }
 
-    .col-eq-height [class*="col-"] {
-        float: none;
-        display: table-cell;
-        vertical-align: top;
-        height: 100%;
-    }
 }
 
 /*md*/
@@ -1373,6 +1389,23 @@ section.some-of-show-cases .overlay h6 {
         padding-right: 10px;
         padding-top: 10px;
     }
+}
+
+@media (max-width: 767px) {
+    .home .what-we-do .row > div {
+        text-align: center;
+    }
+
+    .home .clients .item {
+        border: 1px solid rgb(239, 239, 239);
+    }
+
+    .home .clients .container {
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
 }
 
 /*xs*/

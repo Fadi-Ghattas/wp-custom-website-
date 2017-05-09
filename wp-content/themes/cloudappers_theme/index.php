@@ -111,13 +111,13 @@ get_template_part('template-part', 'topnav');
 <section class="clients">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+
 				<div class="client-row">
 					<?php foreach ($clients as $client) { ?>
-						<a href="<?php echo esc_url($client['client_website_url']); ?>" class="item"><img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+						<a href="<?php echo esc_url($client['client_website_url']); ?>" class="item  col-md-2 col-sm-3 col-xs-4"><img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
 					<?php } ?>
 				</div>
-			</div>
+
 		</div>
 	</div>
 	<div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
@@ -128,7 +128,7 @@ get_template_part('template-part', 'topnav');
 	<div class="container">
 		<div class="row col-eq-height">
 			<?php foreach ($services as $service) { ?>
-				<div class="app col-lg-4">
+				<div class="app col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
 						<img src="<?php echo esc_url($service['service_icon']['url']); ?>"/>
 						<h1><?php echo $service['service_card_title']; ?></h1>
