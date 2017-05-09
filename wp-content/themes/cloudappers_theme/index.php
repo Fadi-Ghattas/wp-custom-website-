@@ -206,12 +206,17 @@ get_template_part('template-part', 'topnav');
 			foreach ($team as $teamMember) {
 				$hover = ['gradient-purple','gradient-pink','gradient-green'];
 				?>
-				<div class="col-lg-3 <?php echo $hover[$hoverCount];?> ">
-					<img src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"/>
-					<div class="member-info">
+				<div class="col-lg-3">
+					<section class="<?php echo $hover[$hoverCount];?>">
+					<figure>
+						<div class="lazy-loader-effect"></div>
+						<img  class="img-lazy lazy-not-loaded lazy-loader"  data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>" alt="<?php echo $teamMember['post_title']; ?>"/>
+					</figure>
+					<div class="overlay member-info">
 						<h5><?php echo $teamMember['post_title']; ?></h5>
 						<h6><?php echo $teamMember['team_member_position']['post_title']; ?></h6>
 					</div>
+					</section>
 				</div>
 			<?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++ ); } ?>
 		</div>
