@@ -258,10 +258,12 @@ get_template_part('template-part', 'topnav');
 						<h1>say hello!</h1>
 						<form method="post" action="">
 							<div class="form-group place-lbl">
-								<input type="text" class="form-control" id="name" placeholder="Name">
+                                <label for="name">Name</label>
+								<input type="text" class="form-control" id="name" >
 							</div>
 							<div class="form-group place-lbl">
-								<input type="email" class="form-control" id="email" placeholder="E-mail">
+                                <label for="email">E-mail</label>
+								<input type="email" class="form-control" id="email" >
 							</div>
 							<div class="form-group note">
 								<label for="note">What we need to know?</label>
