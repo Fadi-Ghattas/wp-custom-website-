@@ -111,7 +111,7 @@ get_template_part('template-part', 'topnav');
 			<div class="col-lg-12">
 				<div class="client-row">
 					<?php foreach ($clients as $client) { ?>
-						<a href="<?php echo esc_url($client['client_website_url']); ?>" class="item"><img class="img-responsive" src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+						<a href="<?php echo esc_url($client['client_website_url']); ?>" class="item"><img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
 					<?php } ?>
 				</div>
 			</div>
