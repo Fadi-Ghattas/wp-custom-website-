@@ -377,13 +377,8 @@ header, nav, header img {
     display: inline-block;
 }
 
-.home .what-we-do .row > div {
-    /*min-height: 385px;*/
-    padding: 0
-}
-
 .home .what-we-do .row > div > a {
-    padding: 33px 15px 15px 33px;
+    padding: 30px;
     display: block;
     color: black;
     /*min-height: 380px;*/
@@ -406,27 +401,8 @@ header, nav, header img {
     border-top: 3px solid rgb(255, 161, 6);
 }
 
-.home .what-we-do .row > div:first-child a {
-    border-right: 0.5px solid rgb(231, 243, 247);
-    padding-left: 15px;
-}
-
-.home .what-we-do .row > div:first-child p {
-    padding-right: 25px;
-}
-
 .home .what-we-do .row > div:nth-child(2) {
     border-top: 3px solid rgb(37, 169, 198);
-    transition: 1s;
-}
-
-.home .what-we-do .row > div:last-child a {
-    border-left: 0.5px solid rgb(231, 243, 247);
-}
-
-.home .what-we-do .row > div:nth-child(2) a {
-    border-right: 0.5px solid rgb(231, 243, 247);
-    border-left: 0.5px solid rgb(231, 243, 247);
 }
 
 .home .what-we-do .row > div:last-child {
@@ -1189,6 +1165,34 @@ section.some-of-show-cases .overlay h6 {
 }
 
 @media (min-width: 768px) {
+    .home .what-we-do .row > div > a {
+        padding: 33px 15px 15px 33px;
+    }
+
+    .home .what-we-do .row > div {
+        padding: 0
+    }
+
+    .home .what-we-do .row > div:first-child p {
+        padding-right: 25px;
+    }
+
+    .home .what-we-do .row > div:first-child a {
+        padding-left: 15px;
+    }
+
+    .home .what-we-do .row > div:first-child a {
+        border-right: 0.5px solid rgb(231, 243, 247);
+    }
+
+    .home .what-we-do .row > div:last-child a {
+        border-left: 0.5px solid rgb(231, 243, 247);
+    }
+
+    .home .what-we-do .row > div:nth-child(2) a {
+        border-right: 0.5px solid rgb(231, 243, 247);
+        border-left: 0.5px solid rgb(231, 243, 247);
+    }
 
 }
 
@@ -1387,16 +1391,16 @@ section.some-of-show-cases .overlay h6 {
         text-align: center;
     }
 
-    .home .clients .item{
+    .home .clients .item {
         border: 1px solid rgb(239, 239, 239);
     }
 
-    .home .clients .container
-    {
+    .home .clients .container {
         padding-top: 0;
         padding-bottom: 0;
 
     }
+
 }
 
 /*xs*/
