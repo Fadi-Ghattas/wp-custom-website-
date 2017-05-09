@@ -7,11 +7,12 @@
  * Template Name: ServicesPage
  */
 
-get_header();
-get_template_part('template-part', 'topnav');
 $pageOptions = acf_get_group_fields(get_the_ID());
 $pageShowCases = ProjectModel::getProjectsAsShowCasesForPage($pageOptions['services_page_show_cases']);
 $services = Service::viewAll();
+
+get_header();
+get_template_part('template-part', 'topnav');
 
 ?>
 <?php $services_page_header_image = (!empty($pageOptions['services_page_header_image']['url']) ? esc_url($pageOptions['services_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/new-services-background_1600x793_acf_cropped.png')); ?>

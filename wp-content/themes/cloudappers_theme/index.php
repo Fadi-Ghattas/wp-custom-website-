@@ -1,420 +1,384 @@
-<?php get_header(); ?>
+<?php
 
-<?php get_template_part('template-part', 'topnav'); ?>
+$homePagePost = get_page_by_path('home', OBJECT, 'page' );
+$pageOptions = acf_get_group_fields($homePagePost->ID);
+
+$sliderFields = [
+	[
+		'acf' => 1,
+		'name' => 'main_slide_image',
+	],
+	[
+		'acf' => 1,
+		'name' => 'main_slide_mobile_image',
+	],
+	[
+		'acf' => 1,
+		'name' => 'main_slide_title',
+	],
+	[
+		'acf' => 1,
+		'name' => 'main_slide_subtitle',
+	],
+	[
+		'acf' => 1,
+		'name' => 'main_slide_description',
+	],
+	[
+		'acf' => 1,
+		'name' => 'main_slide_button_text',
+	],
+	[
+		'acf' => 1,
+		'name' => 'main_slide_button_link_url',
+	],
+];
+$mainSlider = PodsModel::search('main_slide', $sliderFields);
+
+if(intval($pageOptions['home_page_clients_how_many_to_show']))
+	$clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_clients_how_many_to_show']) ]);
+
+$services = Service::viewAll(['page' => 'home', 'limit' => 3 ]);
+
+$superFeaturedProject = ProjectModel::getSuperFeaturedProject();
+$projects = Project::viewAll(['page' => 'home', 'limit' => 3]);
+
+if(intval($pageOptions['home_page_team_how_many_to_show']))
+	$team = Team::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_team_how_many_to_show'])]);
+
+get_header();
+get_template_part('template-part', 'topnav');
+?>
 
 <section class="slider-container">
-    <div class="home-slider">
-        <div class="slide">
-            <picture>
-                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
-                        media="(min-width: 768px)">
-                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
-                        media="(max-width: 767px)">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
-            </picture>
-            <div class="container slide-desc">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="slid-content">
-                            <h5>BUILDING COOL</h5>
-                            <h1>WebSites</h1>
-                            <p>A magical place where great app ideas are hand-crafted into successful businesses thanks
-                                to
-                                the
-                                talented
-                                bunch of digital freaks we proudly home, and our clients who grow to become our
-                                friends.</p>
-                            <a class="c-btn" href="">EXPLORE US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <picture>
-                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
-                        media="(min-width: 750px)">
-                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
-                        media="(max-width: 749px)">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
-            </picture>
-            <div class="container slide-desc">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="slid-content">
-                            <h5>BUILDING COOL</h5>
-                            <h1>WebSites</h1>
-                            <p>A magical place where great app ideas are hand-crafted into successful businesses thanks
-                                to
-                                the
-                                talented
-                                bunch of digital freaks we proudly home, and our clients who grow to become our
-                                friends.</p>
-                            <a class="c-btn" href="">EXPLORE US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <picture>
-                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>"
-                        media="(min-width: 750px)">
-                <source srcset="<?php echo get_stylesheet_directory_uri() . '/img/home-mob.jpg'; ?>"
-                        media="(max-width: 749px)">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/home-s1.jpg'; ?>">
-            </picture>
-            <div class="container slide-desc">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="slid-content">
-                            <h5>BUILDING COOL</h5>
-                            <h1>WebSites</h1>
-                            <p>A magical place where great app ideas are hand-crafted into successful businesses thanks
-                                to
-                                the
-                                talented
-                                bunch of digital freaks we proudly home, and our clients who grow to become our
-                                friends.</p>
-                            <a class="c-btn" href="">EXPLORE US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="home-slider">
+
+		<?php foreach ($mainSlider as $slid) { ?>
+			<div class="slide">
+				<picture>
+					<source srcset="<?php echo esc_url($slid['main_slide_image']['url']); ?>" media="(min-width: 750px)">
+					<source srcset="<?php echo esc_url($slid['main_slide_mobile_image']['url']); ?>" media="(max-width: 749px)">
+					<img src="<?php echo esc_url($slid['main_slide_image']['url']); ?>">
+				</picture>
+				<div class="container slide-desc">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="slid-content">
+								<?php if (!empty($slid['main_slide_title'])) ?>
+								<h5><?php echo $slid['main_slide_title']; ?></h5>
+								<?php if (!empty($slid['main_slide_subtitle'])) ?>
+								<h1><?php echo $slid['main_slide_subtitle']; ?></h1>
+								<?php if (!empty($slid['main_slide_description'])) ?>
+								<div class="description"><?php echo $slid['main_slide_description']; ?></div>
+								<?php if (!empty($slid['main_slide_button_text']) && !empty($slid['main_slide_button_link_url'])) ?>
+								<a class="c-btn" href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><?php echo $slid['main_slide_button_text']; ?></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php } ?>
+
+	</div>
 </section>
 
 <section class="showcase">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Don’t have time to browse our site? Well aren’t you important!</p>
-                <a class="c-btn" href="#">
-                    Download our Digital Showcase<span>for offline viewing</span>
-                </a>
-                <p>#AintNobodyGotTimeForThat</p>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<?php if(!empty($pageOptions['home_page_digital_showcase_title'])) ?>
+					<p><?php echo $pageOptions['home_page_digital_showcase_title']; ?></p>
+				<?php if(!empty($pageOptions['home_page_digital_showcase_download_button_text'])) { ?>
+					<?php if($pageOptions['home_page_digital_showcase_type'] == 1 && isset($pageOptions['home_page_digital_showcase_file_url'])) { ?>
+						<?php if(!empty($pageOptions['home_page_digital_showcase_file_url'])) ?>
+							<a class="c-btn" href="<?php echo esc_url($pageOptions['home_page_digital_showcase_file_url']);?>" download><?php echo  $pageOptions['home_page_digital_showcase_download_button_text'];?></a>
+					<?php } else if($pageOptions['home_page_digital_showcase_type'] == 2 && isset($pageOptions['home_page_digital_showcase_file'])) { ?>
+					<?php if(!empty($pageOptions['home_page_digital_showcase_file'])) ?>
+							<a class="c-btn" href="<?php echo esc_url($pageOptions['home_page_digital_showcase_file']['url']);?>" download><?php echo  $pageOptions['home_page_digital_showcase_download_button_text'];?></a>
+					<?php } ?>
+				<?php } ?>
+				<?php if(!empty($pageOptions['home_page_digital_showcase_hashtag_text']))?>
+					<p><?php echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?></p>
+			</div>
+		</div>
+	</div>
 </section>
 
+<?php if (!empty($clients) && intval($pageOptions['home_page_clients_how_many_to_show'])) { ?>
 <section class="clients">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="client-row">
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                </div>
-                <div class="client-row">
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                    <a href="#" class="item"><img class="img-responsive"
-                                                  src="<?php echo get_stylesheet_directory_uri() . '/img/1.png' ?>"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="view-all"><a href="">VIEW ALL CLIENTS</a></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="client-row">
+					<?php foreach ($clients as $client) { ?>
+						<a href="<?php echo esc_url($client['client_website_url']); ?>" class="item"><img class="img-responsive" src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
 </section>
+<?php } ?>
 
 <section class="what-we-do">
-    <div class="container">
-        <div class="row col-eq-height">
-            <div class="app col-lg-4 app col-xs-12">
-                <a href="#">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-nativeapp-icon@3x.svg' ?>"/>
-                    <h1>Native App Design & Development</h1>
-                    <p>Are you ready to become the next App Store hit with thousands of downloads per day? We build
-                        killer
-                        iOS and Android apps.
-                    </p>
-                    <img class="more"
-                         src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
-                </a>
-            </div>
-            <div class="design col-lg-4 col-xs-12">
-                <a href="#">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-ux-ui-icon@3x.svg' ?>"/>
-                    <h1>UX and UI Design</h1>
-                    <p>If you're looking to build a product that is available to users accross all platforms and
-                        devices, a
-                        web app is the answer.
-                    </p>
-                    <img class="more"
-                         src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
-                </a>
-            </div>
-            <div class="consultancy col-lg-4 col-xs-12">
-                <a href="#">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-marketing-icon@3x.svg' ?>"/>
-                    <h1>Digital Consultancy</h1>
-                    <p>We help companies close the gap between what consumers demand and expect digitally from
-                        businesses
-                        and what they actually experience
-                    </p>
-                    <img class="more"
-                         src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
-                </a>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row col-eq-height">
+			<?php foreach ($services as $service) { ?>
+				<div class="app col-lg-4">
+					<a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
+						<img src="<?php echo esc_url($service['service_icon']['url']); ?>"/>
+						<h1><?php echo $service['service_card_title']; ?></h1>
+						<div class="description"><?php echo $service['service_card_description']; ?></div>
+						<img class="more" src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
+					</a>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
     <div class="view-all"><a href="">VIEW ALL</a></div>
 </section>
 
 <section class="showyou">
-    <img class="img-project" src="<?php echo get_stylesheet_directory_uri() . '/img/p.jpg' ?>" alt=""/>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 project-info">
-                <a href="" class="c-btn">Recent Project</a>
-                <h5>Drawdeck / Arts and Prints</h5>
-                <h6> E-Commerce Website</h6>
-                <a class="project-link rotate" href=""></a>
-            </div>
-        </div>
-        <div class="row projects">
-            <div class="col-lg-4">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/p1.jpg' ?>" alt="">
-                <a href="#">
-                    <div class="bg-rotate">
-                        <h5>Furniture4u</h5>
-                        <h6>E-Commerce Website</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/p2.jpg' ?>" alt="">
-                <a href="">
-                    <div class="bg-rotate">
-                        <h5>Furniture4u</h5>
-                        <h6>E-Commerce Website</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/p3.jpg' ?>" alt="">
-                <a href="">
-                    <div class="bg-rotate">
-                        <h5>Furniture4u</h5>
-                        <h6>E-Commerce Website</h6>
-                    </div>
-                </a>
-            </div>
 
-        </div>
-    </div>
-    <div class="view-all"><a href="">VIEW FULL SHOWCASE</a></div>
+	<img class="img-project" src="<?php echo esc_url($superFeaturedProject['project_super_featured_background_image']['url']) ?>" alt="<?php echo $superFeaturedProject['post_title']; ?>"/>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 project-info">
+				<a href="<?php echo esc_url(home_url('projects')); ?>">Recent Project</a>
+				<h5><?php echo (!empty($superFeaturedProject['project_super_featured_title']) ? $superFeaturedProject['project_super_featured_title'] : $superFeaturedProject['post_title'] )?></h5>
+				<?php echo (!empty($superFeaturedProject['project_super_featured_subtitle']) ? '<h6>' . $superFeaturedProject['project_super_featured_subtitle'] . '</h6>' : (!empty($superFeaturedProject['project_type']['post_title']) ? '<h6>' . $superFeaturedProject['project_type']['post_title'] . '</h6>' : '') ); ?>
+				<a class="project-link rotate" href="<?php echo esc_url(get_permalink($superFeaturedProject['id'])); ?>"></a>
+			</div>
+		</div>
+
+		<div class="row projects">
+
+
+			<?php foreach ($projects as $project) {
+				$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
+				?>
+				<div class="col-lg-4">
+					<img src="<?php echo esc_url($project['project_card_image']['url']) ?>" alt="<?php echo $project['project_card_title']?>">
+					<a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
+						<div class="bg-rotate">
+							<h5><?php echo $title; ?></h5>
+							<?php if (!empty($project['project_card_sub_title'])) ?>
+							<h6><?php echo $project['project_card_sub_title']; ?></h6>
+						</div>
+					</a>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+
+	<div class="view-all"><a href="<?php esc_url(home_url('projects')); ?>">VIEW FULL SHOWCASE</a></div>
+
 </section>
 
-<section class="prefooter">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Ready to make your idea happen?</h1>
-                <p>That's the spirit! Let's make history together</p>
-                <a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
-            </div>
-        </div>
-    </div>
+<section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.jpg'); ?>">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Ready to make your idea happen?</h1>
+				<p>That's the spirit! Let's make history together</p>
+				<a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="team">
-    <div class="container">
-        <div class="row title">
-            <div class="col-lg-12">
-                <h1>TEAM</h1>
-                <p>Meet our Geeks from around the Globe.</p>
-            </div>
-        </div>
-        <!--        <div class="row department">-->
-        <!--            <div class="col-lg-12 ">-->
-        <!--                <a href="" class="active">-->
-        <!--                    <img src="-->
-        <?php //echo get_template_directory_uri() . '/img/designer-icon@3x.svg' ?><!--"/>-->
-        <!--                    10 ui. ux designers-->
-        <!--                </a>-->
-        <!--                <a href="">-->
-        <!--                    <img src="--><?php //echo get_template_directory_uri() . '/img/dev-ico.png' ?><!--"/>-->
-        <!--                    15 developers-->
-        <!--                </a>-->
-        <!--                <a href="">-->
-        <!--                    <img src="-->
-        <?php //echo get_template_directory_uri() . '/img/marketing-geeks-icon@3x.svg' ?><!--"/>-->
-        <!--                    12 marketing geeks-->
-        <!--                </a>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <div class="row members">
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-purple">
-                <img src="<?php echo get_template_directory_uri() . '/img/2.png' ?>"/>
-
-                <figcaption>
-
-                </figcaption>
-
-                <div class="member-info">
-                    <h5>Eyad</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-pink">
-                <img src="<?php echo get_template_directory_uri() . '/img/2-2.png' ?>"/>
-                <div class="member-info">
-                    <h5>Sandra</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-green">
-                <img src="<?php echo get_template_directory_uri() . '/img/1-2.png' ?>"/>
-                <div class="member-info">
-                    <h5>Mohammed</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-purple">
-                <img src="<?php echo get_template_directory_uri() . '/img/3-1.png' ?>"/>
-                <div class="member-info">
-                    <h5>Hisham</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-pink">
-                <img src="<?php echo get_template_directory_uri() . '/img/4.png' ?>"/>
-                <div class="member-info">
-                    <h5>Aghiad</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-green">
-                <img src="<?php echo get_template_directory_uri() . '/img/2-1.png' ?>"/>
-                <div class="member-info">
-                    <h5>Rana</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-purple">
-                <img src="<?php echo get_template_directory_uri() . '/img/4-1.png' ?>"/>
-                <div class="member-info">
-                    <h5>Ann</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 gradient-pink">
-                <img src="<?php echo get_template_directory_uri() . '/img/4-2.png' ?>"/>
-                <div class="member-info">
-                    <h5>Fadi</h5>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-        </div>
-        <div class="row join">
-            <div class="col-lg-12">
-                <h2>I want to create amazing things with you !</h2>
-                <a href="" class="c-rbtn">TAKE ME IN</a>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row title">
+			<div class="col-lg-12">
+				<h1><?php echo $pageOptions['home_page_team_title']; ?></h1>
+				<p><?php echo $pageOptions['home_page_team_subtitle']; ?></p>
+			</div>
+		</div>
+		<div class="row members">
+			<?php
+			$hoverCount = 0;
+			foreach ($team as $teamMember) {
+				$hover = ['gradient-purple','gradient-pink','gradient-green'];
+				?>
+				<div class="col-lg-3 <?php echo $hover[$hoverCount];?> ">
+					<img src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"/>
+					<div class="member-info">
+						<h5><?php echo $teamMember['post_title']; ?></h5>
+						<h6><?php echo $teamMember['team_member_position']['post_title']; ?></h6>
+					</div>
+				</div>
+			<?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++ ); } ?>
+		</div>
+	</div>
 </section>
 
 <section class="contact col-eq-height">
-    <div class="col-lg-6">
-        <div id="map">
-
-        </div>
-        <div class="address">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h6>DUBAI</h6>
-                        <div class="details">
-                            <p class="address-details">Office 523. Building 8 <br>
-                                Dubai Media City
-                            </p>
-                            <p class="mob">+971 4 4438279</p>
-                            <p class="phone">+971 55 8826003</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="" class="c-rbtn" >take me there</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="form">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>say hello!</h1>
-                        <form method="post" action="">
-                            <div class="form-group place-lbl">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
-<!--                                <label for="name">Name</label>-->
-                            </div>
-                            <div class="form-group place-lbl">
-                                <input type="email" class="form-control" id="email" placeholder="E-mail">
-<!--                                <label for="email">E-mail</label>-->
-                            </div>
-                            <div class="form-group note">
-                                <label for="note">What we need to know?</label>
-                                <input type="text" class="form-control" id="note">
-                            </div>
-                            <button type="submit" class="c-btn">GET IN TOUCH</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <img src="<?php echo get_template_directory_uri().'/img/CA-full-logo.png'?>">
-            <p>© 2008-2017 CloudAppers. All Rights Reserved</p>
-        </div>
-    </div>
+	<div class="col-lg-6">
+		<div id="map"></div>
+		<div class="address">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6">
+						<h6>DUBAI</h6>
+						<div class="details">
+							<p class="address-details">Office 523. Building 8 <br>
+								Dubai Media City
+							</p>
+							<p class="mob">+971 4 4438279</p>
+							<p class="phone">+971 55 8826003</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<a href="3">take me there</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="form">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>say hello!</h1>
+						<form method="post" action="">
+							<div class="form-group place-lbl">
+								<input type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="form-group place-lbl">
+								<input type="email" class="form-control" id="email" placeholder="E-mail">
+							</div>
+							<div class="form-group note">
+								<label for="note">What we need to know?</label>
+								<input type="text" class="form-control" id="note">
+							</div>
+							<button type="submit" class="c-btn">GET IN TOUCH</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+			<p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+		</div>
+	</div>
 </section>
 
 <!--Google map-->
 <script>
-    function initMap() {
-        var url = {lat: 25.229481, lng: 55.310456};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 5,
-            center: url,
-            disableDefaultUI: true
-        });
-        var marker = new google.maps.Marker({
-            position: url,
-            map: map
-        });
-    }
+	function initMap() {
+
+		var customMapType = new google.maps.StyledMapType([
+			{
+				"featureType": "landscape.natural",
+				"elementType": "geometry.fill",
+				"stylers": [
+					{
+						"visibility": "on"
+					},
+					{
+						"color": "#e0efef"
+					}
+				]
+			},
+			{
+				"featureType": "poi",
+				"elementType": "geometry.fill",
+				"stylers": [
+					{
+						"visibility": "on"
+					},
+					{
+						"hue": "#1900ff"
+					},
+					{
+						"color": "#c0e8e8"
+					}
+				]
+			},
+			{
+				"featureType": "road",
+				"elementType": "geometry",
+				"stylers": [
+					{
+						"lightness": 100
+					},
+					{
+						"visibility": "simplified"
+					}
+				]
+			},
+			{
+				"featureType": "road",
+				"elementType": "labels",
+				"stylers": [
+					{
+						"visibility": "off"
+					}
+				]
+			},
+			{
+				"featureType": "transit.line",
+				"elementType": "geometry",
+				"stylers": [
+					{
+						"visibility": "on"
+					},
+					{
+						"lightness": 700
+					}
+				]
+			},
+			{
+				"featureType": "water",
+				"elementType": "all",
+				"stylers": [
+					{
+						"color": "#7dcdcd"
+					}
+				]
+			}
+		], {
+			name: 'Cloudappers'
+		});
+
+		var customMapTypeId = 'custom_style';
+		var mapDiv = document.getElementById('map');
+		var image = {
+			url: "<?php echo esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']); ?>",
+			scaledSize: new google.maps.Size(27, 39), // scaled size)
+		};
+		var url = {lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>, lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>};
+		var map = new google.maps.Map(mapDiv, {
+			center: {
+				lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
+				lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
+			},
+			zoom: 13,
+			scrollwheel: false,
+			mapTypeControlOptions: {
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+			}
+		});
+
+		map.mapTypes.set(customMapTypeId, customMapType);
+		map.setMapTypeId(customMapTypeId);
+
+		var marker = new google.maps.Marker({
+			position: url,
+			map: map,
+			icon: image,
+			title: '',
+			animation: google.maps.Animation.DROP,
+		});
+	}
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap">
-</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap"></script>
 
 <?php get_footer(); ?>
 

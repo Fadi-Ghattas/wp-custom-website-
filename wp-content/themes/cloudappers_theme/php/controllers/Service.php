@@ -39,6 +39,12 @@ class Service
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, service_is_featured.meta_value DESC'];
 
+		if (isset($data['page'])) {
+			if ($data['page'] == 'home') {
+				$filters = ['limit' => intval($data['limit']), 'page' => 1, 'where' => 'service_is_featured.meta_value = 1', 'order_by' => 't.menu_order, t.post_date, service_is_featured.meta_value DESC'];
+			}
+		}
+
 		$services = ServiceModel::search( (new ServiceModel)->pod_name, $fields, $filters);
 
 		return $services;

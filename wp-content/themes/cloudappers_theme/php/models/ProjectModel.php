@@ -37,4 +37,37 @@ class ProjectModel extends PodsModel
 
 		return $projectShowCases;
 	}
+
+	public static function getSuperFeaturedProject() {
+
+		$fields = [
+			'id',
+			'post_title',
+			[
+				'acf' => 1,
+				'name' => 'project_super_featured_background_image',
+			],
+			[
+				'acf' => 1,
+				'name' => 'project_super_featured_title',
+			],
+			[
+				'acf' => 1,
+				'name' => 'project_super_featured_subtitle',
+			],
+			[
+				'acf' => 1,
+				'name' => 'project_type',
+				'type' => 'project_type',
+				'relationship' => 1,
+				'fields' => [
+					'post_title',
+				],
+			],
+		];
+
+		$filters = ['limit' => 1, 'page' => 1, 'where' => 'project_is_super_featured.meta_value = 1', 'order_by' => 't.menu_order, t.post_date, project_is_super_featured.meta_value DESC'];
+
+		return ProjectModel::search((new ProjectModel())->pod_name, $fields, $filters)[0];
+	}
 }

@@ -434,6 +434,7 @@ section.ca-page-header {
     height: 100%;
     flex-direction: column;
     justify-content: center;
+    /*background-color: #a4b9f0;*/
 }
 
 section.ca-page-header .container {
@@ -874,23 +875,18 @@ header, nav, header img {
     text-align: center;
 }
 
-.home .clients .client-row a:first-child {
-    margin-left: 0;
-}
 
-.home .clients .client-row a:last-child {
-    margin-right: 0;
-}
+
 
 .home .clients .container {
     padding: 60px 0;
 }
 
 .home .clients .item {
-    width: 100px;
+    width: 10%;
     height: 70px;
     display: inline-block;
-    margin: 0 36px;
+    margin: 0 23px;
 }
 
 .home .clients .view-all {
@@ -929,7 +925,8 @@ header, nav, header img {
 }
 
 .home .what-we-do img {
-    width: 70px;
+    /*width: 70px;*/
+    height: 54px;
 }
 
 .home .what-we-do .row > div:first-child {
