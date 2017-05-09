@@ -239,7 +239,7 @@ get_template_part('template-part', 'topnav');
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<a href="<?php echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll='. $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] .','. $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] .'&z=13'); ?>">take me there</a>
+						<a class="c-rbtn" href="<?php echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll='. $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] .','. $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] .'&z=13'); ?>">take me there</a>
 					</div>
 				</div>
 			</div>
