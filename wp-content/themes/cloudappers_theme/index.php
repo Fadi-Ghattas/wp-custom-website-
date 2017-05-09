@@ -357,7 +357,7 @@ get_template_part('template-part', 'topnav');
 				lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
 				lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
 			},
-			zoom: 15,
+			zoom: 13,
 			scrollwheel: false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
