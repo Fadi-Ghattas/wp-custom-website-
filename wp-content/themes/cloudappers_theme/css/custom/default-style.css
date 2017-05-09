@@ -340,16 +340,14 @@ header, nav, header img {
     text-align: center;
 }
 
-.home .clients .container {
-    padding: 60px 0;
-}
-
 .home .clients .item {
-    width: 117px;
     height: 117px;
     display: inline-block;
-    margin: 0 23px;
-    position: relative;
+}
+
+.home .clients .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .home .clients .item img {
@@ -380,7 +378,7 @@ header, nav, header img {
 }
 
 .home .what-we-do .row > div {
-    min-height: 385px;
+    /*min-height: 385px;*/
     padding: 0
 }
 
@@ -388,7 +386,7 @@ header, nav, header img {
     padding: 33px 15px 15px 33px;
     display: block;
     color: black;
-    min-height: 380px;
+    /*min-height: 380px;*/
     height: 100%;
 }
 
@@ -1182,13 +1180,30 @@ section.some-of-show-cases .overlay h6 {
     text-align: center;
 }
 
-
 /*Mobile layout*/
 
 .logo-mob {
     width: 65px;
     display: inline-block;
     margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    /*General*/
+    .col-eq-height {
+        display: table;
+    }
+
+    .col-eq-height [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1202,17 +1217,14 @@ section.some-of-show-cases .overlay h6 {
         height: auto;
     }
 
-    /*General*/
-    .col-eq-height {
-        display: table;
+    .home .clients .item {
+        width: 117px;
+        height: 117px;
+        display: inline-block;
+        margin: 0 23px;
+        position: relative;
     }
 
-    .col-eq-height [class*="col-"] {
-        float: none;
-        display: table-cell;
-        vertical-align: top;
-        height: 100%;
-    }
 }
 
 /*md*/
@@ -1367,6 +1379,23 @@ section.some-of-show-cases .overlay h6 {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home .what-we-do .row > div {
+        text-align: center;
+    }
+
+    .home .clients .item{
+        border: 1px solid rgb(239, 239, 239);
+    }
+
+    .home .clients .container
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+
     }
 }
 
