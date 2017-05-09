@@ -146,7 +146,7 @@ get_template_part('template-part', 'topnav');
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 project-info">
-				<a href="<?php echo esc_url(home_url('projects')); ?>">Recent Project</a>
+				<a class="c-btn" href="<?php echo esc_url(home_url('projects')); ?>">Recent Project</a>
 				<h5><?php echo (!empty($superFeaturedProject['project_super_featured_title']) ? $superFeaturedProject['project_super_featured_title'] : $superFeaturedProject['post_title'] )?></h5>
 				<?php echo (!empty($superFeaturedProject['project_super_featured_subtitle']) ? '<h6>' . $superFeaturedProject['project_super_featured_subtitle'] . '</h6>' : (!empty($superFeaturedProject['project_type']['post_title']) ? '<h6>' . $superFeaturedProject['project_type']['post_title'] . '</h6>' : '') ); ?>
 				<a class="project-link rotate" href="<?php echo esc_url(get_permalink($superFeaturedProject['id'])); ?>"></a>
@@ -238,7 +238,7 @@ get_template_part('template-part', 'topnav');
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<a href="3">take me there</a>
+						<a class="c-rbtn" href="">take me there</a>
 					</div>
 				</div>
 			</div>
