@@ -136,6 +136,7 @@ get_template_part('template-part', 'topnav');
 			<?php } ?>
 		</div>
 	</div>
+	<div class="view-all"><a href="">VIEW ALL</a></div>
 </section>
 
 <section class="showyou">
@@ -210,6 +211,12 @@ get_template_part('template-part', 'topnav');
 					</div>
 				</div>
 			<?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++ ); } ?>
+		</div>
+		<div class="row join">
+			<div class="col-lg-12">
+				<h2>I want to create amazing things with you !</h2>
+				<a href="" class="c-rbtn">TAKE ME IN</a>
+			</div>
 		</div>
 	</div>
 </section>
