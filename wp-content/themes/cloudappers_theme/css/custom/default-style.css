@@ -242,12 +242,12 @@ header, nav, header img {
 
 .home .slide-desc {
     position: absolute;
-    top: 60%;
-    bottom: 0;
+    top: 0;
+    bottom: 50%;
     right: 0;
     left: 0;
     color: white;
-    transform: translate(0, -60%);
+    transform: translate(0, 50%);
 }
 
 .home .slide {
