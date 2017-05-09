@@ -225,7 +225,7 @@ get_template_part('template-part', 'topnav');
 </section>
 
 <section class="contact col-eq-height">
-	<div class="col-lg-6">
+	<div class="map col-lg-6">
 		<div id="map"></div>
 		<div class="address">
 			<div class="container-fluid">
@@ -268,11 +268,11 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<div class="copyright">
-			<img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
-			<p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
-		</div>
 	</div>
+    <div class="copyright">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+        <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+    </div>
 </section>
 
 <!--Google map-->
