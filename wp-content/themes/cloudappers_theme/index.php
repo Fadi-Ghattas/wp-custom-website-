@@ -144,7 +144,7 @@
 <section class="what-we-do">
     <div class="container">
         <div class="row col-eq-height">
-            <div class="app col-lg-4">
+            <div class="app col-lg-4 app col-xs-12">
                 <a href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-nativeapp-icon@3x.svg' ?>"/>
                     <h1>Native App Design & Development</h1>
@@ -156,7 +156,7 @@
                          src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
                 </a>
             </div>
-            <div class="design col-lg-4">
+            <div class="design col-lg-4 col-xs-12">
                 <a href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-ux-ui-icon@3x.svg' ?>"/>
                     <h1>UX and UI Design</h1>
@@ -168,7 +168,7 @@
                          src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?> "/>
                 </a>
             </div>
-            <div class="consultancy col-lg-4">
+            <div class="consultancy col-lg-4 col-xs-12">
                 <a href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/img/service-marketing-icon@3x.svg' ?>"/>
                     <h1>Digital Consultancy</h1>
