@@ -25,5 +25,13 @@ require_once("$dirName/controllers/Service.php");
 require_once("$dirName/views/ServiceView.php");
 
 require_once("$dirName/models/ProjectModel.php");
-//require_once("$dirName/controllers/Service.php");
-//require_once("$dirName/views/ServiceView.php");
+require_once("$dirName/controllers/Project.php");
+require_once("$dirName/views/ProjectView.php");
+
+require_once("$dirName/models/ClientModel.php");
+require_once("$dirName/controllers/Client.php");
+require_once("$dirName/views/ClientView.php");
+
+require_once("$dirName/models/TeamModel.php");
+require_once("$dirName/controllers/Team.php");
+require_once("$dirName/views/TeamVIew.php");

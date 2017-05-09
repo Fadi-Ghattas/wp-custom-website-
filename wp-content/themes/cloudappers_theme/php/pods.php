@@ -106,14 +106,14 @@ function get_sql_query($sql_query, $output = OBJECT)
 function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => ''])
 {
 	$data = [];
-	$pods = find_pod($pod_name, $pods_filters['limit'], $pods_filters['page'], $pods_filters['where'], '' ,$pods_filters['order_by']);
+	$pods = find_pod($pod_name, $pods_filters['limit'], $pods_filters['page'], $pods_filters['where'], '', $pods_filters['order_by']);
 	//$data['sql'] = $pods->sql;
 	while ($pods->fetch()) {
 		$pod = [];
 		foreach ($pod_fields as $field) {
 			if (is_array($field)) {
 				if (isset($field['image'])) {
-					if(isset($field['size']) && $field['size'] == 'post_thumbnail')
+					if (isset($field['size']) && $field['size'] == 'post_thumbnail')
 						$pod[$field['name']] = get_the_post_thumbnail_url($pods->raw('id'), 'post_thumbnail');
 					else if (isset($field['size']))
 						$pod[$field['name']] = get_pod_image_url($pods->raw($field['name']), $field['size']);
@@ -124,7 +124,7 @@ function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'p
 						$pod[$field['name']] = get_pod_image_url($pods->raw($field['name']), $field['size']);
 					else
 						$pod[$field['name']] = get_pod_image_url($pods->raw($field['name']), NULL);
-				} else if (isset($field['relationship'])) { //TODO fix the multi relationships add foreach
+				} else if (isset($field['relationship']) && !isset($field['acf'])) { //TODO fix the multi relationships add foreach
 					$pod[$field['relationship']['pod']] = get_pod_data($field['relationship']['pod'],
 						$field['relationship']['pod_fields'],
 						['limit' => -1,
@@ -132,12 +132,31 @@ function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'p
 							'where_query' => $field['relationship']['related_field_name'] . '.ID = ' . $pods->raw('id'),
 							'order_by' => '',
 						]);
-				} else if(isset($field['acf'])) {
-					$pod[$field['name']] = get_field($field['name'], $pods->raw('id'));
+				} else if (isset($field['acf'])) {
+
+					if (isset($field['relationship'])) {
+						$relationshipPosts = get_field($field['name'], $pods->raw('id'));
+						$singlePod[$field['name']] = [];
+						if (!empty($relationshipPosts)) {
+							//single relationship
+							if (intval($relationshipPosts)) {
+								if (is_object($relationshipPosts))
+									$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts->ID, $field['fields']);
+								else if (is_array($relationshipPosts))
+									$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts[0]->ID, $field['fields']);
+							} else { //multiple relationship
+								foreach ($relationshipPosts as $relationshipPost) {
+									$pod[$field['name']][] = get_single_pod_data($relationshipPost->post_type, $relationshipPost->ID, $field['fields']);
+								}
+							}
+						}
+					} else {
+						$pod[$field['name']] = get_field($field['name'], $pods->raw('id'));
+					}
+
 				} else if ($field['acf_image']) {
 					$pod[$field['name']] = isset($field['size']) ? get_acf_image($field['name'], $pods->raw('id'), $field['size']) : get_acf_image($field['name'], $pods->raw('id'));
-				}
-				else {
+				} else {
 					$pod[$field['name']] = $pods->$field['type']($field['name']);
 				}
 			} else {
@@ -183,25 +202,24 @@ function get_single_pod_data($pod_name, $pod_id, $pod_fields)
 				$singlePod[$field['name']] = isset($field['size']) ? get_acf_images_gallery($field['name'], $pod->raw('id'), $field['size']) : get_acf_images_gallery($field['name'], $pod->raw('id'));
 			} else if ($field['acf_image']) {
 				$singlePod[$field['name']] = isset($field['size']) ? get_acf_image($field['name'], $pod->raw('id'), $field['size']) : get_acf_image($field['name'], $pod->raw('id'));
-			} else if(isset($field['acf']))
-			{
-				if(isset($field['relationship'])) {
+			} else if (isset($field['acf'])) {
+				if (isset($field['relationship'])) {
 					$relationshipPosts = get_field($field['name'], $pod_id);
 					$singlePod[$field['name']] = [];
-					if(!empty($relationshipPosts))
-					{
+					if (!empty($relationshipPosts)) {
 						//single relationship
-						if(intval($relationshipPosts))
-						{
-							$singlePod[$field['name']][] = get_single_pod_data($field['type'], $relationshipPosts, $field['fields']);
+						if (intval($relationshipPosts)) {
+							if (is_object($relationshipPosts))
+								$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts->ID, $field['fields']);
+							else if (is_array($relationshipPosts))
+								$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts[0]->ID, $field['fields']);
 						} else { //multiple relationship
 							foreach ($relationshipPosts as $relationshipPost) {
 								$singlePod[$field['name']][] = get_single_pod_data($relationshipPost->post_type, $relationshipPost->ID, $field['fields']);
 							}
 						}
 					}
-				}
-				else {
+				} else {
 					$singlePod[$field['name']] = get_field($field['name'], $pod_id);
 				}
 			}
@@ -256,9 +274,8 @@ function wp_update($tableName, $data, $where)
 
 function acf_save($post_id, $acf_meta)
 {
-	foreach ($acf_meta as $metaIndex => $metaValue)
-	{
-		if(!update_field($metaIndex, $metaValue, $post_id))
+	foreach ($acf_meta as $metaIndex => $metaValue) {
+		if (!update_field($metaIndex, $metaValue, $post_id))
 			return FALSE;
 	}
 	return TRUE;

@@ -8,5 +8,5 @@
  */
 class ClientModel extends PodsModel
 {
-
+	public $pod_name = 'client';
 }
