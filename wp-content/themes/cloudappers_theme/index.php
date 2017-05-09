@@ -3,6 +3,9 @@
 $homePagePost = get_page_by_path('home', OBJECT, 'page' );
 $pageOptions = acf_get_group_fields($homePagePost->ID);
 
+$setting= get_page_by_path('cloudappers-setting', OBJECT, 'page' );
+$setting = acf_get_group_fields($homePagePost->ID);
+
 $sliderFields = [
 	[
 		'acf' => 1,
@@ -181,8 +184,8 @@ get_template_part('template-part', 'topnav');
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1>Ready to make your idea happen?</h1>
-				<p>That's the spirit! Let's make history together</p>
+				<h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
+				<p><?php echo $setting['settings_pre_footer_subtitle'] ;?></p>
 				<a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
 			</div>
 		</div>
@@ -228,17 +231,15 @@ get_template_part('template-part', 'topnav');
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-6">
-						<h6>DUBAI</h6>
+						<h6><?php echo $setting['settings_address_title'];?></h6>
 						<div class="details">
-							<p class="address-details">Office 523. Building 8 <br>
-								Dubai Media City
-							</p>
-							<p class="mob">+971 4 4438279</p>
-							<p class="phone">+971 55 8826003</p>
+							<p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
+							<p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
+							<p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<a class="c-rbtn" href="">take me there</a>
+						<a class="c-rbtn" href="<?php echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll='. $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] .','. $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] .'&z=13'); ?>">take me there</a>
 					</div>
 				</div>
 			</div>
