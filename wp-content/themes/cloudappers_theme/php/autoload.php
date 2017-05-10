@@ -35,3 +35,6 @@ require_once("$dirName/views/ClientView.php");
 require_once("$dirName/models/TeamModel.php");
 require_once("$dirName/controllers/Team.php");
 require_once("$dirName/views/TeamVIew.php");
+
+
+require_once("$dirName/models/CVModel.php");

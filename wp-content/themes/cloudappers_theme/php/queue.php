@@ -26,7 +26,7 @@ function project_scripts()
 		wp_enqueue_style('bootstrap-fileinput-css', get_template_directory_uri() . '/css/bootstrap/bootstrap-fileinput/css/fileinput.min.css', [], '1');
 	}
 
-	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '1.10');
+	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '1.12');
 
 	//JQUERY
 	wp_enqueue_script('jquery-min', get_template_directory_uri() . '/js/jquery/jquery-2.2.2.min.js', [], '2.2.2', FALSE);
@@ -47,7 +47,10 @@ function project_scripts()
 	wp_enqueue_script('ajax_js', get_template_directory_uri() . '/js/custom/ajax.js', ['jquery-min'], '1.2', TRUE);
 	wp_enqueue_script('theme_js', get_template_directory_uri() . '/js/custom/theme.js', ['jquery-min'], '1.2', TRUE);
 
-	wp_localize_script('theme_js', 'script_const', ['ajaxurl' => admin_url('admin-ajax.php')]);
+	wp_localize_script('theme_js', 'script_const', [
+		'ajaxurl' => admin_url('admin-ajax.php'),
+		'ReCaptcha_SiteKey' => '6LdqzCAUAAAAADJJyW_TCrlAdCSGlxqWkZBoU4P9'
+	]);
 }
 
 add_action('wp_enqueue_scripts', 'project_scripts');
