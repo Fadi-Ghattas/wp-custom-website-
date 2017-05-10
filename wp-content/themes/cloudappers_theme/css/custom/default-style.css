@@ -127,12 +127,6 @@ section.ca-page-banner p {
 }
 
 /*Header*/
-.top-header.small .navbar-inverse {
-    padding-top: 0;
-    margin-bottom: 0;
-}
-
-
 
 header, nav, header img {
     transition: all 1s;
@@ -1139,6 +1133,12 @@ section.some-of-show-cases .overlay h6 {
 }
 
 @media (min-width: 768px) {
+    /*Header*/
+    .top-header.small .navbar-inverse {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
     .home .what-we-do .row > div > a {
         padding: 33px 15px 15px 33px;
     }
@@ -1391,6 +1391,7 @@ section.some-of-show-cases .overlay h6 {
 
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
         border-color: transparent;
+        box-shadow: none;
     }
 
     .navbar-toggle {
@@ -1408,9 +1409,16 @@ section.some-of-show-cases .overlay h6 {
         display: inline-block;
     }
 
-    .top-header {
-        background: transparent;
-        box-shadow: none;
+    .navbar-nav {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: right;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+        font-size: 8.6vw;
     }
 
     /*Services*/
@@ -1462,6 +1470,52 @@ section.some-of-show-cases .overlay h6 {
 }
 
 @media (max-width: 767px) {
+    /*Menu*/
+    .top-header {
+        box-shadow: none;
+        background-color: rgb(81, 193, 231);
+        opacity: 0.902;
+        transition: 0.5s;
+    }
+
+    .top-header.opened {
+        background-color: rgb(25, 25, 25);
+        transition: 0.5s;
+    }
+
+    .navbar-nav {
+        padding-right: 30px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 8.6vw;
+        padding-top: 24px;
+        padding-bottom: 35px;
+    }
+
+    #menu-main-menu li:last-child {
+        display: none;
+    }
+
+    #menu-main-menu li:before {
+        content: '';
+        display: block;
+        background-image: -moz-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+        width: 118px;
+        height: 6px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .navbar-collapse.in {
+        overflow: visible;
+    }
+
+
+
+    /*Home*/
     .home .what-we-do .row > div {
         text-align: center;
     }

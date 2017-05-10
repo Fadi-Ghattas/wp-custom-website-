@@ -58,12 +58,16 @@ jQuery(function ($) {
     });
 
 
-	//Menu
-
+	//Menu button effect
     document.querySelector( "#nav-toggle" )
         .addEventListener( "click", function() {
             this.classList.toggle( "active" );
         });
+
+   //Change Menu background
+    $('#nav-toggle').on('click', function(){
+        $(".top-header").toggleClass("opened");
+    });
 
 
 });
