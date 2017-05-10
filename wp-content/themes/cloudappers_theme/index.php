@@ -151,7 +151,7 @@ get_template_part('template-part', 'topnav');
 </section>
 
 <section class="showyou">
-    <h1 class="bg-showyou hidden-lg hidden-md">show you</h1>
+    <div class="bg-showyou hidden-lg hidden-md"></div>
     <h3 class="mob-title  hidden-lg hidden-md">show you</h3>
     <img class="img-project"
          src="<?php echo esc_url($superFeaturedProject['project_super_featured_background_image']['url']) ?>"
@@ -173,7 +173,7 @@ get_template_part('template-part', 'topnav');
 			<?php foreach ($projects as $project) {
 				$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
 				?>
-				<div class="col-lg-4 zoom-effect">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 zoom-effect">
 					<section class="">
 						<figure>
 							<div class="lazy-loader-effect"></div>
