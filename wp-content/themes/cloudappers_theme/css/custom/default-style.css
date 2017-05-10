@@ -288,7 +288,7 @@ header, nav, header img {
     max-width: 390px;
     width: 100%;
     height: auto;
-    padding: 15px 0 0;
+    padding: 15px 15px 0;
     font-size: 22px;
     font-weight: 500;
     line-height: 22px;
@@ -1599,9 +1599,9 @@ section.some-of-show-cases .overlay h6 {
     }
 
     #menu-main-menu li:nth-child(even):before {
-        background-image: -moz-linear-gradient( 0deg, rgb(171,194,245) 0%, rgb(78,193,234) 100%);
-        background-image: -webkit-linear-gradient( 0deg, rgb(171,194,245) 0%, rgb(78,193,234) 100%);
-        background-image: -ms-linear-gradient( 0deg, rgb(171,194,245) 0%, rgb(78,193,234) 100%);
+        background-image: -moz-linear-gradient(0deg, rgb(171, 194, 245) 0%, rgb(78, 193, 234) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(171, 194, 245) 0%, rgb(78, 193, 234) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(171, 194, 245) 0%, rgb(78, 193, 234) 100%);
     }
 
     .navbar-collapse.in {
@@ -1650,6 +1650,64 @@ section.some-of-show-cases .overlay h6 {
         padding-left: 0;
         padding-bottom: 0;
         bottom: auto;
+    }
+
+    .home .slid-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home .slide-desc h1 {
+        font-size: 15vw;
+    }
+
+    .home .slide-desc {
+        transform: none;
+        top: 235px;
+        bottom: 0;
+    }
+
+    .home .showyou {
+        border-top: 2px solid rgb(239, 239, 239);
+        padding-top: 137px;
+        position: relative;
+    }
+
+    .home .showyou .img-project,
+    .home .showyou .project-info {
+        display: none;
+    }
+
+    .home .showyou .container {
+        margin-top: 48px;
+    }
+
+    .home .showyou .mob-title {
+        text-align: center;
+        font-size: 74px;
+        color: rgb(81, 81, 81);
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 10;
+        position: absolute;
+        top: 135px;
+        right: 0;
+        left: 0;
+        letter-spacing: 7.4px;
+    }
+
+    .home .showyou .bg-showyou {
+        font-size: 71px;
+        color: rgba(255, 255, 255, 0.451);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 0px 28px 37.6px rgba(0, 0, 0, 0.2);
+        -moz-transform: matrix(4.23134757132817, 0, 0, 4.23134757132816, 0, 0);
+        -webkit-transform: matrix(4.23134757132817, 0, 0, 4.23134757132816, 0, 0);
+        -ms-transform: matrix(4.23134757132817, 0, 0, 4.23134757132816, 0, 0);
+        margin: 0;
+        letter-spacing: 7.4px;
     }
 
 }
