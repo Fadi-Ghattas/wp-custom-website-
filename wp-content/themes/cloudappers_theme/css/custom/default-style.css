@@ -132,32 +132,7 @@ section.ca-page-banner p {
     margin-bottom: 0;
 }
 
-.top-header.small img {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s;
-}
 
-.top-header.small img.img-float {
-    visibility: visible;
-    width: 58px;
-    right: 100%;
-    left: 0;
-    top: 3px;
-    opacity: 1;
-    transition: all 1s;
-}
-
-.img-float {
-    visibility: hidden;
-    opacity: 0;
-    width: 42px;
-    position: absolute;
-    right: 0;
-    left: 86%;
-    top: -3px;
-    transition: all 1s;
-}
 
 header, nav, header img {
     transition: all 1s;
@@ -679,7 +654,7 @@ header, nav, header img {
 
 .home .team .members > div {
     padding: 0;
-    height: 280px;
+    /*height: 280px;*/
     overflow: hidden;
 }
 
@@ -1211,6 +1186,33 @@ section.some-of-show-cases .overlay h6 {
 
 @media (min-width: 1200px) {
 
+    .top-header.small img {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .top-header.small img.img-float {
+        visibility: visible;
+        width: 58px;
+        right: 100%;
+        left: 0;
+        top: 3px;
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .img-float {
+        visibility: hidden;
+        opacity: 0;
+        width: 42px;
+        position: absolute;
+        right: 0;
+        left: 86%;
+        top: -3px;
+        transition: all 1s;
+    }
+
     .top-header {
         background-color: rgb(255, 255, 255);
     }
@@ -1242,7 +1244,6 @@ section.some-of-show-cases .overlay h6 {
 
 }
 
-/*md*/
 @media (min-width: 768px) and (max-width: 1200px) {
 
     .page-template-services section.services .service-item.col-md-left {
@@ -1324,7 +1325,6 @@ section.some-of-show-cases .overlay h6 {
 
 }
 
-/*sm*/
 @media (min-width: 768px) and (max-width: 992px) {
     /*.container{background: yellow; z-index: 5}*/
     section.services .service-item {
@@ -1374,7 +1374,6 @@ section.some-of-show-cases .overlay h6 {
 
 }
 
-/*xs*/
 @media (max-width: 768px) {
 
     /*Menu*/
@@ -1411,6 +1410,7 @@ section.some-of-show-cases .overlay h6 {
 
     .top-header {
         background: transparent;
+        box-shadow: none;
     }
 
     /*Services*/
@@ -1499,7 +1499,7 @@ section.some-of-show-cases .overlay h6 {
         padding-top: 67px;
     }
 
-    .home .contact .copyright{
+    .home .contact .copyright {
         padding-left: 0;
         padding-bottom: 0;
         bottom: auto;
@@ -1507,8 +1507,6 @@ section.some-of-show-cases .overlay h6 {
 
 }
 
-/*xs*/
-/* Extra Small Devices, Phones */
 @media (max-width: 480px) {
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-banner p {
@@ -1517,8 +1515,6 @@ section.some-of-show-cases .overlay h6 {
     }
 }
 
-/*xs*/
-/* Custom, iPhone Retina */
 @media (max-width: 320px) {
     /*.container{background: orange; z-index: 5}*/
 }
