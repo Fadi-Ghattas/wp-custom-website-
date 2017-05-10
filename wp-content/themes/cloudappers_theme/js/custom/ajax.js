@@ -17,6 +17,16 @@ jQuery(function ($)
 			invalid: 'glyphicon glyphicon-remove',
 			validating: 'glyphicon glyphicon-refresh'
 		},
+		addOns: {
+			icon: false,
+			reCaptcha2: {
+				element: 'JobCaptcha',
+				theme: 'light',
+				siteKey: script_const.ReCaptcha_SiteKey,
+				timeout: 1800,
+				message: 'The captcha is required'
+			}
+		},
 		fields: {
 			'full_name': {
 				icon: false,

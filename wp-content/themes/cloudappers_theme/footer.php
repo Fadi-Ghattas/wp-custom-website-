@@ -72,6 +72,10 @@
 							<textarea class="form-control" id="cv_info_one" name="cv_info_one">What do you do when you’re not working?</textarea>
 						</div>
 
+						<div class="form-group col-lg-12 captcha-container">
+							<div id="JobCaptcha"></div>
+						</div>
+
 						<div class="form-group col-lg-12">
 								<button class="btn btn-success" type="submit">Good Button</button>
 						</div>
