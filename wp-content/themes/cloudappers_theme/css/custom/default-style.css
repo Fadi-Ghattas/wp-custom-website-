@@ -1127,13 +1127,81 @@ section.some-of-show-cases .overlay h6 {
 /*Mobile layout*/
 
 .logo-mob {
-    width: 65px;
+    width: 119px;
     display: inline-block;
     margin-left: 20px;
+    margin-top: 12px;
+}
+
+.top-header .nav-social {
+    display: none;
+    background: white;
+    margin: 0 -15px;
+    text-align: center;
+    background: url("../../img/menu-bg.png") no-repeat top right;
+    background-size: cover;
+    height: 511px;
+    padding: 145px 15px 15px;
+}
+
+.top-header .nav-social .copyright img {
+    width: 100%;
+    max-width: 560px;
+}
+
+.top-header .nav-social .copyright p {
+    font-size: 24px;
+    color: rgb(187, 187, 187);
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.top-header .social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    width: 100%;
+    border-top: 1px solid rgb(206, 206, 206);
+}
+
+.top-header .social a {
+    width: calc(100% / 3);
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+
+.top-header .facebook {
+    background: url("../../img/f.png") no-repeat center;
+}
+
+.top-header .twitter {
+    background: url("../../img/t.png") no-repeat center;
+    border-right: 1px solid rgb(206, 206, 206);
+    border-left: 1px solid rgb(206, 206, 206);
+}
+
+.top-header .instagram {
+    background: url("../../img/i.png") no-repeat center;
+}
+
+.skew {
+    width: 100%;
+    height: 517px;
+    background: white;
+    transform: skew(0deg, 10deg);
+    -ms-transform: skew(0deg, 10deg);
+    -webkit-transform: skew(0deg, -10deg);
 }
 
 @media (min-width: 768px) {
     /*Header*/
+    .navbar-inverse .nav-social {
+        display: none;
+    }
+
     .top-header.small .navbar-inverse {
         padding-top: 0;
         margin-bottom: 0;
@@ -1377,6 +1445,10 @@ section.some-of-show-cases .overlay h6 {
 @media (max-width: 768px) {
 
     /*Menu*/
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background: transparent;
     }
@@ -1387,6 +1459,12 @@ section.some-of-show-cases .overlay h6 {
         position: relative;
         width: 66px;
         height: 49px;
+        margin-top: 27px;
+
+    }
+
+    .navbar-inverse .navbar-toggle.active {
+        margin-top: 22px;
     }
 
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -1414,11 +1492,6 @@ section.some-of-show-cases .overlay h6 {
         width: 100%;
         margin: 0;
         text-align: right;
-    }
-
-    .navbar-inverse .navbar-nav > li > a {
-        color: white;
-        font-size: 8.6vw;
     }
 
     /*Services*/
@@ -1476,21 +1549,33 @@ section.some-of-show-cases .overlay h6 {
         background-color: rgb(81, 193, 231);
         opacity: 0.902;
         transition: 0.5s;
+        position: absolute;
     }
 
     .top-header.opened {
-        background-color: rgb(25, 25, 25);
+        background-color: rgba(25, 25, 25, 0.9);
+        opacity: 1;
         transition: 0.5s;
+    }
+
+    .top-header.opened .nav-social {
+        display: block;
     }
 
     .navbar-nav {
         padding-right: 30px;
+        padding-top: 140px;
+    }
+
+    .navbar-inverse {
+        margin-bottom: 0;
     }
 
     .navbar-inverse .navbar-nav > li > a {
         font-size: 8.6vw;
         padding-top: 24px;
         padding-bottom: 35px;
+        color: white;
     }
 
     #menu-main-menu li:last-child {
@@ -1500,20 +1585,28 @@ section.some-of-show-cases .overlay h6 {
     #menu-main-menu li:before {
         content: '';
         display: block;
-        background-image: -moz-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
-        background-image: -webkit-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
-        background-image: -ms-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+
         width: 118px;
         height: 6px;
         display: inline-block;
         margin-right: 20px;
     }
 
+    #menu-main-menu li:nth-child(odd):before {
+        background-image: -moz-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);
+    }
+
+    #menu-main-menu li:nth-child(even):before {
+        background-image: -moz-linear-gradient( 0deg, rgb(171,194,245) 0%, rgb(78,193,234) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(171,194,245) 0%, rgb(78,193,234) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(171,194,245) 0%, rgb(78,193,234) 100%);
+    }
+
     .navbar-collapse.in {
         overflow: visible;
     }
-
-
 
     /*Home*/
     .home .what-we-do .row > div {
@@ -1599,7 +1692,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #nav-toggle.active span {
@@ -2155,4 +2248,3 @@ section.some-of-show-cases .overlay h6 {
 }
 
 /*effect end*/
-
