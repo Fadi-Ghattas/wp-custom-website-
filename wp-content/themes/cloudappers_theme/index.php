@@ -158,21 +158,27 @@ get_template_part('template-part', 'topnav');
 
 		<div class="row projects">
 
-
 			<?php foreach ($projects as $project) {
 				$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
 				?>
-				<div class="col-lg-4">
-					<img src="<?php echo esc_url($project['project_card_image']['url']) ?>" alt="<?php echo $project['project_card_title']?>">
+				<div class="col-lg-4 zoom-effect">
+					<section class="">
+						<figure>
+							<div class="lazy-loader-effect"></div>
+							<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']) ?>" alt="<?php echo $project['project_card_title']?>" />
+						</figure>
 					<a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
-						<div class="bg-rotate">
+						<div class="overlay bg-rotate">
 							<h5><?php echo $title; ?></h5>
 							<?php if (!empty($project['project_card_sub_title'])) ?>
 							<h6><?php echo $project['project_card_sub_title']; ?></h6>
 						</div>
 					</a>
+					</section>
+
 				</div>
 			<?php } ?>
+
 		</div>
 	</div>
 
@@ -192,7 +198,8 @@ get_template_part('template-part', 'topnav');
 	</div>
 </section>
 
-<section class="team">
+<?php if(!empty($team) && intval($pageOptions['home_page_team_how_many_to_show'])) { ?>
+	<section class="team">
 	<div class="container">
 		<div class="row title">
 			<div class="col-lg-12">
@@ -228,6 +235,7 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</div>
 </section>
+<?php } ?>
 
 <section class="contact col-eq-height">
 	<div class="col-lg-6">
