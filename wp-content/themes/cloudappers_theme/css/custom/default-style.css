@@ -53,11 +53,6 @@ figure {
     height: 100%;
 }
 
-.form-group.ms {
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
 section.ca-page-header {
     min-height: 792px;
     background-size: cover;
@@ -929,6 +924,12 @@ header, nav, header img {
 .home .team .members > div:hover:before {
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+.home .contact .form-group.ms {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 38px;
 }
 
 /*services*/
