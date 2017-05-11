@@ -45,8 +45,8 @@ function sendGetInTouchAdminEmail($data)
 	$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 	$setting = acf_get_group_fields($setting->ID);
 
-	if (!empty($setting['admins-emails'])) {
-		foreach ($setting['admins-emails'] as $email) {
+	if (!empty($setting['admins_emails'])) {
+		foreach ($setting['admins_emails'] as $email) {
 			$to = $email['admin_email'];
 			$From = 'From: ' . $data['name'] . ' <' . $data['email'] . '>';
 			$subject = 'Cloudappes | Some one want to get in touch with Cloudappers';

@@ -295,7 +295,7 @@ get_template_part('template-part', 'topnav');
                             </div>
                             <button type="submit" class="c-btn">GET IN TOUCH</button>
 
-                            <div class="form-group col-lg-12">
+                            <div class="form-group ms">
                                 <p class="message"></p>
                             </div>
 

@@ -53,7 +53,7 @@ figure {
     height: 100%;
 }
 
-.message {
+.form-group.ms {
     max-width: 100% !important;
     width: 100% !important;
 }
