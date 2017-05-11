@@ -25,7 +25,7 @@ function ajaxApplyForJob()
 		sendResponse($response);
 	}
 
-	$isAdded = add_pod((new CVModel())->pod_name, [
+	$user_data = [
 		'post_title' => trim($_POST['full_name']),
 		'cv_email' => trim($_POST['email']),
 		'cv_phone' => trim($_POST['phone']),
@@ -34,13 +34,18 @@ function ajaxApplyForJob()
 		'cv_expected_salary' => trim($_POST['expected_salary']),
 		'cv_info_one' => trim($_POST['cv_info_one']),
 		'cv_file' => trim($uploaded[0]['attach_id']),
-	]);
+	];
+
+	$isAdded = add_pod((new CVModel())->pod_name, $user_data);
 
 	if(!$isAdded) {
 		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
+
+	$user_data['cv_id'] = $isAdded;
+	sendAdminNewJobRequestEmail($user_data);
 
 	$response['message'] = 'Thank you for applying.';
 	sendResponse($response);
