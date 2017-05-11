@@ -54,6 +54,33 @@ function ajaxApplyForJob()
 add_action("wp_ajax_ajaxApplyForJob", "ajaxApplyForJob");
 add_action("wp_ajax_nopriv_ajaxApplyForJob", "ajaxApplyForJob");
 
+
+function ajaxGetInTouch()
+{
+	$response['error'] = 1;
+	$response['message_color'] = '#a94442';
+
+	if(!validHttpAction($_POST, ['name', 'email', 'note']))
+	{
+		$response['message'] = 'Something went wrong please try again later.';
+		sendResponse($response);
+	}
+
+	if(!sendGetInTouchAdminEmail($_POST)){
+		$response['message'] = 'Something went wrong please try again later.';
+		sendResponse($response);
+	}
+
+	$response['error'] = 0;
+	$response['message_color'] = '#3c763d';
+	$response['message'] = 'Thank you for contact us.';
+	sendResponse($response);
+}
+
+add_action("wp_ajax_ajaxGetInTouchForm", "ajaxGetInTouchForm");
+add_action("wp_ajax_nopriv_ajaxGetInTouchForm", "ajaxGetInTouchForm");
+
+
 function sendResponse($response)
 {
 	header('Content-Type: application/json');

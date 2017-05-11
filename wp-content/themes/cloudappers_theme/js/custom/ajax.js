@@ -150,4 +150,95 @@ jQuery(function ($)
 		}
 	});
 
+	$('#GetInTouchForm').on('init.field.fv', function (e, data) {
+		var $parent = data.element.parents('.form-group'),
+			$icon = $parent.find('.form-control-feedback[data-fv-icon-for="' + data.field + '"]');
+		$icon.on('click.clearing', function () {
+			if ($icon.hasClass('glyphicon-remove')) {
+				data.fv.resetField(data.element);
+			}
+		});
+	}).formValidation({
+		framework: 'bootstrap',
+		icon: {
+			valid: 'glyphicon glyphicon-ok',
+			invalid: 'glyphicon glyphicon-remove',
+			validating: 'glyphicon glyphicon-refresh'
+		},
+		fields: {
+			'name': {
+				icon: false,
+				validators: {
+					notEmpty: {
+						message: 'Your Name is required.'
+					}
+				}
+			},
+			'email': {
+				icon: false,
+				validators: {
+					notEmpty: {
+						message: 'Your Email is required.'
+					}, emailAddress: {
+						message: ' '
+					}, regexp: {
+						regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
+						message: 'This email address is not valid please try again.'
+					}
+				}
+			},
+			'note': {
+				icon: false,
+				validators: {
+					notEmpty: {
+						message: 'Your Message is required.'
+					}
+				}
+			},
+		}
+	}).on('err.validator.fv', function (e, data) {
+		if (data.field === 'email') {
+			data.element
+				.data('fv.messages')
+				.find('.help-block[data-fv-for="' + data.field + '"]').hide()
+				.filter('[data-fv-validator="' + data.validator + '"]').show();
+		}
+	}).on('success.form.fv', function (e) {
+
+		e.preventDefault();
+		if (send_ajax) {
+
+			$.ajax({
+				beforeSend: function (xhr) {
+					send_ajax = 0;
+				},
+				method: "POST",
+				url: script_const.ajaxurl,
+				data: ({
+					type: 'POST',
+					action: 'ajaxGetInTouchForm',
+					name: $('#GetInTouchForm #name').val(),
+					email: $('#GetInTouchForm #email').val(),
+					note: $('#GetInTouchForm #note').val()
+				}),
+				success: function (response) {
+					if(!response.error) {
+						$('#GetInTouchForm .message').text('').text(response.message);
+						$('#GetInTouchForm .message').css('color',response.message_color);
+						$('#GetInTouchForm').formValidation('resetForm', true);
+					} else {
+						$('#GetInTouchForm .message').text('').text(response.message);
+						$('#GetInTouchForm .message').css('color',response.message_color);
+					}
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					$('#GetInTouchForm .message').text('').text(script_const.error_message);
+					$('#GetInTouchForm .message').css('color', script_const.error_message_color);
+				},
+				complete: function () {
+					send_ajax = 1;
+				}
+			});
+		}
+	});
 });

@@ -273,13 +273,14 @@ get_template_part('template-part', 'topnav');
             </div>
         </div>
     </div>
+
     <div class="col-lg-6">
         <div class="form">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>say hello!</h1>
-                        <form method="post" action="">
+                        <form method="post" action="" id="GetInTouchForm">
                             <div class="form-group place-lbl">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name">
@@ -293,12 +294,17 @@ get_template_part('template-part', 'topnav');
                                 <input type="text" class="form-control" id="note">
                             </div>
                             <button type="submit" class="c-btn">GET IN TOUCH</button>
+
+                            <div class="form-group note">
+                                <p class="message"></p>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="copyright">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
