@@ -104,7 +104,10 @@ jQuery(function ($)
 				.filter('[data-fv-validator="' + data.validator + '"]').show();
 		}
 	}).on('success.form.fv', function (e) {
+
 		e.preventDefault();
+		$('#JobModal .message').text('');
+
 		if (send_ajax) {
 
 			var formData = new FormData();
@@ -208,6 +211,8 @@ jQuery(function ($)
 	}).on('success.form.fv', function (e) {
 
 		e.preventDefault();
+		$('#GetInTouchForm .message').text('');
+
 		if (send_ajax) {
 
 			$.ajax({
