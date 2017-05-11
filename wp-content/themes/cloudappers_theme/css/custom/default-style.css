@@ -571,7 +571,6 @@ header, nav, header img {
 }
 
 .home .showyou .projects > div {
-    height: 371px;
     padding: 15px;
 }
 
@@ -1313,6 +1312,10 @@ section.some-of-show-cases .overlay h6 {
         transition: all 1s;
     }
 
+    .home .showyou .projects > div {
+        height: 371px;
+    }
+
     /*Home*/
     .home .slide img {
         width: 100%;
@@ -1435,6 +1438,7 @@ section.some-of-show-cases .overlay h6 {
     .home .contact .address .container-fluid {
         padding-bottom: 35px;
     }
+
 
     .prefooter {
         text-align: center;
