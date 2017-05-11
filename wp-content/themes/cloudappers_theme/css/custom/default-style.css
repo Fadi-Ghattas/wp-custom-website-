@@ -941,9 +941,17 @@ header, nav, header img {
 }
 
 .home #JobModal .modal-content {
-    background: white url(../../img/box.png) no-repeat 121% 10%;
-    background-size: 240px 240px;
+    background: url('../../img/box.png'), url('../../img/popup-bg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-color: white;
+    background-position: 122% 8%, center center;
+    background-size: 240px 240px, cover;
 }
+.home #JobModal .modal-content{
+
+    /*arrow.png  */
+}
+
 
 .home #JobModal .modal-header {
     text-align: center;
@@ -1008,11 +1016,11 @@ header, nav, header img {
 
 .home #JobModal .close {
     border: none;
-    font-size: 44px;
-    line-height: 21px;
+    font-size: 50px;
+    line-height: 22px;
     color: rgb(94, 94, 94);
     opacity: 1;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .home .contact .form-group.ms {
