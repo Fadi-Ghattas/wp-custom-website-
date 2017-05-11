@@ -218,7 +218,7 @@ jQuery(function ($)
 				url: script_const.ajaxurl,
 				data: ({
 					type: 'POST',
-					action: 'ajaxGetInTouchForm',
+					action: 'ajaxGetInTouch',
 					name: $('#GetInTouchForm #name').val(),
 					email: $('#GetInTouchForm #email').val(),
 					note: $('#GetInTouchForm #note').val()

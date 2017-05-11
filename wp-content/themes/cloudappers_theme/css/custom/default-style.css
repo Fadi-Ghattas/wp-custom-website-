@@ -53,6 +53,11 @@ figure {
     height: 100%;
 }
 
+.message {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
 section.ca-page-header {
     min-height: 792px;
     background-size: cover;
