@@ -19,21 +19,21 @@
                             <!-- Text input-->
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="full_name">Full Name</label>
-                                <input id="full_name" name="full_name" type="text" placeholder="Full Name"
+                                <input id="full_name" name="full_name" type="text"
                                        class="form-control input-md"/>
                             </div>
 
                             <!-- Text input-->
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="email">Email</label>
-                                <input id="email" name="email" type="email" placeholder="email"
+                                <input id="email" name="email" type="email"
                                        class="form-control input-md"/>
                             </div>
 
                             <!-- Text input-->
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="phone">Phone</label>
-                                <input id="phone" name="phone" type="text" placeholder="Phone"
+                                <input id="phone" name="phone" type="text"
                                        class="form-control input-md"/>
                             </div>
 
@@ -51,7 +51,7 @@
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="years_of_experience">Years of Experience</label>
                                 <input id="years_of_experience" name="years_of_experience" type="text"
-                                       placeholder="Years of Experience" class="form-control input-md"/>
+                                       class="form-control input-md"/>
                             </div>
 
                             <!-- Select Basic -->
