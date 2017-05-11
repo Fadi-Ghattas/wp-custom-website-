@@ -2,7 +2,7 @@ jQuery(function ($)
 {
 	var send_ajax = 1;
 
-	$('#JobModal').on('init.field.fv', function (e, data) {
+	$('#JobModal form').on('init.field.fv', function (e, data) {
 		var $parent = data.element.parents('.form-group'),
 			$icon = $parent.find('.form-control-feedback[data-fv-icon-for="' + data.field + '"]');
 		$icon.on('click.clearing', function () {
@@ -127,6 +127,16 @@ jQuery(function ($)
 				processData: false,
 				data: formData,
 				success: function (response) {
+					if(!response.error) {
+						$('#JobModal .message').text('').text(response.message);
+						$('#JobModal .message').css('color',response.message_color);
+						$('#JobModal form').formValidation('resetForm', true);
+						$('#JobModal #cv_file').fileinput('clear');
+						FormValidation.AddOn.reCaptcha2.reset('JobCaptcha');
+					} else {
+						$('#JobModal .message').text('').text(response.message);
+						$('#JobModal .message').css('color',response.message_color);
+					}
 				},
 				error: function (jqXHR, textStatus, errorThrown) {
 				},

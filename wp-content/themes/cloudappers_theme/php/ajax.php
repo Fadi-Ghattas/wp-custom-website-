@@ -8,11 +8,11 @@
 
 function ajaxApplyForJob()
 {
-	$response['error'] = 0;
+	$response['error'] = 1;
+	$response['message_color'] = '#a94442';
 
 	if(!validHttpAction($_POST, ['full_name', 'email', 'phone', 'location', 'years_of_experience', 'expected_salary']) && !validHttpAction($_FILES, ['cv_file']))
 	{
-		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
@@ -20,7 +20,6 @@ function ajaxApplyForJob()
 	$uploaded = upload_file($_FILES, $_POST['full_name']);
 
 	if(empty($uploaded[0]['attach_id'])) {
-		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
@@ -39,7 +38,6 @@ function ajaxApplyForJob()
 	$isAdded = add_pod((new CVModel())->pod_name, $user_data);
 
 	if(!$isAdded) {
-		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
@@ -47,6 +45,8 @@ function ajaxApplyForJob()
 	$user_data['cv_id'] = $isAdded;
 	sendAdminNewJobRequestEmail($user_data);
 
+	$response['error'] = 0;
+	$response['message_color'] = '#3c763d';
 	$response['message'] = 'Thank you for applying.';
 	sendResponse($response);
 }

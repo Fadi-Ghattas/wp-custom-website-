@@ -80,6 +80,10 @@
 								<button class="btn btn-success" type="submit">Good Button</button>
 						</div>
 
+						<div class="form-group col-lg-12">
+							<p class="message"></p>
+						</div>
+
 					</form>
 
 					</div>
