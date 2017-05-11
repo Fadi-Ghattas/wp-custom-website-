@@ -97,6 +97,7 @@ jQuery(function ($)
 			},
 		}
 	}).on('err.validator.fv', function (e, data) {
+		$('#JobModal .message').text('');
 		if (data.field === 'email') {
 			data.element
 				.data('fv.messages')
@@ -202,6 +203,7 @@ jQuery(function ($)
 			},
 		}
 	}).on('err.validator.fv', function (e, data) {
+		$('#GetInTouchForm .message').text('');
 		if (data.field === 'email') {
 			data.element
 				.data('fv.messages')
