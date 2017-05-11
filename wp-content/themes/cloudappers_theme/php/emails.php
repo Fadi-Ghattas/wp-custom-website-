@@ -13,15 +13,15 @@ function sendAdminNewJobRequestEmail($data)
 	if (!empty($setting['jobs_emails'])) {
 		foreach ($setting['jobs_emails'] as $email) {
 			$to = $email['job_email'];
-			$From = 'From: ' . $data['full_name'] . ' <' . $data['email_address'] . '>';
+			$From = 'From: ' . $data['post_title'] . ' <' . $data['cv_email'] . '>';
 			$subject = 'Cloudappes | You\'ve received a new job request';
 
 			$body = file_get_contents(get_stylesheet_directory() . '/email-templates/admin-new-job-request.html');
 			$body = str_replace('{home_url}', home_url(), $body);
 			$body = str_replace('{logo_url}', esc_url(get_template_directory_uri()) . '/img/CA-full-logo.png', $body);
 
-			$body = str_replace('{full_name}', $data['post_title'], $body);
-			$body = str_replace('{email_address}', $data['cv_email'], $body);
+			$body = str_replace('{post_title}', $data['post_title'], $body);
+			$body = str_replace('{cv_email}', $data['cv_email'], $body);
 			$body = str_replace('{cv_phone}', $data['cv_phone'], $body);
 			$body = str_replace('{cv_location}', $data['cv_location'], $body);
 			$body = str_replace('{cv_years_of_experience}', $data['cv_years_of_experience'], $body);
