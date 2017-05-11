@@ -20,8 +20,13 @@ function sendAdminNewJobRequestEmail($data)
 			$body = str_replace('{home_url}', home_url(), $body);
 			$body = str_replace('{logo_url}', esc_url(get_template_directory_uri()) . '/img/CA-full-logo.png', $body);
 
-			$body = str_replace('{full_name}', $data['full_name'], $body);
-			$body = str_replace('{email_address}', $data['email_address'], $body);
+			$body = str_replace('{full_name}', $data['post_title'], $body);
+			$body = str_replace('{email_address}', $data['cv_email'], $body);
+			$body = str_replace('{cv_phone}', $data['cv_phone'], $body);
+			$body = str_replace('{cv_location}', $data['cv_location'], $body);
+			$body = str_replace('{cv_years_of_experience}', $data['cv_years_of_experience'], $body);
+			$body = str_replace('{cv_expected_salary}', $data['cv_expected_salary'], $body);
+			$body = str_replace('{cv_info_one}', $data['cv_info_one'], $body);
 			$body = str_replace('{cv_link}', home_url('/wp-admin/post.php?post=' . $data['cv_id'] . '&action=edit'), $body);
 			$body = str_replace('{date}', date('Y'), $body);
 
