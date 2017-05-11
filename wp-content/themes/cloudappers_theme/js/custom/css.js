@@ -11,6 +11,7 @@ jQuery.lazyLoadXT.onload = function () {
 		jQuery(this).addClass('fadeIn');
 		// jQuery(this).parent().children('.lazy-loader-effect').css('z-index', 0).delay(1500).queue(function() { jQuery(this).remove(); });
 		jQuery(this).parent().children('.lazy-loader-effect').delay(1500).queue(function() { jQuery(this).remove(); });
+		jQuery(this).parent().children('.loader').delay(1500).queue(function() { jQuery(this).remove(); });
 	}
 };
 

@@ -82,7 +82,17 @@ get_template_part('template-part', 'topnav');
 					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?>">
 						<section class="<?php echo $hover[$i]; ?>">
 							<figure>
-								<div class="lazy-loader-effect"></div>
+<!--								<div class="lazy-loader-effect"></div>-->
+								<div class="loader">
+									<div class="square" ></div>
+									<div class="square"></div>
+									<div class="square last"></div>
+									<div class="square clear"></div>
+									<div class="square"></div>
+									<div class="square last"></div>
+									<div class="square clear"></div>
+									<div class="square "></div>
+								</div>
 								<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($pageShowCases[$i]['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
 							</figure>
 							<a href="<?php echo esc_url(get_permalink($pageShowCases[$i]['id']))?>">
