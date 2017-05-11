@@ -376,7 +376,7 @@ header, nav, header img {
 }
 
 .home .what-we-do .row > div,
-.home .what-we-do .row > div:hover{
+.home .what-we-do .row > div:hover {
     transition: 0.5s;
 }
 
@@ -692,17 +692,6 @@ header, nav, header img {
     font-size: 18px;
 }
 
-/*.home .team .members img {*/
-/*width: 100%;*/
-/*height: auto;*/
-/*position: absolute;*/
-/*right: 0;*/
-/*left: 0;*/
-/*top: 0;*/
-/*bottom: 0;*/
-/*margin: auto;*/
-/*}*/
-
 .home .team .members > div:hover img {
     visibility: hidden;
 }
@@ -944,6 +933,86 @@ header, nav, header img {
 .home .team .members > div:hover:before {
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+.home #JobModal .modal-dialog,
+.home #JobModal .modal-content {
+    border-radius: 10px;
+}
+
+.home #JobModal .modal-content {
+    background: white url(../../img/box.png) no-repeat 121% 10%;
+    background-size: 240px 240px;
+}
+
+.home #JobModal .modal-header {
+    text-align: center;
+    border: none;
+}
+
+.home #JobModal .modal-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.home #JobModal .modal-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6f6c6c;
+}
+
+.home #JobModal input,
+.home #JobModal select,
+.home #JobModal .file-caption,
+.home #JobModal textarea {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5f19;
+    min-height: 39px;
+    background: transparent;
+}
+
+.home #JobModal label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home #JobModal button {
+    border: 1px solid black;
+}
+
+.home #JobModal #JobCaptcha {
+    display: inline-block;
+}
+
+.home #JobModal .btn-file {
+    background: #ff601b;
+}
+
+.home #JobModal .captcha-container {
+    text-align: center;
+}
+
+.home #JobModal .file-caption-name {
+    height: 39px;
+}
+
+.home #JobModal .submit-btn {
+    border: none;
+    width: 100%;
+}
+
+.home #JobModal .close {
+    border: none;
+    font-size: 44px;
+    line-height: 21px;
+    color: rgb(94, 94, 94);
+    opacity: 1;
+    font-weight: 400;
 }
 
 .home .contact .form-group.ms {
@@ -2512,7 +2581,6 @@ section.some-of-show-cases .overlay h6 {
 
 /*effect end*/
 
-
 @-webkit-keyframes enter {
     0% {
         opacity: 0;
@@ -2531,6 +2599,7 @@ section.some-of-show-cases .overlay h6 {
         top: 10px;
     }
 }
+
 @keyframes enter {
     0% {
         opacity: 0;
@@ -2549,6 +2618,7 @@ section.some-of-show-cases .overlay h6 {
         top: 10px;
     }
 }
+
 @-moz-keyframes enter {
     0% {
         opacity: 0;
@@ -2567,7 +2637,6 @@ section.some-of-show-cases .overlay h6 {
         top: 10px;
     }
 }
-
 
 .loader {
     position: absolute;
