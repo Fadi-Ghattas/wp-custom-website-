@@ -128,6 +128,10 @@ section.ca-page-banner p {
 
 /*Header*/
 
+.top-header {
+    background-color: rgb(255, 255, 255);
+}
+
 header, nav, header img {
     transition: all 1s;
     -moz-transition: all 1s; /* Firefox 4 */
@@ -1092,7 +1096,7 @@ section.some-of-show-cases .overlay h6 {
 /*Footer*/
 
 .prefooter {
-    background: url("../../img/prefooter.jpg") no-repeat center;
+    background: url("../../img/prefooter.png") no-repeat center;
     background-size: cover;
     min-height: 357px;
     color: white;
@@ -1198,13 +1202,12 @@ section.some-of-show-cases .overlay h6 {
 
 @media (min-width: 768px) {
     /*Header*/
-    .navbar-inverse .nav-social {
-        display: none;
+    .navbar-collapse.collapse {
+        padding: 0;
     }
 
-    .top-header.small .navbar-inverse {
-        padding-top: 0;
-        margin-bottom: 0;
+    .navbar-inverse .nav-social {
+        display: none;
     }
 
     .home .what-we-do .row > div > a {
@@ -1254,6 +1257,12 @@ section.some-of-show-cases .overlay h6 {
 
 @media (min-width: 1200px) {
 
+    /*Menu*/
+    .top-header.small .navbar-inverse {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
     .top-header.small img {
         visibility: hidden;
         opacity: 0;
@@ -1281,10 +1290,7 @@ section.some-of-show-cases .overlay h6 {
         transition: all 1s;
     }
 
-    .top-header {
-        background-color: rgb(255, 255, 255);
-    }
-
+    /*Home*/
     .home .slide img {
         width: 100%;
         height: auto;
@@ -1310,6 +1316,11 @@ section.some-of-show-cases .overlay h6 {
         margin-right: 35px;
     }
 
+    /*prefooter*/
+    .home .img-prefooter {
+        float: right;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1328,9 +1339,20 @@ section.some-of-show-cases .overlay h6 {
         padding-left: 18px;
         padding-right: 0;
     }
+
+    .home .slide img {
+        width: auto;
+        height: 100vh;
+    }
 }
 
 @media (max-width: 1199px) {
+    /*Menu*/
+    .navbar-nav {
+        float: left;
+    }
+
+    /*Home*/
     .home .contact {
         flex-direction: column-reverse;
         display: flex;
@@ -1391,6 +1413,18 @@ section.some-of-show-cases .overlay h6 {
         padding-bottom: 35px;
     }
 
+    .prefooter {
+        text-align: center;
+    }
+
+    .prefooter img {
+        display: inline-block;
+    }
+
+    .img-prefooter {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1442,13 +1476,17 @@ section.some-of-show-cases .overlay h6 {
 
 }
 
+@media (max-width: 991px) {
+    .nav > li:not(.c-btn) > a {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     /*Menu*/
-    .navbar-inverse .navbar-nav > li > a {
-        color: white;
-    }
-
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background: transparent;
     }
@@ -1485,13 +1523,6 @@ section.some-of-show-cases .overlay h6 {
     .navbar-toggle .icon-bar:nth-child(3) {
         width: 44px;
         display: inline-block;
-    }
-
-    .navbar-nav {
-        float: none;
-        width: 100%;
-        margin: 0;
-        text-align: right;
     }
 
     /*Services*/
@@ -1544,6 +1575,17 @@ section.some-of-show-cases .overlay h6 {
 
 @media (max-width: 767px) {
     /*Menu*/
+    .navbar-nav {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: right;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
     .top-header {
         box-shadow: none;
         background-color: rgb(81, 193, 231);
@@ -1606,6 +1648,11 @@ section.some-of-show-cases .overlay h6 {
 
     .navbar-collapse.in {
         overflow: visible;
+    }
+
+    /*Header*/
+    .home .slider-container, .home .home-slider, .home .slick-list {
+        height: 800px;
     }
 
     /*Home*/
@@ -1763,6 +1810,11 @@ section.some-of-show-cases .overlay h6 {
 
     .home .showyou .projects {
         margin-top: 0;
+    }
+
+    /*prefooter*/
+    .prefooter {
+        text-align: center;
     }
 
 }

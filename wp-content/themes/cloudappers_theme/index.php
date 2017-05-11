@@ -170,39 +170,44 @@ get_template_part('template-part', 'topnav');
 
         <div class="row projects">
 
-			<?php foreach ($projects as $project) {
-				$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
-				?>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 zoom-effect">
-					<section class="">
-						<figure>
-							<div class="lazy-loader-effect"></div>
-							<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']) ?>" alt="<?php echo $project['project_card_title']?>" />
-						</figure>
-					<a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
-						<div class="overlay bg-rotate">
-							<h5><?php echo $title; ?></h5>
-							<?php if (!empty($project['project_card_sub_title'])) ?>
-							<h6><?php echo $project['project_card_sub_title']; ?></h6>
-						</div>
-					</a>
-					</section>
+            <?php foreach ($projects as $project) {
+                $title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
+                ?>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 zoom-effect">
+                    <section class="">
+                        <figure>
+                            <div class="lazy-loader-effect"></div>
+                            <img class="img-lazy lazy-not-loaded lazy-loader"
+                                 data-src="<?php echo esc_url($project['project_card_image']['url']) ?>"
+                                 alt="<?php echo $project['project_card_title'] ?>"/>
+                        </figure>
+                        <a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
+                            <div class="overlay bg-rotate">
+                                <h5><?php echo $title; ?></h5>
+                                <?php if (!empty($project['project_card_sub_title'])) ?>
+                                <h6><?php echo $project['project_card_sub_title']; ?></h6>
+                            </div>
+                        </a>
+                    </section>
 
-				</div>
-			<?php } ?>
+                </div>
+            <?php } ?>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
     <div class="view-all"><a href="<?php esc_url(home_url('projects')); ?>">VIEW FULL SHOWCASE</a></div>
 
 </section>
 
 <section class="prefooter lazy-background"
-         data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.jpg'); ?>">
+         data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="img-prefooter col-lg-5  col-md-12">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/infographics-for-banner@3x.png' ?>">
+            </div>
+            <div class="col-lg-7  col-md-12">
                 <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
                 <p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
                 <a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
@@ -211,43 +216,46 @@ get_template_part('template-part', 'topnav');
     </div>
 </section>
 
-<?php if(!empty($team) && intval($pageOptions['home_page_team_how_many_to_show'])) { ?>
-	<section class="team">
-	<div class="container">
-		<div class="row title">
-			<div class="col-lg-12">
-				<h1><?php echo $pageOptions['home_page_team_title']; ?></h1>
-				<p><?php echo $pageOptions['home_page_team_subtitle']; ?></p>
-			</div>
-		</div>
-		<div class="row members">
-			<?php
-			$hoverCount = 0;
-			foreach ($team as $teamMember) {
-				$hover = ['gradient-purple','gradient-pink','gradient-green'];
-				?>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-					<section class="<?php echo $hover[$hoverCount];?>">
-					<figure>
-						<div class="lazy-loader-effect"></div>
-						<img  class="img-lazy lazy-not-loaded lazy-loader"  data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>" alt="<?php echo $teamMember['post_title']; ?>"/>
-					</figure>
-					<div class="overlay member-info">
-						<h5><?php echo $teamMember['post_title']; ?></h5>
-						<h6><?php echo $teamMember['team_member_position']['post_title']; ?></h6>
-					</div>
-					</section>
-				</div>
-			<?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++ ); } ?>
-		</div>
-		<div class="row join">
-			<div class="col-lg-12">
-				<h2>I want to create amazing things with you !</h2>
-				<a href="javascript:void(0)" id="take-me-in" class="c-rbtn">TAKE ME IN</a>
-			</div>
-		</div>
-	</div>
-</section>
+<?php if (!empty($team) && intval($pageOptions['home_page_team_how_many_to_show'])) { ?>
+    <section class="team">
+        <div class="container">
+            <div class="row title">
+                <div class="col-lg-12">
+                    <h1><?php echo $pageOptions['home_page_team_title']; ?></h1>
+                    <p><?php echo $pageOptions['home_page_team_subtitle']; ?></p>
+                </div>
+            </div>
+            <div class="row members">
+                <?php
+                $hoverCount = 0;
+                foreach ($team as $teamMember) {
+                    $hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
+                    ?>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                        <section class="<?php echo $hover[$hoverCount]; ?>">
+                            <figure>
+                                <div class="lazy-loader-effect"></div>
+                                <img class="img-lazy lazy-not-loaded lazy-loader"
+                                     data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"
+                                     alt="<?php echo $teamMember['post_title']; ?>"/>
+                            </figure>
+                            <div class="overlay member-info">
+                                <h5><?php echo $teamMember['post_title']; ?></h5>
+                                <h6><?php echo $teamMember['team_member_position']['post_title']; ?></h6>
+                            </div>
+                        </section>
+                    </div>
+                    <?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
+                } ?>
+            </div>
+            <div class="row join">
+                <div class="col-lg-12">
+                    <h2>I want to create amazing things with you !</h2>
+                    <a href="javascript:void(0)" id="take-me-in" class="c-rbtn">TAKE ME IN</a>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php } ?>
 
 <section class="contact col-eq-height">
