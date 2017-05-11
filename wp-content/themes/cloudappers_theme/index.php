@@ -283,15 +283,15 @@ get_template_part('template-part', 'topnav');
                         <form method="post" action="" id="GetInTouchForm">
                             <div class="form-group place-lbl">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="form-group place-lbl">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" id="email">
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="form-group note">
                                 <label for="note">What we need to know?</label>
-                                <input type="text" class="form-control" id="note">
+                                <input type="text" class="form-control" id="note" name="note">
                             </div>
                             <button type="submit" class="c-btn">GET IN TOUCH</button>
 
