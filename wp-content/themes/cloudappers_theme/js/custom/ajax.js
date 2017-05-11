@@ -213,7 +213,7 @@ jQuery(function ($)
 			$.ajax({
 				beforeSend: function (xhr) {
 					send_ajax = 0;
-					$('#GetInTouchForm button.c-btn').addClass('fadeInNoStop');
+					$('#GetInTouchForm button.c-btn').addClass('fadeInNoStop').attr('disabled', true);
 				},
 				method: "POST",
 				url: script_const.ajaxurl,
@@ -239,7 +239,7 @@ jQuery(function ($)
 					$('#GetInTouchForm .message').css('color', script_const.error_message_color);
 				},
 				complete: function () {
-					$('#GetInTouchForm button.c-btn').removeClass('fadeInNoStop');
+					$('#GetInTouchForm button.c-btn').removeClass('fadeInNoStop').attr('disabled', false);
 					send_ajax = 1;
 				}
 			});
