@@ -77,8 +77,8 @@ function ajaxGetInTouch()
 	sendResponse($response);
 }
 
-add_action("wp_ajax_ajaxGetInTouchForm", "ajaxGetInTouchForm");
-add_action("wp_ajax_nopriv_ajaxGetInTouchForm", "ajaxGetInTouchForm");
+add_action("wp_ajax_ajaxGetInTouch", "ajaxGetInTouch");
+add_action("wp_ajax_nopriv_ajaxGetInTouch", "ajaxGetInTouch");
 
 
 function sendResponse($response)
