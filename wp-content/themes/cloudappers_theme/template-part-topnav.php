@@ -2,18 +2,20 @@
     <section class="top-header">
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-inverse" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header" 7>
-                            <a class="logo-mob hidden-lg " href="<?php echo home_url(); ?>">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-inverse" role="navigation">
+
+                        <div class="navbar-header">
+                            <a class="logo-mob hidden-lg hidden-md hidden-sm "
+                               href="<?php echo home_url(); ?>">
                                 <img class="img-responsive"
                                      src="<?php echo get_stylesheet_directory_uri() . '/img/white-ca-icon@3x.svg' ?>"
                                      alt="CloudAppers"/>
                             </a>
-                            <a class="logo-desk hidden-md hidden-sm hidden-xs" href="<?php echo home_url(); ?>">
+                            <a class="logo-desk hidden-xs" href="<?php echo home_url(); ?>">
                                 <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?>"
                                      alt="CloudAppers"/>
-                                <img class="img-float"
+                                <img class="hidden-md hidden-sm  img-float"
                                      src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"
                                      alt="CloudAppers"/>
                             </a>
@@ -52,8 +54,9 @@
                                 <a class="instagram" href="#"></a>
                             </div>
                         </div>
-                    </div>
-                </nav>
+
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
