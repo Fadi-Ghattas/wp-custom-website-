@@ -281,32 +281,38 @@ get_template_part('template-part', 'topnav');
             </div>
         </div>
     </div>
+
     <div class="col-lg-6">
         <div class="form">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>say hello!</h1>
-                        <form method="post" action="">
+                        <form method="post" action="" id="GetInTouchForm">
                             <div class="form-group place-lbl">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="form-group place-lbl">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" id="email">
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="form-group note">
                                 <label for="note">What we need to know?</label>
-                                <input type="text" class="form-control" id="note">
+                                <input type="text" class="form-control" id="note" name="note">
                             </div>
                             <button type="submit" class="c-btn">GET IN TOUCH</button>
+                            <div class="form-group ms">
+                                <p class="message"></p>
+                            </div>
+
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="copyright">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>

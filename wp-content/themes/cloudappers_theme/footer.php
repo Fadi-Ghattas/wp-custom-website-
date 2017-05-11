@@ -63,6 +63,7 @@
 						<!-- File Button -->
 						<div class="form-group col-lg-12">
 							<label class="control-label" for="cv_file">Upload CV</label>
+							<!--data-allowed-file-extensions='["docx", "doc", "ppt", "pdf"]'-->
 							<input id="cv_file" name="cv_file" type="file" class="file" data-show-preview="false" data-show-upload="false" />
 						</div>
 
@@ -78,6 +79,10 @@
 
 						<div class="form-group col-lg-12">
 								<button class="btn btn-success" type="submit">Good Button</button>
+						</div>
+
+						<div class="form-group col-lg-12">
+							<p class="message"></p>
 						</div>
 
 					</form>

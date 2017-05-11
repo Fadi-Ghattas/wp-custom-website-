@@ -857,7 +857,7 @@ header, nav, header img {
     box-shadow: none;
     border-radius: 0;
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: #ff5f19;
 }
 
 .home .contact .form-group.note {
@@ -928,6 +928,29 @@ header, nav, header img {
 .home .team .members > div:hover:before {
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+.home .contact .form-group.ms {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 38px;
+}
+
+.btn-anim {
+    animation-duration: 1s;
+    animation-name: btn-anim ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+
+@keyframes btn-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /*services*/
@@ -2372,6 +2395,13 @@ section.some-of-show-cases .overlay h6 {
 
 /*effect start*/
 
+.fadeInNoStop {
+    -webkit-animation: fadeInNoStop 1s alternate infinite; /* Safari 4+ */
+    -moz-animation: fadeInNoStop 1s alternate infinite; /* Fx 5+ */
+    -o-animation: fadeInNoStop 1s alternate infinite; /* Opera 12+ */
+    animation: fadeInNoStop 1s alternate infinite; /* IE 10+, Fx 29+ */
+}
+
 .fadeIn {
     -webkit-animation: fadeIn 2s; /* Safari 4+ */
     -moz-animation: fadeIn 2s; /* Fx 5+ */
@@ -2388,7 +2418,6 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
-
 @-moz-keyframes fadeIn {
     from {
         opacity: 0;
@@ -2398,7 +2427,6 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
-
 @-o-keyframes fadeIn {
     from {
         opacity: 0;
@@ -2408,13 +2436,49 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
 
     to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInNoStop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeInNoStop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeInNoStop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInNoStop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
 }

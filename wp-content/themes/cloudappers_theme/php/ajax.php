@@ -8,11 +8,11 @@
 
 function ajaxApplyForJob()
 {
-	$response['error'] = 0;
+	$response['error'] = 1;
+	$response['message_color'] = '#a94442';
 
 	if(!validHttpAction($_POST, ['full_name', 'email', 'phone', 'location', 'years_of_experience', 'expected_salary']) && !validHttpAction($_FILES, ['cv_file']))
 	{
-		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
@@ -20,12 +20,11 @@ function ajaxApplyForJob()
 	$uploaded = upload_file($_FILES, $_POST['full_name']);
 
 	if(empty($uploaded[0]['attach_id'])) {
-		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
 
-	$isAdded = add_pod((new CVModel())->pod_name, [
+	$user_data = [
 		'post_title' => trim($_POST['full_name']),
 		'cv_email' => trim($_POST['email']),
 		'cv_phone' => trim($_POST['phone']),
@@ -34,20 +33,53 @@ function ajaxApplyForJob()
 		'cv_expected_salary' => trim($_POST['expected_salary']),
 		'cv_info_one' => trim($_POST['cv_info_one']),
 		'cv_file' => trim($uploaded[0]['attach_id']),
-	]);
+	];
+
+	$isAdded = add_pod((new CVModel())->pod_name, $user_data);
 
 	if(!$isAdded) {
-		$response['error'] = 1;
 		$response['message'] = 'Something went wrong please try again later.';
 		sendResponse($response);
 	}
 
+	$user_data['cv_id'] = $isAdded;
+	sendAdminNewJobRequestEmail($user_data);
+
+	$response['error'] = 0;
+	$response['message_color'] = '#3c763d';
 	$response['message'] = 'Thank you for applying.';
 	sendResponse($response);
 }
 
 add_action("wp_ajax_ajaxApplyForJob", "ajaxApplyForJob");
 add_action("wp_ajax_nopriv_ajaxApplyForJob", "ajaxApplyForJob");
+
+
+function ajaxGetInTouch()
+{
+	$response['error'] = 1;
+	$response['message_color'] = '#a94442';
+
+	if(!validHttpAction($_POST, ['name', 'email', 'note']))
+	{
+		$response['message'] = 'Something went wrong please try again later.';
+		sendResponse($response);
+	}
+
+	if(!sendGetInTouchAdminEmail($_POST)){
+		$response['message'] = 'Something went wrong please try again later.';
+		sendResponse($response);
+	}
+
+	$response['error'] = 0;
+	$response['message_color'] = '#3c763d';
+	$response['message'] = 'Thank you for contact us.';
+	sendResponse($response);
+}
+
+add_action("wp_ajax_ajaxGetInTouch", "ajaxGetInTouch");
+add_action("wp_ajax_nopriv_ajaxGetInTouch", "ajaxGetInTouch");
+
 
 function sendResponse($response)
 {

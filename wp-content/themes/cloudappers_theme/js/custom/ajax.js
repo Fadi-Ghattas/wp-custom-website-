@@ -2,7 +2,7 @@ jQuery(function ($)
 {
 	var send_ajax = 1;
 
-	$('#JobModal').on('init.field.fv', function (e, data) {
+	$('#JobModal form').on('init.field.fv', function (e, data) {
 		var $parent = data.element.parents('.form-group'),
 			$icon = $parent.find('.form-control-feedback[data-fv-icon-for="' + data.field + '"]');
 		$icon.on('click.clearing', function () {
@@ -12,6 +12,7 @@ jQuery(function ($)
 		});
 	}).formValidation({
 		framework: 'bootstrap',
+		live: 'disabled',
 		icon: {
 			valid: 'glyphicon glyphicon-ok',
 			invalid: 'glyphicon glyphicon-remove',
@@ -88,13 +89,15 @@ jQuery(function ($)
 						message: 'Your CV is required.'
 					},
 					file: {
+						extension: 'docx,doc,pdf,ppt,',
 						maxSize: 10 * 1024 * 1024,
-						message: 'The CV file must not exceed 10MB',
+						message: 'The CV file must not exceed 10MB and it must be .docx, .doc, .pdf, .ppt',
 					},
 				}
 			},
 		}
 	}).on('err.validator.fv', function (e, data) {
+		$('#JobModal .message').text('');
 		if (data.field === 'email') {
 			data.element
 				.data('fv.messages')
@@ -102,7 +105,10 @@ jQuery(function ($)
 				.filter('[data-fv-validator="' + data.validator + '"]').show();
 		}
 	}).on('success.form.fv', function (e) {
+
 		e.preventDefault();
+		$('#JobModal .message').text('');
+
 		if (send_ajax) {
 
 			var formData = new FormData();
@@ -127,8 +133,20 @@ jQuery(function ($)
 				processData: false,
 				data: formData,
 				success: function (response) {
+					if(!response.error) {
+						$('#JobModal .message').text('').text(response.message);
+						$('#JobModal .message').css('color',response.message_color);
+						$('#JobModal form').formValidation('resetForm', true);
+						$('#JobModal #cv_file').fileinput('clear');
+						FormValidation.AddOn.reCaptcha2.reset('JobCaptcha');
+					} else {
+						$('#JobModal .message').text('').text(response.message);
+						$('#JobModal .message').css('color',response.message_color);
+					}
 				},
 				error: function (jqXHR, textStatus, errorThrown) {
+					$('#JobModal .message').text('').text(script_const.error_message);
+					$('#JobModal .message').css('color', script_const.error_message_color);
 				},
 				complete: function () {
 					send_ajax = 1;
@@ -137,4 +155,101 @@ jQuery(function ($)
 		}
 	});
 
+	$('#GetInTouchForm').on('init.field.fv', function (e, data) {
+		var $parent = data.element.parents('.form-group'),
+			$icon = $parent.find('.form-control-feedback[data-fv-icon-for="' + data.field + '"]');
+		$icon.on('click.clearing', function () {
+			if ($icon.hasClass('glyphicon-remove')) {
+				data.fv.resetField(data.element);
+			}
+		});
+	}).formValidation({
+		framework: 'bootstrap',
+		live: 'disabled',
+		icon: {
+			valid: 'glyphicon glyphicon-ok',
+			invalid: 'glyphicon glyphicon-remove',
+			validating: 'glyphicon glyphicon-refresh'
+		},
+		fields: {
+			'name': {
+				icon: false,
+				validators: {
+					notEmpty: {
+						message: 'Your Name is required.'
+					}
+				}
+			},
+			'email': {
+				icon: false,
+				validators: {
+					notEmpty: {
+						message: 'Your Email is required.'
+					}, emailAddress: {
+						message: ' '
+					}, regexp: {
+						regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
+						message: 'This email address is not valid please try again.'
+					}
+				}
+			},
+			'note': {
+				icon: false,
+				validators: {
+					notEmpty: {
+						message: 'Your Message is required.'
+					}
+				}
+			},
+		}
+	}).on('err.validator.fv', function (e, data) {
+		$('#GetInTouchForm .message').text('');
+		if (data.field === 'email') {
+			data.element
+				.data('fv.messages')
+				.find('.help-block[data-fv-for="' + data.field + '"]').hide()
+				.filter('[data-fv-validator="' + data.validator + '"]').show();
+		}
+	}).on('success.form.fv', function (e) {
+
+		e.preventDefault();
+		$('#GetInTouchForm .message').text('');
+
+		if (send_ajax) {
+
+			$.ajax({
+				beforeSend: function (xhr) {
+					send_ajax = 0;
+					$('#GetInTouchForm button.c-btn').addClass('fadeInNoStop').attr('disabled', true);
+				},
+				method: "POST",
+				url: script_const.ajaxurl,
+				data: ({
+					type: 'POST',
+					action: 'ajaxGetInTouch',
+					name: $('#GetInTouchForm #name').val(),
+					email: $('#GetInTouchForm #email').val(),
+					note: $('#GetInTouchForm #note').val()
+				}),
+				success: function (response) {
+					if(!response.error) {
+						$('#GetInTouchForm .message').text('').text(response.message);
+						$('#GetInTouchForm .message').css('color',response.message_color);
+						$('#GetInTouchForm').formValidation('resetForm', true);
+					} else {
+						$('#GetInTouchForm .message').text('').text(response.message);
+						$('#GetInTouchForm .message').css('color',response.message_color);
+					}
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					$('#GetInTouchForm .message').text('').text(script_const.error_message);
+					$('#GetInTouchForm .message').css('color', script_const.error_message_color);
+				},
+				complete: function () {
+					$('#GetInTouchForm button.c-btn').removeClass('fadeInNoStop').attr('disabled', false);
+					send_ajax = 1;
+				}
+			});
+		}
+	});
 });
