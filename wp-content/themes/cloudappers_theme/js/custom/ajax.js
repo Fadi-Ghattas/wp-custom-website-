@@ -88,8 +88,9 @@ jQuery(function ($)
 						message: 'Your CV is required.'
 					},
 					file: {
+						extension: 'docx,doc,pdf,ppt,',
 						maxSize: 10 * 1024 * 1024,
-						message: 'The CV file must not exceed 10MB',
+						message: 'The CV file must not exceed 10MB and it must be .docx, .doc, .pdf, .ppt',
 					},
 				}
 			},
@@ -139,6 +140,8 @@ jQuery(function ($)
 					}
 				},
 				error: function (jqXHR, textStatus, errorThrown) {
+					$('#JobModal .message').text('').text(script_const.error_message);
+					$('#JobModal .message').css('color', script_const.error_message_color);
 				},
 				complete: function () {
 					send_ajax = 1;

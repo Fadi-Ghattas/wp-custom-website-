@@ -49,7 +49,9 @@ function project_scripts()
 
 	wp_localize_script('theme_js', 'script_const', [
 		'ajaxurl' => admin_url('admin-ajax.php'),
-		'ReCaptcha_SiteKey' => '6LdqzCAUAAAAADJJyW_TCrlAdCSGlxqWkZBoU4P9'
+		'ReCaptcha_SiteKey' => '6LdqzCAUAAAAADJJyW_TCrlAdCSGlxqWkZBoU4P9',
+		'error_message' => 'Something went wrong please try again later.',
+		'error_message_color' => '#a94442'
 	]);
 }
 
