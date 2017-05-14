@@ -1646,6 +1646,7 @@ section.some-of-show-cases .overlay h6 {
         width: 66px;
         height: 49px;
         margin-top: 27px;
+        margin-top: 5%;
 
     }
 
@@ -1727,6 +1728,15 @@ section.some-of-show-cases .overlay h6 {
 
 @media (max-width: 767px) {
     /*Menu*/
+    .logo-mob,
+    .navbar-inverse .navbar-toggle {
+        margin-top: 0;
+    }
+
+    .navbar-inverse {
+        padding-top: 15px;
+    }
+
     .logo-mob {
         width: 15vw;
     }
@@ -1762,7 +1772,7 @@ section.some-of-show-cases .overlay h6 {
 
     .navbar-nav {
         padding-right: 30px;
-        padding-top: 140px;
+        padding-top: 45px;
     }
 
     .navbar-inverse {
@@ -1773,6 +1783,8 @@ section.some-of-show-cases .overlay h6 {
         font-size: 8.6vw;
         padding-top: 24px;
         padding-bottom: 35px;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
         color: white;
     }
 
@@ -2003,6 +2015,7 @@ section.some-of-show-cases .overlay h6 {
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
     cursor: pointer;
     height: 8px;
+    /*height: 1vw;*/
     width: 44px;
     border-radius: 4px;
     margin-top: 4px;
