@@ -128,10 +128,6 @@ section.ca-page-banner p {
 
 /*Header*/
 
-.top-header {
-    background-color: rgb(255, 255, 255);
-}
-
 header, nav, header img {
     transition: all 1s;
     -moz-transition: all 1s; /* Firefox 4 */
@@ -145,7 +141,15 @@ header, nav, header img {
     left: 0;
     opacity: 0.949;
     box-shadow: 0px 10px 90px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgb(255, 255, 255);
     z-index: 10;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #ff5f19;
+    background: transparent;
 }
 
 .navbar-inverse {
@@ -177,11 +181,22 @@ header, nav, header img {
 }
 
 .navbar-inverse .navbar-nav > li.c-btn > a {
-    color: white !important;
+    color: white;
 }
 
 .navbar-inverse .navbar-nav > li.c-btn > a:hover {
     color: white;
+}
+
+.navbar-inverse .navbar-nav > li.c-btn:focus,
+.navbar-inverse .navbar-nav > li.c-btn:active {
+    background-image: none;
+    background-color: white;
+}
+
+.navbar-inverse .navbar-nav > li.c-btn:focus a,
+.navbar-inverse .navbar-nav > li.c-btn:active a {
+    color: #ff5d16;
 }
 
 .navbar-nav {
@@ -948,11 +963,11 @@ header, nav, header img {
     background-position: 122% 8%, center center;
     background-size: 240px 240px, cover;
 }
-.home #JobModal .modal-content{
+
+.home #JobModal .modal-content {
 
     /*arrow.png  */
 }
-
 
 .home #JobModal .modal-header {
     text-align: center;
