@@ -220,7 +220,7 @@ get_template_part('template-part', 'topnav');
             <div class="col-lg-7  col-md-12">
                 <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
                 <p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-                <a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+                <a href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
             </div>
         </div>
     </div>
@@ -294,9 +294,8 @@ get_template_part('template-part', 'topnav');
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="c-rbtn"
-                           href="<?php echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?>">take
-                            me there</a>
+<!--                        <a class="c-rbtn" href="--><?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
+                        <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
                     </div>
                 </div>
             </div>
@@ -339,6 +338,8 @@ get_template_part('template-part', 'topnav');
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
     </div>
 </section>
+
+
 
 <!--Google map-->
 <script>
@@ -451,6 +452,117 @@ get_template_part('template-part', 'topnav');
         });
     }
 </script>
+<!--popup-Google map-->
+<!--<script>-->
+<!--    function initMap() {-->
+<!---->
+<!--        var customMapType = new google.maps.StyledMapType([-->
+<!--            {-->
+<!--                "featureType": "landscape.natural",-->
+<!--                "elementType": "geometry.fill",-->
+<!--                "stylers": [-->
+<!--                    {-->
+<!--                        "visibility": "on"-->
+<!--                    },-->
+<!--                    {-->
+<!--                        "color": "#e0efef"-->
+<!--                    }-->
+<!--                ]-->
+<!--            },-->
+<!--            {-->
+<!--                "featureType": "poi",-->
+<!--                "elementType": "geometry.fill",-->
+<!--                "stylers": [-->
+<!--                    {-->
+<!--                        "visibility": "on"-->
+<!--                    },-->
+<!--                    {-->
+<!--                        "hue": "#1900ff"-->
+<!--                    },-->
+<!--                    {-->
+<!--                        "color": "#c0e8e8"-->
+<!--                    }-->
+<!--                ]-->
+<!--            },-->
+<!--            {-->
+<!--                "featureType": "road",-->
+<!--                "elementType": "geometry",-->
+<!--                "stylers": [-->
+<!--                    {-->
+<!--                        "lightness": 100-->
+<!--                    },-->
+<!--                    {-->
+<!--                        "visibility": "simplified"-->
+<!--                    }-->
+<!--                ]-->
+<!--            },-->
+<!--            {-->
+<!--                "featureType": "road",-->
+<!--                "elementType": "labels",-->
+<!--                "stylers": [-->
+<!--                    {-->
+<!--                        "visibility": "off"-->
+<!--                    }-->
+<!--                ]-->
+<!--            },-->
+<!--            {-->
+<!--                "featureType": "transit.line",-->
+<!--                "elementType": "geometry",-->
+<!--                "stylers": [-->
+<!--                    {-->
+<!--                        "visibility": "on"-->
+<!--                    },-->
+<!--                    {-->
+<!--                        "lightness": 700-->
+<!--                    }-->
+<!--                ]-->
+<!--            },-->
+<!--            {-->
+<!--                "featureType": "water",-->
+<!--                "elementType": "all",-->
+<!--                "stylers": [-->
+<!--                    {-->
+<!--                        "color": "#7dcdcd"-->
+<!--                    }-->
+<!--                ]-->
+<!--            }-->
+<!--        ], {-->
+<!--            name: 'Cloudappers'-->
+<!--        });-->
+<!---->
+<!--        var customMapTypeId = 'custom_style';-->
+<!--        var mapDiv = document.getElementById('map-details');-->
+<!--        var image = {-->
+<!--            url: "--><?php //echo esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']); ?>//",
+//            scaledSize: new google.maps.Size(27, 39), // scaled size)
+//        };
+//        var url = {
+//            lat: <?php //echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>//,
+//            lng: <?php //echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>//};
+//        var map = new google.maps.Map(mapDiv, {
+//            center: {
+//                lat: <?php //echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>//,
+//                lng: <?php //echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
+//            },
+//            zoom: 13,
+//            scrollwheel: false,
+//            mapTypeControlOptions: {
+//                mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+//            }
+//        });
+//
+//        map.mapTypes.set(customMapTypeId, customMapType);
+//        map.setMapTypeId(customMapTypeId);
+//
+//        var marker = new google.maps.Marker({
+//            position: url,
+//            map: map,
+//            icon: image,
+//            title: '',
+//            animation: google.maps.Animation.DROP,
+//        });
+//    }
+//</script>
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap"></script>

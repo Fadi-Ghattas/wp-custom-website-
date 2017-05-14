@@ -51,7 +51,7 @@
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="years_of_experience">Years of Experience</label>
                                 <input id="years_of_experience" name="years_of_experience" type="text"
-                                       class="form-control input-md"/>
+                                       class="form-control input-md"/>0
                             </div>
 
                             <!-- Select Basic -->
@@ -98,6 +98,23 @@
         </div>
     </div>
 </div>
+
+
+
+<div id="map-popup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div id="map-details"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

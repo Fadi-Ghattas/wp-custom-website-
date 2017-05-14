@@ -177,7 +177,7 @@ header, nav, header img {
 }
 
 .navbar-inverse .navbar-nav > li.c-btn > a {
-    color: white;
+    color: white !important;
 }
 
 .navbar-inverse .navbar-nav > li.c-btn > a:hover {
@@ -681,6 +681,7 @@ header, nav, header img {
     visibility: hidden;
     width: 100%;
     opacity: 0;
+    cursor: default;
 }
 
 .home .team .members .member-info h5 {
@@ -1437,7 +1438,7 @@ section.some-of-show-cases .overlay h6 {
     }
 
     /*prefooter*/
-    .home .img-prefooter {
+    .img-prefooter {
         float: right;
     }
 
