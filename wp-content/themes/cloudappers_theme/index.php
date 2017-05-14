@@ -176,20 +176,10 @@ get_template_part('template-part', 'topnav');
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 zoom-effect">
                     <section class="">
                         <figure>
-<!--                            <div class="lazy-loader-effect"></div>-->
-                            <div class="loader">
-                                <div class="square" ></div>
-                                <div class="square"></div>
-                                <div class="square last"></div>
-                                <div class="square clear"></div>
-                                <div class="square"></div>
-                                <div class="square last"></div>
-                                <div class="square clear"></div>
-                                <div class="square "></div>
+                            <!--<div class="lazy-loader-effect"></div>-->
+                            <div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div>
                             </div>
-                            <img class="img-lazy lazy-not-loaded lazy-loader"
-                                 data-src="<?php echo esc_url($project['project_card_image']['url']) ?>"
-                                 alt="<?php echo $project['project_card_title'] ?>"/>
+                            <img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']) ?>" alt="<?php echo $project['project_card_title'] ?>"/>
                         </figure>
                         <a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
                             <div class="overlay bg-rotate">
@@ -244,16 +234,8 @@ get_template_part('template-part', 'topnav');
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
                         <section class="<?php echo $hover[$hoverCount]; ?>">
                             <figure>
-<!--                                <div class="lazy-loader-effect"></div>-->
-                                <div class="loader">
-                                    <div class="square" ></div>
-                                    <div class="square"></div>
-                                    <div class="square last"></div>
-                                    <div class="square clear"></div>
-                                    <div class="square"></div>
-                                    <div class="square last"></div>
-                                    <div class="square clear"></div>
-                                    <div class="square "></div>
+                            <!--<div class="lazy-loader-effect"></div>-->
+                                <div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div>
                                 </div>
 
                                 <img class="img-lazy lazy-not-loaded lazy-loader"
