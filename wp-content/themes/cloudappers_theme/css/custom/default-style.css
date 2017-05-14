@@ -2763,3 +2763,23 @@ section.some-of-show-cases .overlay h6 {
 .last {
     margin-right: 0;
 }
+
+/*Fix lazy effect*/
+.home .team .members > div {
+    display: inline-block;
+    position: relative;
+}
+
+.home .team .members > div:after {
+    padding-top: 100%;
+    display: block;
+    content: '';
+}
+
+.home .team .members > div section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
