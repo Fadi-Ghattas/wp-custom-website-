@@ -1035,10 +1035,21 @@ a.btn-view-all-show-cases.c-btn {
     width: 100%;
     border-radius: 0px;
     line-height: 20px;
+    /*background: url(../../img/viewall.png) no-repeat left;*/
+    /*background-size: 37px 31px;*/
     /*background-image: -moz-linear-gradient( 0deg, rgb(255,93,22) 0%, rgb(255,156,112) 100%);*/
     /*background-image: -webkit-linear-gradient( 0deg, rgb(255,93,22) 0%, rgb(255,156,112) 100%);*/
     /*background-image: -ms-linear-gradient( 0deg, rgb(255,93,22) 0%, rgb(255,156,112) 100%);*/
     /*box-shadow: 0px 16px 19.74px 1.26px rgba(210, 210, 210, 0.5);*/
+}
+
+a.btn-view-all-show-cases.c-btn span {
+    background: url(../../img/viewallw.png) no-repeat center;
+    width: 37px;
+    height: 31px;
+    background-size: 37px 31px;
+    padding: 5px 22px;
+    margin-right: 10px;
 }
 
 section.some-of-show-cases {
@@ -1598,6 +1609,10 @@ section.some-of-show-cases .overlay h6 {
         padding-top: 10px;
     }
 
+    section.ca-page-banner .vertical-line {
+        height: 60px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1856,6 +1871,9 @@ section.some-of-show-cases .overlay h6 {
 
 @media (max-width: 320px) {
     /*.container{background: orange; z-index: 5}*/
+    section.ca-page-banner .vertical-line {
+        height: 32px;
+    }
 }
 
 /*General animation*/

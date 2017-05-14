@@ -11,6 +11,9 @@ $pageOptions = acf_get_group_fields(get_the_ID());
 $pageShowCases = ProjectModel::getProjectsAsShowCasesForPage($pageOptions['services_page_show_cases']);
 $services = Service::viewAll();
 
+$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
+$setting = acf_get_group_fields($setting->ID);
+
 get_header();
 get_template_part('template-part', 'topnav');
 
@@ -107,16 +110,24 @@ get_template_part('template-part', 'topnav');
 				<?php ($col == 2 ? $col = 0 : $col++); } ?>
 			</div>
 		</div>
-		<a href="#" class="btn-view-all-show-cases c-btn">VIEW FULL SHOWCASE</a>
+		<a href="#" class="btn-view-all-show-cases c-btn">
+			<span></span>
+			VIEW FULL SHOWCASE
+		</a>
 	</section>
 
-	<section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.jpg'); ?>">
+
+	<section class="prefooter lazy-background"
+			 data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<h1>Ready to make your idea happen?</h1>
-					<p>That's the spirit! Let's make history together</p>
-					<a href="#" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+				<div class="img-prefooter col-lg-5  col-md-12">
+					<img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/infographics-for-banner@3x.png' ?>">
+				</div>
+				<div class="col-lg-7  col-md-12">
+					<h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
+					<p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
+					<a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
 				</div>
 			</div>
 		</div>
