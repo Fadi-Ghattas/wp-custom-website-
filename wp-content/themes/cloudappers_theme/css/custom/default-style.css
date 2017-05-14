@@ -375,16 +375,33 @@ header, nav, header img {
     height: 54px;
 }
 
+.home .what-we-do .row > div,
+.home .what-we-do .row > div:hover {
+    transition: 0.5s;
+}
+
 .home .what-we-do .row > div:first-child {
     border-top: 3px solid rgb(255, 161, 6);
+}
+
+.home .what-we-do .row > div:first-child:hover {
+    box-shadow: inset 0 0 100px rgb(255, 161, 6);
 }
 
 .home .what-we-do .row > div:nth-child(2) {
     border-top: 3px solid rgb(37, 169, 198);
 }
 
+.home .what-we-do .row > div:nth-child(2):hover {
+    box-shadow: inset 0 0 100px #25a9c6;
+}
+
 .home .what-we-do .row > div:last-child {
     border-top: 3px solid rgb(255, 94, 24);
+}
+
+.home .what-we-do .row > div:last-child:hover {
+    box-shadow: inset 0 0 100px rgb(255, 94, 24);
 }
 
 .home .what-we-do .more {
@@ -675,17 +692,6 @@ header, nav, header img {
     font-size: 18px;
 }
 
-/*.home .team .members img {*/
-/*width: 100%;*/
-/*height: auto;*/
-/*position: absolute;*/
-/*right: 0;*/
-/*left: 0;*/
-/*top: 0;*/
-/*bottom: 0;*/
-/*margin: auto;*/
-/*}*/
-
 .home .team .members > div:hover img {
     visibility: hidden;
 }
@@ -929,6 +935,94 @@ header, nav, header img {
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
 
+.home #JobModal .modal-dialog,
+.home #JobModal .modal-content {
+    border-radius: 10px;
+}
+
+.home #JobModal .modal-content {
+    background: url('../../img/box.png'), url('../../img/popup-bg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-color: white;
+    background-position: 122% 8%, center center;
+    background-size: 240px 240px, cover;
+}
+.home #JobModal .modal-content{
+
+    /*arrow.png  */
+}
+
+
+.home #JobModal .modal-header {
+    text-align: center;
+    border: none;
+}
+
+.home #JobModal .modal-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.home #JobModal .modal-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6f6c6c;
+}
+
+.home #JobModal input,
+.home #JobModal select,
+.home #JobModal .file-caption,
+.home #JobModal textarea {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5f19;
+    min-height: 39px;
+    background: transparent;
+}
+
+.home #JobModal label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home #JobModal button {
+    border: 1px solid black;
+}
+
+.home #JobModal #JobCaptcha {
+    display: inline-block;
+}
+
+.home #JobModal .btn-file {
+    background: #ff601b;
+}
+
+.home #JobModal .captcha-container {
+    text-align: center;
+}
+
+.home #JobModal .file-caption-name {
+    height: 39px;
+}
+
+.home #JobModal .submit-btn {
+    border: none;
+    width: 100%;
+}
+
+.home #JobModal .close {
+    border: none;
+    font-size: 50px;
+    line-height: 22px;
+    color: rgb(94, 94, 94);
+    opacity: 1;
+    font-weight: 200;
+}
+
 .home .contact .form-group.ms {
     max-width: 100% !important;
     width: 100% !important;
@@ -937,7 +1031,7 @@ header, nav, header img {
 
 .btn-anim {
     animation-duration: 1s;
-    animation-name: btn-anim ;
+    animation-name: btn-anim;
     animation-iteration-count: infinite;
     animation-direction: alternate
 }
@@ -1449,7 +1543,6 @@ section.some-of-show-cases .overlay h6 {
     .home .contact .address .container-fluid {
         padding-bottom: 35px;
     }
-
 
     .prefooter {
         text-align: center;
@@ -2441,6 +2534,7 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
+
 @-moz-keyframes fadeIn {
     from {
         opacity: 0;
@@ -2450,6 +2544,7 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
+
 @-o-keyframes fadeIn {
     from {
         opacity: 0;
@@ -2459,6 +2554,7 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -2478,6 +2574,7 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
+
 @-moz-keyframes fadeInNoStop {
     0% {
         opacity: 0;
@@ -2487,6 +2584,7 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
+
 @-o-keyframes fadeInNoStop {
     0% {
         opacity: 0;
@@ -2496,6 +2594,7 @@ section.some-of-show-cases .overlay h6 {
         opacity: 1;
     }
 }
+
 @keyframes fadeInNoStop {
     0% {
         opacity: 0;
@@ -2507,7 +2606,6 @@ section.some-of-show-cases .overlay h6 {
 }
 
 /*effect end*/
-
 
 @-webkit-keyframes enter {
     0% {
@@ -2527,6 +2625,7 @@ section.some-of-show-cases .overlay h6 {
         top: 10px;
     }
 }
+
 @keyframes enter {
     0% {
         opacity: 0;
@@ -2545,6 +2644,7 @@ section.some-of-show-cases .overlay h6 {
         top: 10px;
     }
 }
+
 @-moz-keyframes enter {
     0% {
         opacity: 0;
@@ -2563,7 +2663,6 @@ section.some-of-show-cases .overlay h6 {
         top: 10px;
     }
 }
-
 
 .loader {
     position: absolute;
