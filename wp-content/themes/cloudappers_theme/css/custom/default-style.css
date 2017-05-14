@@ -1963,6 +1963,14 @@ section.some-of-show-cases .overlay h6 {
         margin-top: 0;
     }
 
+    .home .team .members .member-info h5 {
+        font-size: 4vw;
+    }
+
+    .home .team .members .member-info h6 {
+        font-size: 3.5vw;
+    }
+
     /*prefooter*/
     .prefooter {
         text-align: center;
