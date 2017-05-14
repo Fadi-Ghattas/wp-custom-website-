@@ -2389,7 +2389,6 @@ section.some-of-show-cases .overlay h6 {
     background: #81c0ee;
     height: 100%;
     width: 100%;
-    min-height: 280px;
 }
 
 .lazy-loader-effect {
@@ -2416,7 +2415,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .lazy-not-loaded {
-    text-indent: -9999px
+    text-indent: -9999px;
 }
 
 @-webkit-keyframes e {
