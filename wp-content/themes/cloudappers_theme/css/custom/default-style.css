@@ -1297,7 +1297,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .top-header .nav-social .copyright p {
-    font-size: 24px;
+    /*font-size: 24px;*/
     color: rgb(187, 187, 187);
     text-transform: uppercase;
     line-height: 2;
@@ -1783,8 +1783,6 @@ section.some-of-show-cases .overlay h6 {
         font-size: 8.6vw;
         padding-top: 24px;
         padding-bottom: 35px;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
         color: white;
     }
 
@@ -2000,6 +1998,11 @@ section.some-of-show-cases .overlay h6 {
     section.ca-page-banner p {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
