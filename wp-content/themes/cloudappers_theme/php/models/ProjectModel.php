@@ -58,7 +58,7 @@ class ProjectModel extends PodsModel
 			[
 				'acf' => 1,
 				'name' => 'project_type',
-				'type' => 'project_type',
+				'type' => (new ProjectTypeModel())->pod_name,
 				'relationship' => 1,
 				'fields' => [
 					'post_title',
