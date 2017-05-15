@@ -2293,6 +2293,10 @@ section.some-of-show-cases .overlay h6 {
     .navbar-inverse .navbar-nav > li > a {
         line-height: 6vh;
     }
+
+    #nav-toggle {
+        height: 15vw;
+    }
 }
 
 @media (max-width: 480px) {
