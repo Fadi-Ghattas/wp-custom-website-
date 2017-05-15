@@ -53,8 +53,14 @@ figure {
     height: 100%;
 }
 
+.center {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
 section.ca-page-header {
-    min-height: 792px;
+    min-height: 100vh;
     background-size: cover;
     display: flex;
     display: -ms-flexbox;
@@ -80,6 +86,7 @@ section.ca-page-header .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
 }
 
 section.ca-page-header .sub-title {
@@ -88,19 +95,21 @@ section.ca-page-header .sub-title {
     font-weight: 700;
     font-size: 90px;
     line-height: 108px;
+    text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
 }
 
 section.ca-page-banner {
     position: relative;
     background: #81c0ee;
-    min-height: 222px;
-    max-height: 222px;
+    /*min-height: 290px;*/
+    /*max-height: 222px;*/
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
     height: 100%;
     flex-direction: column;
     justify-content: center;
+    padding: 60px 0 80px 0px;
 }
 
 section.ca-page-banner .vertical-line {
@@ -1046,7 +1055,7 @@ header, nav, header img {
     }
 }
 
-/*services*/
+/*services start*/
 
 section.services {
     padding-bottom: 62px;
@@ -1057,19 +1066,23 @@ section.services .service-item {
     padding: 0 10px;
 }
 
-.page-template-services section.services .service-item.col-lg-left {
+section.services .service-item.col-lg-left {
     padding-left: 0px;
     padding-right: 54px;
 }
 
-.page-template-services section.services .service-item.col-lg-center {
+section.services .service-item.col-lg-center {
     padding-left: 36px;
     padding-right: 36px;
 }
 
-.page-template-services section.services .service-item.col-lg-right {
+section.services .service-item.col-lg-right {
     padding-left: 45px;
     padding-right: 0;
+}
+
+.page-template-services section.ca-page-banner {
+    padding: 40px 0 70px 0px;
 }
 
 section.services .service-item a {
@@ -1147,7 +1160,7 @@ a.btn-view-all-show-cases.c-btn span {
 }
 
 section.some-of-show-cases {
-    min-height: 610px;
+    min-height: 100vh;
     background-size: cover;
     height: 100%;
     /*margin-top: 62px;*/
@@ -1160,7 +1173,7 @@ section.some-of-show-cases {
 section.some-of-show-cases .show-case-item {
     padding: 0 5px;
     position: relative;
-    height: 380px;
+    /*height: 380px;*/
     /*width: 380px;*/
     /*margin: 0 5px;*/
 }
@@ -1180,16 +1193,16 @@ section.some-of-show-cases .show-case-item figure {
     width: 100%;
 }
 
-.page-template-services section.some-of-show-cases .show-case-item.col-lg-left {
+section.some-of-show-cases .show-case-item.col-lg-left {
     padding-left: 0;
     padding-right: 10px;
 }
 
-.page-template-services section.some-of-show-cases .show-case-item.col-lg-center {
+section.some-of-show-cases .show-case-item.col-lg-center {
     padding: 0 5px;
 }
 
-.page-template-services section.some-of-show-cases .show-case-item.col-lg-right {
+section.some-of-show-cases .show-case-item.col-lg-right {
     padding-left: 10px;
     padding-right: 0px;
 }
@@ -1219,6 +1232,127 @@ section.some-of-show-cases .overlay h6 {
     margin-top: 0;
     margin-bottom: 31px;
 }
+
+/*services end*/
+
+
+/*service details start*/
+
+.service-details .icon-container {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    border: solid white;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    margin-top: -50px;
+    background: white;
+}
+
+.service-details img.icon {
+    align-self: center;
+    height: 54px;
+}
+
+.service-details .vertical-line {
+    border-left: 1px solid #ff6a28;
+    width: 1px;
+    height: 90px;
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.service-details .title {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-top: 44px;
+    margin-bottom: 35px;
+}
+
+.service-details .description {
+    margin-bottom: 110px;
+}
+
+.service-details .description p {
+    color: #6f6c6c;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 1.875;
+}
+
+.branding {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.branding .description {
+    align-self: center;
+    color: #fefefe;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.single-service section.info {
+    position: relative;
+}
+
+.full-center-vertical-divider {
+    border-left: 1px solid #ebebeb;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.service-info-item .title {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+.service-info-item.before-last .description,
+.service-info-item.last .description
+{
+    margin-bottom: 100px;
+}
+
+.service-info-item .description p {
+    color: #6f6c6c;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 1.875;
+}
+
+.service-info-item.col-lg-left {
+    padding-left: 0px;
+    padding-right: 56px;
+}
+
+.service-info-item.col-lg-right {
+    padding-left: 56px;
+    padding-right: 0px;
+}
+/*service details end*/
 
 /*Footer*/
 
@@ -1456,17 +1590,17 @@ section.some-of-show-cases .overlay h6 {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-    .page-template-services section.services .service-item.col-md-left {
+     section.services .service-item.col-md-left {
         padding-left: 0px;
         padding-right: 18px;
     }
 
-    .page-template-services section.services .service-item.col-md-center {
+     section.services .service-item.col-md-center {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.services .service-item.col-md-right {
+     section.services .service-item.col-md-right {
         padding-left: 18px;
         padding-right: 0;
     }
@@ -1572,34 +1706,34 @@ section.some-of-show-cases .overlay h6 {
         text-align: -webkit-center !important;
     }
 
-    .page-template-services section.services .service-item.col-sm-left {
+    section.services .service-item.col-sm-left {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.services .service-item.col-sm-center {
+    section.services .service-item.col-sm-center {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.services .service-item.col-sm-right {
+    section.services .service-item.col-sm-right {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.some-of-show-cases .show-case-item.col-sm-left {
+    section.some-of-show-cases .show-case-item.col-sm-left {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
     }
 
-    .page-template-services section.some-of-show-cases .show-case-item.col-sm-center {
+    section.some-of-show-cases .show-case-item.col-sm-center {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
     }
 
-    .page-template-services section.some-of-show-cases .show-case-item.col-sm-right {
+    section.some-of-show-cases .show-case-item.col-sm-right {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
@@ -1616,7 +1750,6 @@ section.some-of-show-cases .overlay h6 {
 }
 
 @media (max-width: 768px) {
-
     /*Menu*/
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background: transparent;
@@ -1669,34 +1802,34 @@ section.some-of-show-cases .overlay h6 {
         text-align: -webkit-center !important;
     }
 
-    .page-template-services section.services .service-item.col-xs-left {
+    section.services .service-item.col-xs-left {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.services .service-item.col-xs-center {
+    section.services .service-item.col-xs-center {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.services .service-item.col-xs-right {
+    section.services .service-item.col-xs-right {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-    .page-template-services section.some-of-show-cases .show-case-item.col-xs-left {
+    section.some-of-show-cases .show-case-item.col-xs-left {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
     }
 
-    .page-template-services section.some-of-show-cases .show-case-item.col-xs-center {
+    section.some-of-show-cases .show-case-item.col-xs-center {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
     }
 
-    .page-template-services section.some-of-show-cases .show-case-item.col-xs-right {
+    section.some-of-show-cases .show-case-item.col-xs-right {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
@@ -1704,6 +1837,30 @@ section.some-of-show-cases .overlay h6 {
 
     section.ca-page-banner .vertical-line {
         height: 60px;
+    }
+
+    section.info .full-center-vertical-divider {
+        display: none;
+    }
+    .service-info-item.col-xs-left,
+    .service-info-item.col-xs-right {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .service-info-item .title {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .service-info-item .description,
+    .service-info-item.before-last .description
+    {
+        margin-bottom: 15px;
+    }
+
+    .service-info-item.last .description {
+        margin-bottom: 50px;
     }
 
 }
