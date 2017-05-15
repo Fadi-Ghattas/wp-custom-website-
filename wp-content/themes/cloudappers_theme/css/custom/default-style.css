@@ -1189,6 +1189,7 @@ section.some-of-show-cases {
 section.some-of-show-cases .show-case-item {
     padding: 0 5px;
     position: relative;
+    margin-bottom: 15px;
     /*height: 380px;*/
     /*width: 380px;*/
     /*margin: 0 5px;*/
@@ -1369,6 +1370,51 @@ section.some-of-show-cases .overlay h6 {
     padding-right: 0px;
 }
 /*service details end*/
+
+/*show you page start*/
+
+ul.filters {
+    list-style-type: none;
+}
+
+ul.filters li {
+    display: inline-block;
+    color: #d0d0d0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+ul.filters li a {
+    color: #d0d0d0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul.filters li a:hover {
+    color: #4d4d4d;
+}
+
+ul.filters li a img.icon {
+    height: 23px;
+    display: inline-block;
+}
+
+ul.filters li a img.icon-hover {
+    height: 23px;
+    display: none;
+}
+
+ul.filters li a:hover img.icon {
+    display: none;
+}
+
+ul.filters li a:hover img.icon-hover {
+    display: inline-block;
+}
+/*show you page end*/
 
 /*Footer*/
 
@@ -2602,6 +2648,10 @@ section.some-of-show-cases .overlay h6 {
 
 .lazy-not-loaded {
     text-indent: -9999px;
+}
+
+.lazy-iso-not-loaded {
+    min-height: 380px;
 }
 
 @-webkit-keyframes e {

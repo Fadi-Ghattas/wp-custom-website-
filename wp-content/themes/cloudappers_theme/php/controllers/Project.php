@@ -30,6 +30,16 @@ class Project {
 				'acf' => 1,
 				'name' => 'project_card_image',
 			],
+			[
+				'acf' => 1,
+				'name' => 'project_type',
+				'type' => (new ProjectTypeModel())->pod_name,
+				'relationship' => 1,
+				'fields' => [
+					'id',
+					'post_title',
+				],
+			],
 		];
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, project_is_featured.meta_value DESC'];
