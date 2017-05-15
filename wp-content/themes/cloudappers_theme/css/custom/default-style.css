@@ -2334,7 +2334,7 @@ ul.filters li a:hover img.icon-hover {
         padding-top: 10vh;
     }
 
-    .top-header.opened .nav-social {
+    .top-header .nav-social {
         position: absolute;
         right: 0;
         left: 0;
