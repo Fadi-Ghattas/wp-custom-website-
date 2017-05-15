@@ -1637,7 +1637,16 @@ section.some-of-show-cases .overlay h6 {
         display: inline-block;
         margin: 0 23px;
         position: relative;
+        opacity: 0.5;
+        transition: 0.3s;
     }
+
+    .home .clients .item:hover
+    {
+        opacity: 1;
+        transition: 0.3s;
+    }
+
 
     .home .contact .form {
         padding-left: 70px;
