@@ -944,6 +944,7 @@ header, nav, header img {
     transition: transform 0.6s;
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    z-index: 1;
 }
 
 .home .team .members > div:hover:before {
@@ -1768,6 +1769,20 @@ section.some-of-show-cases .overlay h6 {
 
     .top-header.opened .nav-social {
         display: block;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .top-header.opened .col-lg-12 {
+        padding: 0;
+    }
+
+    .top-header .nav-social {
+        margin: 0;
+    }
+
+    .top-header .copyright {
+        padding: 0 15px;
     }
 
     .navbar-nav {
@@ -2794,21 +2809,23 @@ section.some-of-show-cases .overlay h6 {
 }
 
 /*Fix lazy effect*/
-.home .team .members > div {
+.responsive-loader {
     display: inline-block;
     position: relative;
 }
 
-.home .team .members > div:after {
+.responsive-loader:after {
     padding-top: 100%;
     display: block;
     content: '';
 }
 
-.home .team .members > div section {
+.responsive-loader > section,
+.responsive-loader > section {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
 }
+
