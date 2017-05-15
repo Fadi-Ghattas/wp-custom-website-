@@ -137,10 +137,6 @@ section.ca-page-banner p {
 
 /*Header*/
 
-.top-header {
-    background-color: rgb(255, 255, 255);
-}
-
 header, nav, header img {
     transition: all 1s;
     -moz-transition: all 1s; /* Firefox 4 */
@@ -154,7 +150,15 @@ header, nav, header img {
     left: 0;
     opacity: 0.949;
     box-shadow: 0px 10px 90px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgb(255, 255, 255);
     z-index: 10;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #ff5f19;
+    background: transparent;
 }
 
 .navbar-inverse {
@@ -191,6 +195,17 @@ header, nav, header img {
 
 .navbar-inverse .navbar-nav > li.c-btn > a:hover {
     color: white;
+}
+
+.navbar-inverse .navbar-nav > li.c-btn:focus,
+.navbar-inverse .navbar-nav > li.c-btn:active {
+    background-image: none;
+    background-color: white;
+}
+
+.navbar-inverse .navbar-nav > li.c-btn:focus a,
+.navbar-inverse .navbar-nav > li.c-btn:active a {
+    color: #ff5d16;
 }
 
 .navbar-nav {
@@ -690,6 +705,7 @@ header, nav, header img {
     visibility: hidden;
     width: 100%;
     opacity: 0;
+    cursor: default;
 }
 
 .home .team .members .member-info h5 {
@@ -956,11 +972,11 @@ header, nav, header img {
     background-position: 122% 8%, center center;
     background-size: 240px 240px, cover;
 }
-.home #JobModal .modal-content{
+
+.home #JobModal .modal-content {
 
     /*arrow.png  */
 }
-
 
 .home #JobModal .modal-header {
     text-align: center;
@@ -1415,7 +1431,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .top-header .nav-social .copyright p {
-    font-size: 24px;
+    /*font-size: 24px;*/
     color: rgb(187, 187, 187);
     text-transform: uppercase;
     line-height: 2;
@@ -1462,6 +1478,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 @media (min-width: 768px) {
+
     /*Header*/
     .navbar-collapse.collapse {
         padding: 0;
@@ -1582,7 +1599,7 @@ section.some-of-show-cases .overlay h6 {
     }
 
     /*prefooter*/
-    .home .img-prefooter {
+    .img-prefooter {
         float: right;
     }
 
@@ -1762,6 +1779,7 @@ section.some-of-show-cases .overlay h6 {
         width: 66px;
         height: 49px;
         margin-top: 27px;
+        margin-top: 5%;
 
     }
 
@@ -1867,6 +1885,19 @@ section.some-of-show-cases .overlay h6 {
 
 @media (max-width: 767px) {
     /*Menu*/
+    .logo-mob,
+    .navbar-inverse .navbar-toggle {
+        margin-top: 0;
+    }
+
+    .navbar-inverse {
+        padding-top: 15px;
+    }
+
+    .logo-mob {
+        width: 15vw;
+    }
+
     .navbar-nav {
         float: none;
         width: 100%;
@@ -1898,7 +1929,7 @@ section.some-of-show-cases .overlay h6 {
 
     .navbar-nav {
         padding-right: 30px;
-        padding-top: 140px;
+        padding-top: 45px;
     }
 
     .navbar-inverse {
@@ -2104,6 +2135,14 @@ section.some-of-show-cases .overlay h6 {
         margin-top: 0;
     }
 
+    .home .team .members .member-info h5 {
+        font-size: 6vw;
+    }
+
+    .home .team .members .member-info h6 {
+        font-size: 5vw;
+    }
+
     /*prefooter*/
     .prefooter {
         text-align: center;
@@ -2116,6 +2155,11 @@ section.some-of-show-cases .overlay h6 {
     section.ca-page-banner p {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -2131,6 +2175,7 @@ section.some-of-show-cases .overlay h6 {
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
     cursor: pointer;
     height: 8px;
+    /*height: 1vw;*/
     width: 44px;
     border-radius: 4px;
     margin-top: 4px;
@@ -2530,7 +2575,6 @@ section.some-of-show-cases .overlay h6 {
     background: #81c0ee;
     height: 100%;
     width: 100%;
-    min-height: 280px;
 }
 
 .lazy-loader-effect {
@@ -2557,7 +2601,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .lazy-not-loaded {
-    text-indent: -9999px
+    text-indent: -9999px;
 }
 
 @-webkit-keyframes e {
@@ -2904,4 +2948,24 @@ section.some-of-show-cases .overlay h6 {
 
 .last {
     margin-right: 0;
+}
+
+/*Fix lazy effect*/
+.home .team .members > div {
+    display: inline-block;
+    position: relative;
+}
+
+.home .team .members > div:after {
+    padding-top: 100%;
+    display: block;
+    content: '';
+}
+
+.home .team .members > div section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

@@ -210,7 +210,7 @@ get_template_part('template-part', 'topnav');
             <div class="col-lg-7  col-md-12">
                 <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
                 <p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-                <a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+                <a href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
             </div>
         </div>
     </div>
@@ -276,9 +276,8 @@ get_template_part('template-part', 'topnav');
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="c-rbtn"
-                           href="<?php echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?>">take
-                            me there</a>
+<!--                        <a class="c-rbtn" href="--><?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
+                        <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
                     </div>
                 </div>
             </div>
@@ -321,6 +320,8 @@ get_template_part('template-part', 'topnav');
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
     </div>
 </section>
+
+
 
 <!--Google map-->
 <script>
@@ -433,6 +434,7 @@ get_template_part('template-part', 'topnav');
         });
     }
 </script>
+
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap"></script>
