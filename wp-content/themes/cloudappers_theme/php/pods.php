@@ -135,21 +135,23 @@ function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'p
 				} else if (isset($field['acf'])) {
 
 					if (isset($field['relationship'])) {
+
 						$relationshipPosts = get_field($field['name'], $pods->raw('id'));
 						$singlePod[$field['name']] = [];
 						if (!empty($relationshipPosts)) {
 							//single relationship
-							if (intval($relationshipPosts)) {
+							if (intval(sizeof($relationshipPosts)) == 1) {
 								if (is_object($relationshipPosts))
-									$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts->ID, $field['fields']);
+									$pod[$field['name']][] = get_single_pod_data($field['type'], $relationshipPosts->ID, $field['fields']);
 								else if (is_array($relationshipPosts))
-									$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts[0]->ID, $field['fields']);
+									$pod[$field['name']][] = get_single_pod_data($field['type'], $relationshipPosts[0]->ID, $field['fields']);
 							} else { //multiple relationship
 								foreach ($relationshipPosts as $relationshipPost) {
 									$pod[$field['name']][] = get_single_pod_data($relationshipPost->post_type, $relationshipPost->ID, $field['fields']);
 								}
 							}
 						}
+
 					} else {
 						$pod[$field['name']] = get_field($field['name'], $pods->raw('id'));
 					}
@@ -204,21 +206,24 @@ function get_single_pod_data($pod_name, $pod_id, $pod_fields)
 				$singlePod[$field['name']] = isset($field['size']) ? get_acf_image($field['name'], $pod->raw('id'), $field['size']) : get_acf_image($field['name'], $pod->raw('id'));
 			} else if (isset($field['acf'])) {
 				if (isset($field['relationship'])) {
+
 					$relationshipPosts = get_field($field['name'], $pod_id);
 					$singlePod[$field['name']] = [];
 					if (!empty($relationshipPosts)) {
 						//single relationship
-						if (intval($relationshipPosts)) {
+						if (intval(sizeof($relationshipPosts)) == 1) {
 							if (is_object($relationshipPosts))
-								$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts->ID, $field['fields']);
-							else if (is_array($relationshipPosts))
-								$pod[$field['name']] = get_single_pod_data($field['type'], $relationshipPosts[0]->ID, $field['fields']);
+								$singlePod[$field['name']][] = get_single_pod_data($field['type'], $relationshipPosts->ID, $field['fields']);
+							else if (is_array($relationshipPosts)) {
+								$singlePod[$field['name']][] = get_single_pod_data($field['type'], $relationshipPosts[0]->ID, $field['fields']);
+							}
 						} else { //multiple relationship
 							foreach ($relationshipPosts as $relationshipPost) {
 								$singlePod[$field['name']][] = get_single_pod_data($relationshipPost->post_type, $relationshipPost->ID, $field['fields']);
 							}
 						}
 					}
+
 				} else {
 					$singlePod[$field['name']] = get_field($field['name'], $pod_id);
 				}

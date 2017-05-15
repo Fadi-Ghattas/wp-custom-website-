@@ -49,27 +49,28 @@ jQuery(function ($) {
 		arrows: false
 	});
 
-    //Menu resize
-    $(document).on("scroll", function () {
-        if ($(document).scrollTop() > 100) {
-            $(".top-header").addClass("small");
-        } else {
-            $(".top-header").removeClass("small")
-        }
-    });
+	// if($('#top-header').length) {
+		//Menu resize
+		$(document).on("scroll", function () {
+			if ($(document).scrollTop() > 100) {
+				$(".top-header").addClass("small");
+			} else {
+				$(".top-header").removeClass("small")
+			}
+		});
 
 
-	//Menu button effect
-    document.querySelector( "#nav-toggle" )
-        .addEventListener( "click", function() {
-            this.classList.toggle( "active" );
-        });
+		//Menu button effect
+		document.querySelector("#nav-toggle")
+			.addEventListener("click", function () {
+				this.classList.toggle("active");
+			});
 
-   //Change Menu background
-    $('#nav-toggle').on('click', function(){
-        $(".top-header").toggleClass("opened");
-    });
+		//Change Menu background
+		$('#nav-toggle').on('click', function () {
+			$(".top-header").toggleClass("opened");
+		});
 
+	// }
 
 });
-

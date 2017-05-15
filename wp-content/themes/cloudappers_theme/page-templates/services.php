@@ -7,12 +7,12 @@
  * Template Name: ServicesPage
  */
 
+$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
+$setting = acf_get_group_fields($setting->ID);
+
 $pageOptions = acf_get_group_fields(get_the_ID());
 $pageShowCases = ProjectModel::getProjectsAsShowCasesForPage($pageOptions['services_page_show_cases']);
 $services = Service::viewAll();
-
-$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
-$setting = acf_get_group_fields($setting->ID);
 
 get_header();
 get_template_part('template-part', 'topnav');
@@ -78,31 +78,22 @@ get_template_part('template-part', 'topnav');
 
 				<?php $hover = ['green-card-hover', 'red-card-hover', 'purple-card-hover']; ?>
 				<?php $col = 0;$colPos ='';
-				for ($i = 0; $i < 3; $i++) {
-					$title = (!empty($pageShowCases[$i]['project_card_title']) ? $pageShowCases[$i]['project_card_title'] : $pageShowCases[$i]['post_title']);
+				foreach ($pageShowCases as $project) {
+					$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
 					if($col == 0) {$colPos = 'col-lg-left col-sm-left col-xs-left';} else if($col == 1) {$colPos = 'col-lg-center col-sm-center col-xs-center';} else if($col == 2) {$colPos = 'col-lg-right col-sm-right col-xs-right';}
 					?>
 					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?>">
-						<section class="<?php echo $hover[$i]; ?>">
+						<section class="<?php echo $hover[$col]; ?>">
 							<figure>
-<!--								<div class="lazy-loader-effect"></div>-->
-								<div class="loader">
-									<div class="square" ></div>
-									<div class="square"></div>
-									<div class="square last"></div>
-									<div class="square clear"></div>
-									<div class="square"></div>
-									<div class="square last"></div>
-									<div class="square clear"></div>
-									<div class="square "></div>
-								</div>
-								<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($pageShowCases[$i]['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
+								<!--<div class="lazy-loader-effect"></div>-->
+								<div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
+								<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
 							</figure>
-							<a href="<?php echo esc_url(get_permalink($pageShowCases[$i]['id']))?>">
+							<a href="<?php echo esc_url(get_permalink($project['id']))?>">
 								<div class="overlay bg-rotate">
 									<h5><?php echo $title; ?></h5>
-									<?php if (!empty($pageShowCases[$i]['project_card_sub_title'])) ?>
-									<h6><?php echo $pageShowCases[$i]['project_card_sub_title']; ?></h6>
+									<?php if (!empty($project['project_card_sub_title'])) ?>
+									<h6><?php echo $project['project_card_sub_title']; ?></h6>
 								</div>
 							</a>
 						</section>
@@ -117,8 +108,7 @@ get_template_part('template-part', 'topnav');
 	</section>
 
 
-	<section class="prefooter lazy-background"
-			 data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
+	<section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="img-prefooter col-lg-5  col-md-12">
