@@ -953,6 +953,7 @@ header, nav, header img {
     transition: transform 0.6s;
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    z-index: 1;
 }
 
 .home .team .members > div:hover:before {
@@ -1252,7 +1253,6 @@ section.some-of-show-cases .overlay h6 {
 
 /*services end*/
 
-
 /*service details start*/
 
 .service-details .icon-container {
@@ -1347,8 +1347,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .service-info-item.before-last .description,
-.service-info-item.last .description
-{
+.service-info-item.last .description {
     margin-bottom: 100px;
 }
 
@@ -1369,6 +1368,7 @@ section.some-of-show-cases .overlay h6 {
     padding-left: 56px;
     padding-right: 0px;
 }
+
 /*service details end*/
 
 /*show you page start*/
@@ -1461,14 +1461,16 @@ ul.filters li a:hover img.icon-hover {
 }
 
 .top-header .nav-social {
+    position: relative;
+    overflow: hidden;
     display: none;
     background: white;
     margin: 0 -15px;
     text-align: center;
     background: url("../../img/menu-bg.png") no-repeat top right;
     background-size: cover;
-    height: 511px;
-    padding: 145px 15px 15px;
+    padding: 100px 15px 0;
+    /*background: linear-gradient(-10deg, rgb(255, 255, 255) 40%, #fff 40%, rgb(255, 255, 255) 60%, rgba(255, 253, 253, 0) 60%);*/
 }
 
 .top-header .nav-social .copyright img {
@@ -1484,10 +1486,10 @@ ul.filters li a:hover img.icon-hover {
 }
 
 .top-header .social {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
     height: 130px;
     width: 100%;
     border-top: 1px solid rgb(206, 206, 206);
@@ -1521,6 +1523,57 @@ ul.filters li a:hover img.icon-hover {
     transform: skew(0deg, 10deg);
     -ms-transform: skew(0deg, 10deg);
     -webkit-transform: skew(0deg, -10deg);
+}
+
+/*Menu effect*/
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    height: 8px;
+    /*height: 1vw;*/
+    /*width: 44px;*/
+    width: 7vh;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin: 0;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+    right: 0;
+}
+
+#nav-toggle span:before {
+    top: -24px;
+    top: -4vh;
+    width: 54px;
+    width: 10vh;
+}
+
+#nav-toggle span:after {
+    bottom: -20px;
+    bottom: -4vh;
+    width: 54px;
+    width: 10vh;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
 }
 
 @media (min-width: 768px) {
@@ -1653,17 +1706,17 @@ ul.filters li a:hover img.icon-hover {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-     section.services .service-item.col-md-left {
+    section.services .service-item.col-md-left {
         padding-left: 0px;
         padding-right: 18px;
     }
 
-     section.services .service-item.col-md-center {
+    section.services .service-item.col-md-center {
         padding-left: 18px;
         padding-right: 18px;
     }
 
-     section.services .service-item.col-md-right {
+    section.services .service-item.col-md-right {
         padding-left: 18px;
         padding-right: 0;
     }
@@ -1830,7 +1883,7 @@ ul.filters li a:hover img.icon-hover {
     }
 
     .navbar-inverse .navbar-toggle.active {
-        margin-top: 22px;
+        margin-top: 0;
     }
 
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -1906,6 +1959,7 @@ ul.filters li a:hover img.icon-hover {
     section.info .full-center-vertical-divider {
         display: none;
     }
+
     .service-info-item.col-xs-left,
     .service-info-item.col-xs-right {
         padding-left: 15px;
@@ -1918,8 +1972,7 @@ ul.filters li a:hover img.icon-hover {
     }
 
     .service-info-item .description,
-    .service-info-item.before-last .description
-    {
+    .service-info-item.before-last .description {
         margin-bottom: 15px;
     }
 
@@ -1936,12 +1989,20 @@ ul.filters li a:hover img.icon-hover {
         margin-top: 0;
     }
 
+    .top-header .social a {
+        background-size: auto 40%;
+    }
+
+    .top-header .social {
+        height: 15vw;
+    }
+
     .navbar-inverse {
         padding-top: 15px;
     }
 
     .logo-mob {
-        width: 15vw;
+        width: 15vh;
     }
 
     .navbar-nav {
@@ -1971,11 +2032,26 @@ ul.filters li a:hover img.icon-hover {
 
     .top-header.opened .nav-social {
         display: block;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .top-header .col-lg-12 {
+        padding: 0;
+    }
+
+    .top-header .nav-social {
+        margin: 0;
+    }
+
+    .top-header .copyright {
+        padding: 0 15px;
     }
 
     .navbar-nav {
         padding-right: 30px;
         padding-top: 45px;
+        padding-top: 10px;
     }
 
     .navbar-inverse {
@@ -2017,6 +2093,10 @@ ul.filters li a:hover img.icon-hover {
 
     .navbar-collapse.in {
         overflow: visible;
+    }
+
+    .top-header .nav-social .copyright img {
+        width: 50vw;
     }
 
     /*Header*/
@@ -2196,6 +2276,71 @@ ul.filters li a:hover img.icon-hover {
 
 }
 
+@media (max-width: 767px) and (orientation: portrait) {
+    .logo-mob {
+        width: 15vw;
+    }
+
+    .top-header.opened,
+    .top-header.opened .container,
+    .top-header.opened .row,
+    .top-header.opened .col-lg-12,
+    .top-header.opened .navbar-inverse {
+        height: 100vh;
+    }
+
+    .top-header .nav-social .copyright p {
+        font-size: 3.5vw;
+    }
+
+    .top-header .nav-social .copyright img {
+        width: 50vw;
+    }
+
+    #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+        margin-top: 0;
+    }
+
+    #nav-toggle span {
+        width: 7vw;
+    }
+
+    #nav-toggle span:before {
+        top: -24px;
+        top: -4vw;
+        width: 10vw;
+    }
+
+    #nav-toggle span:after {
+        bottom: -20px;
+        bottom: -4vw;
+        width: 10vw;
+    }
+
+    .top-header .social {
+        height: 10vh;
+    }
+
+    .top-header .nav-social {
+        padding-top: 10vh;
+    }
+
+    .top-header.opened .nav-social {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .top-header a {
+        background-size: 3vh;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        line-height: 6vh;
+    }
+}
+
 @media (max-width: 480px) {
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-banner p {
@@ -2217,50 +2362,6 @@ ul.filters li a:hover img.icon-hover {
 }
 
 /*General animation*/
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-    cursor: pointer;
-    height: 8px;
-    /*height: 1vw;*/
-    width: 44px;
-    border-radius: 4px;
-    margin-top: 4px;
-    background: white;
-    position: absolute;
-    display: block;
-    content: '';
-    right: 0;
-}
-
-#nav-toggle span:before {
-    top: -24px;
-    width: 54px;
-}
-
-#nav-toggle span:after {
-    bottom: -20px;
-    width: 54px;
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-    transition: all 0.3s ease-in-out;
-}
-
-#nav-toggle.active span {
-    background-color: transparent;
-}
-
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-    top: 0;
-}
-
-#nav-toggle.active span:before {
-    transform: rotate(45deg);
-}
-
-#nav-toggle.active span:after {
-    transform: rotate(-45deg);
-}
 
 .rotate {
     -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -3001,21 +3102,23 @@ ul.filters li a:hover img.icon-hover {
 }
 
 /*Fix lazy effect*/
-.home .team .members > div {
+.responsive-loader {
     display: inline-block;
     position: relative;
 }
 
-.home .team .members > div:after {
+.responsive-loader:after {
     padding-top: 100%;
     display: block;
     content: '';
 }
 
-.home .team .members > div section {
+.responsive-loader > section,
+.responsive-loader > section {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
 }
+
