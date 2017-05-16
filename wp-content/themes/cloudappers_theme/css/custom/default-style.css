@@ -340,6 +340,7 @@ header, nav, header img {
     color: rgb(118, 55, 26);
     letter-spacing: 0.75px;
     display: block;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .home .clients {
@@ -1471,6 +1472,7 @@ ul.filters li a.active img.icon-hover
 }
 
 
+
 section.all-projects .grid
 {
     margin-top: 87px;
@@ -1745,6 +1747,13 @@ section.all-projects .grid
         display: inline-block;
         margin: 0 23px;
         position: relative;
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+
+    .home .clients .item:hover {
+        opacity: 1;
+        transition: 0.3s;
     }
 
     .home .contact .form {
@@ -2181,6 +2190,13 @@ section.all-projects .grid
 
     }
 
+    .home .clients .view-all a
+    {
+        background: url(../../img/mob-clients.png) no-repeat left;
+        background-size: 37px 31px;
+        padding-left: 50px;
+    }
+
     .home .contact .form-group,
     .home .contact .form-group.note {
         width: 100%;
@@ -2331,6 +2347,14 @@ section.all-projects .grid
         font-size: 5vw;
     }
 
+    .home .contact .copyright p {
+        font-size: 2.2vw;
+    }
+
+    .home .contact .form h1 {
+        font-size: 10vw;
+    }
+
     /*prefooter*/
     .prefooter {
         text-align: center;
@@ -2392,6 +2416,8 @@ section.all-projects .grid
         right: 0;
         left: 0;
         bottom: 0;
+        -webkit-transform: translateZ(0);
+        -webkit-transform: translateX(0);
     }
 
     .top-header a {
@@ -2400,6 +2426,10 @@ section.all-projects .grid
 
     .navbar-inverse .navbar-nav > li > a {
         line-height: 6vh;
+    }
+
+    #nav-toggle {
+        height: 15vw;
     }
 }
 
