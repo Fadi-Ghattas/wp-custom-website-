@@ -882,7 +882,7 @@ header, nav, header img {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 0.946;
-    margin-bottom: 79px;
+    margin-bottom: 76px;
     letter-spacing: 7.4px;
 }
 
@@ -895,12 +895,18 @@ header, nav, header img {
     margin-bottom: 0;
 }
 
+.home .contact .form-group:first-of-type{
+    margin-right: 45px;
+}
+
 .home .contact .form-group {
-    max-width: 234px;
+    max-width: 239px;
     width: 100%;
     display: inline-block;
     text-align: left;
     position: relative;
+    min-height: 113px;
+    vertical-align: top;
 }
 
 .home .contact .form input {
@@ -914,9 +920,9 @@ header, nav, header img {
 }
 
 .home .contact .form-group.note {
-    max-width: 504px;
-    margin-top: 60px;
-    margin-bottom: 56px;
+    max-width: 527px;
+    margin-top: 11px;
+    margin-bottom: 8px;
 }
 
 .home .contact .form button {
@@ -1862,6 +1868,7 @@ section.all-projects .grid {
     .home .contact .form-group.note {
         width: 100%;
         max-width: 100%;
+        float: none;
     }
 
     .home .contact .map.col-lg-6:before {
