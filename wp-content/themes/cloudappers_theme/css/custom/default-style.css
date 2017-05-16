@@ -2197,6 +2197,7 @@ section.all-projects .grid
 
     .home .clients .item {
         border: 1px solid rgb(239, 239, 239);
+        overflow: hidden;
     }
 
     .home .clients .container {
@@ -3226,3 +3227,7 @@ section.all-projects .grid
     left: 0;
 }
 
+#map-details
+{
+    height: 500px;
+}
