@@ -1054,6 +1054,11 @@ header, nav, header img {
     background: transparent;
 }
 
+.home #JobModal .file-caption {
+    margin-top: 4px;
+}
+
+
 .home #JobModal label {
     font-size: 16px;
     font-weight: bold;
@@ -2454,6 +2459,9 @@ section.all-the-team .grid {
         background-size: 0 0, cover;
     }
 
+    .home #JobModal .file-caption {
+        margin-top: 2px;
+    }
 
     /*prefooter*/
     .prefooter {
@@ -2543,10 +2551,9 @@ section.all-the-team .grid {
         padding-bottom: 0;
     }
 
-    #JobCaptcha iframe
-    {
-        transform:scale(0.77);
-        -webkit-transform:scale(0.77);
+    #JobCaptcha iframe {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
         transform-origin: left center;
         -webkit-transform-origin: left center;
     }
