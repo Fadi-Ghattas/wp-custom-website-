@@ -105,6 +105,8 @@ jQuery(function ($) {
 			var filtered = false;
 			$('ul.filters li a').on('click',function (e) {
 				e.preventDefault();
+				$('ul.filters li a').each(function (index){ $(this).removeClass('active'); });
+				$(this).addClass('active');
 				filtered = true;
 				$isotope.isotope({ filter:  $(this).attr('data-type') });
 				$isotope.on( 'layoutComplete', function( event, filteredItems ) {
