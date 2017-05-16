@@ -87,6 +87,8 @@ section.ca-page-header .title {
     font-weight: 700;
     font-size: 16px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
+    text-transform: uppercase;
+    word-break: break-all;
 }
 
 section.ca-page-header .sub-title {
@@ -96,6 +98,8 @@ section.ca-page-header .sub-title {
     font-size: 90px;
     line-height: 108px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
+    text-transform: uppercase;
+    word-break: break-all;
 }
 
 section.ca-page-banner {
@@ -1373,8 +1377,50 @@ section.some-of-show-cases .overlay h6 {
 
 /*show you page start*/
 
+.filters-back {
+    position: relative;
+    width: 436px;
+    height: 86px;
+    background: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 43px;
+    border-top-right-radius: 43px;
+    border-bottom-left-radius: 43px;
+    border-bottom-right-radius: 43px;
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.2);
+    margin-top: -43px;
+}
+
+.filters-container
+{
+    width: 378px;
+    height: 60px;
+    background: white;
+    /*margin-top: -30px;*/
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0%;
+    border: solid white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    /*display: flex;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+}
+
 ul.filters {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /*align-self: center;*/
+    position: absolute;
+    top: 28%;
+    left: 6%;
 }
 
 ul.filters li {
@@ -1383,7 +1429,9 @@ ul.filters li {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
+    margin: 0px 20px;
 }
+
 
 ul.filters li a {
     color: #d0d0d0;
@@ -1393,26 +1441,40 @@ ul.filters li a {
     text-transform: uppercase;
 }
 
-ul.filters li a:hover {
+ul.filters li a:hover,
+ul.filters li a.active {
     color: #4d4d4d;
 }
 
 ul.filters li a img.icon {
     height: 23px;
     display: inline-block;
+    margin-right: 5px;
 }
 
 ul.filters li a img.icon-hover {
     height: 23px;
     display: none;
+    margin-right: 5px;
 }
 
-ul.filters li a:hover img.icon {
+ul.filters li a:hover img.icon,
+ul.filters li a.active img.icon
+{
     display: none;
 }
 
-ul.filters li a:hover img.icon-hover {
+ul.filters li a:hover img.icon-hover,
+ul.filters li a.active img.icon-hover
+{
     display: inline-block;
+}
+
+
+section.all-projects .grid
+{
+    margin-top: 87px;
+    margin-bottom: 60px;
 }
 /*show you page end*/
 
