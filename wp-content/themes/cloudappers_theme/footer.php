@@ -50,7 +50,8 @@
                             <!-- Text input-->
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="years_of_experience">Years of Experience</label>
-                                <input id="years_of_experience" name="years_of_experience" type="text" class="form-control input-md"/>
+                                <input id="years_of_experience" name="years_of_experience" type="text"
+                                       class="form-control input-md"/>
                             </div>
 
                             <!-- Select Basic -->
@@ -67,12 +68,14 @@
                             <div class="form-group col-lg-12">
                                 <label class="control-label" for="cv_file">Upload CV</label>
                                 <!--data-allowed-file-extensions='["docx", "doc", "ppt", "pdf"]'-->
-                                <input id="cv_file" name="cv_file" type="file" class="file" data-show-preview="false" data-show-upload="false"/>
+                                <input id="cv_file" name="cv_file" type="file" class="file" data-show-preview="false"
+                                       data-show-upload="false"/>
                             </div>
 
                             <!-- Textarea -->
                             <div class="form-group col-lg-12">
-                                <label class="control-label" for="cv_info_one">What do you do when you’re not working?</label>
+                                <label class="control-label" for="cv_info_one">What do you do when you’re not
+                                    working?</label>
                                 <textarea class="form-control" id="cv_info_one" name="cv_info_one"></textarea>
                             </div>
 
@@ -96,7 +99,6 @@
         </div>
     </div>
 </div>
-
 
 
 <div id="map-popup" class="modal fade" role="dialog">

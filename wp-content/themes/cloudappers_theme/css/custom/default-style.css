@@ -195,7 +195,7 @@ header, nav, header img {
 
 .navbar-inverse .navbar-nav > li.c-btn > a,
 .navbar-inverse .navbar-nav > li.c-btn > a:hover,
-.navbar-inverse .navbar-nav > li.c-btn a:focus{
+.navbar-inverse .navbar-nav > li.c-btn a:focus {
     color: white;
 }
 
@@ -206,10 +206,9 @@ header, nav, header img {
 }
 
 .navbar-inverse .navbar-nav > li.c-btn:focus a,
-.navbar-inverse .navbar-nav > li.c-btn:active a{
+.navbar-inverse .navbar-nav > li.c-btn:active a {
     color: #ff5f19;
 }
-
 
 .navbar-nav {
     float: right;
@@ -373,7 +372,7 @@ header, nav, header img {
     transition-duration: 0.5s;
 }
 
-.home .clients .item:hover img{
+.home .clients .item:hover img {
     -webkit-transform: scale(1.10);
     -moz-transform: scale(1.10);
     -o-transform: scale(1.10);
@@ -790,6 +789,10 @@ header, nav, header img {
 .home .contact #map {
     width: 100%;
     height: 850px;
+}
+
+#map-.home .contact details {
+    height: 500px;
 }
 
 .home .contact .address {
@@ -1406,8 +1409,7 @@ section.some-of-show-cases .overlay h6 {
     margin-top: -43px;
 }
 
-.filters-container
-{
+.filters-container {
     width: 378px;
     height: 60px;
     background: white;
@@ -1420,8 +1422,9 @@ section.some-of-show-cases .overlay h6 {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /*display: flex;*/
     /*display: -ms-flexbox;*/
     /*display: -webkit-flex;*/
@@ -1447,7 +1450,6 @@ ul.filters li {
     font-weight: 700;
     margin: 0px 20px;
 }
-
 
 ul.filters li a {
     color: #d0d0d0;
@@ -1475,24 +1477,21 @@ ul.filters li a img.icon-hover {
 }
 
 ul.filters li a:hover img.icon,
-ul.filters li a.active img.icon
-{
+ul.filters li a.active img.icon {
     display: none;
 }
 
 ul.filters li a:hover img.icon-hover,
-ul.filters li a.active img.icon-hover
-{
+ul.filters li a.active img.icon-hover {
     display: inline-block;
 }
 
-section.all-projects .grid
-{
+section.all-projects .grid {
     margin-top: 87px;
     margin-bottom: 60px;
 }
-/*show you page end*/
 
+/*show you page end*/
 
 /*clients page start*/
 .page-template-clients section.ca-page-banner .vertical-line {
@@ -1506,6 +1505,7 @@ section.all-projects .grid
 .page-template-clients .clients .container {
     padding-top: 28px;
 }
+
 /*clients page end*/
 /*Footer*/
 
@@ -2212,9 +2212,8 @@ section.all-projects .grid
         overflow: hidden;
     }
 
-    .clients .container ,
-    .page-template-clients .clients .container
-    {
+    .clients .container,
+    .page-template-clients .clients .container {
         padding-top: 0;
         padding-bottom: 0;
 
@@ -3241,7 +3240,3 @@ section.all-projects .grid
     left: 0;
 }
 
-#map-details
-{
-    height: 500px;
-}
