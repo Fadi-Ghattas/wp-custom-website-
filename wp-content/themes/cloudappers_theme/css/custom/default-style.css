@@ -343,21 +343,21 @@ header, nav, header img {
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
-.home .clients {
+.clients {
     text-align: center;
 }
 
-.home .clients .item {
+.clients .item {
     height: 117px;
     display: inline-block;
 }
 
-.home .clients .container {
+.clients .container {
     padding-bottom: 60px;
     padding-top: 60px;
 }
 
-.home .clients .item img {
+.clients .item img {
     max-width: 100%;
     height: auto;
     max-height: 100%;
@@ -1486,8 +1486,6 @@ ul.filters li a.active img.icon-hover
     display: inline-block;
 }
 
-
-
 section.all-projects .grid
 {
     margin-top: 87px;
@@ -1495,6 +1493,20 @@ section.all-projects .grid
 }
 /*show you page end*/
 
+
+/*clients page start*/
+.page-template-clients section.ca-page-banner .vertical-line {
+    display: none;
+}
+
+.page-template-clients section.ca-page-banner {
+    padding: 50px 0 52px 0px;
+}
+
+.page-template-clients .clients .container {
+    padding-top: 28px;
+}
+/*clients page end*/
 /*Footer*/
 
 .prefooter {
@@ -1756,7 +1768,7 @@ section.all-projects .grid
         height: auto;
     }
 
-    .home .clients .item {
+    .clients .item {
         width: 117px;
         height: 117px;
         display: inline-block;
@@ -1766,7 +1778,7 @@ section.all-projects .grid
         transition: 0.3s;
     }
 
-    .home .clients .item:hover {
+    .clients .item:hover {
         opacity: 1;
         transition: 0.3s;
     }
@@ -2195,12 +2207,14 @@ section.all-projects .grid
         text-align: center;
     }
 
-    .home .clients .item {
+    .clients .item {
         border: 1px solid rgb(239, 239, 239);
         overflow: hidden;
     }
 
-    .home .clients .container {
+    .clients .container ,
+    .page-template-clients .clients .container
+    {
         padding-top: 0;
         padding-bottom: 0;
 
