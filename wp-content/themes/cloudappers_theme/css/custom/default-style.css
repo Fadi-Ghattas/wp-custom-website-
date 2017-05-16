@@ -372,7 +372,7 @@ header, nav, header img {
     transition-duration: 0.5s;
 }
 
-.home .clients .item:hover img {
+.clients .item:hover img{
     -webkit-transform: scale(1.10);
     -moz-transform: scale(1.10);
     -o-transform: scale(1.10);
@@ -654,11 +654,14 @@ header, nav, header img {
 
 }
 
+.team {
+    color: white;
+    text-align: center;
+}
+
 .home .team {
     background: url("../../img/team.jpg") no-repeat center;
     background-size: cover;
-    color: white;
-    text-align: center;
     padding-top: 63px;
     padding-bottom: 63px;
 }
@@ -709,13 +712,13 @@ header, nav, header img {
     margin-top: 50px;
 }
 
-.home .team .members > div {
+.team .members > div {
     padding: 0;
     /*height: 280px;*/
     overflow: hidden;
 }
 
-.home .team .members .member-info {
+.team .members .member-info {
     position: absolute;
     top: 50%;
     right: 0;
@@ -727,20 +730,20 @@ header, nav, header img {
     cursor: default;
 }
 
-.home .team .members .member-info h5 {
+.team .members .member-info h5 {
     font-size: 33px;
     font-weight: bold;
 }
 
-.home .team .members .member-info h6 {
+.team .members .member-info h6 {
     font-size: 18px;
 }
 
-.home .team .members > div:hover img {
+.team .members > div:hover img {
     visibility: hidden;
 }
 
-.home .team .members > div:hover .member-info {
+.team .members > div:hover .member-info {
     visibility: visible;
     transition: 0.5s;
     opacity: 1;
@@ -970,7 +973,7 @@ header, nav, header img {
     color: black;
 }
 
-.home .team .members > div:before {
+.team .members > div:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -985,7 +988,7 @@ header, nav, header img {
     z-index: 1;
 }
 
-.home .team .members > div:hover:before {
+.team .members > div:hover:before {
     -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
@@ -1459,7 +1462,9 @@ ul.filters {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    /*align-self: center;*/
+}
+
+.page-template-projects ul.filters{
     position: absolute;
     top: 28%;
     left: 6%;
@@ -1517,10 +1522,6 @@ section.all-projects .grid {
 /*show you page end*/
 
 /*clients page start*/
-.page-template-clients section.ca-page-banner .vertical-line {
-    display: none;
-}
-
 .page-template-clients section.ca-page-banner {
     padding: 50px 0 52px 0px;
 }
@@ -2391,11 +2392,11 @@ section.all-projects .grid {
         margin-top: 0;
     }
 
-    .home .team .members .member-info h5 {
+    .team .members .member-info h5 {
         font-size: 6vw;
     }
 
-    .home .team .members .member-info h6 {
+    .team .members .member-info h6 {
         font-size: 5vw;
     }
 
