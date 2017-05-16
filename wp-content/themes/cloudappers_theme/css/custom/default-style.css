@@ -2211,7 +2211,9 @@ section.all-projects .grid
         border: 1px solid rgb(239, 239, 239);
     }
 
-    .clients .container {
+    .clients .container ,
+    .page-template-clients .clients .container
+    {
         padding-top: 0;
         padding-bottom: 0;
 
