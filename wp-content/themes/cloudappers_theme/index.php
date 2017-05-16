@@ -480,7 +480,7 @@ get_template_part('template-part', 'topnav');
 
         $('#map-popup').on('shown.bs.modal',function(){
             google.maps.event.trigger(map2, "resize");
-
+            return map2.setCenter(url);
         });
 
     }
