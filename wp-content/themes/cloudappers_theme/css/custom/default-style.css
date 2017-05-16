@@ -336,6 +336,7 @@ header, nav, header img {
     color: rgb(118, 55, 26);
     letter-spacing: 0.75px;
     display: block;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .home .clients {
@@ -1414,6 +1415,7 @@ ul.filters li a:hover img.icon {
 ul.filters li a:hover img.icon-hover {
     display: inline-block;
 }
+
 /*show you page end*/
 
 /*Footer*/
@@ -1687,12 +1689,10 @@ ul.filters li a:hover img.icon-hover {
         transition: 0.3s;
     }
 
-    .home .clients .item:hover
-    {
+    .home .clients .item:hover {
         opacity: 1;
         transition: 0.3s;
     }
-
 
     .home .contact .form {
         padding-left: 70px;
@@ -2128,6 +2128,13 @@ ul.filters li a:hover img.icon-hover {
 
     }
 
+    .home .clients .view-all a
+    {
+        background: url(../../img/mob-clients.png) no-repeat left;
+        background-size: 37px 31px;
+        padding-left: 50px;
+    }
+
     .home .contact .form-group,
     .home .contact .form-group.note {
         width: 100%;
@@ -2278,6 +2285,14 @@ ul.filters li a:hover img.icon-hover {
         font-size: 5vw;
     }
 
+    .home .contact .copyright p {
+        font-size: 2.2vw;
+    }
+
+    .home .contact .form h1 {
+        font-size: 10vw;
+    }
+
     /*prefooter*/
     .prefooter {
         text-align: center;
@@ -2334,11 +2349,12 @@ ul.filters li a:hover img.icon-hover {
         padding-top: 10vh;
     }
 
-    .top-header .nav-social {
+    .top-header.opened .nav-social {
         position: absolute;
         right: 0;
         left: 0;
         bottom: 0;
+        -webkit-transform: translate3d(0,0,0);
     }
 
     .top-header a {
