@@ -193,11 +193,9 @@ header, nav, header img {
     margin-left: 38px;
 }
 
-.navbar-inverse .navbar-nav > li.c-btn > a {
-    color: white;
-}
-
-.navbar-inverse .navbar-nav > li.c-btn > a:hover {
+.navbar-inverse .navbar-nav > li.c-btn > a,
+.navbar-inverse .navbar-nav > li.c-btn > a:hover,
+.navbar-inverse .navbar-nav > li.c-btn a:focus{
     color: white;
 }
 
@@ -208,9 +206,10 @@ header, nav, header img {
 }
 
 .navbar-inverse .navbar-nav > li.c-btn:focus a,
-.navbar-inverse .navbar-nav > li.c-btn:active a {
-    color: #ff5d16;
+.navbar-inverse .navbar-nav > li.c-btn:active a{
+    color: #ff5f19;
 }
+
 
 .navbar-nav {
     float: right;
@@ -229,7 +228,8 @@ header, nav, header img {
     text-transform: uppercase;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
     color: #ff5f19;
     transition: 0.5s;
 }
@@ -367,6 +367,21 @@ header, nav, header img {
     position: absolute;
     right: 0;
     left: 0;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.home .clients .item:hover img{
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform: scale(1.10);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .home .clients .view-all {
@@ -2202,8 +2217,7 @@ section.all-projects .grid
 
     }
 
-    .home .clients .view-all a
-    {
+    .home .clients .view-all a {
         background: url(../../img/mob-clients.png) no-repeat left;
         background-size: 37px 31px;
         padding-left: 50px;
@@ -2428,8 +2442,6 @@ section.all-projects .grid
         right: 0;
         left: 0;
         bottom: 0;
-        -webkit-transform: translateZ(0);
-        -webkit-transform: translateX(0);
     }
 
     .top-header a {
