@@ -142,4 +142,29 @@ jQuery(function ($) {
 			}
 
 		}
+
+
+	if(script_const.page_template == 'team.php')
+	{
+		var $isotope = $('.grid');
+
+		$isotope.isotope({
+			itemSelector: '.team-member',
+			layoutMode: 'masonry',
+			percentPosition: true,
+			masonry: {
+				columnWidth: '.grid-sizer'
+			}
+		});
+
+		var filtered = false;
+		$('ul.filters li a').on('click',function (e) {
+			e.preventDefault();
+			$('ul.filters li a').each(function (index){ $(this).removeClass('active'); });
+			$(this).addClass('active');
+			filtered = true;
+			console.log($(this).attr('data-type') );
+			$isotope.isotope({ filter:  $(this).attr('data-type') });
+		});
+	}
 });

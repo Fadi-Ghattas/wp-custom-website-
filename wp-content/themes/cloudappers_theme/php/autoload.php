@@ -40,3 +40,6 @@ require_once("$dirName/models/CVModel.php");
 
 require_once("$dirName/models/ProjectTypeModel.php");
 require_once("$dirName/controllers/ProjectType.php");
+
+require_once("$dirName/models/PositionModel.php");
+require_once("$dirName/controllers/Position.php");
