@@ -56,7 +56,7 @@
 
                             <!-- Select Basic -->
                             <div class="form-group col-lg-6">
-                                <label class="control-label" for="expected_salary">Expected Salary</label>
+                                <label class="control-label" for="expected_salary">Expected Salary <span>$</span></label>
                                 <select id="expected_salary" name="expected_salary" class="form-control">
                                     <option value=""></option>
                                     <option value="100 - 200">100 - 200</option>
@@ -83,7 +83,7 @@
                                 <div id="JobCaptcha"></div>
                             </div>
 
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-lg-12 form-submit">
                                 <button class="submit-btn c-btn" type="submit">TAKE ME IN</button>
                             </div>
 
