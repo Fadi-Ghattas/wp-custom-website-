@@ -372,7 +372,7 @@ header, nav, header img {
     transition-duration: 0.5s;
 }
 
-.clients .item:hover img{
+.clients .item:hover img {
     -webkit-transform: scale(1.10);
     -moz-transform: scale(1.10);
     -o-transform: scale(1.10);
@@ -999,19 +999,21 @@ header, nav, header img {
 }
 
 .home #JobModal .modal-dialog {
-    width: 711px;
+    max-width: 711px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .home #JobModal .modal-body {
-    padding: 15px 71px;
+    padding: 86px 71px 15px 71px;
 }
 
 .home #JobModal .modal-content {
     background: url('../../img/box.png'), url('../../img/popup-bg.png');
     background-repeat: no-repeat, no-repeat;
     background-color: white;
-    background-position: 117% 5%, center center;
-    background-size: 240px 240px, cover;
+    background-position: calc(100% + 115px) 43px, center center;
+    background-size: auto, cover;
 }
 
 .home #JobModal .modal-content {
@@ -1027,12 +1029,14 @@ header, nav, header img {
 .home #JobModal .modal-header h2 {
     font-size: 48px;
     font-weight: bold;
+    margin-top: 51px;
 }
 
 .home #JobModal .modal-header h3 {
     font-size: 20px;
     font-weight: bold;
     color: #6f6c6c;
+    margin-top: 10px;
 }
 
 .home #JobModal input,
@@ -1050,18 +1054,30 @@ header, nav, header img {
     background: transparent;
 }
 
+.home #JobModal .file-caption {
+    margin-top: 4px;
+}
+
+
 .home #JobModal label {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
 }
 
+.home #JobModal select {
+    background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .home #JobModal .form-group {
     min-height: 107px;
 }
 
-.home #JobModal .form-message{
-    min-height:0 ;
+.home #JobModal .form-message,
+.home #JobModal .form-submit {
+    min-height: 0;
 }
 
 .home #JobModal button {
@@ -1096,6 +1112,8 @@ header, nav, header img {
     color: rgb(94, 94, 94);
     opacity: 1;
     font-weight: 200;
+    margin-top: -3px;
+    margin-right: 10px;
 }
 
 .home .contact .form-group.ms {
@@ -2429,6 +2447,22 @@ section.all-the-team .grid {
         font-size: 10vw;
     }
 
+    .home #JobModal .modal-body {
+        padding: 15px;
+    }
+
+    .home #JobModal .modal-dialog {
+        width: 90%;
+    }
+
+    .home #JobModal .modal-content {
+        background-size: 0 0, cover;
+    }
+
+    .home #JobModal .file-caption {
+        margin-top: 2px;
+    }
+
     /*prefooter*/
     .prefooter {
         text-align: center;
@@ -2515,6 +2549,17 @@ section.all-the-team .grid {
     .navbar-inverse .navbar-nav > li > a {
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    #JobCaptcha iframe {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: left center;
+        -webkit-transform-origin: left center;
+    }
+
+    #JobCaptcha > div {
+        width: 235px !important;
     }
 }
 
