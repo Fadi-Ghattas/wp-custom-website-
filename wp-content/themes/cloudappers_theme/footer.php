@@ -87,7 +87,7 @@
                                 <button class="submit-btn c-btn" type="submit">TAKE ME IN</button>
                             </div>
 
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-lg-12 form-message">
                                 <p class="message"></p>
                             </div>
 

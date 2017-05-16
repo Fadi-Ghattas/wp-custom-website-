@@ -794,7 +794,7 @@ header, nav, header img {
     height: 850px;
 }
 
-#map-.home .contact details {
+#map-details {
     height: 500px;
 }
 
@@ -898,7 +898,7 @@ header, nav, header img {
     margin-bottom: 0;
 }
 
-.home .contact .form-group:first-of-type{
+.home .contact .form-group:first-of-type {
     margin-right: 45px;
 }
 
@@ -998,11 +998,19 @@ header, nav, header img {
     border-radius: 10px;
 }
 
+.home #JobModal .modal-dialog {
+    width: 711px;
+}
+
+.home #JobModal .modal-body {
+    padding: 15px 71px;
+}
+
 .home #JobModal .modal-content {
     background: url('../../img/box.png'), url('../../img/popup-bg.png');
     background-repeat: no-repeat, no-repeat;
     background-color: white;
-    background-position: 122% 8%, center center;
+    background-position: 117% 5%, center center;
     background-size: 240px 240px, cover;
 }
 
@@ -1038,13 +1046,22 @@ header, nav, header img {
     font-size: 18px;
     font-weight: bold;
     color: #ff5f19;
-    min-height: 39px;
+    min-height: 35px;
     background: transparent;
 }
 
 .home #JobModal label {
     font-size: 16px;
     font-weight: bold;
+    margin: 0;
+}
+
+.home #JobModal .form-group {
+    min-height: 107px;
+}
+
+.home #JobModal .form-message{
+    min-height:0 ;
 }
 
 .home #JobModal button {
