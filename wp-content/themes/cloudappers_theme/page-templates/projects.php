@@ -48,7 +48,7 @@ get_template_part('template-part', 'topnav');
 								</a></li>
 
 							<?php foreach ($projectTypes as $projectType) { ?>
-							<li><a href="#" data-type=".<?php echo $projectType['post_title']; ?>">
+							<li><a href="#" data-type=".<?php echo str_replace(' ', '_', strtolower($projectType['post_title'])); ?>">
 									<img class="icon" src="<?php echo esc_url($projectType['project_type_icon']['url']); ?>">
 									<img class="icon-hover" src="<?php echo esc_url($projectType['project_type_icon_on_hover']['url']); ?>">
 									<?php echo $projectType['post_title']; ?>
@@ -70,7 +70,7 @@ get_template_part('template-part', 'topnav');
 					$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
 					if($col == 0) {$colPos = 'col-lg-left col-sm-left col-xs-left';} else if($col == 1) {$colPos = 'col-lg-center col-sm-center col-xs-center';} else if($col == 2) {$colPos = 'col-lg-right col-sm-right col-xs-right';}
 					?>
-					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?> <?php echo $project['project_type'][0]['post_title']; ?>" data-type="<?php echo $project['project_type'][0]['post_title']; ?>">
+					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?> <?php echo str_replace(' ', '_', strtolower($project['project_type'][0]['post_title'])); ?>" data-type="<?php echo str_replace(' ', '_', strtolower($project['project_type'][0]['post_title'])); ?>">
 						<section class="<?php echo $hover[$col]; ?>">
 							<figure>
 								<!--<div class="lazy-loader-effect"></div>-->

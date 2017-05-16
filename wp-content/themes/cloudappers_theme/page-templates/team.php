@@ -47,20 +47,18 @@ get_template_part('template-part', 'topnav');
 			<div class="row">
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
-				<div>
 					<ul class="filters">
 						<?php foreach ($positions as $position) { ?>
 							<li>
 								<a href="#" data-type=".<?php echo str_replace(' ', '_', strtolower($position['post_title'])); ?>">
 									<img class="icon" src="<?php echo esc_url($position['position_icon']['url']); ?>">
 									<img class="icon-hover" src="<?php echo esc_url($position['position_icon_on_hover']['url']); ?>">
-									<?php echo $position['post_title']; ?>
+									<p class="filter-text" style="color: <?php echo $position['position_font_color']?>"><?php echo $position['post_title']; ?></p>
 								</a>
 							</li>
 						<?php } ?>
 					</ul>
 				</div>
-			</div>
 
 				<div class="clear"></div>
 

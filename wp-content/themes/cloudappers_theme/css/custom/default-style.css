@@ -1447,10 +1447,14 @@ ul.filters {
     margin: 0;
 }
 
-.page-template-projects ul.filters{
+.page-template-projects ul.filters {
     position: absolute;
     top: 28%;
     left: 6%;
+}
+
+.page-template-team ul.filters {
+    padding: 40px 0 50px 0;
 }
 
 ul.filters li {
@@ -1481,10 +1485,23 @@ ul.filters li a img.icon {
     margin-right: 5px;
 }
 
+.page-template-team ul.filters li a img.icon {
+    height: 46px;
+}
+
+.page-template-team p.filter-text {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
 ul.filters li a img.icon-hover {
     height: 23px;
     display: none;
     margin-right: 5px;
+}
+
+ul.filters li a img.icon-hover {
+    height: 46px;
 }
 
 ul.filters li a:hover img.icon,
@@ -1500,6 +1517,10 @@ ul.filters li a.active img.icon-hover {
 section.all-projects .grid {
     margin-top: 87px;
     margin-bottom: 60px;
+}
+
+section.all-the-team .grid {
+    margin-bottom: 53px;
 }
 
 /*show you page end*/

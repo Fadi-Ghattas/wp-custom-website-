@@ -26,6 +26,10 @@ class Position
 				'acf' => 1,
 				'name' => 'position_icon_on_hover',
 			],
+			[
+				'acf' => 1,
+				'name' => 'position_font_color'
+			],
 		];
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date DESC'];
