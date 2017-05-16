@@ -177,9 +177,19 @@ get_template_part('template-part', 'topnav');
                     <section class="">
                         <figure>
                             <!--<div class="lazy-loader-effect"></div>-->
-                            <div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div>
+                            <div class="loader">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square last"></div>
+                                <div class="square clear"></div>
+                                <div class="square"></div>
+                                <div class="square last"></div>
+                                <div class="square clear"></div>
+                                <div class="square "></div>
                             </div>
-                            <img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']) ?>" alt="<?php echo $project['project_card_title'] ?>"/>
+                            <img class="img-lazy lazy-not-loaded lazy-loader"
+                                 data-src="<?php echo esc_url($project['project_card_image']['url']) ?>"
+                                 alt="<?php echo $project['project_card_title'] ?>"/>
                         </figure>
                         <a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
                             <div class="overlay bg-rotate">
@@ -205,7 +215,8 @@ get_template_part('template-part', 'topnav');
     <div class="container">
         <div class="row">
             <div class="img-prefooter col-lg-5  col-md-12">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/infographics-for-banner@3x.png' ?>">
+                <img class="img-responsive"
+                     src="<?php echo get_template_directory_uri() . '/img/infographics-for-banner@3x.png' ?>">
             </div>
             <div class="col-lg-7  col-md-12">
                 <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
@@ -234,8 +245,16 @@ get_template_part('template-part', 'topnav');
                     <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
                         <section class="<?php echo $hover[$hoverCount]; ?>">
                             <figure>
-                            <!--<div class="lazy-loader-effect"></div>-->
-                                <div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div>
+                                <!--<div class="lazy-loader-effect"></div>-->
+                                <div class="loader">
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square last"></div>
+                                    <div class="square clear"></div>
+                                    <div class="square"></div>
+                                    <div class="square last"></div>
+                                    <div class="square clear"></div>
+                                    <div class="square "></div>
                                 </div>
 
                                 <img class="img-lazy lazy-not-loaded lazy-loader"
@@ -276,7 +295,8 @@ get_template_part('template-part', 'topnav');
                         </div>
                     </div>
                     <div class="col-lg-6">
-<!--                        <a class="c-rbtn" href="--><?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
+                        <!--                        <a class="c-rbtn" href="-->
+                        <?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
                         <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
                     </div>
                 </div>
@@ -322,9 +342,10 @@ get_template_part('template-part', 'topnav');
 </section>
 
 
-
 <!--Google map-->
 <script>
+
+    var map1, map2;
     function initMap() {
 
         var customMapType = new google.maps.StyledMapType([
@@ -402,7 +423,6 @@ get_template_part('template-part', 'topnav');
         });
 
         var customMapTypeId = 'custom_style';
-        var mapDiv = document.getElementById('map');
         var image = {
             url: "<?php echo esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']); ?>",
             scaledSize: new google.maps.Size(27, 39), // scaled size)
@@ -410,7 +430,8 @@ get_template_part('template-part', 'topnav');
         var url = {
             lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
             lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>};
-        var map = new google.maps.Map(mapDiv, {
+
+        var option1 = {
             center: {
                 lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
                 lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
@@ -420,24 +441,56 @@ get_template_part('template-part', 'topnav');
             mapTypeControlOptions: {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
             }
-        });
+        }
+        var option2 = {
+            center: {
+                lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
+                lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
+            },
+            zoom: 10,
+            scrollwheel: false,
+            mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+            }
+        }
 
-        map.mapTypes.set(customMapTypeId, customMapType);
-        map.setMapTypeId(customMapTypeId);
+        map1 = new google.maps.Map(document.getElementById("map"), option1);
+        map2 = new google.maps.Map(document.getElementById("map-details"), option2);
 
-        var marker = new google.maps.Marker({
+        map1.mapTypes.set(customMapTypeId, customMapType);
+        map1.setMapTypeId(customMapTypeId);
+
+
+        var marker1 = new google.maps.Marker({
             position: url,
-            map: map,
+            map: map1,
             icon: image,
             title: '',
             animation: google.maps.Animation.DROP,
         });
+
+        var marker = new google.maps.Marker({
+            position: url,
+            map: map2,
+            icon: image,
+            title: '',
+            animation: google.maps.Animation.DROP,
+        });
+
+
+        $('#map-popup').on('shown.bs.modal',function(){
+            google.maps.event.trigger(map2, "resize");
+            return map2.setCenter(url);
+        });
+
     }
+
 </script>
 
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap"></script>
+
 
 <?php get_footer(); ?>
 

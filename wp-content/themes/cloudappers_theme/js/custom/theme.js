@@ -6,4 +6,6 @@ jQuery(function ($) {
     $('#take-me-there').on('click', function (e) {
         $('#map-popup').modal('show');
     });
+
+
 });
