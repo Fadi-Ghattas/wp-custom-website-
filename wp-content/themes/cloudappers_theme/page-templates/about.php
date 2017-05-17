@@ -6,6 +6,14 @@
  * Time: 1:14 PM
  * Template Name: AboutPage
  */
+$homePagePost = get_page_by_path('home', OBJECT, 'page');
+$pageOptions = acf_get_group_fields($homePagePost->ID);
+if (intval($pageOptions['home_page_clients_how_many_to_show']))
+    $clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_clients_how_many_to_show'])]);
+
+$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
+$setting = acf_get_group_fields($setting->ID);
+
 
 get_header();
 get_template_part('template-part', 'topnav');
@@ -23,7 +31,7 @@ get_template_part('template-part', 'topnav');
                     <p class="desc">We were born as complete strangers from different corners of the planet, and grew to
                         become one
                         big happy family. We embrace the weirdness that makes us so individually different yet unites us
-                        into  a single functional unit of design gurus and tech geeks. </p>
+                        into a single functional unit of design gurus and tech geeks. </p>
                 </div>
             </div>
         </div>
@@ -40,6 +48,10 @@ get_template_part('template-part', 'topnav');
         </div>
     </section>
 
+    <section class="time">
+        <h6>some blast from the past</h6>
+    </section>
+
     <section class="process">
         <div class="container">
             <div class="row">
@@ -53,6 +65,26 @@ get_template_part('template-part', 'topnav');
             </div>
         </div>
     </section>
+
+
+<?php if (!empty($clients) && intval($pageOptions['home_page_clients_how_many_to_show'])) { ?>
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="client-row">
+                    <h6>Collaborations based on trust</h6>
+                    <?php foreach ($clients as $client) { ?>
+                        <a href="<?php echo esc_url($client['client_website_url']); ?>"
+                           class="item  col-md-2 col-sm-3 col-xs-4"><img class=""
+                                                                         src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+                    <?php } ?>
+                </div>
+
+            </div>
+        </div>
+        <div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
+    </section>
+<?php } ?>
 
     <section class="prefooter lazy-background"
              data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
