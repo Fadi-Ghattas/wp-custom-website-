@@ -170,10 +170,12 @@ jQuery(function ($) {
 		if($('.single-project').length)
 		{
 			$('section.project-slider .slider').slick({
+				autoplay: true,
 				infinite: true,
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				arrows: false
+				arrows: false,
+				dots: true,
 			});
 		}
 

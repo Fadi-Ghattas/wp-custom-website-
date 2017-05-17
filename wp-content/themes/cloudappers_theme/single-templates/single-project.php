@@ -203,7 +203,6 @@ get_template_part('template-part', 'topnav');
 
 
 <?php if (!empty($project['project_slider'])) { ?>
-
 	<section class="project-slider">
 		<div class="container">
 			<div class="row">
@@ -217,7 +216,20 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
+<?php } ?>
 
+<?php if(!empty($project['project_show_case_one_description'])) { ?>
+	<section class="show-case-one">
+		<div class="container">
+			<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="description">
+					<?php echo $project['project_show_case_one_description']; ?>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 <?php } ?>
 
 <?php
