@@ -183,7 +183,7 @@ get_template_part('template-part', 'topnav');
 		<div class="container">
 			<div class="row">
 				<?php foreach ($project['project_info_blocks'] as $info_block) { ?>
-					<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info-item <?php echo ($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
 						<?php if($info_block['project_block_type'] == 1) { ?>
 							<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
 							<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
@@ -222,7 +222,7 @@ get_template_part('template-part', 'topnav');
 	<section class="show-case-one">
 		<div class="container">
 			<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
 				<div class="description">
 					<?php echo $project['project_show_case_one_description']; ?>
 				</div>
@@ -231,6 +231,20 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</section>
 <?php } ?>
+
+<?php //if(!empty($project['project_show_case_one_description'])) { ?>
+<!--	<section class="show-case-one">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">-->
+<!--					<div class="description">-->
+<!--						--><?php //echo $project['project_show_case_one_description']; ?>
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+<?php //} ?>
 
 <?php
 

@@ -1581,7 +1581,7 @@ section.all-the-team .grid {
 }
 /*clients page end*/
 
-/*project details page end*/
+/*project details page start*/
 section.project-header {
     position: relative;
 }
@@ -1623,6 +1623,14 @@ section.project-header .project-header-container .short-description p {
     line-height: 1.467;
 }
 
+section.project-info .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section.project-info .title {
     color: #49aac9;
     font-family: 'Raleway', sans-serif;
@@ -1636,6 +1644,13 @@ section.project-info .description {
     font-weight: 300;
     font-size: 16px;
     line-height: 1.875;
+}
+
+section.project-info .info-item.logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 section.project-slider {
@@ -1657,6 +1672,18 @@ section.project-slider .slider .slick-dots {
 section.project-slider .slider .slick-dots li {
     margin: 0 -2px;
 }
+
+section.show-case-one .description-container {
+    padding: 76px 0px 111px 0px;
+}
+
+section.show-case-one .description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.414;
+}
+
 /*project details page end*/
 
 

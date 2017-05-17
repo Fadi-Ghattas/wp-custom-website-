@@ -169,6 +169,7 @@ jQuery(function ($) {
 
 		if($('.single-project').length)
 		{
+
 			$('section.project-slider .slider').slick({
 				autoplay: true,
 				infinite: true,
