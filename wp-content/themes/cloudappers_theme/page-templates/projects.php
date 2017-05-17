@@ -41,11 +41,13 @@ get_template_part('template-part', 'topnav');
 				<div class="filters-back">
 					<div class="filters-container">
 						<ul class="filters">
-							<li><a href="#" class="active">
+							<li>
+								<a href="#" class="active">
 									<img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri(). '/img/all-icon.png'); ?>">
 									<img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri(). '/img/all-icon.hover.png');?>">
 									ALL
-								</a></li>
+								</a>
+							</li>
 
 							<?php foreach ($projectTypes as $projectType) { ?>
 							<li><a href="#" data-type=".<?php echo str_replace(' ', '_', strtolower($projectType['post_title'])); ?>">

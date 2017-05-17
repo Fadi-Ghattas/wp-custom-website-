@@ -143,9 +143,8 @@ jQuery(function ($) {
 
 		}
 
-
-	if(script_const.page_template == 'team.php')
-	{
+		if(script_const.page_template == 'team.php')
+		{
 		var $isotope = $('.grid');
 
 		$isotope.isotope({
@@ -167,4 +166,15 @@ jQuery(function ($) {
 			$isotope.isotope({ filter:  $(this).attr('data-type') });
 		});
 	}
+
+		if($('.single-project').length)
+		{
+			$('section.project-slider .slider').slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false
+			});
+		}
+
 });
