@@ -79,7 +79,7 @@ get_template_part('template-part', 'topnav');
 								<div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
 								<img class="img-lazy lazy-not-loaded lazy-loader lazy-iso-not-loaded" data-src="<?php echo esc_url($project['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
 							</figure>
-							<a href="<?php echo esc_url(get_permalink($pageShowCases[$i]['id'])); ?>">
+							<a href="<?php echo esc_url(get_permalink($project['id'])); ?>">
 								<div class="overlay bg-rotate">
 									<h5><?php echo $title; ?></h5>
 									<?php if (!empty($project['project_card_sub_title'])) ?>
