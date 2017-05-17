@@ -12,7 +12,7 @@ wp_footer();
 <section id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="copyright">
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
@@ -26,7 +26,7 @@ wp_footer();
                     <a href="">For you</a>
                 </div>
             </div>
-            <div class="col-lg-6 address">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 address">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
                 <div class="details">
                     <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
