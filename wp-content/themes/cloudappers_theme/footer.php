@@ -10,12 +10,13 @@ wp_footer();
 
 
 <section id="footer">
-
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="copyright">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                    </a>
                     <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
                 </div>
                 <div class="footer-menu">
@@ -26,12 +27,12 @@ wp_footer();
                 </div>
             </div>
             <div class="col-lg-6 address">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
-                    <div class="details">
-                        <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                        <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
-                        <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
-                    </div>
+                <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
+                <div class="details">
+                    <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
+                    <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
+                    <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
+                </div>
                 <div class="social">
                     <ul>
                         <li><a href="">Twitter</a></li>
@@ -41,11 +42,8 @@ wp_footer();
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
-
-
 </section>
 
 <div id="JobModal" class="modal fade" role="dialog">
