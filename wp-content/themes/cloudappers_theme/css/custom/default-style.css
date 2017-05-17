@@ -102,6 +102,14 @@ section.ca-page-header .sub-title {
     word-break: break-all;
 }
 
+section.ca-page-header .desc {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.111;
+    text-align: center;
+}
+
 section.ca-page-banner {
     position: relative;
     background: #81c0ee;
@@ -1651,6 +1659,88 @@ section.project-slider .slider .slick-dots li {
 }
 /*project details page end*/
 
+
+/*About*/
+.page-template-about section.ca-page-header .title {
+    font-size: 47px;
+    line-height: 84px;
+    letter-spacing: 4.7px;
+}
+
+.page-template-about section.ca-page-header .sub-title {
+    line-height: 84px;
+    letter-spacing: 9px;
+}
+
+.page-template-about section.ca-page-header .desc {
+    margin-top: 38px;
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+.page-template-about .process {
+    text-align: center;
+    padding-top: 74px;
+    padding-bottom: 103px;
+}
+
+.page-template-about .process h1 {
+    font-size: 48px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.458;
+    letter-spacing: 4.8px;
+}
+
+.page-template-about .process p {
+    font-size: 16px;
+    color: rgb(93, 95, 116);
+    line-height: 1.875;
+    max-width: 515px;
+    margin: 0 auto;
+}
+
+.page-template-about .process img {
+    margin-top: -128px;
+    max-width: 100%;
+}
+
+.page-template-about .ouraim {
+    background-color: rgb(175, 175, 175);
+    padding: 47px 0 71px;
+    position: relative;
+}
+
+.page-template-about .ouraim h6 {
+    font-size: 16px;
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page-template-about .ouraim p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-template-about .ouraim:after {
+    content: '';
+    background-color: rgb(255, 106, 40);
+    display: block;
+    margin: 0 auto;
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: calc(100% - 42px);
+
+}
+
 /*Footer*/
 
 .prefooter {
@@ -2274,6 +2364,14 @@ section.project-slider .slider .slick-dots li {
         padding: 0;
     }
 
+    .page-template-about section.ca-page-header .sub-title {
+        font-size: 5.6vw;
+    }
+
+    .page-template-about section.ca-page-header .title {
+        font-size: 3vw;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -2721,9 +2819,22 @@ section.project-slider .slider .slick-dots li {
         display: none;
     }
 
-    #footer .social ul
-    {
+    #footer .social ul {
         padding-left: 50px;
+    }
+
+    /*About*/
+    .page-template-about .process img {
+        margin-top: 0;
+    }
+
+    .page-template-about section.ca-page-header {
+        min-height: 600px;
+    }
+
+    .page-template-about section.ca-page-header .title,
+    .page-template-about section.ca-page-header .title {
+        line-height: 2;
     }
 
 }
