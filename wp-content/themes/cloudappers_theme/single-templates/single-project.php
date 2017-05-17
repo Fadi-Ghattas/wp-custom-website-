@@ -183,23 +183,43 @@ get_template_part('template-part', 'topnav');
 		<div class="container">
 			<div class="row">
 				<?php foreach ($project['project_info_blocks'] as $info_block) { ?>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<?php if($info_block['project_block_type'] == 1) { ?>
-							<p class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?><p>
+							<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
 							<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
 								<?php echo $info_block['project_block_description'] ?>
 							</div>
 						<?php } else if ($info_block['project_block_type'] == 3) { ?>
 								<img src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
 						<?php } else if ($info_block['project_block_type'] == 2) { ?>
-							<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+								<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
 						<?php } ?>
-					</div>
+					</article>
 				<?php } ?>
 			</div>
 		</div>
 	</section>
 <?php } ?>
 
+
+<?php if (!empty($project['project_slider'])) { ?>
+
+	<section class="project-slider">
+		<div class="container">
+			<div class="row">
+				<div class="slider">
+					<?php foreach ($project['project_slider'] as $slid) { ?>
+						<div class="slide">
+							<img src="<?php echo esc_url($slid['url']); ?>">
+						</div>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<?php } ?>
+
 <?php
+
 get_footer();

@@ -235,13 +235,17 @@ header, nav, header img {
 
 /*Home*/
 
-.home .home-slider {
+.home .home-slider
+/*.project-slider*/
+{
     width: 100%;
 }
 
 .home .slider-container,
 .home .home-slider,
-.home .slick-list {
+.home .slick-list
+/*.project-slider*/
+{
     height: 100vh;
 }
 
@@ -1572,7 +1576,6 @@ section.all-the-team .grid {
 /*project details page end*/
 section.project-header {
     position: relative;
-    padding-bottom: 6%;
 }
 
 section.project-header .project-header-container {
@@ -1580,17 +1583,17 @@ section.project-header .project-header-container {
 }
 
 section.project-header .project-header-container .header-image {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
 section.project-header .project-header-container .header-text {
     background: #8b8b8b;
-    position: absolute;
-    width: 100%;
-    top: 72.4%;
+    /*width: 100%;*/
+    top: 72.0%;
     z-index: -1;
-    padding: 58px 0 54px 0px;
+    padding: 60px 0 54px 0px;
+    margin-top: -267px;
 }
 
 section.project-header .project-header-container .header-text .title {
@@ -1605,7 +1608,6 @@ section.project-header .project-header-container .header-text .name {
     font-size: 38px;
 }
 
-
 section.project-header .project-header-container .short-description p {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -1613,6 +1615,32 @@ section.project-header .project-header-container .short-description p {
     line-height: 1.467;
 }
 
+section.project-info .title {
+    color: #49aac9;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+section.project-info .description {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+section.project-slider {
+    background: #e0e0e0;
+    padding: 76px 0 84px 0;
+    /*height: 100vh;*/
+}
+
+section.project-slider .slider img {
+    height: 100vh;
+    margin: 0 auto;
+    /*width: 100%;*/
+}
 /*project details page end*/
 
 /*Footer*/
