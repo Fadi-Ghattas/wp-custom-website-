@@ -8,43 +8,45 @@ wp_footer();
 
 ?>
 
-
-<section id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="copyright">
-                    <a href="<?php echo home_url(); ?>">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
-                    </a>
-                    <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+<?php if (!is_home()) { ?>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="copyright">
+                        <a href="<?php echo home_url(); ?>">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                        </a>
+                        <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+                    </div>
+                    <div class="footer-menu">
+                        <a href="">Let Us</a>
+                        <a href="">Show you</a>
+                        <a href="">What we can do</a>
+                        <a href="">For you</a>
+                    </div>
                 </div>
-                <div class="footer-menu">
-                    <a href="">Let Us</a>
-                    <a href="">Show you</a>
-                    <a href="">What we can do</a>
-                    <a href="">For you</a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 address">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
-                <div class="details">
-                    <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                    <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
-                    <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Dribbble</a></li>
-                    </ul>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 address">
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
+                    <div class="details">
+                        <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
+                        <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
+                        <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Dribbble</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php } ?>
+
 
 <div id="JobModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
