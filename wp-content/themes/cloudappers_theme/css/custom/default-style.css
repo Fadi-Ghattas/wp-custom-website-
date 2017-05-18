@@ -274,6 +274,8 @@ header, nav, header img {
 .home .slide-desc a {
     min-width: 173px;
     margin-top: 25px;
+    width: auto;
+    padding: 0 15px;
 }
 
 .home .slide-desc h5 {
@@ -1802,6 +1804,51 @@ section.show-case-one .description {
     margin: 0;
 }
 
+.page-template-about .why {
+    padding-top: 63px;
+    padding-bottom: 116px;
+}
+
+.page-template-about .why .main-title {
+    margin-bottom: 89px;
+}
+
+.page-template-about .why .main-title h1 {
+    font-size: 48px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.458;
+    text-align: center;
+    letter-spacing: 4.8px;
+}
+
+.page-template-about .why .main-title p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(93, 95, 116);
+    line-height: 1.875;
+    text-align: center;
+    max-width: 625px;
+    margin: 0 auto;
+
+}
+
+.page-template-about .why h3 {
+    font-size: 26px;
+    color: rgb(32, 32, 32);
+    line-height: 1.2;
+    margin-bottom: 21px;
+}
+
+.page-template-about .why p {
+    font-size: 16px;
+    color: rgb(93, 95, 116);
+    line-height: 1.875;
+    text-align: left;
+    font-weight: 500;
+}
+
 /*Footer*/
 .prefooter {
     background: url("../../img/prefooter.png") no-repeat center;
@@ -2448,7 +2495,6 @@ section.show-case-one .description {
         text-align: left;
 
     }
-
 
 }
 

@@ -69,7 +69,7 @@ get_template_part('template-part', 'topnav');
     <section class="why">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center main-title">
                     <h1>Why CloudAppers</h1>
                     <p>
                         We are organised into interdisciplinary project teams and work closely alongside one another
@@ -77,21 +77,21 @@ get_template_part('template-part', 'topnav');
                         entire duration of the project.
                     </p>
                 </div>
-                <div class="col-lg-4">
-                    <img src="" />
+                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/why1.png'?>" />
                     <h3>Constant Interaction</h3>
                     <p>Iteration in the form of continuous checks is important. This enables us to keep an eye on
                         everything and guarantee the high quality of our work. Everyone plays a role in helping to
                         validate the results early on, not just on the day of the launch.</p>
                 </div>
-                <div class="col-lg-4">
-                    <img src="" />
+                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/why2.png'?>" />
                     <h3>Collaborative team work</h3>
                     <p>Transparency through integration: by involving our clients in our workflows, we can offer them a
                         permanent insight into our progress, thereby increasing the quality of the results..</p>
                 </div>
-                <div class="col-lg-4">
-                    <img src="" />
+                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/why3.png'?>" />
                     <h3>Long-term support</h3>
                     <p>Our work doesn’t end when your website goes online or your campaign is launched. We plan beyond
                         that and support our clients and projects in the long term.</p>
