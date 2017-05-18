@@ -272,7 +272,7 @@ header, nav, header img {
 }
 
 .home .slide-desc a {
-    width: 173px;
+    min-width: 173px;
     margin-top: 25px;
 }
 
