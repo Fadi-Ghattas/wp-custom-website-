@@ -1784,15 +1784,15 @@ section.show-case-one .description {
 }
 
 .page-template-about .time {
-    background: url("../../img/time.jpg") no-repeat  center;
+    background: url("../../img/time.jpg") no-repeat center;
     background-size: cover;
-    padding: 109px  15px 68px;
+    padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
 
 }
 
-.page-template-about .time h6{
+.page-template-about .time h6 {
     font-size: 16px;
     color: rgb(85, 85, 85);
     font-weight: bold;
@@ -1802,7 +1802,7 @@ section.show-case-one .description {
     margin: 0;
 }
 
-    /*Footer*/
+/*Footer*/
 .prefooter {
     background: url("../../img/prefooter.png") no-repeat center;
     background-size: cover;
@@ -2431,6 +2431,24 @@ section.show-case-one .description {
     .page-template-about section.ca-page-header .title {
         font-size: 3vw;
     }
+
+    .page-template-about .why h1 {
+        font-size: 48px;
+        color: rgb(85, 85, 85);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.458;
+        text-align: center;
+    }
+
+    .page-template-about .why p {
+        font-size: 16px;
+        color: rgb(111, 108, 108);
+        line-height: 1.875;
+        text-align: left;
+
+    }
+
 
 }
 
