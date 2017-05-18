@@ -64,8 +64,18 @@ jQuery(function ($) {
 		arrows: false
 	});
 
-	// if($('#top-header').length) {
-		//Menu resize
+    //About - words slideer
+    $('.words-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+    });
+
+
+    //Menu resize
 		$(document).on("scroll", function () {
 			if ($(document).scrollTop() > 100) {
 				$(".top-header").addClass("small");
@@ -86,7 +96,7 @@ jQuery(function ($) {
 			$(".top-header").toggleClass("opened");
 		});
 
-	// }
+
 
 		if(script_const.page_template == 'projects.php')
 		{

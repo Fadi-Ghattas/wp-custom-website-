@@ -1850,6 +1850,117 @@ section.show-case-one .description {
     font-weight: 500;
 }
 
+.page-template-about .words {
+    padding: 100px 0 45px;
+    background: url(../../img/words-bg1.jpg), url(../../img/words-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 47.5% 100%, contain;
+    background-position: left center, calc(50% + 10px) center;
+}
+
+.page-template-about .words .left-sec {
+    background: url("../../img/words-bg1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.page-template-about .words .right-sec {
+    background: url("../../img/words-bg2.png") no-repeat left center;
+}
+
+.page-template-about .words .img-slide {
+    width: 602px;
+    height: 422px;
+}
+
+.page-template-about .words img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.page-template-about .words .img-slide,
+.page-template-about .words .info-slide {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page-template-about .words .info-slide {
+    padding-left: 50px;
+}
+
+.page-template-about .words h6 {
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1.6px;
+}
+
+.page-template-about .words p {
+    font-size: 24px;
+    color: rgb(85, 85, 85);
+    line-height: 1.5;
+    text-align: left;
+    max-width: 425px;
+    margin-bottom: 63px;
+    margin-top: 53px;
+}
+
+.page-template-about .words p:after {
+    content: '';
+    display: block;
+    background-color: rgb(255, 94, 24);
+    width: 54px;
+    height: 5px;
+    margin-top: 23px;
+}
+
+.page-template-about .words h4,
+.page-template-about .words h5 {
+    font-size: 16px;
+    color: rgb(47, 47, 47);
+    font-weight: bold;
+    line-height: 1.688;
+    text-align: left;
+    letter-spacing: 1.6px;
+}
+
+.page-template-about .words h4 {
+    color: #b3b3b3;
+    letter-spacing: 1.6px;
+}
+
+.page-template-about .words .slick-dots li {
+    display: block;
+}
+
+.page-template-about .words .slick-dots {
+    position: relative;
+    width: 76px;
+    margin: 0 auto;
+}
+
+.page-template-about .words .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.page-template-about .words .slick-dots li.slick-active button:before {
+    color: #ff5e18;
+}
+
+.page-template-about .words .slick-dots li button:before {
+    opacity: 1;
+    color:#ebebeb;
+}
+
+.page-template-about .words .slick-dots li
+{
+    width: 14px;
+    height: 14px;
+}
+
 /*Footer*/
 .prefooter {
     background: url("../../img/prefooter.png") no-repeat center;
