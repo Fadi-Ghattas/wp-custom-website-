@@ -2064,6 +2064,8 @@ section.project-url .next-project-btn {
     display: inline-block;
     text-align: center;
     width: 111px;
+    height: 111px;
+    line-height: 111px;
     font-size: 20px;
     font-family: "Arial";
     font-weight: bold;
@@ -2092,6 +2094,7 @@ section.project-url .next-project-btn {
     line-height: 131px;
     display: inline-block;
     position: relative;
+    transition:height 0.5s, width 0.5s;
 
 }
 
@@ -2112,7 +2115,8 @@ section.project-url .next-project-btn {
     left: 0;
     bottom: 0;
     top: 0;
-    transition: background 1s;
+    transition:height 0.5s, width 0.5s, background 0.5s;
+
 }
 
 .page-template-about .ouraim {
