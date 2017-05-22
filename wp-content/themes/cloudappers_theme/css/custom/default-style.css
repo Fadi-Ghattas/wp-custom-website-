@@ -1639,6 +1639,7 @@ section.project-info .project-info-row {
     border-bottom: 1px solid #e0e0e0;
 }
 
+
 section.project-info .title {
     color: #49aac9;
     font-family: 'Raleway', sans-serif;
@@ -1659,6 +1660,10 @@ section.project-info .info-item {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 66px;
+}
+
+section.project-info .project-info-row .info-item:nth-of-type(even) {
+    padding-left: 18px;
 }
 
 section.project-info .info-item.logo {
