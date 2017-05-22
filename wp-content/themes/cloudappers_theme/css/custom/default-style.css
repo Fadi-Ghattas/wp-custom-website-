@@ -1748,8 +1748,7 @@ section.client-say h1 {
     margin-bottom: 92px;
 }
 
-section.client-say .say-blocks
-{
+section.client-say .say-blocks {
     margin: 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1787,7 +1786,7 @@ section.client-say .say-block .signature strong {
     font-weight: 700;
 }
 
-section.client-say .say-block:nth-of-type(even)  {
+section.client-say .say-block:nth-of-type(even) {
     text-align: right;
     text-align: -moz-right;
     text-align: -webkit-right;
@@ -1834,6 +1833,7 @@ section.project-url .url-name p {
     border-style: solid;
     margin: 10px;
 }
+
 [class*="icono-arrow1"]:before {
     right: 0;
     top: -1px;
@@ -1846,22 +1846,27 @@ section.project-url .url-name p {
     -webkit-transform-origin: right top;
     transform-origin: right top;
 }
+
 [class*="icono-arrow1"][class*="-left"] {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 [class*="icono-arrow1"][class*="-left"][class*="-up"] {
     -webkit-transform: none;
     transform: none;
 }
+
 [class*="icono-arrow1"][class*="-right"][class*="-up"] {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 [class*="icono-arrow1"][class*="-up"] {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
 [class*="icono"] {
     position: relative;
     display: inline-block;
@@ -1869,6 +1874,7 @@ section.project-url .url-name p {
     color: #666;
     box-sizing: border-box;
 }
+
 [class*="icono"]:after,
 [class*="icono"]:before {
     content: "";
@@ -1876,9 +1882,8 @@ section.project-url .url-name p {
 }
 
 .url-name:hover .icono-arrow1-left-up,
-.url-name:hover p
-{
- opacity: 0.6;
+.url-name:hover p {
+    opacity: 0.6;
 }
 
 section.project-url .next-project-btn {
@@ -1913,10 +1918,10 @@ section.project-url .next-project-btn {
 }
 
 .next-project-btn:hover span,
-.next-project-btn:hover .icono-arrow1-left
-{
+.next-project-btn:hover .icono-arrow1-left {
     opacity: 0.8;
 }
+
 /*project details page end*/
 
 /*About*/
@@ -1993,13 +1998,19 @@ section.project-url .next-project-btn {
     text-transform: uppercase;
     line-height: 1.458;
     text-align: center;
-    text-shadow: 0px 16px 19.74px rgba(210, 210, 210, 0.5);
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     letter-spacing: 4.8px;
+    margin-bottom: 15px;
 }
 
 .page-template-about .history .slide p {
     max-width: 626px;
     margin: 0 auto;
+}
+
+.page-template-about .history .slide {
+    max-width: 850px;
+    width: 100%;
 }
 
 .page-template-about .history .slick-dots {

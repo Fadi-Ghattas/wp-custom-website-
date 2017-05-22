@@ -54,52 +54,34 @@ get_template_part('template-part', 'topnav');
 
     <section class="history">
         <div class="history-slider">
-            <div class="slide" data-desc="2015" >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1>we born</h1>
-                            <p>We were born as complete strangers from different corners of the planet, and grew to
-                                become one big
-                                happy family.
-                                We embrace the weirdness that makes us so individually different yet unites us into a
-                                single
-                                functional unit of design gurus and tech geeks.
-                                We are CloudAppers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="slide" data-desc="2015">
+                <h1>we born</h1>
+                <p>We were born as complete strangers from different corners of the planet, and grew to
+                    become one big
+                    happy family.
+                    We embrace the weirdness that makes us so individually different yet unites us into a
+                    single
+                    functional unit of design gurus and tech geeks.
+                    We are CloudAppers.
+                </p>
             </div>
-            <div class="slide" data-desc="2016" >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1>first project</h1>
-                            <p>When the App Store was launched in 2009, that is what the landscape looked like.
-                                Four years later, in October 2013, Apple announced that the number of apps in the App
-                                Store crossed a line to a whopping 1 million, generating a record-breaking $10 billion
-                                in revenue. Not one to be left behind, Google Play caught up soon enough and crossed the
-                                1 million apps mark within a few months.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="slide" data-desc="2016">
+                <h1>first project</h1>
+                <p>When the App Store was launched in 2009, that is what the landscape looked like.
+                    Four years later, in October 2013, Apple announced that the number of apps in the App
+                    Store crossed a line to a whopping 1 million, generating a record-breaking $10 billion
+                    in revenue. Not one to be left behind, Google Play caught up soon enough and crossed the
+                    1 million apps mark within a few months.
+                </p>
             </div>
             <div class="slide" data-desc="2017">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12" >
-                            <h1>we launch app</h1>
-                            <p>When the App Store was launched in 2009, that is what the landscape looked like.
-                                Four years later, in October 2013, Apple announced that the number of apps in the App
-                                Store crossed a line to a whopping 1 million, generating a record-breaking $10 billion
-                                in revenue. Not one to be left behind, Google Play caught up soon enough and crossed the
-                                1 million apps mark within a few months.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <h1>we launch app</h1>
+                <p>When the App Store was launched in 2009, that is what the landscape looked like.
+                    Four years later, in October 2013, Apple announced that the number of apps in the App
+                    Store crossed a line to a whopping 1 million, generating a record-breaking $10 billion
+                    in revenue. Not one to be left behind, Google Play caught up soon enough and crossed the
+                    1 million apps mark within a few months.
+                </p>
             </div>
         </div>
     </section>
