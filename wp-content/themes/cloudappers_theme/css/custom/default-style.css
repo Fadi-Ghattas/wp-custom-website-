@@ -1627,6 +1627,10 @@ section.project-header .project-header-container .short-description p {
     line-height: 1.467;
 }
 
+section.project-info {
+    position: relative;
+}
+
 section.project-info .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1699,6 +1703,11 @@ section.project-slider .slider .slick-dots {
 
 section.project-slider .slider .slick-dots li {
     margin: 0 -2px;
+}
+
+section.show-case-one,
+section.show-case-one-image {
+    position: relative;
 }
 
 section.show-case-one .description-container {
@@ -1858,7 +1867,6 @@ section.project-url .url-name p {
     border-style: solid;
     margin: 10px;
 }
-
 [class*="icono-arrow1"]:before {
     right: 0;
     top: -1px;
@@ -1871,27 +1879,26 @@ section.project-url .url-name p {
     -webkit-transform-origin: right top;
     transform-origin: right top;
 }
-
 [class*="icono-arrow1"][class*="-left"] {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 [class*="icono-arrow1"][class*="-left"][class*="-up"] {
     -webkit-transform: none;
     transform: none;
 }
-
 [class*="icono-arrow1"][class*="-right"][class*="-up"] {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
-
 [class*="icono-arrow1"][class*="-up"] {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
+[class*="icono-arrow1"][class*="-down"] {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
 [class*="icono"] {
     position: relative;
     display: inline-block;
@@ -1899,7 +1906,6 @@ section.project-url .url-name p {
     color: #666;
     box-sizing: border-box;
 }
-
 [class*="icono"]:after,
 [class*="icono"]:before {
     content: "";
@@ -1947,6 +1953,23 @@ section.project-url .next-project-btn {
     opacity: 0.8;
 }
 
+.move-section {
+    position: absolute;
+    width: 100%;
+    text-align: -webkit-center;
+    bottom: -28px;
+    z-index: 1;
+}
+
+.move-section .icono-arrow1-down {
+    width: 15px;
+    height: 15px;
+    color: #3c566a;
+}
+.move-section .icono-arrow1-down:before {
+    width: 38px;
+    color: #3c566a;
+}
 /*project details page end*/
 
 /*About*/
