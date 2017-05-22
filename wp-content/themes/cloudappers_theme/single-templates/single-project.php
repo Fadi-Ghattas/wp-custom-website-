@@ -103,6 +103,14 @@ $fields = [
 
 	[
 		'acf' => 1,
+		'name' => 'project_client_say_title'
+	],
+	[
+		'acf' => 1,
+		'name' => 'project_client_say_title_color'
+	],
+	[
+		'acf' => 1,
 		'name' => 'project_client_say_blocks',
 	],
 	[
@@ -201,9 +209,8 @@ get_template_part('template-part', 'topnav');
 	</section>
 <?php } ?>
 
-
 <?php if (!empty($project['project_slider'])) { ?>
-	<section class="project-slider">
+	<section class="project-slider" style="background: <?php echo $project['project_slider_section_background_color'];?>;">
 		<div class="container">
 			<div class="row">
 				<div class="slider">
@@ -219,11 +226,11 @@ get_template_part('template-part', 'topnav');
 <?php } ?>
 
 <?php if(!empty($project['project_show_case_one_description'])) { ?>
-	<section class="show-case-one">
+	<section class="show-case-one" style="background-color:<?php echo $project['project_show_case_one_description_background_color']; ?>;">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
-					<div class="description" style="color:<?php echo $project['project_show_case_one_description_color']; ?>">
+					<div class="description" style="color:<?php echo $project['project_show_case_one_description_color']; ?>;">
 						<?php echo $project['project_show_case_one_description']; ?>
 					</div>
 				</div>
@@ -233,16 +240,106 @@ get_template_part('template-part', 'topnav');
 <?php } ?>
 
 <?php if(!empty($project['project_show_case_one_image'])) { ?>
-	<section class="show-case-one-image">
+	<section class="show-case-one-image" style="background: <?php echo $project['project_show_case_one_image_background_color']; ?>;">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 img-container">
 					<img src="<?php echo esc_url($project['project_show_case_one_image']['url']); ?>">
 				</div>
 			</div>
 		</div>
 	</section>
 <?php } ?>
+
+<?php if(!empty($project['project_show_case_two_background_image'])) { ?>
+	<section class="show-case-two">
+		<img src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1 class="title" style="color: <?php echo $project['project_show_case_two_title_color']; ?>">
+						<?php echo $project['project_show_case_two_title']; ?>
+					</h1>
+					<div class="description" style="color: <?php echo $project['project_show_case_two_description_color']; ?>">
+						<?php echo $project['project_show_case_two_description']; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<?php } ?>
+
+<?php if(!empty($project['project_client_say_blocks']))
+{
+	$background = 'background: #f78ca0';
+	if($project['project_client_says_section_background_type'] == 1)
+		$background = $project['project_client_says_section_background_gradient'];
+	else if ($project['project_client_says_section_background_type'] == 2)
+		$background = 'background: url(' . $project['project_client_says_section_background_image']['url'].') no-repeat 100% 100%';
+	else
+		$background = 'background: ' . $project['project_client_says_section_background_color'];
+	?>
+
+	<section class="client-say" style="<?php echo $background; ?>;">
+		<div class="container">
+			<div class="row">
+					<h1 class="title" style="color: <?php echo $project['project_client_say_title_color']; ?>">
+						<?php echo $project['project_client_say_title']; ?>
+					</h1>
+
+				<div class="row say-blocks">
+					<?php foreach ($project['project_client_say_blocks'] as $say) { ?>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 say-block" style="color: <?php echo $say['project_client_say_block_color'] ?>">
+							<div>
+								<?php echo $say['project_client_say_block']; ?>
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+
+			</div>
+		</div>
+	</section>
+<?php } ?>
+
+<?php if(!empty($project['project_url'])) { ?>
+
+	<section class="project-url" style="background: <?php echo $project['project_url_section_background_color']; ?>">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1 class="title" style="color: <?php echo $project['project_url_title_color']; ?>">
+						<?php echo $project['project_url_title']; ?>
+					</h1>
+					<a class="url-name" href="<?php echo esc_url($project['project_url']); ?>" style="color: <?php echo $project['project_url_name_color']; ?>">
+						<p><?php echo $project['project_url_name']; ?></p>
+						<div class="icono-arrow1-left-up"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="next-project-btn">
+			<span>NEXT PROJECT</span>
+			<div class="icono-arrow1-left"></div>
+		</a>
+	</section>
+<?php } ?>
+
+
+	<section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
+		<div class="container">
+			<div class="row">
+				<div class="img-prefooter col-lg-5  col-md-12">
+					<img class="img-responsive" src="<?php echo get_template_directory_uri().'/img/infographics-for-banner@3x.png' ?>">
+				</div>
+				<div class="col-lg-7  col-md-12">
+					<h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
+					<p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
+					<a href="" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <?php
 
