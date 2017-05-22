@@ -1987,6 +1987,117 @@ section.project-url .next-project-btn {
     max-width: 100%;
 }
 
+.page-template-about .history .history-slider {
+    text-align: center;
+    color: white;
+    background-image: -moz-linear-gradient(-30deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
+    background-image: -webkit-linear-gradient(-30deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
+    background-image: -ms-linear-gradient(-30deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
+    font-size: 18px;
+    line-height: 1.667;
+    padding-top: 143px;
+    padding-bottom: 88px;
+}
+
+.page-template-about .history .slide {
+    opacity: 0.5;
+}
+
+.page-template-about .history .slide.slick-active {
+    opacity: 1;
+}
+
+.page-template-about .history .slide h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.458;
+    text-align: center;
+    text-shadow: 0px 16px 19.74px rgba(210, 210, 210, 0.5);
+    letter-spacing: 4.8px;
+}
+
+.page-template-about .history .slide p {
+    max-width: 626px;
+    margin: 0 auto;
+}
+
+.page-template-about .history .slick-dots {
+    top: 0;
+    bottom: auto;
+    height: 71px;
+    background: white;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.page-template-about .history .slick-dots li {
+    width: auto;
+    height: auto;
+    margin-top: -30px;
+}
+
+.page-template-about .history .slick-dots li a {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.page-template-about .history .slick-dots li a span {
+    display: inline-block;
+    text-align: center;
+    width: 111px;
+    font-size: 20px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: rgb(229, 229, 229);
+    border-radius: 50%;
+    transition: background 0.5s;
+}
+
+.page-template-about .history .slick-dots li a span:hover {
+    color: rgb(103, 103, 103);
+    transition: 0.5s;
+}
+
+.page-template-about .history .slick-dots li.slick-active {
+    margin: -30px -4px 0;
+}
+
+.page-template-about .history .slick-dots li.slick-active a {
+    background-image: -moz-linear-gradient(-280deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
+    background-image: -webkit-linear-gradient(-280deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
+    background-image: -ms-linear-gradient(-280deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    width: 131px;
+    height: 131px;
+    line-height: 131px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.page-template-about .history .slick-dots li.slick-active a span {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(103, 103, 103);
+    font-family: "Arial";
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    display: inline-block;
+    background: white;
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: background 1s;
+}
+
 .page-template-about .ouraim {
     background-color: rgb(175, 175, 175);
     padding: 47px 0 71px;
@@ -2037,7 +2148,7 @@ section.project-url .next-project-btn {
 
 .page-template-about .time {
     background: url("../../img/time.jpg") no-repeat center;
-    background-size: cover;
+    background-size: contain;
     padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
@@ -2201,11 +2312,10 @@ section.project-url .next-project-btn {
 
 .page-template-about .words .slick-dots li button:before {
     opacity: 1;
-    color:#ebebeb;
+    color: #ebebeb;
 }
 
-.page-template-about .words .slick-dots li
-{
+.page-template-about .words .slick-dots li {
     width: 14px;
     height: 14px;
 }
