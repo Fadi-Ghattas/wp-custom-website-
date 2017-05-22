@@ -186,26 +186,60 @@ get_template_part('template-part', 'topnav');
 	</section>
 
 
-<?php if (!empty($project['project_info_blocks'])) { ?>
+<?php if (!empty($project['project_info_blocks'])) {
+	$rows = 0;
+	?>
 	<section class="project-info">
-		<div class="container">
-			<div class="row">
-				<?php foreach ($project['project_info_blocks'] as $info_block) { ?>
-					<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info-item <?php echo ($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
-						<?php if($info_block['project_block_type'] == 1) { ?>
-							<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
-							<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
-								<?php echo $info_block['project_block_description'] ?>
-							</div>
-						<?php } else if ($info_block['project_block_type'] == 3) { ?>
-								<img src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
-						<?php } else if ($info_block['project_block_type'] == 2) { ?>
-								<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+		<?php if (sizeof($project['project_info_blocks']) != 1) { ?>
+			<?php foreach ($project['project_info_blocks'] as $info_block) { ?>
+				<?php if ($rows == 0) { ?>
+					<div class="project-info-row">
+						<div class="container">
+							<div class="row">
 						<?php } ?>
-					</article>
+						<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
+							<?php if ($info_block['project_block_type'] == 1) { ?>
+								<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
+								<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
+									<?php echo $info_block['project_block_description'] ?>
+								</div>
+							<?php } else if ($info_block['project_block_type'] == 3) { ?>
+								<img src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+							<?php } else if ($info_block['project_block_type'] == 2) { ?>
+								<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+							<?php } ?>
+						</article>
+						<?php ($rows < 1 ? $rows++ : $rows = 0); ?>
+						<?php if ($rows == 0) { ?>
+							</div>
+						</div>
+					</div>
 				<?php } ?>
-			</div>
-		</div>
+			<?php } ?>
+		<?php } else { ?>
+
+			<?php foreach ($project['project_info_blocks'] as $info_block) { ?>
+				<div class="project-info-row">
+					<div class="container">
+						<div class="row">
+							<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
+								<?php if ($info_block['project_block_type'] == 1) { ?>
+									<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
+									<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
+										<?php echo $info_block['project_block_description'] ?>
+									</div>
+								<?php } else if ($info_block['project_block_type'] == 3) { ?>
+									<img src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+								<?php } else if ($info_block['project_block_type'] == 2) { ?>
+									<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+								<?php } ?>
+							</article>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+
+		<?php } ?>
 	</section>
 <?php } ?>
 
@@ -326,7 +360,7 @@ get_template_part('template-part', 'topnav');
 <?php } ?>
 
 
-	<section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
+<section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="img-prefooter col-lg-5  col-md-12">
