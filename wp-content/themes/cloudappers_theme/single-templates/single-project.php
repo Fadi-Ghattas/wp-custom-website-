@@ -175,6 +175,7 @@ get_template_part('template-part', 'topnav');
 	<section class="project-header">
 		<div class="project-header-container">
 			<img class="header-image" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
+
 			<div class="center header-text">
 				<p class="title" style="color: <?php echo $project['project_header_title_color']; ?>"><?php echo $project['project_header_title']; ?></p>
 				<p class="name" style="color: <?php echo $project['project_name_color']; ?>"><?php echo $project['post_title']; ?></p>
@@ -240,7 +241,15 @@ get_template_part('template-part', 'topnav');
 			<?php } ?>
 
 		<?php } ?>
+
+		<a href="#">
+			<div class="move-section">
+				<div class="icono-arrow1-down"></div>
+			</div>
+		</a>
+
 	</section>
+
 <?php } ?>
 
 <?php if (!empty($project['project_slider'])) { ?>
@@ -270,6 +279,11 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
+		<a href="#">
+			<div class="move-section">
+				<div class="icono-arrow1-down"></div>
+			</div>
+		</a>
 	</section>
 <?php } ?>
 
@@ -282,6 +296,11 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
+		<a href="#">
+			<div class="move-section">
+				<div class="icono-arrow1-down"></div>
+			</div>
+		</a>
 	</section>
 <?php } ?>
 
