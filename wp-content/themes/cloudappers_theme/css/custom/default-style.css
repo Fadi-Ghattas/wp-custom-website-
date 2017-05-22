@@ -2002,6 +2002,7 @@ section.project-url .next-project-btn {
     line-height: 1.667;
     padding-top: 143px;
     padding-bottom: 88px;
+    margin-bottom: 0;
 }
 
 .page-template-about .history .slide {
