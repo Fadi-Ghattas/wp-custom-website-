@@ -222,29 +222,27 @@ get_template_part('template-part', 'topnav');
 	<section class="show-case-one">
 		<div class="container">
 			<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
-				<div class="description">
-					<?php echo $project['project_show_case_one_description']; ?>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
+					<div class="description" style="color:<?php echo $project['project_show_case_one_description_color']; ?>">
+						<?php echo $project['project_show_case_one_description']; ?>
+					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 	</section>
 <?php } ?>
 
-<?php //if(!empty($project['project_show_case_one_description'])) { ?>
-<!--	<section class="show-case-one">-->
-<!--		<div class="container">-->
-<!--			<div class="row">-->
-<!--				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">-->
-<!--					<div class="description">-->
-<!--						--><?php //echo $project['project_show_case_one_description']; ?>
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</section>-->
-<?php //} ?>
+<?php if(!empty($project['project_show_case_one_image'])) { ?>
+	<section class="show-case-one-image">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
+					<img src="<?php echo esc_url($project['project_show_case_one_image']['url']); ?>">
+				</div>
+			</div>
+		</div>
+	</section>
+<?php } ?>
 
 <?php
 

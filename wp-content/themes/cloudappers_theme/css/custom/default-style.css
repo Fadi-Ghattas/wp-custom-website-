@@ -1195,7 +1195,7 @@ section.services .service-item .icon {
 
 section.services .service-item .description {
     min-height: 160px;
-    max-height: 160px;
+    /*max-height: 160px;*/
 }
 
 section.services .service-item .description,
