@@ -59,10 +59,8 @@ get_template_part('template-part', 'topnav');
         <?php foreach ($mainSlider as $slid) { ?>
             <div class="slide">
                 <picture>
-                    <source srcset="<?php echo esc_url($slid['main_slide_image']['url']); ?>"
-                            media="(min-width: 768px)">
-                    <source srcset="<?php echo esc_url($slid['main_slide_mobile_image']['url']); ?>"
-                            media="(max-width: 767px)">
+                    <source srcset="<?php echo esc_url($slid['main_slide_image']['url']); ?>" media="(min-width: 768px)">
+                    <source srcset="<?php echo esc_url($slid['main_slide_mobile_image']['url']); ?>" media="(max-width: 767px)">
                     <img src="<?php echo esc_url($slid['main_slide_image']['url']); ?>">
                 </picture>
                 <div class="container slide-desc">
@@ -76,8 +74,7 @@ get_template_part('template-part', 'topnav');
                                 <?php if (!empty($slid['main_slide_description'])) ?>
                                 <div class="description"><?php echo $slid['main_slide_description']; ?></div>
                                 <?php if (!empty($slid['main_slide_button_text']) && !empty($slid['main_slide_button_link_url'])) ?>
-                                <a class="c-btn"
-                                   href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><?php echo $slid['main_slide_button_text']; ?></a>
+                                <a class="c-btn" href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><?php echo $slid['main_slide_button_text']; ?></a>
                             </div>
                         </div>
                     </div>
@@ -243,29 +240,22 @@ get_template_part('template-part', 'topnav');
                     $hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
                     ?>
                     <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <section class="<?php echo $hover[$hoverCount]; ?>">
-                            <figure>
-                                <!--<div class="lazy-loader-effect"></div>-->
-                                <div class="loader">
-                                    <div class="square"></div>
-                                    <div class="square"></div>
-                                    <div class="square last"></div>
-                                    <div class="square clear"></div>
-                                    <div class="square"></div>
-                                    <div class="square last"></div>
-                                    <div class="square clear"></div>
-                                    <div class="square "></div>
+                            <section class="<?php echo $hover[$hoverCount]; ?>">
+                                <a href="<?php echo home_url('team'); ?>">
+                                    <figure>
+                                        <!--<div class="lazy-loader-effect"></div>-->
+                                        <div class="loader"><div class="square"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
+                                        <img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>" alt="<?php echo $teamMember['post_title']; ?>"/>
+                                    </figure>
+                                </a>
+                                <div class="overlay member-info">
+                                    <a href="<?php echo home_url('team'); ?>">
+                                        <h5><?php echo $teamMember['post_title']; ?></h5>
+                                        <h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
+                                    </a>
                                 </div>
 
-                                <img class="img-lazy lazy-not-loaded lazy-loader"
-                                     data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"
-                                     alt="<?php echo $teamMember['post_title']; ?>"/>
-                            </figure>
-                            <div class="overlay member-info">
-                                <h5><?php echo $teamMember['post_title']; ?></h5>
-                                <h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
-                            </div>
-                        </section>
+                            </section>
                     </div>
                     <?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
                 } ?>
@@ -487,10 +477,7 @@ get_template_part('template-part', 'topnav');
 
 </script>
 
-
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap"></script>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback=initMap"></script>
 
 <?php get_footer(); ?>
 

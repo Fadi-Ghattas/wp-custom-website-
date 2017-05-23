@@ -748,10 +748,12 @@ header, nav, header img {
 .team .members .member-info h5 {
     font-size: 33px;
     font-weight: bold;
+    color: #fff;
 }
 
 .team .members .member-info h6 {
     font-size: 18px;
+    color: #fff;
 }
 
 .team .members > div:hover img {
