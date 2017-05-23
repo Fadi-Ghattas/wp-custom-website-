@@ -38,7 +38,7 @@ class SweetWord
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date DESC'];
 
-		$sweetWords = SweetWordModel::search((new ServiceModel())->pod_name, $fields, $filters);
+		$sweetWords = SweetWordModel::search((new SweetWordModel())->pod_name, $fields, $filters);
 
 		return $sweetWords;
 	}
