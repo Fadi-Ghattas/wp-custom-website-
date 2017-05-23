@@ -1598,8 +1598,8 @@ section.project-header .project-header-container {
 }
 
 /*section.project-header .project-header-container .header-image {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
+/*width: 100%;*/
+/*height: 100%;*/
 /*}*/
 
 section.project-header .project-header-container .header-text {
@@ -1740,7 +1740,7 @@ section.show-case-two {
 }
 
 /*section.show-case-two img {*/
-    /*width: 100%;*/
+/*width: 100%;*/
 /*}*/
 
 section.show-case-two .container {
@@ -4647,5 +4647,4 @@ section.project-url .next-project-btn {
         opacity: 0;
     }
 }
-
 

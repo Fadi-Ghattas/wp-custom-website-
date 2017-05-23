@@ -95,6 +95,8 @@ jQuery(function ($) {
         ]
     });
 
+    //About - fix pager
+    $('.history-slider .slick-dots').wrap("<div class='pager-wrap'></div>");
 
     //About - words slider
     $('.words-slider').slick({
