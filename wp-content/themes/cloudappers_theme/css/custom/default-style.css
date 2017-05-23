@@ -1995,7 +1995,7 @@ section.project-url .next-project-btn {
 
 .page-template-about section.ca-page-header .desc {
     margin-top: 38px;
-    max-width: 870px;
+    /*max-width: 870px;*/
     margin: 0 auto;
 }
 
