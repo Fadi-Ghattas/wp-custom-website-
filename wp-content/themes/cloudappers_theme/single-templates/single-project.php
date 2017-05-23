@@ -179,7 +179,7 @@ get_template_part('template-part', 'topnav');
 ?>
 	<section class="project-header">
 		<div class="project-header-container">
-			<img class="header-image" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
+			<img class="img-responsive header-image" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
 			<div class="center header-text">
 				<p class="title" style="color: <?php echo $project['project_header_title_color']; ?>"><?php echo $project['project_header_title']; ?></p>
 				<p class="name" style="color: <?php echo $project['project_name_color']; ?>"><?php echo $project['post_title']; ?></p>
@@ -209,9 +209,9 @@ get_template_part('template-part', 'topnav');
 									<?php echo $info_block['project_block_description'] ?>
 								</div>
 							<?php } else if ($info_block['project_block_type'] == 3) { ?>
-								<img src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+								<img class="img-responsive" src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
 							<?php } else if ($info_block['project_block_type'] == 2) { ?>
-								<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+								<img class="img-responsive" src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
 							<?php } ?>
 						</article>
 						<?php ($rows < 1 ? $rows++ : $rows = 0); ?>
@@ -234,9 +234,9 @@ get_template_part('template-part', 'topnav');
 										<?php echo $info_block['project_block_description'] ?>
 									</div>
 								<?php } else if ($info_block['project_block_type'] == 3) { ?>
-									<img src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+									<img class="img-responsive" src="<?php echo $project['project_logo']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
 								<?php } else if ($info_block['project_block_type'] == 2) { ?>
-									<img src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
+									<img class="img-responsive" src="<?php echo $info_block['project_block_image']['url']; ?>" alt="<?php echo $project['post_title']; ?>">
 								<?php } ?>
 							</article>
 						</div>
@@ -263,7 +263,7 @@ get_template_part('template-part', 'topnav');
 				<div class="slider">
 					<?php foreach ($project['project_slider'] as $slid) { ?>
 						<div class="slide">
-							<img src="<?php echo esc_url($slid['url']); ?>">
+							<img class="img-responsive" src="<?php echo esc_url($slid['url']); ?>">
 						</div>
 					<?php } ?>
 				</div>
@@ -296,7 +296,7 @@ get_template_part('template-part', 'topnav');
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 img-container">
-					<img src="<?php echo esc_url($project['project_show_case_one_image']['url']); ?>">
+					<img class="img-responsive" src="<?php echo esc_url($project['project_show_case_one_image']['url']); ?>">
 				</div>
 			</div>
 		</div>
@@ -310,7 +310,7 @@ get_template_part('template-part', 'topnav');
 
 <?php if(!empty($project['project_show_case_two_background_image'])) { ?>
 	<section class="show-case-two">
-		<img src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
+		<img class="img-responsive" src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

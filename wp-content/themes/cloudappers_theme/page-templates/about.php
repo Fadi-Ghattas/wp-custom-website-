@@ -6,85 +6,63 @@
  * Time: 1:14 PM
  * Template Name: AboutPage
  */
-$homePagePost = get_page_by_path('home', OBJECT, 'page');
+$homePagePost = get_page_by_path('let-us', OBJECT, 'page');
 $pageOptions = acf_get_group_fields($homePagePost->ID);
-if (intval($pageOptions['home_page_clients_how_many_to_show']))
-    $clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_clients_how_many_to_show'])]);
+if (intval($pageOptions['let_us_page_clients_how_many_to_show']))
+    $clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['let_us_page_clients_how_many_to_show'])]);
 
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
 
+$timesLines = TimeLine::viewAll();
+$sweetWords = SweetWord::viewAll();
 
 get_header();
 get_template_part('template-part', 'topnav');
 
 ?>
 
-<?php $services_page_header_image = (!empty($pageOptions['services_page_header_image']['url']) ? esc_url($pageOptions['services_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/about-header.jpg')); ?>
-    <section class="ca-page-header parallax-window" data-parallax="scroll"
-             data-image-src="<?php echo $services_page_header_image; ?>">
+<?php $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/about-header.jpg')); ?>
+    <section class="ca-page-header parallax-window" data-parallax="scroll" data-image-src="<?php echo $services_page_header_image; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p class="title">WE ARE</p>
-                    <p class="sub-title">CLOUDAPPERS</p>
-                    <p class="desc">We were born as complete strangers from different corners of the planet, and grew to
-                        become one
-                        big happy family. We embrace the weirdness that makes us so individually different yet unites us
-                        into a single functional unit of design gurus and tech geeks. </p>
+                    <p class="title"><?php echo $pageOptions['let_us_page_header_title']; ?></p>
+                    <p class="sub-title"><?php echo $pageOptions['let_us_page_header_subtitle']; ?></p>
+                    <div class="desc"><?php echo $pageOptions['let_us_page_header_description']; ?></div>
                 </div>
             </div>
         </div>
     </section>
 
+<?php if (!empty($pageOptions['let_us_page_message_title']) && !empty($pageOptions['let_us_page_message_text'])) { ?>
     <section class="ouraim">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h6>our aim</h6>
-                    <p>To deliver positive digital experiences that make us proud.</p>
+                    <h6><?php echo $pageOptions['let_us_page_message_title']; ?></h6>
+                    <div><?php echo $pageOptions['let_us_page_message_text']; ?></div>
                 </div>
             </div>
         </div>
     </section>
+<?php } ?>
 
+<?php if(!empty($timesLines)) { ?>
     <section class="time">
-        <h6>some blast from the past</h6>
+        <h6><?php echo $pageOptions['let_us_page_time_line_title']; ?></h6>
     </section>
-
     <section class="history">
         <div class="history-slider">
-            <div class="slide" data-desc="2015">
-                <h1>we born</h1>
-                <p>We were born as complete strangers from different corners of the planet, and grew to
-                    become one big
-                    happy family.
-                    We embrace the weirdness that makes us so individually different yet unites us into a
-                    single
-                    functional unit of design gurus and tech geeks.
-                    We are CloudAppers.
-                </p>
-            </div>
-            <div class="slide" data-desc="2016">
-                <h1>first project</h1>
-                <p>When the App Store was launched in 2009, that is what the landscape looked like.
-                    Four years later, in October 2013, Apple announced that the number of apps in the App
-                    Store crossed a line to a whopping 1 million, generating a record-breaking $10 billion
-                    in revenue. Not one to be left behind, Google Play caught up soon enough and crossed the
-                    1 million apps mark within a few months.
-                </p>
-            </div>
-            <div class="slide" data-desc="2017">
-                <h1>we launch app</h1>
-                <p>When the App Store was launched in 2009, that is what the landscape looked like.
-                    Four years later, in October 2013, Apple announced that the number of apps in the App
-                    Store crossed a line to a whopping 1 million, generating a record-breaking $10 billion
-                    in revenue. Not one to be left behind, Google Play caught up soon enough and crossed the
-                    1 million apps mark within a few months.
-                </p>
-            </div>
+            <?php foreach ($timesLines as $timesLines) { ?>
+                <div class="slide" data-desc="<?php echo $timesLines['timeline_year']; ?>">
+                    <h1><?php echo $timesLines['post_title']; ?></h1>
+                    <div><?php echo $timesLines['timeline_description']; ?></div>
+                </div>
+            <?php } ?>
         </div>
     </section>
+<?php } ?>
 
     <section class="process">
         <div class="container">
