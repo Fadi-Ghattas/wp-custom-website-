@@ -64,19 +64,19 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
+<?php if(!empty($pageOptions['let_us_page_process_image'])) { ?>
     <section class="process">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>process</h1>
-                    <p>The Below Diagram Lets you know what to expect from us and what is expected from you at each
-                        milestone of the project cycle.
-                    </p>
-                    <img src="<?php echo get_template_directory_uri() . '/img/precess.png' ?> "/>
+                    <h1><?php echo $pageOptions['let_us_page_process_title']; ?></h1>
+                    <div><?php echo $pageOptions['let_us_page_process_description']; ?></div>
+                    <img src="<?php echo $pageOptions['let_us_page_process_image']['url']; ?> "/>
                 </div>
             </div>
         </div>
     </section>
+<?php } ?>
 
     <section class="why">
         <div class="container">
@@ -112,16 +112,16 @@ get_template_part('template-part', 'topnav');
         </div>
     </section>
 
-<?php if (!empty($clients) && intval($pageOptions['home_page_clients_how_many_to_show'])) { ?>
+<?php if (!empty($clients) && intval($pageOptions['let_us_page_clients_how_many_to_show'])) { ?>
     <section class="clients">
         <div class="container">
             <div class="row">
                 <div class="client-row">
                     <h6>Collaborations based on trust</h6>
                     <?php foreach ($clients as $client) { ?>
-                        <a href="<?php echo esc_url($client['client_website_url']); ?>"
-                           class="item  col-md-2 col-sm-3 col-xs-4"><img class=""
-                                                                         src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+                        <a href="<?php echo esc_url($client['client_website_url']); ?>" class="item  col-md-2 col-sm-3 col-xs-4">
+                            <img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>">
+                        </a>
                     <?php } ?>
                 </div>
 
