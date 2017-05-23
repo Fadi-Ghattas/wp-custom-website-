@@ -80,7 +80,7 @@ jQuery(function ($) {
         variableWidth: true,
         customPaging: function (slider, i) {
             var desc = $(slider.$slides[i]).data('desc');
-            return '<a href="javascript:void(0)"><span>' + desc + '</span></a>';
+            return '<a href="javascript:void(0)"><span>' + desc + '</span><div class="pulse1"></div></div></a>';
         },
     });
 
