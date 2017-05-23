@@ -748,10 +748,12 @@ header, nav, header img {
 .team .members .member-info h5 {
     font-size: 33px;
     font-weight: bold;
+    color: #fff;
 }
 
 .team .members .member-info h6 {
     font-size: 18px;
+    color: #fff;
 }
 
 .team .members > div:hover img {
@@ -1536,6 +1538,7 @@ ul.filters li a img.icon {
 
 .page-template-team ul.filters li a img.icon {
     height: 46px;
+    padding: 5px 0px;
 }
 
 .page-template-team p.filter-text {
@@ -1594,10 +1597,10 @@ section.project-header .project-header-container {
     width: 100%;
 }
 
-section.project-header .project-header-container .header-image {
-    width: 100%;
-    height: 100%;
-}
+/*section.project-header .project-header-container .header-image {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
 
 section.project-header .project-header-container .header-text {
     background: #8b8b8b;
@@ -1691,9 +1694,7 @@ section.project-slider .slick-list.draggable {
 }
 
 section.project-slider .slider img {
-    /*height: 75vh;*/
     margin: 0 auto;
-    width: 100%;
 }
 
 section.project-slider .slider .slick-dots {
@@ -1731,7 +1732,6 @@ section.show-case-one-image .img-container {
 }
 
 section.show-case-one-image .img-container img {
-    width: 100%;
     box-shadow: 0 0 59px rgba(0, 0, 0, 0.35);
 }
 
@@ -1739,9 +1739,9 @@ section.show-case-two {
     position: relative;
 }
 
-section.show-case-two img {
-    width: 100%;
-}
+/*section.show-case-two img {*/
+    /*width: 100%;*/
+/*}*/
 
 section.show-case-two .container {
     padding-top: 104px;
@@ -1995,7 +1995,7 @@ section.project-url .next-project-btn {
 
 .page-template-about section.ca-page-header .desc {
     margin-top: 38px;
-    max-width: 870px;
+    /*max-width: 870px;*/
     margin: 0 auto;
 }
 
@@ -2062,7 +2062,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about .history .slide p {
-    max-width: 626px;
+    /*max-width: 626px;*/
     margin: 0 auto;
 }
 
@@ -2221,6 +2221,14 @@ section.project-url .next-project-btn {
 .page-template-about .why {
     padding-top: 63px;
     padding-bottom: 116px;
+}
+
+.page-template-about .why .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .page-template-about .why .main-title {

@@ -43,3 +43,9 @@ require_once("$dirName/controllers/ProjectType.php");
 
 require_once("$dirName/models/PositionModel.php");
 require_once("$dirName/controllers/Position.php");
+
+require_once("$dirName/models/TimeLineModel.php");
+require_once("$dirName/controllers/TimeLine.php");
+
+require_once("$dirName/models/SweetWordModel.php");
+require_once("$dirName/controllers/SweetWord.php");
