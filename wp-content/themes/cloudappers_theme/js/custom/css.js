@@ -82,6 +82,17 @@ jQuery(function ($) {
             var desc = $(slider.$slides[i]).data('desc');
             return '<a href="javascript:void(0)"><span>' + desc + '</span><div class="pulse1"></div></div></a>';
         },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    centerMode:false
+                }
+            }
+        ]
     });
 
 
@@ -92,7 +103,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        autoplay: true,
+        autoplay: false,
     });
 
 
