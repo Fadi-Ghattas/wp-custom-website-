@@ -6,14 +6,15 @@
  * Time: 1:14 PM
  * Template Name: AboutPage
  */
-$homePagePost = get_page_by_path('let-us', OBJECT, 'page');
-$pageOptions = acf_get_group_fields($homePagePost->ID);
+$letUsPagePost = get_page_by_path('let-us', OBJECT, 'page');
+$pageOptions = acf_get_group_fields($letUsPagePost->ID);
 if (intval($pageOptions['let_us_page_clients_how_many_to_show']))
     $clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['let_us_page_clients_how_many_to_show'])]);
 
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
 
+$reasons = $pageOptions['let_us_page_why_cloudappers_reasons_blocks'];
 $timesLines = TimeLine::viewAll();
 $sweetWords = SweetWord::viewAll();
 
@@ -78,39 +79,28 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
+<?php if(!empty($reasons)) { ?>
     <section class="why">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-12 text-center main-title">
-                    <h1>Why CloudAppers</h1>
-                    <p>
-                        We are organised into interdisciplinary project teams and work closely alongside one another
-                        throughout the
-                        entire duration of the project.
-                    </p>
+                    <h1><?php echo $homePagePost['let_us_page_why_cloudappers_title']; ?></h1>
+                   <div><?php echo $homePagePost['let_us_page_why_cloudappers_subtitle']; ?></div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/why1.png' ?>"/>
-                    <h3>Constant Interaction</h3>
-                    <p>Iteration in the form of continuous checks is important. This enables us to keep an eye on
-                        everything and guarantee the high quality of our work. Everyone plays a role in helping to
-                        validate the results early on, not just on the day of the launch.</p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/why2.png' ?>"/>
-                    <h3>Collaborative team work</h3>
-                    <p>Transparency through integration: by involving our clients in our workflows, we can offer them a
-                        permanent insight into our progress, thereby increasing the quality of the results..</p>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/why3.png' ?>"/>
-                    <h3>Long-term support</h3>
-                    <p>Our work doesn’t end when your website goes online or your campaign is launched. We plan beyond
-                        that and support our clients and projects in the long term.</p>
-                </div>
+
+                <?php foreach ($reasons as $reason) { ?>
+                    <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
+                        <img class="img-responsive" src="<?php echo esc_url($reason['why_cloudappers_reason_block_icon']['url']); ?>"/>
+                        <h3><?php echo $reason['why_cloudappers_reason_block_title']; ?></h3>
+                        <div><?php echo$reason['why_cloudappers_reason_block_description']; ?></div>
+                    </div>
+                <?php } ?>
+
             </div>
         </div>
     </section>
+<?php } ?>
 
 <?php if (!empty($clients) && intval($pageOptions['let_us_page_clients_how_many_to_show'])) { ?>
     <section class="clients">
@@ -131,6 +121,7 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
+<?php if(!empty($sweetWords)) { ?>
     <section class="words">
         <div class="left-sec"></div>
         <div class="right-sec"></div>
@@ -138,47 +129,25 @@ get_template_part('template-part', 'topnav');
             <div class="row">
                 <div class="col-lg-12">
                     <div class="words-slider">
-                        <div class="slide">
-                            <div class="img-slide">
-                                <img src="<?php echo get_template_directory_uri() . '/img/s1.jpg' ?>"/>
+                        <?php foreach ($sweetWords as $sweetWord) { ?>
+                            <div class="slide">
+                                <div class="img-slide">
+                                    <img src="<?php echo  esc_url($sweetWord['sweet_word_image']['url']); ?>"/>
+                                </div>
+                                <div class="info-slide">
+                                    <h6><?php echo $sweetWord['post_title']; ?></h6>
+                                    <div><?php echo $sweetWord['sweet_word']; ?></div>
+                                    <h5><?php echo $sweetWord['sweet_word_by']; ?></h5>
+                                    <h4><?php echo $sweetWord['sweet_word_by_info']; ?></h4>
+                                </div>
                             </div>
-                            <div class="info-slide">
-                                <h6>some sweet words</h6>
-                                <p>“It ended up saving us money working with CloudAppers,because they delivered premium
-                                    product right from the begining.”</p>
-                                <h5>STEVE HARMISON</h5>
-                                <h4>CO-FOUNDER & CEO @ ONESTONE</h4>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="img-slide">
-                                <img src="<?php echo get_template_directory_uri() . '/img/s1.jpg' ?>"/>
-                            </div>
-                            <div class="info-slide">
-                                <h6>some sweet words</h6>
-                                <p>“It ended up saving us money working with CloudAppers,because they delivered premium
-                                    product right from the begining.”</p>
-                                <h5>STEVE HARMISON</h5>
-                                <h4>CO-FOUNDER & CEO @ ONESTONE</h4>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="img-slide">
-                                <img src="<?php echo get_template_directory_uri() . '/img/s1.jpg' ?>"/>
-                            </div>
-                            <div class="info-slide">
-                                <h6>some sweet words</h6>
-                                <p>“It ended up saving us money working with CloudAppers,because they delivered premium
-                                    product right from the begining.”</p>
-                                <h5>STEVE HARMISON</h5>
-                                <h4>CO-FOUNDER & CEO @ ONESTONE</h4>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+<?php } ?>
 
     <section class="prefooter lazy-background"
              data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
