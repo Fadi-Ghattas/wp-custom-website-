@@ -2825,8 +2825,9 @@ section.project-url .next-project-btn {
 
 }
 
+/*md*/
 @media (min-width: 768px) and (max-width: 1200px) {
-
+    /*.container{background: red; z-index: 5}*/
     section.services .service-item.col-md-left {
         padding-left: 0px;
         padding-right: 18px;
@@ -2930,6 +2931,7 @@ section.project-url .next-project-btn {
 
 }
 
+/*sm*/
 @media (min-width: 768px) and (max-width: 992px) {
     /*.container{background: yellow; z-index: 5}*/
     section.services .service-item {
@@ -3030,7 +3032,9 @@ section.project-url .next-project-btn {
 
 }
 
+/*xs*/
 @media (max-width: 768px) {
+    /*.container{background: green; z-index: 5}*/
     /*Menu*/
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background: transparent;
@@ -3564,6 +3568,8 @@ section.project-url .next-project-btn {
     }
 }
 
+/*xs*/
+/* Extra Small Devices, Phones */
 @media (max-width: 480px) {
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-banner p {
@@ -3571,6 +3577,10 @@ section.project-url .next-project-btn {
         line-height: 30px;
     }
 
+    section.ca-page-header .sub-title {
+        font-size: 50px;
+        line-height: 58px;
+    }
     .navbar-inverse .navbar-nav > li > a {
         padding-top: 0;
         padding-bottom: 0;
@@ -3588,6 +3598,8 @@ section.project-url .next-project-btn {
     }
 }
 
+/*xs*/
+/* Custom, iPhone Retina */
 @media (max-width: 320px) {
     /*.container{background: orange; z-index: 5}*/
     section.ca-page-banner .vertical-line {
