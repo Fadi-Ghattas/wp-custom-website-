@@ -1536,6 +1536,7 @@ ul.filters li a img.icon {
 
 .page-template-team ul.filters li a img.icon {
     height: 46px;
+    padding: 5px 0px;
 }
 
 .page-template-team p.filter-text {
