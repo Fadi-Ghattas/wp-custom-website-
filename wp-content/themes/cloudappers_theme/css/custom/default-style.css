@@ -2333,6 +2333,19 @@ section.project-url .next-project-btn {
     padding-bottom: 116px;
 }
 
+.page-template-about .why .why-desc {
+    padding: 0;
+}
+.page-template-about .why .why-desc:first-child {
+    padding-right:23px;
+}
+.page-template-about .why .why-desc:nth-child(2) {
+    padding: 0 23px;
+}
+.page-template-about .why .why-desc:last-child {
+    padding-left:23px;
+}
+
 .page-template-about .why .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3647,6 +3660,10 @@ section.project-url .next-project-btn {
 
     .page-template-about .words .slick-dots li {
         margin: 0 auto;
+    }
+
+    .page-template-about .why .why-desc {
+        padding: 0 15px;
     }
 
 }
