@@ -37,12 +37,12 @@ get_template_part('template-part', 'topnav');
 	<div class="container">
 		<div class="row">
 
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center filters-wrapper">
 				<div class="filters-back">
 					<div class="filters-container">
 						<ul class="filters">
-							<li>
-								<a href="#" class="active">
+							<li class="active">
+								<a href="#">
 									<img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri(). '/img/all-icon.png'); ?>">
 									<img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri(). '/img/all-icon.hover.png');?>">
 									ALL
