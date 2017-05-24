@@ -100,13 +100,13 @@ get_template_part('template-part', 'topnav');
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-12 text-center main-title">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center main-title">
                     <h1><?php echo $pageOptions['let_us_page_why_cloudappers_title']; ?></h1>
                    <div><?php echo $pageOptions['let_us_page_why_cloudappers_subtitle']; ?></div>
                 </div>
 
                 <?php foreach ($pageOptions['let_us_page_why_cloudappers_reasons_blocks'] as $reason) { ?>
-                    <div class="why-desc col-lg-4 col-md-12 col-sm-4 col-xs-12" >
+                    <div class="why-desc col-lg-4 col-md-4 col-sm-4 col-xs-12" >
                         <img class="img-responsive"
                              src="<?php echo esc_url($reason['why_cloudappers_reason_block_icon']['url']); ?>"/>
                         <h3><?php echo $reason['why_cloudappers_reason_block_title']; ?></h3>
