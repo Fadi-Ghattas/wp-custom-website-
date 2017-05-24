@@ -69,15 +69,56 @@ jQuery(function ($) {
 
 
     //About - History slider
+    $('.slider-nav').slick({
+        infinite: false,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        dots: false,
+        focusOnSelect: true,
+        centerMode: false,
+        variableWidth: true,
+        asNavFor: '.history-slider',
+        responsive: [
+            {
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true
+                }
+            }
+        ]
+    });
+
+
     $('.history-slider').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots: true,
+        dots: false,
         autoplay: false,
         centerMode:true,
         variableWidth: true,
+        asNavFor: '.slider-nav',
         customPaging: function (slider, i) {
             var desc = $(slider.$slides[i]).data('desc');
             return '<a href="javascript:void(0)"><span>' + desc + '</span><div class="pulse1"></div></div></a>';
