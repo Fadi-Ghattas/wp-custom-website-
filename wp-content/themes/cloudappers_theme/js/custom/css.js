@@ -221,5 +221,9 @@ jQuery(function ($) {
             dots: true,
         });
     }
-
+    $(".parallax-slider").on("load", function() {
+        //$(window).trigger("resize").trigger("scroll");
+        // Other code...
+        //console.log('here');
+    });
 });
