@@ -101,8 +101,8 @@ get_template_part('template-part', 'topnav');
             <div class="row">
 
                 <div class="col-lg-12 text-center main-title">
-                    <h1><?php echo $homePagePost['let_us_page_why_cloudappers_title']; ?></h1>
-                    <div><?php echo $homePagePost['let_us_page_why_cloudappers_subtitle']; ?></div>
+                    <h1><?php echo $pageOptions['let_us_page_why_cloudappers_title']; ?></h1>
+                   <div><?php echo $pageOptions['let_us_page_why_cloudappers_subtitle']; ?></div>
                 </div>
 
                 <?php foreach ($pageOptions['let_us_page_why_cloudappers_reasons_blocks'] as $reason) { ?>
