@@ -2694,6 +2694,7 @@ section.project-url .next-project-btn {
 }
 
 .top-header .nav-social {
+    display: none;
     position: relative;
     overflow: hidden;
     display: none;
