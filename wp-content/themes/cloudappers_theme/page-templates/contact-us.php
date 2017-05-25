@@ -14,8 +14,10 @@ get_template_part('template-part', 'topnav');
 <?php
 $homePagePost = get_page_by_path('home', OBJECT, 'page');
 $pageOptions = acf_get_group_fields($homePagePost->ID);
-
 $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
+
+$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
+$setting = acf_get_group_fields($setting->ID);
 ?>
 
     <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50"
@@ -99,6 +101,25 @@ $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['
     <section class="contact col-eq-height">
         <div class="map col-lg-6">
             <div id="map"></div>
+            <div class="address">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6><?php echo $setting['settings_address_title']; ?></h6>
+                            <div class="details">
+                                <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
+                                <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
+                                <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--                        <a class="c-rbtn" href="-->
+                            <?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
+                            <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-lg-6">
             <div class="form">
