@@ -6,13 +6,12 @@
  * Time: 1:14 PM
  * Template Name: AboutPage
  */
-$letUsPagePost = get_page_by_path('let-us', OBJECT, 'page');
-$pageOptions = acf_get_group_fields($letUsPagePost->ID);
-if (intval($pageOptions['let_us_page_clients_how_many_to_show']))
-    $clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['let_us_page_clients_how_many_to_show'])]);
-
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
+
+$pageOptions = acf_get_group_fields(get_the_ID());
+if (intval($pageOptions['let_us_page_clients_how_many_to_show']))
+    $clients = Client::viewAll(['page' => 'home', 'limit' => intval($pageOptions['let_us_page_clients_how_many_to_show'])]);
 
 $timesLines = TimeLine::viewAll();
 $sweetWords = SweetWord::viewAll();

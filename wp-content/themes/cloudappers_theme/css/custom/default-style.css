@@ -173,12 +173,19 @@ header, nav, header img {
     position: fixed;
     right: 0;
     left: 0;
-    opacity: 0.949;
+    /* opacity: 0.949; */
     box-shadow: 0px 10px 90px 0px rgba(0, 0, 0, 0.15);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.95);
     z-index: 10;
 }
-
+.top-header .container:before {
+    height: 8px;
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    opacity: 1;
+}
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
@@ -286,9 +293,10 @@ header, nav, header img {
 
 .home .slide-desc a {
     min-width: 173px;
-    margin-top: 25px;
+    margin-top: 5px;
     width: auto;
     padding: 0 15px;
+    font-size: 14px;
 }
 
 .home .slide-desc h5 {
@@ -307,6 +315,7 @@ header, nav, header img {
     text-transform: uppercase;
     line-height: 0.778;
     text-shadow: 0px 16px 19.74px rgba(110, 110, 110, 0.2);
+    letter-spacing: 9px;
 }
 
 .home .slid-content {
@@ -328,7 +337,7 @@ header, nav, header img {
     min-height: 248px;
     text-align: center;
     color: white;
-    padding: 40px 0;
+    padding: 38px 0;
 }
 
 .home .showcase p {
@@ -336,8 +345,11 @@ header, nav, header img {
     font-size: 16px;
     line-height: 22px;
     margin: 0;
+    letter-spacing: 2px;
 }
-
+.home .showcase p:first-child {
+    letter-spacing: 2px;
+}
 .home .showcase > p:first-child {
     letter-spacing: 1.92px;
 }
@@ -346,13 +358,18 @@ header, nav, header img {
     max-width: 390px;
     width: 100%;
     height: auto;
-    padding: 15px 15px 0;
+    padding: 10px 15px 0;
     font-size: 22px;
     font-weight: 500;
     line-height: 22px;
-    margin: 25px 0;
+    margin: 24px 0 25px;
+    box-shadow: 10px 16px 19.74px 1.26px rgba(110, 110, 110, 0.2);
 }
-
+.client-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .home .showcase a:hover {
     /*background-image: -moz-linear-gradient(-30deg, rgb(255, 93, 22) 0%, rgb(236, 125, 76) 100%);*/
     /*background-image: -webkit-linear-gradient(-30deg, rgb(255, 93, 22) 0%, rgb(236, 125, 76) 100%);*/
@@ -379,8 +396,8 @@ header, nav, header img {
 }
 
 .clients .container {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 47px;
+    padding-top: 47px;
 }
 
 .clients .item img {
@@ -404,10 +421,11 @@ header, nav, header img {
     -moz-transform: scale(1.10);
     -o-transform: scale(1.10);
     transform: scale(1.10);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 .view-all {
@@ -423,6 +441,7 @@ header, nav, header img {
     font-weight: bold;
     color: #202020;
     display: inline-block;
+    letter-spacing: 1px;
 }
 
 .home .what-we-do .row > div > a {
@@ -3089,6 +3108,9 @@ section.project-url .next-project-btn {
 @media (min-width: 768px) {
 
     /*Header*/
+    .navbar-nav>li {
+        font-size: 14px;
+    }
     .navbar-collapse.collapse {
         padding: 0;
     }
@@ -4749,7 +4771,7 @@ section.project-url .next-project-btn {
     /*background-image: -moz-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);*/
     /*background-image: -webkit-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);*/
     /*background-image: -ms-linear-gradient(0deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%);*/
-    box-shadow: 0px 16px 19.74px 1.26px rgba(110, 110, 110, 0.2);
+    box-shadow: 10px 16px 19.74px 1.26px rgba(110, 110, 110, 0.2);
     width: 153px;
     height: 47px;
     line-height: 47px;
@@ -4775,7 +4797,9 @@ section.project-url .next-project-btn {
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
-
+a.c-btn:empty {
+    display: none;
+}
 .c-btn:hover {
     color: #f3fcfe !important;
     /*background-image: -moz-linear-gradient(-60deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%) !important;*/

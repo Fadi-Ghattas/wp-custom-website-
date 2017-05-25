@@ -7,11 +7,12 @@
  * Template Name: ContactUsPage
  */
 
-$homePagePost = get_page_by_path('home', OBJECT, 'page');
-$pageOptions = acf_get_group_fields($homePagePost->ID);
-
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
+
+$pageOptions = acf_get_group_fields(get_the_ID());
+
+$jobs = Job::viewAll();
 
 get_header();
 get_template_part('template-part', 'topnav');
@@ -20,16 +21,15 @@ get_template_part('template-part', 'topnav');
 <?php
 
 
-$services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
+$services_page_header_image = (!empty($pageOptions['for_you_page_header_image']['url']) ? esc_url($pageOptions['for_you_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
 ?>
 
-    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50"
-             data-image-src="<?php echo $services_page_header_image; ?>">
+    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p class="title">What's cooking</p>
-                    <p class="sub-title">Good Looking</p>
+                    <p class="title"><?php echo $pageOptions['for_you_page_header_title']; ?></p>
+                    <p class="sub-title"><?php echo $pageOptions['for_you_page_header_subtitle']; ?></p>
                 </div>
             </div>
         </div>
@@ -37,26 +37,23 @@ $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['
 
     <section class="blue-desc">
         <div class="right-top-div">
-            <img alt="I'm live" class="img-responsive"
-                 src="<?php echo get_template_directory_uri() . '/img/IamLive.png' ?>">
+            <img alt="I'm live" class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/IamLive.png' ?>">
             <div class="live-desc">
                 I'm live
             </div>
         </div>
         <div class="container">
-            <p>A magical place where great app ideas are hand-crafted into successful <br>
-                businesses thanks to the talented bunch of digital <br>
-                freaks we proudly home
-            </p>
+          <div><?php echo $pageOptions['for_you_page_message']; ?></div>
         </div>
     </section>
 
+<?php if(!empty($jobs)) { ?>
     <section class="join">
         <div class="container">
             <div class="row title">
                 <div class="col-lg-12">
-                    <h6>explore opportunities</h6>
-                    <h1>Available Now</h1>
+                    <h6><?php echo $pageOptions['for_you_page_opportunities_title']; ?></h6>
+                    <h1><?php echo $pageOptions['for_you_page_opportunities_subtitle']; ?></h1>
                 </div>
             </div>
             <div class="table-title row  hidden-xs">
@@ -64,10 +61,10 @@ $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['
                 <div class="col-lg-5 col-md-5 col-sm-6"><h5>DESCRIPTION</h5></div>
             </div>
             <div class="row">
-                <div class="position col-lg-5 col-md-5 col-sm-6">
-                    <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
+                <div class="position col-lg-5col-md-5 col-sm-6">
+<h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
                     <p>Senior Research Scientist
-                        <span>Dubai, UAE</span>
+                    <span>Dubai, UAE</span>
                     </p>
                 </div>
                 <div class="desc col-lg-5 col-md-5 col-sm-6">
@@ -99,6 +96,7 @@ $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['
             </div>
         </div>
     </section>
+<?php } ?>
 
     <section class="contact col-eq-height">
         <div class="map col-lg-6">
