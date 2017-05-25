@@ -7,17 +7,20 @@
  * Template Name: ContactUsPage
  */
 
+$homePagePost = get_page_by_path('home', OBJECT, 'page');
+$pageOptions = acf_get_group_fields($homePagePost->ID);
+
+$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
+$setting = acf_get_group_fields($setting->ID);
+
 get_header();
 get_template_part('template-part', 'topnav');
 ?>
 
 <?php
-$homePagePost = get_page_by_path('home', OBJECT, 'page');
-$pageOptions = acf_get_group_fields($homePagePost->ID);
-$services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
 
-$setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
-$setting = acf_get_group_fields($setting->ID);
+
+$services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
 ?>
 
     <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50"
@@ -27,8 +30,6 @@ $setting = acf_get_group_fields($setting->ID);
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <p class="title">What's cooking</p>
                     <p class="sub-title">Good Looking</p>
-                    <div class="desc">
-                    </div>
                 </div>
             </div>
         </div>
