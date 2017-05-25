@@ -59,40 +59,41 @@ $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['
                     <h1>Available Now</h1>
                 </div>
             </div>
-            <div class="table-title row">
-                <div class="col-lg-5"><h5>POSITION</h5></div>
-                <div class="col-lg-5"><h5>DESCRIPTION</h5></div>
+            <div class="table-title row  hidden-xs">
+                <div class="col-lg-5 col-md-5 col-sm-6"><h5>POSITION</h5></div>
+                <div class="col-lg-5 col-md-5 col-sm-6"><h5>DESCRIPTION</h5></div>
             </div>
             <div class="row">
-                <div class="position col-lg-5">
-
+                <div class="position col-lg-5 col-md-5 col-sm-6">
+                    <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
                     <p>Senior Research Scientist
                         <span>Dubai, UAE</span>
                     </p>
                 </div>
-                <div class="desc col-lg-5">
-
+                <div class="desc col-lg-5 col-md-5 col-sm-6">
+                    <h5 class="hidden-lg hidden-md hidden-sm">DESCRIPTION</h5>
                     <p> Data & Analytics, Data Science
                         <span>Machine Learning</span>
                     </p>
                 </div>
-                <div class="apply col-lg-2">
+                <div class="apply col-lg-2 col-md-2 col-sm-12">
                     <a href="" class="c-btn">apply</a>
                 </div>
             </div>
             <div class="row">
-                <div class="position col-lg-5">
+                <div class="position col-lg-5 col-md-5 col-sm-6">
+                    <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
                     <p>Senior Research Scientist
                         <span>Dubai, UAE</span>
                     </p>
                 </div>
-                <div class="desc col-lg-5">
-
+                <div class="desc col-lg-5 col-md-5 col-sm-6">
+                    <h5 class="hidden-lg hidden-md hidden-sm">DESCRIPTION</h5>
                     <p> Data & Analytics, Data Science
                         <span>Machine Learning</span>
                     </p>
                 </div>
-                <div class="apply col-lg-2">
+                <div class="apply col-lg-2 col-md-2 col-sm-12">
                     <a href="" class="c-btn">apply</a>
                 </div>
             </div>
