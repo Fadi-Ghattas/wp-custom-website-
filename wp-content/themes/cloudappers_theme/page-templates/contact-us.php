@@ -7,13 +7,17 @@
  * Template Name: ContactUsPage
  */
 
+$homePagePost = get_page_by_path('home', OBJECT, 'page');
+$pageOptions = acf_get_group_fields($homePagePost->ID);
+
+$pageOptions = acf_get_group_fields(get_the_ID());
+
 get_header();
 get_template_part('template-part', 'topnav');
 ?>
 
 <?php
-$homePagePost = get_page_by_path('home', OBJECT, 'page');
-$pageOptions = acf_get_group_fields($homePagePost->ID);
+
 
 $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
 ?>
@@ -25,8 +29,6 @@ $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <p class="title">What's cooking</p>
                     <p class="sub-title">Good Looking</p>
-                    <div class="desc">
-                    </div>
                 </div>
             </div>
         </div>
