@@ -77,7 +77,8 @@ get_template_part('template-part', 'topnav');
 				</div>
 
 				<?php $hover = ['green-card-hover', 'red-card-hover', 'purple-card-hover']; ?>
-				<?php $col = 0;$colPos ='';
+				<?php $mobHover = ['purple-card-gradient', 'pink-card-gradient', 'blue-card-gradient', 'red-card-gradient']; ?>
+				<?php  $col = 0;$colPos =''; $mobHoverCount = 0;
 				foreach ($pageShowCases as $project) {
 					$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
 					if($col == 0) {$colPos = 'col-lg-left col-sm-left col-xs-left';} else if($col == 1) {$colPos = 'col-lg-center col-sm-center col-xs-center';} else if($col == 2) {$colPos = 'col-lg-right col-sm-right col-xs-right';}
@@ -87,10 +88,19 @@ get_template_part('template-part', 'topnav');
 							<figure>
 								<!--<div class="lazy-loader-effect"></div>-->
 								<div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
-								<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
+								<a  href="<?php echo esc_url(get_permalink($project['id'])); ?>">
+									<img class="img-lazy lazy-not-loaded lazy-loader lazy-iso-not-loaded" data-src="<?php echo esc_url($project['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
+								</a>
 							</figure>
-							<a href="<?php echo esc_url(get_permalink($project['id']))?>">
+							<a class="desk" href="<?php echo esc_url(get_permalink($project['id'])); ?>">
 								<div class="overlay bg-rotate">
+									<h5><?php echo $title; ?></h5>
+									<?php if (!empty($project['project_card_sub_title'])) ?>
+									<h6><?php echo $project['project_card_sub_title']; ?></h6>
+								</div>
+							</a>
+							<a class="mob <?php echo $mobHover[$mobHoverCount]; ?>" href="<?php echo esc_url(get_permalink($project['id'])); ?>">
+								<div >
 									<h5><?php echo $title; ?></h5>
 									<?php if (!empty($project['project_card_sub_title'])) ?>
 									<h6><?php echo $project['project_card_sub_title']; ?></h6>
@@ -98,7 +108,7 @@ get_template_part('template-part', 'topnav');
 							</a>
 						</section>
 					</article>
-				<?php ($col == 2 ? $col = 0 : $col++); } ?>
+					<?php ($col == 2 ? $col = 0 : $col++); ($mobHoverCount == 3 ? $mobHoverCount = 0 : $mobHoverCount++);} ?>
 			</div>
 		</div>
 		<a href="#" class="btn-view-all-show-cases c-btn">
