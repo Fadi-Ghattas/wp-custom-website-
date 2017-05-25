@@ -1615,7 +1615,12 @@ section.project-header .project-header-container {
     width: 100%;
 }
 
-/*section.project-header .project-header-container .header-image {*/
+section.project-header .project-header-container img,
+section.show-case-two img{
+    width: 100%;
+}
+
+    /*section.project-header .project-header-container .header-image {*/
 /*width: 100%;*/
 /*height: 100%;*/
 /*}*/
