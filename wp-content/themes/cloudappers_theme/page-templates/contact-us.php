@@ -63,7 +63,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                 <div class="col-lg-5 col-md-5 col-sm-6"><h5>DESCRIPTION</h5></div>
             </div>
             <div class="row">
-                <div class="position col-lg-5col-md-5 col-sm-6">
+                <div class="position col-lg-5 col-md-5 col-sm-6">
                     <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
                     <p>Senior Research Scientist
                         <span>Dubai, UAE</span>
