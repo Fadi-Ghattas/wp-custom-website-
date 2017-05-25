@@ -112,7 +112,7 @@ section.ca-page-header .sub-title {
     line-height: 108px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
     text-transform: uppercase;
-    word-break: break-all;
+    /*word-break: break-all;*/
 }
 
 section.ca-page-header .desc {
