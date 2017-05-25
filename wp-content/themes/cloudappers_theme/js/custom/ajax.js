@@ -46,7 +46,7 @@ jQuery(function ($)
 						message: ' '
 					}, regexp: {
 						regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
-						message: 'This email address is not valid please try again.'
+						message: 'Please enter a valid email address.'
 					}
 				}
 			},
@@ -189,7 +189,7 @@ jQuery(function ($)
 						message: ' '
 					}, regexp: {
 						regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
-						message: 'This email address is not valid please try again.'
+						message: 'Please enter a valid email address.'
 					}
 				}
 			},

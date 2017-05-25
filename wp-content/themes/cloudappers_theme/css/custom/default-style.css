@@ -2734,6 +2734,7 @@ section.project-url .next-project-btn {
 .page-template-contact-us .join {
     padding-top: 68px;
     padding-bottom: 37px;
+    border-bottom: 1px solid #f6f4f4;
 }
 
 .page-template-contact-us .join .title h6 {
@@ -2816,6 +2817,99 @@ section.project-url .next-project-btn {
     text-transform: uppercase;
     line-height: 2.714;
     margin-top: 5px;
+}
+
+.page-template-contact-us .contact {
+    width: 100%;
+    position: relative;
+}
+
+.page-template-contact-us .contact > div {
+    padding: 0;
+}
+
+.page-template-contact-us .contact > div:last-child {
+    padding-top: 15px;
+}
+
+.page-template-contact-us .contact #map {
+    width: 100%;
+    height: 635px;
+}
+
+.page-template-contact-us .contact .form h1 {
+    font-size: 74px;
+    color: rgb(255, 97, 27);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.946;
+    margin-bottom: 49px;
+    letter-spacing: 7.4px;
+    margin-top: 0;
+}
+
+.page-template-contact-us .contact .container-fluid {
+    max-width: 585px;
+    margin-left: 0;
+}
+
+.page-template-contact-us .contact .form button {
+    border: none;
+    width: 100%;
+    max-width: 504px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.page-template-contact-us .contact .form-group:first-of-type,
+.page-template-contact-us .contact .form-group:nth-of-type(3) {
+    margin-right: 45px;
+}
+
+.page-template-contact-us .contact .form-group {
+    max-width: 239px;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    min-height: 113px;
+    vertical-align: top;
+}
+
+.page-template-contact-us .contact .form label {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 1.778;
+    padding-left: 7px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.page-template-contact-us .contact .form input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 18px;
+    color: #ff5f19;
+}
+
+.page-template-contact-us .contact .form-group.note {
+    max-width: 527px;
+    margin-top: 11px;
+    margin-bottom: 8px;
+}
+
+.page-template-contact-us .contact .form {
+    padding-left: 70px;
+}
+
+.page-template-contact-us .contact .form h6 {
+    font-size: 19px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .right-top-div {
@@ -3847,19 +3941,18 @@ section.project-url .next-project-btn {
 
     section.ca-page-header .sub-title {
         font-size: 12vw;
-        line-height:  16.266666666666666vw;
+        line-height: 16.266666666666666vw;
     }
+
     /*banner end*/
-
     /*show you page start*/
-
     .page-template-projects .row {
         margin-right: 0;
         margin-left: 0;
     }
+
     .page-template-projects .filters-wrapper,
-    .page-template-projects .container
-    {
+    .page-template-projects .container {
         padding: 0;
     }
 
@@ -3970,8 +4063,7 @@ section.project-url .next-project-btn {
 
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-left,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-center,
-    .page-template-projects section.some-of-show-cases .show-case-item.col-xs-right
-    {
+    .page-template-projects section.some-of-show-cases .show-case-item.col-xs-right {
         padding: 0;
         width: 100%;
         height: 96vw;
@@ -3981,11 +4073,11 @@ section.project-url .next-project-btn {
     .page-template-projects .red-card-hover figure img,
     .page-template-projects .purple-card-hover figure img,
     .page-template-projects .zoom-effect section,
-    .page-template-projects section.some-of-show-cases .show-case-item figure
-    {
+    .page-template-projects section.some-of-show-cases .show-case-item figure {
         width: 96vw;
         height: 96vw;
     }
+
     /*show you page end*/
 
 }
@@ -4063,7 +4155,6 @@ section.project-url .next-project-btn {
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
     /*.container{background: purple; z-index: 5}*/
-
     section.ca-page-header .sub-title {
         font-size: 50px;
         line-height: 58px;
@@ -4102,7 +4193,6 @@ section.project-url .next-project-btn {
         display: block;
     }
 
-
     .page-template-projects .green-card-hover figure img,
     .page-template-projects .red-card-hover figure img,
     .page-template-projects .purple-card-hover figure img,
@@ -4111,12 +4201,14 @@ section.project-url .next-project-btn {
         width: 100%;
         height: 100%;
     }
+
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-left,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-center,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-right {
         padding: 0 4px;
         height: initial;
     }
+
     /*show you page end*/
 }
 
