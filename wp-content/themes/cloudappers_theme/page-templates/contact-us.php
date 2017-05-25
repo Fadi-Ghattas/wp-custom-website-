@@ -24,7 +24,8 @@ get_template_part('template-part', 'topnav');
 $services_page_header_image = (!empty($pageOptions['for_you_page_header_image']['url']) ? esc_url($pageOptions['for_you_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
 ?>
 
-    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
+    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50"
+             data-image-src="<?php echo $services_page_header_image; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -37,17 +38,18 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
 
     <section class="blue-desc">
         <div class="right-top-div">
-            <img alt="I'm live" class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/IamLive.png' ?>">
+            <img alt="I'm live" class="img-responsive"
+                 src="<?php echo get_template_directory_uri() . '/img/IamLive.png' ?>">
             <div class="live-desc">
                 I'm live
             </div>
         </div>
         <div class="container">
-          <div><?php echo $pageOptions['for_you_page_message']; ?></div>
+            <div><?php echo $pageOptions['for_you_page_message']; ?></div>
         </div>
     </section>
 
-<?php if(!empty($jobs)) { ?>
+<?php if (!empty($jobs)) { ?>
     <section class="join">
         <div class="container">
             <div class="row title">
@@ -62,9 +64,9 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
             </div>
             <div class="row">
                 <div class="position col-lg-5col-md-5 col-sm-6">
-<h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
+                    <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
                     <p>Senior Research Scientist
-                    <span>Dubai, UAE</span>
+                        <span>Dubai, UAE</span>
                     </p>
                 </div>
                 <div class="desc col-lg-5 col-md-5 col-sm-6">
