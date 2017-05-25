@@ -7,14 +7,22 @@ jQuery.lazyLoadXT.onshow = function () {
 jQuery.lazyLoadXT.onload = function () {
 
     if (jQuery(this).hasClass('img-lazy')) {
+
         jQuery(this).removeClass('lazy-not-loaded');
         jQuery(this).removeClass('lazy-iso-not-loaded');
         jQuery(this).addClass('fadeIn');
-        // jQuery(this).parent().children('.lazy-loader-effect').css('z-index', 0).delay(1500).queue(function() { jQuery(this).remove(); });
+
         jQuery(this).parent().children('.lazy-loader-effect').delay(1500).queue(function () {
             jQuery(this).remove();
         });
+        jQuery(this).parent().parent().children('.lazy-loader-effect').delay(1500).queue(function () {
+            jQuery(this).remove();
+        });
+
         jQuery(this).parent().children('.loader').delay(1500).queue(function () {
+            jQuery(this).remove();
+        });
+        jQuery(this).parent().parent().children('.loader').delay(1500).queue(function () {
             jQuery(this).remove();
         });
 
@@ -189,9 +197,9 @@ jQuery(function ($) {
         $('ul.filters li a').on('click', function (e) {
             e.preventDefault();
             $('ul.filters li a').each(function (index) {
-                $(this).removeClass('active');
+                $(this).parent().removeClass('active');
             });
-            $(this).addClass('active');
+            $(this).parent().addClass('active');
             filtered = true;
             $isotope.isotope({filter: $(this).attr('data-type')});
             $isotope.on('layoutComplete', function (event, filteredItems) {
