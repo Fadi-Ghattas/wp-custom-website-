@@ -1306,6 +1306,10 @@ section.some-of-show-cases .show-case-item figure {
     width: 100%;
 }
 
+section.some-of-show-cases .show-case-item .mob {
+    display: none;
+}
+
 section.some-of-show-cases .show-case-item.col-lg-left {
     padding-left: 0;
     padding-right: 10px;
@@ -1470,7 +1474,7 @@ section.some-of-show-cases .overlay h6 {
 
 .filters-back {
     position: relative;
-    width: 436px;
+    width: 372px;
     height: 86px;
     background: rgba(255, 255, 255, 0.2);
     border-top-left-radius: 43px;
@@ -1482,7 +1486,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .filters-container {
-    width: 378px;
+    width: 345px;
     height: 60px;
     background: white;
     /*margin-top: -30px;*/
@@ -1513,7 +1517,7 @@ ul.filters {
 .page-template-projects ul.filters {
     position: absolute;
     top: 28%;
-    left: 6%;
+    width: 100%;
 }
 
 .page-template-team ul.filters {
@@ -1526,7 +1530,7 @@ ul.filters li {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    padding: 0px 20px;
+    padding: 0px 4px
 }
 
 ul.filters li a {
@@ -1535,6 +1539,7 @@ ul.filters li a {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 ul.filters li a:hover,
@@ -3347,6 +3352,203 @@ section.blue-desc {
 
 }
 
+@media (min-width: 767px) {
+    /*cards hover effect start*/
+    .green-card-hover,
+    .red-card-hover,
+    .purple-card-hover {
+        background: #f1f1f1;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .green-card-hover:hover {
+        background-image: -moz-linear-gradient(90deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
+    }
+
+    .red-card-hover:hover {
+        background-image: -moz-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
+        background-image: -ms-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
+    }
+
+    .purple-card-hover:hover {
+        background-image: -moz-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
+    }
+
+    .green-card-hover .overlay,
+    .red-card-hover .overlay,
+    .purple-card-hover .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .green-card-hover:hover .overlay,
+    .red-card-hover:hover .overlay,
+    .purple-card-hover:hover .overlay {
+        opacity: 1;
+    }
+
+    .green-card-hover figure img,
+    .red-card-hover figure img,
+    .purple-card-hover figure img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+        backface-visibility: hidden;
+    }
+
+    .green-card-hover:hover figure img,
+    .red-card-hover:hover figure img,
+    .purple-card-hover:hover figure img {
+        opacity: 0.08;
+    }
+
+    .green-card-hover:hover .bg-rotate:after,
+    .red-card-hover:hover .bg-rotate:after,
+    .purple-card-hover:hover .bg-rotate:after {
+        -webkit-animation: card-hover-in 0.5s;
+        -moz-animation: card-hover-in 0.5s;
+        -o-animation: card-hover-in 0.5s;
+        animation: card-hover-in 0.5s;
+    }
+
+    .green-card-hover .bg-rotate:after,
+    .red-card-hover .bg-rotate:after,
+    .purple-card-hover .bg-rotate:after {
+        -webkit-animation: card-hover-out 0.5s;
+        -moz-animation: card-hover-out 0.5s;
+        -o-animation: card-hover-out 0.5s;
+        animation: card-hover-out 0.5s;
+    }
+
+    @-webkit-keyframes card-hover-in {
+        0% {
+            -webkit-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @-moz-keyframes card-hover-in {
+        0% {
+            -webkit-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @-o-keyframes card-hover-in {
+        0% {
+            -webkit-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes card-hover-in {
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes card-hover-out {
+        0% {
+            -webkit-transform: rotate(360deg);
+        }
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+
+    @-moz-keyframes card-hover-out {
+        0% {
+            -webkit-transform: rotate(360deg);
+        }
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+
+    @-o-keyframes card-hover-out {
+        0% {
+            -webkit-transform: rotate(360deg);
+        }
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+
+    @keyframes card-hover-out {
+        0% {
+            -webkit-transform: rotate(360deg);
+        }
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+
+    /*cards hover effect end*/
+
+    /*cards zoom effect end*/
+    .zoom-effect section {
+        height: 100%;
+        width: 100%;
+    }
+
+    .zoom-effect figure {
+        overflow: hidden;
+    }
+
+    .zoom-effect figure img {
+        -webkit-transition: 0.4s ease;
+        -moz-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .zoom-effect:hover img {
+        -webkit-transform: scale(1.10);
+        -moz-transform: scale(1.10);
+        -o-transform: scale(1.10);
+        transform: scale(1.10);
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
+    }
+
+    /*cards zoom effect end*/
+}
+
 @media (max-width: 767px) {
     /*Menu*/
     .logo-mob,
@@ -3714,6 +3916,42 @@ section.blue-desc {
         padding: 0 15px;
     }
 
+    .green-card-hover,
+    .red-card-hover,
+    .purple-card-hover {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .purple-card-gradient {
+        background-image: -moz-linear-gradient(30deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
+        background-image: -webkit-linear-gradient(30deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
+        background-image: -ms-linear-gradient(30deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
+        opacity: 0.949;
+    }
+
+    .pink-card-gradient {
+        background-image: -moz-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%);
+        opacity: 0.949;
+    }
+
+    .blue-card-gradient {
+        background-image: -moz-linear-gradient( -30deg, rgb(102,166,255) 0%, rgb(137,247,254) 100%);
+        background-image: -webkit-linear-gradient( -30deg, rgb(102,166,255) 0%, rgb(137,247,254) 100%);
+        background-image: -ms-linear-gradient( -30deg, rgb(102,166,255) 0%, rgb(137,247,254) 100%);
+        opacity: 0.949;
+    }
+
+    .red-card-gradient {
+        background-image: -moz-linear-gradient( 0deg, rgb(250,112,154) 0%, rgb(254,225,64) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(250,112,154) 0%, rgb(254,225,64) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(250,112,154) 0%, rgb(254,225,64) 100%);
+        opacity: 0.949;
+    }
+
     /*banner start*/
     section.ca-page-header {
         min-height: 92.53333333333333vw;
@@ -3845,7 +4083,7 @@ section.blue-desc {
 
     section.all-projects .grid {
         margin-top: 4.4vw;
-        margin-bottom: 8.533333333333333vw;
+        margin-bottom: 6.4vw;
     }
 
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-left,
@@ -3865,6 +4103,42 @@ section.blue-desc {
     {
         width: 96vw;
         height: 96vw;
+    }
+
+
+    section.some-of-show-cases .show-case-item .desk {
+        display: none;
+    }
+
+    section.some-of-show-cases .show-case-item .mob {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: -webkit-left;
+        text-align: -moz-left;
+        text-align: left;
+        height: 24.533333333333335vw;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 6.533333333333333vw;
+    }
+
+    section.some-of-show-cases .show-case-item .mob h5 {
+          color: white;
+          font-family: 'Raleway', sans-serif;
+          font-size: 6.4vw;
+          font-weight: 300;
+      }
+
+    section.some-of-show-cases .show-case-item .mob h6 {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 4.266666666666667vw;
+        font-weight: 500;
     }
     /*show you page end*/
 
@@ -3991,6 +4265,7 @@ section.blue-desc {
         width: 100%;
         height: 100%;
     }
+
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-left,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-center,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-right {
@@ -4170,199 +4445,7 @@ section.blue-desc {
     transition: 0.3s;
 }
 
-/*cards hover effect start*/
-.green-card-hover,
-.red-card-hover,
-.purple-card-hover {
-    background: #f1f1f1;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
 
-.green-card-hover:hover {
-    background-image: -moz-linear-gradient(90deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(152, 144, 227) 0%, rgb(177, 244, 207) 100%);
-}
-
-.red-card-hover:hover {
-    background-image: -moz-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%);
-}
-
-.purple-card-hover:hover {
-    background-image: -moz-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
-}
-
-.green-card-hover .overlay,
-.red-card-hover .overlay,
-.purple-card-hover .overlay {
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.green-card-hover:hover .overlay,
-.red-card-hover:hover .overlay,
-.purple-card-hover:hover .overlay {
-    opacity: 1;
-}
-
-.green-card-hover figure img,
-.red-card-hover figure img,
-.purple-card-hover figure img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-    backface-visibility: hidden;
-}
-
-.green-card-hover:hover figure img,
-.red-card-hover:hover figure img,
-.purple-card-hover:hover figure img {
-    opacity: 0.08;
-}
-
-.green-card-hover:hover .bg-rotate:after,
-.red-card-hover:hover .bg-rotate:after,
-.purple-card-hover:hover .bg-rotate:after {
-    -webkit-animation: card-hover-in 0.5s;
-    -moz-animation: card-hover-in 0.5s;
-    -o-animation: card-hover-in 0.5s;
-    animation: card-hover-in 0.5s;
-}
-
-.green-card-hover .bg-rotate:after,
-.red-card-hover .bg-rotate:after,
-.purple-card-hover .bg-rotate:after {
-    -webkit-animation: card-hover-out 0.5s;
-    -moz-animation: card-hover-out 0.5s;
-    -o-animation: card-hover-out 0.5s;
-    animation: card-hover-out 0.5s;
-}
-
-@-webkit-keyframes card-hover-in {
-    0% {
-        -webkit-transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-moz-keyframes card-hover-in {
-    0% {
-        -webkit-transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes card-hover-in {
-    0% {
-        -webkit-transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes card-hover-in {
-    100% {
-        -webkit-transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes card-hover-out {
-    0% {
-        -webkit-transform: rotate(360deg);
-    }
-    100% {
-        -webkit-transform: rotate(180deg);
-    }
-}
-
-@-moz-keyframes card-hover-out {
-    0% {
-        -webkit-transform: rotate(360deg);
-    }
-    100% {
-        -webkit-transform: rotate(180deg);
-    }
-}
-
-@-o-keyframes card-hover-out {
-    0% {
-        -webkit-transform: rotate(360deg);
-    }
-    100% {
-        -webkit-transform: rotate(180deg);
-    }
-}
-
-@keyframes card-hover-out {
-    0% {
-        -webkit-transform: rotate(360deg);
-    }
-    100% {
-        -webkit-transform: rotate(180deg);
-    }
-}
-
-/*cards hover effect end*/
-
-/*cards zoom effect end*/
-.zoom-effect section {
-    height: 100%;
-    width: 100%;
-}
-
-.zoom-effect figure {
-    overflow: hidden;
-}
-
-.zoom-effect figure img {
-    -webkit-transition: 0.4s ease;
-    -moz-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-}
-
-.zoom-effect:hover img {
-    -webkit-transform: scale(1.10);
-    -moz-transform: scale(1.10);
-    -o-transform: scale(1.10);
-    transform: scale(1.10);
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-}
-
-/*cards zoom effect end*/
 
 /*lazy loading classes start*/
 .lazy-loader {
