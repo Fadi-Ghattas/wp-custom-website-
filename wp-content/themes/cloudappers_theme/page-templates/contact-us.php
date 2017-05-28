@@ -27,7 +27,8 @@ get_template_part('template-part', 'topnav');
 $services_page_header_image = (!empty($pageOptions['for_you_page_header_image']['url']) ? esc_url($pageOptions['for_you_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/contactus-header.png'));
 ?>
 
-    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
+    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50"
+             data-image-src="<?php echo $services_page_header_image; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -40,17 +41,18 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
 
     <section class="blue-desc">
         <div class="right-top-div">
-            <img alt="I'm live" class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/IamLive.png' ?>">
+            <img alt="I'm live" class="img-responsive"
+                 src="<?php echo get_template_directory_uri() . '/img/IamLive.png' ?>">
             <div class="live-desc">
                 I'm live
             </div>
         </div>
         <div class="container">
-          <div><?php echo $pageOptions['for_you_page_message']; ?></div>
+            <div><?php echo $pageOptions['for_you_page_message']; ?></div>
         </div>
     </section>
 
-<?php if(!empty($jobs)) { ?>
+<?php if (!empty($jobs)) { ?>
     <section class="join">
         <div class="container">
 
@@ -60,25 +62,25 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                     <h1><?php echo $pageOptions['for_you_page_opportunities_subtitle']; ?></h1>
                 </div>
             </div>
-
-            <div class="table-title row">
-                <div class="col-lg-5"><h5>POSITION</h5></div>
-                <div class="col-lg-5"><h5>DESCRIPTION</h5></div>
+            <div class="table-title row  hidden-xs">
+                <div class="col-lg-5 col-md-5 col-sm-6"><h5>POSITION</h5></div>
+                <div class="col-lg-5 col-md-5 col-sm-6"><h5>DESCRIPTION</h5></div>
             </div>
 
             <?php foreach ($jobs as $job) { ?>
                 <div class="row">
-                    <div class="position col-lg-5">
-                        <p><?php echo $job['post_title']; ?>
+                    <div class="position col-lg-5 col-md-5 col-sm-6">
+						<h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
+						<p><?php echo $job['post_title']; ?>
                             <span><?php echo $job['job_location']; ?></span>
                         </p>
                     </div>
-                    <div class="desc col-lg-5">
+                    <div class="desc col-lg-5 col-md-5 col-sm-6">
                         <div> <?php echo $job['job_description']; ?>
                             <span><?php echo strip_tags($job['job_type'][0]['post_title']); ?></span>
                         </div>
                     </div>
-                    <div class="apply col-lg-2">
+                    <div class="apply col-lg-2 col-md-2 col-sm-12">
                         <a href="javascript:void(0)" class="c-btn">apply</a>
                     </div>
                 </div>
