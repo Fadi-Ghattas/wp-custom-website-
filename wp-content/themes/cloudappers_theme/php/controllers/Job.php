@@ -26,6 +26,15 @@ class Job
 				'acf' => 1,
 				'name' => 'job_description',
 			],
+			[
+				'acf' => 1,
+				'name' => 'job_type',
+				'type' => 'job_type',
+				'relationship' => 1,
+				'fields' => [
+					'post_title',
+				],
+			]
 		];
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => 'job_is_active.meta_value = 1', 'order_by' => 't.menu_order, t.post_date DESC'];
