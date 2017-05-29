@@ -67,21 +67,26 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                 <div class="col-lg-5 col-md-5 col-sm-6"><h5>DESCRIPTION</h5></div>
             </div>
 
-            <?php foreach ($jobs as $job) { ?>
+            <?php foreach ($jobs as $job) {
+                $jobState = strip_tags($job['job_state'][0]['post_title']);
+                ?>
                 <div class="row">
                     <div class="position col-lg-5 col-md-5 col-sm-6">
 						<h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
 						<p><?php echo $job['post_title']; ?>
-                            <span><?php echo $job['job_location']; ?></span>
+                            <span><?php echo strip_tags($job['job_location'][0]['post_title']) . (!empty($jobState) ? ', ' . $jobState : '') ; ?></span>
                         </p>
                     </div>
                     <div class="desc col-lg-5 col-md-5 col-sm-6">
-                        <div> <?php echo $job['job_description']; ?>
+                        <p> <?php echo strip_tags($job['job_description']); ?>
                             <span><?php echo strip_tags($job['job_type'][0]['post_title']); ?></span>
-                        </div>
+                        </p>
                     </div>
                     <div class="apply col-lg-2 col-md-2 col-sm-12">
-                        <a href="javascript:void(0)" class="c-btn">apply</a>
+                        <a href="javascript:void(0)" class="apply-for-position c-btn"
+                           data-location="<?php echo $job['job_location'][0]['id']; ?>"
+                           data-state="<?php echo $jobState ?>"
+                           data-applied-position="<?php echo $job['post_title']; ?>">apply</a>
                     </div>
                 </div>
             <?php } ?>

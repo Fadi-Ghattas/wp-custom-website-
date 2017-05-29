@@ -33,6 +33,7 @@ function ajaxApplyForJob()
 		'cv_expected_salary' => trim($_POST['expected_salary']),
 		'cv_info_one' => trim($_POST['cv_info_one']),
 		'cv_file' => trim($uploaded[0]['attach_id']),
+		'cv_state' => trim($_POST['cv_state'])
 	];
 
 	$isAdded = add_pod((new CVModel())->pod_name, $user_data);

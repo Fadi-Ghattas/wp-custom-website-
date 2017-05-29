@@ -52,3 +52,6 @@ require_once("$dirName/controllers/SweetWord.php");
 
 require_once("$dirName/models/JobModel.php");
 require_once("$dirName/controllers/Job.php");
+
+require_once("$dirName/models/JobLocationModel.php");
+require_once("$dirName/controllers/JobLocation.php");

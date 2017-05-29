@@ -21,6 +21,22 @@ class Job
 			[
 				'acf' => 1,
 				'name' => 'job_location',
+				'type' => 'job_location',
+				'relationship' => 1,
+				'fields' => [
+					'id',
+					'post_title',
+				],
+			],
+			[
+				'acf' => 1,
+				'name' => 'job_state',
+				'type' => 'job_state',
+				'relationship' => 1,
+				'fields' => [
+					'id',
+					'post_title',
+				],
 			],
 			[
 				'acf' => 1,
@@ -32,6 +48,7 @@ class Job
 				'type' => 'job_type',
 				'relationship' => 1,
 				'fields' => [
+					'id',
 					'post_title',
 				],
 			]

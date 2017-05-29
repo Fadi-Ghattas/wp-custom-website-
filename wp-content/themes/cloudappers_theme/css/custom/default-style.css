@@ -4177,6 +4177,11 @@ section.project-url .next-project-btn {
         margin-top: 2px;
     }
 
+    #JobModal #applied-position {
+        display: none;
+        font-size: 24px;
+    }
+
     /*prefooter*/
     .prefooter {
         text-align: center;

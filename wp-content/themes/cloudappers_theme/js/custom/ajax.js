@@ -113,6 +113,7 @@ jQuery(function ($)
 
 			var formData = new FormData();
 			formData.append('action', 'ajaxApplyForJob');
+			formData.append('page', script_const.page_template)
 			formData.append('full_name', $('#JobModal #full_name').val());
 			formData.append('email', $('#JobModal #email').val());
 			formData.append('phone', $('#JobModal #phone').val());
@@ -121,6 +122,7 @@ jQuery(function ($)
 			formData.append('expected_salary', $('#JobModal #expected_salary').val());
 			formData.append('cv_info_one', $('#JobModal #cv_info_one').text());
 			formData.append('cv_file', $('#JobModal #cv_file')[0].files[0]);
+			formData.append('cv_state', $('#JobModal #cv_state').val());
 
 			$.ajax({
 				beforeSend: function (xhr) {
@@ -138,6 +140,7 @@ jQuery(function ($)
 						$('#JobModal .message').css('color',response.message_color);
 						$('#JobModal form').formValidation('resetForm', true);
 						$('#JobModal #cv_file').fileinput('clear');
+						$('#JobModal #cv_state').val('');
 						FormValidation.AddOn.reCaptcha2.reset('JobCaptcha');
 					} else {
 						$('#JobModal .message').text('').text(response.message);

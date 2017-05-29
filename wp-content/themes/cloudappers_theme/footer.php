@@ -47,14 +47,16 @@ wp_footer();
     </section>
 <?php } ?>
 
-
+<?php if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
+        $jobsLocations = JobLocation::viewAll();
+    ?>
 <div id="JobModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h2>Now hiring</h2>
-                <h3>Uncle Sam may want you, but so do we</h3>
+                <h3>Uncle Sam may want you<span id="applied-position"></span>, but so do we</h3>
             </div>
 
             <div class="modal-body">
@@ -62,6 +64,7 @@ wp_footer();
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                         <form method="post" action="" enctype="multipart/form-data">
+                            <input id="cv_state" type="hidden" value=""/>
                             <!-- Text input-->
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="full_name">Full Name</label>
@@ -88,8 +91,9 @@ wp_footer();
                                 <label class="control-label" for="location">Locations</label>
                                 <select id="location" name="location" class="form-control">
                                     <option value=""></option>
-                                    <option value="Dubai">Dubai</option>
-                                    <option value="Lebanon">Lebanon</option>
+                                    <?php foreach ($jobsLocations as $jobLocations) { ?>
+                                        <option value="<?php echo $jobLocations['id']; ?>"><?php echo $jobLocations['post_title']; ?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
 
@@ -147,7 +151,7 @@ wp_footer();
         </div>
     </div>
 </div>
-
+<?php } ?>
 <div id="map-popup" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -161,6 +165,7 @@ wp_footer();
         </div>
     </div>
 </div>
+
 
 </body>
 </html>
