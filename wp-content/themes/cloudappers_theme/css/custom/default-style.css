@@ -1042,22 +1042,22 @@ header, nav, header img {
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
 
-.home #JobModal .modal-dialog,
-.home #JobModal .modal-content {
+#JobModal .modal-dialog,
+#JobModal .modal-content {
     border-radius: 10px;
 }
 
-.home #JobModal .modal-dialog {
+#JobModal .modal-dialog {
     max-width: 711px;
     width: 100%;
     margin: 0 auto;
 }
 
-.home #JobModal .modal-body {
+#JobModal .modal-body {
     padding: 86px 71px 15px 71px;
 }
 
-.home #JobModal .modal-content {
+#JobModal .modal-content {
     background: url('../../img/box.png'), url('../../img/popup-bg.png');
     background-repeat: no-repeat, no-repeat;
     background-color: white;
@@ -1065,33 +1065,33 @@ header, nav, header img {
     background-size: auto, cover;
 }
 
-.home #JobModal .modal-content {
+#JobModal .modal-content {
 
     /*arrow.png  */
 }
 
-.home #JobModal .modal-header {
+#JobModal .modal-header {
     text-align: center;
     border: none;
 }
 
-.home #JobModal .modal-header h2 {
+#JobModal .modal-header h2 {
     font-size: 48px;
     font-weight: bold;
     margin-top: 51px;
 }
 
-.home #JobModal .modal-header h3 {
+#JobModal .modal-header h3 {
     font-size: 20px;
     font-weight: bold;
     color: #6f6c6c;
     margin-top: 10px;
 }
 
-.home #JobModal input,
-.home #JobModal select,
-.home #JobModal .file-caption,
-.home #JobModal textarea {
+#JobModal input,
+#JobModal select,
+#JobModal .file-caption,
+#JobModal textarea {
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -1103,57 +1103,57 @@ header, nav, header img {
     background: transparent;
 }
 
-.home #JobModal .file-caption {
+#JobModal .file-caption {
     margin-top: 4px;
 }
 
-.home #JobModal label {
+#JobModal label {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
 }
 
-.home #JobModal select {
+#JobModal select {
     background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.home #JobModal .form-group {
+#JobModal .form-group {
     min-height: 107px;
 }
 
-.home #JobModal .form-message,
-.home #JobModal .form-submit {
+#JobModal .form-message,
+#JobModal .form-submit {
     min-height: 0;
 }
 
-.home #JobModal button {
+#JobModal button {
     border: 1px solid black;
 }
 
-.home #JobModal #JobCaptcha {
+#JobModal #JobCaptcha {
     display: inline-block;
 }
 
-.home #JobModal .btn-file {
+#JobModal .btn-file {
     background: #ff601b;
 }
 
-.home #JobModal .captcha-container {
+#JobModal .captcha-container {
     text-align: center;
 }
 
-.home #JobModal .file-caption-name {
+#JobModal .file-caption-name {
     height: 25px;
 }
 
-.home #JobModal .submit-btn {
+#JobModal .submit-btn {
     border: none;
     width: 100%;
 }
 
-.home #JobModal .close {
+#JobModal .close {
     border: none;
     font-size: 50px;
     line-height: 22px;
@@ -4161,19 +4161,19 @@ section.project-url .next-project-btn {
         font-size: 10vw;
     }
 
-    .home #JobModal .modal-body {
+    #JobModal .modal-body {
         padding: 15px;
     }
 
-    .home #JobModal .modal-dialog {
+    #JobModal .modal-dialog {
         width: 90%;
     }
 
-    .home #JobModal .modal-content {
+    #JobModal .modal-content {
         background-size: 0 0, cover;
     }
 
-    .home #JobModal .file-caption {
+    #JobModal .file-caption {
         margin-top: 2px;
     }
 
