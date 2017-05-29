@@ -246,6 +246,8 @@ jQuery(function ($)
 						$('#GetInTouchForm .message').text('').text(response.message);
 						$('#GetInTouchForm .message').css('color',response.message_color);
 						$('#GetInTouchForm').formValidation('resetForm', true);
+						$('#GetInTouchForm #company').val('');
+						$('#GetInTouchForm #phone').val('');
 					} else {
 						$('#GetInTouchForm .message').text('').text(response.message);
 						$('#GetInTouchForm .message').css('color',response.message_color);
