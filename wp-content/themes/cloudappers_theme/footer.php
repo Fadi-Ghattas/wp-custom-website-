@@ -64,7 +64,10 @@ wp_footer();
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                         <form method="post" action="" enctype="multipart/form-data">
+
                             <input id="cv_state" type="hidden" value=""/>
+                            <input id="applied_position" type="hidden" value=""/>
+
                             <!-- Text input-->
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="full_name">Full Name</label>

@@ -123,6 +123,7 @@ jQuery(function ($)
 			formData.append('cv_info_one', $('#JobModal #cv_info_one').text());
 			formData.append('cv_file', $('#JobModal #cv_file')[0].files[0]);
 			formData.append('cv_state', $('#JobModal #cv_state').val());
+			formData.append('cv_applied_for_position', $('#JobModal #applied_position').val());
 
 			$.ajax({
 				beforeSend: function (xhr) {
