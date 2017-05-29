@@ -22,7 +22,7 @@ function project_scripts()
 	wp_enqueue_style('slick-css', get_template_directory_uri() . '/css/slick-slider/slick.css', [], '3.4');
 	wp_enqueue_style('slick-theme', get_template_directory_uri() . '/css/slick-slider/slick-theme.css', [],	 '3.6');
 
-	if (is_home()) {
+	if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
 		wp_enqueue_style('bootstrap-fileinput-css', get_template_directory_uri() . '/css/bootstrap/bootstrap-fileinput/css/fileinput.min.css', [], '1');
 	}
 
@@ -39,12 +39,13 @@ function project_scripts()
 	wp_enqueue_script('reCaptcha2', get_template_directory_uri() . '/js/bootstrap/reCaptcha2.min.js', ['formValidation'], '1', TRUE);
 	wp_enqueue_script('slick', get_template_directory_uri() . '/js/slick-slider/slick.min.js', ['jquery-min'], '1', FALSE);
 	wp_enqueue_script('parallax', get_template_directory_uri() . '/js/parallax/parallax.min.js', ['jquery-min'], '1', FALSE);
-	if (is_home()) {
+
+	if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
 		wp_enqueue_script('bootstrap-fileinput-js', get_template_directory_uri() . '/js/bootstrap/bootstrap-fileinput/js/fileinput.min.js', ['jquery-min', 'bootstrap'], '1', FALSE);
 	}
 
 	if (in_array(basename(get_page_template()), ['projects.php','team.php'])) {
-		wp_enqueue_script('bootstrap-fileinput-js', get_template_directory_uri() . '/js/isotope/isotope.pkgd.min.js', ['jquery-min'], '1', FALSE);
+		wp_enqueue_script('bootstrap-isotope-js', get_template_directory_uri() . '/js/isotope/isotope.pkgd.min.js', ['jquery-min'], '1', FALSE);
 	}
 
 	//wp_enqueue_script('helpers_js', get_template_directory_uri() . '/js/custom/helpers.js', ['jquery-min'], '1.0', FALSE);
