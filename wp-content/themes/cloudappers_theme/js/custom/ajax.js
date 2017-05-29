@@ -237,7 +237,9 @@ jQuery(function ($)
 					action: 'ajaxGetInTouch',
 					name: $('#GetInTouchForm #name').val(),
 					email: $('#GetInTouchForm #email').val(),
-					note: $('#GetInTouchForm #note').val()
+					note: $('#GetInTouchForm #note').val(),
+					company: $('#GetInTouchForm #company').val(),
+					phone: $('#GetInTouchForm #phone').val(),
 				}),
 				success: function (response) {
 					if(!response.error) {

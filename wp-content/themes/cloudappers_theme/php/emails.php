@@ -60,6 +60,8 @@ function sendGetInTouchAdminEmail($data)
 			$body = str_replace('{name}', $data['name'], $body);
 			$body = str_replace('{email}', $data['email'], $body);
 			$body = str_replace('{note}', $data['note'], $body);
+			$body = str_replace('{company}', $data['company'], $body);
+			$body = str_replace('{phone}', $data['phone'], $body);
 			$body = str_replace('{date}', date('Y'), $body);
 
 			$headers = ['Content-Type: text/html; charset=UTF-8', $From];
