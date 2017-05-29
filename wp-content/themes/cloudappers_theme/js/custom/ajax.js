@@ -143,7 +143,7 @@ jQuery(function ($)
 						$('#JobModal form').formValidation('resetForm', true);
 						$('#JobModal #cv_file').fileinput('clear');
 						$('#JobModal #cv_state').val('');
-						('#JobModal #cv_applied_for_position').val('');
+						('#JobModal #applied_position').val('');
 						('#JobModal #cv_info_one').text('');
 						FormValidation.AddOn.reCaptcha2.reset('JobCaptcha');
 					} else {
