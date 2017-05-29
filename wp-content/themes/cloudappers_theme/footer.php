@@ -47,8 +47,10 @@ wp_footer();
     </section>
 <?php } ?>
 
-<?php if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
-        $jobsLocations = JobLocation::viewAll();
+<?php
+if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
+    $jobsLocations = JobLocation::viewAll();
+    $jobsSalariesRanges = JobSalaryRangeModel::viewAll();
     ?>
 <div id="JobModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -113,8 +115,9 @@ wp_footer();
                                     <span>$</span></label>
                                 <select id="expected_salary" name="expected_salary" class="form-control">
                                     <option value=""></option>
-                                    <option value="100 - 200">100 - 200</option>
-                                    <option value="200 - 300">200 - 300</option>
+                                    <?php foreach ($jobsSalariesRanges as $ranges) { ?>
+                                        <option value="<?php echo $ranges['post_title']; ?>"><?php echo $ranges['post_title']; ?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
 
@@ -154,7 +157,7 @@ wp_footer();
         </div>
     </div>
 </div>
-<?php } ?>
+
 <div id="map-popup" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -168,7 +171,7 @@ wp_footer();
         </div>
     </div>
 </div>
-
+<?php } ?>
 
 </body>
 </html>
