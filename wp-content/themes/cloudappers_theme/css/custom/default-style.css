@@ -58,7 +58,16 @@ figure {
     text-align: -webkit-center;
     text-align: -moz-center;
 }
+/* General */
 
+.form-group label {
+    transform: translateY(25px);
+    transition: transform 0.3s linear;
+}
+
+.form-group label.focus {
+    transform: translateY(0);
+}
 section.ca-page-header {
     min-height: 100vh;
     background-size: cover;
@@ -897,8 +906,12 @@ header, nav, header img {
     padding-bottom: 27px;
     padding-top: 5px;
     margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
 }
-
+body.home.blog.modal-open {
+    overflow-y: visible;
+}
 .home .contact .address p {
     font-size: 14px;
     font-family: "Open Sans";
@@ -953,7 +966,7 @@ header, nav, header img {
     color: rgb(0, 0, 0);
     line-height: 1.778;
     padding-left: 7px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
