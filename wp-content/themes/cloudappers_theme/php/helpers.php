@@ -350,7 +350,7 @@ function get_file_extension($file_type)
 	}
 }
 
-function upload_file($files, $upload_file_name)
+function upload_file($files, $upload_file_name, $upload_to_folder)
 {
 	if (!empty($files)) {
 
@@ -360,7 +360,7 @@ function upload_file($files, $upload_file_name)
 			$upload_file_name = $upload_file_name . get_file_extension($file['type']);
 			$upload_dir = wp_upload_dir();
 
-			if (move_uploaded_file($file["tmp_name"], $upload_dir['path'] . "/" . $upload_file_name)) {
+			if (move_uploaded_file($file["tmp_name"], $upload_dir['basedir'] . "/".$upload_to_folder."/" . $upload_file_name)) {
 				$uploaded_file['file_name'] = $_POST['image_name'];
 				$uploaded_file['upload_url'] = $upload_dir['url'] . "/" . $upload_file_name;
 

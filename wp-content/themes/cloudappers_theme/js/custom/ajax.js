@@ -33,7 +33,16 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Your Full Name is required.'
+						message: 'Your full name is required.'
+					},
+					regexp: {
+						regexp: /^[a-zA-Z\s]+$/,
+						message: 'Your full name can only consist of alphabetical and space.'
+					},
+					stringLength: {
+						min: 2,
+						max: 30,
+						message: 'Your full name must be between 2 and 30 characters long.'
 					}
 				}
 			},
@@ -54,7 +63,7 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Your Phone Number is required.'
+						message: 'Your phone number is required.'
 					}
 				}
 			},
@@ -62,7 +71,12 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Location is required.'
+						message: 'Your location is required.'
+					},
+					stringLength: {
+						min: 2,
+						max: 30,
+						message: 'Your location must be between 2 and 30 characters long.'
 					}
 				}
 			},
@@ -70,8 +84,12 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Your Years of Experience is required.'
-					}
+						message: 'Your years of experience is required.'
+					},
+					regexp: {
+						regexp: /^\d+$/,
+						message: 'Your years of experience can only consist one number.'
+					},
 				}
 			},
 			'expected_salary': {
@@ -185,6 +203,15 @@ jQuery(function ($)
 				validators: {
 					notEmpty: {
 						message: 'Your Name is required.'
+					},
+					regexp: {
+						regexp: /^[a-zA-Z\s]+$/,
+						message: 'Your name can only consist of alphabetical and space.'
+					},
+					stringLength: {
+						min: 2,
+						max: 30,
+						message: 'Your  name must be between 2 and 30 characters long.'
 					}
 				}
 			},
@@ -206,6 +233,10 @@ jQuery(function ($)
 				validators: {
 					notEmpty: {
 						message: 'Your Message is required.'
+					},
+					stringLength: {
+						min: 10,
+						message: 'Your not must be more than 10 characters long.'
 					}
 				}
 			},
