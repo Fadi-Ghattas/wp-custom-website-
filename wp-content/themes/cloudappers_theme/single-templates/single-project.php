@@ -202,7 +202,7 @@ get_template_part('template-part', 'topnav');
 						<div class="container">
 							<div class="row">
 						<?php } ?>
-						<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
+						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
 							<?php if ($info_block['project_block_type'] == 1) { ?>
 								<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
 								<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
@@ -246,8 +246,8 @@ get_template_part('template-part', 'topnav');
 
 		<?php } ?>
 
-		<a href="#">
-			<div class="move-section">
+		<a href="#" class="move-section desk">
+			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>
@@ -269,6 +269,11 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
+        <a href="#" class="move-section mob">
+            <div >
+                <div class="icono-arrow1-down"></div>
+            </div>
+        </a>
 	</section>
 <?php } ?>
 
@@ -283,8 +288,8 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="#">
-			<div class="move-section">
+		<a href="#" class="move-section desk">
+			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>
@@ -309,20 +314,20 @@ get_template_part('template-part', 'topnav');
 <?php } ?>
 
 <?php if(!empty($project['project_show_case_two_background_image'])) { ?>
-	<section class="show-case-two">
-		<img class="img-responsive" src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h1 class="title" style="color: <?php echo $project['project_show_case_two_title_color']; ?>">
-						<?php echo $project['project_show_case_two_title']; ?>
-					</h1>
-					<div class="description" style="color: <?php echo $project['project_show_case_two_description_color']; ?>">
-						<?php echo $project['project_show_case_two_description']; ?>
-					</div>
-				</div>
-			</div>
-		</div>
+	<section class="show-case-two" style="background: <?php echo $project['project_show_case_one_image_background_color']; ?>;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="title" style="color: <?php echo $project['project_show_case_two_title_color']; ?>">
+                        <?php echo $project['project_show_case_two_title']; ?>
+                    </h1>
+                    <div class="description" style="color: <?php echo $project['project_show_case_two_description_color']; ?>">
+                        <?php echo $project['project_show_case_two_description']; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="img-responsive" src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
 	</section>
 <?php } ?>
 
