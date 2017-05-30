@@ -50,7 +50,7 @@ wp_footer();
 <?php
 if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
     $jobsLocations = JobLocation::viewAll();
-    $jobsSalariesRanges = JobSalaryRangeModel::viewAll();
+    $jobsSalariesRanges = JobSalaryRange::viewAll();
     ?>
 <div id="JobModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
