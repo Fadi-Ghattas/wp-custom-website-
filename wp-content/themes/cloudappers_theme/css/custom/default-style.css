@@ -61,7 +61,7 @@ figure {
 /* General */
 
 .form-group label {
-    transform: translateY(25px);
+    transform: translateY(23px);
     transition: transform 0.3s linear;
 }
 
@@ -872,9 +872,9 @@ header, nav, header img {
 }
 
 .home .contact .address {
-    background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
-    background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
-    background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
+    background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
+    background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
+    background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1040,7 +1040,7 @@ body.home.blog.modal-open {
     padding-top: 17px;
     padding-bottom: 35px;
     background: white;
-    height: 149px;
+
 }
 
 .home .contact ::-webkit-input-placeholder {
@@ -1091,7 +1091,7 @@ body.home.blog.modal-open {
 }
 
 #JobModal .modal-body {
-    padding: 86px 71px 15px 71px;
+    padding: 60px 84px 15px;
 }
 
 #JobModal .modal-content {
@@ -1115,14 +1115,15 @@ body.home.blog.modal-open {
 #JobModal .modal-header h2 {
     font-size: 48px;
     font-weight: bold;
-    margin-top: 51px;
+    margin-top: 41px;
+    /* margin-bottom: -5px; */
 }
 
 #JobModal .modal-header h3 {
     font-size: 20px;
     font-weight: bold;
     color: #6f6c6c;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #JobModal input,
@@ -1134,7 +1135,7 @@ body.home.blog.modal-open {
     box-shadow: none;
     border-bottom: 1px solid black;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     color: #ff5f19;
     min-height: 35px;
     background: transparent;
@@ -1146,8 +1147,9 @@ body.home.blog.modal-open {
 
 #JobModal label {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     margin: 0;
+    color: #000;
 }
 
 #JobModal select {
@@ -1157,9 +1159,18 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-group {
-    min-height: 107px;
+    min-height: 80px;
 }
 
+#JobModal .btn-file:hover {
+    background: #fff;
+    color: #ff601b;
+    border: 1px solid #ff601b;
+}
+
+#JobModal .form-group:nth-child(12) {
+    margin-top: 10px;
+}
 #JobModal .form-message,
 #JobModal .form-submit {
     min-height: 0;
@@ -1167,6 +1178,9 @@ body.home.blog.modal-open {
 
 #JobModal button {
     border: 1px solid black;
+    height: 72px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #JobModal #JobCaptcha {
@@ -1175,6 +1189,7 @@ body.home.blog.modal-open {
 
 #JobModal .btn-file {
     background: #ff601b;
+    border: 1px solid #ff601b;
 }
 
 #JobModal .captcha-container {
@@ -1192,12 +1207,12 @@ body.home.blog.modal-open {
 
 #JobModal .close {
     border: none;
-    font-size: 50px;
+    font-size: 70px;
     line-height: 22px;
     color: rgb(94, 94, 94);
     opacity: 1;
     font-weight: 200;
-    margin-top: -3px;
+    margin-top: -28px;
     margin-right: 10px;
 }
 
@@ -3204,10 +3219,31 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+    #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
+        flex: 1 1 100%;max-width: none;
+    }
+    div#JobModal .col-lg-12 {
+        padding: 0;
+        /* margin: 0 -15px; */
+        width: auto;
+    }
+
+    div#JobModal .col-lg-12 form.fv-form.fv-form-bootstrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #JobModal .form-group {
+        max-width: 251px;
+        flex: 0 0 251px;
+        padding: 0;
+    }
     form#GetInTouchForm {
         max-width: 500px;
     }
-
+    .home .contact .copyright {
+        height: 151px;
+    }
     /*Menu*/
     .top-header.small .navbar-inverse {
         padding-top: 0;
