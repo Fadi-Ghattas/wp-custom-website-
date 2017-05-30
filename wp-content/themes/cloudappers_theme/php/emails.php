@@ -24,6 +24,8 @@ function sendAdminNewJobRequestEmail($data)
 			$body = str_replace('{cv_email}', $data['cv_email'], $body);
 			$body = str_replace('{cv_phone}', $data['cv_phone'], $body);
 			$body = str_replace('{cv_location}', $data['cv_location'], $body);
+			$body = str_replace('{cv_state}', $data['cv_state'], $body);
+			$body = str_replace('{cv_applied_for_position}', $data['cv_applied_for_position'], $body);
 			$body = str_replace('{cv_years_of_experience}', $data['cv_years_of_experience'], $body);
 			$body = str_replace('{cv_expected_salary}', $data['cv_expected_salary'], $body);
 			$body = str_replace('{cv_info_one}', $data['cv_info_one'], $body);
@@ -58,6 +60,8 @@ function sendGetInTouchAdminEmail($data)
 			$body = str_replace('{name}', $data['name'], $body);
 			$body = str_replace('{email}', $data['email'], $body);
 			$body = str_replace('{note}', $data['note'], $body);
+			$body = str_replace('{company}', $data['company'], $body);
+			$body = str_replace('{phone}', $data['phone'], $body);
 			$body = str_replace('{date}', date('Y'), $body);
 
 			$headers = ['Content-Type: text/html; charset=UTF-8', $From];

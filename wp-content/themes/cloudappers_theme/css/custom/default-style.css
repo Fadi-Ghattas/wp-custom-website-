@@ -1052,22 +1052,22 @@ header, nav, header img {
     transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
 
-.home #JobModal .modal-dialog,
-.home #JobModal .modal-content {
+#JobModal .modal-dialog,
+#JobModal .modal-content {
     border-radius: 10px;
 }
 
-.home #JobModal .modal-dialog {
+#JobModal .modal-dialog {
     max-width: 711px;
     width: 100%;
     margin: 0 auto;
 }
 
-.home #JobModal .modal-body {
+#JobModal .modal-body {
     padding: 86px 71px 15px 71px;
 }
 
-.home #JobModal .modal-content {
+#JobModal .modal-content {
     background: url('../../img/box.png'), url('../../img/popup-bg.png');
     background-repeat: no-repeat, no-repeat;
     background-color: white;
@@ -1075,33 +1075,33 @@ header, nav, header img {
     background-size: auto, cover;
 }
 
-.home #JobModal .modal-content {
+#JobModal .modal-content {
 
     /*arrow.png  */
 }
 
-.home #JobModal .modal-header {
+#JobModal .modal-header {
     text-align: center;
     border: none;
 }
 
-.home #JobModal .modal-header h2 {
+#JobModal .modal-header h2 {
     font-size: 48px;
     font-weight: bold;
     margin-top: 51px;
 }
 
-.home #JobModal .modal-header h3 {
+#JobModal .modal-header h3 {
     font-size: 20px;
     font-weight: bold;
     color: #6f6c6c;
     margin-top: 10px;
 }
 
-.home #JobModal input,
-.home #JobModal select,
-.home #JobModal .file-caption,
-.home #JobModal textarea {
+#JobModal input,
+#JobModal select,
+#JobModal .file-caption,
+#JobModal textarea {
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -1113,57 +1113,57 @@ header, nav, header img {
     background: transparent;
 }
 
-.home #JobModal .file-caption {
+#JobModal .file-caption {
     margin-top: 4px;
 }
 
-.home #JobModal label {
+#JobModal label {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
 }
 
-.home #JobModal select {
+#JobModal select {
     background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.home #JobModal .form-group {
+#JobModal .form-group {
     min-height: 107px;
 }
 
-.home #JobModal .form-message,
-.home #JobModal .form-submit {
+#JobModal .form-message,
+#JobModal .form-submit {
     min-height: 0;
 }
 
-.home #JobModal button {
+#JobModal button {
     border: 1px solid black;
 }
 
-.home #JobModal #JobCaptcha {
+#JobModal #JobCaptcha {
     display: inline-block;
 }
 
-.home #JobModal .btn-file {
+#JobModal .btn-file {
     background: #ff601b;
 }
 
-.home #JobModal .captcha-container {
+#JobModal .captcha-container {
     text-align: center;
 }
 
-.home #JobModal .file-caption-name {
+#JobModal .file-caption-name {
     height: 25px;
 }
 
-.home #JobModal .submit-btn {
+#JobModal .submit-btn {
     border: none;
     width: 100%;
 }
 
-.home #JobModal .close {
+#JobModal .close {
     border: none;
     font-size: 50px;
     line-height: 22px;
@@ -2728,7 +2728,9 @@ section.project-url .next-project-btn {
     display: block;
 }
 
-.page-template-contact-us .join .table-title h5 {
+.page-template-contact-us .join .table-title h5,
+.page-template-contact-us .join .position h5,
+.page-template-contact-us .join .desc h5 {
     font-size: 16px;
     color: rgb(136, 136, 136);
     font-weight: bold;
@@ -2905,6 +2907,7 @@ section.project-url .next-project-btn {
     padding-bottom: 27px;
     padding-top: 5px;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .page-template-contact-us .contact .address p {
@@ -3338,7 +3341,7 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 1) 100%);
     }
 
-    .home .contact .address [class*="col-"] {
+    .contact .address [class*="col-"] {
         float: none;
         text-align: left;
         display: inline-block;
@@ -3429,6 +3432,16 @@ section.project-url .next-project-btn {
 
     .page-template-contact-us .contact .form {
         padding-left: 0;
+    }
+
+    .page-template-contact-us .contact .address .container-fluid {
+        padding-bottom: 35px;
+        max-width:100%;
+
+    }
+
+    .page-template-contact-us .contact .form .container-fluid {
+        max-width: 100%;
     }
 
     .prefooter {
@@ -4160,20 +4173,25 @@ section.project-url .next-project-btn {
         font-size: 10vw;
     }
 
-    .home #JobModal .modal-body {
+    #JobModal .modal-body {
         padding: 15px;
     }
 
-    .home #JobModal .modal-dialog {
+    #JobModal .modal-dialog {
         width: 90%;
     }
 
-    .home #JobModal .modal-content {
+    #JobModal .modal-content {
         background-size: 0 0, cover;
     }
 
-    .home #JobModal .file-caption {
+    #JobModal .file-caption {
         margin-top: 2px;
+    }
+
+    #JobModal #applied-position {
+        display: none;
+        font-size: 24px;
     }
 
     /*prefooter*/
@@ -4448,17 +4466,24 @@ section.project-url .next-project-btn {
     /*show you page end*/
     /*Contact*/
     .page-template-contact-us .blue-desc p {
-        font-size: 32px;
+        /*font-size: 32px;*/
+        font-size: 4.2vw
     }
 
     .page-template-contact-us .join .title h1,
     .page-template-contact-us .contact .form h1 {
         font-size: 10vw;
+        letter-spacing: 1vw;
+    }
+
+    .page-template-contact-us .join .title h1 {
+        line-height: 11.2vw;
     }
 
     .page-template-contact-us .join .title h6,
     .page-template-contact-us .contact .form h6 {
         font-size: 3.8vw;
+        etter-spacing: 0.38vw;
     }
 
     .page-template-contact-us .contact .form-group,
@@ -4476,10 +4501,6 @@ section.project-url .next-project-btn {
         text-align: center;
     }
 
-    .page-template-contact-us .contact .form-group.note {
-        margin-bottom: 60px;
-    }
-
     .page-template-contact-us .contact .form .container-fluid {
         padding-top: 67px;
     }
@@ -4488,6 +4509,86 @@ section.project-url .next-project-btn {
         padding-left: 0;
         padding-bottom: 0;
         bottom: auto;
+    }
+
+    .page-template-contact-us .contact .address a {
+        font-size: 14px;
+        color: rgb(255, 97, 27);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        width: 153px;
+        height: 47px;
+        box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
+        line-height: 47px;
+        display: block;
+        margin-top: 60px;
+        margin-left: 5px;
+        border-radius: 4px;
+    }
+
+    .page-template-contact-us .join .position h5,
+    .page-template-contact-us .join .desc h5 {
+        /*font-size: 28px;*/
+        font-size: 3.7vw;
+    }
+
+    .page-template-contact-us .join .desc h5 {
+        line-height: 1;
+    }
+
+    .page-template-contact-us .join .position p {
+        /*font-size: 38px;*/
+        font-size: 5vw;
+        /*margin-top: 25px;*/
+        margin-top: 3.3vw;
+    }
+
+    .page-template-contact-us .join .desc p {
+        /*font-size: 28px;*/
+        font-size: 3.7vw;
+        /*margin-top: 36px;*/
+        margin-top: 4.8vw;
+        /*line-height: 45px;*/
+        line-height: 6vw;
+    }
+
+    .page-template-contact-us .join .position span {
+        /*font-size: 28px;*/
+        font-size: 3.7vw;
+        font-weight: 500;
+        /*margin-top: 7px;*/
+        margin-top: 0.9vw;
+    }
+
+    .page-template-contact-us .join .desc span {
+        /*font-size: 28px;*/
+        font-size: 3.7vw;
+    }
+
+    .page-template-contact-us .join .desc {
+        /*padding-top: 74px;*/
+        padding-top: 9.8vw;
+    }
+
+    .page-template-contact-us .join .apply a {
+        margin-top: 40px;
+        max-width: 690px;
+        width: 100%;
+        /*font-size: 36px;*/
+        font-size: 4.8vw;
+        /*height: 124px;*/
+        /*line-height: 124px;*/
+        height: 16vw;
+        line-height: 16vw;
+    }
+
+    .page-template-contact-us .join .row:not(.title):not(.table-title) {
+        border-bottom: 2px solid #f6f4f4;
+        /*padding-top: 52px;*/
+        padding-top: 6.9vw;
+        /*padding-bottom: 61px;*/
+        padding-bottom: 8.1vw;
     }
 
 }
