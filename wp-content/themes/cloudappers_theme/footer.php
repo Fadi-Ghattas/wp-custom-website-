@@ -20,10 +20,10 @@ wp_footer();
                         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
                     </div>
                     <div class="footer-menu">
-                        <a href="">Let Us</a>
-                        <a href="">Show you</a>
-                        <a href="">What we can do</a>
-                        <a href="">For you</a>
+                        <a href="<?php echo esc_url(home_url('let-us')); ?>">Let Us</a>
+                        <a href="<?php echo esc_url(home_url('show-you')); ?>">Show you</a>
+                        <a href="<?php echo esc_url(home_url('what-we-can-do')); ?>">What we can do</a>
+                        <a href="<?php echo esc_url(home_url('for-you')); ?>">For you</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 address">
