@@ -62,7 +62,7 @@ figure {
 /* General */
 
 .form-group label {
-    transform: translateY(25px);
+    transform: translateY(23px);
     transition: transform 0.3s linear;
 }
 
@@ -71,13 +71,17 @@ figure {
 }
 
 section.ca-page-header {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-size: cover;
-    display: flex;
-    display: -ms-flexbox;
+    height: 100vh;
     display: -webkit-flex;
-    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
     /*background-color: #a4b9f0;*/
 }
@@ -106,6 +110,7 @@ section.ca-page-header p {
 }
 
 section.ca-page-header .title {
+    letter-spacing: 1.6px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -116,6 +121,7 @@ section.ca-page-header .title {
 }
 
 section.ca-page-header .sub-title {
+    letter-spacing: 9px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -163,6 +169,7 @@ section.ca-page-banner .container {
 }
 
 section.ca-page-banner p {
+    letter-spacing: 2.2px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -187,7 +194,7 @@ header, nav, header img {
     /* opacity: 0.949; */
     box-shadow: 0px 10px 90px 0px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.95);
-    z-index: 10;
+    z-index: 1;
 }
 
 .top-header .container:before {
@@ -882,9 +889,9 @@ header, nav, header img {
 }
 
 .home .contact .address {
-    background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
-    background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
-    background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
+    background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
+    background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
+    background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -904,7 +911,7 @@ header, nav, header img {
     box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
     line-height: 47px;
     display: block;
-    margin-top: 60px;
+    margin-top: 56px;
     margin-left: 5px;
     border-radius: 4px;
 }
@@ -992,11 +999,11 @@ body.home.blog.modal-open {
 }
 
 .home .contact .form-group:first-of-type {
-    margin-right: 45px;
+    margin-right: 33px;
 }
 
 .home .contact .form-group {
-    max-width: 239px;
+    max-width: 231px;
     width: 100%;
     display: inline-block;
     text-align: left;
@@ -1032,8 +1039,12 @@ body.home.blog.modal-open {
 
 .home .contact .copyright img {
     width: 236px;
+    /* margin-bottom: 2px; */
+    /* display: block; */
 }
-
+.home .contact .copyright p {
+    font-size: 12px;
+}
 .home .contact .copyright {
     padding-left: 85px;
     font-size: 12px;
@@ -1048,6 +1059,7 @@ body.home.blog.modal-open {
     padding-top: 17px;
     padding-bottom: 35px;
     background: white;
+
 }
 
 .home .contact ::-webkit-input-placeholder {
@@ -1098,7 +1110,7 @@ body.home.blog.modal-open {
 }
 
 #JobModal .modal-body {
-    padding: 86px 71px 15px 71px;
+    padding: 60px 84px 15px;
 }
 
 #JobModal .modal-content {
@@ -1122,14 +1134,15 @@ body.home.blog.modal-open {
 #JobModal .modal-header h2 {
     font-size: 48px;
     font-weight: bold;
-    margin-top: 51px;
+    margin-top: 41px;
+    /* margin-bottom: -5px; */
 }
 
 #JobModal .modal-header h3 {
     font-size: 20px;
     font-weight: bold;
     color: #6f6c6c;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #JobModal input,
@@ -1141,7 +1154,7 @@ body.home.blog.modal-open {
     box-shadow: none;
     border-bottom: 1px solid black;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     color: #ff5f19;
     min-height: 35px;
     background: transparent;
@@ -1153,8 +1166,9 @@ body.home.blog.modal-open {
 
 #JobModal label {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     margin: 0;
+    color: #000;
 }
 
 #JobModal select {
@@ -1164,9 +1178,18 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-group {
-    min-height: 107px;
+    min-height: 80px;
 }
 
+#JobModal .btn-file:hover {
+    background: #fff;
+    color: #ff601b;
+    border: 1px solid #ff601b;
+}
+
+#JobModal .form-group:nth-child(12) {
+    margin-top: 10px;
+}
 #JobModal .form-message,
 #JobModal .form-submit {
     min-height: 0;
@@ -1174,6 +1197,9 @@ body.home.blog.modal-open {
 
 #JobModal button {
     border: 1px solid black;
+    height: 72px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #JobModal #JobCaptcha {
@@ -1182,6 +1208,7 @@ body.home.blog.modal-open {
 
 #JobModal .btn-file {
     background: #ff601b;
+    border: 1px solid #ff601b;
 }
 
 #JobModal .captcha-container {
@@ -1199,12 +1226,12 @@ body.home.blog.modal-open {
 
 #JobModal .close {
     border: none;
-    font-size: 50px;
+    font-size: 70px;
     line-height: 22px;
     color: rgb(94, 94, 94);
     opacity: 1;
     font-weight: 200;
-    margin-top: -3px;
+    margin-top: -28px;
     margin-right: 10px;
 }
 
@@ -1664,10 +1691,15 @@ section.all-the-team .grid {
 }
 
 .page-template-clients .clients .container {
-    padding-top: 28px;
+    padding-bottom: 108px;
+    padding-top: 40px;
 }
 
-/*clients page end*/
+.page-template-clients section.clients .client-row {
+    justify-content: flex-start;
+}
+
+    /*clients page end*/
 
 /*project details page start*/
 section.project-header {
@@ -3226,7 +3258,31 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+    #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
+        flex: 1 1 100%;max-width: none;
+    }
+    div#JobModal .col-lg-12 {
+        padding: 0;
+        /* margin: 0 -15px; */
+        width: auto;
+    }
 
+    div#JobModal .col-lg-12 form.fv-form.fv-form-bootstrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #JobModal .form-group {
+        max-width: 251px;
+        flex: 0 0 251px;
+        padding: 0;
+    }
+    form#GetInTouchForm {
+        max-width: 500px;
+    }
+    .home .contact .copyright {
+        height: 151px;
+    }
     /*Menu*/
     .top-header.small .navbar-inverse {
         padding-top: 0;
@@ -3283,6 +3339,12 @@ section.project-url .next-project-btn {
     .clients .item:hover {
         opacity: 1;
         transition: 0.3s;
+    }
+
+
+    .page-template-clients .clients .item {
+        width: 100px;
+        height: 100px;
     }
 
     .home .contact .form {
@@ -5049,6 +5111,10 @@ a.c-btn:empty {
     transition-duration: 0.5s;
 }
 
+form#GetInTouchForm button.c-btn {
+    height: 60px;
+    margin-top: 3px;
+}
 .c-rbtn:hover {
     background-image: -webkit-linear-gradient(top left, rgba(255, 93, 22, 0.2) 0%, rgba(255, 93, 22, 0.2) 37%, rgba(255, 93, 22, 0.5) 45%, rgba(255, 93, 22, 0.0) 50%), -webkit-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
     background-image: -moz-linear-gradient(top left, rgba(255, 93, 22, 0.2) 0%, rgba(255, 93, 22, 0.2) 37%, rgba(255, 93, 22, 0.5) 45%, rgba(255, 93, 22, 0.0) 50%), -moz-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
