@@ -69,13 +69,17 @@ figure {
     transform: translateY(0);
 }
 section.ca-page-header {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-size: cover;
-    display: flex;
-    display: -ms-flexbox;
+    height: 100vh;
     display: -webkit-flex;
-    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
     /*background-color: #a4b9f0;*/
 }
@@ -104,6 +108,7 @@ section.ca-page-header p {
 }
 
 section.ca-page-header .title {
+    letter-spacing: 1.6px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -114,6 +119,7 @@ section.ca-page-header .title {
 }
 
 section.ca-page-header .sub-title {
+    letter-spacing: 9px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -161,6 +167,7 @@ section.ca-page-banner .container {
 }
 
 section.ca-page-banner p {
+    letter-spacing: 2.2px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -1647,10 +1654,15 @@ section.all-the-team .grid {
 }
 
 .page-template-clients .clients .container {
-    padding-top: 28px;
+    padding-bottom: 108px;
+    padding-top: 40px;
 }
 
-/*clients page end*/
+.page-template-clients section.clients .client-row {
+    justify-content: flex-start;
+}
+
+    /*clients page end*/
 
 /*project details page start*/
 section.project-header {
@@ -3251,6 +3263,12 @@ section.project-url .next-project-btn {
     .clients .item:hover {
         opacity: 1;
         transition: 0.3s;
+    }
+
+
+    .page-template-clients .clients .item {
+        width: 100px;
+        height: 100px;
     }
 
     .home .contact .form {

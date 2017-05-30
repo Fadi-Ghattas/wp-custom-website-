@@ -124,7 +124,7 @@ get_template_part('template-part', 'topnav');
 
             </div>
         </div>
-        <div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
+        <div class="view-all"><a href="<?php echo esc_url(home_url('clients')); ?>">VIEW ALL CLIENTS</a></div>
     </section>
 <?php } ?>
 
@@ -144,7 +144,7 @@ get_template_part('template-part', 'topnav');
             <?php } ?>
         </div>
     </div>
-    <div class="view-all"><a href="">VIEW ALL</a></div>
+    <div class="view-all"><a href="<?php echo esc_url(home_url('what-we-can-do')); ?>">VIEW ALL</a></div>
 </section>
 
 <section class="showyou">
@@ -203,7 +203,7 @@ get_template_part('template-part', 'topnav');
         </div>
     </div>
 
-    <div class="view-all"><a href="<?php esc_url(home_url('projects')); ?>">VIEW FULL SHOWCASE</a></div>
+    <div class="view-all"><a href="<?php echo esc_url(home_url('show-you')); ?>">VIEW FULL SHOWCASE</a></div>
 
 </section>
 
@@ -241,7 +241,7 @@ get_template_part('template-part', 'topnav');
                     ?>
                     <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <section class="<?php echo $hover[$hoverCount]; ?>">
-                                <a href="<?php echo home_url('team'); ?>">
+                                <a href="<?php echo esc_url(home_url('team')); ?>">
                                     <figure>
                                         <!--<div class="lazy-loader-effect"></div>-->
                                         <div class="loader"><div class="square"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
@@ -249,7 +249,7 @@ get_template_part('template-part', 'topnav');
                                     </figure>
                                 </a>
                                 <div class="overlay member-info">
-                                    <a href="<?php echo home_url('team'); ?>">
+                                    <a href="<?php echo esc_url(home_url('team')); ?>">
                                         <h5><?php echo $teamMember['post_title']; ?></h5>
                                         <h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
                                     </a>
