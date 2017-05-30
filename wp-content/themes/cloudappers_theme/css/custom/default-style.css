@@ -423,6 +423,9 @@ header, nav, header img {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .clients .item:hover img {
@@ -435,6 +438,8 @@ header, nav, header img {
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
     transition-timing-function: linear;
+    -webkit-filter: none;
+    filter: none;
 }
 
 .view-all {
@@ -4508,7 +4513,7 @@ section.project-url .next-project-btn {
     .page-template-contact-us .join .title h6,
     .page-template-contact-us .contact .form h6 {
         font-size: 3.8vw;
-        etter-spacing: 0.38vw;
+        letter-spacing: 0.38vw;
     }
 
     .page-template-contact-us .contact .form-group,

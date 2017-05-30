@@ -17,7 +17,7 @@ function ajaxApplyForJob()
 		sendResponse($response);
 	}
 
-	$uploaded = upload_file($_FILES, $_POST['full_name']);
+	$uploaded = upload_file($_FILES, $_POST['full_name'], 'CVS');
 
 	if(empty($uploaded[0]['attach_id'])) {
 		$response['message'] = 'Something went wrong please try again later.';
