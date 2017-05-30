@@ -908,6 +908,9 @@ header, nav, header img {
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 600;
+    margin-top: 11px;
+    background-size: contain;
+    /* line-height: 0.80; */
 }
 body.home.blog.modal-open {
     overflow-y: visible;
@@ -918,12 +921,12 @@ body.home.blog.modal-open {
     line-height: 1.714;
     text-align: left;
     padding-left: 27px;
-    margin-top: 20px;
+    margin-top: 13px;
 }
 
 .home .contact .address .details {
     padding-left: 65px;
-    margin-top: 0 !important;
+    margin-top: -6px !important;
 }
 
 .home .contact p.address-details {
