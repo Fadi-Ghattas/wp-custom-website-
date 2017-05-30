@@ -275,4 +275,8 @@ jQuery(function ($) {
         // Other code...
         //console.log('here');
     });
+    //focus events for input
+    jQuery('.form input').on('focus', function() {
+        jQuery(this).parents('.form-group').find('label').addClass('focus')
+    })
 });
