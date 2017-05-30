@@ -17,7 +17,7 @@ function ajaxApplyForJob()
 		sendResponse($response);
 	}
 
-	$uploaded = upload_file($_FILES, $_POST['full_name']);
+	$uploaded = upload_file($_FILES, $_POST['full_name'], 'CVS');
 
 	if(empty($uploaded[0]['attach_id'])) {
 		$response['message'] = 'Something went wrong please try again later.';
@@ -33,6 +33,8 @@ function ajaxApplyForJob()
 		'cv_expected_salary' => trim($_POST['expected_salary']),
 		'cv_info_one' => trim($_POST['cv_info_one']),
 		'cv_file' => trim($uploaded[0]['attach_id']),
+		'cv_state' => trim($_POST['cv_state']),
+		'cv_applied_for_position' => trim($_POST['cv_applied_for_position'])
 	];
 
 	$isAdded = add_pod((new CVModel())->pod_name, $user_data);

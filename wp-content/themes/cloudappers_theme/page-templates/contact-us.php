@@ -12,6 +12,9 @@ $setting = acf_get_group_fields($setting->ID);
 
 $pageOptions = acf_get_group_fields(get_the_ID());
 
+$homePagePost = get_page_by_path('home', OBJECT, 'page');
+$homeOptions = acf_get_group_fields($homePagePost->ID);
+
 $jobs = Job::viewAll();
 
 get_header();
@@ -52,6 +55,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
 <?php if (!empty($jobs)) { ?>
     <section class="join">
         <div class="container">
+
             <div class="row title">
                 <div class="col-lg-12">
                     <h6><?php echo $pageOptions['for_you_page_opportunities_title']; ?></h6>
@@ -62,40 +66,31 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                 <div class="col-lg-5 col-md-5 col-sm-6"><h5>POSITION</h5></div>
                 <div class="col-lg-5 col-md-5 col-sm-6"><h5>DESCRIPTION</h5></div>
             </div>
-            <div class="row">
-                <div class="position col-lg-5 col-md-5 col-sm-6">
-                    <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
-                    <p>Senior Research Scientist
-                        <span>Dubai, UAE</span>
-                    </p>
+
+            <?php foreach ($jobs as $job) {
+                $jobState = strip_tags($job['job_state'][0]['post_title']);
+                ?>
+                <div class="row">
+                    <div class="position col-lg-5 col-md-5 col-sm-6">
+						<h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
+						<p><?php echo $job['post_title']; ?>
+                            <span><?php echo strip_tags($job['job_location'][0]['post_title']) . (!empty($jobState) ? ', ' . $jobState : '') ; ?></span>
+                        </p>
+                    </div>
+                    <div class="desc col-lg-5 col-md-5 col-sm-6">
+                        <p> <?php echo strip_tags($job['job_description']); ?>
+                            <span><?php echo strip_tags($job['job_type'][0]['post_title']); ?></span>
+                        </p>
+                    </div>
+                    <div class="apply col-lg-2 col-md-2 col-sm-12">
+                        <a href="javascript:void(0)" class="apply-for-position c-btn"
+                           data-location="<?php echo $job['job_location'][0]['id']; ?>"
+                           data-state="<?php echo $jobState ?>"
+                           data-applied-position="<?php echo $job['post_title']; ?>">apply</a>
+                    </div>
                 </div>
-                <div class="desc col-lg-5 col-md-5 col-sm-6">
-                    <h5 class="hidden-lg hidden-md hidden-sm">DESCRIPTION</h5>
-                    <p> Data & Analytics, Data Science
-                        <span>Machine Learning</span>
-                    </p>
-                </div>
-                <div class="apply col-lg-2 col-md-2 col-sm-12">
-                    <a href="" class="c-btn">apply</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="position col-lg-5 col-md-5 col-sm-6">
-                    <h5 class="hidden-lg hidden-md hidden-sm">POSITION</h5>
-                    <p>Senior Research Scientist
-                        <span>Dubai, UAE</span>
-                    </p>
-                </div>
-                <div class="desc col-lg-5 col-md-5 col-sm-6">
-                    <h5 class="hidden-lg hidden-md hidden-sm">DESCRIPTION</h5>
-                    <p> Data & Analytics, Data Science
-                        <span>Machine Learning</span>
-                    </p>
-                </div>
-                <div class="apply col-lg-2 col-md-2 col-sm-12">
-                    <a href="" class="c-btn">apply</a>
-                </div>
-            </div>
+            <?php } ?>
+
         </div>
     </section>
 <?php } ?>
@@ -115,7 +110,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <!--                        <a class="c-rbtn" href="-->
+                            <!-- <a class="c-rbtn" href="-->
                             <?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
                             <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
                         </div>
@@ -259,17 +254,17 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
 
             var customMapTypeId = 'custom_style';
             var image = {
-                url: "<?php echo esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']); ?>",
+                url: "<?php echo esc_url($homeOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']); ?>",
                 scaledSize: new google.maps.Size(27, 39), // scaled size)
             };
             var url = {
-                lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
-                lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>};
+                lat: <?php echo $homeOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
+                lng: <?php echo $homeOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>};
 
             var option1 = {
                 center: {
-                    lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
-                    lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
+                    lat: <?php echo $homeOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
+                    lng: <?php echo $homeOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
                 },
                 zoom: 13,
                 scrollwheel: false,
@@ -279,8 +274,8 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
             }
             var option2 = {
                 center: {
-                    lat: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
-                    lng: <?php echo $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
+                    lat: <?php echo $homeOptions['home_page_map_pins'][0]['home_page_map_pin_latitude']; ?>,
+                    lng: <?php echo $homeOptions['home_page_map_pins'][0]['home_page_map_pin_altitude']; ?>
                 },
                 zoom: 10,
                 scrollwheel: false,

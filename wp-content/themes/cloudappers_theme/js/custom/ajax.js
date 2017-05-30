@@ -33,7 +33,16 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Your Full Name is required.'
+						message: 'Your full name is required.'
+					},
+					regexp: {
+						regexp: /^[a-zA-Z\s]+$/,
+						message: 'Your full name can only consist of alphabetical and space.'
+					},
+					stringLength: {
+						min: 2,
+						max: 30,
+						message: 'Your full name must be between 2 and 30 characters long.'
 					}
 				}
 			},
@@ -54,7 +63,7 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Your Phone Number is required.'
+						message: 'Your phone number is required.'
 					}
 				}
 			},
@@ -62,7 +71,12 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Location is required.'
+						message: 'Your location is required.'
+					},
+					stringLength: {
+						min: 2,
+						max: 30,
+						message: 'Your location must be between 2 and 30 characters long.'
 					}
 				}
 			},
@@ -70,8 +84,12 @@ jQuery(function ($)
 				icon: false,
 				validators: {
 					notEmpty: {
-						message: 'Your Years of Experience is required.'
-					}
+						message: 'Your years of experience is required.'
+					},
+					regexp: {
+						regexp: /^\d+$/,
+						message: 'Your years of experience can only consist one number.'
+					},
 				}
 			},
 			'expected_salary': {
@@ -113,6 +131,7 @@ jQuery(function ($)
 
 			var formData = new FormData();
 			formData.append('action', 'ajaxApplyForJob');
+			formData.append('page', script_const.page_template)
 			formData.append('full_name', $('#JobModal #full_name').val());
 			formData.append('email', $('#JobModal #email').val());
 			formData.append('phone', $('#JobModal #phone').val());
@@ -121,10 +140,13 @@ jQuery(function ($)
 			formData.append('expected_salary', $('#JobModal #expected_salary').val());
 			formData.append('cv_info_one', $('#JobModal #cv_info_one').text());
 			formData.append('cv_file', $('#JobModal #cv_file')[0].files[0]);
+			formData.append('cv_state', $('#JobModal #cv_state').val());
+			formData.append('cv_applied_for_position', $('#JobModal #applied_position').val());
 
 			$.ajax({
 				beforeSend: function (xhr) {
 					send_ajax = 0;
+					$('#JobModal button.c-btn').addClass('fadeInNoStop').attr('disabled', true);
 				},
 				method: "POST",
 				url: script_const.ajaxurl,
@@ -138,6 +160,9 @@ jQuery(function ($)
 						$('#JobModal .message').css('color',response.message_color);
 						$('#JobModal form').formValidation('resetForm', true);
 						$('#JobModal #cv_file').fileinput('clear');
+						$('#JobModal #cv_state').val('');
+						$('#JobModal #applied_position').val('');
+						$('#JobModal #cv_info_one').val('');
 						FormValidation.AddOn.reCaptcha2.reset('JobCaptcha');
 					} else {
 						$('#JobModal .message').text('').text(response.message);
@@ -149,6 +174,7 @@ jQuery(function ($)
 					$('#JobModal .message').css('color', script_const.error_message_color);
 				},
 				complete: function () {
+					$('#JobModal button.c-btn').removeClass('fadeInNoStop').attr('disabled', false);
 					send_ajax = 1;
 				}
 			});
@@ -177,6 +203,15 @@ jQuery(function ($)
 				validators: {
 					notEmpty: {
 						message: 'Your Name is required.'
+					},
+					regexp: {
+						regexp: /^[a-zA-Z\s]+$/,
+						message: 'Your name can only consist of alphabetical and space.'
+					},
+					stringLength: {
+						min: 2,
+						max: 30,
+						message: 'Your  name must be between 2 and 30 characters long.'
 					}
 				}
 			},
@@ -198,6 +233,10 @@ jQuery(function ($)
 				validators: {
 					notEmpty: {
 						message: 'Your Message is required.'
+					},
+					stringLength: {
+						min: 10,
+						message: 'Your not must be more than 10 characters long.'
 					}
 				}
 			},
@@ -229,13 +268,17 @@ jQuery(function ($)
 					action: 'ajaxGetInTouch',
 					name: $('#GetInTouchForm #name').val(),
 					email: $('#GetInTouchForm #email').val(),
-					note: $('#GetInTouchForm #note').val()
+					note: $('#GetInTouchForm #note').val(),
+					company: $('#GetInTouchForm #company').val(),
+					phone: $('#GetInTouchForm #phone').val(),
 				}),
 				success: function (response) {
 					if(!response.error) {
 						$('#GetInTouchForm .message').text('').text(response.message);
 						$('#GetInTouchForm .message').css('color',response.message_color);
 						$('#GetInTouchForm').formValidation('resetForm', true);
+						$('#GetInTouchForm #company').val('');
+						$('#GetInTouchForm #phone').val('');
 					} else {
 						$('#GetInTouchForm .message').text('').text(response.message);
 						$('#GetInTouchForm .message').css('color',response.message_color);

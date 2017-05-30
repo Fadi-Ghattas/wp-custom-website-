@@ -169,7 +169,7 @@ $fields = [
 
 $project = ProjectModel::findOne((new ProjectModel())->pod_name, get_the_ID(), $fields);
 
-$next = intval($project['menu_order']) +1;
+$next = intval($project['menu_order']) + 1;
 $fields = ['id'];
 $filters = ['limit' => -1, 'page' => 1, 'where' => "t.menu_order = {$next}", 'order_by' => 't.menu_order, t.post_date, project_is_featured.meta_value DESC'];
 $nextProject = ProjectModel::search((new ProjectModel())->pod_name, $fields, $filters);

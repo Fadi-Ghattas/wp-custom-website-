@@ -21,11 +21,37 @@ class Job
 			[
 				'acf' => 1,
 				'name' => 'job_location',
+				'type' => 'job_location',
+				'relationship' => 1,
+				'fields' => [
+					'id',
+					'post_title',
+				],
+			],
+			[
+				'acf' => 1,
+				'name' => 'job_state',
+				'type' => 'job_state',
+				'relationship' => 1,
+				'fields' => [
+					'id',
+					'post_title',
+				],
 			],
 			[
 				'acf' => 1,
 				'name' => 'job_description',
 			],
+			[
+				'acf' => 1,
+				'name' => 'job_type',
+				'type' => 'job_type',
+				'relationship' => 1,
+				'fields' => [
+					'id',
+					'post_title',
+				],
+			]
 		];
 
 		$filters = ['limit' => -1, 'page' => 1, 'where' => 'job_is_active.meta_value = 1', 'order_by' => 't.menu_order, t.post_date DESC'];
