@@ -67,8 +67,9 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</section>
 
-<?php $services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
-	<section class="some-of-show-cases parallax-window" data-parallax="scroll" data-image-src="<?php echo $services_page_show_cases_background_image; ?>">
+<?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
+	<section class="some-of-show-cases">
+		<span class="word-background">show you</span>
 		<div class="container">
 			<div class="row">
 
