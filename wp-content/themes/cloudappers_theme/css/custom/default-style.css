@@ -914,6 +914,7 @@ header, nav, header img {
 }
 body.home.blog.modal-open {
     overflow-y: visible;
+    padding-right: 0 !important;
 }
 .home .contact .address p {
     font-size: 14px;
