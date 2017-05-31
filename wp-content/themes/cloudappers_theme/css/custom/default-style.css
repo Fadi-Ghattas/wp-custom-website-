@@ -1480,7 +1480,7 @@ section.some-of-show-cases .overlay h4,
 section.some-of-show-cases .overlay h5,
 section.some-of-show-cases .overlay h6,
 section.some-of-show-cases .overlay p {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
 }
 
@@ -1490,6 +1490,7 @@ section.some-of-show-cases .overlay h5 {
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 13px;
+    margin-top: 10px;
 }
 
 section.some-of-show-cases .overlay h6 {
@@ -1620,6 +1621,9 @@ section.some-of-show-cases .overlay h6 {
 /*service details end*/
 
 /*show you page start*/
+.page-template-team section.ca-page-banner {
+    padding: 49px 0 54px 0px;
+}
 
 .filters-back {
     position: relative;
@@ -1671,7 +1675,7 @@ ul.filters {
 }
 
 .page-template-team ul.filters {
-    padding: 40px 0 50px 0;
+    padding: 44px 0 43px 0;
 }
 
 ul.filters li {
@@ -1717,6 +1721,10 @@ ul.filters li a img.icon-hover {
     height: 23px;
     display: none;
     margin-right: 5px;
+}
+
+ul.filters li:last-child a img.icon-hover {
+    margin-right: 6px;
 }
 
 .all-the-team ul.filters li a img.icon-hover {
