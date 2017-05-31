@@ -1,63 +1,67 @@
 <?php if (has_nav_menu('main_menu')) : ?>
-    <section class="top-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-inverse" role="navigation">
 
-                        <div class="navbar-header">
-                            <a class="logo-mob hidden-lg hidden-md hidden-sm "
-                               href="<?php echo home_url(); ?>">
-                                <img class="img-responsive"
-                                     src="<?php echo get_stylesheet_directory_uri() . '/img/white-ca-icon@3x.svg' ?>"
-                                     alt="CloudAppers"/>
-                            </a>
-                            <a class="logo-desk hidden-xs" href="<?php echo home_url(); ?>">
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?>"
-                                     alt="CloudAppers"/>
-                                <img class="hidden-md hidden-sm  img-float"
-                                     src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"
-                                     alt="CloudAppers"/>
-                            </a>
+    <section class="top-menu">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-inverse" role="navigation">
 
-                            <button id="nav-toggle" type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target=".navbar-1-collapse">
-                                <!--                            <span class="sr-only">-->
-                                <?php //_e('Toggle navigation', 'devdmbootstrap3'); ?><!--</span>-->
-                                <!--                            <span class="icon-bar"></span>-->
-                                <!--                            <span class="icon-bar"></span>-->
-                                <!--                            <span class="icon-bar"></span>-->
-                                <span></span>
-                            </button>
-                        </div>
+                            <div class="navbar-header">
+                                <a class="logo-mob hidden-lg hidden-md hidden-sm "
+                                   href="<?php echo home_url(); ?>">
+                                    <img class="img-responsive"
+                                         src="<?php echo get_stylesheet_directory_uri() . '/img/white-ca-icon@3x.svg' ?>"
+                                         alt="CloudAppers"/>
+                                </a>
+                                <a class="logo-desk hidden-xs" href="<?php echo home_url(); ?>">
+                                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?>"
+                                         alt="CloudAppers"/>
+                                    <img class="hidden-md hidden-sm  img-float"
+                                         src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"
+                                         alt="CloudAppers"/>
+                                </a>
 
-                        <?php
-                        wp_nav_menu([
-                                'theme_location' => 'main_menu',
-                                'depth' => 2,
-                                'container' => 'div',
-                                'container_class' => 'collapse navbar-collapse navbar-1-collapse',
-                                'menu_class' => 'nav navbar-nav',
-                                'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                'walker' => new wp_bootstrap_navwalker()]
-                        );
-                        ?>
-
-                        <div class="nav-social">
-                            <div class="copyright">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
-                                <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+                                <button id="nav-toggle" type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".navbar-1-collapse">
+                                    <!--                            <span class="sr-only">-->
+                                    <?php //_e('Toggle navigation', 'devdmbootstrap3'); ?><!--</span>-->
+                                    <!--                            <span class="icon-bar"></span>-->
+                                    <!--                            <span class="icon-bar"></span>-->
+                                    <!--                            <span class="icon-bar"></span>-->
+                                    <span></span>
+                                </button>
                             </div>
-                            <div class="social">
-                                <a class="facebook" href="#"></a>
-                                <a class="twitter" href="#"></a>
-                                <a class="instagram" href="#"></a>
-                            </div>
-                        </div>
 
-                    </nav>
+                            <?php
+                            wp_nav_menu([
+                                    'theme_location' => 'main_menu',
+                                    'depth' => 2,
+                                    'container' => 'div',
+                                    'container_class' => 'collapse navbar-collapse navbar-1-collapse',
+                                    'menu_class' => 'nav navbar-nav',
+                                    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                    'walker' => new wp_bootstrap_navwalker()]
+                            );
+                            ?>
+
+                            <div class="nav-social">
+                                <div class="copyright">
+                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                                    <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+                                </div>
+                                <div class="social">
+                                    <a class="facebook" href="#"></a>
+                                    <a class="twitter" href="#"></a>
+                                    <a class="instagram" href="#"></a>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 <?php endif; ?>

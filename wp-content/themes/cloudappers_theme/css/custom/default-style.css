@@ -59,6 +59,18 @@ figure {
     text-align: -moz-center;
 }
 
+.flex-center {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 /* General */
 
 .form-group label {
@@ -135,7 +147,7 @@ section.ca-page-header .sub-title {
 section.ca-page-header .desc {
     font-size: 18px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 600;
     line-height: 2.111;
     text-align: center;
 }
@@ -187,6 +199,13 @@ header, nav, header img {
     -o-transition: all 1s; /* Opera */
 }
 
+.top-menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .top-header {
     position: fixed;
     right: 0;
@@ -194,7 +213,7 @@ header, nav, header img {
     /* opacity: 0.949; */
     box-shadow: 0px 10px 90px 0px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.95);
-    z-index: 1;
+    z-index: 0;
 }
 
 .top-header .container:before {
@@ -296,6 +315,7 @@ header, nav, header img {
     width: 100%;
     color: rgba(255, 255, 255, 0.6);
 }
+
 /*Home*/
 
 .home .home-slider
@@ -1416,10 +1436,8 @@ a.btn-view-all-show-cases.c-btn span {
 
 section.some-of-show-cases {
     position: relative;
-    min-height: 100vh;
     background-size: cover;
     height: 100%;
-    /*margin-top: 62px;*/
     border-top: solid #f0f0f0 1px;
     text-align: center;
     text-align: -moz-center;
@@ -1517,6 +1535,7 @@ section.some-of-show-cases .overlay h6 {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
     margin-top: -50px;
     background: white;
+    align-self: center;
 }
 
 .service-details img.icon {
@@ -1540,18 +1559,19 @@ section.some-of-show-cases .overlay h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     margin-top: 44px;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
+    color: #202020;
 }
 
 .service-details .description {
-    margin-bottom: 110px;
+    margin-bottom: 114px;
 }
 
 .service-details .description p {
     color: #6f6c6c;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.875;
 }
 
@@ -1733,14 +1753,13 @@ ul.filters li:last-child a img.icon-hover {
 
 ul.filters li a:hover img.icon,
 ul.filters li a.active img.icon,
-ul.filters li.active a img.icon{
+ul.filters li.active a img.icon {
     display: none;
 }
 
 ul.filters li a:hover img.icon-hover,
 ul.filters li a.active img.icon-hover,
-ul.filters li.active a img.icon-hover
-{
+ul.filters li.active a img.icon-hover {
     display: inline-block;
 }
 
@@ -1761,7 +1780,7 @@ section.all-the-team .grid {
 
 /*clients page start*/
 .page-template-clients section.ca-page-banner {
-    padding: 50px 0 52px 0px;
+    padding: 49px 0 54px 0px;
 }
 
 .page-template-clients .clients .container {
@@ -2181,7 +2200,7 @@ section.project-url .next-project-btn {
 /*About*/
 .page-template-about section.ca-page-header .title {
     font-size: 47px;
-    line-height: 84px;
+    line-height: 51px;
     letter-spacing: 4.7px;
 }
 
@@ -2191,9 +2210,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about section.ca-page-header .desc {
-    margin-top: 38px;
-    /*max-width: 870px;*/
-    margin: 0 auto;
+    margin: 33px auto 0;
 }
 
 .page-template-about .process {
@@ -2324,7 +2341,7 @@ section.project-url .next-project-btn {
     line-height: 111px;
     font-size: 20px;
     font-family: "Arial";
-    font-weight: bold;
+    font-weight: 500;
     color: rgb(229, 229, 229);
     border-radius: 50%;
     transition: background 0.5s;
@@ -2390,12 +2407,13 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.8px;
 }
 
 .page-template-about .ouraim p {
     font-size: 30px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -2409,7 +2427,7 @@ section.project-url .next-project-btn {
     position: absolute;
     right: 0;
     left: 0;
-    top: calc(100% - 42px);
+    top: calc(100% - 46px);
 
 }
 
@@ -2431,18 +2449,19 @@ section.project-url .next-project-btn {
     background-size: contain;
     padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.06)
 
 }
 
 .page-template-about .time h6 {
     font-size: 16px;
-    color: rgb(85, 85, 85);
+    color: #666666;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
     text-align: center;
     margin: 0;
+    letter-spacing: 1.6px;
 }
 
 .page-template-about .why {
@@ -2810,7 +2829,7 @@ section.project-url .next-project-btn {
 .page-template-contact-us .blue-desc {
     background-color: #4ec1ea;
     position: relative;
-    padding: 32px 0;
+    padding: 30px 0 35px 0;
 }
 
 .page-template-contact-us .blue-desc p {
@@ -4927,7 +4946,7 @@ section.project-url .next-project-btn {
         width: 60vw;
     }
 
-    #footer .mob .social  {
+    #footer .mob .social {
         margin-top: 73px;
         height: 21vw;
         display: block;

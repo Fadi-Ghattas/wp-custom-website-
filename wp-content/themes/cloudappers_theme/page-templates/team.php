@@ -20,7 +20,7 @@ get_template_part('template-part', 'topnav');
 ?>
 
 <?php $services_page_header_image = (!empty($pageOptions['team_page_header_image']['url']) ? esc_url($pageOptions['team_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/team_page_header_image.png')); ?>
-	<section class="ca-page-header parallax-window" data-parallax="scroll" data-image-src="<?php echo $services_page_header_image; ?>">
+	<section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
