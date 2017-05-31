@@ -217,12 +217,12 @@ header, nav, header img {
 }
 
 .top-header .container:before {
-    height: 8px;
-    width: 100vw;
-    left: 0;
-    position: absolute;
-    background: #fff;
-    opacity: 1;
+    /*height: 8px;*/
+    /*width: 100vw;*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*background: #fff;*/
+    /*opacity: 1;*/
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -1212,7 +1212,7 @@ body.home.blog.modal-open {
 
 #JobModal label {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     color: #000;
 }
@@ -1250,7 +1250,7 @@ body.home.blog.modal-open {
     border: 1px solid black;
     height: 72px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #JobModal #JobCaptcha {
@@ -3359,6 +3359,13 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+    .team .members > div {
+        height: 280px;
+    }
+    .team .members > div img {
+        width: auto;
+        height: 100%;
+    }
     #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
         flex: 1 1 100%;
         max-width: none;
