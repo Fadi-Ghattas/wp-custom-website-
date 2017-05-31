@@ -147,7 +147,7 @@ section.ca-page-header .sub-title {
 section.ca-page-header .desc {
     font-size: 18px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 600;
     line-height: 2.111;
     text-align: center;
 }
@@ -2200,7 +2200,7 @@ section.project-url .next-project-btn {
 /*About*/
 .page-template-about section.ca-page-header .title {
     font-size: 47px;
-    line-height: 84px;
+    line-height: 51px;
     letter-spacing: 4.7px;
 }
 
@@ -2210,9 +2210,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about section.ca-page-header .desc {
-    margin-top: 38px;
-    /*max-width: 870px;*/
-    margin: 0 auto;
+    margin: 33px auto 0;
 }
 
 .page-template-about .process {
