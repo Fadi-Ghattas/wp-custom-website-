@@ -217,12 +217,12 @@ header, nav, header img {
 }
 
 .top-header .container:before {
-    height: 8px;
-    width: 100vw;
-    left: 0;
-    position: absolute;
-    background: #fff;
-    opacity: 1;
+    /*height: 8px;*/
+    /*width: 100vw;*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*background: #fff;*/
+    /*opacity: 1;*/
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -457,7 +457,7 @@ header, nav, header img {
 
 .clients .container {
     padding-bottom: 47px;
-    padding-top: 47px;
+    padding-top: 82px;
 }
 
 .clients .item img {
@@ -655,7 +655,7 @@ header, nav, header img {
 }
 
 .home .showyou .projects > div:hover img {
-    opacity: 0.1;
+    opacity: 0.04;
     transition: 0.3s;
 }
 
@@ -749,7 +749,7 @@ header, nav, header img {
 .home .showyou .projects a > div h6 {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
 }
 
 .home .showyou .projects > div {
@@ -901,7 +901,9 @@ header, nav, header img {
     width: 100%;
     position: relative;
 }
-
+.home .contact .form .container-fluid .col-lg-12 {
+    padding-left: 0;
+}
 .home .contact .container-fluid {
     width: 100%;
     padding-top: 35px;
@@ -1197,29 +1199,34 @@ body.home.blog.modal-open {
     min-height: 35px;
     background: transparent;
 }
+
 #JobModal select:hover {
     animation-duration: 0.8s;
     animation-name: back;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 #JobModal textarea {
     height: 30px !important;
     resize: vertical;
 }
+
 #JobModal .file-caption {
     margin-top: 4px;
 }
 
 #JobModal label {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     color: #000;
 }
+
 #JobModal .form-group:nth-child(11) label {
     /* transform: translateY(44px); */
 }
+
 #JobModal select {
     background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
     -webkit-appearance: none;
@@ -1251,17 +1258,19 @@ body.home.blog.modal-open {
     border: 1px solid black;
     height: 72px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #JobModal #JobCaptcha {
     display: inline-block;
 }
+
 #JobModal .form-group:nth-child(10) {
     /* min-height: 70px; */
     margin-top: 5px;
     margin-bottom: 27px;
 }
+
 #JobModal .btn-file {
     background: #ff601b;
     border: 1px solid #ff601b;
@@ -1295,6 +1304,7 @@ body.home.blog.modal-open {
     transform: rotateZ(0deg);
     /* background: rebeccapurple; */
 }
+
 #JobModal label span {
     float: right;
 }
@@ -1308,6 +1318,7 @@ label[for="expected_salary"] {
     opacity: 0.8;
     color: #ff601b;
 }
+
 .home .contact .form-group.ms {
     max-width: 100% !important;
     width: 100% !important;
@@ -2234,10 +2245,12 @@ section.project-url .next-project-btn {
 
 .page-template-about .process {
     text-align: center;
-    padding-top: 74px;
+    padding-top: 80px;
     padding-bottom: 103px;
     border-color: rgb(245, 245, 245);
     background-color: rgb(251, 251, 251);
+    border-bottom: 1px solid #f5f5f5;
+    max-height: 1262px;
 }
 
 .page-template-about .process h1 {
@@ -2245,8 +2258,9 @@ section.project-url .next-project-btn {
     color: rgb(85, 85, 85);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.458;
+    line-height: 1.14;
     letter-spacing: 4.8px;
+    margin-bottom: 2px;
 }
 
 .page-template-about .process p {
@@ -2255,10 +2269,11 @@ section.project-url .next-project-btn {
     line-height: 1.875;
     max-width: 515px;
     margin: 0 auto;
+    font-weight: 500;
 }
 
 .page-template-about .process img {
-    margin-top: -128px;
+    margin-top: -106px;
     max-width: 100%;
 }
 
@@ -2360,7 +2375,7 @@ section.project-url .next-project-btn {
     line-height: 111px;
     font-size: 20px;
     font-family: "Arial";
-    font-weight: bold;
+    font-weight: 500;
     color: rgb(229, 229, 229);
     border-radius: 50%;
     transition: background 0.5s;
@@ -2426,12 +2441,13 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.8px;
 }
 
 .page-template-about .ouraim p {
     font-size: 30px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -2445,12 +2461,12 @@ section.project-url .next-project-btn {
     position: absolute;
     right: 0;
     left: 0;
-    top: calc(100% - 42px);
+    top: calc(100% - 46px);
 
 }
 
 .page-template-about .clients {
-    background: url("../../img/about-clients.jpg") no-repeat top center;
+    background: url("../../img/about-clients.jpg") no-repeat center 7%;
     background-size: cover;
 }
 
@@ -2460,6 +2476,8 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
+    letter-spacing: 1.6px;
+    margin-bottom: 53px;
 }
 
 .page-template-about .time {
@@ -2467,18 +2485,19 @@ section.project-url .next-project-btn {
     background-size: contain;
     padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.06)
 
 }
 
 .page-template-about .time h6 {
     font-size: 16px;
-    color: rgb(85, 85, 85);
+    color: #666666;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
     text-align: center;
     margin: 0;
+    letter-spacing: 1.6px;
 }
 
 .page-template-about .why {
@@ -2488,6 +2507,14 @@ section.project-url .next-project-btn {
 
 .page-template-about .why .why-desc {
     padding: 0;
+}
+
+.page-template-about .why .why-img {
+    height: 100px;
+}
+
+.page-template-about .why .why-img img {
+    max-height: 100%;
 }
 
 .page-template-about .why .why-desc:nth-child(2) {
@@ -2551,8 +2578,10 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about .words {
-    padding: 100px 0 45px;
-    background: url(../../img/words-bg1.jpg), url(../../img/words-bg2.png);
+    padding: 100px 0 63px;
+    background:  -webkit-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
+    background:  -ms-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
+    background:  -moz-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
     background-repeat: no-repeat;
     background-size: 47.5% 100%, contain;
     background-position: left center, calc(50% + 10px) center;
@@ -2625,11 +2654,13 @@ section.project-url .next-project-btn {
     line-height: 1.688;
     text-align: left;
     letter-spacing: 1.6px;
+    margin-bottom: 0;
 }
 
 .page-template-about .words h4 {
     color: #b3b3b3;
     letter-spacing: 1.6px;
+    margin-top: 0;
 }
 
 .page-template-about .words .slick-dots li {
@@ -3004,11 +3035,11 @@ section.project-url .next-project-btn {
 
 .page-template-contact-us .contact .form-group:first-of-type,
 .page-template-contact-us .contact .form-group:nth-of-type(3) {
-    margin-right: 45px;
+    margin-right: 33px;
 }
 
 .page-template-contact-us .contact .form-group {
-    max-width: 239px;
+    max-width: 231px;
     width: 100%;
     display: inline-block;
     text-align: left;
@@ -3327,7 +3358,7 @@ section.project-url .next-project-btn {
     }
 
     .home .what-we-do .row > div > a {
-        padding: 33px 15px 15px 33px;
+        padding: 50px 15px 15px 33px;
     }
 
     .home .what-we-do .row > div {
@@ -3374,6 +3405,15 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+    .team .members > div {
+        height: 280px;
+    }
+
+    .team .members > div img {
+        width: auto;
+        height: 100%;
+    }
+
     #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
         flex: 1 1 100%;
         max-width: none;
@@ -3386,9 +3426,25 @@ section.project-url .next-project-btn {
     }
 
     div#JobModal .col-lg-12 form.fv-form.fv-form-bootstrap {
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        max-width: 571px;
     }
 
     #JobModal .form-group {
@@ -4731,10 +4787,10 @@ section.project-url .next-project-btn {
         text-align: -moz-left;
         text-align: left;
         height: 24.533333333333335vw;
-        display: flex;
+
+        flex-direction: column;display: flex;
         display: -ms-flexbox;
         display: -webkit-flex;
-        flex-direction: column;
         justify-content: center;
         padding: 0 6.533333333333333vw;
     }
@@ -5935,7 +5991,6 @@ form#GetInTouchForm button.c-btn {
     }
 }
 
-
 @keyframes back {
     0% {
         background-position: calc(100% - 2px) 9px;
@@ -5962,3 +6017,17 @@ form#GetInTouchForm button.c-btn {
         background-position: calc(100% - 2px) 16px;
     }
 }
+.parallax-mirror:after {
+    content: ' ';
+    width: 100%;
+    height: 700px;
+    background: #cf86d6;
+    position: absolute;
+    bottom: -649px;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+/*.parallax-mirror {*/
+    /*position: relative;*/
+/*}*/

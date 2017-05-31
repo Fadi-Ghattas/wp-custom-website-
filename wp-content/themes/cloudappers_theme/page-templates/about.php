@@ -22,7 +22,8 @@ get_template_part('template-part', 'topnav');
 ?>
 
 <?php $services_page_header_image = (!empty($pageOptions['let_us_page_header_image']['url']) ? esc_url($pageOptions['let_us_page_header_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/about-header.jpg')); ?>
-    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
+    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50"
+             data-image-src="<?php echo $services_page_header_image; ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -55,15 +56,15 @@ get_template_part('template-part', 'topnav');
         <div class="history-pager container">
             <div class="row">
                 <div class="col-lg-12">
-                <ul class="slider-nav">
-                    <?php foreach ($timesLines as $year) { ?>
-                        <li>
-                            <a href="javascript:void(0)"><span><?php echo $year['timeline_year']; ?></span>
-                                <div class="pulse1"></div>
-                            </a>
-                        </li>
-                    <?php } ?>
-                </ul>
+                    <ul class="slider-nav">
+                        <?php foreach ($timesLines as $year) { ?>
+                            <li>
+                                <a href="javascript:void(0)"><span><?php echo $year['timeline_year']; ?></span>
+                                    <div class="pulse1"></div>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -100,13 +101,15 @@ get_template_part('template-part', 'topnav');
 
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center main-title">
                     <h1><?php echo $pageOptions['let_us_page_why_cloudappers_title']; ?></h1>
-                   <div><?php echo $pageOptions['let_us_page_why_cloudappers_subtitle']; ?></div>
+                    <div><?php echo $pageOptions['let_us_page_why_cloudappers_subtitle']; ?></div>
                 </div>
 
                 <?php foreach ($pageOptions['let_us_page_why_cloudappers_reasons_blocks'] as $reason) { ?>
-                    <div class="why-desc col-lg-4 col-md-4 col-sm-4 col-xs-12" >
-                        <img class="img-responsive"
-                             src="<?php echo esc_url($reason['why_cloudappers_reason_block_icon']['url']); ?>"/>
+                    <div class="why-desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="why-img">
+                            <img class="img-responsive"
+                                 src="<?php echo esc_url($reason['why_cloudappers_reason_block_icon']['url']); ?>"/>
+                        </div>
                         <h3><?php echo $reason['why_cloudappers_reason_block_title']; ?></h3>
                         <div><?php echo $reason['why_cloudappers_reason_block_description']; ?></div>
                     </div>
@@ -122,7 +125,9 @@ get_template_part('template-part', 'topnav');
         <div class="container">
             <div class="row">
                 <div class="client-row">
-                    <h6>Collaborations based on trust</h6>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <h6>Collaborations based on trust</h6>
+                    </div>
                     <?php foreach ($clients as $client) { ?>
                         <a href="<?php echo esc_url($client['client_website_url']); ?>"
                            class="item  col-md-2 col-sm-3 col-xs-4">
