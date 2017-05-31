@@ -74,7 +74,7 @@ get_template_part('template-part', 'topnav');
 ?>
 
 <?php $services_page_header_image = (!empty($service['service_page_header_background_image']['url']) ? esc_url($service['service_page_header_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/new-services-background_1600x793_acf_cropped.png')); ?>
-	<section class="ca-page-header parallax-window" data-parallax="scroll" data-image-src="<?php echo $services_page_header_image; ?>">
+	<section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -104,7 +104,7 @@ get_template_part('template-part', 'topnav');
 						<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" />
 					</div>
 					<div class="vertical-line"></div>
-					<h1 class="title center"><?php echo $service['post_title']; ?></h1>
+					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
 					<div class="description">
 						<?php echo $service['service_description']; ?>
 					</div>
