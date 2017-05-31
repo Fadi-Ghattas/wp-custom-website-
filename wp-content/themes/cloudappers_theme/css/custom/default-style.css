@@ -1184,7 +1184,16 @@ body.home.blog.modal-open {
     min-height: 35px;
     background: transparent;
 }
-
+#JobModal select:hover {
+    animation-duration: 0.8s;
+    animation-name: back;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#JobModal textarea {
+    height: 30px !important;
+    resize: vertical;
+}
 #JobModal .file-caption {
     margin-top: 4px;
 }
@@ -1195,7 +1204,9 @@ body.home.blog.modal-open {
     margin: 0;
     color: #000;
 }
-
+#JobModal .form-group:nth-child(11) label {
+    /* transform: translateY(44px); */
+}
 #JobModal select {
     background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
     -webkit-appearance: none;
@@ -1203,7 +1214,8 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-group {
-    min-height: 80px;
+    min-height: 65px;
+    /* max-height: 80px; */
 }
 
 #JobModal .btn-file:hover {
@@ -1213,7 +1225,8 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-group:nth-child(12) {
-    margin-top: 10px;
+    margin-top: 29px;
+    margin-bottom: 33px;
 }
 
 #JobModal .form-message,
@@ -1231,10 +1244,15 @@ body.home.blog.modal-open {
 #JobModal #JobCaptcha {
     display: inline-block;
 }
-
+#JobModal .form-group:nth-child(10) {
+    /* min-height: 70px; */
+    margin-top: 5px;
+    margin-bottom: 27px;
+}
 #JobModal .btn-file {
     background: #ff601b;
     border: 1px solid #ff601b;
+    transition: all 0.3s ease-in-out;
 }
 
 #JobModal .captcha-container {
@@ -1259,8 +1277,24 @@ body.home.blog.modal-open {
     font-weight: 200;
     margin-top: -28px;
     margin-right: 10px;
+    transition: all 0.25s ease-in-out;
+    transform-origin: 13px 31px;
+    transform: rotateZ(0deg);
+    /* background: rebeccapurple; */
+}
+#JobModal label span {
+    float: right;
 }
 
+label[for="expected_salary"] {
+    width: calc(100% - 32px);
+}
+
+#JobModal .close:hover {
+    transform: rotateZ(360deg);
+    opacity: 0.8;
+    color: #ff601b;
+}
 .home .contact .form-group.ms {
     max-width: 100% !important;
     width: 100% !important;
@@ -1454,7 +1488,7 @@ section.some-of-show-cases .overlay h4,
 section.some-of-show-cases .overlay h5,
 section.some-of-show-cases .overlay h6,
 section.some-of-show-cases .overlay p {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
 }
 
@@ -1464,6 +1498,7 @@ section.some-of-show-cases .overlay h5 {
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 13px;
+    margin-top: 10px;
 }
 
 section.some-of-show-cases .overlay h6 {
@@ -1594,6 +1629,9 @@ section.some-of-show-cases .overlay h6 {
 /*service details end*/
 
 /*show you page start*/
+.page-template-team section.ca-page-banner {
+    padding: 49px 0 54px 0px;
+}
 
 .filters-back {
     position: relative;
@@ -1645,7 +1683,7 @@ ul.filters {
 }
 
 .page-template-team ul.filters {
-    padding: 40px 0 50px 0;
+    padding: 44px 0 43px 0;
 }
 
 ul.filters li {
@@ -1691,6 +1729,10 @@ ul.filters li a img.icon-hover {
     height: 23px;
     display: none;
     margin-right: 5px;
+}
+
+ul.filters li:last-child a img.icon-hover {
+    margin-right: 6px;
 }
 
 .all-the-team ul.filters li a img.icon-hover {
@@ -5856,5 +5898,29 @@ form#GetInTouchForm button.c-btn {
 }
 
 
+@keyframes back {
+    0% {
+        background-position: calc(100% - 2px) 9px;
+    }
+    100% {
+        background-position: calc(100% - 2px) 16px;
+    }
+}
 
+@-moz-keyframes back {
+    0% {
+        background-position: calc(100% - 2px) 9px;
+    }
+    100% {
+        background-position: calc(100% - 2px) 16px;
+    }
+}
 
+@-webkit-keyframes back {
+    0% {
+        background-position: calc(100% - 2px) 9px;
+    }
+    100% {
+        background-position: calc(100% - 2px) 16px;
+    }
+}
