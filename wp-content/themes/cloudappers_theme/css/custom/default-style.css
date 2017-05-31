@@ -85,7 +85,7 @@ figure {
 section.ca-page-header {
     /*min-height: 100vh;*/
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 100px);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -2436,6 +2436,7 @@ section.project-url .next-project-btn {
     background-color: rgb(175, 175, 175);
     padding: 47px 0 71px;
     position: relative;
+    margin-top: -100px;
 }
 
 .page-template-about .ouraim h6 {
