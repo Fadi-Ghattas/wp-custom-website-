@@ -59,6 +59,18 @@ figure {
     text-align: -moz-center;
 }
 
+.flex-center {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 /* General */
 
 .form-group label {
@@ -1382,10 +1394,8 @@ a.btn-view-all-show-cases.c-btn span {
 
 section.some-of-show-cases {
     position: relative;
-    min-height: 100vh;
     background-size: cover;
     height: 100%;
-    /*margin-top: 62px;*/
     border-top: solid #f0f0f0 1px;
     text-align: center;
     text-align: -moz-center;
@@ -1483,6 +1493,7 @@ section.some-of-show-cases .overlay h6 {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
     margin-top: -50px;
     background: white;
+    align-self: center;
 }
 
 .service-details img.icon {
@@ -1507,6 +1518,7 @@ section.some-of-show-cases .overlay h6 {
     font-weight: 800;
     margin-top: 44px;
     margin-bottom: 35px;
+    color: #202020;
 }
 
 .service-details .description {
@@ -1727,7 +1739,7 @@ section.all-the-team .grid {
 
 /*clients page start*/
 .page-template-clients section.ca-page-banner {
-    padding: 50px 0 52px 0px;
+    padding: 49px 0 54px 0px;
 }
 
 .page-template-clients .clients .container {
@@ -2776,7 +2788,7 @@ section.project-url .next-project-btn {
 .page-template-contact-us .blue-desc {
     background-color: #4ec1ea;
     position: relative;
-    padding: 32px 0;
+    padding: 30px 0 35px 0;
 }
 
 .page-template-contact-us .blue-desc p {

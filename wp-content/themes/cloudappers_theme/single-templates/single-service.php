@@ -99,7 +99,7 @@ get_template_part('template-part', 'topnav');
 	<section class="service-details">
 		<div class="container">
 			<div class="row center">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 flex-center">
 					<div class="icon-container center">
 						<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" />
 					</div>
@@ -155,8 +155,9 @@ get_template_part('template-part', 'topnav');
 
 <?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
 <?php if(!empty($service['service_related_projects'])) { ?>
-<?php $services_page_show_cases_background_image = (esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
-	<section class="some-of-show-cases parallax-window" data-parallax="scroll" data-image-src="<?php echo $services_page_show_cases_background_image; ?>">
+<?php //$services_page_show_cases_background_image = (esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
+	<section class="some-of-show-cases">
+		<span class="word-background">show you</span>
 		<div class="container">
 			<div class="row">
 
