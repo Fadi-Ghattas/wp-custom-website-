@@ -2217,10 +2217,12 @@ section.project-url .next-project-btn {
 
 .page-template-about .process {
     text-align: center;
-    padding-top: 74px;
+    padding-top: 80px;
     padding-bottom: 103px;
     border-color: rgb(245, 245, 245);
     background-color: rgb(251, 251, 251);
+    border-bottom: 1px solid #f5f5f5;
+    max-height: 1262px;
 }
 
 .page-template-about .process h1 {
@@ -2228,8 +2230,9 @@ section.project-url .next-project-btn {
     color: rgb(85, 85, 85);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.458;
+    line-height: 1.14;
     letter-spacing: 4.8px;
+    margin-bottom: 2px;
 }
 
 .page-template-about .process p {
@@ -2238,10 +2241,11 @@ section.project-url .next-project-btn {
     line-height: 1.875;
     max-width: 515px;
     margin: 0 auto;
+    font-weight: 500;
 }
 
 .page-template-about .process img {
-    margin-top: -128px;
+    margin-top: -106px;
     max-width: 100%;
 }
 
