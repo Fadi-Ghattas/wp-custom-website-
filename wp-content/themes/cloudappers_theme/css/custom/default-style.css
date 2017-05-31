@@ -58,6 +58,7 @@ figure {
     text-align: -webkit-center;
     text-align: -moz-center;
 }
+
 /* General */
 
 .form-group label {
@@ -68,6 +69,7 @@ figure {
 .form-group label.focus {
     transform: translateY(0);
 }
+
 section.ca-page-header {
     /*min-height: 100vh;*/
     background-size: cover;
@@ -194,6 +196,7 @@ header, nav, header img {
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 1;
 }
+
 .top-header .container:before {
     height: 8px;
     width: 100vw;
@@ -202,6 +205,7 @@ header, nav, header img {
     background: #fff;
     opacity: 1;
 }
+
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
@@ -277,6 +281,21 @@ header, nav, header img {
     transition: 0.5s;
 }
 
+.word-background {
+    font-size: 144.63px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 84px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    letter-spacing: 14.463px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+}
 /*Home*/
 
 .home .home-slider
@@ -363,9 +382,11 @@ header, nav, header img {
     margin: 0;
     letter-spacing: 2px;
 }
+
 .home .showcase p:first-child {
     letter-spacing: 2px;
 }
+
 .home .showcase > p:first-child {
     letter-spacing: 1.92px;
 }
@@ -381,11 +402,13 @@ header, nav, header img {
     margin: 24px 0 25px;
     box-shadow: 10px 16px 19.74px 1.26px rgba(110, 110, 110, 0.2);
 }
+
 .client-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .home .showcase a:hover {
     /*background-image: -moz-linear-gradient(-30deg, rgb(255, 93, 22) 0%, rgb(236, 125, 76) 100%);*/
     /*background-image: -webkit-linear-gradient(-30deg, rgb(255, 93, 22) 0%, rgb(236, 125, 76) 100%);*/
@@ -579,10 +602,12 @@ header, nav, header img {
     padding-left: 50px;
     /* letter-spacing: 1px; */
 }
+
 .home .showyou .view-all a:hover {
     background: url("../../img/viewallhover.png") no-repeat left;
     /*transition: color 0.3s ease-in-out, background 0.2s step-end ;*/
 }
+
 .home .showyou .img-project {
     width: 100%;
     height: auto;
@@ -924,10 +949,12 @@ header, nav, header img {
     background-size: contain;
     /* line-height: 0.80; */
 }
+
 body.home.blog.modal-open {
     overflow-y: visible;
     padding-right: 0 !important;
 }
+
 .home .contact .address p {
     font-size: 14px;
     font-family: "Open Sans";
@@ -1030,9 +1057,11 @@ body.home.blog.modal-open {
     /* margin-bottom: 2px; */
     /* display: block; */
 }
+
 .home .contact .copyright p {
     font-size: 12px;
 }
+
 .home .contact .copyright {
     padding-left: 85px;
     font-size: 12px;
@@ -1178,6 +1207,7 @@ body.home.blog.modal-open {
 #JobModal .form-group:nth-child(12) {
     margin-top: 10px;
 }
+
 #JobModal .form-message,
 #JobModal .form-submit {
     min-height: 0;
@@ -1221,8 +1251,24 @@ body.home.blog.modal-open {
     font-weight: 200;
     margin-top: -28px;
     margin-right: 10px;
+    transition: all 0.25s ease-in-out;
+    transform-origin: 13px 31px;
+    transform: rotateZ(0deg);
+    /* background: rebeccapurple; */
+}
+#JobModal label span {
+    float: right;
 }
 
+label[for="expected_salary"] {
+    width: calc(100% - 32px);
+}
+
+#JobModal .close:hover {
+    transform: rotateZ(360deg);
+    opacity: 0.8;
+    color: #52c2e8;
+}
 .home .contact .form-group.ms {
     max-width: 100% !important;
     width: 100% !important;
@@ -1351,6 +1397,7 @@ a.btn-view-all-show-cases.c-btn span {
 }
 
 section.some-of-show-cases {
+    position: relative;
     min-height: 100vh;
     background-size: cover;
     height: 100%;
@@ -1359,6 +1406,11 @@ section.some-of-show-cases {
     text-align: center;
     text-align: -moz-center;
     text-align: -webkit-center;
+    background: #fafafa;
+}
+
+.page-template-services section.some-of-show-cases .word-background {
+    top: 15%;
 }
 
 section.some-of-show-cases .show-case-item {
@@ -1555,12 +1607,13 @@ section.some-of-show-cases .overlay h6 {
     position: relative;
     width: 372px;
     height: 86px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
     border-bottom-left-radius: 43px;
     border-bottom-right-radius: 43px;
-    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.2);*/
+    margin: 0 auto;
     margin-top: -43px;
 }
 
@@ -1653,13 +1706,20 @@ ul.filters li a img.icon-hover {
 }
 
 ul.filters li a:hover img.icon,
-ul.filters li.active a img.icon {
+ul.filters li a.active img.icon,
+ul.filters li.active a img.icon{
     display: none;
 }
 
 ul.filters li a:hover img.icon-hover,
-ul.filters li.active a img.icon-hover {
+ul.filters li a.active img.icon-hover,
+ul.filters li.active a img.icon-hover
+{
     display: inline-block;
+}
+
+section.all-projects {
+    position: relative;
 }
 
 section.all-projects .grid {
@@ -1687,20 +1747,27 @@ section.all-the-team .grid {
     justify-content: flex-start;
 }
 
-    /*clients page end*/
+/*clients page end*/
 
 /*project details page start*/
 section.project-header {
     position: relative;
+    overflow: hidden;
 }
 
 section.project-header .project-header-container {
     width: 100%;
+    overflow: hidden;
 }
 
 section.project-header .project-header-container img,
 section.show-case-two img {
     width: 100%;
+}
+
+section.project-header .project-header-container img {
+    background: #8b8b8b;
+
 }
 
 section.project-header .project-header-container .header-text {
@@ -1788,6 +1855,7 @@ section.project-slider {
     background: #e0e0e0;
     padding: 76px 0 54px 0;
     /*height: 100vh;*/
+    position: relative;
 }
 
 section.project-slider .slick-list.draggable {
@@ -1838,6 +1906,7 @@ section.show-case-one-image .img-container img {
 
 section.show-case-two {
     position: relative;
+    overflow: hidden;
 }
 
 /*section.show-case-two img {*/
@@ -2064,9 +2133,10 @@ section.project-url .next-project-btn {
 .move-section {
     position: absolute;
     width: 100%;
-    text-align: -webkit-center;
+    text-align: center;
     bottom: -28px;
     z-index: 1;
+    display: block;
 }
 
 .move-section .icono-arrow1-down {
@@ -3068,19 +3138,22 @@ section.project-url .next-project-btn {
     /*background: linear-gradient(-10deg, rgb(255, 255, 255) 40%, #fff 40%, rgb(255, 255, 255) 60%, rgba(255, 253, 253, 0) 60%);*/
 }
 
-.top-header .nav-social .copyright img {
+.top-header .nav-social .copyright img,
+#footer .nav-social .copyright img {
     width: 100%;
     max-width: 560px;
 }
 
-.top-header .nav-social .copyright p {
+.top-header .nav-social .copyright p,
+#footer .nav-social .copyright p {
     /*font-size: 24px;*/
     color: rgb(187, 187, 187);
     text-transform: uppercase;
     line-height: 2;
 }
 
-.top-header .social {
+.top-header .social,
+#footer .nav-social .social {
     /*position: absolute;*/
     /*bottom: 0;*/
     /*left: 0;*/
@@ -3090,24 +3163,25 @@ section.project-url .next-project-btn {
     border-top: 1px solid rgb(206, 206, 206);
 }
 
-.top-header .social a {
+.top-header .social a,
+#footer .nav-social .social a {
     width: calc(100% / 3);
     display: inline-block;
     float: left;
     height: 100%;
 }
 
-.top-header .facebook {
+.facebook {
     background: url("../../img/f.png") no-repeat center;
 }
 
-.top-header .twitter {
+.twitter {
     background: url("../../img/t.png") no-repeat center;
     border-right: 1px solid rgb(206, 206, 206);
     border-left: 1px solid rgb(206, 206, 206);
 }
 
-.top-header .instagram {
+.instagram {
     background: url("../../img/i.png") no-repeat center;
 }
 
@@ -3172,11 +3246,16 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 768px) {
+    /*General*/
+    .mob {
+        display: none;
+    }
 
     /*Header*/
-    .navbar-nav>li {
+    .navbar-nav > li {
         font-size: 14px;
     }
+
     .navbar-collapse.collapse {
         padding: 0;
     }
@@ -3232,8 +3311,10 @@ section.project-url .next-project-btn {
 
 @media (min-width: 1200px) {
     #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
-        flex: 1 1 100%;max-width: none;
+        flex: 1 1 100%;
+        max-width: none;
     }
+
     div#JobModal .col-lg-12 {
         padding: 0;
         /* margin: 0 -15px; */
@@ -3245,17 +3326,21 @@ section.project-url .next-project-btn {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     #JobModal .form-group {
         max-width: 251px;
         flex: 0 0 251px;
         padding: 0;
     }
+
     form#GetInTouchForm {
         max-width: 500px;
     }
+
     .home .contact .copyright {
         height: 151px;
     }
+
     /*Menu*/
     .top-header.small .navbar-inverse {
         padding-top: 0;
@@ -3313,7 +3398,6 @@ section.project-url .next-project-btn {
         opacity: 1;
         transition: 0.3s;
     }
-
 
     .page-template-clients .clients .item {
         width: 100px;
@@ -3520,7 +3604,7 @@ section.project-url .next-project-btn {
 
     .page-template-contact-us .contact .address .container-fluid {
         padding-bottom: 35px;
-        max-width:100%;
+        max-width: 100%;
 
     }
 
@@ -3636,6 +3720,36 @@ section.project-url .next-project-btn {
 
     .page-template-about .why img {
         margin: 0 auto;
+    }
+
+    /*project-inner*/
+    .project-template-default .project-info .info-item {
+        padding-right: 15px;
+        padding-left: 15px !important;
+    }
+
+    section.show-case-one .description-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    section.client-say .say-block {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .project-template-default .client-say,
+    .project-template-default .client-say .say-block:nth-of-type(even) p {
+        text-align: center;
+    }
+
+    section.client-say .say-block:nth-of-type(even) > div {
+        width: 100%;
+    }
+
+    section.client-say h1 {
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
 
 }
@@ -3755,6 +3869,22 @@ section.project-url .next-project-btn {
 
     .service-info-item.last .description {
         margin-bottom: 50px;
+    }
+
+    section.project-header .project-header-container img,
+    section.show-case-two img {
+        width: 200%;
+        max-width: none;
+        margin-left: -50%;
+        margin-right: -50%;
+    }
+
+    section.project-header .project-header-container .header-text {
+        margin-top: -30vw;
+    }
+
+    section.show-case-two .container {
+        padding-top: 50px;
     }
 
 }
@@ -3956,6 +4086,11 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
+    /*General*/
+    .desk {
+        display: none;
+    }
+
     /*Menu*/
     .logo-mob,
     .navbar-inverse .navbar-toggle {
@@ -4675,6 +4810,96 @@ section.project-url .next-project-btn {
         padding-bottom: 8.1vw;
     }
 
+    /*Project-inner*/
+    .project-template-default .project-header .project-header-container .header-text .title {
+        font-size: 3.7vw;
+    }
+
+    .project-template-default .project-header .project-header-container .header-text .name {
+        font-size: 9.3vw;
+    }
+
+    .project-template-default .project-header .project-header-container .short-description p {
+        font-size: 4vw;
+        padding: 0 15px;
+    }
+
+    .project-template-default .description p {
+        font-size: 4vw;
+    }
+
+    .project-template-default .project-info {
+        text-align: center;
+        padding-top: 66px;
+    }
+
+    .project-template-default .project-info .title {
+        margin-top: 15px;
+        font-size: 4.2vw;
+    }
+
+    .project-template-default .project-info .info-item {
+        padding-bottom: 15px;
+    }
+
+    .project-template-default .project-info .info-item.logo img {
+        margin: 50px auto 0;
+    }
+
+    .project-template-default .project-info .project-info-row {
+        padding-bottom: 50px;
+    }
+
+    .project-template-default .show-case-one .description-container {
+        padding: 50px 15px;
+    }
+
+    .project-template-default .project-url .title {
+        margin-bottom: 15px;
+        font-size: 3.7vw;
+    }
+
+    .project-template-default .project-url .url-name p {
+        font-size: 5.3vw;
+    }
+
+    .project-template-default .client-say h1,
+    .project-template-default .client-say .say-block p {
+        font-size: 5.7vw;
+    }
+
+    .project-template-default .client-say .say-block .signature {
+        font-size: 3.2vw;
+    }
+
+    .project-template-default .client-say .say-block .signature strong {
+        font-size: 3.7vw;
+        display: block;
+    }
+
+    .project-template-default .show-case-two .title {
+        font-size: 4.2vw;
+    }
+
+    #footer {
+        padding-bottom: 0;
+    }
+
+    #footer .mob .copyright p {
+        font-size: 3.2vw;
+    }
+
+    #footer .mob .copyright img {
+        max-width: 450px;
+        width: 60vw;
+    }
+
+    #footer .mob .social  {
+        margin-top: 73px;
+        height: 21vw;
+        display: block;
+    }
+
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
@@ -4898,9 +5123,11 @@ section.project-url .next-project-btn {
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
+
 a.c-btn:empty {
     display: none;
 }
+
 .c-btn:hover {
     color: #f3fcfe !important;
     /*background-image: -moz-linear-gradient(-60deg, rgb(255, 93, 22) 0%, rgb(255, 156, 112) 100%) !important;*/
@@ -4964,6 +5191,7 @@ form#GetInTouchForm button.c-btn {
     height: 60px;
     margin-top: 3px;
 }
+
 .c-rbtn:hover {
     background-image: -webkit-linear-gradient(top left, rgba(255, 93, 22, 0.2) 0%, rgba(255, 93, 22, 0.2) 37%, rgba(255, 93, 22, 0.5) 45%, rgba(255, 93, 22, 0.0) 50%), -webkit-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
     background-image: -moz-linear-gradient(top left, rgba(255, 93, 22, 0.2) 0%, rgba(255, 93, 22, 0.2) 37%, rgba(255, 93, 22, 0.5) 45%, rgba(255, 93, 22, 0.0) 50%), -moz-linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
