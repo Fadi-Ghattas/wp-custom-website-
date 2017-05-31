@@ -2559,8 +2559,10 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about .words {
-    padding: 100px 0 45px;
-    background: url(../../img/words-bg1.jpg), url(../../img/words-bg2.png);
+    padding: 100px 0 63px;
+    background:  -webkit-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
+    background:  -ms-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
+    background:  -moz-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
     background-repeat: no-repeat;
     background-size: 47.5% 100%, contain;
     background-position: left center, calc(50% + 10px) center;
@@ -2633,11 +2635,13 @@ section.project-url .next-project-btn {
     line-height: 1.688;
     text-align: left;
     letter-spacing: 1.6px;
+    margin-bottom: 0;
 }
 
 .page-template-about .words h4 {
     color: #b3b3b3;
     letter-spacing: 1.6px;
+    margin-top: 0;
 }
 
 .page-template-about .words .slick-dots li {
