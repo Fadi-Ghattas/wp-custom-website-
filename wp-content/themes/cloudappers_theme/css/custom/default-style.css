@@ -3380,9 +3380,25 @@ section.project-url .next-project-btn {
     }
 
     div#JobModal .col-lg-12 form.fv-form.fv-form-bootstrap {
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        max-width: 571px;
     }
 
     #JobModal .form-group {
@@ -4718,10 +4734,10 @@ section.project-url .next-project-btn {
         text-align: -moz-left;
         text-align: left;
         height: 24.533333333333335vw;
-        display: flex;
+
+        flex-direction: column;display: flex;
         display: -ms-flexbox;
         display: -webkit-flex;
-        flex-direction: column;
         justify-content: center;
         padding: 0 6.533333333333333vw;
     }
