@@ -456,7 +456,7 @@ header, nav, header img {
 
 .clients .container {
     padding-bottom: 47px;
-    padding-top: 47px;
+    padding-top: 82px;
 }
 
 .clients .item img {
@@ -1196,16 +1196,19 @@ body.home.blog.modal-open {
     min-height: 35px;
     background: transparent;
 }
+
 #JobModal select:hover {
     animation-duration: 0.8s;
     animation-name: back;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 #JobModal textarea {
     height: 30px !important;
     resize: vertical;
 }
+
 #JobModal .file-caption {
     margin-top: 4px;
 }
@@ -1216,9 +1219,11 @@ body.home.blog.modal-open {
     margin: 0;
     color: #000;
 }
+
 #JobModal .form-group:nth-child(11) label {
     /* transform: translateY(44px); */
 }
+
 #JobModal select {
     background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
     -webkit-appearance: none;
@@ -1256,11 +1261,13 @@ body.home.blog.modal-open {
 #JobModal #JobCaptcha {
     display: inline-block;
 }
+
 #JobModal .form-group:nth-child(10) {
     /* min-height: 70px; */
     margin-top: 5px;
     margin-bottom: 27px;
 }
+
 #JobModal .btn-file {
     background: #ff601b;
     border: 1px solid #ff601b;
@@ -1294,6 +1301,7 @@ body.home.blog.modal-open {
     transform: rotateZ(0deg);
     /* background: rebeccapurple; */
 }
+
 #JobModal label span {
     float: right;
 }
@@ -1307,6 +1315,7 @@ label[for="expected_salary"] {
     opacity: 0.8;
     color: #ff601b;
 }
+
 .home .contact .form-group.ms {
     max-width: 100% !important;
     width: 100% !important;
@@ -2436,7 +2445,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about .clients {
-    background: url("../../img/about-clients.jpg") no-repeat top center;
+    background: url("../../img/about-clients.jpg") no-repeat center 7%;
     background-size: cover;
 }
 
@@ -2446,6 +2455,8 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
+    letter-spacing: 1.6px;
+    margin-bottom: 53px;
 }
 
 .page-template-about .time {
@@ -2475,6 +2486,14 @@ section.project-url .next-project-btn {
 
 .page-template-about .why .why-desc {
     padding: 0;
+}
+
+.page-template-about .why .why-img {
+    height: 100px;
+}
+
+.page-template-about .why .why-img img {
+    max-height: 100%;
 }
 
 .page-template-about .why .why-desc:nth-child(2) {
@@ -3362,10 +3381,12 @@ section.project-url .next-project-btn {
     .team .members > div {
         height: 280px;
     }
+
     .team .members > div img {
         width: auto;
         height: 100%;
     }
+
     #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
         flex: 1 1 100%;
         max-width: none;
@@ -5919,7 +5940,6 @@ form#GetInTouchForm button.c-btn {
         opacity: 0;
     }
 }
-
 
 @keyframes back {
     0% {
