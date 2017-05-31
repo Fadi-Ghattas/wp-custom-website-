@@ -187,6 +187,13 @@ header, nav, header img {
     -o-transition: all 1s; /* Opera */
 }
 
+.top-menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .top-header {
     position: fixed;
     right: 0;
@@ -194,7 +201,7 @@ header, nav, header img {
     /* opacity: 0.949; */
     box-shadow: 0px 10px 90px 0px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.95);
-    z-index: 1;
+    z-index: 0;
 }
 
 .top-header .container:before {
@@ -296,6 +303,7 @@ header, nav, header img {
     width: 100%;
     color: rgba(255, 255, 255, 0.6);
 }
+
 /*Home*/
 
 .home .home-slider
@@ -1691,14 +1699,13 @@ ul.filters li a img.icon-hover {
 
 ul.filters li a:hover img.icon,
 ul.filters li a.active img.icon,
-ul.filters li.active a img.icon{
+ul.filters li.active a img.icon {
     display: none;
 }
 
 ul.filters li a:hover img.icon-hover,
 ul.filters li a.active img.icon-hover,
-ul.filters li.active a img.icon-hover
-{
+ul.filters li.active a img.icon-hover {
     display: inline-block;
 }
 
@@ -4878,7 +4885,7 @@ section.project-url .next-project-btn {
         width: 60vw;
     }
 
-    #footer .mob .social  {
+    #footer .mob .social {
         margin-top: 73px;
         height: 21vw;
         display: block;
