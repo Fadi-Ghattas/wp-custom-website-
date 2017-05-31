@@ -276,11 +276,11 @@ jQuery(function ($) {
         //console.log('here');
     });
     //focus events for input
-    jQuery('input,select').on('focus', function() {
+    jQuery('input,select,textarea').on('focus', function() {
         jQuery(this).parents('.form-group').find('label').addClass('focus')
     })
     jQuery('#take-me-in').click(function() {
-        jQuery('input,select').on('focus', function() {
+        jQuery('input,select,textarea').on('focus', function() {
             jQuery(this).parents('.form-group').find('label').addClass('focus')
         })
     });
