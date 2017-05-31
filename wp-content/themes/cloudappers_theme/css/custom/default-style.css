@@ -2341,7 +2341,7 @@ section.project-url .next-project-btn {
     line-height: 111px;
     font-size: 20px;
     font-family: "Arial";
-    font-weight: bold;
+    font-weight: 500;
     color: rgb(229, 229, 229);
     border-radius: 50%;
     transition: background 0.5s;
@@ -2407,12 +2407,13 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.8px;
 }
 
 .page-template-about .ouraim p {
     font-size: 30px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -2426,7 +2427,7 @@ section.project-url .next-project-btn {
     position: absolute;
     right: 0;
     left: 0;
-    top: calc(100% - 42px);
+    top: calc(100% - 46px);
 
 }
 
@@ -2448,18 +2449,19 @@ section.project-url .next-project-btn {
     background-size: contain;
     padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.06)
 
 }
 
 .page-template-about .time h6 {
     font-size: 16px;
-    color: rgb(85, 85, 85);
+    color: #666666;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
     text-align: center;
     margin: 0;
+    letter-spacing: 1.6px;
 }
 
 .page-template-about .why {
