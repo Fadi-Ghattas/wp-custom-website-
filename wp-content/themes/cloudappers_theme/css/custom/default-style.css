@@ -1176,7 +1176,16 @@ body.home.blog.modal-open {
     min-height: 35px;
     background: transparent;
 }
-
+#JobModal select:hover {
+    animation-duration: 0.8s;
+    animation-name: back;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#JobModal textarea {
+    height: 30px !important;
+    resize: vertical;
+}
 #JobModal .file-caption {
     margin-top: 4px;
 }
@@ -1187,7 +1196,9 @@ body.home.blog.modal-open {
     margin: 0;
     color: #000;
 }
-
+#JobModal .form-group:nth-child(11) label {
+    /* transform: translateY(44px); */
+}
 #JobModal select {
     background: url('../../img/arrow.png') no-repeat calc(100% - 2px) 9px;
     -webkit-appearance: none;
@@ -1195,7 +1206,8 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-group {
-    min-height: 80px;
+    min-height: 65px;
+    /* max-height: 80px; */
 }
 
 #JobModal .btn-file:hover {
@@ -1205,7 +1217,8 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-group:nth-child(12) {
-    margin-top: 10px;
+    margin-top: 29px;
+    margin-bottom: 33px;
 }
 
 #JobModal .form-message,
@@ -1223,10 +1236,15 @@ body.home.blog.modal-open {
 #JobModal #JobCaptcha {
     display: inline-block;
 }
-
+#JobModal .form-group:nth-child(10) {
+    /* min-height: 70px; */
+    margin-top: 5px;
+    margin-bottom: 27px;
+}
 #JobModal .btn-file {
     background: #ff601b;
     border: 1px solid #ff601b;
+    transition: all 0.3s ease-in-out;
 }
 
 #JobModal .captcha-container {
@@ -1267,7 +1285,7 @@ label[for="expected_salary"] {
 #JobModal .close:hover {
     transform: rotateZ(360deg);
     opacity: 0.8;
-    color: #52c2e8;
+    color: #ff601b;
 }
 .home .contact .form-group.ms {
     max-width: 100% !important;
@@ -5865,5 +5883,29 @@ form#GetInTouchForm button.c-btn {
 }
 
 
+@keyframes back {
+    0% {
+        background-position: calc(100% - 2px) 9px;
+    }
+    100% {
+        background-position: calc(100% - 2px) 16px;
+    }
+}
 
+@-moz-keyframes back {
+    0% {
+        background-position: calc(100% - 2px) 9px;
+    }
+    100% {
+        background-position: calc(100% - 2px) 16px;
+    }
+}
 
+@-webkit-keyframes back {
+    0% {
+        background-position: calc(100% - 2px) 9px;
+    }
+    100% {
+        background-position: calc(100% - 2px) 16px;
+    }
+}

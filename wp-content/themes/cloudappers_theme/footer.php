@@ -149,7 +149,7 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
                             <div class="form-group col-lg-12">
                                 <label class="control-label" for="cv_info_one">What do you do when you’re not
                                     working?</label>
-                                <textarea class="form-control" id="cv_info_one" name="cv_info_one"></textarea>
+                                <textarea class="form-control"  id="cv_info_one" name="cv_info_one"></textarea>
                             </div>
 
                             <div class="form-group col-lg-12 captcha-container">
