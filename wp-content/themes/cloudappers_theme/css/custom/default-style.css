@@ -6025,16 +6025,16 @@ form#GetInTouchForm button.c-btn {
         background-position: calc(100% - 2px) 16px;
     }
 }
-.parallax-mirror:after {
-    content: ' ';
-    width: 100%;
-    height: 700px;
-    background: #cf86d6;
-    position: absolute;
-    bottom: -649px;
-    opacity: 0.8;
-    z-index: 0;
-}
+/*.parallax-mirror:after {*/
+    /*content: ' ';*/
+    /*width: 100%;*/
+    /*height: 700px;*/
+    /*background: #cf86d6;*/
+    /*position: absolute;*/
+    /*bottom: -649px;*/
+    /*opacity: 0.8;*/
+    /*z-index: 0;*/
+/*}*/
 
 /*.parallax-mirror {*/
     /*position: relative;*/
