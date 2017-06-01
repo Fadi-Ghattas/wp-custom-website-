@@ -187,6 +187,6 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
     </div>
 </div>
 <?php } ?>
-
+</div>
 </body>
 </html>

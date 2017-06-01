@@ -82,10 +82,15 @@ figure {
     transform: translateY(0);
 }
 
+.main-wrapper {
+    margin-top: -300px;
+    background: white;
+}
+
 section.ca-page-header {
     /*min-height: 100vh;*/
     background-size: cover;
-    height: calc(100vh - 100px);
+    height: calc(100vh + 300px);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -901,9 +906,11 @@ header, nav, header img {
     width: 100%;
     position: relative;
 }
+
 .home .contact .form .container-fluid .col-lg-12 {
     padding-left: 0;
 }
+
 .home .contact .container-fluid {
     width: 100%;
     padding-top: 35px;
@@ -1540,6 +1547,7 @@ section.some-of-show-cases .overlay h6 {
 .page-template-projects .all-projects .word-background {
     top: 120px;
 }
+
 /*services end*/
 
 /*service details start*/
@@ -1547,6 +1555,7 @@ section.some-of-show-cases .overlay h6 {
 .single-service section.some-of-show-cases .word-background {
     top: 16%;
 }
+
 .service-details .icon-container {
     display: flex;
     display: -ms-flexbox;
@@ -1791,7 +1800,7 @@ ul.filters li.active a img.icon-hover {
     display: inline-block;
 }
 
-ul.filters li a.active p ,
+ul.filters li a.active p,
 ul.filters li a:hover p {
     opacity: 0.7;
 }
@@ -2436,7 +2445,6 @@ section.project-url .next-project-btn {
     background-color: rgb(175, 175, 175);
     padding: 47px 0 71px;
     position: relative;
-    margin-top: -100px;
 }
 
 .page-template-about .ouraim h6 {
@@ -2583,9 +2591,9 @@ section.project-url .next-project-btn {
 
 .page-template-about .words {
     padding: 100px 0 63px;
-    background:  -webkit-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
-    background:  -ms-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
-    background:  -moz-linear-gradient( 0deg, rgb(247,140,160) 0%, rgb(249,116,143) 19%, rgb(253,134,140) 60%, rgb(254,154,139) 100%), url(../../img/words-bg2.png);
+    background: -webkit-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%), url(../../img/words-bg2.png);
+    background: -ms-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%), url(../../img/words-bg2.png);
+    background: -moz-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%), url(../../img/words-bg2.png);
     background-repeat: no-repeat;
     background-size: 47.5% 100%, contain;
     background-position: left center, calc(50% + 10px) center;
@@ -3409,7 +3417,6 @@ section.project-url .next-project-btn {
         height: 100%;
     }
 
-
 }
 
 @media (min-width: 1200px) {
@@ -3879,6 +3886,7 @@ section.project-url .next-project-btn {
         margin-top: 50px;
         margin-bottom: 25px;
     }
+
     .word-background {
         font-size: 9vw;
     }
@@ -4796,7 +4804,8 @@ section.project-url .next-project-btn {
         text-align: left;
         height: 24.533333333333335vw;
 
-        flex-direction: column;display: flex;
+        flex-direction: column;
+        display: flex;
         display: -ms-flexbox;
         display: -webkit-flex;
         justify-content: center;
@@ -6025,17 +6034,18 @@ form#GetInTouchForm button.c-btn {
         background-position: calc(100% - 2px) 16px;
     }
 }
+
 /*.parallax-mirror:after {*/
-    /*content: ' ';*/
-    /*width: 100%;*/
-    /*height: 700px;*/
-    /*background: #cf86d6;*/
-    /*position: absolute;*/
-    /*bottom: -649px;*/
-    /*opacity: 0.8;*/
-    /*z-index: 0;*/
+/*content: ' ';*/
+/*width: 100%;*/
+/*height: 700px;*/
+/*background: #cf86d6;*/
+/*position: absolute;*/
+/*bottom: -649px;*/
+/*opacity: 0.8;*/
+/*z-index: 0;*/
 /*}*/
 
 /*.parallax-mirror {*/
-    /*position: relative;*/
+/*position: relative;*/
 /*}*/

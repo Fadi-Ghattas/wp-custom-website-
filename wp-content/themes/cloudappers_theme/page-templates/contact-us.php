@@ -37,7 +37,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
             </div>
         </div>
     </section>
-
+    <div class="main-wrapper">
     <section class="blue-desc">
         <div class="right-top-div">
             <img alt="I'm live" class="img-responsive"

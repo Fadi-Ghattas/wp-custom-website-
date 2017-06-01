@@ -84,7 +84,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
-
+    <div class="main-wrapper">
 	<section class="ca-page-banner">
 	<!--<div class="vertical-line"></div>-->
 		<div class="container">
