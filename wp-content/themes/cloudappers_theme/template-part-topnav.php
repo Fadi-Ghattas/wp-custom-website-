@@ -15,7 +15,7 @@
                                          alt="CloudAppers"/>
                                 </a>
                                 <a class="logo-desk hidden-xs" href="<?php echo home_url(); ?>">
-                                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?>"
+                                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.svg' ?>"
                                          alt="CloudAppers"/>
                                     <img class="hidden-md hidden-sm  img-float"
                                          src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"
@@ -47,7 +47,7 @@
 
                             <div class="nav-social">
                                 <div class="copyright">
-                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.svg'); ?>">
                                     <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
                                 </div>
                                 <div class="social">
