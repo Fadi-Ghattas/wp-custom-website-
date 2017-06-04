@@ -1553,6 +1553,11 @@ section.some-of-show-cases .overlay h6 {
 
 /*service details start*/
 
+.single-service #menu-item-478 a {
+    color: #ff5f19;
+    background: transparent;
+}
+
 .single-service section.some-of-show-cases .word-background {
     top: 16%;
 }
@@ -1838,6 +1843,12 @@ section.all-the-team .grid {
 /*clients page end*/
 
 /*project details page start*/
+
+.single-project #menu-item-494 a {
+    color: #ff5f19;
+    background: transparent;
+}
+
 section.project-header {
     position: relative;
     overflow: hidden;
