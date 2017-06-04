@@ -5098,6 +5098,10 @@ section.project-url .next-project-btn {
         font-size: 4.2vw;
     }
 
+    .move-section.with-border {
+        display: none;
+    }
+
     #footer {
         padding-bottom: 0;
     }
