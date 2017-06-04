@@ -204,7 +204,7 @@ jQuery(function ($) {
             $isotope.isotope({filter: $(this).attr('data-type')});
             $isotope.on('layoutComplete', function (event, filteredItems) {
                 if (filtered) {
-                    ReLayout();
+                    //ReLayout();
                     filtered = false;
                 }
             });

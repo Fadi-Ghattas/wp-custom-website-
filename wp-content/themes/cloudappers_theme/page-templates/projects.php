@@ -91,6 +91,7 @@ get_template_part('template-part', 'topnav');
                         } else if ($col == 2) {
                             $colPos = 'col-lg-right col-sm-right col-xs-right';
                         }
+                        $colPos = '';
                         ?>
                         <article
                                 class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?> <?php echo str_replace(' ', '_', strtolower($project['project_type'][0]['post_title'])); ?>"
