@@ -249,8 +249,9 @@ header, nav, header img {
     position: relative;
 }
 
-.logo-desk img {
-    max-width: 290px;
+.logo-desk img ,
+.logo-desk embed {
+    max-width: 100%;
     /*width: 290px;*/
     height: auto;
     transition: 0.3s;

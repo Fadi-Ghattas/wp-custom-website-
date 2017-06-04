@@ -326,7 +326,7 @@ get_template_part('template-part', 'topnav');
     </div>
 
     <div class="copyright">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.svg'); ?>">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
     </div>
 </section>
