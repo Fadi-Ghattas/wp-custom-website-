@@ -34,7 +34,7 @@ get_template_part('template-part', 'topnav');
             </div>
         </div>
     </section>
-
+    <div class="main-wrapper">
 <?php if (!empty($pageOptions['let_us_page_message_title']) && !empty($pageOptions['let_us_page_message_text'])) { ?>
     <section class="ouraim">
         <div class="container">

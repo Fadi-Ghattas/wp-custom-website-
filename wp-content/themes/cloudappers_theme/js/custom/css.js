@@ -284,4 +284,6 @@ jQuery(function ($) {
             jQuery(this).parents('.form-group').find('label').addClass('focus')
         })
     });
+
+    //jQuery('.parallax-window').parallax({imageSrc: jQuery('.parallax-window').attr('data-image-src')});
 });

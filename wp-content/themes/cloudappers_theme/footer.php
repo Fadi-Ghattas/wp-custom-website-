@@ -30,8 +30,8 @@ wp_footer();
                     <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
                     <div class="details">
                         <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                        <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
-                        <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
+                        <a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><p class="mobile"><?php echo $setting['settings_mobile_number']; ?></p></a>
+                        <a href="tel:<?php echo $setting['settings_tel_number']; ?>"><p class="phone"><?php echo $setting['settings_tel_number']; ?></p></a>
                     </div>
                     <div class="social">
                         <ul>
@@ -187,6 +187,6 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
     </div>
 </div>
 <?php } ?>
-
+</div>
 </body>
 </html>
