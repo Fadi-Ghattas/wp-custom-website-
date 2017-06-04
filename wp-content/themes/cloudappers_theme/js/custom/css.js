@@ -285,5 +285,20 @@ jQuery(function ($) {
         })
     });
 
+    if ($('.single-project').length) {
+        $('.move-section').on('click', function (event) {
+            var next = (parseInt($(this).attr('data-index')) + 1);
+            var $nextElement = $('.move-section[data-index="' + next + '"]');
+            if ($nextElement.length) {
+                $('html, body').stop(true).animate({
+                    scrollTop: $('.move-section[data-index="' + next + '"]').offset().top - 65
+                }, 1000);
+                return false;
+            } else {
+                return false;
+            }
+        });
+    }
+
     //jQuery('.parallax-window').parallax({imageSrc: jQuery('.parallax-window').attr('data-image-src')});
 });
