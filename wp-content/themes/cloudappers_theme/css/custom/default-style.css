@@ -1853,7 +1853,7 @@ section.project-header .project-header-container .header-text {
     /*width: 100%;*/
     top: 72.0%;
     z-index: -1;
-    padding: 60px 0 54px 0px;
+    padding: 58px 0 54px 0px;
     margin-top: -16.7%;
 }
 
@@ -1861,12 +1861,15 @@ section.project-header .project-header-container .header-text .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    letter-spacing: 1.6px;
+    margin-bottom: 4px;
 }
 
 section.project-header .project-header-container .header-text .name {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 38px;
+    margin-bottom: 26px;
 }
 
 section.project-header .project-header-container .short-description p {
@@ -1874,6 +1877,7 @@ section.project-header .project-header-container .short-description p {
     font-weight: 300;
     font-size: 30px;
     line-height: 1.467;
+    letter-spacing: 1px;
 }
 
 section.project-info {

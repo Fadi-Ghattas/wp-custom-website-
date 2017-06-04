@@ -246,7 +246,7 @@ get_template_part('template-part', 'topnav');
 
 		<?php } ?>
 
-		<a href="#" class="move-section desk">
+		<a href="javascript:void(0)" class="move-section desk">
 			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
@@ -269,7 +269,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-        <a href="#" class="move-section mob">
+        <a href="javascript:void(0)" class="move-section mob">
             <div >
                 <div class="icono-arrow1-down"></div>
             </div>
@@ -288,7 +288,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="#" class="move-section desk">
+		<a href="javascript:void(0)" class="move-section desk">
 			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
@@ -305,7 +305,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="#">
+		<a href="javascript:void(0)">
 			<div class="move-section">
 				<div class="icono-arrow1-down"></div>
 			</div>
