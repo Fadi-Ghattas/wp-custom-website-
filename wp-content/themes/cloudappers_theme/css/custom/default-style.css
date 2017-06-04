@@ -250,8 +250,8 @@ header, nav, header img {
 }
 
 .logo-desk img {
-    max-width: 100%;
-    width: 290px;
+    max-width: 290px;
+    /*width: 290px;*/
     height: auto;
     transition: 0.3s;
 }
