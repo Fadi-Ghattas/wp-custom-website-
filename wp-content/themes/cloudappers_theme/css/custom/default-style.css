@@ -3700,7 +3700,6 @@ section.project-url .next-project-btn {
         float: left;
     }
 
-
     /*Home*/
     .home .contact {
         flex-direction: column-reverse;
@@ -3867,7 +3866,6 @@ section.project-url .next-project-btn {
     .img-prefooter {
         margin-bottom: 30px;
     }
-
 
 }
 
@@ -4689,7 +4687,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-about section.ca-page-header .title,
-    .page-template-about section.ca-page-header .title {
+    .page-template-about section.ca-page-header .sub-title {
         line-height: 2;
     }
 
@@ -4713,6 +4711,11 @@ section.project-url .next-project-btn {
     .page-template-about .why .why-desc {
         padding: 0 15px;
     }
+
+    .page-template-about section.ca-page-header .desc {
+        margin: 0 auto 0;
+    }
+
 
     .green-card-hover,
     .red-card-hover,
