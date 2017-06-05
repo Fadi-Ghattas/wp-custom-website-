@@ -90,7 +90,7 @@ jQuery(function ($) {
         asNavFor: '.history-slider',
         responsive: [
             {
-                breakpoint: 1170,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,

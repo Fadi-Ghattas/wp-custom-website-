@@ -82,11 +82,6 @@ figure {
     transform: translateY(0);
 }
 
-.main-wrapper {
-    margin-top: -300px;
-    background: white;
-}
-
 section.ca-page-header {
     /*min-height: 100vh;*/
     background-size: cover;
@@ -249,7 +244,7 @@ header, nav, header img {
     position: relative;
 }
 
-.logo-desk img ,
+.logo-desk img,
 .logo-desk embed {
     max-width: 100%;
     /*width: 290px;*/
@@ -2007,6 +2002,7 @@ section.project-slider .slick-dots li {
 section.project-slider .slick-dots li.slick-active button:before {
     color: #505d6d;
 }
+
 section.show-case-one,
 section.show-case-one-image {
     position: relative;
@@ -2165,6 +2161,7 @@ section.client-say .say-block .signature strong {
 section.client-say .say-block .signature .from {
     line-height: 5px;
 }
+
 section.project-url {
     text-align: center;
     text-align: -moz-center;
@@ -2336,7 +2333,8 @@ section.project-url .next-project-btn {
 .move-section.with-border .icono-arrow1-down:before {
     width: 35px;
 }
-    /*project details page end*/
+
+/*project details page end*/
 
 /*About*/
 .page-template-about section.ca-page-header .title {
@@ -2440,8 +2438,8 @@ section.project-url .next-project-btn {
     height: 175px;
     margin-top: -52px;
     padding-top: 22px !important;
-    margin-right: -30px;
-    margin-left: -30px;
+    /*margin-right: -30px;*/
+    /*margin-left: -30px;*/
     padding: 0 30px;
 }
 
@@ -3459,6 +3457,11 @@ section.project-url .next-project-btn {
         display: none;
     }
 
+    .main-wrapper {
+        margin-top: -300px;
+        background: white;
+    }
+
     /*Header*/
     .navbar-nav > li {
         font-size: 14px;
@@ -3659,6 +3662,12 @@ section.project-url .next-project-btn {
         float: right;
     }
 
+    /*About*/
+    .page-template-about .history .slider-nav .slick-list {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+
 }
 
 /*md*/
@@ -3690,6 +3699,7 @@ section.project-url .next-project-btn {
     .navbar-nav {
         float: left;
     }
+
 
     /*Home*/
     .home .contact {
@@ -3857,6 +3867,7 @@ section.project-url .next-project-btn {
     .img-prefooter {
         margin-bottom: 30px;
     }
+
 
 }
 
