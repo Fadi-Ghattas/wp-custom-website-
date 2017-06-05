@@ -3457,6 +3457,10 @@ section.project-url .next-project-btn {
         display: none;
     }
 
+    section.ca-page-header .container {
+        transform: translate(0, -50%);
+    }
+
     .main-wrapper {
         margin-top: -300px;
         background: white;
@@ -4715,7 +4719,6 @@ section.project-url .next-project-btn {
     .page-template-about section.ca-page-header .desc {
         margin: 0 auto 0;
     }
-
 
     .green-card-hover,
     .red-card-hover,
