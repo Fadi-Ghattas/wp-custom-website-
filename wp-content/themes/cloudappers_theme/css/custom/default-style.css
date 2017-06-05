@@ -144,7 +144,7 @@ section.ca-page-header .sub-title {
     font-weight: 700;
     font-size: 90px;
     line-height: 108px;
-    text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
+    text-shadow: 0px 0px 19.74px rgba(131, 131, 131, 0.5);
     text-transform: uppercase;
     /*word-break: break-all;*/
 }
@@ -1751,6 +1751,19 @@ ul.filters li a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
+    display: inline-block;
+}
+
+ul.filters li:first-child a {
+    height: 17px;
+}
+
+ul.filters li:nth-child(2) a {
+    height: 20px;
+}
+
+ul.filters li:last-child a {
+    height: 23px;
 }
 
 ul.filters li a:hover,
@@ -1759,7 +1772,9 @@ ul.filters li.active a {
 }
 
 ul.filters li a img.icon {
-    height: 23px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     display: inline-block;
     margin-right: 5px;
 }
@@ -1775,13 +1790,11 @@ ul.filters li a img.icon {
 }
 
 ul.filters li a img.icon-hover {
-    height: 23px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     display: none;
     margin-right: 5px;
-}
-
-ul.filters li:last-child a img.icon-hover {
-    margin-right: 6px;
 }
 
 .all-the-team ul.filters li a img.icon-hover {
