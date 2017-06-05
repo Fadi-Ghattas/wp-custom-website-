@@ -181,6 +181,11 @@ get_template_part('template-part', 'topnav');
 		<div class="project-header-container">
 			<img class="img-responsive header-image" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
 			<div class="center header-text">
+				<a href="#" class="move-section desk with-border" data-index="0">
+					<div >
+						<div class="icono-arrow1-down"></div>
+					</div>
+				</a>
 				<p class="title" style="color: <?php echo $project['project_header_title_color']; ?>"><?php echo $project['project_header_title']; ?></p>
 				<p class="name" style="color: <?php echo $project['project_name_color']; ?>"><?php echo $project['post_title']; ?></p>
 				<div class="short-description" style="color: <?php echo $project['project_short_description_color']; ?>">
@@ -243,10 +248,9 @@ get_template_part('template-part', 'topnav');
 					</div>
 				</div>
 			<?php } ?>
-
 		<?php } ?>
 
-		<a href="#" class="move-section desk">
+		<a href="#" class="move-section desk" data-index="1">
 			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
@@ -260,7 +264,7 @@ get_template_part('template-part', 'topnav');
 	<section class="project-slider" style="background: <?php echo $project['project_slider_section_background_color'];?>;">
 		<div class="container">
 			<div class="row">
-				<div class="slider">
+				<div class="slider col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<?php foreach ($project['project_slider'] as $slid) { ?>
 						<div class="slide">
 							<img class="img-responsive" src="<?php echo esc_url($slid['url']); ?>">
@@ -269,11 +273,11 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-        <a href="#" class="move-section mob">
-            <div >
-                <div class="icono-arrow1-down"></div>
-            </div>
-        </a>
+<!--        <a href="#" class="move-section mob" data-index="2">-->
+<!--            <div >-->
+<!--                <div class="icono-arrow1-down"></div>-->
+<!--            </div>-->
+<!--        </a>-->
 	</section>
 <?php } ?>
 
@@ -288,7 +292,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="#" class="move-section desk">
+		<a href="#" class="move-section desk" data-index="2">
 			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
@@ -306,7 +310,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 		<a href="#">
-			<div class="move-section">
+			<div class="move-section" data-index="3">
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>

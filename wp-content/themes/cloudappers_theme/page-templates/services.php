@@ -59,6 +59,7 @@ get_template_part('template-part', 'topnav');
                     } else if ($col == 2) {
                         $colPos = 'col-lg-right col-md-right col-sm-right col-xs-right';
                     }
+                    $colPos = '';
                     ?>
                     <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 service-item <?php echo $colPos; ?>">
                         <a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
@@ -100,6 +101,7 @@ get_template_part('template-part', 'topnav');
                     } else if ($col == 2) {
                         $colPos = 'col-lg-right col-sm-right col-xs-right';
                     }
+                    $colPos = '';
                     ?>
                     <article
                             class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?>">

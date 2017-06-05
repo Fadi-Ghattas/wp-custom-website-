@@ -249,8 +249,10 @@ header, nav, header img {
     position: relative;
 }
 
-.logo-desk img {
+.logo-desk img ,
+.logo-desk embed {
     max-width: 100%;
+    /*width: 290px;*/
     height: auto;
     transition: 0.3s;
 }
@@ -1357,7 +1359,7 @@ section.services {
 
 section.services .service-item {
     margin-top: 68px;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
 }
 
 section.services .service-item.col-lg-left {
@@ -1475,7 +1477,7 @@ section.some-of-show-cases {
 }
 
 section.some-of-show-cases .show-case-item {
-    padding: 0 5px;
+    /*padding: 0 5px;*/
     position: relative;
     margin-bottom: 15px;
     /*height: 380px;*/
@@ -1551,6 +1553,11 @@ section.some-of-show-cases .overlay h6 {
 /*services end*/
 
 /*service details start*/
+
+.single-service #menu-item-478 a {
+    color: #ff5f19;
+    background: transparent;
+}
 
 .single-service section.some-of-show-cases .word-background {
     top: 16%;
@@ -1850,6 +1857,12 @@ section.all-the-team .grid {
 /*clients page end*/
 
 /*project details page start*/
+
+.single-project #menu-item-494 a {
+    color: #ff5f19;
+    background: transparent;
+}
+
 section.project-header {
     position: relative;
     overflow: hidden;
@@ -1875,7 +1888,7 @@ section.project-header .project-header-container .header-text {
     /*width: 100%;*/
     top: 72.0%;
     z-index: -1;
-    padding: 60px 0 54px 0px;
+    padding: 58px 0 54px 0px;
     margin-top: -16.7%;
 }
 
@@ -1883,12 +1896,15 @@ section.project-header .project-header-container .header-text .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    letter-spacing: 1.6px;
+    margin-bottom: 4px;
 }
 
 section.project-header .project-header-container .header-text .name {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 38px;
+    margin-bottom: 26px;
 }
 
 section.project-header .project-header-container .short-description p {
@@ -1896,6 +1912,7 @@ section.project-header .project-header-container .short-description p {
     font-weight: 300;
     font-size: 30px;
     line-height: 1.467;
+    letter-spacing: 1px;
 }
 
 section.project-info {
@@ -1919,25 +1936,29 @@ section.project-info .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    margin-top: 58px;
+    margin-top: 52px;
+    margin-bottom: 24px;
+    letter-spacing: 1.6px;
 }
 
-section.project-info .description {
+section.project-info .description,
+section.project-info .description p,
+section.project-info .description ul {
     color: #000000;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
 }
 
 section.project-info .info-item {
-    padding-left: 0;
-    padding-right: 0;
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
     padding-bottom: 66px;
 }
 
 section.project-info .project-info-row .info-item:nth-of-type(even) {
-    padding-left: 18px;
+    /*padding-left: 18px;*/
 }
 
 section.project-info .info-item.logo {
@@ -1974,19 +1995,33 @@ section.project-slider .slider .slick-dots li {
     margin: 0 -2px;
 }
 
+section.project-slider .slick-dots li button:before {
+    font-size: 7px;
+    color: #505d6d;
+}
+
+section.project-slider .slick-dots li {
+    width: 19px;
+}
+
+section.project-slider .slick-dots li.slick-active button:before {
+    color: #505d6d;
+}
 section.show-case-one,
 section.show-case-one-image {
     position: relative;
 }
 
 section.show-case-one .description-container {
-    padding: 76px 0px 111px 0px;
+    padding: 74px 0px 106px 0px;
 }
 
-section.show-case-one .description {
+section.show-case-one .description,
+section.show-case-one .description p,
+section.show-case-one .description ul {
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 29px;
     line-height: 1.414;
 }
 
@@ -2028,15 +2063,22 @@ section.show-case-two .title {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+    letter-spacing: 1.6px;
 }
 
-section.show-case-two .description {
+section.show-case-two .description,
+section.show-case-two .description p,
+section.show-case-two .description ul {
     color: #000000;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.875;
+}
+
+section.client-say {
+    padding-bottom: 103px;
 }
 
 section.client-say h1 {
@@ -2048,7 +2090,7 @@ section.client-say h1 {
     text-align: -moz-center;
     text-align: -webkit-center;
     margin-top: 86px;
-    margin-bottom: 92px;
+    margin-bottom: 96px;
 }
 
 section.client-say .say-blocks {
@@ -2058,15 +2100,20 @@ section.client-say .say-blocks {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 }
 
-section.client-say .say-block {
+section.client-say .say-block,
+section.client-say .say-block p,
+section.client-say .say-block ul {
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    font-weight: 300;
-    padding: 0;
+    font-weight: 400;
+    /*padding: 0;*/
+
+}
+
+section.client-say .say-block {
     margin-bottom: 20px;
 }
 
@@ -2076,16 +2123,6 @@ section.client-say .say-block p {
 
 section.client-say .say-block strong {
     font-size: 24px;
-    font-weight: 700;
-}
-
-section.client-say .say-block .signature p {
-    font-size: 11px;
-    font-weight: 700;
-}
-
-section.client-say .say-block .signature strong {
-    font-size: 14px;
     font-weight: 700;
 }
 
@@ -2103,6 +2140,31 @@ section.client-say .say-block:nth-of-type(even) p {
     text-align: left;
 }
 
+section.client-say .say-block .new-line {
+    height: 30px;
+}
+
+section.client-say .say-block .strong p {
+    line-height: 32px;
+}
+
+section.client-say .say-block .signature {
+    margin-top: 24px;
+}
+
+section.client-say .say-block .signature p {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+section.client-say .say-block .signature strong {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+section.client-say .say-block .signature .from {
+    line-height: 5px;
+}
 section.project-url {
     text-align: center;
     text-align: -moz-center;
@@ -2116,6 +2178,7 @@ section.project-url .title {
     font-weight: 700;
     margin-top: 80px;
     margin-bottom: 42px;
+    letter-spacing: 1.6px;
 }
 
 section.project-url .url-name {
@@ -2127,6 +2190,7 @@ section.project-url .url-name p {
     margin-bottom: 22px;
     font-size: 36px;
     font-weight: 700;
+    letter-spacing: 3.6px;
 }
 
 [class*="icono-arrow1"] {
@@ -2145,7 +2209,7 @@ section.project-url .url-name p {
     box-shadow: inset 0 0 0 32px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    width: 45px;
+    width: 40px;
     -webkit-transform-origin: right top;
     transform-origin: right top;
 }
@@ -2179,7 +2243,7 @@ section.project-url .url-name p {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    color: #666;
+    color: #273444;
     box-sizing: border-box;
 }
 
@@ -2195,13 +2259,13 @@ section.project-url .url-name p {
 }
 
 section.project-url .next-project-btn {
-    color: #3c566a;
+    color: #2f4750;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 14px !important;
     text-transform: uppercase;
     display: block;
-    padding: 30px 0px;
+    padding: 23px 0;
     margin-top: 56px;
     height: 100%;
     width: 100%;
@@ -2209,16 +2273,17 @@ section.project-url .next-project-btn {
     line-height: 20px;
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
+    letter-spacing: 1.4px;
 }
 
 .next-project-btn .icono-arrow1-left {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     color: #3c566a;
 }
 
 .next-project-btn .icono-arrow1-left:before {
-    width: 38px;
+    width: 37px;
 }
 
 .next-project-btn span {
@@ -2240,9 +2305,9 @@ section.project-url .next-project-btn {
 }
 
 .move-section .icono-arrow1-down {
-    width: 15px;
-    height: 15px;
-    color: #3c566a;
+    width: 12px;
+    height: 12px;
+    color: #395059;
 }
 
 .move-section .icono-arrow1-down:before {
@@ -2250,7 +2315,28 @@ section.project-url .next-project-btn {
     color: #3c566a;
 }
 
-/*project details page end*/
+.move-section.with-border {
+    /*top: 0;*/
+    left: 48%;
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*-moz-transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*-o-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    bottom: 282px;
+}
+
+.move-section.with-border > div {
+    border: 3px solid #ff5957;
+    height: 103px;
+    padding-top: 45px;
+    width: 65px;
+}
+
+.move-section.with-border .icono-arrow1-down:before {
+    width: 35px;
+}
+    /*project details page end*/
 
 /*About*/
 .page-template-about section.ca-page-header .title {
@@ -5036,6 +5122,10 @@ section.project-url .next-project-btn {
 
     .project-template-default .show-case-two .title {
         font-size: 4.2vw;
+    }
+
+    .move-section.with-border {
+        display: none;
     }
 
     #footer {

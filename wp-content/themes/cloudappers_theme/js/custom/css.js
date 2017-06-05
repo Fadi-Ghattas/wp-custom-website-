@@ -204,7 +204,7 @@ jQuery(function ($) {
             $isotope.isotope({filter: $(this).attr('data-type')});
             $isotope.on('layoutComplete', function (event, filteredItems) {
                 if (filtered) {
-                    ReLayout();
+                    //ReLayout();
                     filtered = false;
                 }
             });
@@ -284,6 +284,21 @@ jQuery(function ($) {
             jQuery(this).parents('.form-group').find('label').addClass('focus')
         })
     });
+
+    if ($('.single-project').length) {
+        $('.move-section').on('click', function (event) {
+            var next = (parseInt($(this).attr('data-index')) + 1);
+            var $nextElement = $('.move-section[data-index="' + next + '"]');
+            if ($nextElement.length) {
+                $('html, body').stop(true).animate({
+                    scrollTop: $('.move-section[data-index="' + next + '"]').offset().top - 65
+                }, 1000);
+                return false;
+            } else {
+                return false;
+            }
+        });
+    }
 
     //jQuery('.parallax-window').parallax({imageSrc: jQuery('.parallax-window').attr('data-image-src')});
 });
