@@ -82,11 +82,6 @@ figure {
     transform: translateY(0);
 }
 
-.main-wrapper {
-    margin-top: -300px;
-    background: white;
-}
-
 section.ca-page-header {
     /*min-height: 100vh;*/
     background-size: cover;
@@ -144,7 +139,7 @@ section.ca-page-header .sub-title {
     font-weight: 700;
     font-size: 90px;
     line-height: 108px;
-    text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
+    text-shadow: 0px 0px 19.74px rgba(131, 131, 131, 0.5);
     text-transform: uppercase;
     /*word-break: break-all;*/
 }
@@ -249,7 +244,7 @@ header, nav, header img {
     position: relative;
 }
 
-.logo-desk img ,
+.logo-desk img,
 .logo-desk embed {
     max-width: 100%;
     /*width: 290px;*/
@@ -1758,6 +1753,19 @@ ul.filters li a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
+    display: inline-block;
+}
+
+ul.filters li:first-child a {
+    height: 17px;
+}
+
+ul.filters li:nth-child(2) a {
+    height: 20px;
+}
+
+ul.filters li:last-child a {
+    height: 23px;
 }
 
 ul.filters li a:hover,
@@ -1766,7 +1774,9 @@ ul.filters li.active a {
 }
 
 ul.filters li a img.icon {
-    height: 23px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     display: inline-block;
     margin-right: 5px;
 }
@@ -1782,13 +1792,11 @@ ul.filters li a img.icon {
 }
 
 ul.filters li a img.icon-hover {
-    height: 23px;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     display: none;
     margin-right: 5px;
-}
-
-ul.filters li:last-child a img.icon-hover {
-    margin-right: 6px;
 }
 
 .all-the-team ul.filters li a img.icon-hover {
@@ -1994,6 +2002,7 @@ section.project-slider .slick-dots li {
 section.project-slider .slick-dots li.slick-active button:before {
     color: #505d6d;
 }
+
 section.show-case-one,
 section.show-case-one-image {
     position: relative;
@@ -2051,7 +2060,7 @@ section.show-case-two .title {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 26px;
-    letter-spacing: 1.6px;
+    letter-spacing: 0.8px;
 }
 
 section.show-case-two .description,
@@ -2152,6 +2161,7 @@ section.client-say .say-block .signature strong {
 section.client-say .say-block .signature .from {
     line-height: 5px;
 }
+
 section.project-url {
     text-align: center;
     text-align: -moz-center;
@@ -2325,7 +2335,8 @@ section.project-url .next-project-btn {
 .move-section.with-border .icono-arrow1-down:before {
     width: 35px;
 }
-    /*project details page end*/
+
+/*project details page end*/
 
 /*About*/
 .page-template-about section.ca-page-header .title {
@@ -2429,8 +2440,8 @@ section.project-url .next-project-btn {
     height: 175px;
     margin-top: -52px;
     padding-top: 22px !important;
-    margin-right: -30px;
-    margin-left: -30px;
+    /*margin-right: -30px;*/
+    /*margin-left: -30px;*/
     padding: 0 30px;
 }
 
@@ -2464,7 +2475,7 @@ section.project-url .next-project-btn {
 
 .page-template-about .history .slider-nav li a:hover span {
     color: rgb(103, 103, 103);
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .page-template-about .history .slider-nav li a span {
@@ -2483,7 +2494,7 @@ section.project-url .next-project-btn {
 
 .page-template-about .history .slider-nav li a:hover span {
     color: rgb(103, 103, 103);
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .page-template-about .history .slider-nav li.slick-current {
@@ -2504,7 +2515,7 @@ section.project-url .next-project-btn {
     line-height: 131px;
     display: inline-block;
     position: relative;
-    transition: height 0.5s, width 0.5s;
+    /*transition: height 0.5s, width 0.5s;*/
 
 }
 
@@ -3448,6 +3459,15 @@ section.project-url .next-project-btn {
         display: none;
     }
 
+    section.ca-page-header .container {
+        transform: translate(0, -50%);
+    }
+
+    .main-wrapper {
+        margin-top: -300px;
+        background: white;
+    }
+
     /*Header*/
     .navbar-nav > li {
         font-size: 14px;
@@ -3646,6 +3666,12 @@ section.project-url .next-project-btn {
 
     .img-prefooter img {
         float: right;
+    }
+
+    /*About*/
+    .page-template-about .history .slider-nav .slick-list {
+        margin-right: -30px;
+        margin-left: -30px;
     }
 
 }
@@ -4667,7 +4693,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-about section.ca-page-header .title,
-    .page-template-about section.ca-page-header .title {
+    .page-template-about section.ca-page-header .sub-title {
         line-height: 2;
     }
 
@@ -4690,6 +4716,10 @@ section.project-url .next-project-btn {
 
     .page-template-about .why .why-desc {
         padding: 0 15px;
+    }
+
+    .page-template-about section.ca-page-header .desc {
+        margin: 0 auto 0;
     }
 
     .green-card-hover,

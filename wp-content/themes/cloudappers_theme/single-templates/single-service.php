@@ -115,7 +115,7 @@ get_template_part('template-part', 'topnav');
 
 <?php $service_branding_header_image = (!empty($service['service_page_branding_background_image']['url']) ? esc_url($service['service_page_branding_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/service_page_branding_background_image.png')); ?>
 
-	<section class="branding parallax-window" data-parallax="scroll" data-image-src="<?php echo $service_branding_header_image; ?>">
+	<section data-z-index="0" class="branding parallax-window" data-parallax="scroll" data-image-src="<?php echo $service_branding_header_image; ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
