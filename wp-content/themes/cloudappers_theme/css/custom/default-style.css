@@ -3767,7 +3767,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-about .words {
-        padding: 100px 0 45px;
+        padding: 30px 0 45px;
         background: url(../../img/words-bg1.jpg), url(../../img/words-bg2-mob.png);
         background-repeat: no-repeat;
         background-size: 100% 40%, contain;
@@ -3963,6 +3963,7 @@ section.project-url .next-project-btn {
 
     .page-template-about .why {
         text-align: center;
+        padding-bottom: 30px;
     }
 
     .page-template-about .why img {
