@@ -295,6 +295,9 @@ jQuery(function ($) {
                 }, 1000);
                 return false;
             } else {
+                $('html, body').stop(true).animate({
+                    scrollTop: $('section.client-say').offset().top - 65
+                }, 1000);
                 return false;
             }
         });
