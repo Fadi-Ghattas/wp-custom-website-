@@ -2275,6 +2275,8 @@ section.project-url .next-project-btn {
 
 .next-project-btn span {
     margin-right: 24px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
 }
 
 .next-project-btn:hover span,
