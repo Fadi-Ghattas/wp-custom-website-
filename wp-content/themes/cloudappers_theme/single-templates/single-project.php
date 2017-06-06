@@ -377,7 +377,7 @@ get_template_part('template-part', 'topnav');
 					<h1 class="title" style="color: <?php echo $project['project_url_title_color']; ?>">
 						<?php echo $project['project_url_title']; ?>
 					</h1>
-					<a class="url-name" href="<?php echo esc_url($project['project_url']); ?>" style="color: <?php echo $project['project_url_name_color']; ?>">
+					<a class="url-name" target="_blank" href="<?php echo esc_url($project['project_url']); ?>" style="color: <?php echo $project['project_url_name_color']; ?>">
 						<p><?php echo $project['project_url_name']; ?></p>
 						<div class="icono-arrow1-left-up"></div>
 					</a>
