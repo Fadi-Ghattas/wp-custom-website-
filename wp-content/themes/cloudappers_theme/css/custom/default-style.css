@@ -3878,6 +3878,10 @@ section.project-url .next-project-btn {
         margin: 0 auto;
     }
 
+    .page-template-about .words .slick-dots li{
+        display: inline-block;
+    }
+
 
     .prefooter {
         text-align: center;
