@@ -2338,7 +2338,7 @@ section.project-url .next-project-btn {
     background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
     -webkit-background-size: 3px 100%;
-    -moz-background-size: 20px 100%;
+    -moz-background-size: 3px 100%;
     background-size: 3px 100%;
     background-image: -webkit-linear-gradient(top, #f0971a 0%, #ff5957 100%), -webkit-linear-gradient(top, #f0971a 0%, #ff5957 100%);
     background-image: -moz-linear-gradient(top, #f0971a 0%, #ff5957 100%), -moz-linear-gradient(top, #f0971a 0%, #ff5957 100%);
