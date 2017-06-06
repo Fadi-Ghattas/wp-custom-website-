@@ -3861,6 +3861,24 @@ section.project-url .next-project-btn {
         max-width: 100%;
     }
 
+    .page-template-about .words .slick-dots {
+        width: 100%;
+    }
+
+    .page-template-about .words .slide,
+    .page-template-about .words .slide * {
+        text-align: center;
+    }
+
+    .page-template-about .words p:after {
+        margin: 23px auto 0;
+    }
+
+    .page-template-about .words .slick-dots li {
+        margin: 0 auto;
+    }
+
+
     .prefooter {
         text-align: center;
     }
@@ -4704,22 +4722,6 @@ section.project-url .next-project-btn {
         line-height: 2;
     }
 
-    .page-template-about .words .slide,
-    .page-template-about .words .slide * {
-        text-align: center;
-    }
-
-    .page-template-about .words p:after {
-        margin: 23px auto 0;
-    }
-
-    .page-template-about .words .slick-dots {
-        width: 100%;
-    }
-
-    .page-template-about .words .slick-dots li {
-        margin: 0 auto;
-    }
 
     .page-template-about .why .why-desc {
         padding: 0 15px;
