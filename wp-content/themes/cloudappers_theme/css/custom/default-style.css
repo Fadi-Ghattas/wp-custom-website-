@@ -3769,7 +3769,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-about .words {
-        padding: 100px 0 45px;
+        padding: 30px 0 45px;
         background: url(../../img/words-bg1.jpg), url(../../img/words-bg2-mob.png);
         background-repeat: no-repeat;
         background-size: 100% 40%, contain;
@@ -3860,6 +3860,28 @@ section.project-url .next-project-btn {
     .page-template-contact-us .contact .form .container-fluid {
         max-width: 100%;
     }
+
+    .page-template-about .words .slick-dots {
+        width: 100%;
+    }
+
+    .page-template-about .words .slide,
+    .page-template-about .words .slide * {
+        text-align: center;
+    }
+
+    .page-template-about .words p:after {
+        margin: 23px auto 0;
+    }
+
+    .page-template-about .words .slick-dots li {
+        margin: 0 auto;
+    }
+
+    .page-template-about .words .slick-dots li{
+        display: inline-block;
+    }
+
 
     .prefooter {
         text-align: center;
@@ -3965,6 +3987,7 @@ section.project-url .next-project-btn {
 
     .page-template-about .why {
         text-align: center;
+        padding-bottom: 30px;
     }
 
     .page-template-about .why img {
@@ -4703,22 +4726,6 @@ section.project-url .next-project-btn {
         line-height: 2;
     }
 
-    .page-template-about .words .slide,
-    .page-template-about .words .slide * {
-        text-align: center;
-    }
-
-    .page-template-about .words p:after {
-        margin: 23px auto 0;
-    }
-
-    .page-template-about .words .slick-dots {
-        width: 100%;
-    }
-
-    .page-template-about .words .slick-dots li {
-        margin: 0 auto;
-    }
 
     .page-template-about .why .why-desc {
         padding: 0 15px;
