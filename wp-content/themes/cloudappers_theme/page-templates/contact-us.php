@@ -139,7 +139,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                                 </div>
                                 <div class="form-group place-lbl">
                                     <label for="name">Phone</label>
-                                    <input type="number" class="form-control" id="phone" name="phone">
+                                    <input type="text" class="form-control" id="phone" name="phone">
                                 </div>
                                 <div class="form-group note">
                                     <label for="note">What we need to know?</label>
