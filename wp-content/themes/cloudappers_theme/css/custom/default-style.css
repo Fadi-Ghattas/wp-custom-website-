@@ -1304,7 +1304,7 @@ body.home.blog.modal-open {
     margin-top: -28px;
     margin-right: 10px;
     transition: all 0.25s ease-in-out;
-    transform-origin: 13px 31px;
+    transform-origin: 16px 42px;
     transform: rotateZ(0deg);
     /* background: rebeccapurple; */
 }
@@ -3015,7 +3015,7 @@ section.project-url .next-project-btn {
     color: rgb(254, 254, 254);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.727;
+    line-height: 38px;
     text-align: center;
     letter-spacing: 2.2px;
 }
@@ -3035,7 +3035,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .join {
-    padding-top: 68px;
+    padding-top: 78px;
     padding-bottom: 37px;
     border-bottom: 1px solid #f6f4f4;
 }
@@ -3051,7 +3051,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .join .table-title {
-    margin-top: 90px;
+    margin-top: 59px;
 
 }
 
@@ -3116,12 +3116,15 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .join .apply {
+    margin-top: 5px;
+}
+
+.page-template-contact-us .join .apply a {
     font-size: 14px;
     color: rgb(243, 252, 254);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 2.714;
-    margin-top: 5px;
+    line-height: 47px;
 }
 
 .page-template-contact-us .contact {
@@ -3186,6 +3189,9 @@ section.project-url .next-project-btn {
     font-weight: 400;
     margin-bottom: 0;
 }
+.page-template-contact-us .contact label.focus{
+    font-size: 16px;
+}
 
 .page-template-contact-us .contact .form input {
     border: none;
@@ -3204,7 +3210,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .contact .form {
-    padding-left: 70px;
+    padding-left: 34px;
 }
 
 .page-template-contact-us .contact .form h6 {
@@ -3893,10 +3899,9 @@ section.project-url .next-project-btn {
         margin: 0 auto;
     }
 
-    .page-template-about .words .slick-dots li{
+    .page-template-about .words .slick-dots li {
         display: inline-block;
     }
-
 
     .prefooter {
         text-align: center;
@@ -4182,7 +4187,6 @@ section.project-url .next-project-btn {
 
 @media (min-width: 767px) {
 
-
     /*cards hover effect start*/
     .green-card-hover,
     .red-card-hover,
@@ -4255,8 +4259,6 @@ section.project-url .next-project-btn {
         transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
         backface-visibility: hidden;
     }
-
-
 
     .green-card-hover:hover .bg-rotate:after,
     .red-card-hover:hover .bg-rotate:after,
@@ -4740,7 +4742,6 @@ section.project-url .next-project-btn {
     .page-template-about section.ca-page-header .sub-title {
         line-height: 2;
     }
-
 
     .page-template-about .why .why-desc {
         padding: 0 15px;
