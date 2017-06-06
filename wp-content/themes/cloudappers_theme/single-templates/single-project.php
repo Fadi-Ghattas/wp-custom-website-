@@ -384,7 +384,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="<?php echo get_permalink($nextProject['id']); ?>" class="next-project-btn">
+		<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn">
 			<span>NEXT PROJECT</span>
 			<div class="icono-arrow1-left"></div>
 		</a>
