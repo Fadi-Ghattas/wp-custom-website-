@@ -2285,6 +2285,8 @@ section.project-url .next-project-btn {
 
 .next-project-btn span {
     margin-right: 24px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
 }
 
 .next-project-btn:hover span,
@@ -4142,6 +4144,8 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 767px) {
+
+
     /*cards hover effect start*/
     .green-card-hover,
     .red-card-hover,
@@ -4169,6 +4173,12 @@ section.project-url .next-project-btn {
         background-image: -moz-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
         background-image: -webkit-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
         background-image: -ms-linear-gradient(90deg, rgb(235, 192, 253) 0%, rgb(217, 222, 216) 100%);
+    }
+
+    .green-card-hover:hover figure img,
+    .red-card-hover:hover figure img,
+    .purple-card-hover:hover figure img {
+        opacity: 0.08;
     }
 
     .green-card-hover .overlay,
@@ -4209,11 +4219,7 @@ section.project-url .next-project-btn {
         backface-visibility: hidden;
     }
 
-    .green-card-hover:hover figure img,
-    .red-card-hover:hover figure img,
-    .purple-card-hover:hover figure img {
-        opacity: 0.08;
-    }
+
 
     .green-card-hover:hover .bg-rotate:after,
     .red-card-hover:hover .bg-rotate:after,
@@ -4304,6 +4310,8 @@ section.project-url .next-project-btn {
             -webkit-transform: rotate(180deg);
         }
     }
+
+
 
     /*cards hover effect end*/
     /*cards zoom effect end*/
