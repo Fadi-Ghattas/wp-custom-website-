@@ -308,8 +308,8 @@ header, nav, header img {
     font-weight: 600;
     position: absolute;
     top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    transform: translate(0, -50%);
     text-transform: uppercase;
     text-shadow: 0px 0px 84px rgba(0, 0, 0, 0.1);
     color: #ffffff;
@@ -1352,6 +1352,10 @@ section.services {
     padding-bottom: 62px;
 }
 
+section.services .row:not(:last-child) {
+    margin-bottom: 35px;
+}
+
 section.services .service-item {
     margin-top: 68px;
     /*padding: 0 10px;*/
@@ -1385,18 +1389,19 @@ section.services .service-item a:hover {
 }
 
 section.services .service-item .icon {
-    height: 54px;
+    height: 52px;
     margin-bottom: 17px;
+    margin-left: -4px;
 }
 
 section.services .service-item .description {
-    min-height: 160px;
+    min-height: 158px;
     /*max-height: 160px;*/
 }
 
 section.services .service-item .description,
 section.services .service-item p {
-    color: #5d5f74;
+    color: #6f6c6c;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1411,13 +1416,17 @@ section.services .service-item .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 26px;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
     margin-top: 0;
 }
 
 section.services .service-item .more {
     width: 39px;
     height: 18px;
+}
+
+section.services .service-item .more:hover {
+    opacity: 0.8;
 }
 
 a.btn-view-all-show-cases.c-btn {
