@@ -2473,7 +2473,7 @@ section.project-url .next-project-btn {
 
 .page-template-about .history .slider-nav li a:hover span {
     color: rgb(103, 103, 103);
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .page-template-about .history .slider-nav li a span {
@@ -2492,7 +2492,7 @@ section.project-url .next-project-btn {
 
 .page-template-about .history .slider-nav li a:hover span {
     color: rgb(103, 103, 103);
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .page-template-about .history .slider-nav li.slick-current {
@@ -2513,7 +2513,7 @@ section.project-url .next-project-btn {
     line-height: 131px;
     display: inline-block;
     position: relative;
-    transition: height 0.5s, width 0.5s;
+    /*transition: height 0.5s, width 0.5s;*/
 
 }
 
