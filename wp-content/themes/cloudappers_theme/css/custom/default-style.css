@@ -75,7 +75,7 @@ figure {
 
 .form-group label {
     transform: translateY(23px);
-    transition: transform 0.3s linear;
+    transition: transform 0.3s ease-out;
 }
 
 .form-group label.focus {
@@ -476,23 +476,8 @@ header, nav, header img {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
-
-.clients .item:hover img {
-    -webkit-transform: scale(1.10);
-    -moz-transform: scale(1.10);
-    -o-transform: scale(1.10);
-    transform: scale(1.10);
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
-    -webkit-filter: none;
-    filter: none;
 }
 
 .view-all {
@@ -4187,6 +4172,7 @@ section.project-url .next-project-btn {
         padding-top: 50px;
     }
 
+
 }
 
 @media (min-width: 767px) {
@@ -4389,6 +4375,21 @@ section.project-url .next-project-btn {
     }
 
     /*cards zoom effect end*/
+
+
+    .clients .item:hover img {
+        -webkit-transform: scale(1.10);
+        -moz-transform: scale(1.10);
+        -o-transform: scale(1.10);
+        transform: scale(1.10);
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        -webkit-filter: none;
+        filter: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -4875,7 +4876,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-projects ul.filters li.active {
-        border-bottom: 1.3333333333333333vw solid #ff6420;
+        /*border-bottom: 1.3333333333333333vw solid #ff6420;*/
     }
 
     .page-template-projects ul.filters li.active:after {
@@ -5182,6 +5183,12 @@ section.project-url .next-project-btn {
 
     .move-section.with-border {
         display: none;
+    }
+
+    /*clients*/
+    .clients .item img {
+        -webkit-filter: none;
+        filter: none;
     }
 
     #footer {
