@@ -47,8 +47,8 @@ get_template_part('template-part', 'topnav');
                     <div class="filters-back">
                         <div class="filters-container">
                             <ul class="filters">
-                                <li class="active">
-                                    <a href="" data-type=".all">
+                                <li class="active"  onclick="">
+                                    <a href="" data-type=".all"  onclick="">
                                         <img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.png'); ?>">
                                         <img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.hover.png'); ?>">
                                         ALL
@@ -88,8 +88,7 @@ get_template_part('template-part', 'topnav');
                         }
                         $colPos = '';
                         ?>
-                        <article
-                                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect all <?php echo $colPos; ?> <?php echo str_replace(' ', '_', strtolower($project['project_type'][0]['post_title'])); ?>"
+                        <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect all <?php echo $colPos; ?> <?php echo str_replace(' ', '_', strtolower($project['project_type'][0]['post_title'])); ?>"
                                 data-type="<?php echo str_replace(' ', '_', strtolower($project['project_type'][0]['post_title'])); ?>">
                             <section class="<?php echo $hover[$col]; ?>">
                                 <figure>
