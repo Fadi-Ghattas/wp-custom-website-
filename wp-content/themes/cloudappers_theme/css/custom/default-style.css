@@ -1254,9 +1254,13 @@ body.home.blog.modal-open {
 
 #JobModal button {
     border: 1px solid black;
-    height: 72px;
+
     font-size: 16px;
     font-weight: 700;
+}
+
+#JobModal button.submit-btn{
+    height: 72px;
 }
 
 #JobModal #JobCaptcha {
@@ -4200,6 +4204,11 @@ section.project-url .next-project-btn {
 
     section.some-of-show-cases h1 {
         margin-top: 40px;
+    }
+
+    /*Contact*/
+    form#GetInTouchForm button.c-btn {
+        box-shadow: none;
     }
 
 }
