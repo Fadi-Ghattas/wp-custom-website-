@@ -250,16 +250,13 @@ jQuery(function ($) {
             }
         });
 
-        var filtered = false;
-        $('ul.filters li a').on('click focus hover touchmove', function (e) {
-            e.preventDefault();
-            $('ul.filters li a').each(function (index) {
-                $(this).removeClass('active');
-            });
+        // var filtered = false;
+        $('ul.filters li').on('click focus hover touchmove', function (e) {
+            $('ul.filters li').removeClass('active');
             $(this).addClass('active');
-            filtered = true;
-            console.log($(this).attr('data-type'));
-            $isotope.isotope({filter: $(this).attr('data-type')});
+            // filtered = true;
+            // console.log($(this).children('a').attr('data-type'));
+            $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
     }
 
