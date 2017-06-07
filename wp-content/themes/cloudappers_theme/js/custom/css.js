@@ -192,22 +192,26 @@ jQuery(function ($) {
             }
         });
 
+        // filtered = true;
 
-        var filtered = false;
-        $('ul.filters li a').on('click', function (e) {
-            e.preventDefault();
-            $('ul.filters li a').each(function (index) {
-                $(this).parent().removeClass('active');
-            });
-            $(this).parent().addClass('active');
-            filtered = true;
-            $isotope.isotope({filter: $(this).attr('data-type')});
-            $isotope.on('layoutComplete', function (event, filteredItems) {
-                if (filtered) {
-                    //ReLayout();
-                    filtered = false;
-                }
-            });
+        // $isotope.on('layoutComplete', function (event, filteredItems) {
+        //     if (filtered) {
+        //         //ReLayout();
+        //         filtered = false;
+        //     }
+        // });
+
+        //var filtered = false;
+
+        $('ul.filters li').on('click', function (e) {
+
+            $('ul.filters li').removeClass('active');
+            $(this).addClass('active');
+            var activeType = $(this).children('a').attr('data-type')
+            $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+
+            return false;
+
         });
 
         function ReLayout() {
