@@ -77,6 +77,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                         </p>
                     </div>
                     <div class="desc col-lg-5 col-md-5 col-sm-6">
+                        <h5 class="hidden-lg hidden-md hidden-sm">DESCRIPTION</h5>
                         <p> <?php echo strip_tags($job['job_description']); ?>
                             <span><?php echo strip_tags($job['job_type'][0]['post_title']); ?></span>
                         </p>
@@ -100,15 +101,15 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
             <div class="address">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-xs-12">
                             <h6><?php echo $setting['settings_address_title']; ?></h6>
                             <div class="details">
                                 <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                                <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
+                                <p class="mobile"><?php echo $setting['settings_mobile_number']; ?></p>
                                 <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-xs-12">
                             <!-- <a class="c-rbtn" href="-->
                             <?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
                             <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
