@@ -3752,6 +3752,7 @@ section.project-url .next-project-btn {
 
     .home .contact > div {
         width: 100%;
+        height: auto;
     }
 
     .home .contact .form [class*="col-"] {
