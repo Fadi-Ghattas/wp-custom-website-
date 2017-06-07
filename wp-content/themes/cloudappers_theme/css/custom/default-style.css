@@ -4404,6 +4404,10 @@ section.project-url .next-project-btn {
         display: none;
     }
 
+    section.ca-page-header .container .row .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+        padding: 0;
+    }
+
     /*Menu*/
     .logo-mob,
     .navbar-inverse .navbar-toggle {
@@ -4930,6 +4934,10 @@ section.project-url .next-project-btn {
         margin-bottom: 6.4vw;
     }
 
+    section.some-of-show-cases .show-case-item {
+        padding: 0px 10px;
+    }
+
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-left,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-center,
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-right {
@@ -4943,8 +4951,8 @@ section.project-url .next-project-btn {
     .page-template-projects .purple-card-hover figure img,
     .page-template-projects .zoom-effect section,
     .page-template-projects section.some-of-show-cases .show-case-item figure {
-        width: 96vw;
-        height: 96vw;
+        width: 100%;
+        height: 100%;
     }
 
     section.some-of-show-cases .show-case-item .desk {
