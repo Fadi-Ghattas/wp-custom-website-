@@ -214,16 +214,6 @@ jQuery(function ($) {
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
 
-        $('ul.filters li a').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
-            event.preventDefault();
-            $('ul.filters li').removeClass('active');
-            $(this).parent().addClass('active');
-            // filtered = true;
-            // console.log($(this).children('a').attr('data-type'));
-            $isotope.isotope({filter: $(this).attr('data-type')});
-        });
-
         function ReLayout() {
             var col = 0;
             var defaultCol = 'col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect ';
