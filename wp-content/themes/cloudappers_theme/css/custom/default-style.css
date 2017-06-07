@@ -2402,8 +2402,8 @@ section.project-url .next-project-btn {
     background-image: -ms-linear-gradient(-30deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
     font-size: 18px;
     line-height: 1.667;
-    padding-top: 143px;
-    padding-bottom: 88px;
+    padding-top: 73px;
+    padding-bottom: 144px;
     margin-bottom: 0;
 }
 
@@ -2701,7 +2701,7 @@ section.project-url .next-project-btn {
     background: -moz-linear-gradient(0deg, rgb(247, 140, 160) 0%, rgb(249, 116, 143) 19%, rgb(253, 134, 140) 60%, rgb(254, 154, 139) 100%), url(../../img/words-bg2.png);
     background-repeat: no-repeat;
     background-size: 47.5% 100%, contain;
-    background-position: left center, calc(50% + 10px) center;
+    background-position: left center, calc(50% + 30px) center;
 }
 
 .page-template-about .words .left-sec {
@@ -2802,6 +2802,7 @@ section.project-url .next-project-btn {
 .page-template-about .words .slick-dots li button:before {
     opacity: 1;
     color: #ebebeb;
+    font-size: 7px;
 }
 
 .page-template-about .words .slick-dots li {
