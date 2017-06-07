@@ -258,6 +258,14 @@ jQuery(function ($) {
             // console.log($(this).children('a').attr('data-type'));
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
+
+        $('ul.filters li a').on('click focus hover touchmove', function (e) {
+            $('ul.filters li').removeClass('active');
+            $(this).parent().addClass('active');
+            // filtered = true;
+            // console.log($(this).children('a').attr('data-type'));
+            $isotope.isotope({filter: $(this).attr('data-type')});
+        });
     }
 
     if ($('.single-project').length) {
