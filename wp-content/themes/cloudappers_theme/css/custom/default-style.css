@@ -4877,8 +4877,8 @@ section.project-url .next-project-btn {
 
     .page-template-projects ul.filters li {
         padding: 0;
-        padding-top: 6.133333333333334vw;
-        padding-bottom: 6.933333333333334vw;
+        /*padding-top: 6.133333333333334vw;*/
+        /*padding-bottom: 6.933333333333334vw;*/
     }
 
     .page-template-projects ul.filters li.active {
