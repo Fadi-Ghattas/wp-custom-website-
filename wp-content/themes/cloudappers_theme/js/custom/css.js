@@ -251,7 +251,7 @@ jQuery(function ($) {
         });
 
         // var filtered = false;
-        $('ul.filters li').on('click focus hover touchmove ontouchstart', function (e) {
+        $('ul.filters li').on('click focus hover active touchmove ontouchstart', function (e) {
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
             // filtered = true;
@@ -259,7 +259,7 @@ jQuery(function ($) {
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
 
-        $('ul.filters li a').on('click focus hover touchmove ontouchstart', function (e) {
+        $('ul.filters li a').on('click focus hover active touchmove ontouchstart', function (e) {
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
             // filtered = true;
