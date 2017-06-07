@@ -3744,9 +3744,9 @@ section.project-url .next-project-btn {
     /*Home*/
     .home .contact {
         display: -webkit-flex;
-        -webkit-flex-direction: row-reverse;
+        -webkit-flex-direction: column-reverse;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
