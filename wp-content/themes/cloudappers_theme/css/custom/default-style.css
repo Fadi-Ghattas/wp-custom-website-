@@ -1245,6 +1245,7 @@ body.home.blog.modal-open {
 #JobModal .form-message {
     width: 100% !important;
     max-width: 100% !important;
+    margin-top: 20px;
     flex: none !important;
     text-align: -webkit-center !important;
     text-align: -moz-center !important;
