@@ -203,15 +203,21 @@ jQuery(function ($) {
 
         //var filtered = false;
 
-        $('ul.filters li').on('click', function (e) {
-
+        // var filtered = false;
+        $('ul.filters li').on('click focus hover active touchmove ontouchstart', function (e) {
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
-            var activeType = $(this).children('a').attr('data-type')
+            // filtered = true;
+            // console.log($(this).children('a').attr('data-type'));
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+        });
 
-            return false;
-
+        $('ul.filters li a').on('click focus hover active touchmove ontouchstart', function (e) {
+            $('ul.filters li').removeClass('active');
+            $(this).parent().addClass('active');
+            // filtered = true;
+            // console.log($(this).children('a').attr('data-type'));
+            $isotope.isotope({filter: $(this).attr('data-type')});
         });
 
         function ReLayout() {
