@@ -194,7 +194,7 @@ jQuery(function ($) {
 
 
         //var filtered = false;
-        $('ul.filters li a').on('click', function (e) {
+        $('ul.filters li a').on('click  touchmove', function (e) {
 
 
             $isotope.isotope({filter: $(this).attr('data-type')});
