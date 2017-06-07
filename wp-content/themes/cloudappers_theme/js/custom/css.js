@@ -193,12 +193,12 @@ jQuery(function ($) {
         });
 
         //var filtered = false;
-        $('ul.filters li').on('click', function (e) {
+        $('ul.filters li a').on('click', function (e) {
 
-            $('ul.filters li').each(function (index) {
-                $(this).removeClass('active');
+            $('ul.filters li a').each(function (index) {
+                $(this).parent().removeClass('active');
             });
-            $(this).addClass('active');
+            $(this).parent().addClass('active');
             // filtered = true;
 
             // $isotope.on('layoutComplete', function (event, filteredItems) {
