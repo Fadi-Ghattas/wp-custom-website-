@@ -195,13 +195,16 @@ jQuery(function ($) {
 
         //var filtered = false;
         $('ul.filters li a').on('click', function (e) {
-            // e.preventDefault();
+
+
+            $isotope.isotope({filter: $(this).attr('data-type')});
+
             $('ul.filters li a').each(function (index) {
                 $(this).parent().removeClass('active');
             });
             $(this).parent().addClass('active');
             // filtered = true;
-            $isotope.isotope({filter: $(this).attr('data-type')});
+
             // $isotope.on('layoutComplete', function (event, filteredItems) {
             //     if (filtered) {
             //         //ReLayout();
