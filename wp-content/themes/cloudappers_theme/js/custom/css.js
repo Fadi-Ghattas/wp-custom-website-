@@ -204,15 +204,16 @@ jQuery(function ($) {
         //var filtered = false;
         $('ul.filters li').on('click', function (e) {
 
-            var $elemet = $(this)
-            setTimeout(function () {
-                console.log(111111);
-                $('ul.filters li').removeClass('active');
-                $elemet.addClass('active');
-                $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+            var $element = $(this);
+            $('ul.filters li').removeClass('active');
 
-            }, 100);
+            setTimeout(function () {
+                $element.addClass('active');
+                $isotope.isotope({filter: $element.children('a').attr('data-type')});
+            }, 1000);
+
             return false;
+
         });
 
         function ReLayout() {
