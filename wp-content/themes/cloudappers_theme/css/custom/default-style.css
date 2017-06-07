@@ -1299,12 +1299,11 @@ body.home.blog.modal-open {
     color: rgb(94, 94, 94);
     opacity: 1;
     font-weight: 200;
-    margin-top: -28px;
+    /*margin-top: -28px;*/
     margin-right: 10px;
     transition: all 0.25s ease-in-out;
-    transform-origin: 16px 42px;
-    transform: rotateZ(0deg);
-    /* background: rebeccapurple; */
+    /*transform-origin: 16px 42px;*/
+    /*transform: rotateZ(0deg);*/
 }
 
 #JobModal label span {
@@ -1316,7 +1315,7 @@ label[for="expected_salary"] {
 }
 
 #JobModal .close:hover {
-    transform: rotateZ(360deg);
+    /*transform: rotateZ(360deg);*/
     opacity: 0.8;
     color: #ff601b;
 }
