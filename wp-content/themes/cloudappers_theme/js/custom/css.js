@@ -193,21 +193,21 @@ jQuery(function ($) {
         });
 
 
-        var filtered = false;
+        //var filtered = false;
         $('ul.filters li a').on('click', function (e) {
             e.preventDefault();
             $('ul.filters li a').each(function (index) {
                 $(this).parent().removeClass('active');
             });
             $(this).parent().addClass('active');
-            filtered = true;
+            // filtered = true;
             $isotope.isotope({filter: $(this).attr('data-type')});
-            $isotope.on('layoutComplete', function (event, filteredItems) {
-                if (filtered) {
-                    //ReLayout();
-                    filtered = false;
-                }
-            });
+            // $isotope.on('layoutComplete', function (event, filteredItems) {
+            //     if (filtered) {
+            //         //ReLayout();
+            //         filtered = false;
+            //     }
+            // });
         });
 
         function ReLayout() {
