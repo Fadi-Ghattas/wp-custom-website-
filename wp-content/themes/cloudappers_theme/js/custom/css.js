@@ -204,9 +204,14 @@ jQuery(function ($) {
         //var filtered = false;
         $('ul.filters li').on('click', function (e) {
 
-            $('ul.filters li').removeClass('active');
-            $(this).addClass('active');
-            $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+            var $elemet = $(this)
+            setTimeout(function () {
+                console.log(111111);
+                $('ul.filters li').removeClass('active');
+                $elemet.addClass('active');
+                $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+
+            }, 100);
             return false;
         });
 
