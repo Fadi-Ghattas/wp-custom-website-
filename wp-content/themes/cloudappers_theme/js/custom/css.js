@@ -206,25 +206,18 @@ jQuery(function ($) {
 
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
+            var activeType = $(this).children('a').attr('data-type')
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
-            return false;
 
-        });
+            $('ul.filters li').each(function (index)
+            {
+                if($(this).hasClass('active') && $(this).children('a').attr('data-type') != activeType) {
+                    $('ul.filters li').removeClass('active');
+                    $('a[data-type="'+activeType+'"]').parent().addClass('active');
+                    $isotope.isotope({filter: activeType});
+                }
+            });
 
-        $('ul.filters li a').on('click', function (e) {
-
-            $('ul.filters li a').parent().removeClass('active');
-            $(this).parent().addClass('active');
-            $isotope.isotope({filter: $(this).attr('data-type')});
-            return false;
-
-        });
-
-        $('ul.filters li a .icon').on('click', function (e) {
-
-            $('ul.filters li a').parent().removeClass('active');
-            $(this).parent().parent().addClass('active');
-            $isotope.isotope({filter: $(this).parent().attr('data-type')});
             return false;
 
         });
