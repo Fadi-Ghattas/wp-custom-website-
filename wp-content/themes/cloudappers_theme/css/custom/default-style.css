@@ -4879,7 +4879,6 @@ section.project-url .next-project-btn {
         padding: 0;
         padding-top: 6.133333333333334vw;
         padding-bottom: 6.933333333333334vw;
-        z-index: 100;
     }
 
     .page-template-projects ul.filters li.active {
@@ -4930,6 +4929,7 @@ section.project-url .next-project-btn {
     .page-template-projects ul.filters li a img.icon,
     .page-template-projects ul.filters li a img.icon-hover {
         height: 5.333333333333333vw;
+        z-index: -1;
     }
 
     section.all-projects .grid {

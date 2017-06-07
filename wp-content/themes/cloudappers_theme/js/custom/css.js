@@ -202,21 +202,13 @@ jQuery(function ($) {
         // });
 
         //var filtered = false;
+
         $('ul.filters li').on('click', function (e) {
 
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
             var activeType = $(this).children('a').attr('data-type')
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
-
-            $('ul.filters li').each(function (index)
-            {
-                if($(this).hasClass('active') && $(this).children('a').attr('data-type') != activeType) {
-                    $('ul.filters li').removeClass('active');
-                    $('a[data-type="'+activeType+'"]').parent().addClass('active');
-                    $isotope.isotope({filter: activeType});
-                }
-            });
 
             return false;
 
