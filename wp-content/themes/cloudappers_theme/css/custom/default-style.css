@@ -1259,7 +1259,7 @@ body.home.blog.modal-open {
     font-weight: 700;
 }
 
-#JobModal button.submit-btn{
+#JobModal button.submit-btn {
     height: 72px;
 }
 
@@ -3755,6 +3755,10 @@ section.project-url .next-project-btn {
         height: auto;
     }
 
+    .page-template-contact-us .contact > div {
+        height: auto;
+    }
+
     .home .contact .form [class*="col-"] {
         display: block;
     }
@@ -5410,6 +5414,7 @@ section.project-url .next-project-btn {
     .single-project .project-info .title {
         font-size: 5vw;
     }
+
     /*project details end*/
 }
 
