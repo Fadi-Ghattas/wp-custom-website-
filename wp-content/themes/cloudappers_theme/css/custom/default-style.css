@@ -4879,6 +4879,7 @@ section.project-url .next-project-btn {
         padding: 0;
         padding-top: 6.133333333333334vw;
         padding-bottom: 6.933333333333334vw;
+        z-index: 100;
     }
 
     .page-template-projects ul.filters li.active {
@@ -4924,7 +4925,6 @@ section.project-url .next-project-btn {
     .page-template-projects ul.filters li a {
         font-size: 4.533333333333333vw;
         height: 100%;
-        padding-bottom: 10px;
     }
 
     .page-template-projects ul.filters li a img.icon,
