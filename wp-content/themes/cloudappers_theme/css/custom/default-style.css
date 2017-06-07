@@ -1243,12 +1243,12 @@ body.home.blog.modal-open {
 }
 
 #JobModal .form-message {
-    width: 100%;
-    max-width: 100%;
-    flex: none;
-    text-align: -webkit-center;
-    text-align: -moz-center;
-    text-align: center;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    text-align: -webkit-center !important;
+    text-align: -moz-center !important;
+    text-align: center !important;
 }
 
 #JobModal button {
