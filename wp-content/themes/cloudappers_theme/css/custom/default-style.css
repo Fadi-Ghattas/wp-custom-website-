@@ -1749,6 +1749,7 @@ ul.filters li a {
     letter-spacing: 3px;
     display: inline-block;
     cursor: pointer;
+    z-index: 10;
 }
 
 ul.filters li:first-child a {

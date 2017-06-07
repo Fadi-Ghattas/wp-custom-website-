@@ -204,22 +204,24 @@ jQuery(function ($) {
         //var filtered = false;
 
         // var filtered = false;
-        $('ul.filters li').on('click focus hover active touchmove ontouchstart', function (e) {
+        $('ul.filters li').on('click focus hover active touchmove ontouchstart mousedown mouseup touchstart touchend', function (event) {
+            event.stopPropagation();
+            event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
             // filtered = true;
             // console.log($(this).children('a').attr('data-type'));
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
-            return false;
         });
 
-        $('ul.filters li a').on('click focus hover active touchmove ontouchstart', function (e) {
+        $('ul.filters li a').on('click focus hover active touchmove ontouchstart mousedown mouseup touchstart touchend', function (event) {
+            event.stopPropagation();
+            event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
             // filtered = true;
             // console.log($(this).children('a').attr('data-type'));
             $isotope.isotope({filter: $(this).attr('data-type')});
-            return false;
         });
 
         function ReLayout() {
