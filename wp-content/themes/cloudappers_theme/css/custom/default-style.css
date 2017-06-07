@@ -4406,6 +4406,7 @@ section.project-url .next-project-btn {
 
     section.ca-page-header .container .row .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
         padding: 0;
+        margin-top: 5vh;
     }
 
     /*Menu*/
@@ -5357,6 +5358,10 @@ section.project-url .next-project-btn {
     /*.container{background: orange; z-index: 5}*/
     section.ca-page-banner .vertical-line {
         height: 32px;
+    }
+    section.ca-page-header .sub-title {
+        font-size: 35px;
+        line-height: 58px;
     }
 }
 
