@@ -4885,17 +4885,17 @@ section.project-url .next-project-btn {
         /*border-bottom: 1.3333333333333333vw solid #ff6420;*/
     }
 
-    .page-template-projects ul.filters li.active:after {
-        background: #ff6420;
-        position: absolute;
-        content: '';
-        height: 1.3333333333333333vw;
-        right: 35%;
-        left: 26%;
-        /* top: 0; */
-        bottom: 0;
-        display: block;
-    }
+    /*.page-template-projects ul.filters li.active:after {*/
+        /*background: #ff6420;*/
+        /*position: absolute;*/
+        /*content: '';*/
+        /*height: 1.3333333333333333vw;*/
+        /*right: 35%;*/
+        /*left: 26%;*/
+        /*!* top: 0; *!*/
+        /*bottom: 0;*/
+        /*display: block;*/
+    /*}*/
 
     .page-template-projects ul.filters li:first-child.active:after {
         background: #ff6420;
@@ -4923,8 +4923,7 @@ section.project-url .next-project-btn {
 
     .page-template-projects ul.filters li a {
         font-size: 4.533333333333333vw;
-        height: 200%;
-        padding: 0px 22px;
+        height: 100%;
     }
 
     .page-template-projects ul.filters li a img.icon,
