@@ -211,6 +211,15 @@ jQuery(function ($) {
 
         });
 
+        $('ul.filters li a').on('click', function (e) {
+
+            $('ul.filters li a').parent().removeClass('active');
+            $(this).parent().addClass('active');
+            $isotope.isotope({filter: $(this).attr('data-type')});
+            return false;
+
+        });
+
         function ReLayout() {
             var col = 0;
             var defaultCol = 'col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect ';
