@@ -14,6 +14,7 @@ function ajaxApplyForJob()
 	if(!validHttpAction($_POST, ['full_name', 'email', 'phone', 'location', 'years_of_experience', 'expected_salary']) && !validHttpAction($_FILES, ['cv_file']))
 	{
 		$response['message'] = 'Something went wrong please try again later.';
+		$response['error_code'] = 1;
 		sendResponse($response);
 	}
 
@@ -21,6 +22,7 @@ function ajaxApplyForJob()
 
 	if(empty($uploaded[0]['attach_id'])) {
 		$response['message'] = 'Something went wrong please try again later.';
+		$response['error_code'] = 2;
 		sendResponse($response);
 	}
 
@@ -41,6 +43,7 @@ function ajaxApplyForJob()
 
 	if(!$isAdded) {
 		$response['message'] = 'Something went wrong please try again later.';
+		$response['error_code'] = 3;
 		sendResponse($response);
 	}
 
@@ -65,11 +68,13 @@ function ajaxGetInTouch()
 	if(!validHttpAction($_POST, ['name', 'email', 'note']))
 	{
 		$response['message'] = 'Something went wrong please try again later.';
+		$response['error_code'] = 1;
 		sendResponse($response);
 	}
 
 	if(!sendGetInTouchAdminEmail($_POST)){
 		$response['message'] = 'Something went wrong please try again later.';
+		$response['error_code'] = 2;
 		sendResponse($response);
 	}
 
