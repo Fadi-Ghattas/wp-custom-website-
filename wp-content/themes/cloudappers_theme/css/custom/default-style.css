@@ -4051,7 +4051,11 @@ section.project-url .next-project-btn {
 
 /*xs*/
 @media (max-width: 768px) {
-    /*.container{background: green; z-index: 5}*/
+    /*General*/
+    .team .members > div:before {
+        display: none;
+    }
+
     /*Menu*/
     .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
         background: transparent;
@@ -4141,7 +4145,6 @@ section.project-url .next-project-btn {
     section.ca-page-banner .vertical-line {
         height: 60px;
     }
-
 
     .service-info-item.col-xs-left,
     .service-info-item.col-xs-right {
@@ -4413,8 +4416,8 @@ section.project-url .next-project-btn {
     }
 
     section.ca-page-header .container .row .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
-        padding: 0;
-        margin-top: 5vh;
+
+        margin-top: 6vh;
     }
 
     /*Menu*/
