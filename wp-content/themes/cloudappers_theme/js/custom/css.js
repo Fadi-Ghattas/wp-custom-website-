@@ -195,7 +195,7 @@ jQuery(function ($) {
 
         //var filtered = false;
         $('ul.filters li a').on('click', function (e) {
-            e.preventDefault();
+            // e.preventDefault();
             $('ul.filters li a').each(function (index) {
                 $(this).parent().removeClass('active');
             });
@@ -208,6 +208,7 @@ jQuery(function ($) {
             //         filtered = false;
             //     }
             // });
+            return false;
         });
 
         function ReLayout() {
