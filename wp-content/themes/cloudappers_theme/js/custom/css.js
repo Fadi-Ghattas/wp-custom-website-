@@ -210,6 +210,7 @@ jQuery(function ($) {
             // filtered = true;
             // console.log($(this).children('a').attr('data-type'));
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+            return false;
         });
 
         $('ul.filters li a').on('click focus hover active touchmove ontouchstart', function (e) {
@@ -218,6 +219,7 @@ jQuery(function ($) {
             // filtered = true;
             // console.log($(this).children('a').attr('data-type'));
             $isotope.isotope({filter: $(this).attr('data-type')});
+            return false;
         });
 
         function ReLayout() {
