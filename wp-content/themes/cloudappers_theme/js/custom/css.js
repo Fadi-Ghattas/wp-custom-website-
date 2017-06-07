@@ -192,12 +192,8 @@ jQuery(function ($) {
             }
         });
 
-
         //var filtered = false;
-        $('ul.filters li a').on('click  touchmove', function (e) {
-
-
-            $isotope.isotope({filter: $(this).attr('data-type')});
+        $('ul.filters li a').on('click', function (e) {
 
             $('ul.filters li a').each(function (index) {
                 $(this).parent().removeClass('active');
@@ -211,6 +207,9 @@ jQuery(function ($) {
             //         filtered = false;
             //     }
             // });
+
+              $isotope.isotope({filter: $(this).attr('data-type')});
+
             return false;
         });
 
