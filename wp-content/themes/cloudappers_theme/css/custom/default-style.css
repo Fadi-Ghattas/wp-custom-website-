@@ -129,7 +129,6 @@ section.ca-page-header .title {
     font-size: 16px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
     text-transform: uppercase;
-    word-break: break-all;
 }
 
 section.ca-page-header .sub-title {
@@ -1766,15 +1765,15 @@ ul.filters li a {
 }
 
 ul.filters li:first-child a {
-    height: 17px;
+    /*height: 17px;*/
 }
 
 ul.filters li:nth-child(2) a {
-    height: 20px;
+    /*height: 20px;*/
 }
 
 ul.filters li:last-child a {
-    height: 23px;
+    /*height: 23px;*/
 }
 
 ul.filters li a:hover,
@@ -1783,9 +1782,7 @@ ul.filters li.active a {
 }
 
 ul.filters li a img.icon {
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
+    height: 20px;
     display: inline-block;
     margin-right: 5px;
 }
@@ -1801,9 +1798,7 @@ ul.filters li a img.icon {
 }
 
 ul.filters li a img.icon-hover {
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
+    height: 20px;
     display: none;
     margin-right: 5px;
 }
@@ -2395,7 +2390,7 @@ section.project-url .next-project-btn {
     text-transform: uppercase;
     line-height: 1.14;
     letter-spacing: 4.8px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 .page-template-about .process p {
@@ -2734,6 +2729,7 @@ section.project-url .next-project-btn {
 .page-template-about .words .img-slide {
     max-width: 602px;
     height: 422px;
+
 }
 
 .page-template-about .words img {
@@ -2972,6 +2968,10 @@ section.project-url .next-project-btn {
     text-shadow: 0 0 1px;
 }
 
+#footer .details a:hover {
+    text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
+}
+
 #footer .social ul li:first-child a:hover {
     color: #00a5ed;
 }
@@ -3198,7 +3198,8 @@ section.project-url .next-project-btn {
     font-weight: 400;
     margin-bottom: 0;
 }
-.page-template-contact-us .contact label.focus{
+
+.page-template-contact-us .contact label.focus {
     font-size: 16px;
 }
 
@@ -4024,7 +4025,7 @@ section.project-url .next-project-btn {
     }
 
     /*project-inner*/
-    .project-template-default .project-info .info-item {
+    .single-project .project-info .info-item {
         padding-right: 15px;
         padding-left: 15px !important;
     }
@@ -4039,8 +4040,8 @@ section.project-url .next-project-btn {
         padding-left: 15px;
     }
 
-    .project-template-default .client-say,
-    .project-template-default .client-say .say-block:nth-of-type(even) p {
+    .single-project .client-say,
+    .single-project .client-say .say-block:nth-of-type(even) p {
         text-align: center;
     }
 
@@ -5111,73 +5112,73 @@ section.project-url .next-project-btn {
     }
 
     /*Project-inner*/
-    .project-template-default .project-header .project-header-container .header-text .title {
+    .single-project .project-header .project-header-container .header-text .title {
         font-size: 3.7vw;
     }
 
-    .project-template-default .project-header .project-header-container .header-text .name {
+    .single-project .project-header .project-header-container .header-text .name {
         font-size: 9.3vw;
     }
 
-    .project-template-default .project-header .project-header-container .short-description p {
+    .single-project .project-header .project-header-container .short-description p {
         font-size: 4vw;
         padding: 0 15px;
     }
 
-    .project-template-default .description p {
+    .single-project .description p {
         font-size: 4vw;
     }
 
-    .project-template-default .project-info {
+    .single-project .project-info {
         text-align: center;
         padding-top: 66px;
     }
 
-    .project-template-default .project-info .title {
+    .single-project .project-info .title {
         margin-top: 15px;
         font-size: 4.2vw;
     }
 
-    .project-template-default .project-info .info-item {
+    .single-project .project-info .info-item {
         padding-bottom: 15px;
     }
 
-    .project-template-default .project-info .info-item.logo img {
+    .single-project .project-info .info-item.logo img {
         margin: 50px auto 0;
     }
 
-    .project-template-default .project-info .project-info-row {
+    .single-project .project-info .project-info-row {
         padding-bottom: 50px;
     }
 
-    .project-template-default .show-case-one .description-container {
+    .single-project .show-case-one .description-container {
         padding: 50px 15px;
     }
 
-    .project-template-default .project-url .title {
+    .single-project .project-url .title {
         margin-bottom: 15px;
         font-size: 3.7vw;
     }
 
-    .project-template-default .project-url .url-name p {
+    .single-project .project-url .url-name p {
         font-size: 5.3vw;
     }
 
-    .project-template-default .client-say h1,
-    .project-template-default .client-say .say-block p {
+    .single-project .client-say h1,
+    .single-project .client-say .say-block p {
         font-size: 5.7vw;
     }
 
-    .project-template-default .client-say .say-block .signature {
+    .single-project .client-say .say-block .signature {
         font-size: 3.2vw;
     }
 
-    .project-template-default .client-say .say-block .signature strong {
+    .single-project .client-say .say-block .signature strong {
         font-size: 3.7vw;
         display: block;
     }
 
-    .project-template-default .show-case-two .title {
+    .single-project .show-case-two .title {
         font-size: 4.2vw;
     }
 
