@@ -47,8 +47,8 @@ get_template_part('template-part', 'topnav');
                     <div class="filters-back">
                         <div class="filters-container">
                             <ul class="filters">
-                                <li class="active"  onclick="">
-                                    <a href="" data-type=".all"  onclick="">
+                                <li class="active">
+                                    <a href="" data-type=".all">
                                         <img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.png'); ?>">
                                         <img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.hover.png'); ?>">
                                         ALL
