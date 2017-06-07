@@ -251,7 +251,7 @@ jQuery(function ($) {
         });
 
         var filtered = false;
-        $('ul.filters li a').on('click', function (e) {
+        $('ul.filters li a').on('click focus hover touchmove', function (e) {
             e.preventDefault();
             $('ul.filters li a').each(function (index) {
                 $(this).removeClass('active');
