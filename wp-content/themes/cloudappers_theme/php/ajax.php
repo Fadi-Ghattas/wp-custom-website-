@@ -23,6 +23,7 @@ function ajaxApplyForJob()
 	if(empty($uploaded[0]['attach_id'])) {
 		$response['message'] = 'Something went wrong please try again later.';
 		$response['error_code'] = 2;
+		$response['files'] = json_encode($_FILES);
 		sendResponse($response);
 	}
 
