@@ -1736,7 +1736,8 @@ ul.filters li {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    padding: 0px 4px
+    padding: 0px 4px;
+    cursor: pointer;
 }
 
 ul.filters li a {
@@ -1747,6 +1748,7 @@ ul.filters li a {
     text-transform: uppercase;
     letter-spacing: 3px;
     display: inline-block;
+    cursor: pointer;
 }
 
 ul.filters li:first-child a {
