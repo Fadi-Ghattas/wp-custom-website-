@@ -204,14 +204,9 @@ jQuery(function ($) {
         //var filtered = false;
         $('ul.filters li').on('click', function (e) {
 
-            var $element = $(this);
             $('ul.filters li').removeClass('active');
-
-            setTimeout(function () {
-                $element.addClass('active');
-                $isotope.isotope({filter: $element.children('a').attr('data-type')});
-            }, 1000);
-
+            $(this).addClass('active');
+            $isotope.isotope({filter: $(this).children('a').attr('data-type')});
             return false;
 
         });
