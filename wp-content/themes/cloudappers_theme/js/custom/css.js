@@ -195,9 +195,7 @@ jQuery(function ($) {
         //var filtered = false;
         $('ul.filters li a').on('click', function (e) {
 
-            $('ul.filters li a').each(function (index) {
-                $(this).parent().removeClass('active');
-            });
+            $('ul.filters li ').removeClass('active');
             $(this).parent().addClass('active');
             // filtered = true;
 
