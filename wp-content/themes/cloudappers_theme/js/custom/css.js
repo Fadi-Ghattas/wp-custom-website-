@@ -206,7 +206,7 @@ jQuery(function ($) {
             //     }
             // });
 
-              // $isotope.isotope({filter: $(this).attr('data-type')});
+              $isotope.isotope({filter: $(this).attr('data-type')});
 
             return false;
         });
