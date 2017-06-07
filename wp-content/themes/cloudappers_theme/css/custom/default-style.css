@@ -4924,6 +4924,7 @@ section.project-url .next-project-btn {
     .page-template-projects ul.filters li a {
         font-size: 4.533333333333333vw;
         height: 200%;
+        padding: 0px 22px;
     }
 
     .page-template-projects ul.filters li a img.icon,
