@@ -1242,6 +1242,15 @@ body.home.blog.modal-open {
     min-height: 0;
 }
 
+#JobModal .form-message {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
+}
+
 #JobModal button {
     border: 1px solid black;
     height: 72px;
@@ -1976,6 +1985,7 @@ section.project-slider .slider img {
 
 section.project-slider .slider .slick-dots {
     bottom: -56px;
+    left: 0;
 }
 
 section.project-slider .slider .slick-dots li {
@@ -5147,7 +5157,7 @@ section.project-url .next-project-btn {
 
     .single-project .project-info {
         text-align: center;
-        padding-top: 66px;
+        padding-top: 25px;
     }
 
     .single-project .project-info .title {
@@ -5370,6 +5380,12 @@ section.project-url .next-project-btn {
         font-size: 35px;
         line-height: 58px;
     }
+
+    /*project details start*/
+    .single-project .project-info .title {
+        font-size: 5vw;
+    }
+    /*project details end*/
 }
 
 /*General animation*/
