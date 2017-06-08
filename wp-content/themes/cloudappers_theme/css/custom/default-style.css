@@ -4359,6 +4359,156 @@ section.project-url .next-project-btn {
         margin: 58px auto 0;
     }
 
+    /*project details max 768 start*/
+
+    section.show-case-one .description {
+        padding: 0 68px;
+    }
+
+    .single-project .project-header .project-header-container .short-description {
+        padding: 0px;
+    }
+
+    .single-project .project-header .project-header-container .header-text .title {
+        font-size: 3.7333333333333334vw;
+    }
+
+    .single-project .project-header .project-header-container .header-text .name {
+        font-size: 8vw;
+    }
+
+    .single-project .project-header .project-header-container .short-description p {
+        font-size: 4.533333333333333vw;
+        padding: 0 15px;
+    }
+
+    section.show-case-one .description p,
+    .single-project .description p {
+        font-size: 4vw;
+    }
+
+    .single-project .project-info {
+        text-align: center;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        padding-top: 25px;
+    }
+
+    .single-project .project-info .title {
+        margin-top: 15px;
+        font-size: 4.266666666666667vw;
+    }
+
+    section.project-info .description p {
+        font-size: 4.266666666666667vw;
+    }
+
+    .single-project .project-info .info-item {
+        padding-bottom: 15px;
+    }
+
+    .single-project .project-info .info-item.logo img {
+        margin: 50px auto 0;
+    }
+
+    .single-project .project-info .project-info-row {
+        padding-bottom: 50px;
+    }
+
+    .single-project .show-case-one .description-container {
+        padding: 70px 15px
+    }
+
+    section.show-case-one-image {
+        padding: 65px 0 65px 0;
+    }
+
+    .single-project .project-url .title {
+        margin-bottom: 15px;
+        font-size: 3.7333333333333334vw;
+    }
+
+    .single-project .project-url .url-name p {
+        font-size: 5.333333333333333vw;
+    }
+
+    .next-project-btn span {
+        font-size: 3.1333333333333333vw;
+    }
+
+    section.client-say .say-block:not(:first-child) {
+        margin-top: 70px;
+    }
+
+    .single-project .client-say h1,
+    .single-project .client-say .say-block p {
+        font-size: 4.533333333333333vw;
+        line-height: 6.8vw;
+    }
+
+    section.client-say .say-block strong {
+        font-size: 4.533333333333333vw;
+        line-height: 6.8vw;
+    }
+
+    section.client-say h1 {
+        margin-bottom: 68px;
+    }
+
+    .single-project .client-say .say-block .signature {
+        font-size: 3.2vw;
+    }
+
+    .single-project .client-say .say-block .signature strong {
+        font-size: 3.7333333333333334vw;
+        display: block;
+    }
+
+    section.client-say .say-block .signature .from {
+        font-size: 3.2vw;
+        font-weight: 700;
+        margin-top: 9px;
+        line-height: initial;
+    }
+
+    .single-project .show-case-two .title {
+        font-size: 4.266666666666667vw;
+    }
+
+    .move-section.with-border {
+        display: none;
+    }
+
+    section.show-case-two .description p {
+        font-size: 4vw;
+        text-shadow: 0px 0px 4vw rgba(70, 70, 70, 0.8);
+    }
+
+    section.show-case-two .description {
+        padding: 0px 52px;
+    }
+
+    section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
+        padding: 0px 50px;
+    }
+
+    section.client-say h1 {
+        font-size: 4.533333333333333vw;
+    }
+
+    section.project-slider {
+        padding: 73px 0 44px 0;
+    }
+
+    section.project-slider .slider .slick-dots {
+        bottom: -49px;
+    }
+
+    section.project-info .row {
+        display: block;
+    }
+
+    /*project details max 768 end*/
 }
 
 @media (min-width: 767px) {
@@ -5331,156 +5481,6 @@ section.project-url .next-project-btn {
         padding-right: 0;
     }
 
-    /*project details max 767 start*/
-
-    section.show-case-one .description {
-        padding: 0 68px;
-    }
-
-    .single-project .project-header .project-header-container .short-description {
-        padding: 0px;
-    }
-
-    .single-project .project-header .project-header-container .header-text .title {
-        font-size: 3.7333333333333334vw;
-    }
-
-    .single-project .project-header .project-header-container .header-text .name {
-        font-size: 8vw;
-    }
-
-    .single-project .project-header .project-header-container .short-description p {
-        font-size: 4.533333333333333vw;
-        padding: 0 15px;
-    }
-
-    section.show-case-one .description p,
-    .single-project .description p {
-        font-size: 4vw;
-    }
-
-    .single-project .project-info {
-        text-align: center;
-        text-align: -webkit-center;
-        text-align: -moz-center;
-        padding-top: 25px;
-    }
-
-    .single-project .project-info .title {
-        margin-top: 15px;
-        font-size: 4.266666666666667vw;
-    }
-
-    section.project-info .description p {
-        font-size: 4.266666666666667vw;
-    }
-
-    .single-project .project-info .info-item {
-        padding-bottom: 15px;
-    }
-
-    .single-project .project-info .info-item.logo img {
-        margin: 50px auto 0;
-    }
-
-    .single-project .project-info .project-info-row {
-        padding-bottom: 50px;
-    }
-
-    .single-project .show-case-one .description-container {
-        padding: 70px 15px
-    }
-
-    section.show-case-one-image {
-        padding: 65px 0 65px 0;
-    }
-
-    .single-project .project-url .title {
-        margin-bottom: 15px;
-        font-size: 3.7333333333333334vw;
-    }
-
-    .single-project .project-url .url-name p {
-        font-size: 5.333333333333333vw;
-    }
-
-    .next-project-btn span {
-        font-size: 3.1333333333333333vw;
-    }
-
-    section.client-say .say-block:not(:first-child) {
-        margin-top: 70px;
-    }
-
-    .single-project .client-say h1,
-    .single-project .client-say .say-block p {
-        font-size: 4.533333333333333vw;
-        line-height: 6.8vw;
-    }
-
-    section.client-say .say-block strong {
-        font-size: 4.533333333333333vw;
-        line-height: 6.8vw;
-    }
-
-    section.client-say h1 {
-        margin-bottom: 68px;
-    }
-
-    .single-project .client-say .say-block .signature {
-        font-size: 3.2vw;
-    }
-
-    .single-project .client-say .say-block .signature strong {
-        font-size: 3.7333333333333334vw;
-        display: block;
-    }
-
-    section.client-say .say-block .signature .from {
-        font-size: 3.2vw;
-        font-weight: 700;
-        margin-top: 9px;
-        line-height: initial;
-    }
-
-    .single-project .show-case-two .title {
-        font-size: 4.266666666666667vw;
-    }
-
-    .move-section.with-border {
-        display: none;
-    }
-
-    section.show-case-two .description p {
-        font-size: 4vw;
-        text-shadow: 0px 0px 4vw rgba(70, 70, 70, 0.8);
-    }
-
-    section.show-case-two .description {
-        padding: 0px 52px;
-    }
-
-    section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
-        padding: 0px 50px;
-    }
-
-    section.client-say h1 {
-        font-size: 4.533333333333333vw;
-    }
-
-    section.project-slider {
-        padding: 73px 0 44px 0;
-    }
-
-    section.project-slider .slider .slick-dots {
-        bottom: -49px;
-    }
-
-    section.project-info .row {
-        display: block;
-    }
-
-    /*project details max 767 end*/
 
     /*clients*/
     .clients .item img {
