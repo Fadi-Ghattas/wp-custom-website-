@@ -4045,6 +4045,13 @@ section.project-url .next-project-btn {
 
 }
 
+@media (max-width: 1024px)
+{
+    section.project-info .row {
+        display: block;
+    }
+}
+
 @media (max-width: 991px) {
 
     .new-empty-line {
@@ -4502,10 +4509,6 @@ section.project-url .next-project-btn {
 
     section.project-slider .slider .slick-dots {
         bottom: -49px;
-    }
-
-    section.project-info .row {
-        display: block;
     }
 
     /*project details max 768 end*/
