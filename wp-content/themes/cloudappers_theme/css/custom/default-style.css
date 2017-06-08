@@ -5321,7 +5321,7 @@ section.project-url .next-project-btn {
 
     section.project-info .description,
     section.project-info .description p {
-        font-size: 4.266666666666667vw;
+        font-size: 200px !important;
     }
 
     .page-template-contact-us .join .position,
