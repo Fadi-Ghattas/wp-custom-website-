@@ -280,7 +280,7 @@ get_template_part('template-part', 'topnav');
                         <h6><?php echo $setting['settings_address_title']; ?></h6>
                         <div class="details">
                             <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                            <p class="mob"><?php echo $setting['settings_mobile_number']; ?></p>
+                            <p class="mobile"><?php echo $setting['settings_mobile_number']; ?></p>
                             <p class="phone"><?php echo $setting['settings_tel_number']; ?></p>
                         </div>
                     </div>

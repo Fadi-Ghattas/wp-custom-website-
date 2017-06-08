@@ -989,7 +989,7 @@ body.home.blog.modal-open {
 
 }
 
-.home .contact p.mob {
+.home .contact p.mobile {
     background: url("../../img/mobile-white-icon@3x.svg") no-repeat left center;
     background-size: 10px 18px;
 
@@ -1196,7 +1196,7 @@ body.home.blog.modal-open {
 }
 
 #JobModal textarea {
-    height: 30px !important;
+    height: 35px !important;
     resize: vertical;
 }
 
@@ -1259,7 +1259,7 @@ body.home.blog.modal-open {
     font-weight: 700;
 }
 
-#JobModal button.submit-btn{
+#JobModal button.submit-btn {
     height: 72px;
 }
 
@@ -1299,12 +1299,11 @@ body.home.blog.modal-open {
     color: rgb(94, 94, 94);
     opacity: 1;
     font-weight: 200;
-    margin-top: -28px;
+    /*margin-top: -28px;*/
     margin-right: 10px;
     transition: all 0.25s ease-in-out;
-    transform-origin: 16px 42px;
-    transform: rotateZ(0deg);
-    /* background: rebeccapurple; */
+    /*transform-origin: 16px 42px;*/
+    /*transform: rotateZ(0deg);*/
 }
 
 #JobModal label span {
@@ -1316,7 +1315,7 @@ label[for="expected_salary"] {
 }
 
 #JobModal .close:hover {
-    transform: rotateZ(360deg);
+    /*transform: rotateZ(360deg);*/
     opacity: 0.8;
     color: #ff601b;
 }
@@ -3324,7 +3323,7 @@ section.project-url .next-project-btn {
 
 }
 
-.page-template-contact-us .contact p.mob {
+.page-template-contact-us .contact p.mobile {
     background: url("../../img/mobile-white-icon@3x.svg") no-repeat left center;
     background-size: 10px 18px;
 
@@ -3785,13 +3784,20 @@ section.project-url .next-project-btn {
 
     /*Home*/
     .home .contact {
-        flex-direction: column-reverse;
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
         display: flex;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
     .home .contact > div {
         width: 100%;
+        height: auto;
+    }
+
+    .page-template-contact-us .contact > div {
+        height: auto;
     }
 
     .home .contact .form [class*="col-"] {
@@ -4294,6 +4300,57 @@ section.project-url .next-project-btn {
     /*Contact*/
     form#GetInTouchForm button.c-btn {
         box-shadow: none;
+    }
+
+    .page-template-contact-us .contact .form input {
+        color: black;
+        font-weight: bold;
+    }
+
+    .page-template-contact-us .contact .address h6 {
+        font-size: 4.2vw;
+        line-height: 5vw;
+    }
+
+    .page-template-contact-us .contact .address p {
+        font-size: 4vw;
+        line-height: 5.4vw;
+    }
+
+    .page-template-contact-us .contact .address a {
+        font-size: 4.2vw;
+        max-width: 472px;
+        width: auto;
+        margin: 64px auto 0;
+        line-height: 13vw;
+        height: 13vw;
+    }
+
+    .page-template-contact-us .contact .address h6 {
+        background-size: 11.2vw 11.2vw;
+        padding: 2.1vw 6vw;
+        padding-left: 14vw;
+        padding-bottom: 5vw;
+        padding-top: 0.6vw;
+    }
+
+    .page-template-contact-us .contact .address .details {
+        padding-left: 14vw;
+    }
+
+    .page-template-contact-us .contact p.address-details {
+        background-size: 3.3vw 4.7vw;
+        padding-left: 8.3vw;
+    }
+
+    .page-template-contact-us .contact p.phone {
+        background-size: 4.8vw 4.8vw;
+        padding-left: 8.3vw;
+    }
+
+    .page-template-contact-us .contact p.mobile {
+        background-size: 2.8vw 4.9vw;
+        padding-left: 8.3vw;
     }
 
 }
@@ -4891,6 +4948,10 @@ section.project-url .next-project-btn {
         margin: 0 auto 0;
     }
 
+    .page-template-contact-us .join {
+        padding-top: 30px;
+    }
+
     .green-card-hover,
     .red-card-hover,
     .purple-card-hover {
@@ -4936,11 +4997,14 @@ section.project-url .next-project-btn {
     section.ca-page-header .title {
         font-weight: 500;
         font-size: 4.8vw;
+        line-height: 9vw;
+        letter-spacing: 0.48vw;
     }
 
     section.ca-page-header .sub-title {
         font-size: 12vw;
-        line-height: 16.266666666666666vw;
+        line-height: 12vw;
+        letter-spacing: 1.2vw;
     }
 
     /*banner end*/
@@ -5158,7 +5222,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-contact-us .contact .form .container-fluid {
-        padding-top: 67px;
+        padding-top: 25px;
     }
 
     .page-template-contact-us .contact .copyright {
@@ -5168,15 +5232,15 @@ section.project-url .next-project-btn {
     }
 
     .page-template-contact-us .contact .address a {
-        font-size: 14px;
+        /*font-size: 14px;*/
         color: rgb(255, 97, 27);
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
-        width: 153px;
-        height: 47px;
+        /*width: 153px;*/
+        /*height: 47px;*/
         box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
-        line-height: 47px;
+        /*line-height: 47px;*/
         display: block;
         margin-top: 60px;
         margin-left: 5px;
@@ -5245,6 +5309,15 @@ section.project-url .next-project-btn {
         padding-top: 6.9vw;
         /*padding-bottom: 61px;*/
         padding-bottom: 8.1vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .page-template-contact-us .join .position,
+    .page-template-contact-us .join .desc ,
+    .page-template-contact-us .join .apply{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /*project details max 767 start*/
