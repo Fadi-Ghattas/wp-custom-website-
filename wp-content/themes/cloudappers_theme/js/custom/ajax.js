@@ -138,7 +138,7 @@ jQuery(function ($)
 			formData.append('location', $('#JobModal #location').val());
 			formData.append('years_of_experience', $('#JobModal #years_of_experience').val());
 			formData.append('expected_salary', $('#JobModal #expected_salary').val());
-			formData.append('cv_info_one', $('#JobModal #cv_info_one').text());
+			formData.append('cv_info_one', $('#JobModal #cv_info_one').val());
 			formData.append('cv_file', $('#JobModal #cv_file')[0].files[0]);
 			formData.append('cv_state', $('#JobModal #cv_state').val());
 			formData.append('cv_applied_for_position', $('#JobModal #applied_position').val());
