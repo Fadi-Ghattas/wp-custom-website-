@@ -4217,24 +4217,22 @@ section.project-url .next-project-btn {
         box-shadow: none;
     }
 
-    .page-template-contact-us .contact .form input{
+    .page-template-contact-us .contact .form input {
         color: black;
         font-weight: bold;
     }
 
-    .page-template-contact-us .contact .address h6
-    {
+    .page-template-contact-us .contact .address h6 {
         font-size: 4.2vw;
         line-height: 5vw;
     }
 
-    .page-template-contact-us .contact .address p{
+    .page-template-contact-us .contact .address p {
         font-size: 4vw;
         line-height: 5.4vw;
     }
 
-    .page-template-contact-us .contact .address a
-    {
+    .page-template-contact-us .contact .address a {
         font-size: 4.2vw;
         max-width: 472px;
         width: auto;
@@ -4243,8 +4241,7 @@ section.project-url .next-project-btn {
         height: 13vw;
     }
 
-    .page-template-contact-us .contact .address h6
-    {
+    .page-template-contact-us .contact .address h6 {
         background-size: 11.2vw 11.2vw;
         padding: 2.1vw 6vw;
         padding-left: 14vw;
@@ -4252,22 +4249,21 @@ section.project-url .next-project-btn {
         padding-top: 0.6vw;
     }
 
-    .page-template-contact-us .contact .address .details{
+    .page-template-contact-us .contact .address .details {
         padding-left: 14vw;
     }
 
-    .page-template-contact-us .contact p.address-details
-    {
+    .page-template-contact-us .contact p.address-details {
         background-size: 3.3vw 4.7vw;
         padding-left: 8.3vw;
     }
 
-    .page-template-contact-us .contact p.phone{
+    .page-template-contact-us .contact p.phone {
         background-size: 4.8vw 4.8vw;
         padding-left: 8.3vw;
     }
 
-    .page-template-contact-us .contact p.mobile{
+    .page-template-contact-us .contact p.mobile {
         background-size: 2.8vw 4.9vw;
         padding-left: 8.3vw;
     }
@@ -4858,7 +4854,7 @@ section.project-url .next-project-btn {
         margin: 0 auto 0;
     }
 
-    .page-template-contact-us .join{
+    .page-template-contact-us .join {
         padding-top: 30px;
     }
 
@@ -5219,6 +5215,15 @@ section.project-url .next-project-btn {
         padding-top: 6.9vw;
         /*padding-bottom: 61px;*/
         padding-bottom: 8.1vw;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .page-template-contact-us .join .position,
+    .page-template-contact-us .join .desc ,
+    .page-template-contact-us .join .apply{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /*Project-inner*/

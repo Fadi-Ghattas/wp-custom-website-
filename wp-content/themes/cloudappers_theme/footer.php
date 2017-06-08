@@ -73,7 +73,7 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h2>Now hiring</h2>
-                <h3>Uncle Sam may want you<span id="applied-position"></span>, but so do we</h3>
+                <h3>Uncle Sam may want you<!--<span id="applied-position"></span>-->, but so do we</h3>
             </div>
 
             <div class="modal-body">
