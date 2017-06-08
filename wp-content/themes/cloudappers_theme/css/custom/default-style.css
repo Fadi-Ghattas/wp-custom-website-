@@ -927,7 +927,7 @@ header, nav, header img {
     color: white;
 }
 
-.home .contact .address a {
+.home .contact .address #take-me-there {
     font-size: 14px;
     color: rgb(255, 97, 27);
     font-weight: bold;
@@ -943,7 +943,7 @@ header, nav, header img {
     border-radius: 4px;
 }
 
-.home .contact .address a:hover {
+.home .contact .address #take-me-there:hover {
     background-color: rgb(251, 249, 249);
 }
 
@@ -2851,7 +2851,6 @@ section.project-url .next-project-btn {
     height: 14px;
 }
 
-
 /*Footer*/
 .prefooter {
     background: url("../../img/prefooter.png") no-repeat center;
@@ -3288,7 +3287,8 @@ section.project-url .next-project-btn {
     border-radius: 4px;
 }
 
-.page-template-contact-us .contact .address a {
+.page-template-contact-us .contact .address a,
+.home .contact .address a{
     color: white;
     font-family: "Open Sans";
 }
@@ -3355,7 +3355,6 @@ section.project-url .next-project-btn {
     max-width: 585px;
 
 }
-
 
 .right-top-div {
     display: flex;
@@ -4329,7 +4328,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-contact-us .contact .address p,
-    .page-template-contact-us .contact .address a{
+    .page-template-contact-us .contact .address a {
         font-size: 4vw;
         line-height: 5.4vw;
     }
@@ -5397,7 +5396,7 @@ section.project-url .next-project-btn {
         bottom: auto;
     }
 
-    .page-template-contact-us .contact .address #take-me-there  {
+    .page-template-contact-us .contact .address #take-me-there {
         /*font-size: 14px;*/
         color: rgb(255, 97, 27);
         font-weight: bold;
