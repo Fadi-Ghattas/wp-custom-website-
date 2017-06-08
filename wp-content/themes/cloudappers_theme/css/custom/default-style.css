@@ -5471,6 +5471,10 @@ section.project-url .next-project-btn {
         bottom: -49px;
     }
 
+    section.project-info .row {
+        display: block;
+    }
+
     /*project details max 767 end*/
 
     /*clients*/
