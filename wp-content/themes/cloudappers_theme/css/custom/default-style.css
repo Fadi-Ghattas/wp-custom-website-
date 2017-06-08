@@ -2114,7 +2114,6 @@ section.client-say .say-blocks {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    min-width: 100%;
 }
 
 section.client-say .say-block,
@@ -4048,7 +4047,8 @@ section.project-url .next-project-btn {
 
 @media (max-width: 1024px)
 {
-    section.project-info .row {
+    section.project-info .row,
+    section.client-say .say-blocks {
         display: block;
     }
 }
