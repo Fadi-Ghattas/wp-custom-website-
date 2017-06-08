@@ -5321,7 +5321,7 @@ section.project-url .next-project-btn {
 
     section.project-info .description,
     section.project-info .description p {
-        font-size: 200px !important;
+        font-size: 4.266666666666667vw;
     }
 
     .page-template-contact-us .join .position,
@@ -5372,8 +5372,7 @@ section.project-url .next-project-btn {
     }
 
     section.project-info .description p {
-        /*font-size: 4.266666666666667vw;*/
-        font-size: 200px;
+        font-size: 4.266666666666667vw;
     }
 
     .single-project .project-info .info-item {
