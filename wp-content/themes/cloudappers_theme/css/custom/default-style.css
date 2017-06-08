@@ -2114,6 +2114,7 @@ section.client-say .say-blocks {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+    min-width: 100%;
 }
 
 section.client-say .say-block,
