@@ -1863,6 +1863,10 @@ section.all-the-team .grid {
     background: transparent;
 }
 
+.single-project .project-header .project-header-container .short-description {
+    padding: 0 320px;
+}
+
 section.project-header {
     position: relative;
     overflow: hidden;
@@ -2079,6 +2083,14 @@ section.show-case-two .description ul {
     line-height: 1.875;
 }
 
+section.show-case-two .description p {
+    text-shadow: 0px 0px 8px rgba(70, 70, 70, 0.8);
+}
+
+section.show-case-two .description {
+    padding: 0px 394px
+}
+
 section.client-say {
     padding-bottom: 103px;
 }
@@ -2166,6 +2178,14 @@ section.client-say .say-block .signature strong {
 
 section.client-say .say-block .signature .from {
     line-height: 5px;
+}
+
+section.client-say .say-block:nth-of-type(odd) {
+    padding-right: 124px;
+}
+
+section.client-say .say-block:nth-of-type(even) {
+    padding-left: 174px;
 }
 
 section.project-url {
@@ -2357,6 +2377,10 @@ section.project-url .next-project-btn {
     width: 35px;
 }
 
+.new-empty-line {
+    height: 0;
+    display: block;
+}
 /*project details page end*/
 
 /*About*/
@@ -3561,7 +3585,8 @@ section.project-url .next-project-btn {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px)
+{
     .team .members > div {
         height: 280px;
     }
@@ -3707,6 +3732,23 @@ section.project-url .next-project-btn {
         margin-right: -30px;
         margin-left: -30px;
     }
+
+
+    /*project details min 1200*/
+    section.project-info .project-info-row .info-item:nth-of-type(odd) .description {
+        padding-right: 85px;
+    }
+
+
+    section.project-info .project-info-row .info-item:nth-of-type(even) .description {
+        padding-right: 62px;
+    }
+
+    section.show-case-one .description {
+        padding: 0 82px;
+    }
+
+    /*project details min 1200*/
 
 }
 
@@ -3935,6 +3977,21 @@ section.project-url .next-project-btn {
         margin-bottom: 30px;
     }
 
+
+    /*project details max 1199*/
+    .single-project .project-header .project-header-container .short-description {
+        padding: 0px 180px;
+    }
+
+    section.show-case-two .description {
+        padding: 0px 314px;
+    }
+
+    section.client-say .say-block:nth-of-type(even) {
+        padding-left: 120px;
+    }
+    /*project details max 1199*/
+
 }
 
 /*sm*/
@@ -3985,9 +4042,15 @@ section.project-url .next-project-btn {
         padding-top: 10px;
     }
 
+
 }
 
 @media (max-width: 991px) {
+
+    .new-empty-line {
+        height: 0;
+        display: inherit;
+    }
 
     .nav > li:not(.c-btn) > a {
         padding-right: 15px;
@@ -4034,7 +4097,7 @@ section.project-url .next-project-btn {
         margin: 0 auto;
     }
 
-    /*project-inner*/
+    /*project inner max 991 start*/
     .single-project .project-info .info-item {
         padding-right: 15px;
         padding-left: 15px !important;
@@ -4069,6 +4132,28 @@ section.project-url .next-project-btn {
         font-size: 9vw;
     }
 
+    .move-section.with-border {
+        bottom: 275px;
+    }
+
+    section.show-case-two .description {
+        padding: 0px 214px;
+    }
+
+    section.client-say .say-block:nth-of-type(even),
+    section.client-say .say-block:nth-of-type(odd) {
+        padding: 0;
+    }
+    /*project inner max 991 end*/
+}
+
+@media (max-width: 905px)
+{
+    /*project inner max 905 start*/
+    .move-section.with-border {
+        bottom: 322px;
+    }
+    /*project inner max 905 end*/
 }
 
 /*xs*/
@@ -4490,6 +4575,15 @@ section.project-url .next-project-btn {
 
 @media (max-width: 767px) {
     /*General*/
+
+    .move-section {
+        bottom: -35px;
+    }
+
+    .new-empty-line {
+        display: inline-block;
+    }
+
     .desk {
         display: none;
     }
@@ -5232,32 +5326,48 @@ section.project-url .next-project-btn {
         padding-right: 0;
     }
 
-    /*Project-inner*/
+    /*project details max 767 start*/
+
+    section.show-case-one .description {
+        padding: 0 68px;
+    }
+
+    .single-project .project-header .project-header-container .short-description {
+        padding: 0px;
+    }
+
     .single-project .project-header .project-header-container .header-text .title {
-        font-size: 3.7vw;
+        font-size: 3.7333333333333334vw;
     }
 
     .single-project .project-header .project-header-container .header-text .name {
-        font-size: 9.3vw;
+        font-size: 8vw;
     }
 
     .single-project .project-header .project-header-container .short-description p {
-        font-size: 4vw;
+        font-size: 4.533333333333333vw;
         padding: 0 15px;
     }
 
+    section.show-case-one .description p,
     .single-project .description p {
         font-size: 4vw;
     }
 
     .single-project .project-info {
         text-align: center;
+        text-align: -webkit-center;
+        text-align: -moz-center;
         padding-top: 25px;
     }
 
     .single-project .project-info .title {
         margin-top: 15px;
-        font-size: 4.2vw;
+        font-size: 4.266666666666667vw;
+    }
+
+    section.project-info .description p {
+        font-size: 4.266666666666667vw;
     }
 
     .single-project .project-info .info-item {
@@ -5273,21 +5383,43 @@ section.project-url .next-project-btn {
     }
 
     .single-project .show-case-one .description-container {
-        padding: 50px 15px;
+        padding: 70px 15px
+    }
+
+    section.show-case-one-image {
+        padding: 65px 0 65px 0;
     }
 
     .single-project .project-url .title {
         margin-bottom: 15px;
-        font-size: 3.7vw;
+        font-size: 3.7333333333333334vw;
     }
 
     .single-project .project-url .url-name p {
-        font-size: 5.3vw;
+        font-size: 5.333333333333333vw;
+    }
+
+    .next-project-btn span {
+        font-size: 3.1333333333333333vw;
+    }
+
+    section.client-say .say-block:not(:first-child) {
+        margin-top: 70px;
     }
 
     .single-project .client-say h1,
     .single-project .client-say .say-block p {
-        font-size: 5.7vw;
+        font-size: 4.533333333333333vw;
+        line-height: 6.8vw;
+    }
+
+    section.client-say .say-block strong {
+        font-size: 4.533333333333333vw;
+        line-height: 6.8vw;
+    }
+
+    section.client-say h1 {
+        margin-bottom: 68px;
     }
 
     .single-project .client-say .say-block .signature {
@@ -5295,17 +5427,51 @@ section.project-url .next-project-btn {
     }
 
     .single-project .client-say .say-block .signature strong {
-        font-size: 3.7vw;
+        font-size: 3.7333333333333334vw;
         display: block;
     }
 
+    section.client-say .say-block .signature .from {
+        font-size: 3.2vw;
+        font-weight: 700;
+        margin-top: 9px;
+        line-height: initial;
+    }
+
     .single-project .show-case-two .title {
-        font-size: 4.2vw;
+        font-size: 4.266666666666667vw;
     }
 
     .move-section.with-border {
         display: none;
     }
+
+    section.show-case-two .description p {
+        font-size: 4vw;
+        text-shadow: 0px 0px 4vw rgba(70, 70, 70, 0.8);
+    }
+
+    section.show-case-two .description {
+        padding: 0px 52px;
+    }
+
+    section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
+        padding: 0px 50px;
+    }
+
+    section.client-say h1 {
+        font-size: 4.533333333333333vw;
+    }
+
+    section.project-slider {
+        padding: 73px 0 44px 0;
+    }
+
+    section.project-slider .slider .slick-dots {
+        bottom: -49px;
+    }
+
+    /*project details max 767 end*/
 
     /*clients*/
     .clients .item img {
@@ -5467,6 +5633,31 @@ section.project-url .next-project-btn {
     }
 
     /*show you page end*/
+
+
+    /*project inner 480 start*/
+    section.client-say h1 {
+        margin-bottom: 25px;
+    }
+
+    section.client-say .say-block .signature {
+        margin-top: 0px;
+    }
+
+    section.show-case-one .description {
+        padding: 0px;
+    }
+    section.show-case-two .description {
+        padding: 0px;
+    }
+    section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
+        padding: 0px;
+    }
+
+    section.client-say .say-block:not(:first-child) {
+        margin-top: 40px;
+    }
+    /*project inner 408 end*/
 }
 
 /*xs*/
@@ -5482,12 +5673,34 @@ section.project-url .next-project-btn {
         line-height: 58px;
     }
 
-    /*project details start*/
-    .single-project .project-info .title {
+    /*project details 320 start*/
+    .single-project .project-header .project-header-container .short-description p ,
+    section.project-info .description p,
+    section.show-case-one .description p, .single-project .description p,
+    .single-project .project-info .title,
+    section.show-case-two .description p,
+    .single-project .show-case-two .title,
+    .single-project .client-say h1,
+    .single-project .client-say .say-block p,
+    section.client-say .say-block strong,
+    .single-project .project-url .title,
+    .next-project-btn span
+    {
         font-size: 5vw;
     }
 
-    /*project details end*/
+    .single-project .client-say .say-block .signature strong {
+        font-size: 4vw;
+    }
+
+    section.client-say .say-block .signature .from {
+        font-size: 3.5vw;
+    }
+
+    .single-project .project-url .url-name p {
+        font-size: 8vw;
+    }
+    /*project details 320 end*/
 }
 
 /*General animation*/
