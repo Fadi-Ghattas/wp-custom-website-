@@ -207,7 +207,7 @@ get_template_part('template-part', 'topnav');
 						<div class="container">
 							<div class="row">
 						<?php } ?>
-						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
+						<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
 							<?php if ($info_block['project_block_type'] == 1) { ?>
 								<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
 								<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">

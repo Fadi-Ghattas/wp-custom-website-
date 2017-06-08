@@ -3237,7 +3237,7 @@ section.project-url .next-project-btn {
     background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
     background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
     background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     right: 0;
     left: 0;
@@ -4038,6 +4038,7 @@ section.project-url .next-project-btn {
     .single-project .project-info .info-item {
         padding-right: 15px;
         padding-left: 15px !important;
+        text-align: center;
     }
 
     section.show-case-one .description-container {
@@ -4266,6 +4267,11 @@ section.project-url .next-project-btn {
     .page-template-contact-us .contact p.mobile {
         background-size: 2.8vw 4.9vw;
         padding-left: 8.3vw;
+    }
+
+    /*Project*/
+    section.project-info .info-item.logo img{
+        margin: 58px auto 0;
     }
 
 }
