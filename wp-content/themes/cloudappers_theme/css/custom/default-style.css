@@ -5319,6 +5319,11 @@ section.project-url .next-project-btn {
         margin-left: 15px;
     }
 
+    section.project-info .description,
+    section.project-info .description p {
+        font-size: 4.266666666666667vw;
+    }
+
     .page-template-contact-us .join .position,
     .page-template-contact-us .join .desc ,
     .page-template-contact-us .join .apply{
@@ -6571,3 +6576,23 @@ form#GetInTouchForm button.c-btn {
 /*.parallax-mirror {*/
 /*position: relative;*/
 /*}*/
+
+
+
+/**
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    .foo {
+        height: 1024px;
+    }
+}
+
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    .foo {
+        height: 768px;
+    }
+}
