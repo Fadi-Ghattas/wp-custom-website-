@@ -5350,6 +5350,8 @@ section.project-url .next-project-btn {
 
     .single-project .project-info {
         text-align: center;
+        text-align: -webkit-center;
+        text-align: -moz-center;
         padding-top: 25px;
     }
 
