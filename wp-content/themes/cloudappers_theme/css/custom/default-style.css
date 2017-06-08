@@ -5372,7 +5372,8 @@ section.project-url .next-project-btn {
     }
 
     section.project-info .description p {
-        font-size: 4.266666666666667vw;
+        /*font-size: 4.266666666666667vw;*/
+        font-size: 32px;
     }
 
     .single-project .project-info .info-item {
