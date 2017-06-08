@@ -1197,8 +1197,7 @@ body.home.blog.modal-open {
 
 #JobModal textarea {
     height: 35px !important;
-    resize: vertical;
-    color: #ff5f19 !important;
+    /*resize: vertical;*/
 }
 
 #JobModal .file-caption {
