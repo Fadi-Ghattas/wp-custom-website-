@@ -1196,7 +1196,7 @@ body.home.blog.modal-open {
 }
 
 #JobModal textarea {
-    height: 30px !important;
+    height: 35px !important;
     resize: vertical;
 }
 
