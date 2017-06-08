@@ -2381,6 +2381,7 @@ section.project-url .next-project-btn {
     height: 0;
     display: block;
 }
+
 /*project details page end*/
 
 /*About*/
@@ -2849,6 +2850,7 @@ section.project-url .next-project-btn {
     height: 14px;
 }
 
+
 /*Footer*/
 .prefooter {
     background: url("../../img/prefooter.png") no-repeat center;
@@ -3261,7 +3263,7 @@ section.project-url .next-project-btn {
     background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
     background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
     background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
-    /*position: absolute;*/
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
@@ -3269,7 +3271,7 @@ section.project-url .next-project-btn {
     color: white;
 }
 
-.page-template-contact-us .contact .address a {
+.page-template-contact-us .contact .address #take-me-there {
     font-size: 14px;
     color: rgb(255, 97, 27);
     font-weight: bold;
@@ -3285,7 +3287,12 @@ section.project-url .next-project-btn {
     border-radius: 4px;
 }
 
-.page-template-contact-us .contact .address a:hover {
+.page-template-contact-us .contact .address a {
+    color: white;
+    font-family: "Open Sans";
+}
+
+.page-template-contact-us .contact .address #take-me-there:hover {
     background-color: rgb(251, 249, 249);
 }
 
@@ -3347,6 +3354,7 @@ section.project-url .next-project-btn {
     max-width: 585px;
 
 }
+
 
 .right-top-div {
     display: flex;
@@ -3585,8 +3593,7 @@ section.project-url .next-project-btn {
 
 }
 
-@media (min-width: 1200px)
-{
+@media (min-width: 1200px) {
     .team .members > div {
         height: 280px;
     }
@@ -3733,12 +3740,10 @@ section.project-url .next-project-btn {
         margin-left: -30px;
     }
 
-
     /*project details min 1200*/
     section.project-info .project-info-row .info-item:nth-of-type(odd) .description {
         padding-right: 85px;
     }
-
 
     section.project-info .project-info-row .info-item:nth-of-type(even) .description {
         padding-right: 62px;
@@ -3977,7 +3982,6 @@ section.project-url .next-project-btn {
         margin-bottom: 30px;
     }
 
-
     /*project details max 1199*/
     .single-project .project-header .project-header-container .short-description {
         padding: 0px 180px;
@@ -3990,8 +3994,11 @@ section.project-url .next-project-btn {
     section.client-say .say-block:nth-of-type(even) {
         padding-left: 120px;
     }
-    /*project details max 1199*/
 
+    /*project details*/
+    .page-template-contact-us .contact .address {
+        position: relative;
+    }
 }
 
 /*sm*/
@@ -4042,11 +4049,9 @@ section.project-url .next-project-btn {
         padding-top: 10px;
     }
 
-
 }
 
-@media (max-width: 1024px)
-{
+@media (max-width: 1024px) {
     section.project-info .row,
     section.client-say .say-blocks {
         display: block;
@@ -4152,15 +4157,16 @@ section.project-url .next-project-btn {
     section.client-say .say-block:nth-of-type(odd) {
         padding: 0;
     }
+
     /*project inner max 991 end*/
 }
 
-@media (max-width: 905px)
-{
+@media (max-width: 905px) {
     /*project inner max 905 start*/
     .move-section.with-border {
         bottom: 322px;
     }
+
     /*project inner max 905 end*/
 }
 
@@ -4321,12 +4327,13 @@ section.project-url .next-project-btn {
         line-height: 5vw;
     }
 
-    .page-template-contact-us .contact .address p {
+    .page-template-contact-us .contact .address p,
+    .page-template-contact-us .contact .address a{
         font-size: 4vw;
         line-height: 5.4vw;
     }
 
-    .page-template-contact-us .contact .address a {
+    .page-template-contact-us .contact .address #take-me-there {
         font-size: 4.2vw;
         max-width: 472px;
         width: auto;
@@ -4363,12 +4370,11 @@ section.project-url .next-project-btn {
     }
 
     /*Project*/
-    section.project-info .info-item.logo img{
+    section.project-info .info-item.logo img {
         margin: 58px auto 0;
     }
 
     /*project details max 768 start*/
-
     section.show-case-one .description {
         padding: 0 68px;
     }
@@ -4729,7 +4735,6 @@ section.project-url .next-project-btn {
 
 @media (max-width: 767px) {
     /*General*/
-
     .move-section {
         bottom: -35px;
     }
@@ -5391,7 +5396,7 @@ section.project-url .next-project-btn {
         bottom: auto;
     }
 
-    .page-template-contact-us .contact .address a {
+    .page-template-contact-us .contact .address #take-me-there  {
         /*font-size: 14px;*/
         color: rgb(255, 97, 27);
         font-weight: bold;
@@ -5405,6 +5410,11 @@ section.project-url .next-project-btn {
         margin-top: 60px;
         margin-left: 5px;
         border-radius: 4px;
+    }
+
+    .page-template-contact-us .contact .address a {
+        color: white;
+        font-family: "Open Sans";
     }
 
     .page-template-contact-us .join .position h5,
@@ -5479,12 +5489,11 @@ section.project-url .next-project-btn {
     }
 
     .page-template-contact-us .join .position,
-    .page-template-contact-us .join .desc ,
-    .page-template-contact-us .join .apply{
+    .page-template-contact-us .join .desc,
+    .page-template-contact-us .join .apply {
         padding-left: 0;
         padding-right: 0;
     }
-
 
     /*clients*/
     .clients .item img {
@@ -5646,8 +5655,6 @@ section.project-url .next-project-btn {
     }
 
     /*show you page end*/
-
-
     /*project inner 480 start*/
     section.client-say h1 {
         margin-bottom: 25px;
@@ -5660,9 +5667,11 @@ section.project-url .next-project-btn {
     section.show-case-one .description {
         padding: 0px;
     }
+
     section.show-case-two .description {
         padding: 0px;
     }
+
     section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
         padding: 0px;
     }
@@ -5670,6 +5679,7 @@ section.project-url .next-project-btn {
     section.client-say .say-block:not(:first-child) {
         margin-top: 40px;
     }
+
     /*project inner 408 end*/
 }
 
@@ -5687,7 +5697,7 @@ section.project-url .next-project-btn {
     }
 
     /*project details 320 start*/
-    .single-project .project-header .project-header-container .short-description p ,
+    .single-project .project-header .project-header-container .short-description p,
     section.project-info .description p,
     section.show-case-one .description p, .single-project .description p,
     .single-project .project-info .title,
@@ -5697,8 +5707,7 @@ section.project-url .next-project-btn {
     .single-project .client-say .say-block p,
     section.client-say .say-block strong,
     .single-project .project-url .title,
-    .next-project-btn span
-    {
+    .next-project-btn span {
         font-size: 5vw;
     }
 
@@ -5713,6 +5722,7 @@ section.project-url .next-project-btn {
     .single-project .project-url .url-name p {
         font-size: 8vw;
     }
+
     /*project details 320 end*/
 }
 
@@ -6581,12 +6591,10 @@ form#GetInTouchForm button.c-btn {
 /*position: relative;*/
 /*}*/
 
-
-
 /**
  * iPad with portrait orientation.
  */
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
     .foo {
         height: 1024px;
     }
@@ -6595,7 +6603,7 @@ form#GetInTouchForm button.c-btn {
 /**
  * iPad with landscape orientation.
  */
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
     .foo {
         height: 768px;
     }
