@@ -2987,32 +2987,32 @@ section.project-url .next-project-btn {
 
 }
 
-#footer .social ul li a:hover {
-    transition: 0.5s;
-    text-shadow: 0 0 1px;
-}
+/*#footer .social ul li a:hover {*/
+    /*transition: 0.5s;*/
+    /*text-shadow: 0 0 1px;*/
+/*}*/
 
-#footer .details a:hover {
-    text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
-}
+/*#footer .details a:hover {*/
+    /*text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);*/
+/*}*/
 
-#footer .social ul li:first-child a:hover {
-    color: #00a5ed;
-}
+/*#footer .social ul li:first-child a:hover {*/
+    /*color: #00a5ed;*/
+/*}*/
 
-#footer .social ul li:nth-child(2) a:hover {
-    color: #4161a1;
-}
+/*#footer .social ul li:nth-child(2) a:hover {*/
+    /*color: #4161a1;*/
+/*}*/
 
-#footer .social ul li:nth-child(3) a:hover {
-    color: #ac7345;
-    transition: 0.5s;
-}
+/*#footer .social ul li:nth-child(3) a:hover {*/
+    /*color: #ac7345;*/
+    /*transition: 0.5s;*/
+/*}*/
 
-#footer .social ul li:last-child a:hover {
-    color: #e94487;
-    transition: 0.5s;
-}
+/*#footer .social ul li:last-child a:hover {*/
+    /*color: #e94487;*/
+    /*transition: 0.5s;*/
+/*}*/
 
 #footer p.address-details {
 
