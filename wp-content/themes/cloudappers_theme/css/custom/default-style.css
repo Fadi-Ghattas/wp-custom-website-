@@ -879,10 +879,6 @@ header, nav, header img {
     position: relative;
 }
 
-.home .contact .form .container-fluid .col-lg-12 {
-    padding-left: 0;
-}
-
 .home .contact .container-fluid {
     width: 100%;
     padding-top: 35px;
@@ -1286,11 +1282,11 @@ body.home.blog.modal-open {
 #JobModal .close {
     border: none;
     font-size: 70px;
-    line-height: 22px;
+    /*line-height: 22px;*/
     color: rgb(94, 94, 94);
     opacity: 1;
     font-weight: 200;
-    /*margin-top: -28px;*/
+    margin-top: -28px;
     margin-right: 10px;
     transition: all 0.25s ease-in-out;
     /*transform-origin: 16px 42px;*/
@@ -1920,7 +1916,6 @@ section.project-info .row {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 }
 
 section.project-info .project-info-row {
@@ -2105,7 +2100,7 @@ section.client-say .say-blocks {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+
 }
 
 section.client-say .say-block,
@@ -2952,6 +2947,7 @@ section.project-url .next-project-btn {
 #footer .social {
     display: inline-block;
     text-align: left;
+     vertical-align: top;
 }
 
 #footer .social ul a {
@@ -3598,6 +3594,11 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+
+
+    .home .contact .form .container-fluid .col-lg-12 {
+        padding-left: 0;
+    }
 
     .team .members > div {
         height: 280px;
