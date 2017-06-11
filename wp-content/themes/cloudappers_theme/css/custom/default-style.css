@@ -1920,7 +1920,6 @@ section.project-info .row {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
 }
 
 section.project-info .project-info-row {
