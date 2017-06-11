@@ -1,8 +1,8 @@
 jQuery.lazyLoadXT.autoInit = false;
 // jQuery.lazyLoadXT.bgAttr = 'data-image-src';
 
-jQuery.lazyLoadXT.onshow = function () {
-};
+// jQuery.lazyLoadXT.onshow = function () {
+// };
 
 jQuery.lazyLoadXT.onload = function () {
 
@@ -43,6 +43,16 @@ jQuery.lazyLoadXT.onload = function () {
 
 jQuery(function ($) {
 
+    //focus events for input
+    jQuery('input,select,textarea').on('focus', function() {
+        jQuery(this).parents('.form-group').find('label').addClass('focus')
+    })
+    jQuery('#take-me-in').click(function() {
+        jQuery('input,select,textarea').on('focus', function() {
+            jQuery(this).parents('.form-group').find('label').addClass('focus')
+        })
+    });
+
     function checkVisible(elm, threshold, mode) {
         threshold = threshold || 0;
         mode = mode || 'visible';
@@ -54,8 +64,6 @@ jQuery(function ($) {
 
         return mode === 'above' ? above : (mode === 'below' ? below : !above && !below);
     }
-
-    $('.lazy-background').lazyLoadXT({show: false});
 
     $(window).on('scroll resize load', function () {
 
@@ -116,7 +124,6 @@ jQuery(function ($) {
         ]
     });
 
-
     $('.history-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -156,7 +163,6 @@ jQuery(function ($) {
         dots: true,
         autoplay: false,
     });
-
 
     //Menu resize
     $(document).on("scroll", function () {
@@ -287,39 +293,36 @@ jQuery(function ($) {
             arrows: false,
             dots: true,
         });
-    }
-    $(".parallax-slider").on("load", function() {
-        //$(window).trigger("resize").trigger("scroll");
-        // Other code...
-        //console.log('here');
-    });
-    //focus events for input
-    jQuery('input,select,textarea').on('focus', function() {
-        jQuery(this).parents('.form-group').find('label').addClass('focus')
-    })
-    jQuery('#take-me-in').click(function() {
-        jQuery('input,select,textarea').on('focus', function() {
-            jQuery(this).parents('.form-group').find('label').addClass('focus')
-        })
-    });
 
-    if ($('.single-project').length) {
         $('.move-section').on('click', function (event) {
             var next = (parseInt($(this).attr('data-index')) + 1);
             var $nextElement = $('.move-section[data-index="' + next + '"]');
             if ($nextElement.length) {
+                if($nextElement.length > 1 ) {
+                    $('.move-section[data-index="' + next + '"]').each(function(index) {
+                        if( $(this).is(':visible')){
+                            $nextElement = $(this);
+                        }
+                    });
+                }
                 $('html, body').stop(true).animate({
-                    scrollTop: $('.move-section[data-index="' + next + '"]').offset().top - 65
+                    scrollTop: $nextElement.offset().top - parseInt($('.top-header').height())
                 }, 1000);
                 return false;
             } else {
                 $('html, body').stop(true).animate({
-                    scrollTop: $('section.client-say').offset().top - 65
+                    scrollTop: $('section.client-say').offset().top - parseInt($('.top-header').height())
                 }, 1000);
                 return false;
             }
         });
     }
+
+    // $(".parallax-slider").on("load", function() {
+    //     //$(window).trigger("resize").trigger("scroll");
+    //     // Other code...
+    //     //console.log('here');
+    // });
 
     //jQuery('.parallax-window').parallax({imageSrc: jQuery('.parallax-window').attr('data-image-src')});
 });

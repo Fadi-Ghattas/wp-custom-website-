@@ -2323,6 +2323,8 @@ section.project-url .next-project-btn {
 .move-section {
     position: absolute;
     width: 100%;
+    text-align: -webkit-center;
+    text-align: -moz-center;
     text-align: center;
     bottom: -28px;
     z-index: 1;
@@ -2341,14 +2343,11 @@ section.project-url .next-project-btn {
 }
 
 .move-section.with-border {
-    /*top: 0;*/
-    left: 48%;
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*-moz-transform: translate(-50%, -50%);*/
-    /*-ms-transform: translate(-50%, -50%);*/
-    /*-o-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
-    bottom: 282px;
+    position: relative;
+    bottom: 0;
+    margin-top: -132px;
+    margin-bottom: 29px;
+    text-align: inherit;
 }
 
 .move-section.with-border > div {
@@ -4158,7 +4157,7 @@ section.project-url .next-project-btn {
 @media (max-width: 905px)
 {
     /*project inner max 905 start*/
-    .move-section.with-border {
+    .move-section.with-border {     
         bottom: 322px;
     }
     /*project inner max 905 end*/
