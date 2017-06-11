@@ -306,12 +306,12 @@ jQuery(function ($) {
                     });
                 }
                 $('html, body').stop(true).animate({
-                    scrollTop: $nextElement.offset().top - parseInt($('.top-header').height())
+                    scrollTop: ($nextElement.offset().top - parseInt($('.top-header').height())) + 5
                 }, 1000);
                 return false;
             } else {
                 $('html, body').stop(true).animate({
-                    scrollTop: $('section.client-say').offset().top - parseInt($('.top-header').height())
+                    scrollTop: ($('section.client-say').offset().top - parseInt($('.top-header').height())) + 5
                 }, 1000);
                 return false;
             }

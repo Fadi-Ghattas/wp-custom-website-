@@ -4160,14 +4160,14 @@ section.project-url .next-project-btn {
     /*project inner max 991 end*/
 }
 
-@media (max-width: 905px) {
-    /*project inner max 905 start*/
-    .move-section.with-border {     
-        bottom: 322px;
-    }
+/*@media (max-width: 905px) {*/
+    /*!*project inner max 905 start*!*/
+    /*.move-section.with-border {     */
+        /*bottom: 322px;*/
+    /*}*/
 
-    /*project inner max 905 end*/
-}
+    /*!*project inner max 905 end*!*/
+/*}*/
 
 /*xs*/
 @media (max-width: 768px) {
