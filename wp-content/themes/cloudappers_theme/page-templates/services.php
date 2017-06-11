@@ -89,7 +89,7 @@ get_template_part('template-part', 'topnav');
     <section class="some-of-show-cases">
         <span class="word-background">show you</span>
         <div class="container">
-            <div class="row">
+            <div class="row related-projects">
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h1><?php echo $pageOptions['services_page_show_cases_title']; ?></h1>
@@ -98,21 +98,12 @@ get_template_part('template-part', 'topnav');
                 <?php $hover = ['green-card-hover', 'red-card-hover', 'purple-card-hover']; ?>
                 <?php $mobHover = ['purple-card-gradient', 'pink-card-gradient', 'blue-card-gradient', 'red-card-gradient']; ?>
                 <?php $col = 0;
-                $colPos = '';
                 $mobHoverCount = 0;
                 foreach ($pageShowCases as $project) {
                     $title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
-                    if ($col == 0) {
-                        $colPos = 'col-lg-left col-sm-left col-xs-left';
-                    } else if ($col == 1) {
-                        $colPos = 'col-lg-center col-sm-center col-xs-center';
-                    } else if ($col == 2) {
-                        $colPos = 'col-lg-right col-sm-right col-xs-right';
-                    }
-                    $colPos = '';
                     ?>
                     <article
-                            class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?>">
+                            class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect">
                         <section class="<?php echo $hover[$col]; ?>">
                             <figure>
                                 <!--<div class="lazy-loader-effect"></div>-->
