@@ -44,7 +44,7 @@ jQuery.lazyLoadXT.onload = function () {
 jQuery(function ($) {
 
     //focus events for input
-    jQuery('input,select,textarea').on('focus', function() {
+    jQuery('input,select,textarea').on('click focus', function() {
         jQuery(this).parents('.form-group').find('label').addClass('focus')
     })
     jQuery('#take-me-in').click(function() {
