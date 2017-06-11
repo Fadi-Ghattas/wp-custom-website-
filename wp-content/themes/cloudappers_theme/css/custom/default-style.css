@@ -2105,7 +2105,7 @@ section.client-say .say-blocks {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+
 }
 
 section.client-say .say-block,
