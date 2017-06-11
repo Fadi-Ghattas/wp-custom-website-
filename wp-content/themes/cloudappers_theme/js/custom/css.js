@@ -207,17 +207,20 @@ jQuery(function ($) {
         //     }
         // });
 
-        //var filtered = false;
-
-        // var filtered = false;
+        var filtered = false;
         $('ul.filters li').on('click focus hover active touchstart', function (event) {
             event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
-            // filtered = true;
-            // console.log($(this).children('a').attr('data-type'));
+            filtered = true;
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
+            // $isotope.on('layoutComplete', function (event, filteredItems) {
+            //     if (filtered) {
+            //         ReLayout();
+            //         filtered = false;
+            //     }
+            // });
         });
 
         $('ul.filters li a').on('click focus hover active touchstart', function (event) {
@@ -225,9 +228,14 @@ jQuery(function ($) {
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
-            // filtered = true;
-            // console.log($(this).children('a').attr('data-type'));
+            filtered = true;
             $isotope.isotope({filter: $(this).attr('data-type')});
+            // $isotope.on('layoutComplete', function (event, filteredItems) {
+            //     if (filtered) {
+            //         ReLayout();
+            //         filtered = false;
+            //     }
+            // });
         });
 
         function ReLayout() {

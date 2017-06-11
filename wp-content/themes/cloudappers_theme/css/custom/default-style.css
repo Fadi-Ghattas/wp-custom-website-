@@ -4144,9 +4144,9 @@ section.project-url .next-project-btn {
         font-size: 9vw;
     }
 
-    .move-section.with-border {
-        bottom: 275px;
-    }
+    /*.move-section.with-border {*/
+        /*bottom: 275px;*/
+    /*}*/
 
     section.show-case-two .description {
         padding: 0px 214px;
