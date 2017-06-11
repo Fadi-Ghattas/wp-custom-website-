@@ -1485,6 +1485,7 @@ section.some-of-show-cases .show-case-item {
     /*height: 380px;*/
     /*width: 380px;*/
     /*margin: 0 5px;*/
+    padding: 0 7.5px;
 }
 
 section.some-of-show-cases h1 {
@@ -1833,6 +1834,8 @@ section.all-projects {
 section.all-projects .grid {
     margin-top: 87px;
     margin-bottom: 60px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
 }
 
 section.all-the-team .grid {
