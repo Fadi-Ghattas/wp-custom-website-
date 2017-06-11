@@ -2075,7 +2075,8 @@ section.show-case-two .description p {
 }
 
 section.show-case-two .description {
-    padding: 0px 394px
+    /*padding: 0px 394px*/
+    padding: 0;
 }
 
 section.client-say {
@@ -3585,6 +3586,11 @@ section.project-url .next-project-btn {
         height: 100%;
     }
 
+    #footer .social
+    {
+        float: right;
+    }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1216px) {
@@ -4010,7 +4016,8 @@ section.project-url .next-project-btn {
     }
 
     section.show-case-two .description {
-        padding: 0px 314px;
+        /*padding: 0px 314px;*/
+        padding: 0;
     }
 
     section.client-say .say-block:nth-of-type(even) {
@@ -4171,7 +4178,8 @@ section.project-url .next-project-btn {
     /*bottom: 275px;*/
     /*}*/
     section.show-case-two .description {
-        padding: 0px 214px;
+        /*padding: 0px 214px;*/
+        padding: 0;
     }
 
     section.client-say .say-block:nth-of-type(even),
@@ -4520,7 +4528,8 @@ section.project-url .next-project-btn {
     }
 
     section.show-case-two .description {
-        padding: 0px 52px;
+        /*padding: 0px 52px;*/
+        padding: 0;
     }
 
     section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
