@@ -711,7 +711,9 @@ header, nav, header img {
 }
 
 .home .showyou .projects a > div {
-    position: relative;
+    position: absolute;
+    right: 0;
+    left: 0;
     top: 48%;
     bottom: 0;
     transform: translate(0, -41%);
