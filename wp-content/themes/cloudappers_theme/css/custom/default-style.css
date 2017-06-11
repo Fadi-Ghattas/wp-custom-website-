@@ -2773,6 +2773,12 @@ section.project-url .next-project-btn {
     vertical-align: top;
 }
 
+.page-template-about .words .slick-current.slick-active .img-slide {
+    border-radius: 20px;
+    box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 1);
+}
+
+
 .page-template-about .words .info-slide {
     padding-left: 50px;
 }
@@ -3288,7 +3294,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .contact .address a,
-.home .contact .address a{
+.home .contact .address a {
     color: white;
     font-family: "Open Sans";
 }
@@ -6608,3 +6614,4 @@ form#GetInTouchForm button.c-btn {
         height: 768px;
     }
 }
+
