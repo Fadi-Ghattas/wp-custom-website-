@@ -3586,12 +3586,7 @@ section.project-url .next-project-btn {
         height: 100%;
     }
 
-    #footer .social
-    {
-        float: right;
-    }
-
-}
+  }
 
 @media (min-width: 1200px) and (max-width: 1216px) {
     .container {
