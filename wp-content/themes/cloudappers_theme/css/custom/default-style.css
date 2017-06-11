@@ -879,10 +879,6 @@ header, nav, header img {
     position: relative;
 }
 
-.home .contact .form .container-fluid .col-lg-12 {
-    padding-left: 0;
-}
-
 .home .contact .container-fluid {
     width: 100%;
     padding-top: 35px;
@@ -3597,6 +3593,11 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+
+
+    .home .contact .form .container-fluid .col-lg-12 {
+        padding-left: 0;
+    }
 
     .team .members > div {
         height: 280px;
