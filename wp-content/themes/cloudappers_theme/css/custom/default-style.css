@@ -1877,11 +1877,9 @@ section.project-header .project-header-container img {
 
 section.project-header .project-header-container .header-text {
     background: #8b8b8b;
-    /*width: 100%;*/
-    top: 72.0%;
     z-index: -1;
-    padding: 58px 0 54px 0px;
-    margin-top: -16.7%;
+    padding: 0px 0 54px 0px;
+    margin-top: -300px;
 }
 
 section.project-header .project-header-container .header-text .title {
@@ -2332,7 +2330,6 @@ section.project-url .next-project-btn {
 .move-section.with-border {
     position: relative;
     bottom: 0;
-    margin-top: -132px;
     margin-bottom: 29px;
     text-align: inherit;
 }
