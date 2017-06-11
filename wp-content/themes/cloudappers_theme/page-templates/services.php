@@ -44,27 +44,15 @@ get_template_part('template-part', 'topnav');
 
     <section class="services">
         <div class="container">
-
+            <div class="row">
                 <?php
                 $col = 0;
-                $colPos = '';
                 $itemsCount = 0;
                 foreach ($services as $service) {
                     $title = (!empty($service['service_card_title']) ? $service['service_card_title'] : $service['post_title']);
                     $description = (!empty($service['service_card_description']) ? $service['service_card_description'] : $service['service_description']);
                     $description = limit_text_as_expert($service['id'], $description, 33, '#5d5f74', 0);
-                    if ($col == 0) {
-                        $colPos = 'col-lg-left col-md-left col-sm-left col-xs-left';
-                    } else if ($col == 1) {
-                        $colPos = 'col-lg-center col-md-center col-sm-center col-xs-center';
-                    } else if ($col == 2) {
-                        $colPos = 'col-lg-right col-md-right col-sm-right col-xs-right';
-                    }
-                    $colPos = '';
                     ?>
-                    <?php if($itemsCount == 0) { ?>
-                        <div class="row">
-                     <?php } ?>
                     <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 service-item <?php echo $colPos; ?>">
                         <a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
                             <img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" alt="<?php echo $title; ?>">
@@ -74,15 +62,10 @@ get_template_part('template-part', 'topnav');
                                  src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg'); ?>"/>
                         </a>
                     </article>
-                    <?php
-                    $itemsCount++;
-                    if($itemsCount == 3) { ?>
-                       </div>
-                    <?php $itemsCount = 0; } ?>
                     <?php  ($col == 2 ? $col = 0 : $col++);
                 } ?>
             </div>
-
+        </div>
     </section>
 
     <?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
