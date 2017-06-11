@@ -2960,7 +2960,7 @@ section.project-url .next-project-btn {
 }
 
 #footer .social ul {
-    text-indent: -3px;
+    /*text-indent: -3px;*/
     padding-left: 117px;
 }
 
