@@ -600,7 +600,7 @@ header, nav, header img {
 }
 
 .home .showyou .view-all a:hover {
-    background: url("../../img/viewall.png") no-repeat left;
+    background: url("../../img/viewallhover.png") no-repeat left;
     /*transition: color 0.3s ease-in-out, background 0.2s step-end ;*/
 }
 
@@ -1095,7 +1095,7 @@ body.home.blog.modal-open {
 
 .team .members > div:before {
     position: absolute;
-    top: 30px;
+    top: 36px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1872,7 +1872,6 @@ section.show-case-two img {
 
 section.project-header .project-header-container img {
     background: #8b8b8b;
-
 }
 
 section.project-header .project-header-container .header-text {
@@ -2073,8 +2072,7 @@ section.show-case-two .description p {
 }
 
 section.show-case-two .description {
-    /*padding: 0px 394px*/
-    padding: 0;
+    padding: 0px 394px
 }
 
 section.client-say {
@@ -2957,7 +2955,7 @@ section.project-url .next-project-btn {
 }
 
 #footer .social ul {
-    /*text-indent: -3px;*/
+    text-indent: -3px;
     padding-left: 117px;
 }
 
@@ -2984,6 +2982,10 @@ section.project-url .next-project-btn {
 
 }
 
+#footer .social ul li a:hover {
+    transition: 0.5s;
+    text-shadow: 0 0 1px;
+}
 
 #footer .details a:hover {
     text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
@@ -3579,7 +3581,7 @@ section.project-url .next-project-btn {
         height: 100%;
     }
 
-  }
+}
 
 @media (min-width: 1200px) and (max-width: 1216px) {
     .container {
@@ -4004,8 +4006,7 @@ section.project-url .next-project-btn {
     }
 
     section.show-case-two .description {
-        /*padding: 0px 314px;*/
-        padding: 0;
+        padding: 0px 314px;
     }
 
     section.client-say .say-block:nth-of-type(even) {
@@ -4166,8 +4167,7 @@ section.project-url .next-project-btn {
     /*bottom: 275px;*/
     /*}*/
     section.show-case-two .description {
-        /*padding: 0px 214px;*/
-        padding: 0;
+        padding: 0px 214px;
     }
 
     section.client-say .say-block:nth-of-type(even),
@@ -4516,8 +4516,7 @@ section.project-url .next-project-btn {
     }
 
     section.show-case-two .description {
-        /*padding: 0px 52px;*/
-        padding: 0;
+        padding: 0px 52px;
     }
 
     section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
