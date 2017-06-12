@@ -1515,7 +1515,7 @@ section.some-of-show-cases .overlay h4,
 section.some-of-show-cases .overlay h5,
 section.some-of-show-cases .overlay h6,
 section.some-of-show-cases .overlay p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
     font-size: 14px;
 }
 
