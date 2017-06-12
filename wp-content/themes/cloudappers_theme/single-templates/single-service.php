@@ -165,7 +165,7 @@ get_template_part('template-part', 'topnav');
 	<section class="some-of-show-cases">
 		<span class="word-background">show you</span>
 		<div class="container">
-			<div class="row">
+			<div class="row related-projects">
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<!--<h1>--><?php ////echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
