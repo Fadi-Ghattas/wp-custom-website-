@@ -949,7 +949,7 @@ header, nav, header img {
 }
 
 body.home.blog.modal-open {
-    overflow-y: visible;
+    /*overflow-y: visible;*/
     padding-right: 0 !important;
 }
 
@@ -2334,6 +2334,7 @@ section.project-url .next-project-btn {
 
 .move-section.with-border > div {
     /*border: 3px solid #ff5957;*/
+    margin: 0 auto;
     height: 103px;
     padding-top: 45px;
     width: 65px;
@@ -3570,7 +3571,11 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 992px) {
+
     /*General*/
+    body.home.blog.modal-open {
+        overflow-y: visible;
+    }
     .col-eq-height {
         display: table;
     }
@@ -4761,6 +4766,9 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
+    .top-header a img.img-responsive {
+        background: #55c3e4;
+    }
     .home .slide img {
         /* width: 100%; */
         margin-left: -3px;
