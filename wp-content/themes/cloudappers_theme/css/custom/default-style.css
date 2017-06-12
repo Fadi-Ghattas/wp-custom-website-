@@ -5537,6 +5537,14 @@ section.project-url .next-project-btn {
         display: none;
     }
 
+    section.services .service-item .description {
+        min-height: initial;
+    }
+
+    section.services .service-item .more {
+        margin-top: 22px;
+    }
+
     #footer {
         padding-bottom: 0;
     }
