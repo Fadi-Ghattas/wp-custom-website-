@@ -4803,34 +4803,34 @@ section.project-url .next-project-btn {
 
 @media (max-width: 767px) {
     /* Show case section */
-    .home .showcase p:first-child {
-        font-size: 4.6vw;
-        line-height: 7.06vw;
-    }
+    /*.home .showcase p:first-child {*/
+        /*font-size: 4.6vw;*/
+        /*line-height: 7.06vw;*/
+    /*}*/
 
-    .home .showcase a {
-        font-size: 4.26vw;
-        /* padding: 2vw 15px; */
-    }
+    /*.home .showcase a {*/
+        /*font-size: 4.26vw;*/
+        /*!* padding: 2vw 15px; *!*/
+    /*}*/
 
-    .home .showcase a {
-        max-width: 73.6vw;
-        margin-top: 6.6vw;
-        margin-bottom: 5.06vw;
-    }
+    /*.home .showcase a {*/
+        /*max-width: 73.6vw;*/
+        /*margin-top: 6.6vw;*/
+        /*margin-bottom: 5.06vw;*/
+    /*}*/
 
-    .home .showcase a span {
-        font-size: 3.73vw;
-        color: #fff;
-        font-weight: 300;
-    }
+    /*.home .showcase a span {*/
+        /*font-size: 3.73vw;*/
+        /*color: #fff;*/
+        /*font-weight: 300;*/
+    /*}*/
 
-    .home .showcase p:last-child {}
+    /*.home .showcase p:last-child {}*/
 
-    .home .showcase {
-        padding: 10.93vw 0px;
-    }
-    /* End Show section */
+    /*.home .showcase {*/
+        /*padding: 10.93vw 0px;*/
+    /*}*/
+    /*!* End Show section *!*/
     .top-header a img.img-responsive {
         /*background: rgba(84, 197, 231, 0.58);*/
     }
@@ -4841,22 +4841,22 @@ section.project-url .next-project-btn {
     }
 
     /*General*/
-    .home .slid-content p {
-        font-size: 4.26vw;
-        line-height: 7.066vw;
-        display: inline;
-    }
+    /*.home .slid-content p {*/
+        /*font-size: 4.26vw;*/
+        /*line-height: 7.066vw;*/
+        /*display: inline;*/
+    /*}*/
 
-    .home .slid-content .description {
-        margin-bottom: 8.6vw;
-    }
+    /*.home .slid-content .description {*/
+        /*margin-bottom: 8.6vw;*/
+    /*}*/
 
-    .home .slide-desc a {
-        min-width: 64vw;
-        min-height: 13vw;
-        padding-top: 2.3vw;
-        font-size: 4vw;
-    }
+    /*.home .slide-desc a {*/
+        /*min-width: 64vw;*/
+        /*min-height: 13vw;*/
+        /*padding-top: 2.3vw;*/
+        /*font-size: 4vw;*/
+    /*}*/
     .move-section {
         bottom: -35px;
     }
@@ -5771,19 +5771,19 @@ section.project-url .next-project-btn {
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
     /* General */
-    .home .slide-desc {
-        top: 20.33vw
-    }
-    .home .slide-desc a {
-        padding-top: 1vw;
-    }
-    .home .slid-content p {
-        font-size: 5.26vw;
-        line-height: 8.066vw;
-    }
-    .home .slider-container, .home .home-slider, .home .slick-list {
-        height: 140vw;
-    }
+    /*.home .slide-desc {*/
+        /*top: 20.33vw*/
+    /*}*/
+    /*.home .slide-desc a {*/
+        /*padding-top: 1vw;*/
+    /*}*/
+    /*.home .slid-content p {*/
+        /*font-size: 5.26vw;*/
+        /*line-height: 8.066vw;*/
+    /*}*/
+    /*.home .slider-container, .home .home-slider, .home .slick-list {*/
+        /*height: 140vw;*/
+    /*}*/
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-header .sub-title {
         font-size: 50px;
