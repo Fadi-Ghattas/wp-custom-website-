@@ -4100,6 +4100,8 @@ section.project-url .next-project-btn {
     #footer,
     #footer .address {
         text-align: center;
+        text-align: -webkit-center;
+        text-align: -moz-center;
     }
 
     #footer .address {
