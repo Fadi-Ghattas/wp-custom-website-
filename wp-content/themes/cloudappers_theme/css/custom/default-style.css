@@ -4423,9 +4423,8 @@ section.project-url .next-project-btn {
     }
 
     .single-project .project-header .project-header-container .short-description p {
-        font-size: 4.533333333333333vw;
-        padding: 0 15px;
-        word-break: break-all;
+        font-size: 4vw;
+        padding: 0px;
     }
 
     section.show-case-one .description p,
