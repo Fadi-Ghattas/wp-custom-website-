@@ -934,7 +934,7 @@ header, nav, header img {
 }
 
 .home .contact .address h6 {
-    background: url("../../img/white-ca-icon@3x.svg") no-repeat left top;
+    background: url("../../img/white-ca-icon@3x.svg") no-repeat -3px top;
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
