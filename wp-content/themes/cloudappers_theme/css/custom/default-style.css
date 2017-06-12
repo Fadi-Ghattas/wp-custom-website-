@@ -236,7 +236,7 @@ header, nav, header img {
 .logo-desk img,
 .logo-desk embed {
     max-width: 100%;
-    /*width: 290px;*/
+    width: 290px;
     height: auto;
     transition: 0.3s;
 }
@@ -926,7 +926,7 @@ header, nav, header img {
     line-height: 47px;
     display: block;
     margin-top: 56px;
-    margin-left: 5px;
+    margin-left: 39px;
     border-radius: 4px;
 }
 
