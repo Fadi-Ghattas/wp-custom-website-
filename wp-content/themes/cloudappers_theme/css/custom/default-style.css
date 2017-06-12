@@ -2896,6 +2896,7 @@ section.project-url .next-project-btn {
 #footer .address img {
     width: 66px;
     vertical-align: top;
+    float: left;
 }
 
 #footer .copyright p {
@@ -2941,6 +2942,7 @@ section.project-url .next-project-btn {
     vertical-align: top;
     padding-top: 4px;
     padding-left: 18px;
+    float: left;
 }
 
 #footer .social {
