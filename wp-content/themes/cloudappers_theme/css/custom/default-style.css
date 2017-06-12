@@ -3288,6 +3288,7 @@ section.project-url .next-project-btn {
 .home .contact .address a {
     color: white;
     font-family: "Open Sans";
+    font-size: 14px;
 }
 
 .page-template-contact-us .contact .address #take-me-there:hover {
