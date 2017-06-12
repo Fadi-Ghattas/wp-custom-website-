@@ -1051,7 +1051,10 @@ body.home.blog.modal-open {
 
 }
 
-.home .contact .copyright img {
+.home .contact .copyright img,
+.home .contact .copyright embed,
+.home .contact .copyright svg
+{
     width: 236px;
     /* margin-bottom: 2px; */
     /* display: block; */
@@ -2885,7 +2888,9 @@ section.project-url .next-project-btn {
     color: #bbbbbb;
 }
 
-#footer .copyright img {
+#footer .copyright img,
+#footer .copyright embed
+{
     max-width: 236px;
 }
 
@@ -3696,7 +3701,8 @@ section.project-url .next-project-btn {
         margin-bottom: 0;
     }
 
-    .top-header.small img {
+    .top-header.small img,
+    .top-header.small embed {
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s;
