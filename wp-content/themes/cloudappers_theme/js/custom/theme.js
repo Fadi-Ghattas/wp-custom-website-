@@ -10,6 +10,7 @@ jQuery(function ($) {
 
 	$('.apply-for-position').on('click', function (e) {
 		$('#JobModal').modal('show');
+		$('#JobModal select#location').parent().children('label').addClass('focus');
 		$('#JobModal #applied-position').text('').text(' for ' + $(this).attr('data-applied-position')).css('display','inline-block');
 		$('#JobModal select#location').val($(this).attr('data-location'));
 		$('#JobModal #cv_state').val($(this).attr('data-state'));

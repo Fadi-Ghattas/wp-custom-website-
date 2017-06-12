@@ -84,7 +84,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
-
+    <div class="main-wrapper">
 	<section class="ca-page-banner">
 	<!--<div class="vertical-line"></div>-->
 		<div class="container">
@@ -114,7 +114,8 @@ get_template_part('template-part', 'topnav');
 	</section>
 
 <?php $service_branding_header_image = (!empty($service['service_page_branding_background_image']['url']) ? esc_url($service['service_page_branding_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/service_page_branding_background_image.png')); ?>
-	<section class="branding parallax-window"  data-parallax="scroll" data-image-src="<?php echo $service_branding_header_image; ?>">
+
+	<section data-z-index="0" class="branding parallax-window" data-parallax="scroll" data-image-src="<?php echo $service_branding_header_image; ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -133,8 +134,13 @@ get_template_part('template-part', 'topnav');
 				<?php
 				$col = 0;$colPos ='';
 				foreach ($service['service_infos'] as $index  => $info) {
-					if($col == 0) {$colPos = 'col-lg-left col-sm-left col-xs-left';} else if($col == 1) {$colPos = 'col-lg-right col-sm-right col-xs-right';}
+					if($col == 0) {
+						$colPos = 'col-lg-left col-sm-left col-xs-left';
+					} else if($col == 1) {
+						$colPos = 'col-lg-right col-sm-right col-xs-right';
+					}
 					$colSize = (sizeof($service['service_infos']) != 1 ? 'col-xs-12 col-sm-6 col-md-6 col-lg-6' : 'col-xs-12 col-sm-12 col-md-12 col-lg-12');
+					$colPos ='';
 					?>
 					<div class="<?php echo $colSize; ?> service-info-item <?php echo $colPos; ?> <?php echo ($index == (sizeof($service['service_infos']) - 1) ? 'last' : '') ?> <?php echo ( ($index == (sizeof($service['service_infos']) - 2)) && $col == 0 ? 'before-last' : '') ?>">
 						<h1 class="title"><?php echo $info['info_title']; ?></h1>
@@ -171,7 +177,14 @@ get_template_part('template-part', 'topnav');
 				<?php  $col = 0;$colPos =''; $mobHoverCount = 0;
 				foreach ($service['service_related_projects'] as $project) {
 					$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
-					if($col == 0) {$colPos = 'col-lg-left col-sm-left col-xs-left';} else if($col == 1) {$colPos = 'col-lg-center col-sm-center col-xs-center';} else if($col == 2) {$colPos = 'col-lg-right col-sm-right col-xs-right';}
+					if($col == 0) {
+						$colPos = 'col-lg-left col-sm-left col-xs-left';
+					} else if($col == 1) {
+						$colPos = 'col-lg-center col-sm-center col-xs-center';
+					} else if($col == 2) {
+						$colPos = 'col-lg-right col-sm-right col-xs-right';
+					}
+					$colPos = '';
 					?>
 					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?>">
 						<section class="<?php echo $hover[$col]; ?>">

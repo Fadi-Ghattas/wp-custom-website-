@@ -181,9 +181,14 @@ get_template_part('template-part', 'topnav');
 		<div class="project-header-container">
 			<img class="img-responsive header-image" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
 			<div class="center header-text">
-				<p class="title" style="color: <?php echo $project['project_header_title_color']; ?>"><?php echo $project['project_header_title']; ?></p>
-				<p class="name" style="color: <?php echo $project['project_name_color']; ?>"><?php echo $project['post_title']; ?></p>
-				<div class="short-description" style="color: <?php echo $project['project_short_description_color']; ?>">
+				<a href="#" class="move-section desk with-border" data-index="0">
+					<div >
+						<div class="icono-arrow1-down"></div>
+					</div>
+				</a>
+				<p class="title" style="color: <?php echo $project['project_header_title_color']; ?>;"><?php echo $project['project_header_title']; ?></p>
+				<p class="name" style="color: <?php echo $project['project_name_color']; ?>;"><?php echo $project['post_title']; ?></p>
+				<div class="short-description" style="color: <?php echo $project['project_short_description_color']; ?>;">
 					<?php echo $project['project_short_description']; ?>
 				</div>
 			</div>
@@ -202,10 +207,10 @@ get_template_part('template-part', 'topnav');
 						<div class="container">
 							<div class="row">
 						<?php } ?>
-						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
+						<article class="col-xs-12 col-sm-12 col-md-6 col-lg-6 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
 							<?php if ($info_block['project_block_type'] == 1) { ?>
-								<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
-								<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
+								<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>;"><?php echo $info_block['project_block_title']; ?></h1>
+								<div class="description" style="color: <?php echo $info_block['project_block_description_color'] ?>;">
 									<?php echo $info_block['project_block_description'] ?>
 								</div>
 							<?php } else if ($info_block['project_block_type'] == 3) { ?>
@@ -229,8 +234,8 @@ get_template_part('template-part', 'topnav');
 						<div class="row">
 							<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info-item <?php echo($info_block['project_block_type'] == 3 ? 'logo' : ''); ?>">
 								<?php if ($info_block['project_block_type'] == 1) { ?>
-									<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>"><?php echo $info_block['project_block_title']; ?></h1>
-									<div class="description" style="<?php echo $info_block['project_block_description_color'] ?>">
+									<h1 class="title" style="color: <?php echo $info_block['project_block_title_color']; ?>;"><?php echo $info_block['project_block_title']; ?></h1>
+									<div class="description" style="color: <?php echo $info_block['project_block_description_color'] ?>;">
 										<?php echo $info_block['project_block_description'] ?>
 									</div>
 								<?php } else if ($info_block['project_block_type'] == 3) { ?>
@@ -243,10 +248,9 @@ get_template_part('template-part', 'topnav');
 					</div>
 				</div>
 			<?php } ?>
-
 		<?php } ?>
 
-		<a href="#" class="move-section desk">
+		<a href="#" class="move-section desk" data-index="1">
 			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
@@ -260,7 +264,7 @@ get_template_part('template-part', 'topnav');
 	<section class="project-slider" style="background: <?php echo $project['project_slider_section_background_color'];?>;">
 		<div class="container">
 			<div class="row">
-				<div class="slider">
+				<div class="slider col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<?php foreach ($project['project_slider'] as $slid) { ?>
 						<div class="slide">
 							<img class="img-responsive" src="<?php echo esc_url($slid['url']); ?>">
@@ -269,7 +273,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-        <a href="#" class="move-section mob">
+        <a href="#" class="move-section mob" data-index="2">
             <div >
                 <div class="icono-arrow1-down"></div>
             </div>
@@ -288,7 +292,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="#" class="move-section desk">
+		<a href="#" class="move-section desk" data-index="2">
 			<div >
 				<div class="icono-arrow1-down"></div>
 			</div>
@@ -306,7 +310,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 		<a href="#">
-			<div class="move-section">
+			<div class="move-section" data-index="3">
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>
@@ -318,10 +322,10 @@ get_template_part('template-part', 'topnav');
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h1 class="title" style="color: <?php echo $project['project_show_case_two_title_color']; ?>">
+                    <h1 class="title" style="color: <?php echo $project['project_show_case_two_title_color']; ?>;">
                         <?php echo $project['project_show_case_two_title']; ?>
                     </h1>
-                    <div class="description" style="color: <?php echo $project['project_show_case_two_description_color']; ?>">
+                    <div class="description" style="color: <?php echo $project['project_show_case_two_description_color']; ?>;">
                         <?php echo $project['project_show_case_two_description']; ?>
                     </div>
                 </div>
@@ -345,13 +349,13 @@ get_template_part('template-part', 'topnav');
 	<section class="client-say" style="<?php echo $background; ?>;">
 		<div class="container">
 			<div class="row">
-					<h1 class="title" style="color: <?php echo $project['project_client_say_title_color']; ?>">
+					<h1 class="title" style="color: <?php echo $project['project_client_say_title_color']; ?>;">
 						<?php echo $project['project_client_say_title']; ?>
 					</h1>
 
 				<div class="row say-blocks">
 					<?php foreach ($project['project_client_say_blocks'] as $say) { ?>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 say-block" style="color: <?php echo $say['project_client_say_block_color'] ?>">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 say-block" style="color: <?php echo $say['project_client_say_block_color'] ?>;">
 							<div>
 								<?php echo $say['project_client_say_block']; ?>
 							</div>
@@ -366,21 +370,21 @@ get_template_part('template-part', 'topnav');
 
 <?php if(!empty($project['project_url'])) { ?>
 
-	<section class="project-url" style="background: <?php echo $project['project_url_section_background_color']; ?>">
+	<section class="project-url" style="background: <?php echo $project['project_url_section_background_color']; ?>;">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h1 class="title" style="color: <?php echo $project['project_url_title_color']; ?>">
+					<h1 class="title" style="color: <?php echo $project['project_url_title_color']; ?>;">
 						<?php echo $project['project_url_title']; ?>
 					</h1>
-					<a class="url-name" href="<?php echo esc_url($project['project_url']); ?>" style="color: <?php echo $project['project_url_name_color']; ?>">
+					<a class="url-name" target="_blank" href="<?php echo esc_url($project['project_url']); ?>" style="color: <?php echo $project['project_url_name_color']; ?>;">
 						<p><?php echo $project['project_url_name']; ?></p>
 						<div class="icono-arrow1-left-up"></div>
 					</a>
 				</div>
 			</div>
 		</div>
-		<a href="<?php echo get_permalink($nextProject['id']); ?>" class="next-project-btn">
+		<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn">
 			<span>NEXT PROJECT</span>
 			<div class="icono-arrow1-left"></div>
 		</a>
