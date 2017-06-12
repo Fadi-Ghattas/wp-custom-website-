@@ -2338,6 +2338,7 @@ section.project-url .next-project-btn {
 
 .move-section.with-border > div {
     /*border: 3px solid #ff5957;*/
+    margin: 0 auto;
     height: 103px;
     padding-top: 45px;
     width: 65px;
