@@ -4765,14 +4765,31 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
+
     .top-header a img.img-responsive {
-        background: #55c3e4;
+        background: rgba(84, 197, 231, 0.58);
     }
     .home .slide img {
         /* width: 100%; */
         margin-left: -3px;
     }
     /*General*/
+    .home .slid-content p {
+        font-size: 4.26vw;
+        line-height: 7.066vw;
+        display: inline;
+    }
+
+    .home .slid-content .description {
+        margin-bottom: 8.6vw;
+    }
+
+    .home .slide-desc a {
+        min-width: 64vw;
+        min-height: 13vw;
+        padding-top: 2.3vw;
+        font-size: 4vw;
+    }
     .move-section {
         bottom: -35px;
     }
@@ -4911,7 +4928,7 @@ section.project-url .next-project-btn {
 
     /*Header*/
     .home .slider-container, .home .home-slider, .home .slick-list {
-        height: 800px;
+        height: 120vw;
     }
 
     /*Home*/
@@ -4977,10 +4994,9 @@ section.project-url .next-project-btn {
 
     .home .slide-desc {
         transform: none;
-        top: 235px;
+        top: 23.33vw;
         bottom: 0;
     }
-
     .home .showyou {
         border-top: 2px solid rgb(239, 239, 239);
         padding-top: 0;
@@ -5678,6 +5694,20 @@ section.project-url .next-project-btn {
 /*xs*/
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
+    /* General */
+    .home .slide-desc {
+        top: 20.33vw
+    }
+    .home .slide-desc a {
+        padding-top: 1vw;
+    }
+    .home .slid-content p {
+        font-size: 5.26vw;
+        line-height: 8.066vw;
+    }
+    .home .slider-container, .home .home-slider, .home .slick-list {
+        height: 140vw;
+    }
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-header .sub-title {
         font-size: 50px;
@@ -5762,9 +5792,18 @@ section.project-url .next-project-btn {
     /*project inner 408 end*/
 }
 
+@media (max-width: 400px) {
+
+}
 /*xs*/
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
+    .home .slider-container, .home .home-slider, .home .slick-list {
+        height: 150vw;
+    }
+    .home .slide-desc h1 {
+        margin-left: -6px;
+    }
     /*.container{background: orange; z-index: 5}*/
     section.ca-page-banner .vertical-line {
         height: 32px;
