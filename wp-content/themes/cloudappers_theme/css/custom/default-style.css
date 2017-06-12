@@ -5546,6 +5546,7 @@ section.project-url .next-project-btn {
     }
 
     #footer {
+        padding-top: 5.6vw;
         padding-bottom: 0;
     }
 
@@ -5559,9 +5560,21 @@ section.project-url .next-project-btn {
     }
 
     #footer .mob .social {
-        margin-top: 73px;
+        margin-top: 7.466666666666667vw;
         height: 21vw;
         display: block;
+    }
+
+    .facebook {
+        background-size: 3.2vw  6.666666666666667vw;
+    }
+
+    .instagram {
+        background-size: 6.8vw;
+    }
+
+    .twitter {
+        background-size: 8.266666666666667vw 6.8vw;
     }
 
     .prefooter {
@@ -5664,7 +5677,6 @@ section.project-url .next-project-btn {
     #nav-toggle {
         height: 15vw;
     }
-
 
 }
 
