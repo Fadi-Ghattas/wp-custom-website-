@@ -1515,7 +1515,7 @@ section.some-of-show-cases .overlay h4,
 section.some-of-show-cases .overlay h5,
 section.some-of-show-cases .overlay h6,
 section.some-of-show-cases .overlay p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
     font-size: 14px;
 }
 
@@ -2334,6 +2334,7 @@ section.project-url .next-project-btn {
 
 .move-section.with-border > div {
     /*border: 3px solid #ff5957;*/
+    margin: 0 auto;
     height: 103px;
     padding-top: 45px;
     width: 65px;
@@ -3776,6 +3777,10 @@ section.project-url .next-project-btn {
     .related-projects {
         margin-left: -7.5px;
         margin-right: -7.5px;
+    }
+
+    section.services .service-item:nth-child(n + 4){
+        margin-top: 102px;
     }
 
 }
@@ -5569,6 +5574,7 @@ section.project-url .next-project-btn {
     }
 
     #footer {
+        padding-top: 5.6vw;
         padding-bottom: 0;
     }
 
@@ -5582,9 +5588,21 @@ section.project-url .next-project-btn {
     }
 
     #footer .mob .social {
-        margin-top: 73px;
+        margin-top: 7.466666666666667vw;
         height: 21vw;
         display: block;
+    }
+
+    .facebook {
+        background-size: 3.2vw  6.666666666666667vw;
+    }
+
+    .instagram {
+        background-size: 6.8vw;
+    }
+
+    .twitter {
+        background-size: 8.266666666666667vw 6.8vw;
     }
 
     .prefooter {
@@ -5687,7 +5705,6 @@ section.project-url .next-project-btn {
     #nav-toggle {
         height: 15vw;
     }
-
 
 }
 
