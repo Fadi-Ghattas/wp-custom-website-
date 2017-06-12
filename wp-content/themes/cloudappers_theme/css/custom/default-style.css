@@ -4766,6 +4766,10 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
+    .home .slide img {
+        /* width: 100%; */
+        margin-left: -3px;
+    }
     /*General*/
     .move-section {
         bottom: -35px;
