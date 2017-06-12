@@ -60,6 +60,10 @@ figure {
     justify-content: center;
 }
 
+embed {
+    pointer-events: none;
+}
+
 /* General */
 
 .form-group label {
@@ -885,7 +889,7 @@ header, nav, header img {
     padding-top: 35px;
 }
 
-.home .contact .address .container-fluid {
+.home .contact .address-ca .container-fluid {
     margin-right: 0;
 }
 
@@ -902,7 +906,7 @@ header, nav, header img {
     height: 500px;
 }
 
-.home .contact .address {
+.home .contact .address-ca {
     background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
     background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
     background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.9) 0%, rgba(255, 154, 68, 0.9) 100%);
@@ -914,7 +918,7 @@ header, nav, header img {
     color: white;
 }
 
-.home .contact .address #take-me-there {
+.home .contact .address-ca #take-me-there {
     font-size: 14px;
     color: rgb(255, 97, 27);
     font-weight: bold;
@@ -930,11 +934,11 @@ header, nav, header img {
     border-radius: 4px;
 }
 
-.home .contact .address #take-me-there:hover {
+.home .contact .address-ca #take-me-there:hover {
     background-color: rgb(251, 249, 249);
 }
 
-.home .contact .address h6 {
+.home .contact .address-ca h6 {
     background: url("../../img/white-ca-icon@3x.svg") no-repeat -3px top;
     background-size: 42px 43px;
     padding: 16px 45px;
@@ -954,7 +958,7 @@ body.home.blog.modal-open {
     padding-right: 0 !important;
 }
 
-.home .contact .address p {
+.home .contact .address-ca p {
     font-size: 14px;
     font-family: "Open Sans";
     line-height: 1.714;
@@ -963,7 +967,7 @@ body.home.blog.modal-open {
     margin-top: 13px;
 }
 
-.home .contact .address .details {
+.home .contact .address-ca .details {
     padding-left: 65px;
     margin-top: -6px !important;
 }
@@ -2899,7 +2903,7 @@ section.project-url .next-project-btn {
     padding-bottom: 55px;
 }
 
-#footer .address img {
+#footer .address-ca img {
     width: 66px;
     vertical-align: top;
     float: left;
@@ -2928,7 +2932,7 @@ section.project-url .next-project-btn {
     transition: 0.5s;
 }
 
-#footer .address p {
+#footer .address-ca p {
     font-size: 14px;
     line-height: 1.714;
     text-align: left;
@@ -2937,13 +2941,13 @@ section.project-url .next-project-btn {
     text-align: left;
 }
 
-#footer .address {
+#footer .address-ca {
     text-align: right;
     padding-top: 9px;
     font-weight: 500;
 }
 
-#footer .address .details {
+#footer .address-ca .details {
     display: inline-block;
     vertical-align: top;
     padding-top: 4px;
@@ -3261,7 +3265,7 @@ section.project-url .next-project-btn {
     text-transform: uppercase;
 }
 
-.page-template-contact-us .contact .address {
+.page-template-contact-us .contact .address-ca {
     background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
     background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
     background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);
@@ -3273,7 +3277,7 @@ section.project-url .next-project-btn {
     color: white;
 }
 
-.page-template-contact-us .contact .address #take-me-there {
+.page-template-contact-us .contact .address-ca #take-me-there {
     font-size: 14px;
     color: rgb(255, 97, 27);
     font-weight: bold;
@@ -3289,18 +3293,18 @@ section.project-url .next-project-btn {
     border-radius: 4px;
 }
 
-.page-template-contact-us .contact .address a,
-.home .contact .address a {
+.page-template-contact-us .contact .address-ca a,
+.home .contact .address-ca a {
     color: white;
     font-family: "Open Sans";
     font-size: 14px;
 }
 
-.page-template-contact-us .contact .address #take-me-there:hover {
+.page-template-contact-us .contact .address-ca #take-me-there:hover {
     background-color: rgb(251, 249, 249);
 }
 
-.page-template-contact-us .contact .address h6 {
+.page-template-contact-us .contact .address-ca h6 {
     background: url("../../img/white-ca-icon@3x.svg") no-repeat left top;
     background-size: 42px 43px;
     padding: 16px 45px;
@@ -3311,7 +3315,7 @@ section.project-url .next-project-btn {
     text-align: left;
 }
 
-.page-template-contact-us .contact .address p {
+.page-template-contact-us .contact .address-ca p {
     font-size: 14px;
     font-family: "Open Sans";
     line-height: 1.714;
@@ -3320,7 +3324,7 @@ section.project-url .next-project-btn {
     margin-top: 20px;
 }
 
-.page-template-contact-us .contact .address .details {
+.page-template-contact-us .contact .address-ca .details {
     padding-left: 65px;
     margin-top: 0 !important;
 }
@@ -3345,7 +3349,7 @@ section.project-url .next-project-btn {
     background-size: 18px 18px;
 }
 
-.page-template-contact-us .contact .address .container-fluid {
+.page-template-contact-us .contact .address-ca .container-fluid {
     margin-right: 0;
     padding-top: 35px;
 }
@@ -3637,7 +3641,7 @@ section.project-url .next-project-btn {
     .home .contact .form .container-fluid .col-lg-12 {
         /*padding-left: 0;*/
     }
-    .home .contact .address .container-fluid .col-lg-6:first-child {
+    .home .contact .address-ca .container-fluid .col-lg-6:first-child {
         padding-left: 0;
     }
     .team .members > div {
@@ -3912,13 +3916,13 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 1) 100%);
     }
 
-    .contact .address [class*="col-"] {
+    .contact .address-ca [class*="col-"] {
         float: none;
         text-align: left;
         display: inline-block;
     }
 
-    .home .contact .address .container-fluid {
+    .home .contact .address-ca .container-fluid {
         padding-bottom: 35px;
     }
 
@@ -4005,7 +4009,7 @@ section.project-url .next-project-btn {
         padding-left: 0;
     }
 
-    .page-template-contact-us .contact .address .container-fluid {
+    .page-template-contact-us .contact .address-ca .container-fluid {
         padding-bottom: 35px;
         max-width: 100%;
 
@@ -4062,7 +4066,7 @@ section.project-url .next-project-btn {
     }
 
     /*project details*/
-    .page-template-contact-us .contact .address {
+    .page-template-contact-us .contact .address-ca {
         position: relative;
     }
 }
@@ -4145,21 +4149,21 @@ section.project-url .next-project-btn {
     }
 
     #footer,
-    #footer .address {
+    #footer .address-ca {
         text-align: center;
         text-align: -webkit-center;
         text-align: -moz-center;
     }
 
-    #footer .address {
+    #footer .address-ca {
         padding-top: 30px;
     }
 
-    #footer .address img {
+    #footer .address-ca img {
         display: none;
     }
 
-    #footer .address .details {
+    #footer .address-ca .details {
         padding: 0;
         float: none;
     }
@@ -4398,18 +4402,18 @@ section.project-url .next-project-btn {
         font-weight: bold;
     }
 
-    .page-template-contact-us .contact .address h6 {
+    .page-template-contact-us .contact .address-ca h6 {
         font-size: 4.2vw;
         line-height: 5vw;
     }
 
-    .page-template-contact-us .contact .address p,
-    .page-template-contact-us .contact .address a {
+    .page-template-contact-us .contact .address-ca p,
+    .page-template-contact-us .contact .address-ca a {
         font-size: 4vw;
         line-height: 5.4vw;
     }
 
-    .page-template-contact-us .contact .address #take-me-there {
+    .page-template-contact-us .contact .address-ca #take-me-there {
         font-size: 4.2vw;
         max-width: 472px;
         width: auto;
@@ -4418,7 +4422,7 @@ section.project-url .next-project-btn {
         height: 13vw;
     }
 
-    .page-template-contact-us .contact .address h6 {
+    .page-template-contact-us .contact .address-ca h6 {
         background-size: 11.2vw 11.2vw;
         padding: 2.1vw 6vw;
         padding-left: 14vw;
@@ -4426,7 +4430,7 @@ section.project-url .next-project-btn {
         padding-top: 0.6vw;
     }
 
-    .page-template-contact-us .contact .address .details {
+    .page-template-contact-us .contact .address-ca .details {
         padding-left: 14vw;
     }
 
@@ -5522,7 +5526,7 @@ section.project-url .next-project-btn {
         bottom: auto;
     }
 
-    .page-template-contact-us .contact .address #take-me-there {
+    .page-template-contact-us .contact .address-ca #take-me-there {
         /*font-size: 14px;*/
         color: rgb(255, 97, 27);
         font-weight: bold;
@@ -5538,7 +5542,7 @@ section.project-url .next-project-btn {
         border-radius: 4px;
     }
 
-    .page-template-contact-us .contact .address a {
+    .page-template-contact-us .contact .address-ca a {
         color: white;
         font-family: "Open Sans";
     }

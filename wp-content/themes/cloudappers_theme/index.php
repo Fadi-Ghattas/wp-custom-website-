@@ -273,7 +273,7 @@ get_template_part('template-part', 'topnav');
 <section class="contact col-eq-height">
     <div class="map col-lg-6">
         <div id="map"></div>
-        <div class="address">
+        <div class="address-ca">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
