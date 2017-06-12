@@ -2759,8 +2759,6 @@ section.project-url .next-project-btn {
     box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.15);
 }
 
-
-
 .page-template-about .words .info-slide {
     padding-left: 47px;
 }
@@ -2945,7 +2943,7 @@ section.project-url .next-project-btn {
 #footer .social {
     display: inline-block;
     text-align: left;
-     vertical-align: top;
+    vertical-align: top;
 }
 
 #footer .social ul a {
@@ -3568,6 +3566,29 @@ section.project-url .next-project-btn {
         border-left: 0.5px solid rgb(231, 243, 247);
     }
 
+    .home .what-we-do .col-eq-height {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    }
+
+    .home .what-we-do .col-eq-height [class*="col-"] {
+        height: auto;
+        display: block;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -3576,6 +3597,7 @@ section.project-url .next-project-btn {
     body.home.blog.modal-open {
         overflow-y: visible;
     }
+
     .col-eq-height {
         display: table;
     }
@@ -3587,6 +3609,8 @@ section.project-url .next-project-btn {
         height: 100%;
     }
 
+
+
 }
 
 @media (min-width: 1200px) and (max-width: 1216px) {
@@ -3596,7 +3620,6 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
-
 
     .home .contact .form .container-fluid .col-lg-12 {
         padding-left: 0;
@@ -3768,7 +3791,6 @@ section.project-url .next-project-btn {
     }
 
     /*project details min 1200*/
-
     section.all-projects .grid {
         margin-left: 7.5px;
         margin-right: 7.5px;
@@ -4084,9 +4106,11 @@ section.project-url .next-project-btn {
     section.client-say .say-blocks {
         display: block;
     }
+
     section.ca-page-header .sub-title {
         letter-spacing: 0px;
     }
+
     section.show-case-two .description {
         padding: 0px 180px;
     }
@@ -4802,10 +4826,12 @@ section.project-url .next-project-btn {
     .top-header a img.img-responsive {
         /*background: rgba(84, 197, 231, 0.58);*/
     }
+
     .home .slide img {
         /* width: 100%; */
         margin-left: -3px;
     }
+
     /*General*/
     .home .slid-content p {
         font-size: 4.26vw;
