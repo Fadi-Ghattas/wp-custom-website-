@@ -3635,7 +3635,7 @@ section.project-url .next-project-btn {
         padding-left: 0;
     }
     .team .members > div {
-        height: 280px;
+        min-height: 280px;
     }
 
     .team .members > div img {
