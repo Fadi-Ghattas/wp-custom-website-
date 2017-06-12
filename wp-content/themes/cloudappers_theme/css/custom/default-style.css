@@ -5569,6 +5569,10 @@ section.project-url .next-project-btn {
         display: block;
     }
 
+    .prefooter {
+        padding: 9.866666666666667vw 0;
+    }
+
     .prefooter h1 {
         font-size: 7.866666666666666vw;
         line-height: 9vw;
