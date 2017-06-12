@@ -332,17 +332,19 @@ jQuery(function ($) {
     //     //console.log('here');
     // });
 
-    // $(window).on('load', function () {
-	//
-    //     setTimeout(function () {
-    //         console.log(1111111111);
-    //         $('.parallax-window').parallax({
-    //             imageSrc: $('.parallax-window').attr('data-image-src'),
-    //             overScrollFix : true
-    //         });
-    //     }, 1000);
-	//
-    // });
+    $(window).on('load', function () {
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+        {
+          $('.parallax-window').css('background-image', 'url('+ $('.parallax-window').attr('data-image-src')+')').css('background-size', 'cover').css('height', '100vh');
+          $('.main-wrapper').css('margin-top','0px');
+          //$('section.ca-page-header .container').css('transform', 'translate(0px, 0px)');
+          $('.parallax-mirror').remove();
+        }
+
+    });
 
 
 
