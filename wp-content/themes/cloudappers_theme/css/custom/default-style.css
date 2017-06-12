@@ -4430,6 +4430,7 @@ section.project-url .next-project-btn {
     section.show-case-one .description p,
     .single-project .description p {
         font-size: 4vw;
+        line-height: 1.875;
     }
 
     .single-project .project-info {
@@ -4461,7 +4462,7 @@ section.project-url .next-project-btn {
     }
 
     .single-project .show-case-one .description-container {
-        padding: 70px 15px
+        padding: 54px 15px;
     }
 
     section.show-case-one-image {
