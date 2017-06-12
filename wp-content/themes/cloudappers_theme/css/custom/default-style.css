@@ -4077,6 +4077,12 @@ section.project-url .next-project-btn {
     section.client-say .say-blocks {
         display: block;
     }
+    section.ca-page-header .sub-title {
+        letter-spacing: 0px;
+    }
+    section.show-case-two .description {
+        padding: 0px 180px;
+    }
 }
 
 @media (max-width: 991px) {
