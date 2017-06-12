@@ -934,7 +934,7 @@ header, nav, header img {
 }
 
 .home .contact .address h6 {
-    background: url("../../img/white-ca-icon@3x.svg") no-repeat left top;
+    background: url("../../img/white-ca-icon@3x.svg") no-repeat -3px top;
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
@@ -2760,8 +2760,6 @@ section.project-url .next-project-btn {
     box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.15);
 }
 
-
-
 .page-template-about .words .info-slide {
     padding-left: 47px;
 }
@@ -2946,7 +2944,7 @@ section.project-url .next-project-btn {
 #footer .social {
     display: inline-block;
     text-align: left;
-     vertical-align: top;
+    vertical-align: top;
 }
 
 #footer .social ul a {
@@ -3570,6 +3568,29 @@ section.project-url .next-project-btn {
         border-left: 0.5px solid rgb(231, 243, 247);
     }
 
+    .home .what-we-do .col-eq-height {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    }
+
+    .home .what-we-do .col-eq-height [class*="col-"] {
+        height: auto;
+        display: block;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -3578,6 +3599,7 @@ section.project-url .next-project-btn {
     body.home.blog.modal-open {
         overflow-y: visible;
     }
+
     .col-eq-height {
         display: table;
     }
@@ -3589,6 +3611,8 @@ section.project-url .next-project-btn {
         height: 100%;
     }
 
+
+
 }
 
 @media (min-width: 1200px) and (max-width: 1216px) {
@@ -3599,11 +3623,12 @@ section.project-url .next-project-btn {
 
 @media (min-width: 1200px) {
 
-
     .home .contact .form .container-fluid .col-lg-12 {
+        /*padding-left: 0;*/
+    }
+    .home .contact .address .container-fluid .col-lg-6:first-child {
         padding-left: 0;
     }
-
     .team .members > div {
         height: 280px;
     }
@@ -3676,7 +3701,7 @@ section.project-url .next-project-btn {
         visibility: visible;
         width: 58px;
         right: 100%;
-        left: 0;
+        left: -6px;
         top: 3px;
         opacity: 1;
         transition: all 1s;
@@ -3770,7 +3795,6 @@ section.project-url .next-project-btn {
     }
 
     /*project details min 1200*/
-
     section.all-projects .grid {
         margin-left: 7.5px;
         margin-right: 7.5px;
@@ -4086,9 +4110,11 @@ section.project-url .next-project-btn {
     section.client-say .say-blocks {
         display: block;
     }
+
     section.ca-page-header .sub-title {
         letter-spacing: 0px;
     }
+
     section.show-case-two .description {
         padding: 0px 180px;
     }
@@ -4772,14 +4798,61 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
-    .top-header a img.img-responsive {
-        background: #55c3e4;
+    /* Show case section */
+    .home .showcase p:first-child {
+        font-size: 4.6vw;
+        line-height: 7.06vw;
     }
+
+    .home .showcase a {
+        font-size: 4.26vw;
+        /* padding: 2vw 15px; */
+    }
+
+    .home .showcase a {
+        max-width: 73.6vw;
+        margin-top: 6.6vw;
+        margin-bottom: 5.06vw;
+    }
+
+    .home .showcase a span {
+        font-size: 3.73vw;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .home .showcase p:last-child {}
+
+    .home .showcase {
+        padding: 10.93vw 0px;
+    }
+    /* End Show section */
+    .top-header a img.img-responsive {
+        /*background: rgba(84, 197, 231, 0.58);*/
+    }
+
     .home .slide img {
         /* width: 100%; */
         margin-left: -3px;
     }
+
     /*General*/
+    .home .slid-content p {
+        font-size: 4.26vw;
+        line-height: 7.066vw;
+        display: inline;
+    }
+
+    .home .slid-content .description {
+        margin-bottom: 8.6vw;
+    }
+
+    .home .slide-desc a {
+        min-width: 64vw;
+        min-height: 13vw;
+        padding-top: 2.3vw;
+        font-size: 4vw;
+    }
     .move-section {
         bottom: -35px;
     }
@@ -4918,7 +4991,7 @@ section.project-url .next-project-btn {
 
     /*Header*/
     .home .slider-container, .home .home-slider, .home .slick-list {
-        height: 800px;
+        height: 120vw;
     }
 
     /*Home*/
@@ -4984,10 +5057,9 @@ section.project-url .next-project-btn {
 
     .home .slide-desc {
         transform: none;
-        top: 235px;
+        top: 23.33vw;
         bottom: 0;
     }
-
     .home .showyou {
         border-top: 2px solid rgb(239, 239, 239);
         padding-top: 0;
@@ -5697,6 +5769,20 @@ section.project-url .next-project-btn {
 /*xs*/
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
+    /* General */
+    .home .slide-desc {
+        top: 20.33vw
+    }
+    .home .slide-desc a {
+        padding-top: 1vw;
+    }
+    .home .slid-content p {
+        font-size: 5.26vw;
+        line-height: 8.066vw;
+    }
+    .home .slider-container, .home .home-slider, .home .slick-list {
+        height: 140vw;
+    }
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-header .sub-title {
         font-size: 50px;
@@ -5781,9 +5867,18 @@ section.project-url .next-project-btn {
     /*project inner 408 end*/
 }
 
+@media (max-width: 400px) {
+
+}
 /*xs*/
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
+    .home .slider-container, .home .home-slider, .home .slick-list {
+        height: 150vw;
+    }
+    .home .slide-desc h1 {
+        margin-left: -6px;
+    }
     /*.container{background: orange; z-index: 5}*/
     section.ca-page-banner .vertical-line {
         height: 32px;
