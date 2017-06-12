@@ -3520,9 +3520,9 @@ section.project-url .next-project-btn {
         display: none;
     }
 
-    section.ca-page-header .container {
-        transform: translate(0, -50%);
-    }
+    /*section.ca-page-header .container {*/
+        /*transform: translate(0, -50%);*/
+    /*}*/
 
     .main-wrapper {
         margin-top: -300px;
