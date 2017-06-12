@@ -4116,6 +4116,7 @@ section.project-url .next-project-btn {
 
     #footer .address .details {
         padding: 0;
+        float: none;
     }
 
     .page-template-about section.ca-page-header .sub-title {
