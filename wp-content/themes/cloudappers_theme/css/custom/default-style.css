@@ -3622,9 +3622,11 @@ section.project-url .next-project-btn {
 @media (min-width: 1200px) {
 
     .home .contact .form .container-fluid .col-lg-12 {
+        /*padding-left: 0;*/
+    }
+    .home .contact .address .container-fluid .col-lg-6:first-child {
         padding-left: 0;
     }
-
     .team .members > div {
         height: 280px;
     }
@@ -3697,7 +3699,7 @@ section.project-url .next-project-btn {
         visibility: visible;
         width: 58px;
         right: 100%;
-        left: 0;
+        left: -6px;
         top: 3px;
         opacity: 1;
         transition: all 1s;
