@@ -4425,9 +4425,7 @@ section.project-url .next-project-btn {
     .single-project .project-header .project-header-container .short-description p {
         font-size: 4.533333333333333vw;
         padding: 0 15px;
-        text-align: center;
-        text-align: -webkit-center;
-        text-align: -moz-center;
+        letter-spacing: 0;
     }
 
     section.show-case-one .description p,
