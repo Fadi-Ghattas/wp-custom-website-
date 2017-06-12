@@ -141,5 +141,9 @@ jQuery(function ($)
 		});
 	}
 
-	initMap();
+	$(window).on('load', function () {
+		initMap();
+	});
+
 });
+

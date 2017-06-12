@@ -332,5 +332,18 @@ jQuery(function ($) {
     //     //console.log('here');
     // });
 
-    //jQuery('.parallax-window').parallax({imageSrc: jQuery('.parallax-window').attr('data-image-src')});
+    // $(window).on('load', function () {
+	//
+    //     setTimeout(function () {
+    //         console.log(1111111111);
+    //         $('.parallax-window').parallax({
+    //             imageSrc: $('.parallax-window').attr('data-image-src'),
+    //             overScrollFix : true
+    //         });
+    //     }, 1000);
+	//
+    // });
+
+
+
 });

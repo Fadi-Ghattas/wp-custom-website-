@@ -87,7 +87,7 @@ section.ca-page-header {
     /*background-color: #a4b9f0;*/
 }
 
-/*.parallax-mirror {*/
+ /*.parallax-mirror {*/
 /*!* background-color: blue; *!*/
 /*!* IE10+ *!*/
 /*background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);    !* Mozilla Firefox *!*/
@@ -934,7 +934,7 @@ header, nav, header img {
 }
 
 .home .contact .address h6 {
-    background: url("../../img/white-ca-icon@3x.svg") no-repeat left top;
+    background: url("../../img/white-ca-icon@3x.svg") no-repeat -3px top;
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
@@ -1613,6 +1613,7 @@ section.some-of-show-cases .overlay h6 {
     justify-content: center;
     height: 100%;
     min-height: 100vh;
+    background-size: cover;
 }
 
 .branding .description {
@@ -3153,6 +3154,7 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 47px;
+    float: right;
 }
 
 .page-template-contact-us .contact {
@@ -3622,9 +3624,11 @@ section.project-url .next-project-btn {
 @media (min-width: 1200px) {
 
     .home .contact .form .container-fluid .col-lg-12 {
+        /*padding-left: 0;*/
+    }
+    .home .contact .address .container-fluid .col-lg-6:first-child {
         padding-left: 0;
     }
-
     .team .members > div {
         height: 280px;
     }
@@ -3697,7 +3701,7 @@ section.project-url .next-project-btn {
         visibility: visible;
         width: 58px;
         right: 100%;
-        left: 0;
+        left: -6px;
         top: 3px;
         opacity: 1;
         transition: all 1s;
@@ -4794,9 +4798,37 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
+    /* Show case section */
+    .home .showcase p:first-child {
+        font-size: 4.6vw;
+        line-height: 7.06vw;
+    }
 
+    .home .showcase a {
+        font-size: 4.26vw;
+        /* padding: 2vw 15px; */
+    }
+
+    .home .showcase a {
+        max-width: 73.6vw;
+        margin-top: 6.6vw;
+        margin-bottom: 5.06vw;
+    }
+
+    .home .showcase a span {
+        font-size: 3.73vw;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .home .showcase p:last-child {}
+
+    .home .showcase {
+        padding: 10.93vw 0px;
+    }
+    /* End Show section */
     .top-header a img.img-responsive {
-        background: rgba(84, 197, 231, 0.58);
+        /*background: rgba(84, 197, 231, 0.58);*/
     }
 
     .home .slide img {
