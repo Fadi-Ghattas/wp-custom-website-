@@ -273,7 +273,7 @@ get_template_part('template-part', 'topnav');
 <section class="contact col-eq-height">
     <div class="map col-lg-6">
         <div id="map"></div>
-        <div class="address">
+        <div class="address-ca">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
@@ -326,7 +326,7 @@ get_template_part('template-part', 'topnav');
     </div>
 
     <div class="copyright">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?>" width="236px">
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
     </div>
 </section>
