@@ -4188,7 +4188,14 @@ section.project-url .next-project-btn {
 
 }
 
+
+
 @media (max-width: 1024px) {
+
+    .home .slide-desc {
+        bottom: 40%;
+    }
+
     section.project-info .row,
     section.client-say .say-blocks {
         display: block;
@@ -4200,6 +4207,18 @@ section.project-url .next-project-btn {
 
     section.show-case-two .description {
         padding: 0px 180px;
+    }
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+    .home .slider-container, .home .home-slider, .home .slick-list {
+        height: 72vh;
+    }
+
+    .home .slide-desc {
+        bottom: 50%;
     }
 }
 
