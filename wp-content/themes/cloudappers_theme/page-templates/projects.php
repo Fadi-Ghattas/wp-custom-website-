@@ -51,7 +51,7 @@ get_template_part('template-part', 'topnav');
                                     <a href="" data-type=".all">
                                         <img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.png'); ?>">
                                         <img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.hover.png'); ?>">
-                                        ALL
+                                        <span>ALL</span>
                                     </a>
                                 </li>
 
@@ -59,7 +59,7 @@ get_template_part('template-part', 'topnav');
                                     <li><a href="" data-type=".<?php echo str_replace(' ', '_', strtolower($projectType['post_title'])); ?>">
                                             <img class="icon" src="<?php echo esc_url($projectType['project_type_icon']['url']); ?>">
                                             <img class="icon-hover" src="<?php echo esc_url($projectType['project_type_icon_on_hover']['url']); ?>">
-                                            <?php echo $projectType['post_title']; ?>
+                                            <span><?php echo $projectType['post_title']; ?></span>
                                         </a>
                                     </li>
                                 <?php } ?>

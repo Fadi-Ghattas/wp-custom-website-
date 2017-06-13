@@ -1764,13 +1764,39 @@ ul.filters li {
     cursor: pointer;
 }
 
-ul.filters li a {
+.page-template-projects ul.filters li:nth-child(1) a .icon ,
+.page-template-projects ul.filters li:nth-child(1) a .icon-hover {
+    width: 15px;
+    height: 17px;
+}
+
+.page-template-projects ul.filters li:nth-child(2) a .icon ,
+.page-template-projects ul.filters li:nth-child(2) a .icon-hover {
+    width: 24px;
+    height: 20px;
+}
+
+.page-template-projects ul.filters li:nth-child(3) a .icon ,
+.page-template-projects ul.filters li:nth-child(3) a .icon-hover {
+    width: 13px;
+    height: 23px;
+}
+
+ul.filters li a,
+ul.filters li a span {
     color: #d0d0d0;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+ul.filters li a span {
+    vertical-align: middle;
+}
+
+ul.filters li a {
     display: inline-block;
     cursor: pointer;
     z-index: 10;
@@ -5439,7 +5465,13 @@ section.project-url .next-project-btn {
         display: block;
     }
 
-    .page-template-projects ul.filters li a {
+    .page-template-projects ul.filters li a .icon ,
+    .page-template-projects ul.filters li a .icon-hover {
+        width: inherit;
+    }
+
+    .page-template-projects ul.filters li a,
+    .page-template-projects ul.filters li a span{
         font-size: 4.533333333333333vw;
         height: 100%;
     }
