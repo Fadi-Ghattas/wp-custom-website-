@@ -3244,11 +3244,11 @@ section.project-url .next-project-btn {
 
 .page-template-contact-us .contact .form-group:first-of-type,
 .page-template-contact-us .contact .form-group:nth-of-type(3) {
-    margin-right: 33px;
+    margin-right: 34px;
 }
 
 .page-template-contact-us .contact .form-group {
-    max-width: 231px;
+    max-width: 238px;
     width: 100%;
     display: inline-block;
     text-align: left;
@@ -3267,7 +3267,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .contact label.focus {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .page-template-contact-us .contact .form input {
@@ -3287,7 +3287,7 @@ section.project-url .next-project-btn {
 }
 
 .page-template-contact-us .contact .form {
-    padding-left: 34px;
+    padding-left: 54px;
 }
 
 .page-template-contact-us .contact .form h6 {
@@ -3384,6 +3384,11 @@ section.project-url .next-project-btn {
 .page-template-contact-us .contact .address-ca .container-fluid {
     margin-right: 0;
     padding-top: 35px;
+    padding-left: 13px;
+}
+
+.page-template-contact-us .contact .address-ca .container-fluid .row div:nth-child(1) {
+    padding-left: 0;
 }
 
 .page-template-contact-us .contact .form .container-fluid {
