@@ -198,29 +198,12 @@ jQuery(function ($) {
             }
         });
 
-        // filtered = true;
-
-        // $isotope.on('layoutComplete', function (event, filteredItems) {
-        //     if (filtered) {
-        //         //ReLayout();
-        //         filtered = false;
-        //     }
-        // });
-
-        var filtered = false;
         $('ul.filters li').on('click focus hover active touchstart', function (event) {
             event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
-            filtered = true;
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
-            // $isotope.on('layoutComplete', function (event, filteredItems) {
-            //     if (filtered) {
-            //         ReLayout();
-            //         filtered = false;
-            //     }
-            // });
         });
 
         $('ul.filters li a').on('click focus hover active touchstart', function (event) {
@@ -228,37 +211,8 @@ jQuery(function ($) {
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
-            filtered = true;
             $isotope.isotope({filter: $(this).attr('data-type')});
-            // $isotope.on('layoutComplete', function (event, filteredItems) {
-            //     if (filtered) {
-            //         ReLayout();
-            //         filtered = false;
-            //     }
-            // });
         });
-
-        function ReLayout() {
-            var col = 0;
-            var defaultCol = 'col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect ';
-            var colPos = '';
-            $('.show-case-item').each(function (index) {
-
-                if ($(this).css('display') != 'none') {
-                    if (col == 0) {
-                        colPos = ' col-lg-left col-sm-left col-xs-left ';
-                    } else if (col == 1) {
-                        colPos = ' col-lg-center col-sm-center col-xs-center ';
-                    } else if (col == 2) {
-                        colPos = ' col-lg-right col-sm-right col-xs-right ';
-                    }
-
-                    $(this).attr('class', '');
-                    $(this).attr('class', defaultCol + $(this).attr('data-type') + colPos);
-                    (col == 2 ? col = 0 : col++)
-                }
-            });
-        }
 
     }
 
@@ -345,7 +299,5 @@ jQuery(function ($) {
         }
 
     });
-
-
 
 });

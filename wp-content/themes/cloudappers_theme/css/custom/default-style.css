@@ -2657,9 +2657,9 @@ section.project-url .next-project-btn {
     padding-bottom: 116px;
 }
 
-.page-template-about .why .why-desc {
-    padding: 0;
-}
+/*.page-template-about .why .why-desc {*/
+    /*padding: 0;*/
+/*}*/
 
 .page-template-about .why .why-img {
     height: 100px;
@@ -2667,18 +2667,6 @@ section.project-url .next-project-btn {
 
 .page-template-about .why .why-img img {
     max-height: 100%;
-}
-
-.page-template-about .why .why-desc:nth-child(2) {
-    padding-right: 23px;
-}
-
-.page-template-about .why .why-desc:nth-child(3) {
-    padding: 0 23px;
-}
-
-.page-template-about .why .why-desc:last-child {
-    padding-left: 23px;
 }
 
 .page-template-about .why .row {
@@ -3293,7 +3281,7 @@ section.project-url .next-project-btn {
     line-height: 47px;
     display: block;
     margin-top: 60px;
-    margin-left: 5px;
+    margin-left: 39px;
     border-radius: 4px;
 }
 
@@ -3724,6 +3712,11 @@ section.project-url .next-project-btn {
         left: -6px;
         top: 3px;
         opacity: 1;
+
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
         transition: all 1s;
     }
 
