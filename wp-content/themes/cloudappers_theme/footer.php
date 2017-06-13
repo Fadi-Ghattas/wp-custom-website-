@@ -37,7 +37,7 @@ wp_footer();
                     <div class="social">
                         <ul>
                             <li><a target="_blank" href="https://twitter.com/cloudappers">Twitter</a></li>
-                            <li><a target="_blank" href="https://www.facebook.com/CloudApper/">Facebook</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/CloudAppers/">Facebook</a></li>
                             <li><a target="_blank" href="https://www.instagram.com/cloudappers/">Instagram</a></li>
                             <li><a href="">Dribbble</a></li>
                         </ul>
