@@ -3564,24 +3564,24 @@ section.project-url .next-project-btn {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
-    /*.show-case-item {*/
-        /*-webkit-transition-duration: 0s !important;*/
-        /*-moz-transition-duration: 0s !important;*/
-        /*-ms-transition-duration: 0s !important;*/
-        /*-o-transition-duration: 0s !important;*/
-        /*transition-duration: 0s !important;*/
-    /*}*/
+    .show-case-item {
+        -webkit-transition-duration: 0s !important;
+        -moz-transition-duration: 0s !important;
+        -ms-transition-duration: 0s !important;
+        -o-transition-duration: 0s !important;
+        transition-duration: 0s !important;
+    }
 }
 
 @supports (-ms-ime-align:auto) {
     /* Edge CSS styles go here */
-    /*.show-case-item {*/
-        /*-webkit-transition-duration: 0s !important;*/
-        /*-moz-transition-duration: 0s !important;*/
-        /*-ms-transition-duration: 0s !important;*/
-        /*-o-transition-duration: 0s !important;*/
-        /*transition-duration: 0s !important;*/
-    /*}*/
+    .show-case-item {
+        -webkit-transition-duration: 0s !important;
+        -moz-transition-duration: 0s !important;
+        -ms-transition-duration: 0s !important;
+        -o-transition-duration: 0s !important;
+        transition-duration: 0s !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -4746,19 +4746,19 @@ section.project-url .next-project-btn {
     .green-card-hover:hover .bg-rotate:after,
     .red-card-hover:hover .bg-rotate:after,
     .purple-card-hover:hover .bg-rotate:after {
-        -webkit-animation: card-hover-in 0.5s;
-        -moz-animation: card-hover-in 0.5s;
-        -o-animation: card-hover-in 0.5s;
-        animation: card-hover-in 0.5s;
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        transition: 0.5s;
     }
 
     .green-card-hover .bg-rotate:after,
     .red-card-hover .bg-rotate:after,
     .purple-card-hover .bg-rotate:after {
-        -webkit-animation: card-hover-out 0.5s;
-        -moz-animation: card-hover-out 0.5s;
-        -o-animation: card-hover-out 0.5s;
-        animation: card-hover-out 0.5s;
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: 0.5s;
     }
 
     @-webkit-keyframes card-hover-in {
@@ -5150,6 +5150,19 @@ section.project-url .next-project-btn {
         font-weight: bold;
         color: #454545;
         letter-spacing: 0px;
+    }
+    .home .what-we-do h1 {
+        font-size: 6.4vw;
+    }
+
+    .home .what-we-do .row p {
+        font-size: 4.2vw;
+        line-height: 46px;
+        padding-top: 30px;
+    }
+
+    .home .what-we-do .more {
+        transform: scale(1.3, 1.3);
     }
     .view-all, .home .what-we-do .view-all {
         height: auto;
