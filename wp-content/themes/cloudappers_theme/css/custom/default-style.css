@@ -3038,7 +3038,7 @@ section.project-url .next-project-btn {
 
 #footer .social ul li a:hover {
     transition: 0.5s;
-    text-shadow: 0 0 1px;
+    /*text-shadow: 0 0 1px;*/
 }
 
 #footer .details a:hover {
