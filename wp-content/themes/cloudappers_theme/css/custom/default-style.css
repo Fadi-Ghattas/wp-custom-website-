@@ -5058,12 +5058,12 @@ section.project-url .next-project-btn {
     }
 
     .top-header .copyright {
-        padding: 40px;
+        padding: 0;
     }
 
     .navbar-nav {
         padding-right: 30px;
-        padding-top: 6.1vw;
+        padding-top: 0;
         /*padding-top: 122px;*/
         padding-bottom: 40px;
     }
@@ -5875,7 +5875,7 @@ section.project-url .next-project-btn {
     .top-header.opened .row,
     .top-header.opened .col-lg-12,
     .top-header.opened .navbar-inverse {
-        height: auto;
+        height: 100vh;
     }
 
     .top-header .nav-social .copyright p {
@@ -5918,10 +5918,10 @@ section.project-url .next-project-btn {
     }
 
     .top-header.opened .nav-social {
-        /*position: absolute;*/
-        /*right: 0;*/
-        /*left: 0;*/
-        /*bottom:   0;*/
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom:   0;
     }
 
     .top-header a {
