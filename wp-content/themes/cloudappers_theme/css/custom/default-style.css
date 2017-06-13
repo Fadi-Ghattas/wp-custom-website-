@@ -4894,11 +4894,11 @@ section.project-url .next-project-btn {
 
     .home .showcase a {
         font-size: 4.26vw;
-        padding: 3vw 15px 0;
+        padding: 4vw 15px 1vw;
     }
 
     .home .showcase a {
-        max-width: 73.6vw;
+        max-width: 78.6vw;
         margin-top: 6.6vw;
         margin-bottom: 5.06vw;
     }
