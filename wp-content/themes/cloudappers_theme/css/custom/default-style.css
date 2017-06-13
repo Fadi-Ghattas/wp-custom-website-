@@ -4072,6 +4072,10 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 1) 100%);
     }
 
+    .home .contact .form-group:first-of-type {
+        margin-right: 0px;
+    }
+
     .page-template-contact-us .contact .form {
         padding-left: 0;
     }
