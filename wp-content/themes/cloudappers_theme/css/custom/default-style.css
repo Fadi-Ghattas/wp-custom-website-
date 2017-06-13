@@ -93,7 +93,7 @@ section.ca-page-header {
     /*background-color: #a4b9f0;*/
 }
 
- /*.parallax-mirror {*/
+/*.parallax-mirror {*/
 /*!* background-color: blue; *!*/
 /*!* IE10+ *!*/
 /*background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);    !* Mozilla Firefox *!*/
@@ -2698,7 +2698,7 @@ section.project-url .next-project-btn {
 }
 
 /*.page-template-about .why .why-desc {*/
-    /*padding: 0;*/
+/*padding: 0;*/
 /*}*/
 
 .page-template-about .why .why-img {
@@ -3593,7 +3593,7 @@ section.project-url .next-project-btn {
     }
 
     /*section.ca-page-header .container {*/
-        /*transform: translate(0, -50%);*/
+    /*transform: translate(0, -50%);*/
     /*}*/
 
     .main-wrapper {
@@ -4899,11 +4899,11 @@ section.project-url .next-project-btn {
 
     .home .showcase a {
         font-size: 4.26vw;
-        padding: 3vw 15px 0;
+        padding: 4vw 15px 1vw;
     }
 
     .home .showcase a {
-        max-width: 73.6vw;
+        max-width: 78.6vw;
         margin-top: 6.6vw;
         margin-bottom: 5.06vw;
     }
@@ -4936,21 +4936,27 @@ section.project-url .next-project-btn {
 
     /*General*/
     /*.home .slid-content p {*/
-        /*font-size: 4.26vw;*/
-        /*line-height: 7.066vw;*/
-        /*display: inline;*/
+    /*font-size: 4.26vw;*/
+    /*line-height: 7.066vw;*/
+    /*display: inline;*/
     /*}*/
 
     /*.home .slid-content .description {*/
-        /*margin-bottom: 8.6vw;*/
+    /*margin-bottom: 8.6vw;*/
     /*}*/
 
     .home .slide-desc a {
         min-width: 64vw;
         min-height: 13vw;
-        padding-top: 3.5vw;
+        /* padding-top: 3.5vw; */
         font-size: 4vw;
         margin-top: 7vw;
+    }
+    .home .slide-desc a > span {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .move-section {
         bottom: -35px;
@@ -5948,17 +5954,17 @@ section.project-url .next-project-btn {
     }
     /* General */
     /*.home .slide-desc {*/
-        /*top: 20.33vw*/
+    /*top: 20.33vw*/
     /*}*/
     /*.home .slide-desc a {*/
-        /*padding-top: 1vw;*/
+    /*padding-top: 1vw;*/
     /*}*/
     /*.home .slid-content p {*/
-        /*font-size: 5.26vw;*/
-        /*line-height: 8.066vw;*/
+    /*font-size: 5.26vw;*/
+    /*line-height: 8.066vw;*/
     /*}*/
     /*.home .slider-container, .home .home-slider, .home .slick-list {*/
-        /*height: 140vw;*/
+    /*height: 140vw;*/
     /*}*/
     /*.container{background: purple; z-index: 5}*/
     section.ca-page-header .sub-title {

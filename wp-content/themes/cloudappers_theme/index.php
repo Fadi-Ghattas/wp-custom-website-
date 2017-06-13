@@ -74,7 +74,7 @@ get_template_part('template-part', 'topnav');
                                 <?php if (!empty($slid['main_slide_description'])) ?>
                                 <div class="description"><?php echo $slid['main_slide_description']; ?></div>
                                 <?php if (!empty($slid['main_slide_button_text']) && !empty($slid['main_slide_button_link_url'])) ?>
-                                <a class="c-btn"  target="_blank" href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><?php echo $slid['main_slide_button_text']; ?></a>
+                                <a class="c-btn"  target="_blank" href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><span><span> <?php echo $slid['main_slide_button_text']; ?></span></span></a>
                             </div>
                         </div>
                     </div>
