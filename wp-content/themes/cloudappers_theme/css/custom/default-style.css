@@ -930,9 +930,11 @@ header, nav, header img {
     box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
     line-height: 47px;
     display: block;
-    margin-top: 56px;
+    margin-top: 53px;
     margin-left: 39px;
     border-radius: 4px;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 .home .contact .address-ca #take-me-there:hover {
@@ -944,7 +946,7 @@ header, nav, header img {
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
-    padding-bottom: 27px;
+    padding-bottom: 20px;
     padding-top: 5px;
     margin-bottom: 0;
     font-size: 16px;
@@ -965,7 +967,7 @@ body.home.blog.modal-open {
     line-height: 1.714;
     text-align: left;
     padding-left: 27px;
-    margin-top: 13px;
+    margin-top: 11px;
 }
 
 .home .contact .address-ca .details {
@@ -991,6 +993,7 @@ body.home.blog.modal-open {
 .home .contact p.phone {
     background: url("../../img/phone-white-icon@3x.svg") no-repeat left center;
     background-size: 18px 18px;
+    margin-top: 19px;
 }
 
 .home .contact .form .container-fluid {
@@ -1018,11 +1021,11 @@ body.home.blog.modal-open {
 }
 
 .home .contact .form-group:first-of-type {
-    margin-right: 33px;
+    margin-right: 34px;
 }
 
 .home .contact .form-group {
-    max-width: 231px;
+    max-width: 238px;
     width: 100%;
     display: inline-block;
     text-align: left;
@@ -1039,6 +1042,7 @@ body.home.blog.modal-open {
     border-radius: 0;
     font-size: 18px;
     color: #ff5f19;
+    padding-left: 7px;
 }
 
 .home .contact .form-group.note {
@@ -1050,7 +1054,7 @@ body.home.blog.modal-open {
 .home .contact .form button {
     border: none;
     width: 100%;
-    max-width: 504px;
+    max-width: 511px;
     font-size: 14px;
     font-weight: bold;
 
@@ -3744,7 +3748,7 @@ section.project-url .next-project-btn {
     }
 
     form#GetInTouchForm {
-        max-width: 500px;
+        max-width: 515px;
     }
 
     .home .contact .copyright {
@@ -3820,7 +3824,7 @@ section.project-url .next-project-btn {
     }
 
     .home .contact .form {
-        padding-left: 70px;
+        padding-left: 54px;
     }
 
     .home .contact .container-fluid {
