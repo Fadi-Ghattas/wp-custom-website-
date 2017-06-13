@@ -3980,6 +3980,7 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 0.9) 70%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
+        top: -2px;
     }
 
     .contact .address-ca [class*="col-"] {
