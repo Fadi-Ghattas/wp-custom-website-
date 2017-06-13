@@ -263,7 +263,7 @@ get_template_part('template-part', 'topnav');
             <div class="row join">
                 <div class="col-lg-12">
                     <h2>I want to create amazing things with you!</h2>
-                    <a href="javascript:void(0)" id="take-me-in" class="c-rbtn">TAKE ME IN</a>
+                    <a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>
                 </div>
             </div>
         </div>
