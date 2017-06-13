@@ -3937,6 +3937,10 @@ section.project-url .next-project-btn {
         height: auto;
     }
 
+    .home .contact .copyright {
+        padding-left: 0;
+    }
+
     .page-template-contact-us .contact > div {
         height: auto;
     }
@@ -4230,9 +4234,20 @@ section.project-url .next-project-btn {
     .home .slide-desc {
         bottom: 50%;
     }
+
+
 }
 
 @media (max-width: 991px) {
+
+    .home .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
+        vertical-align: top;
+        margin-top: 58px;
+    }
+
+    .home .address-ca .container-fluid .row div.col-lg-6:nth-child(2) a {
+        margin-top: 0 !important;
+    }
 
     .new-empty-line {
         height: 0;
