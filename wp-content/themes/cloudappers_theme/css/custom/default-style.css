@@ -4885,6 +4885,11 @@ section.project-url .next-project-btn {
     .navbar-inverse .navbar-toggle {
         margin-top: 14px;
     }
+    /* Client section */
+    .clients .item:nth-child(n+7) {
+        display: none;
+    }
+    /* Client section End */
     /* Show case section */
     .home .showcase p {
         font-size: 4.76vw;
@@ -5134,6 +5139,18 @@ section.project-url .next-project-btn {
         background: url(../../img/mob-clients.png) no-repeat left;
         background-size: 37px 31px;
         padding-left: 50px;
+
+    }
+    .home .what-we-do .view-all a,
+    .home .clients .view-all a {
+        font-size: 4.26vw;
+        font-weight: bold;
+        color: #454545;
+        letter-spacing: 0px;
+    }
+    .view-all, .home .what-we-do .view-all {
+        height: auto;
+        padding: 3vw 15px;
     }
 
     .home .contact .form-group,
@@ -5740,8 +5757,8 @@ section.project-url .next-project-btn {
 
     /*clients*/
     .clients .item img {
-        -webkit-filter: none;
-        filter: none;
+        -webkit-filter: grayscale(100%) opacity(50%);
+        filter: grayscale(100%) opacity(50%);
     }
 
     /*Service*/
