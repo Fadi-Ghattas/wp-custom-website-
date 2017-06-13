@@ -4188,6 +4188,17 @@ section.project-url .next-project-btn {
 
 }
 
+@media (max-width: 1024px) and (orientation: portrait) {
+
+    .home .slick-list {
+        height: 76vh;
+    }
+
+    .home .slide-desc {
+        bottom: 50%;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .home .slide-desc {
