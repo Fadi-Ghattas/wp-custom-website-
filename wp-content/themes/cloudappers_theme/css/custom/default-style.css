@@ -133,7 +133,7 @@ section.ca-page-header .sub-title {
     font-weight: 700;
     font-size: 90px;
     line-height: 108px;
-    /*text-shadow: 0px 0px 19.74px rgba(131, 131, 131, 0.5);*/
+    text-shadow: 0px 0px 19.74px rgba(131, 131, 131, 0.5);
     text-transform: uppercase;
     /*word-break: break-all;*/
 }
@@ -5363,6 +5363,10 @@ section.project-url .next-project-btn {
 
     /*banner end*/
     /*show you page start*/
+
+    .page-template-projects section.ca-page-header .sub-title {
+        text-shadow: none;
+    }
 
     .page-template-projects .all-projects {
         background-image: none;
