@@ -5012,14 +5012,19 @@ section.project-url .next-project-btn {
         font-size: 4vw;
         margin-top: 7vw;
     }
-
+    .home .contact .form h1 {
+        letter-spacing: 4px;
+    }
     .home .slide-desc a > span {
         display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
     }
-
+    .home .team .join a > span >span,
+    .home .slide-desc a > span > span{
+        font-size: 4.03vw;
+    }
     .move-section {
         bottom: -35px;
     }
@@ -5938,7 +5943,7 @@ section.project-url .next-project-btn {
         background: url(../../img/team.jpg) no-repeat center -50vh, url(../../img/team.jpg) no-repeat center;
         background-size: auto , cover;
         padding-top: 63px;
-        padding-bottom: 104px;
+        padding-bottom: 60px;
     }
     .home .team .join h2 {
         margin-top: 50px;
