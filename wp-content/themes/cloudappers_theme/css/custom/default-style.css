@@ -1330,7 +1330,7 @@ label[for="expected_salary"] {
     color: #ff601b;
 }
 
-.home .contact .form-group.ms {
+.home .contact .form-group.ms{
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
@@ -3263,6 +3263,17 @@ section.project-url .next-project-btn {
     vertical-align: top;
 }
 
+
+.page-template-contact-us .contact .form-group.ms{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 38px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
+    margin-top: 0;
+}
+
 .page-template-contact-us .contact .form label {
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -4353,6 +4364,10 @@ section.project-url .next-project-btn {
     /*General*/
     .team .members > div:before {
         display: none;
+    }
+
+    section.ca-page-header .container{
+        padding-top: 15vw;
     }
 
     /*Menu*/
@@ -5744,8 +5759,10 @@ section.project-url .next-project-btn {
         /*line-height: 47px;*/
         display: block;
         margin-top: 60px;
-        margin-left: 5px;
+
         border-radius: 4px;
+        max-width: 63vw;
+        width: auto;
     }
 
     .page-template-contact-us .contact .address-ca a {
