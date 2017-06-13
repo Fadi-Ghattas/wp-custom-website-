@@ -5469,11 +5469,6 @@ section.project-url .next-project-btn {
         display: block;
     }
 
-    .page-template-projects ul.filters li a .icon ,
-    .page-template-projects ul.filters li a .icon-hover {
-        width: inherit;
-    }
-
     .page-template-projects ul.filters li a,
     .page-template-projects ul.filters li a span{
         font-size: 4.533333333333333vw;
@@ -5482,7 +5477,8 @@ section.project-url .next-project-btn {
 
     .page-template-projects ul.filters li a img.icon,
     .page-template-projects ul.filters li a img.icon-hover {
-        height: 5.333333333333333vw;
+        width: inherit !important;
+        height: 5.333333333333333vw !important;
         z-index: -1;
     }
 
