@@ -3388,9 +3388,6 @@ section.project-url .next-project-btn {
     padding-left: 13px;
 }
 
-.page-template-contact-us .contact .address-ca .container-fluid .row div:nth-child(1) {
-    padding-left: 0;
-}
 
 .page-template-contact-us .contact .form .container-fluid {
     margin-left: 0;
@@ -3686,6 +3683,11 @@ section.project-url .next-project-btn {
         vertical-align: top;
         height: 100%;
     }
+
+    .page-template-contact-us .contact .address-ca .container-fluid .row div:nth-child(1) {
+        padding-left: 0;
+    }
+
 
 
 
