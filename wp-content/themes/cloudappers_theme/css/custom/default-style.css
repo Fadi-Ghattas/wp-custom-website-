@@ -5168,11 +5168,15 @@ section.project-url .next-project-btn {
 
     }
     .home .what-we-do .view-all a,
-    .home .clients .view-all a {
+    .home .clients .view-all a,
+    .home .showyou .view-all a {
         font-size: 4.26vw;
         font-weight: bold;
         color: #454545;
         letter-spacing: 0px;
+    }
+    .home .showyou .view-all a {
+        background-size: 35px
     }
     .home .what-we-do h1 {
         font-size: 6.4vw;
@@ -5193,7 +5197,8 @@ section.project-url .next-project-btn {
         bottom: 50px;
         margin-left: -20px;
     }
-    .view-all, .home .what-we-do .view-all {
+    .view-all, .home .what-we-do .view-all,
+    .home .showyou .view-all {
         height: auto;
         padding: 3vw 15px;
     }
@@ -5268,7 +5273,7 @@ section.project-url .next-project-btn {
         top: 18vw;
         right: 0;
         left: 0;
-        letter-spacing: 7.4px;
+        letter-spacing: 2px;
     }
 
     .home .showyou .bg-showyou {
@@ -5283,10 +5288,10 @@ section.project-url .next-project-btn {
         /*-ms-transform: matrix(4.23134757132817, 0, 0, 4.23134757132816, 0, 0);*/
         /*margin: 0;*/
         /*letter-spacing: 7.4px;*/
-        background: url(../../img/show.png) no-repeat 37% 85px;
+        background: url(../../img/show.png) no-repeat 37% 77px;
         background-size: 200%;
         /*height: 285px;*/
-        height: 38vw;
+        height: 42vw;
         top: 0;
         width: 100%;
     }
@@ -5337,6 +5342,7 @@ section.project-url .next-project-btn {
 
     .home .showyou .projects {
         margin-top: 0;
+        padding: 0;
     }
 
     .team .members .member-info h5 {
@@ -5958,6 +5964,12 @@ section.project-url .next-project-btn {
     #nav-toggle {
         /*height: 15vw;*/
     }
+
+    .page-template-about .words{
+        background-size: 100% 50vw, contain;
+    }
+
+
 
 }
 @media (max-width: 767px) and (orientation: landscape) {

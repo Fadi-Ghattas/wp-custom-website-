@@ -144,8 +144,6 @@ get_template_part('template-part', 'topnav');
 
 <?php if (!empty($sweetWords)) { ?>
     <section class="words">
-        <div class="left-sec"></div>
-        <div class="right-sec"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
