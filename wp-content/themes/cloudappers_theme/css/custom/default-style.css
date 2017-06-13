@@ -5,6 +5,7 @@ date:      20/04/2017
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
 html, body {
     padding: 0;
     margin: 0;
@@ -929,9 +930,11 @@ header, nav, header img {
     box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
     line-height: 47px;
     display: block;
-    margin-top: 56px;
+    margin-top: 53px;
     margin-left: 39px;
     border-radius: 4px;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 .home .contact .address-ca #take-me-there:hover {
@@ -943,7 +946,7 @@ header, nav, header img {
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
-    padding-bottom: 27px;
+    padding-bottom: 20px;
     padding-top: 5px;
     margin-bottom: 0;
     font-size: 16px;
@@ -964,7 +967,7 @@ body.home.blog.modal-open {
     line-height: 1.714;
     text-align: left;
     padding-left: 27px;
-    margin-top: 13px;
+    margin-top: 11px;
 }
 
 .home .contact .address-ca .details {
@@ -990,6 +993,7 @@ body.home.blog.modal-open {
 .home .contact p.phone {
     background: url("../../img/phone-white-icon@3x.svg") no-repeat left center;
     background-size: 18px 18px;
+    margin-top: 19px;
 }
 
 .home .contact .form .container-fluid {
@@ -1017,11 +1021,11 @@ body.home.blog.modal-open {
 }
 
 .home .contact .form-group:first-of-type {
-    margin-right: 33px;
+    margin-right: 34px;
 }
 
 .home .contact .form-group {
-    max-width: 231px;
+    max-width: 238px;
     width: 100%;
     display: inline-block;
     text-align: left;
@@ -1038,6 +1042,7 @@ body.home.blog.modal-open {
     border-radius: 0;
     font-size: 18px;
     color: #ff5f19;
+    padding-left: 7px;
 }
 
 .home .contact .form-group.note {
@@ -1049,7 +1054,7 @@ body.home.blog.modal-open {
 .home .contact .form button {
     border: none;
     width: 100%;
-    max-width: 504px;
+    max-width: 511px;
     font-size: 14px;
     font-weight: bold;
 
@@ -1203,10 +1208,14 @@ body.home.blog.modal-open {
 }
 
 #JobModal label {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0;
     color: #000;
+}
+
+#JobModal label.focus  {
+    font-size: 16px;
 }
 
 #JobModal .form-group:nth-child(11) label {
@@ -1691,6 +1700,11 @@ section.some-of-show-cases .overlay h6 {
     padding: 49px 0 54px 0px;
 }
 
+.page-template-projects .all-projects {
+    background: url(../../img/project-background.png) no-repeat 50% 9px;
+    background-size: 929px 221px;
+}
+
 .filters-back {
     position: relative;
     width: 372px;
@@ -1754,13 +1768,39 @@ ul.filters li {
     cursor: pointer;
 }
 
-ul.filters li a {
+.page-template-projects ul.filters li:nth-child(1) a .icon ,
+.page-template-projects ul.filters li:nth-child(1) a .icon-hover {
+    width: 15px;
+    height: 17px;
+}
+
+.page-template-projects ul.filters li:nth-child(2) a .icon ,
+.page-template-projects ul.filters li:nth-child(2) a .icon-hover {
+    width: 24px;
+    height: 20px;
+}
+
+.page-template-projects ul.filters li:nth-child(3) a .icon ,
+.page-template-projects ul.filters li:nth-child(3) a .icon-hover {
+    width: 13px;
+    height: 23px;
+}
+
+ul.filters li a,
+ul.filters li a span {
     color: #d0d0d0;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+ul.filters li a span {
+    vertical-align: middle;
+}
+
+ul.filters li a {
     display: inline-block;
     cursor: pointer;
     z-index: 10;
@@ -1838,6 +1878,7 @@ section.all-projects .grid {
 section.all-the-team .grid {
     margin-bottom: 53px;
 }
+
 
 /*show you page end*/
 
@@ -2638,7 +2679,6 @@ section.project-url .next-project-btn {
     padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
     box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.06)
-
 }
 
 .page-template-about .time h6 {
@@ -2657,9 +2697,9 @@ section.project-url .next-project-btn {
     padding-bottom: 116px;
 }
 
-.page-template-about .why .why-desc {
-    padding: 0;
-}
+/*.page-template-about .why .why-desc {*/
+    /*padding: 0;*/
+/*}*/
 
 .page-template-about .why .why-img {
     height: 100px;
@@ -2667,18 +2707,6 @@ section.project-url .next-project-btn {
 
 .page-template-about .why .why-img img {
     max-height: 100%;
-}
-
-.page-template-about .why .why-desc:nth-child(2) {
-    padding-right: 23px;
-}
-
-.page-template-about .why .why-desc:nth-child(3) {
-    padding: 0 23px;
-}
-
-.page-template-about .why .why-desc:last-child {
-    padding-left: 23px;
 }
 
 .page-template-about .why .row {
@@ -3293,7 +3321,7 @@ section.project-url .next-project-btn {
     line-height: 47px;
     display: block;
     margin-top: 60px;
-    margin-left: 5px;
+    margin-left: 39px;
     border-radius: 4px;
 }
 
@@ -3530,6 +3558,29 @@ section.project-url .next-project-btn {
     transform: rotate(-45deg);
 }
 
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .show-case-item {
+        -webkit-transition-duration: 0s !important;
+        -moz-transition-duration: 0s !important;
+        -ms-transition-duration: 0s !important;
+        -o-transition-duration: 0s !important;
+        transition-duration: 0s !important;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    /* Edge CSS styles go here */
+    .show-case-item {
+        -webkit-transition-duration: 0s !important;
+        -moz-transition-duration: 0s !important;
+        -ms-transition-duration: 0s !important;
+        -o-transition-duration: 0s !important;
+        transition-duration: 0s !important;
+    }
+}
+
 @media (min-width: 768px) {
     /*General*/
     .mob {
@@ -3697,7 +3748,7 @@ section.project-url .next-project-btn {
     }
 
     form#GetInTouchForm {
-        max-width: 500px;
+        max-width: 515px;
     }
 
     .home .contact .copyright {
@@ -3724,7 +3775,11 @@ section.project-url .next-project-btn {
         left: -6px;
         top: 3px;
         opacity: 1;
-        transition: all 1s;
+        -webkit-transition: right 1s, left 1s,top 1s, opacity 1s,-webkit-transform 1s;
+        -moz-transition: right 1s, left 1s,top 1s, opacity 1s,-moz-transform 1s;
+        -ms-transition: right 1s, left 1s,top 1s, opacity 1s,-ms-transform 1s;
+        -o-transition: right 1s, left 1s,top 1s, opacity 1s,-o-transform 1s;
+        transition:  right 1s, left 1s,top 1s, opacity 1s,transform 1s;
     }
 
     .img-float {
@@ -3769,7 +3824,7 @@ section.project-url .next-project-btn {
     }
 
     .home .contact .form {
-        padding-left: 70px;
+        padding-left: 54px;
     }
 
     .home .contact .container-fluid {
@@ -5344,6 +5399,11 @@ section.project-url .next-project-btn {
 
     /*banner end*/
     /*show you page start*/
+
+    .page-template-projects .all-projects {
+        background-image: none;
+    }
+
     .page-template-projects .row {
         margin-right: 0;
         margin-left: 0;
@@ -5445,14 +5505,16 @@ section.project-url .next-project-btn {
         display: block;
     }
 
-    .page-template-projects ul.filters li a {
+    .page-template-projects ul.filters li a,
+    .page-template-projects ul.filters li a span{
         font-size: 4.533333333333333vw;
         height: 100%;
     }
 
     .page-template-projects ul.filters li a img.icon,
     .page-template-projects ul.filters li a img.icon-hover {
-        height: 5.333333333333333vw;
+        width: inherit !important;
+        height: 5.333333333333333vw !important;
         z-index: -1;
     }
 
@@ -5672,6 +5734,10 @@ section.project-url .next-project-btn {
     }
 
     /*Service*/
+    .page-template-services section.ca-page-header .sub-title {
+        text-shadow: none;
+    }
+
     section.info .full-center-vertical-divider {
         display: none;
     }
