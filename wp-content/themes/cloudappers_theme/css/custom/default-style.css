@@ -3531,6 +3531,17 @@ section.project-url .next-project-btn {
     }
 }
 
+@supports (-ms-ime-align:auto) {
+    /* Edge CSS styles go here */
+    .show-case-item {
+        -webkit-transition-duration: 0s !important;
+        -moz-transition-duration: 0s !important;
+        -ms-transition-duration: 0s !important;
+        -o-transition-duration: 0s !important;
+        transition-duration: 0s !important;
+    }
+}
+
 @media (min-width: 768px) {
     /*General*/
     .mob {
