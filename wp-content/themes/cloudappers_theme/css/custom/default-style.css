@@ -3384,6 +3384,7 @@ section.project-url .next-project-btn {
 .page-template-contact-us .contact .address-ca .container-fluid {
     margin-right: 0;
     padding-top: 35px;
+    padding-left: 13px;
 }
 
 .page-template-contact-us .contact .address-ca .container-fluid .row div:nth-child(1) {
