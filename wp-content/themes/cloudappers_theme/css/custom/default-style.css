@@ -3712,12 +3712,11 @@ section.project-url .next-project-btn {
         left: -6px;
         top: 3px;
         opacity: 1;
-
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
-        transition: all 1s;
+        -webkit-transition: right 1s, left 1s,top 1s, opacity 1s,-webkit-transform 1s;
+        -moz-transition: right 1s, left 1s,top 1s, opacity 1s,-moz-transform 1s;
+        -ms-transition: right 1s, left 1s,top 1s, opacity 1s,-ms-transform 1s;
+        -o-transition: right 1s, left 1s,top 1s, opacity 1s,-o-transform 1s;
+        transition:  right 1s, left 1s,top 1s, opacity 1s,transform 1s;
     }
 
     .img-float {
