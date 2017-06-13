@@ -1332,6 +1332,9 @@ label[for="expected_salary"] {
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
 }
 
 .btn-anim {
@@ -4200,6 +4203,10 @@ section.project-url .next-project-btn {
         padding-top: 5vw;
     }
 
+    .home .contact .form-group.ms {
+        min-height: inherit;
+        margin: 0;
+    }
     section.project-info .row,
     section.client-say .say-blocks {
         display: block;
