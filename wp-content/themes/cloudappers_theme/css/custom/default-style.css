@@ -5,7 +5,6 @@ date:      20/04/2017
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-
 html, body {
     padding: 0;
     margin: 0;
@@ -1062,8 +1061,7 @@ body.home.blog.modal-open {
 
 .home .contact .copyright img,
 .home .contact .copyright embed,
-.home .contact .copyright svg
-{
+.home .contact .copyright svg {
     width: 236px;
     /* margin-bottom: 2px; */
     /* display: block; */
@@ -1188,9 +1186,11 @@ body.home.blog.modal-open {
     background: transparent;
     padding-left: 0;
 }
+
 #JobModal select {
     cursor: pointer;
 }
+
 #JobModal select:hover {
     animation-duration: 0.8s;
     animation-name: back;
@@ -1214,7 +1214,7 @@ body.home.blog.modal-open {
     color: #000;
 }
 
-#JobModal label.focus  {
+#JobModal label.focus {
     font-size: 16px;
 }
 
@@ -1300,6 +1300,8 @@ body.home.blog.modal-open {
 }
 
 #JobModal .close {
+    position: absolute;
+    right: 15px;
     border: none;
     font-size: 70px;
     /*line-height: 22px;*/
@@ -1332,6 +1334,9 @@ label[for="expected_salary"] {
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
 }
 
 .btn-anim {
@@ -1468,6 +1473,10 @@ a.btn-view-all-show-cases.c-btn span {
     background-size: 37px 31px;
     padding: 5px 22px;
     margin-right: 10px;
+}
+
+a.btn-view-all-show-cases.c-btn:hover span {
+    background: url("../../img/viewallhover.png") no-repeat center ;
 }
 
 section.some-of-show-cases {
@@ -1636,8 +1645,6 @@ section.some-of-show-cases .overlay h6 {
     background-size: cover;
 }
 
-
-
 .branding .description {
     align-self: center;
     color: #fefefe;
@@ -1769,19 +1776,19 @@ ul.filters li {
     cursor: pointer;
 }
 
-.page-template-projects ul.filters li:nth-child(1) a .icon ,
+.page-template-projects ul.filters li:nth-child(1) a .icon,
 .page-template-projects ul.filters li:nth-child(1) a .icon-hover {
     width: 15px;
     height: 17px;
 }
 
-.page-template-projects ul.filters li:nth-child(2) a .icon ,
+.page-template-projects ul.filters li:nth-child(2) a .icon,
 .page-template-projects ul.filters li:nth-child(2) a .icon-hover {
     width: 24px;
     height: 20px;
 }
 
-.page-template-projects ul.filters li:nth-child(3) a .icon ,
+.page-template-projects ul.filters li:nth-child(3) a .icon,
 .page-template-projects ul.filters li:nth-child(3) a .icon-hover {
     width: 13px;
     height: 23px;
@@ -1879,7 +1886,6 @@ section.all-projects .grid {
 section.all-the-team .grid {
     margin-bottom: 53px;
 }
-
 
 /*show you page end*/
 
@@ -2926,8 +2932,7 @@ section.project-url .next-project-btn {
 }
 
 #footer .copyright img,
-#footer .copyright embed
-{
+#footer .copyright embed {
     max-width: 236px;
 }
 
@@ -3388,7 +3393,6 @@ section.project-url .next-project-btn {
     padding-left: 13px;
 }
 
-
 .page-template-contact-us .contact .form .container-fluid {
     margin-left: 0;
 }
@@ -3561,7 +3565,6 @@ section.project-url .next-project-btn {
     transform: rotate(-45deg);
 }
 
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     .show-case-item {
@@ -3593,7 +3596,6 @@ section.project-url .next-project-btn {
     /*section.ca-page-header .container {*/
     /*transform: translate(0, -50%);*/
     /*}*/
-
     .main-wrapper {
         /*margin-top: -300px;*/
         background: white;
@@ -3688,9 +3690,6 @@ section.project-url .next-project-btn {
         padding-left: 0;
     }
 
-
-
-
 }
 
 @media (min-width: 1200px) and (max-width: 1216px) {
@@ -3704,9 +3703,11 @@ section.project-url .next-project-btn {
     .home .contact .form .container-fluid .col-lg-12 {
         /*padding-left: 0;*/
     }
+
     .home .contact .address-ca .container-fluid .col-lg-6:first-child {
         padding-left: 0;
     }
+
     .team .members > div {
         min-height: 280px;
     }
@@ -3783,11 +3784,11 @@ section.project-url .next-project-btn {
         left: -6px;
         top: 3px;
         opacity: 1;
-        -webkit-transition: right 1s, left 1s,top 1s, opacity 1s,-webkit-transform 1s;
-        -moz-transition: right 1s, left 1s,top 1s, opacity 1s,-moz-transform 1s;
-        -ms-transition: right 1s, left 1s,top 1s, opacity 1s,-ms-transform 1s;
-        -o-transition: right 1s, left 1s,top 1s, opacity 1s,-o-transform 1s;
-        transition:  right 1s, left 1s,top 1s, opacity 1s,transform 1s;
+        -webkit-transition: right 1s, left 1s, top 1s, opacity 1s, -webkit-transform 1s;
+        -moz-transition: right 1s, left 1s, top 1s, opacity 1s, -moz-transform 1s;
+        -ms-transition: right 1s, left 1s, top 1s, opacity 1s, -ms-transform 1s;
+        -o-transition: right 1s, left 1s, top 1s, opacity 1s, -o-transform 1s;
+        transition: right 1s, left 1s, top 1s, opacity 1s, transform 1s;
     }
 
     .img-float {
@@ -3888,7 +3889,7 @@ section.project-url .next-project-btn {
         margin-right: -7.5px;
     }
 
-    section.services .service-item:nth-child(n + 4){
+    section.services .service-item:nth-child(n + 4) {
         margin-top: 102px;
     }
 
@@ -3981,6 +3982,7 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 0.9) 70%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
+        top: -2px;
     }
 
     .contact .address-ca [class*="col-"] {
@@ -4070,6 +4072,10 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 0.9) 70%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
+    }
+
+    .home .contact .form-group:first-of-type {
+        margin-right: 0px;
     }
 
     .page-template-contact-us .contact .form {
@@ -4188,14 +4194,20 @@ section.project-url .next-project-btn {
 
 }
 
-
-
 @media (max-width: 1024px) {
 
     .home .slide-desc {
         bottom: 40%;
     }
 
+    .home .contact .form .container-fluid {
+        padding-top: 5vw;
+    }
+
+    .home .contact .form-group.ms {
+        min-height: inherit;
+        margin: 0;
+    }
     section.project-info .row,
     section.client-say .say-blocks {
         display: block;
@@ -4903,20 +4915,27 @@ section.project-url .next-project-btn {
     .navbar-header {
         padding-top: 2vh;
     }
-    .top-header .copyright embed {width: 90%;}
+
+    .top-header .copyright embed {
+        width: 90%;
+    }
+
     .navbar-inverse .navbar-toggle {
         margin-top: 14px;
     }
+
     /* Client section */
     .clients .item:nth-child(n+7) {
         display: none;
     }
+
     /* Client section End */
     /* Show case section */
     .home .showcase p {
         font-size: 4.76vw;
         line-height: 8.06vw;
     }
+
     .home .showcase p:first-child {
         font-size: 4.3vw;
         line-height: 7.06vw;
@@ -4951,6 +4970,7 @@ section.project-url .next-project-btn {
     .home .showcase {
         padding: 10.93vw 0px;
     }
+
     /*!* End Show section *!*/
     .top-header a img.img-responsive {
         /*background: rgba(84, 197, 231, 0.58);*/
@@ -4967,11 +4987,9 @@ section.project-url .next-project-btn {
     /*line-height: 7.066vw;*/
     /*display: inline;*/
     /*}*/
-
     /*.home .slid-content .description {*/
     /*margin-bottom: 8.6vw;*/
     /*}*/
-
     .home .slide-desc a {
         min-width: 64vw;
         min-height: 13vw;
@@ -4979,12 +4997,14 @@ section.project-url .next-project-btn {
         font-size: 4vw;
         margin-top: 7vw;
     }
+
     .home .slide-desc a > span {
         display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
     }
+
     .move-section {
         bottom: -35px;
     }
@@ -5000,24 +5020,27 @@ section.project-url .next-project-btn {
     .word-background {
         display: none;
     }
+
     .navbar-header {
         padding-top: 2vh;
     }
+
     .navbar-inverse .navbar-toggle {
         margin-top: 14px;
     }
+
     .home .slid-content p {
         font-size: 4.76vw;
         line-height: 53px;
         display: inline;
     }
+
     .home .slid-content .description {
         margin-bottom: 30px;
     }
 
-
     /*Menu*/
-    .logo-mob{
+    .logo-mob {
         margin-top: 0;
     }
 
@@ -5163,6 +5186,7 @@ section.project-url .next-project-btn {
         padding-left: 50px;
 
     }
+
     .home .what-we-do .view-all a,
     .home .clients .view-all a,
     .home .showyou .view-all a {
@@ -5171,10 +5195,12 @@ section.project-url .next-project-btn {
         color: #454545;
         letter-spacing: 0px;
     }
+
     .home .showyou .view-all a {
         background-size: 45px
 
     }
+
     .home .what-we-do h1 {
         font-size: 6.4vw;
     }
@@ -5185,15 +5211,18 @@ section.project-url .next-project-btn {
         padding-top: 5px;
         padding-bottom: 70px;
     }
+
     .home .what-we-do .row > div > a > img:not(.more) {
         transform: scale(1.5, 1.5);
         margin: 20px 0;
     }
+
     .home .what-we-do .more {
         transform: scale(1.3, 1.3);
         bottom: 50px;
         margin-left: -20px;
     }
+
     .view-all, .home .what-we-do .view-all,
     .home .showyou .view-all {
         height: auto;
@@ -5243,6 +5272,7 @@ section.project-url .next-project-btn {
         top: 195px;
         bottom: 0;
     }
+
     .home .showyou {
         border-top: 2px solid rgb(239, 239, 239);
         padding-top: 0;
@@ -5475,7 +5505,6 @@ section.project-url .next-project-btn {
 
     /*banner end*/
     /*show you page start*/
-
     .page-template-projects .all-projects {
         background-image: none;
     }
@@ -5582,7 +5611,7 @@ section.project-url .next-project-btn {
     }
 
     .page-template-projects ul.filters li a,
-    .page-template-projects ul.filters li a span{
+    .page-template-projects ul.filters li a span {
         font-size: 4.533333333333333vw;
         height: 100%;
     }
@@ -5847,7 +5876,7 @@ section.project-url .next-project-btn {
     }
 
     .facebook {
-        background-size: 3.2vw  6.666666666666667vw;
+        background-size: 3.2vw 6.666666666666667vw;
     }
 
     .instagram {
@@ -5961,7 +5990,7 @@ section.project-url .next-project-btn {
         position: absolute;
         right: 0;
         left: 0;
-        bottom:   0;
+        bottom: 0;
     }
 
     .top-header a {
@@ -5976,33 +6005,44 @@ section.project-url .next-project-btn {
         /*height: 15vw;*/
     }
 
+    .page-template-about .words {
+        background-size: 100% 50vw, contain;
+    }
+
 }
+
 @media (max-width: 767px) and (orientation: landscape) {
     #nav-toggle span:before {
         top: -2.5vw;
         width: 6vw;
     }
+
     #nav-toggle span:after {
         bottom: -2.5vw;
         width: 6vw;
     }
+
     #nav-toggle span {
         width: 4.5vw
     }
 }
+
 @media (max-width: 600px) {
     .navbar-nav {
         /*padding-top: 80px;*/
     }
+
     .navbar-inverse .navbar-nav > li > a {
         font-size: 6.6vw;
         padding-top: 18px;
         padding-bottom: 29px;
     }
+
     .logo-mob {
         /* width: 13vw; */
         width: 12vh;
     }
+
     /*     #nav-toggle span:after {
             bottom: -3vw
         }
@@ -6016,21 +6056,26 @@ section.project-url .next-project-btn {
             width: 7vw
         } */
 }
+
 /*xs*/
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
     .home .slide-desc a {
         margin-top: 0;
     }
+
     .home .slid-content p {
         font-size: 5.76vw;
     }
+
     .home .slide-desc a {
         padding-top: 1vw
     }
+
     .navbar-inverse .navbar-toggle {
         margin-top: 5px;
     }
+
     /* General */
     /*.home .slide-desc {*/
     /*top: 20.33vw*/
@@ -6132,18 +6177,22 @@ section.project-url .next-project-btn {
 @media (max-width: 400px) {
 
 }
+
 /*xs*/
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
     .home .slide-desc {
         top: 130px
     }
+
     .home .slider-container, .home .home-slider, .home .slick-list {
         height: 800px;
     }
+
     .home .slide-desc h1 {
         margin-left: -6px;
     }
+
     /*.container{background: orange; z-index: 5}*/
     section.ca-page-banner .vertical-line {
         height: 32px;
