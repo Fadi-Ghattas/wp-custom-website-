@@ -147,6 +147,9 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                                     <input type="text" class="form-control" id="note" name="note">
                                 </div>
                                 <button type="submit" class="c-btn">GET IN TOUCH</button>
+                                <div class="form-group ms">
+                                    <p class="message"></p>
+                                </div>
                             </form>
                         </div>
                     </div>
