@@ -46,8 +46,7 @@ get_template_part('template-part', 'topnav');
 			<div class="row">
 				<div class="client-row">
 					<?php foreach ($clients as $client) { ?>
-						<a href="<?php echo esc_url($client['client_website_url']); ?>"
-						   class="item  col-md-2 col-sm-2 col-xs-6">
+						<a href="<?php echo esc_url($client['client_website_url']); ?>" class="item  col-md-2 col-sm-2 col-xs-6" target="_blank">
 							<img src="<?php echo esc_url($client['client_logo']['url']); ?>">
 						</a>
 					<?php } ?>
