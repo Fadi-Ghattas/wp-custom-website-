@@ -280,12 +280,6 @@ jQuery(function ($) {
         });
     }
 
-    // $(".parallax-slider").on("load", function() {
-    //     //$(window).trigger("resize").trigger("scroll");
-    //     // Other code...
-    //     //console.log('here');
-    // });
-
     $(window).on('load', function () {
 
         var ua = window.navigator.userAgent;
