@@ -177,9 +177,11 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
 </div>
 
 <div id="map-popup" class="modal fade" role="dialog">
+
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
+                <button type="button" class="close mob" data-dismiss="modal">&times;</button>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div id="map-details"></div>

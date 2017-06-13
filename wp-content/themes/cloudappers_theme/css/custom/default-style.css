@@ -3605,6 +3605,7 @@ section.project-url .next-project-btn {
         display: none;
     }
 
+
     /*section.ca-page-header .container {*/
     /*transform: translate(0, -50%);*/
     /*}*/
@@ -4951,6 +4952,16 @@ section.project-url .next-project-btn {
 @media (max-width: 767px) {
     .navbar-header {
         padding-top: 2vh;
+    }
+
+   #map-popup .close{
+        z-index: 1;
+        position: absolute;
+        right: 2px;
+        top: -8px;
+       font-size: 30px;
+       font-weight: 500;
+       opacity: 0.5;
     }
 
     .top-header .copyright embed {
