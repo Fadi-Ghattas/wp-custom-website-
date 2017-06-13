@@ -4190,6 +4190,10 @@ section.project-url .next-project-btn {
         bottom: 40%;
     }
 
+    .home .contact .form .container-fluid {
+        padding-top: 5vw;
+    }
+
     section.project-info .row,
     section.client-say .say-blocks {
         display: block;
