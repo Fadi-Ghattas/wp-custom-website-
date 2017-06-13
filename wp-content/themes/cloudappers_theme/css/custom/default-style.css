@@ -1692,6 +1692,11 @@ section.some-of-show-cases .overlay h6 {
     padding: 49px 0 54px 0px;
 }
 
+.page-template-projects .all-projects {
+    background: url(../../img/project-background.png) no-repeat 50% 9px;
+    background-size: 929px 221px;
+}
+
 .filters-back {
     position: relative;
     width: 372px;
@@ -1839,6 +1844,7 @@ section.all-projects .grid {
 section.all-the-team .grid {
     margin-bottom: 53px;
 }
+
 
 /*show you page end*/
 
@@ -2639,7 +2645,6 @@ section.project-url .next-project-btn {
     padding: 109px 15px 68px;
     border: 1px solid rgb(245, 245, 245);
     box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.06)
-
 }
 
 .page-template-about .time h6 {
@@ -5324,6 +5329,11 @@ section.project-url .next-project-btn {
 
     /*banner end*/
     /*show you page start*/
+
+    .page-template-projects .all-projects {
+        background-image: none;
+    }
+
     .page-template-projects .row {
         margin-right: 0;
         margin-left: 0;

@@ -38,7 +38,7 @@ get_template_part('template-part', 'topnav');
 
     <section class="all-projects some-of-show-cases">
 
-        <span class="word-background">PROJECTS</span>
+<!--        <span class="word-background">PROJECTS</span>-->
 
         <div class="container">
             <div class="row">
