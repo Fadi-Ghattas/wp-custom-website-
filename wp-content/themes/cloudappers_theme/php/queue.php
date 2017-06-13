@@ -64,10 +64,11 @@ function project_scripts()
 //	}
 //	if (in_array(basename(get_page_template()), ['projects.php','team.php'])) {
 	wp_enqueue_script('bootstrap-isotope-js', get_template_directory_uri() . '/js/isotope/isotope.pkgd.min.js', ['jquery-min'], '1', FALSE);
+	wp_enqueue_script('imagesloaded-js', get_template_directory_uri() . '/js/imagesloaded/imagesloaded.pkgd.min.js', ['jquery-min'], '1', FALSE);
 //	}
 
 	//wp_enqueue_script('helpers_js', get_template_directory_uri() . '/js/custom/helpers.js', ['jquery-min'], '1.0', FALSE);
-	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '2.0', FALSE);
+	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '2.1', FALSE);
 	wp_enqueue_script('ajax_js', get_template_directory_uri() . '/js/custom/ajax.js', ['jquery-min'], '1.48', TRUE);
 	wp_enqueue_script('theme_js', get_template_directory_uri() . '/js/custom/theme.js', ['jquery-min'], '1.16', TRUE);
 
