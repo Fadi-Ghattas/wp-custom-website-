@@ -1332,6 +1332,9 @@ label[for="expected_salary"] {
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
 }
 
 .btn-anim {
@@ -3977,6 +3980,7 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 0.9) 70%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
+        top: -2px;
     }
 
     .contact .address-ca [class*="col-"] {
@@ -4066,6 +4070,10 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 0.9) 70%,
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
+    }
+
+    .home .contact .form-group:first-of-type {
+        margin-right: 0px;
     }
 
     .page-template-contact-us .contact .form {
@@ -4194,6 +4202,10 @@ section.project-url .next-project-btn {
         padding-top: 5vw;
     }
 
+    .home .contact .form-group.ms {
+        min-height: inherit;
+        margin: 0;
+    }
     section.project-info .row,
     section.client-say .say-blocks {
         display: block;
