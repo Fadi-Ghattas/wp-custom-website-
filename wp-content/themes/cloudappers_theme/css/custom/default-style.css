@@ -4214,7 +4214,7 @@ section.project-url .next-project-btn {
 @media (max-width: 1024px) and (orientation: portrait) {
 
     .home .slider-container, .home .home-slider, .home .slick-list {
-        height: 74vh;
+        height: 72vh;
     }
 
     .home .slide-desc {
