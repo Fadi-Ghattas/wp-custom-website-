@@ -5930,6 +5930,12 @@ section.project-url .next-project-btn {
         /*height: 15vw;*/
     }
 
+    .page-template-about .words{
+        background-size: 100% 50vw, contain;
+    }
+
+
+
 }
 @media (max-width: 767px) and (orientation: landscape) {
     #nav-toggle span:before {
