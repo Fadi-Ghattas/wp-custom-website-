@@ -1632,10 +1632,11 @@ section.some-of-show-cases .overlay h6 {
     display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
 }
+
+
 
 .branding .description {
     align-self: center;
@@ -3566,24 +3567,24 @@ section.project-url .next-project-btn {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
-    .show-case-item {
-        -webkit-transition-duration: 0s !important;
-        -moz-transition-duration: 0s !important;
-        -ms-transition-duration: 0s !important;
-        -o-transition-duration: 0s !important;
-        transition-duration: 0s !important;
-    }
+    /*.show-case-item {*/
+        /*-webkit-transition-duration: 0s !important;*/
+        /*-moz-transition-duration: 0s !important;*/
+        /*-ms-transition-duration: 0s !important;*/
+        /*-o-transition-duration: 0s !important;*/
+        /*transition-duration: 0s !important;*/
+    /*}*/
 }
 
 @supports (-ms-ime-align:auto) {
     /* Edge CSS styles go here */
-    .show-case-item {
-        -webkit-transition-duration: 0s !important;
-        -moz-transition-duration: 0s !important;
-        -ms-transition-duration: 0s !important;
-        -o-transition-duration: 0s !important;
-        transition-duration: 0s !important;
-    }
+    /*.show-case-item {*/
+        /*-webkit-transition-duration: 0s !important;*/
+        /*-moz-transition-duration: 0s !important;*/
+        /*-ms-transition-duration: 0s !important;*/
+        /*-o-transition-duration: 0s !important;*/
+        /*transition-duration: 0s !important;*/
+    /*}*/
 }
 
 @media (min-width: 768px) {
@@ -4579,7 +4580,7 @@ section.project-url .next-project-btn {
     }
 
     section.show-case-one-image {
-        padding: 56px 0 56px 0;
+        padding: 6vw 0 6vw 0;
     }
 
     .single-project .project-url .title {

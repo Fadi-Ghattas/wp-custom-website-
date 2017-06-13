@@ -187,9 +187,11 @@ jQuery(function ($) {
 
 
 	if (script_const.page_template == 'projects.php') {
-		var $isotope = $('.grid');
 
-		$isotope.isotope({
+		var $isotope = $('.grid');
+        // layout Isotope after each image loads
+        $isotope.imagesLoaded().progress( function() {
+		    $isotope.isotope({
 			itemSelector: '.show-case-item',
 			layoutMode: 'masonry',
 			percentPosition: true,
@@ -197,6 +199,7 @@ jQuery(function ($) {
 				columnWidth: '.grid-sizer'
 			}
 		});
+        });
 
 		$('ul.filters li').on('click focus hover active touchstart', function (event) {
 			event.stopPropagation();
@@ -213,6 +216,7 @@ jQuery(function ($) {
 			$(this).parent().addClass('active');
 			$isotope.isotope({filter: $(this).attr('data-type')});
 		});
+
 
 	}
 
