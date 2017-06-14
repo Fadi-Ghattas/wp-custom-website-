@@ -2916,7 +2916,10 @@ section.project-url .next-project-btn {
     line-height: 2;
     font-weight: 300;
 }
-
+form#GetInTouchForm button.c-btn {
+    height: 60px;
+    margin-top: 3px;
+}
 .prefooter a {
     width: 269px;
     height: 54px;
@@ -6496,11 +6499,6 @@ a.c-btn:empty {
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
-}
-
-form#GetInTouchForm button.c-btn {
-    height: 60px;
-    margin-top: 3px;
 }
 
 .c-rbtn:hover {
