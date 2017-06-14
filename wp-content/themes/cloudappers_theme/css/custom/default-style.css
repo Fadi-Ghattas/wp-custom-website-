@@ -5062,6 +5062,25 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
+    /* Let us page */
+    .page-template-about .clients {
+        /* padding-top: 15px; */
+        background-color: #fbfbfb;
+        background-position: center -1px;
+        background-size: 90%;
+        background: none;
+        background-color: #fbfbfb;
+    }
+
+    .page-template-about .clients h6 {
+        margin: 0;
+        padding: 30px 15px;
+        background: url("../../img/about-clients.jpg") no-repeat center -7vw;
+        /* height: 400px; */
+        /* background-size: cover; */
+        margin: 0 -15px;
+    }
+    /* Let us page End */
     /* Say Hello section */
     .home .contact > div {
         width: 100%;
