@@ -3720,11 +3720,6 @@ form#GetInTouchForm button.c-btn {
 
 @media (min-width: 1200px) {
 
-    /*General*/
-    body.home.blog.modal-open {
-        overflow-y: visible;
-    }
-
     .home .contact .form .container-fluid .col-lg-12 {
         /*padding-left: 0;*/
     }
