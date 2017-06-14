@@ -3622,7 +3622,7 @@ section.page-not-found h2 a span {
 
 section.page-not-found h2 a:hover {
     color: #fff;
-    border-bottom: 5px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 section.page-not-found  #scene ul {
