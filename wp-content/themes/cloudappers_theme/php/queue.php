@@ -24,7 +24,7 @@ function project_scripts()
 //	if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
 	wp_enqueue_style('bootstrap-fileinput-css', get_template_directory_uri() . '/css/bootstrap/bootstrap-fileinput/css/fileinput.min.css', [], '1');
 //	}
-	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '4.96');
+	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '5.8');
 
 	//JQUERY
 	$script_const = [

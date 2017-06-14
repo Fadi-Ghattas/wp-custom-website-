@@ -5071,6 +5071,25 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
+    /* Let us page */
+    .page-template-about .clients {
+        /* padding-top: 15px; */
+        background-color: #fbfbfb;
+        background-position: center -1px;
+        background-size: 90%;
+        background: none;
+        background-color: #fbfbfb;
+    }
+
+    .page-template-about .clients h6 {
+        margin: 0;
+        padding: 30px 15px;
+        background: url("../../img/about-clients.jpg") no-repeat center -7vw;
+        /* height: 400px; */
+        /* background-size: cover; */
+        margin: 0 -15px;
+    }
+    /* Let us page End */
     /* Say Hello section */
     .home .contact > div {
         width: 100%;
@@ -5424,7 +5443,7 @@ section.page-not-found #particles-js {
     #menu-main-menu li:before {
         content: '';
         display: block;
-        width: 118px;
+        width: 15.733333333333333vw;
         height: 6px;
         display: inline-block;
         margin-right: 20px;
@@ -5477,6 +5496,10 @@ section.page-not-found #particles-js {
         background-size: 37px 31px;
         padding-left: 50px;
 
+    }
+
+    .home .slide-desc h1 {
+        text-shadow:none;
     }
 
     .home .what-we-do .view-all a,
@@ -6375,9 +6398,9 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        font-size: 6.6vw;
-        padding-top: 18px;
-        padding-bottom: 29px;
+        font-size: 8.533333333333333vw;
+        padding-top: 2.4vw;
+        padding-bottom: 3.8666666666666667vw;
     }
 
     .logo-mob {
@@ -6439,8 +6462,9 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        padding-top: 5px;
-        padding-bottom: 10px;
+        padding-top: 2px;
+        padding-bottom: 8px;
+        padding-left: 2px;
     }
 
     #JobCaptcha iframe {
@@ -6532,6 +6556,19 @@ section.page-not-found #particles-js {
 /*xs*/
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 7.533333vw;
+    }
+
+    #menu-main-menu li:before {
+        width: 14.733333vw;
+    }
+
+    section.ca-page-header .container {
+        padding-top: 23vw;
+    }
+
     .home .slide-desc {
         top: 130px
     }
@@ -6579,6 +6616,14 @@ section.page-not-found #particles-js {
 
     .single-project .project-url .url-name p {
         font-size: 8vw;
+    }
+
+    .page-template-about section.ca-page-header .title {
+        font-size: 5vw;
+    }
+
+    .page-template-about section.ca-page-header .sub-title {
+        font-size: 7.6vw;
     }
 
     /*project details 320 end*/
