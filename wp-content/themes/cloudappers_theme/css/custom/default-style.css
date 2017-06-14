@@ -1335,7 +1335,7 @@ label[for="expected_salary"] {
     color: #ff601b;
 }
 
-.home .contact .form-group.ms {
+.home .contact .form-group.ms{
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
@@ -3044,7 +3044,7 @@ section.project-url .next-project-btn {
 
 #footer .social ul li a:hover {
     transition: 0.5s;
-    text-shadow: 0 0 1px;
+    /*text-shadow: 0 0 1px;*/
 }
 
 #footer .details a:hover {
@@ -3268,6 +3268,17 @@ section.project-url .next-project-btn {
     position: relative;
     min-height: 113px;
     vertical-align: top;
+}
+
+
+.page-template-contact-us .contact .form-group.ms{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 38px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
+    margin-top: 0;
 }
 
 .page-template-contact-us .contact .form label {
@@ -3600,6 +3611,7 @@ section.project-url .next-project-btn {
     .mob {
         display: none;
     }
+
 
     /*section.ca-page-header .container {*/
     /*transform: translate(0, -50%);*/
@@ -4055,12 +4067,17 @@ section.project-url .next-project-btn {
     }
 
     .page-template-contact-us .contact .form-group {
-        width: 50%;
+        width: 100%;
         max-width: 100%;
         float: left;
         padding: 0 15px;
         margin-right: 0;
     }
+
+    .page-template-contact-us .contact .form-group:first-of-type, .page-template-contact-us .contact .form-group:nth-of-type(3){
+        margin-right: 0px;
+    }
+
 
     .page-template-contact-us .contact .form-group.note {
         width: 100%;
@@ -4085,6 +4102,7 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
     }
+
 
     .home .contact .form-group:first-of-type {
         margin-right: 0px;
@@ -4376,6 +4394,10 @@ section.project-url .next-project-btn {
     /*General*/
     .team .members > div:before {
         display: none;
+    }
+
+    section.ca-page-header .container{
+        padding-top: 15vw;
     }
 
     /*Menu*/
@@ -4939,6 +4961,16 @@ section.project-url .next-project-btn {
         padding-top: 2vh;
     }
 
+   #map-popup .close{
+        z-index: 1;
+        position: absolute;
+        right: 2px;
+        top: -8px;
+       font-size: 30px;
+       font-weight: 500;
+       opacity: 0.5;
+    }
+
     .top-header .copyright embed {
         width: 90%;
     }
@@ -5020,14 +5052,19 @@ section.project-url .next-project-btn {
         font-size: 4vw;
         margin-top: 7vw;
     }
-
+    .home .contact .form h1 {
+        letter-spacing: 4px;
+    }
     .home .slide-desc a > span {
         display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
     }
-
+    .home .team .join a > span >span,
+    .home .slide-desc a > span > span{
+        font-size: 4.03vw;
+    }
     .move-section {
         bottom: -35px;
     }
@@ -5261,6 +5298,8 @@ section.project-url .next-project-btn {
         margin-right: 0;
         margin-top: 45px;
         text-align: center;
+        min-height: 1px;
+        margin-bottom: 0;
     }
 
     .home .contact .form input {
@@ -5268,7 +5307,7 @@ section.project-url .next-project-btn {
     }
 
     .home .contact .form-group.note {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     .home .contact .form .container-fluid {
@@ -5409,6 +5448,7 @@ section.project-url .next-project-btn {
 
     .home .contact .form h1 {
         font-size: 10vw;
+        margin-bottom: 0;
     }
 
     #JobModal .modal-body {
@@ -5768,8 +5808,10 @@ section.project-url .next-project-btn {
         /*line-height: 47px;*/
         display: block;
         margin-top: 60px;
-        margin-left: 5px;
+
         border-radius: 4px;
+        max-width: 63vw;
+        width: auto;
     }
 
     .page-template-contact-us .contact .address-ca a {
@@ -5946,7 +5988,7 @@ section.project-url .next-project-btn {
         background: url(../../img/team.jpg) no-repeat center -50vh, url(../../img/team.jpg) no-repeat center;
         background-size: auto , cover;
         padding-top: 63px;
-        padding-bottom: 104px;
+        padding-bottom: 60px;
     }
     .home .team .join h2 {
         margin-top: 50px;

@@ -128,7 +128,7 @@ get_template_part('template-part', 'topnav');
                 } ?>
             </div>
         </div>
-        <a href="#" class="btn-view-all-show-cases c-btn">
+        <a href="<?php echo esc_url(home_url('show-you')); ?>" class="btn-view-all-show-cases c-btn">
             <span></span>
             VIEW FULL SHOWCASE
         </a>
