@@ -43,6 +43,10 @@ figure {
     height: 100%;
 }
 
+/*.modal {*/
+/*overflow-y:scroll;*/
+/*}*/
+
 .center {
     text-align: center;
     text-align: -webkit-center;
@@ -1828,7 +1832,9 @@ ul.filters li:last-child a {
 }
 
 ul.filters li a:hover,
-ul.filters li.active a {
+ul.filters li.active a,
+ul.filters li.active a span,
+ul.filters li a:hover span {
     color: #4d4d4d;
 }
 
@@ -2910,7 +2916,10 @@ section.project-url .next-project-btn {
     line-height: 2;
     font-weight: 300;
 }
-
+form#GetInTouchForm button.c-btn {
+    height: 60px;
+    margin-top: 3px;
+}
 .prefooter a {
     width: 269px;
     height: 54px;
@@ -3580,22 +3589,23 @@ section.project-url .next-project-btn {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     .show-case-item {
-        -webkit-transition-duration: 0s !important;
-        -moz-transition-duration: 0s !important;
-        -ms-transition-duration: 0s !important;
-        -o-transition-duration: 0s !important;
-        transition-duration: 0s !important;
+        /*-webkit-transition-duration: 0s !important;*/
+        /*-moz-transition-duration: 0s !important;*/
+        /*-ms-transition-duration: 0s !important;*/
+        /*-o-transition-duration: 0s !important;*/
+        /*transition-duration: 0s !important;*/
     }
+
 }
 
 @supports (-ms-ime-align:auto) {
     /* Edge CSS styles go here */
     .show-case-item {
-        -webkit-transition-duration: 0s !important;
-        -moz-transition-duration: 0s !important;
-        -ms-transition-duration: 0s !important;
-        -o-transition-duration: 0s !important;
-        transition-duration: 0s !important;
+        /*-webkit-transition-duration: 0s !important;*/
+        /*-moz-transition-duration: 0s !important;*/
+        /*-ms-transition-duration: 0s !important;*/
+        /*-o-transition-duration: 0s !important;*/
+        /*transition-duration: 0s !important;*/
     }
 }
 
@@ -3684,9 +3694,6 @@ section.project-url .next-project-btn {
 @media (min-width: 992px) {
 
     /*General*/
-    body.home.blog.modal-open {
-        overflow-y: visible;
-    }
 
     .col-eq-height {
         display: table;
@@ -3933,6 +3940,16 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 1199px) {
+    /*General*/
+    body.home.blog.modal-open {
+        overflow-y: hidden;
+        position: fixed;
+    }
+
+   .modal {
+        -webkit-overflow-scrolling: auto;
+    }
+
     /*Menu*/
     .navbar-nav {
         float: left;
@@ -4950,18 +4967,128 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) {
+    /* Say Hello section */
+    .home .contact > div {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+    .home .contact .form input {
+        color: #000;
+        font-weight: 600;
+    }
+    .home .contact .form-group.ms {
+        padding-top: 20px;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        z-index: 1;
+    }
+    form#GetInTouchForm button.c-btn {
+        height: 13vw;
+        font-size: 4vw;
+        width: calc(100vw - 60px);
+        max-width: none;
+        margin-top: 20px;
+        box-shadow: 10px 16px 19.74px 1.26px rgba(110, 110, 110, 0.2);
+        margin: 20px 15px 0;
+        line-height: 4vw;
+    }
+    /* Say Hello section End*/
+    /* Footer and pre footer */
+    .home .contact {
+        text-align: left;
+    }
+
+    .home .contact .address-ca h6 {
+        font-size: 4.2vw;
+        padding-left: 16vw;
+        padding-bottom: 50px;
+        /* background: url(../../img/white-ca-icon@3x.svg) no-repeat -3px 0px; */
+        background-size: 14vw;
+    }
+
+    .home .contact p {
+        font-size: 4vw;
+    }
+
+    .home .contact .address-ca .details {
+        font-size: 4vw;
+        margin-top: -20px !important;
+        padding-left: 16vw;
+    }
+
+    .home .contact .address-ca p, .page-template-contact-us .contact .address-ca a, .home .contact .address-ca a {
+        font-size: 4vw;
+        line-height: 5.7vw;
+    }
+
+    .home .contact p.mobile {
+        background-size: 4vw;
+    }
+
+    .home .contact p.address-details {
+        background-size: 5vw;
+    }
+
+    .home .contact p.phone {
+        background-size: 5vw;
+    }
+
+    .home .contact .address-ca p {
+        padding-left: 14vw;
+        padding-bottom: 10px;
+    }
+
+    .home .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
+        display: block;
+    }
+
+    .home .contact .address-ca #take-me-there {
+        font-size: 4vw;
+        max-width: none;
+        width: 60.33vw;
+        margin: 0 auto;
+        height: 14vw;
+        line-height: 4vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 60.33vw;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .home .contact .copyright {
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .home .contact .copyright img {
+        width: 70vw;
+    }
+
+    .home .contact .copyright p {
+        font-size: 3vw;
+        /* line-height: 4vw; */
+        padding-top: 10px;
+        display: block;
+    }
+    /* Footer and pre footer end*/
+    /* General */
     .navbar-header {
         padding-top: 2vh;
     }
 
-   #map-popup .close{
+    #map-popup .close{
         z-index: 1;
         position: absolute;
         right: 2px;
         top: -8px;
-       font-size: 30px;
-       font-weight: 500;
-       opacity: 0.5;
+        font-size: 30px;
+        font-weight: 500;
+        opacity: 0.5;
     }
 
     .top-header .copyright embed {
@@ -5250,7 +5377,8 @@ section.project-url .next-project-btn {
     }
 
     .home .showyou .view-all a {
-        background-size: 45px
+        background-size: 45px;
+        padding-left: 55px;
 
     }
 
@@ -5309,7 +5437,7 @@ section.project-url .next-project-btn {
 
     .home .contact .copyright {
         padding-left: 0;
-        padding-bottom: 0;
+        /* padding-bottom: 0; */
         bottom: auto;
     }
 
@@ -5370,7 +5498,7 @@ section.project-url .next-project-btn {
         /*-ms-transform: matrix(4.23134757132817, 0, 0, 4.23134757132816, 0, 0);*/
         /*margin: 0;*/
         /*letter-spacing: 7.4px;*/
-        background: url(../../img/show.png) no-repeat 37% 77px;
+        background: url(../../img/show.png) no-repeat 37% 15vw;
         background-size: 200%;
         /*height: 285px;*/
         height: 42vw;
@@ -5442,6 +5570,7 @@ section.project-url .next-project-btn {
     .home .contact .form h1 {
         font-size: 10vw;
         margin-bottom: 0;
+        text-align: center;
     }
 
     #JobModal .modal-body {
@@ -5897,7 +6026,8 @@ section.project-url .next-project-btn {
     }
 
     /*Service*/
-    .page-template-services section.ca-page-header .sub-title {
+    section.ca-page-header .sub-title
+    {
         text-shadow: none;
     }
 
@@ -5968,8 +6098,9 @@ section.project-url .next-project-btn {
 
     .prefooter p {
         font-size: 5.2vw;
-        line-height: 5.86vw;
+        line-height: 6vw;
         margin-top: 4vw;
+        margin-bottom: 2vw;
     }
     .home .team .title p {
         line-height: 7.6vw;
@@ -6082,6 +6213,16 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
+    /* Show you */
+    .home .showyou .mob-title {
+        top: 10vh;
+    }
+    .home .showyou .bg-showyou {
+        height: 42vh;
+        background: url(../../img/show.png) no-repeat 37% 7vh;
+    }
+    /* Show you end */
+    /* General */
     #nav-toggle span:before {
         top: -2.5vw;
         width: 6vw;
@@ -6241,7 +6382,16 @@ section.project-url .next-project-btn {
         margin-top: 40px;
     }
 
+    .home .showyou .projects > div {
+
+        padding: 30px 30px 130px;
+    }
     /*project inner 408 end*/
+}
+@media all and (device-width: 480px) and (orientation: landscape) {
+    .home .showyou .projects > div {
+        padding: 30px 30px 160px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -6447,11 +6597,6 @@ a.c-btn:empty {
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
-}
-
-form#GetInTouchForm button.c-btn {
-    height: 60px;
-    margin-top: 3px;
 }
 
 .c-rbtn:hover {
