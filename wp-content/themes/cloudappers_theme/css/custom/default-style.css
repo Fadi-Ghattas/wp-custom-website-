@@ -3364,7 +3364,7 @@ form#GetInTouchForm button.c-btn {
 }
 
 .page-template-contact-us .contact .address-ca h6 {
-    background: url("../../img/white-ca-icon@3x.svg") no-repeat left top;
+    background: url("../../img/white-ca-icon@3x.png") no-repeat left top;
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
@@ -4667,13 +4667,15 @@ section.page-not-found #particles-js {
     .page-template-contact-us .contact .address-ca h6 {
         background-size: 11.2vw 11.2vw;
         padding: 2.1vw 6vw;
-        padding-left: 14vw;
-        padding-bottom: 5vw;
-        padding-top: 0.6vw;
+        padding-left: 15.6vw;
+        padding-bottom: 10vw;
+        line-height: 0;
     }
 
     .page-template-contact-us .contact .address-ca .details {
-        padding-left: 14vw;
+        padding-left: 0;
+        max-width: 63vw;
+        margin: -3.3vw auto 0 !important;
     }
 
     .page-template-contact-us .contact p.address-details {
@@ -6021,8 +6023,7 @@ section.page-not-found #particles-js {
         box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
         /*line-height: 47px;*/
         display: block;
-        margin-top: 60px;
-
+        margin-top: 8.5vw;
         border-radius: 4px;
         max-width: 63vw;
         width: auto;
