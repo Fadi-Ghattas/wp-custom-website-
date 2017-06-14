@@ -48,8 +48,8 @@ get_template_part('template-part', 'topnav');
                             <ul class="filters">
                                 <li class="active">
                                     <a href="" data-type=".all">
-                                        <img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.png'); ?>">
-                                        <img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/all-icon.hover.png'); ?>">
+                                        <img class="icon" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/All-portfolio-icon-grey@3x.svg'); ?>">
+                                        <img class="icon-hover" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/All-portfolio-icon@3x.svg'); ?>">
                                         <span>ALL</span>
                                     </a>
                                 </li>
