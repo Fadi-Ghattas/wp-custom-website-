@@ -43,9 +43,9 @@ figure {
     height: 100%;
 }
 
-.modal {
-    overflow-y:scroll;
-}
+/*.modal {*/
+    /*overflow-y:scroll;*/
+/*}*/
 
 .center {
     text-align: center;
@@ -3691,9 +3691,6 @@ section.project-url .next-project-btn {
 @media (min-width: 992px) {
 
     /*General*/
-    body.home.blog.modal-open {
-        overflow-y: visible;
-    }
 
     .col-eq-height {
         display: table;
@@ -3719,6 +3716,11 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+
+    /*General*/
+    body.home.blog.modal-open {
+        overflow-y: visible;
+    }
 
     .home .contact .form .container-fluid .col-lg-12 {
         /*padding-left: 0;*/
