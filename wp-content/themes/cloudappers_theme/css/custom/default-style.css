@@ -2952,7 +2952,7 @@ form#GetInTouchForm button.c-btn {
 }
 
 #footer .address-ca img {
-    width: 66px;
+    width: 56px;
     vertical-align: top;
     float: left;
 }
@@ -3799,10 +3799,10 @@ form#GetInTouchForm button.c-btn {
 
     .top-header.small img.img-float {
         visibility: visible;
-        width: 58px;
+        width: 50px;
         right: 100%;
         left: -6px;
-        top: 3px;
+        top: 9px;
         opacity: 1;
         -webkit-transition: right 1s, left 1s, top 1s, opacity 1s, -webkit-transform 1s;
         -moz-transition: right 1s, left 1s, top 1s, opacity 1s, -moz-transform 1s;

@@ -28,7 +28,7 @@ wp_footer();
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  hidden-xs address-ca">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.svg' ?>"/>
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.png' ?>"/>
                     <div class="details">
                         <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
                         <a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><p class="mobile"><?php echo $setting['settings_mobile_number']; ?></p></a>
