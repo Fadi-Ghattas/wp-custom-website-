@@ -5471,6 +5471,10 @@ section.page-not-found #particles-js {
 
     }
 
+    .home .slide-desc h1 {
+        text-shadow:none;
+    }
+
     .home .what-we-do .view-all a,
     .home .clients .view-all a,
     .home .showyou .view-all a {
@@ -6518,6 +6522,11 @@ section.page-not-found #particles-js {
 /*xs*/
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
+
+    section.ca-page-header .container {
+        padding-top: 23vw;
+    }
+
     .home .slide-desc {
         top: 130px
     }
@@ -6565,6 +6574,14 @@ section.page-not-found #particles-js {
 
     .single-project .project-url .url-name p {
         font-size: 8vw;
+    }
+
+    .page-template-about section.ca-page-header .title {
+        font-size: 5vw;
+    }
+
+    .page-template-about section.ca-page-header .sub-title {
+        font-size: 7.6vw;
     }
 
     /*project details 320 end*/
