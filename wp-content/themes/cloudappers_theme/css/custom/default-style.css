@@ -6225,6 +6225,11 @@ section.page-not-found #particles-js {
         padding-left: 5.333333333333333vw;
         padding-right: 5.333333333333333vw;
     }
+
+    section.page-not-found h1,
+    section.page-not-found  h2 a {
+        text-shadow:none;
+    }
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
