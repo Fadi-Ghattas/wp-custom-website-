@@ -43,6 +43,10 @@ figure {
     height: 100%;
 }
 
+/*.modal {*/
+    /*overflow-y:scroll;*/
+/*}*/
+
 .center {
     text-align: center;
     text-align: -webkit-center;
@@ -1331,7 +1335,7 @@ label[for="expected_salary"] {
     color: #ff601b;
 }
 
-.home .contact .form-group.ms {
+.home .contact .form-group.ms{
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
@@ -1828,7 +1832,9 @@ ul.filters li:last-child a {
 }
 
 ul.filters li a:hover,
-ul.filters li.active a {
+ul.filters li.active a,
+ul.filters li.active a span,
+ul.filters li a:hover span {
     color: #4d4d4d;
 }
 
@@ -3038,7 +3044,7 @@ section.project-url .next-project-btn {
 
 #footer .social ul li a:hover {
     transition: 0.5s;
-    text-shadow: 0 0 1px;
+    /*text-shadow: 0 0 1px;*/
 }
 
 #footer .details a:hover {
@@ -3262,6 +3268,17 @@ section.project-url .next-project-btn {
     position: relative;
     min-height: 113px;
     vertical-align: top;
+}
+
+
+.page-template-contact-us .contact .form-group.ms{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 38px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: center;
+    margin-top: 0;
 }
 
 .page-template-contact-us .contact .form label {
@@ -3569,22 +3586,23 @@ section.project-url .next-project-btn {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     .show-case-item {
-        -webkit-transition-duration: 0s !important;
-        -moz-transition-duration: 0s !important;
-        -ms-transition-duration: 0s !important;
-        -o-transition-duration: 0s !important;
-        transition-duration: 0s !important;
+        /*-webkit-transition-duration: 0s !important;*/
+        /*-moz-transition-duration: 0s !important;*/
+        /*-ms-transition-duration: 0s !important;*/
+        /*-o-transition-duration: 0s !important;*/
+        /*transition-duration: 0s !important;*/
     }
+
 }
 
 @supports (-ms-ime-align:auto) {
     /* Edge CSS styles go here */
     .show-case-item {
-        -webkit-transition-duration: 0s !important;
-        -moz-transition-duration: 0s !important;
-        -ms-transition-duration: 0s !important;
-        -o-transition-duration: 0s !important;
-        transition-duration: 0s !important;
+        /*-webkit-transition-duration: 0s !important;*/
+        /*-moz-transition-duration: 0s !important;*/
+        /*-ms-transition-duration: 0s !important;*/
+        /*-o-transition-duration: 0s !important;*/
+        /*transition-duration: 0s !important;*/
     }
 }
 
@@ -3593,6 +3611,7 @@ section.project-url .next-project-btn {
     .mob {
         display: none;
     }
+
 
     /*section.ca-page-header .container {*/
     /*transform: translate(0, -50%);*/
@@ -3672,9 +3691,6 @@ section.project-url .next-project-btn {
 @media (min-width: 992px) {
 
     /*General*/
-    body.home.blog.modal-open {
-        overflow-y: visible;
-    }
 
     .col-eq-height {
         display: table;
@@ -3700,6 +3716,11 @@ section.project-url .next-project-btn {
 }
 
 @media (min-width: 1200px) {
+
+    /*General*/
+    body.home.blog.modal-open {
+        overflow-y: visible;
+    }
 
     .home .contact .form .container-fluid .col-lg-12 {
         /*padding-left: 0;*/
@@ -3921,6 +3942,11 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 1199px) {
+    /*General*/
+    body.home.blog.modal-open {
+        overflow-y: auto;
+    }
+
     /*Menu*/
     .navbar-nav {
         float: left;
@@ -4048,12 +4074,17 @@ section.project-url .next-project-btn {
     }
 
     .page-template-contact-us .contact .form-group {
-        width: 50%;
+        width: 100%;
         max-width: 100%;
         float: left;
         padding: 0 15px;
         margin-right: 0;
     }
+
+    .page-template-contact-us .contact .form-group:first-of-type, .page-template-contact-us .contact .form-group:nth-of-type(3){
+        margin-right: 0px;
+    }
+
 
     .page-template-contact-us .contact .form-group.note {
         width: 100%;
@@ -4078,6 +4109,7 @@ section.project-url .next-project-btn {
         rgba(255, 255, 255, 1) 80%,
         rgba(255, 255, 255, 1) 100%);
     }
+
 
     .home .contact .form-group:first-of-type {
         margin-right: 0px;
@@ -4369,6 +4401,10 @@ section.project-url .next-project-btn {
     /*General*/
     .team .members > div:before {
         display: none;
+    }
+
+    section.ca-page-header .container{
+        padding-top: 15vw;
     }
 
     /*Menu*/
@@ -4952,6 +4988,16 @@ section.project-url .next-project-btn {
     /* General */
     .navbar-header {
         padding-top: 2vh;
+    }
+
+   #map-popup .close{
+        z-index: 1;
+        position: absolute;
+        right: 2px;
+        top: -8px;
+       font-size: 30px;
+       font-weight: 500;
+       opacity: 0.5;
     }
 
     .top-header .copyright embed {
@@ -5792,8 +5838,10 @@ section.project-url .next-project-btn {
         /*line-height: 47px;*/
         display: block;
         margin-top: 60px;
-        margin-left: 5px;
+
         border-radius: 4px;
+        max-width: 63vw;
+        width: auto;
     }
 
     .page-template-contact-us .contact .address-ca a {
@@ -5886,7 +5934,8 @@ section.project-url .next-project-btn {
     }
 
     /*Service*/
-    .page-template-services section.ca-page-header .sub-title {
+    section.ca-page-header .sub-title
+    {
         text-shadow: none;
     }
 

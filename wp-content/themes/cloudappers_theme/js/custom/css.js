@@ -190,16 +190,17 @@ jQuery(function ($) {
 
 		var $isotope = $('.grid');
         // layout Isotope after each image loads
-        $isotope.imagesLoaded().progress( function() {
-		    $isotope.isotope({
-			itemSelector: '.show-case-item',
-			layoutMode: 'masonry',
-			percentPosition: true,
-			masonry: {
-				columnWidth: '.grid-sizer'
-			}
+		$isotope.imagesLoaded().progress(function () {
+			$isotope.isotope({
+				itemSelector: '.show-case-item',
+				layoutMode: 'masonry',
+				percentPosition: true,
+				masonry: {
+					columnWidth: '.grid-sizer',
+					gutterWidth: 30
+				},
+			});
 		});
-        });
 
 		$('ul.filters li').on('click focus hover active touchstart', function (event) {
 			event.stopPropagation();
@@ -290,7 +291,6 @@ jQuery(function ($) {
 		var msie = ua.indexOf("MSIE ");
 		if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
 		{
-
 			//remove parallax
 			$('.parallax-window').css('background-image', 'url(' + $('.parallax-window').attr('data-image-src') + ')').css('background-size', 'cover').css('height', '100vh');
 			$('.main-wrapper').css('margin-top', '0px');
