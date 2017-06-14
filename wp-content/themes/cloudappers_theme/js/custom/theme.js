@@ -17,4 +17,12 @@ jQuery(function ($) {
 		$('#JobModal #applied_position').val($(this).attr('data-applied-position'));
 	});
 
+
+	$('.modal').on('show.bs.modals', function (e) {
+		$('body').bind('touchmove', function(e){e.preventDefault()});
+	})
+
+	$('.modal').on('hide.bs.moda', function (e) {
+		$('body').unbind('touchmove');
+	})
 });
