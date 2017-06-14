@@ -5435,7 +5435,7 @@ section.page-not-found #particles-js {
     #menu-main-menu li:before {
         content: '';
         display: block;
-        width: 118px;
+        width: 15.733333333333333vw;
         height: 6px;
         display: inline-block;
         margin-right: 20px;
@@ -6384,9 +6384,9 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        font-size: 6.6vw;
-        padding-top: 18px;
-        padding-bottom: 29px;
+        font-size: 8.533333333333333vw;
+        padding-top: 2.4vw;
+        padding-bottom: 3.8666666666666667vw;
     }
 
     .logo-mob {
@@ -6448,8 +6448,9 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        padding-top: 5px;
-        padding-bottom: 10px;
+        padding-top: 2px;
+        padding-bottom: 8px;
+        padding-left: 2px;
     }
 
     #JobCaptcha iframe {
@@ -6541,6 +6542,14 @@ section.page-not-found #particles-js {
 /*xs*/
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 7.533333vw;
+    }
+
+    #menu-main-menu li:before {
+        width: 14.733333vw;
+    }
 
     section.ca-page-header .container {
         padding-top: 23vw;
