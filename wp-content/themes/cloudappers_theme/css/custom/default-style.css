@@ -4032,7 +4032,7 @@ section.page-not-found #particles-js {
     /*General*/
     body.home.blog.modal-open {
         overflow-y: hidden;
-        /*position: static;*/
+        position: fixed;
     }
 
     .modal {
