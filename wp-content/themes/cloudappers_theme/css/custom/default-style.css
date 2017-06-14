@@ -44,7 +44,7 @@ figure {
 }
 
 /*.modal {*/
-    /*overflow-y:scroll;*/
+/*overflow-y:scroll;*/
 /*}*/
 
 .center {
@@ -4989,25 +4989,107 @@ form#GetInTouchForm button.c-btn {
     form#GetInTouchForm button.c-btn {
         height: 13vw;
         font-size: 4vw;
-        width: 95%;
+        width: calc(100vw - 60px);
         max-width: none;
         margin-top: 20px;
         box-shadow: 10px 16px 19.74px 1.26px rgba(110, 110, 110, 0.2);
+        margin: 20px 15px 0;
+        line-height: 4vw;
     }
     /* Say Hello section End*/
+    /* Footer and pre footer */
+    .home .contact {
+        text-align: left;
+    }
+
+    .home .contact .address-ca h6 {
+        font-size: 4.2vw;
+        padding-left: 16vw;
+        padding-bottom: 50px;
+        /* background: url(../../img/white-ca-icon@3x.svg) no-repeat -3px 0px; */
+        background-size: 14vw;
+    }
+
+    .home .contact p {
+        font-size: 4vw;
+    }
+
+    .home .contact .address-ca .details {
+        font-size: 4vw;
+        margin-top: -20px !important;
+        padding-left: 16vw;
+    }
+
+    .home .contact .address-ca p, .page-template-contact-us .contact .address-ca a, .home .contact .address-ca a {
+        font-size: 4vw;
+        line-height: 5.7vw;
+    }
+
+    .home .contact p.mobile {
+        background-size: 4vw;
+    }
+
+    .home .contact p.address-details {
+        background-size: 5vw;
+    }
+
+    .home .contact p.phone {
+        background-size: 5vw;
+    }
+
+    .home .contact .address-ca p {
+        padding-left: 14vw;
+        padding-bottom: 10px;
+    }
+
+    .home .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
+        display: block;
+    }
+
+    .home .contact .address-ca #take-me-there {
+        font-size: 4vw;
+        max-width: none;
+        width: 60.33vw;
+        margin: 0 auto;
+        height: 14vw;
+        line-height: 4vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 60.33vw;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    .home .contact .copyright {
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .home .contact .copyright img {
+        width: 70vw;
+    }
+
+    .home .contact .copyright p {
+        font-size: 3vw;
+        /* line-height: 4vw; */
+        padding-top: 10px;
+        display: block;
+    }
+    /* Footer and pre footer end*/
     /* General */
     .navbar-header {
         padding-top: 2vh;
     }
 
-   #map-popup .close{
+    #map-popup .close{
         z-index: 1;
         position: absolute;
         right: 2px;
         top: -8px;
-       font-size: 30px;
-       font-weight: 500;
-       opacity: 0.5;
+        font-size: 30px;
+        font-weight: 500;
+        opacity: 0.5;
     }
 
     .top-header .copyright embed {
@@ -5356,7 +5438,7 @@ form#GetInTouchForm button.c-btn {
 
     .home .contact .copyright {
         padding-left: 0;
-        padding-bottom: 0;
+        /* padding-bottom: 0; */
         bottom: auto;
     }
 
@@ -5489,6 +5571,7 @@ form#GetInTouchForm button.c-btn {
     .home .contact .form h1 {
         font-size: 10vw;
         margin-bottom: 0;
+        text-align: center;
     }
 
     #JobModal .modal-body {
@@ -6136,7 +6219,7 @@ form#GetInTouchForm button.c-btn {
         top: 10vh;
     }
     .home .showyou .bg-showyou {
-        width: 42vh;
+        height: 42vh;
         background: url(../../img/show.png) no-repeat 37% 7vh;
     }
     /* Show you end */
@@ -6300,7 +6383,16 @@ form#GetInTouchForm button.c-btn {
         margin-top: 40px;
     }
 
+    .home .showyou .projects > div {
+
+        padding: 30px 30px 130px;
+    }
     /*project inner 408 end*/
+}
+@media all and (device-width: 480px) and (orientation: landscape) {
+    .home .showyou .projects > div {
+        padding: 30px 30px 160px;
+    }
 }
 
 @media (max-width: 400px) {
