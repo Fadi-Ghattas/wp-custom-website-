@@ -3942,6 +3942,11 @@ section.project-url .next-project-btn {
 }
 
 @media (max-width: 1199px) {
+    /*General*/
+    body.home.blog.modal-open {
+        overflow-y: hidden;
+    }
+
     /*Menu*/
     .navbar-nav {
         float: left;
