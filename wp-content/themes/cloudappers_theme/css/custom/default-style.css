@@ -932,12 +932,12 @@ header, nav, header img {
 }
 
 .contact .address-ca h6 {
-    background: url("../../img/white-ca-icon@3x.svg") no-repeat -3px top;
+    background: url("../../img/white-ca-icon@3x.png") no-repeat left top;
     background-size: 42px 43px;
     padding: 16px 45px;
     padding-left: 65px;
     padding-bottom: 20px;
-    padding-top: 5px;
+    padding-top: 0;
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 600;
@@ -5141,9 +5141,9 @@ section.page-not-found #particles-js {
     .contact .address-ca h6 {
         font-size: 4.2vw;
         padding-left: 16vw;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
         /* background: url(../../img/white-ca-icon@3x.svg) no-repeat -3px 0px; */
-        background-size: 14vw;
+        background-size: 11.3vw;
     }
 
      .contact p {
