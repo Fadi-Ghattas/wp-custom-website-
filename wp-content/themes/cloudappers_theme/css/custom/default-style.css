@@ -3946,7 +3946,7 @@ form#GetInTouchForm button.c-btn {
         position: fixed;
     }
 
-   .modal {
+    .modal {
         -webkit-overflow-scrolling: auto;
     }
 
@@ -4977,6 +4977,7 @@ form#GetInTouchForm button.c-btn {
     .home .contact .form input {
         color: #000;
         font-weight: 600;
+        border-width: 2px;
     }
     .home .contact .form-group.ms {
         padding-top: 20px;
@@ -5000,7 +5001,9 @@ form#GetInTouchForm button.c-btn {
     .home .contact {
         text-align: left;
     }
-
+    .home .contact .container-fluid {
+        padding-top: 25px
+    }
     .home .contact .address-ca h6 {
         font-size: 4.2vw;
         padding-left: 16vw;
@@ -5025,19 +5028,21 @@ form#GetInTouchForm button.c-btn {
     }
 
     .home .contact p.mobile {
-        background-size: 4vw;
+        background-size: 3vw;
+        background-position: left top;
     }
 
     .home .contact p.address-details {
-        background-size: 5vw;
+        background-size: 4vw;
     }
 
     .home .contact p.phone {
         background-size: 5vw;
+        background-position: left top;
     }
 
     .home .contact .address-ca p {
-        padding-left: 14vw;
+        padding-left: 9vw;
         padding-bottom: 10px;
     }
 
@@ -5062,9 +5067,11 @@ form#GetInTouchForm button.c-btn {
 
     .home .contact .copyright {
         text-align: center;
-        padding: 20px 15px;
+        padding: 20px 15px 35px;
     }
-
+    .home .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
+        margin-top: 48px;
+    }
     .home .contact .copyright img {
         width: 70vw;
     }
@@ -5561,10 +5568,6 @@ form#GetInTouchForm button.c-btn {
 
     .team .members .member-info h6 {
         font-size: 5vw;
-    }
-
-    .home .contact .copyright p {
-        font-size: 2.2vw;
     }
 
     .home .contact .form h1 {
