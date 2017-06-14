@@ -80,7 +80,7 @@ function ajaxGetInTouch()
 
 	$response['error'] = 0;
 	$response['message_color'] = '#3c763d';
-	$response['message'] = 'Thank you for contact us.';
+	$response['message'] = 'Thank you for contacting us.';
 	sendResponse($response);
 }
 
