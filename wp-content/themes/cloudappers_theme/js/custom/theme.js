@@ -18,11 +18,14 @@ jQuery(function ($) {
 	});
 
 
-	$('.modal').on('show.bs.modals', function (e) {
+	$('.modal').on('show.bs.modal', function (e) {
 		$('body').bind('touchmove', function(e){e.preventDefault()});
+		console.log('bind');
 	})
 
-	$('.modal').on('hide.bs.moda', function (e) {
+	$('.modal').on('hide.bs.modal', function (e) {
 		$('body').unbind('touchmove');
+		console.log('unbind');
 	})
+
 });
