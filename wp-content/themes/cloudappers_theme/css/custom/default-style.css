@@ -4038,7 +4038,7 @@ section.page-not-found #particles-js {
     /*General*/
     body.home.blog.modal-open {
         overflow-y: hidden;
-        position: static;
+        /*position: static;*/
     }
 
     .modal {
@@ -7446,7 +7446,6 @@ a.c-btn:empty {
         height: 768px;
     }
 }
-
-.modal-backdrop.in {
-    touch-action: none;
+body.home.blog.modal-open {
+    touch-action: pan-y;
 }
