@@ -1321,7 +1321,7 @@ label[for="expected_salary"] {
     color: #ff601b;
 }
 
-.home .contact .form-group.ms{
+.contact .form-group.ms{
     max-width: 100% !important;
     width: 100% !important;
     padding-top: 38px;
@@ -3260,15 +3260,15 @@ form#GetInTouchForm button.c-btn {
 }
 
 
-.page-template-contact-us .contact .form-group.ms{
-    max-width: 100% !important;
-    width: 100% !important;
-    padding-top: 38px;
-    text-align: -webkit-center;
-    text-align: -moz-center;
-    text-align: center;
-    margin-top: 0;
-}
+/*.page-template-contact-us .contact .form-group.ms{*/
+    /*max-width: 100% !important;*/
+    /*width: 100% !important;*/
+    /*padding-top: 38px;*/
+    /*text-align: -webkit-center;*/
+    /*text-align: -moz-center;*/
+    /*text-align: center;*/
+    /*margin-top: 0;*/
+/*}*/
 
 .page-template-contact-us .contact .form label {
     font-size: 18px;
@@ -4328,7 +4328,7 @@ section.page-not-found #particles-js {
         padding-top: 5vw;
     }
 
-    .home .contact .form-group.ms {
+     .contact .form-group.ms {
         min-height: inherit;
         margin: 0;
     }
@@ -4345,9 +4345,9 @@ section.page-not-found #particles-js {
         padding: 0px 180px;
     }
 
-    .page-template-contact-us .contact .form-group.ms{
-        min-height: 0;
-    }
+    /*.page-template-contact-us .contact .form-group.ms{*/
+        /*min-height: 0;*/
+    /*}*/
 
     .page-template-contact-us .contact #map
     {
@@ -5102,7 +5102,7 @@ section.page-not-found #particles-js {
     }
     /* Let us page End */
     /* Say Hello section */
-    .home .contact > div {
+     .contact > div {
         width: 100%;
         height: auto;
         position: relative;
@@ -5113,7 +5113,7 @@ section.page-not-found #particles-js {
         font-weight: 600;
         border-width: 2px;
     }
-    .home .contact .form-group.ms {
+     .contact .form-group.ms {
         padding-top: 20px;
         position: absolute;
         bottom: -50px;
@@ -5141,19 +5141,19 @@ section.page-not-found #particles-js {
     .contact .address-ca h6 {
         font-size: 4.2vw;
         padding-left: 16vw;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
         /* background: url(../../img/white-ca-icon@3x.svg) no-repeat -3px 0px; */
         background-size: 14vw;
     }
 
-    .home .contact p {
+     .contact p {
         font-size: 4vw;
     }
 
      .contact .address-ca .details {
         font-size: 4vw;
         margin-top: -20px !important;
-        padding-left: 16vw;
+        padding-left: 17vw;
     }
 
     .contact .address-ca p,
@@ -5198,6 +5198,7 @@ section.page-not-found #particles-js {
         max-width: 60.33vw;
         margin-bottom: 20px;
         box-shadow: none;
+         border-radius: 5px;
     }
 
     .home .contact .copyright {
@@ -5557,7 +5558,7 @@ section.page-not-found #particles-js {
     }
 
     .home .contact .form-group,
-    .home .contact .form-group.note {
+    .contact .form-group.note {
         width: 100%;
         max-width: 100%;
         float: left;
