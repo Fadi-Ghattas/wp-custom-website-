@@ -7440,3 +7440,6 @@ a.c-btn:empty {
         height: 768px;
     }
 }
+body.home.blog.modal-open {
+    touch-action: pan-y;
+}
