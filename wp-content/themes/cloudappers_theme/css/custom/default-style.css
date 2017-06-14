@@ -5490,6 +5490,10 @@ section.page-not-found #particles-js {
 
     }
 
+    .home .slide-desc h1 {
+        text-shadow:none;
+    }
+
     .home .what-we-do .view-all a,
     .home .clients .view-all a,
     .home .showyou .view-all a {
@@ -6144,6 +6148,11 @@ section.page-not-found #particles-js {
     }
 
     /*Service*/
+    section.ca-page-header .sub-title
+    {
+        text-shadow: none;
+    }
+
     section.info .full-center-vertical-divider {
         display: none;
     }
