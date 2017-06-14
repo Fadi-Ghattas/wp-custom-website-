@@ -3609,13 +3609,13 @@ section.page-not-found h1 {
 
 section.page-not-found h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
+    /*font-size: 30px;*/
+    /*font-weight: 600;*/
     letter-spacing: 9px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    line-height: 50px;
+    /*line-height: 50px;*/
     padding: 0px;
     margin: 0px;
 }
@@ -3627,6 +3627,12 @@ section.page-not-found  h2 a {
     /*border-bottom: 5px solid #fff;*/
     margin: 0;
     padding: 0;
+    padding-bottom: 3px;
+}
+
+section.page-not-found h2 a span {
+    letter-spacing: 0px !important;
+    padding-right: 3px;
 }
 
 section.page-not-found h2 a:hover {
@@ -4032,7 +4038,7 @@ section.page-not-found #particles-js {
     /*General*/
     body.home.blog.modal-open {
         overflow-y: hidden;
-        position: static;
+        position: fixed;
     }
 
     .modal {
@@ -5161,7 +5167,7 @@ section.page-not-found #particles-js {
         padding: 20px 15px 35px;
     }
     .home .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
-        margin-top: 48px;
+        margin-top: 30px;
     }
     .home .contact .copyright img {
         width: 70vw;
@@ -6230,6 +6236,19 @@ section.page-not-found #particles-js {
     section.page-not-found h1,
     section.page-not-found  h2 a {
         text-shadow:none;
+    }
+
+    section.page-not-found h1 {
+        font-size: 15vw;
+        letter-spacing: 2vw;
+    }
+
+    section.page-not-found  h2 {
+        letter-spacing: 0.39113428943937417vw;
+    }
+
+    section.page-not-found  h2 a {
+        font-size: 5vw;
     }
 }
 
@@ -7428,4 +7447,6 @@ a.c-btn:empty {
         height: 768px;
     }
 }
-
+body.home.blog.modal-open {
+    touch-action: pan-y;
+}

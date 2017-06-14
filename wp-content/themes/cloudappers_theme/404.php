@@ -8,7 +8,7 @@
 
 		<div class="container">
 			<div class="text"><h1> ERROR 404 </h1>
-				<h2><a href="<?php echo esc_url(home_url()); ?>">get me out of here</a>
+				<h2><a href="<?php echo esc_url(home_url()); ?>">get me out of her<span>e</span></a></h2>
 			</div>
 		</div>
 
@@ -18,7 +18,7 @@
 		particlesJS('particles-js', {
 			'particles': {
 				'number': {
-					'value': 80,
+					'value': 150,
 					'density': {
 						'enable': true,
 						'value_area': 800

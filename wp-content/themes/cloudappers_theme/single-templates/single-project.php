@@ -179,8 +179,8 @@ get_template_part('template-part', 'topnav');
 ?>
 	<section class="project-header">
 		<div class="project-header-container">
-			<img class="img-responsive header-image" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
-			<div class="center header-text">
+			<img class="img-responsive header-image" style="background: <?php echo $project['project_header_background_color']; ?>;" src="<?php echo esc_url($project['project_background_header_image']['url']); ?>">
+			<div class="center header-text"  style="background: <?php echo $project['project_header_background_color']; ?>;">
 				<a href="#" class="move-section desk with-border" data-index="0">
 					<div >
 						<div class="icono-arrow1-down"></div>
