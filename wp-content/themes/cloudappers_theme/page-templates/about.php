@@ -179,7 +179,7 @@ get_template_part('template-part', 'topnav');
                 <div class="col-lg-7  col-md-12">
                     <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
                     <p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-                    <a href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+                    <a target="_blank" href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
                 </div>
             </div>
         </div>
