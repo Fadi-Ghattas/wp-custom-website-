@@ -7334,3 +7334,6 @@ a.c-btn:empty {
     }
 }
 
+.modal-backdrop.in {
+    touch-action: none;
+}
