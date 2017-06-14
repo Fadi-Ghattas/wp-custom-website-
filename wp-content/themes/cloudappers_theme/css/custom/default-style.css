@@ -3944,7 +3944,8 @@ section.project-url .next-project-btn {
 @media (max-width: 1199px) {
     /*General*/
     body.home.blog.modal-open {
-        overflow-y: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: auto;
     }
 
     /*Menu*/
