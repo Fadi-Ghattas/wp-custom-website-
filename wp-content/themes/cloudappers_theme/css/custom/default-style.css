@@ -6567,6 +6567,7 @@ section.page-not-found #particles-js {
 
     .navbar-inverse .navbar-nav > li > a {
         font-size: 7.533333vw;
+        padding-bottom: 0px;
     }
 
     #menu-main-menu li:before {
