@@ -5904,7 +5904,8 @@ section.project-url .next-project-btn {
     }
 
     /*Service*/
-    .page-template-services section.ca-page-header .sub-title {
+    section.ca-page-header .sub-title
+    {
         text-shadow: none;
     }
 
