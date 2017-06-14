@@ -3951,6 +3951,10 @@ form#GetInTouchForm button.c-btn {
         -webkit-overflow-scrolling: auto;
     }
 
+   .modal {
+        -webkit-overflow-scrolling: auto;
+    }
+
     /*Menu*/
     .navbar-nav {
         float: left;
