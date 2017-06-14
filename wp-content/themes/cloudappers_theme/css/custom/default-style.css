@@ -3948,6 +3948,7 @@ form#GetInTouchForm button.c-btn {
     /*General*/
     body.home.blog.modal-open {
         overflow-y: hidden;
+        position: fixed;
     }
 
    .modal {
