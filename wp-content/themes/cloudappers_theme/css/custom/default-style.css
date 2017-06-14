@@ -639,11 +639,6 @@ header, nav, header img {
     /*padding: 15px;*/
 }
 
-.home .showyou .projects > div:hover img {
-    opacity: 0.04;
-    transition: 0.3s;
-}
-
 .home .showyou .project-info a {
     font-size: 12px;
     font-weight: 500;
@@ -4865,6 +4860,10 @@ section.page-not-found #particles-js {
 
 @media (min-width: 767px) {
 
+    .home .showyou .projects > div:hover img {
+        opacity: 0.04;
+        transition: 0.3s;
+    }
     /*cards hover effect start*/
     .green-card-hover,
     .red-card-hover,
