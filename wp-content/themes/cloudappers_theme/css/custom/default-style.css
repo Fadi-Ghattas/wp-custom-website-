@@ -6230,6 +6230,19 @@ section.page-not-found #particles-js {
     section.page-not-found  h2 a {
         text-shadow:none;
     }
+
+    section.page-not-found h1 {
+        font-size: 15vw;
+        letter-spacing: 2vw;
+    }
+
+    section.page-not-found  h2 {
+        letter-spacing: 0.39113428943937417vw;
+    }
+
+    section.page-not-found  h2 a {
+        font-size: 5vw;
+    }
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
