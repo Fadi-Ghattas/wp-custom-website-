@@ -4973,6 +4973,12 @@ form#GetInTouchForm button.c-btn {
 
 @media (max-width: 767px) {
     /* Say Hello section */
+    .home .contact > div {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
     .home .contact .form input {
         color: #000;
         font-weight: 600;
