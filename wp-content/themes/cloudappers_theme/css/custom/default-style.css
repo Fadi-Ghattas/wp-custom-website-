@@ -1001,12 +1001,12 @@ body.home.blog.modal-open {
     letter-spacing: 7.4px;
 }
 
-.home .contact .form label {
+.contact .form label {
     font-size: 18px;
     color: rgb(0, 0, 0);
     line-height: 1.778;
     padding-left: 7px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 0;
 }
 
@@ -1024,7 +1024,7 @@ body.home.blog.modal-open {
     vertical-align: top;
 }
 
-.home .contact .form input {
+ .contact .form input {
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
@@ -3270,28 +3270,28 @@ form#GetInTouchForm button.c-btn {
     /*margin-top: 0;*/
 /*}*/
 
-.page-template-contact-us .contact .form label {
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    line-height: 1.778;
-    padding-left: 7px;
-    font-weight: 400;
-    margin-bottom: 0;
-}
+/*.page-template-contact-us .contact .form label {*/
+    /*font-size: 18px;*/
+    /*color: rgb(0, 0, 0);*/
+    /*line-height: 1.778;*/
+    /*padding-left: 7px;*/
+    /*font-weight: 400;*/
+    /*margin-bottom: 0;*/
+/*}*/
 
-.page-template-contact-us .contact label.focus {
-    font-size: 18px;
-}
+/*.page-template-contact-us .contact label.focus {*/
+    /*font-size: 18px;*/
+/*}*/
 
-.page-template-contact-us .contact .form input {
-    border: none;
-    border-bottom: 1px solid black;
-    width: 100%;
-    box-shadow: none;
-    border-radius: 0;
-    font-size: 18px;
-    color: #ff5f19;
-}
+/*.page-template-contact-us .contact .form input {*/
+    /*border: none;*/
+    /*border-bottom: 1px solid black;*/
+    /*width: 100%;*/
+    /*box-shadow: none;*/
+    /*border-radius: 0;*/
+    /*font-size: 18px;*/
+    /*color: #ff5f19;*/
+/*}*/
 
 .page-template-contact-us .contact .form-group.note {
     max-width: 527px;
@@ -4080,7 +4080,7 @@ section.page-not-found #particles-js {
         float: none;
     }
 
-    .home .contact .map.col-lg-6:before {
+    .contact .map.col-lg-6:before {
         content: '';
         display: block;
         width: 100%;
@@ -4179,23 +4179,7 @@ section.page-not-found #particles-js {
         float: none;
     }
 
-    .page-template-contact-us .contact .map.col-lg-6:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 300px;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        background: -webkit-linear-gradient(bottom,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 10%,
-        rgba(255, 255, 255, 0.4) 30%,
-        rgba(255, 255, 255, 0.6) 50%,
-        rgba(255, 255, 255, 0.9) 70%,
-        rgba(255, 255, 255, 1) 80%,
-        rgba(255, 255, 255, 1) 100%);
-    }
+
 
 
     .home .contact .form-group:first-of-type {
@@ -4643,10 +4627,7 @@ section.page-not-found #particles-js {
         box-shadow: none;
     }
 
-    .page-template-contact-us .contact .form input {
-        color: black;
-        font-weight: bold;
-    }
+
 
     /*.page-template-contact-us .contact .address-ca h6 {*/
         /*font-size: 4.2vw;*/
@@ -5108,11 +5089,7 @@ section.page-not-found #particles-js {
         position: relative;
         z-index: 1;
     }
-    .home .contact .form input {
-        color: #000;
-        font-weight: 600;
-        border-width: 2px;
-    }
+
      .contact .form-group.ms {
         padding-top: 20px;
         position: absolute;
@@ -5570,9 +5547,15 @@ section.page-not-found #particles-js {
         margin-bottom: 0;
     }
 
-    .home .contact .form input {
+    .contact .form input {
         text-align: center;
+        font-weight: 600;
+        font-size: 4.8vw;
+        color: black;
+        border-bottom-width:2px ;
+        height: 75px;
     }
+
 
     .home .contact .form-group.note {
         margin-bottom: 30px;
@@ -6020,9 +6003,8 @@ section.page-not-found #particles-js {
         font-size: 4.2vw
     }
 
-
-   .contact .form label{
-        font-size: 4.2vw;
+    .contact .form label{
+        font-size: 4.8vw;
     }
 
     .page-template-contact-us .join .title h1,
@@ -6053,9 +6035,6 @@ section.page-not-found #particles-js {
         text-align: center;
     }
 
-    .page-template-contact-us .contact .form input {
-        text-align: center;
-    }
 
     .page-template-contact-us .contact .form .container-fluid {
         padding-top: 25px;
