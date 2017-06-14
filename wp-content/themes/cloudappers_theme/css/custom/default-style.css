@@ -524,25 +524,16 @@ header, nav, header img {
     border-top: 3px solid rgb(255, 161, 6);
 }
 
-.home .what-we-do .row > div:first-child:hover {
-    box-shadow: inset 0 0 100px rgb(255, 161, 6);
-}
-
 .home .what-we-do .row > div:nth-child(2) {
     border-top: 3px solid rgb(37, 169, 198);
 }
 
-.home .what-we-do .row > div:nth-child(2):hover {
-    box-shadow: inset 0 0 100px #25a9c6;
-}
 
 .home .what-we-do .row > div:last-child {
     border-top: 3px solid rgb(255, 94, 24);
 }
 
-.home .what-we-do .row > div:last-child:hover {
-    box-shadow: inset 0 0 100px rgb(255, 94, 24);
-}
+
 
 .home .what-we-do .more {
     bottom: 39px;
@@ -3631,7 +3622,7 @@ section.page-not-found h2 a span {
 
 section.page-not-found h2 a:hover {
     color: #fff;
-    border-bottom: 5px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 section.page-not-found  #scene ul {
@@ -4864,6 +4855,19 @@ section.page-not-found #particles-js {
         opacity: 0.04;
         transition: 0.3s;
     }
+
+    .home .what-we-do .row > div:first-child:hover {
+        box-shadow: inset 0 0 100px rgb(255, 161, 6);
+    }
+
+    .home .what-we-do .row > div:nth-child(2):hover {
+        box-shadow: inset 0 0 100px #25a9c6;
+    }
+
+    .home .what-we-do .row > div:last-child:hover {
+        box-shadow: inset 0 0 100px rgb(255, 94, 24);
+    }
+
     /*cards hover effect start*/
     .green-card-hover,
     .red-card-hover,
@@ -5076,6 +5080,9 @@ section.page-not-found #particles-js {
 
 @media (max-width: 767px) {
     /* Let us page */
+    .page-template-about .words .slick-current.slick-active .img-slide {
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    }
     .page-template-about .clients {
         /* padding-top: 15px; */
         background-color: #fbfbfb;
@@ -5214,7 +5221,7 @@ section.page-not-found #particles-js {
     /* Footer and pre footer end*/
     /* General */
     .navbar-header {
-        padding-top: 2vh;
+        /* padding-top: 2vh; */
     }
 
     #map-popup .close{
@@ -5338,7 +5345,7 @@ section.page-not-found #particles-js {
     }
 
     .navbar-header {
-        padding-top: 2vh;
+        padding-top: 20px;
     }
 
     .navbar-inverse .navbar-toggle {
@@ -5369,11 +5376,11 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse {
-        padding-top: 15px;
+        padding-top: 20px;
     }
 
     .logo-mob {
-        width: 15vh;
+        width: 17vh;
     }
 
     .navbar-nav {
@@ -6325,14 +6332,14 @@ section.page-not-found #particles-js {
     }
 
     #nav-toggle span:before {
-        top: -24px;
+        /* top: -24px; */
         top: -4vw;
         width: 10vw;
         height: 9px;
     }
 
     #nav-toggle span:after {
-        bottom: -20px;
+        /* bottom: -20px; */
         bottom: -4vw;
         width: 10vw;
         height: 9px;
@@ -6383,21 +6390,25 @@ section.page-not-found #particles-js {
     /* Show you end */
     /* General */
     #nav-toggle span:before {
-        top: -2.5vw;
-        width: 6vw;
+        top: -17px;
+        width: 48px;
+        height: 7px;
     }
 
     #nav-toggle span:after {
-        bottom: -2.5vw;
-        width: 6vw;
+        bottom: -17px;
+        width: 48px;
+        height: 7px;
     }
 
     #nav-toggle span {
-        width: 4.5vw
+        width: 35px;
+        height: 7px;
     }
 }
 
 @media (max-width: 600px) {
+
     .navbar-nav {
         /*padding-top: 80px;*/
     }
@@ -6410,7 +6421,8 @@ section.page-not-found #particles-js {
 
     .logo-mob {
         /* width: 13vw; */
-        width: 12vh;
+        width: 20vw;
+        margin-top: -6px;
     }
 
     /*     #nav-toggle span:after {
@@ -6433,7 +6445,10 @@ section.page-not-found #particles-js {
     .home .slide-desc a {
         margin-top: 0;
     }
-
+    .logo-mob {
+        /* width: 13vw; */
+        width: 20vw;
+    }
     .home .slid-content p {
         font-size: 5.76vw;
     }
@@ -6535,7 +6550,7 @@ section.page-not-found #particles-js {
     }
 
     section.client-say .say-block:nth-of-type(even), section.client-say .say-block:nth-of-type(odd) {
-        padding: 0px;
+        padding: 0px 25px;
     }
 
     section.client-say .say-block:not(:first-child) {
@@ -6546,6 +6561,9 @@ section.page-not-found #particles-js {
 
         padding: 30px 30px 130px;
     }
+    a.logo-mob {
+        margin-top: -5px;
+    }
     /*project inner 408 end*/
 }
 @media all and (device-width: 480px) and (orientation: landscape) {
@@ -6554,8 +6572,25 @@ section.page-not-found #particles-js {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 416px) {
+    #nav-toggle span {
+        width: 9vw;
+        height: 7px;
+    }
 
+    #nav-toggle span:before {
+        /* top: -24px; */
+        top: -4vw;
+        width: 12vw;
+        height: 7px;
+    }
+
+    #nav-toggle span:after {
+        /* bottom: -20px; */
+        bottom: -4vw;
+        width: 12vw;
+        height: 7px;
+    }
 }
 
 /*xs*/
@@ -7509,6 +7544,26 @@ a.c-btn:empty {
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
     .foo {
         height: 768px;
+    }
+}
+@media all and (device-width: 600px)  and (orientation: portrait) {
+    #nav-toggle span {
+        width: 7vw;
+        height: 9px;
+    }
+
+    #nav-toggle span:before {
+        /* top: -24px; */
+        top: -3vw;
+        width: 10vw;
+        height: 9px;
+    }
+
+    #nav-toggle span:after {
+        /* bottom: -20px; */
+        bottom: -3vw;
+        width: 10vw;
+        height: 9px;
     }
 }
 body.home.blog.modal-open {
