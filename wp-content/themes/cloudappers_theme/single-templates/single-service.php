@@ -85,6 +85,8 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</section>
     <div class="main-wrapper">
+
+	<?php if (!empty($service['service_page_header_description'])){ ?>
 	<section class="ca-page-banner">
 	<!--<div class="vertical-line"></div>-->
 		<div class="container">
@@ -95,6 +97,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
+	<?php } ?>
 
 	<section class="service-details">
 		<div class="container">
@@ -113,8 +116,9 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</section>
 
-<?php $service_branding_header_image = (!empty($service['service_page_branding_background_image']['url']) ? esc_url($service['service_page_branding_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/service_page_branding_background_image.png')); ?>
-
+<?php
+if(!empty($service['service_page_branding_message'])) {
+$service_branding_header_image = (!empty($service['service_page_branding_background_image']['url']) ? esc_url($service['service_page_branding_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/service_page_branding_background_image.png')); ?>
 	<section class="branding" style="background-image: url(<?php echo $service_branding_header_image; ?>);">
 		<div class="container">
 			<div class="row">
@@ -126,6 +130,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
+<?php } ?>
 
 <?php if(!empty($service['service_infos'])) { ?>
 	<section class="info">
