@@ -353,15 +353,25 @@ get_template_part('template-part', 'topnav');
 						<?php echo $project['project_client_say_title']; ?>
 					</h1>
 
-				<div class="row say-blocks">
-					<?php foreach ($project['project_client_say_blocks'] as $say) { ?>
+					<?php
+					$clientsBlocksCount = 0;
+					foreach ($project['project_client_say_blocks'] as $say) {
+						if($clientsBlocksCount == 0) { ?>
+							<div class="row say-blocks">
+							<?php }  ?>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 say-block" style="color: <?php echo $say['project_client_say_block_color'] ?>;">
 							<div>
 								<?php echo $say['project_client_say_block']; ?>
 							</div>
 						</div>
-					<?php } ?>
-				</div>
+					<?php if($clientsBlocksCount == 1) { ?>
+							</div>
+					<?php
+							$clientsBlocksCount = 0;
+						} else {
+							$clientsBlocksCount++;
+						}
+					} ?>
 
 			</div>
 		</div>
