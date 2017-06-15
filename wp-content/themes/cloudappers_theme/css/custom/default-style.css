@@ -2219,19 +2219,19 @@ section.client-say .say-block .signature .from {
 }
 
 section.client-say .say-block {
-    -webkit-flex: 0 0 47%;
-    -ms-flex: 0 0 47%;
-    flex: 0 0 47%;
+    /*-webkit-flex: 0 0 47%;*/
+    /*-ms-flex: 0 0 47%;*/
+    /*flex: 0 0 47%;*/
     /*flex: 1%*/
 }
 
-/*section.client-say .say-block:nth-of-type(odd) {*/
-    /*padding-right: 138px;*/
-/*}*/
+section.client-say .say-block:nth-of-type(odd) {
+    padding-right: 138px;
+}
 
-/*section.client-say .say-block:nth-of-type(even) {*/
-    /*padding-left: 194px;*/
-/*}*/
+section.client-say .say-block:nth-of-type(even) {
+    padding-left: 194px;
+}
 
 section.project-url {
     text-align: center;
@@ -4255,9 +4255,9 @@ section.page-not-found #particles-js {
         padding: 0px 230px;
     }
 
-    section.client-say .say-block:nth-of-type(even) {
-        padding-left: 120px;
-    }
+    /*section.client-say .say-block:nth-of-type(even) {*/
+        /*padding-left: 120px;*/
+    /*}*/
 
     /*project details*/
     /*.page-template-contact-us .contact .address-ca {*/
