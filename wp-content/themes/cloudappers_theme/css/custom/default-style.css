@@ -2151,6 +2151,7 @@ section.client-say .say-blocks {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    width: 100%;
 }
 
 section.client-say .say-block,
