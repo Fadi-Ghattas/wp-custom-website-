@@ -2151,7 +2151,7 @@ section.client-say .say-blocks {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 section.client-say .say-block,
@@ -2228,13 +2228,13 @@ section.client-say .say-block {
     flex: 0 0 50%;
 }
 
-section.client-say .say-block:nth-of-type(odd) {
-    padding-right: 138px;
-}
+/*section.client-say .say-block:nth-of-type(odd) {*/
+    /*padding-right: 138px;*/
+/*}*/
 
-section.client-say .say-block:nth-of-type(even) {
-    padding-left: 194px;
-}
+/*section.client-say .say-block:nth-of-type(even) {*/
+    /*padding-left: 194px;*/
+/*}*/
 
 section.project-url {
     text-align: center;
