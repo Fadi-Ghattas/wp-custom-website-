@@ -2222,6 +2222,7 @@ section.client-say .say-block {
     /*-webkit-flex: 0 0 47%;*/
     /*-ms-flex: 0 0 47%;*/
     /*flex: 0 0 47%;*/
+    width: 47%;
 }
 
 section.client-say .say-block:nth-of-type(odd) {
