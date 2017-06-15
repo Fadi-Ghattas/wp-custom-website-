@@ -2222,6 +2222,10 @@ section.client-say .say-block .signature .from {
     /*flex: 0 0 50%;*/
 }
 
+section.client-say .say-block {
+    flex: 0 0 50%;
+}
+
 section.client-say .say-block:nth-of-type(odd) {
     padding-right: 138px;
 }
