@@ -2233,6 +2233,11 @@ section.client-say .say-block:nth-of-type(even) {
     padding-left: 194px;
 }
 
+section.client-say .single-say.say-block {
+    padding-right: 15px;
+    width: 100%;
+}
+
 section.project-url {
     text-align: center;
     text-align: -moz-center;
