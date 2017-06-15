@@ -5244,9 +5244,11 @@ section.page-not-found #particles-js {
         font-size: 4.3vw;
         line-height: 7.06vw;
         font-weight: 400;
-        padding: 0 30px;
+        padding: 0 0px;
     }
-
+    .home .showcase p:first-child>span:first-child {
+        display: block;
+    }
     .home .showcase a {
         font-size: 4.26vw;
         padding: 4vw 15px 1vw;
@@ -6570,6 +6572,9 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 416px) {
+    .contact .address-ca #take-me-there {
+        width: 76vw;
+    }
     .home .slid-content p {
         line-height: 10.066vw;
     }
