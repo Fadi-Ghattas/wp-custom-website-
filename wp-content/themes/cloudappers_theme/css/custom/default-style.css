@@ -2222,7 +2222,6 @@ section.client-say .say-block {
     /*-webkit-flex: 0 0 47%;*/
     /*-ms-flex: 0 0 47%;*/
     /*flex: 0 0 47%;*/
-    /*flex: 1%*/
 }
 
 section.client-say .say-block:nth-of-type(odd) {
@@ -4259,6 +4258,10 @@ section.page-not-found #particles-js {
         padding-left: 120px;
     }
 
+    /*section.client-say .say-block:nth-of-type(odd) {*/
+        /*padding-right: 0;*/
+    /*}*/
+
     /*project details*/
     /*.page-template-contact-us .contact .address-ca {*/
     /*position: relative;*/
@@ -4329,8 +4332,7 @@ section.page-not-found #particles-js {
         min-height: inherit;
         margin: 0;
     }
-    section.project-info .row,
-    section.client-say .say-blocks {
+    section.project-info .row{
         display: block;
     }
 
