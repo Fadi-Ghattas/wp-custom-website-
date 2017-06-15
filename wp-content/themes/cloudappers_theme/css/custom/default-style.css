@@ -2218,14 +2218,11 @@ section.client-say .say-block .signature .from {
     line-height: 5px;
 }
 
-.say-block {
-    /*flex: 0 0 50%;*/
-}
-
 section.client-say .say-block {
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    -webkit-flex: 0 0 47%;
+    -ms-flex: 0 0 47%;
+    flex: 0 0 47%;
+    /*flex: 1%*/
 }
 
 /*section.client-say .say-block:nth-of-type(odd) {*/
