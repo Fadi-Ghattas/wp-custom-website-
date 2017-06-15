@@ -329,6 +329,13 @@ header, nav, header img {
 
 .home .slide {
     position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home .home-slider  .slick-track{
+    height: 100%;
 }
 
 .home .slide-desc a {
