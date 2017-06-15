@@ -4255,8 +4255,8 @@ section.page-not-found #particles-js {
         padding: 0px 230px;
     }
 
-    section.client-say .say-block {
-        padding-left: 12px;
+    section.client-say .say-block:nth-of-type(even) {
+        padding-left: 120px;
     }
 
     /*project details*/
