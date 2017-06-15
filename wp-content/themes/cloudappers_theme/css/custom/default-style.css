@@ -4256,7 +4256,7 @@ section.page-not-found #particles-js {
     }
 
     section.client-say .say-block:nth-of-type(even) {
-        padding-left: 0px;
+        padding-left: 80px;
     }
 
     section.client-say .say-block:nth-of-type(odd) {
