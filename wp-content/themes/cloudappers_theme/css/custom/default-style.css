@@ -2762,6 +2762,7 @@ section.project-url .next-project-btn {
     background-repeat: no-repeat;
     background-size: 47.5% 100%, contain;
     background-position: left center, calc(50% + 30px) center;
+    overflow: hidden;
 }
 
 .page-template-about .words .left-sec {
@@ -3895,73 +3896,6 @@ section.page-not-found #particles-js {
 }
 
 
-@media (max-width: 1300px){
-
-    .page-template-about .words .slick-dots {
-        width: 100%;
-    }
-
-    .page-template-about .words .slide,
-    .page-template-about .words .slide * {
-        text-align: center;
-    }
-
-    .page-template-about .words p:after {
-        margin: 23px auto 0;
-    }
-
-    .page-template-about .words .slick-dots li {
-        margin: 0 auto;
-    }
-
-    .page-template-about .words .slick-dots li {
-        display: inline-block;
-    }
-
-    .page-template-about .words {
-        padding: 30px 0 45px;
-        background: url(../../img/words-bg1.jpg), url(../../img/words-bg2-mob.png);
-        background-repeat: no-repeat;
-        background-size: 100% 40%, contain;
-        background-position: top center, center 60%;
-    }
-
-    .page-template-about .words p {
-        max-width: none;
-    }
-
-    .page-template-about .words .info-slide {
-        padding: 0;
-    }
-
-    .page-template-about .words .img-slide {
-        height: auto;
-    }
-
-    .page-template-about .words p {
-        margin: 0;
-    }
-
-    .page-template-about .words .info-slide {
-        margin-top: 50px;
-    }
-
-    .page-template-about .words .slide, .page-template-about .words .slide * {
-        text-align: center;
-    }
-
-    .page-template-about .words .slick-current.slick-active .img-slide {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .page-template-about .words .slick-list.draggable {
-        padding: 54px 0 0 0 ;
-        margin-top: -54px;
-        margin-right: 0;
-    }
-}
-
 @media (max-width: 1199px) {
     /*General*/
     body.home.blog.modal-open {
@@ -4126,6 +4060,65 @@ section.page-not-found #particles-js {
 
     section.client-say .say-block:nth-of-type(odd) {
         padding-right: 0;
+    }
+
+    /*About*/
+    .page-template-about .words .slick-dots {
+        width: 100%;
+    }
+
+    .page-template-about .words .slide,
+    .page-template-about .words .slide * {
+        text-align: center;
+    }
+
+    .page-template-about .words p:after {
+        margin: 23px auto 0;
+    }
+
+    .page-template-about .words .slick-dots li {
+        margin: 0 auto;
+    }
+
+    .page-template-about .words .slick-dots li {
+        display: inline-block;
+    }
+
+    .page-template-about .words {
+        padding: 30px 0 45px;
+        background: url(../../img/words-bg1.jpg), url(../../img/words-bg2-mob.png);
+        background-repeat: no-repeat;
+        background-size: 100% 40%, contain;
+        background-position: top center, center 60%;
+    }
+
+    .page-template-about .words p {
+        max-width: none;
+    }
+
+    .page-template-about .words .info-slide {
+        padding: 0;
+    }
+
+    .page-template-about .words .img-slide {
+        height: auto;
+    }
+
+    .page-template-about .words p {
+        margin: 0;
+    }
+
+    .page-template-about .words .info-slide {
+        margin-top: 50px;
+    }
+
+    .page-template-about .words .slide, .page-template-about .words .slide * {
+        text-align: center;
+    }
+
+    .page-template-about .words .slick-list.draggable {
+        padding-top: 54px ;
+        margin-top: -54px;
     }
 
    }
