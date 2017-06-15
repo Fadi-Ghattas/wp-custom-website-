@@ -43,10 +43,6 @@ figure {
     height: 100%;
 }
 
-/*.modal {*/
-/*overflow-y:scroll;*/
-/*}*/
-
 .center {
     text-align: center;
     text-align: -webkit-center;
@@ -97,19 +93,6 @@ section.ca-page-header {
     /*background-color: #a4b9f0;*/
 }
 
-/*.parallax-mirror {*/
-/*!* background-color: blue; *!*/
-/*!* IE10+ *!*/
-/*background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);    !* Mozilla Firefox *!*/
-/*background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);    !* Opera *!*/
-/*background-image: -o-linear-gradient(top left, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);    !* Webkit (Safari/Chrome 10) *!*/
-/*background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(100, #4EC1EA), color-stop(100, #FFFFFF));    !* Webkit (Chrome 11+) *!*/
-/*background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);    !* W3C Markup *!*/
-/*background-image: linear-gradient(to bottom right, #FFFFFF 0%, #4EC1EA 100%, #FFFFFF 100%);*/
-/*}*/
-/*.parallax-mirror.img-load {*/
-/*background-image: none;*/
-/*}*/
 section.ca-page-header .container {
     align-self: center;
 }
@@ -319,17 +302,13 @@ header, nav, header img {
 
 /*Home*/
 
-.home .home-slider
-    /*.project-slider*/
-{
+.home .home-slider {
     width: 100%;
 }
 
 .home .slider-container,
 .home .home-slider,
-.home .slick-list
-    /*.project-slider*/
-{
+.home .slick-list {
     height: 100vh;
 }
 
@@ -2090,10 +2069,6 @@ section.show-case-two {
     overflow: hidden;
 }
 
-/*section.show-case-two img {*/
-/*width: 100%;*/
-/*}*/
-
 section.show-case-two .container {
     padding-top: 104px;
     position: absolute;
@@ -2710,10 +2685,6 @@ section.project-url .next-project-btn {
     padding-top: 63px;
     padding-bottom: 116px;
 }
-
-/*.page-template-about .why .why-desc {*/
-/*padding: 0;*/
-/*}*/
 
 .page-template-about .why .why-img {
     height: 100px;
@@ -4069,9 +4040,6 @@ section.page-not-found #particles-js {
         padding-bottom: 35px;
     }
 
-
-
-
     .page-template-contact-us .contact > div:last-child {
         padding-bottom: 0;
     }
@@ -4119,8 +4087,6 @@ section.page-not-found #particles-js {
         max-width: 100%;
     }
 
-
-
     .prefooter {
         text-align: center;
     }
@@ -4133,7 +4099,7 @@ section.page-not-found #particles-js {
         margin-bottom: 30px;
     }
 
-    /*project details max 1199*/
+    /*project details*/
     .single-project .project-header .project-header-container .short-description {
         padding: 0px 180px;
     }
@@ -4150,11 +4116,7 @@ section.page-not-found #particles-js {
         padding-right: 0;
     }
 
-    /*project details*/
-    /*.page-template-contact-us .contact .address-ca {*/
-    /*position: relative;*/
-    /*}*/
-}
+   }
 
 /*sm*/
 @media (min-width: 768px) and (max-width: 992px) {
@@ -6333,8 +6295,7 @@ section.page-not-found #particles-js {
         } */
 }
 
-/*xs*/
-/* Extra Small Devices, Phones */
+
 @media (max-width: 480px) {
     .home .slid-content p {
         line-height: 9.066vw;
@@ -6463,6 +6424,7 @@ section.page-not-found #particles-js {
     }
     /*project inner 408 end*/
 }
+
 @media all and (device-width: 480px) and (orientation: landscape) {
     .home .showyou .projects > div {
         padding: 30px 30px 160px;
@@ -6496,8 +6458,7 @@ section.page-not-found #particles-js {
     }
 }
 
-/*xs*/
-/* Custom, iPhone Retina */
+
 @media (max-width: 320px) {
 
     .navbar-inverse .navbar-nav > li > a {
@@ -6877,7 +6838,6 @@ a.c-btn:empty {
     }
 }
 
-/*lazy loading classes end*/
 
 /*effect start*/
 
@@ -7414,23 +7374,20 @@ a.c-btn:empty {
 }
 
 
-/**
- * iPad with portrait orientation.
- */
+/*iPad with portrait orientation */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
     .foo {
         height: 1024px;
     }
 }
 
-/**
- * iPad with landscape orientation.
- */
+/* iPad with landscape orientation.*/
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
     .foo {
         height: 768px;
     }
 }
+
 @media all and (device-width: 600px)  and (orientation: portrait) {
     #nav-toggle span {
         width: 7vw;
@@ -7451,6 +7408,7 @@ a.c-btn:empty {
         height: 9px;
     }
 }
+
 body.home.blog.modal-open {
     touch-action: pan-y;
 }
