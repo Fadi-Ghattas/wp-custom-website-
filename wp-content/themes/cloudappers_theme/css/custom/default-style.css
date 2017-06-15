@@ -2217,11 +2217,11 @@ section.client-say .say-block .signature .from {
 }
 
 section.client-say .say-block:nth-of-type(odd) {
-    padding-right: 124px;
+    padding-right: 138px;
 }
 
 section.client-say .say-block:nth-of-type(even) {
-    padding-left: 174px;
+    padding-left: 194px;
 }
 
 section.project-url {
