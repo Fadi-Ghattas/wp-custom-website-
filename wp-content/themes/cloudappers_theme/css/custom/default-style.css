@@ -4255,12 +4255,12 @@ section.page-not-found #particles-js {
     }
 
     section.client-say .say-block:nth-of-type(even) {
-        padding-left: 120px;
+        padding-left: 0px;
     }
 
-    /*section.client-say .say-block:nth-of-type(odd) {*/
-        /*padding-right: 0;*/
-    /*}*/
+    section.client-say .say-block:nth-of-type(odd) {
+        padding-right: 0;
+    }
 
     /*project details*/
     /*.page-template-contact-us .contact .address-ca {*/
