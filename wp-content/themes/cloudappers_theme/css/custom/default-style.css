@@ -4480,6 +4480,13 @@ section.page-not-found #particles-js {
         padding: 0;
     }
 
+    section.client-say .say-block {
+        /*-webkit-flex: 0 0 47%;*/
+        /*-ms-flex: 0 0 47%;*/
+        /*flex: 0 0 47%;*/
+        width: 100%;
+    }
+
     /*project inner max 991 end*/
 }
 
