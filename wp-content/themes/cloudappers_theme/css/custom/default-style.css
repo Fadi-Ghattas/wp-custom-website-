@@ -2223,6 +2223,8 @@ section.client-say .say-block .signature .from {
 }
 
 section.client-say .say-block {
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
 }
 
