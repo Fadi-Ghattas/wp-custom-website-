@@ -3799,7 +3799,11 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 1200px) {
+    .view-all a:hover {
+        color: #ff6b2a !important;
+        transition: 0.3s;
 
+    }
     .home .contact .form .container-fluid .col-lg-12 {
         /*padding-left: 0;*/
     }
@@ -5060,6 +5064,11 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
+    /* Services */
+    .home .what-we-do .row > div > a {
+        padding: 30px 0;
+    }
+    /* Services end */
     /* Let us page */
     .page-template-about .words .slick-current.slick-active .img-slide {
         box-shadow: none;
@@ -5331,7 +5340,7 @@ section.page-not-found #particles-js {
 
     .home .slid-content p {
         font-size: 4.76vw;
-        line-height: 53px;
+        line-height: 8.066vw;
         display: inline;
     }
 
@@ -6427,6 +6436,9 @@ section.page-not-found #particles-js {
 /*xs*/
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
+    .home .slid-content p {
+        line-height: 9.066vw;
+    }
     .home .slide-desc a {
         margin-top: 0;
     }
@@ -6558,6 +6570,9 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 416px) {
+    .home .slid-content p {
+        line-height: 10.066vw;
+    }
     #nav-toggle span {
         width: 9vw;
         height: 7px;
@@ -6815,11 +6830,6 @@ a.c-btn:empty {
     transition: 0.3s;
 }
 
-.view-all a:hover {
-    color: #ff6b2a !important;
-    transition: 0.3s;
-
-}
 
 /*lazy loading classes start*/
 .lazy-loader {
