@@ -2145,12 +2145,12 @@ section.client-say h1 {
 
 section.client-say .say-blocks {
     margin: 0;
-    /*display: -webkit-box;*/
-    /*display: -webkit-flex;*/
-    /*display: -ms-flexbox;*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*align-items: stretch;*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 section.client-say .say-block,
