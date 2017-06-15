@@ -3273,40 +3273,6 @@ form#GetInTouchForm button.c-btn {
     vertical-align: top;
 }
 
-
-/*.page-template-contact-us .contact .form-group.ms{*/
-/*max-width: 100% !important;*/
-/*width: 100% !important;*/
-/*padding-top: 38px;*/
-/*text-align: -webkit-center;*/
-/*text-align: -moz-center;*/
-/*text-align: center;*/
-/*margin-top: 0;*/
-/*}*/
-
-/*.page-template-contact-us .contact .form label {*/
-/*font-size: 18px;*/
-/*color: rgb(0, 0, 0);*/
-/*line-height: 1.778;*/
-/*padding-left: 7px;*/
-/*font-weight: 400;*/
-/*margin-bottom: 0;*/
-/*}*/
-
-/*.page-template-contact-us .contact label.focus {*/
-/*font-size: 18px;*/
-/*}*/
-
-/*.page-template-contact-us .contact .form input {*/
-/*border: none;*/
-/*border-bottom: 1px solid black;*/
-/*width: 100%;*/
-/*box-shadow: none;*/
-/*border-radius: 0;*/
-/*font-size: 18px;*/
-/*color: #ff5f19;*/
-/*}*/
-
 .page-template-contact-us .contact .form-group.note {
     max-width: 527px;
     margin-top: 11px;
@@ -3324,103 +3290,11 @@ form#GetInTouchForm button.c-btn {
     text-transform: uppercase;
 }
 
-/*.page-template-contact-us .contact .address-ca {*/
-/*background-image: -moz-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);*/
-/*background-image: -webkit-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);*/
-/*background-image: -ms-linear-gradient(110deg, rgba(252, 96, 118, 0.851) 0%, rgba(255, 154, 68, 0.851) 100%);*/
-/*position: absolute;*/
-/*bottom: 0;*/
-/*right: 0;*/
-/*left: 0;*/
-/*min-height: 306px;*/
-/*color: white;*/
-/*}*/
-
-/*.page-template-contact-us .contact .address-ca #take-me-there {*/
-/*font-size: 14px;*/
-/*color: rgb(255, 97, 27);*/
-/*font-weight: bold;*/
-/*text-transform: uppercase;*/
-/*text-align: center;*/
-/*width: 153px;*/
-/*height: 47px;*/
-/*box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);*/
-/*line-height: 47px;*/
-/*display: block;*/
-/*margin-top: 60px;*/
-/*margin-left: 39px;*/
-/*border-radius: 4px;*/
-/*}*/
-
 .contact .address-ca a {
     color: white;
     font-family: "Open Sans";
     font-size: 14px;
 }
-
-/*.page-template-contact-us .contact .address-ca #take-me-there:hover {*/
-/*background-color: rgb(251, 249, 249);*/
-/*}*/
-
-/*.page-template-contact-us .contact .address-ca h6 {*/
-/*background: url("../../img/white-ca-icon@3x.png") no-repeat left top;*/
-/*background-size: 42px 43px;*/
-/*padding: 16px 45px;*/
-/*padding-left: 65px;*/
-/*padding-bottom: 27px;*/
-/*padding-top: 5px;*/
-/*margin-bottom: 0;*/
-/*text-align: left;*/
-/*}*/
-
-/*.page-template-contact-us .contact .address-ca p {*/
-/*font-size: 14px;*/
-/*font-family: "Open Sans";*/
-/*line-height: 1.714;*/
-/*text-align: left;*/
-/*padding-left: 27px;*/
-/*margin-top: 20px;*/
-/*}*/
-
-/*.page-template-contact-us .contact .address-ca .details {*/
-/*padding-left: 65px;*/
-/*margin-top: 0 !important;*/
-/*}*/
-
-/*.page-template-contact-us .contact p.address-details {*/
-
-/*background: url("../../img/address-pin-white-icon@3x.svg") no-repeat left 5px;*/
-/*background-size: 15px 20px;*/
-/*margin-top: 0;*/
-/*line-height: 24px;*/
-
-/*}*/
-
-/*.page-template-contact-us .contact p.mobile {*/
-/*background: url("../../img/mobile-white-icon@3x.svg") no-repeat left center;*/
-/*background-size: 10px 18px;*/
-
-/*}*/
-
-/*.page-template-contact-us .contact p.phone {*/
-/*background: url("../../img/phone-white-icon@3x.svg") no-repeat left center;*/
-/*background-size: 18px 18px;*/
-/*}*/
-
-/*.page-template-contact-us .contact .address-ca .container-fluid {*/
-/*margin-right: 0;*/
-/*padding-top: 35px;*/
-/*padding-left: 13px;*/
-/*}*/
-
-/*.page-template-contact-us .contact .form .container-fluid {*/
-/*margin-left: 0;*/
-/*}*/
-
-/*.page-template-contact-us .contact .container-fluid {*/
-/*max-width: 585px;*/
-
-/*}*/
 
 .right-top-div {
     display: flex;
@@ -4037,6 +3911,74 @@ section.page-not-found #particles-js {
     }
 }
 
+
+@media (max-width: 1300px){
+
+    .page-template-about .words .slick-dots {
+        width: 100%;
+    }
+
+    .page-template-about .words .slide,
+    .page-template-about .words .slide * {
+        text-align: center;
+    }
+
+    .page-template-about .words p:after {
+        margin: 23px auto 0;
+    }
+
+    .page-template-about .words .slick-dots li {
+        margin: 0 auto;
+    }
+
+    .page-template-about .words .slick-dots li {
+        display: inline-block;
+    }
+
+    .page-template-about .words {
+        padding: 30px 0 45px;
+        background: url(../../img/words-bg1.jpg), url(../../img/words-bg2-mob.png);
+        background-repeat: no-repeat;
+        background-size: 100% 40%, contain;
+        background-position: top center, center 60%;
+    }
+
+    .page-template-about .words p {
+        max-width: none;
+    }
+
+    .page-template-about .words .info-slide {
+        padding: 0;
+    }
+
+    .page-template-about .words .img-slide {
+        height: auto;
+    }
+
+    .page-template-about .words p {
+        margin: 0;
+    }
+
+    .page-template-about .words .info-slide {
+        margin-top: 50px;
+    }
+
+    .page-template-about .words .slide, .page-template-about .words .slide * {
+        text-align: center;
+    }
+
+    .page-template-about .words .slick-current.slick-active .img-slide {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .page-template-about .words .slick-list.draggable {
+        padding: 54px 0 0 0 ;
+        margin-top: -54px;
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 1199px) {
     /*General*/
     body.home.blog.modal-open {
@@ -4127,39 +4069,8 @@ section.page-not-found #particles-js {
         padding-bottom: 35px;
     }
 
-    .page-template-about .words {
-        padding: 30px 0 45px;
-        background: url(../../img/words-bg1.jpg), url(../../img/words-bg2-mob.png);
-        background-repeat: no-repeat;
-        background-size: 100% 40%, contain;
-        background-position: top center, center 60%;
-    }
 
-    .page-template-about .words p {
-        max-width: none;
-    }
 
-    .page-template-about .words .info-slide {
-        padding: 0;
-    }
-
-    .page-template-about .words .img-slide {
-        height: auto;
-    }
-
-    .page-template-about .words p {
-        margin: 0;
-    }
-
-    .page-template-about .words .info-slide {
-        margin-top: 50px;
-    }
-
-    /*.page-template-contact-us .contact {*/
-    /*flex-direction: column-reverse;*/
-    /*display: flex;*/
-    /*text-align: center;*/
-    /*}*/
 
     .page-template-contact-us .contact > div:last-child {
         padding-bottom: 0;
@@ -4190,15 +4101,11 @@ section.page-not-found #particles-js {
         margin-right: 0px;
     }
 
-
     .page-template-contact-us .contact .form-group.note {
         width: 100%;
         max-width: 100%;
         float: none;
     }
-
-
-
 
     .home .contact .form-group:first-of-type {
         margin-right: 0px;
@@ -4208,36 +4115,11 @@ section.page-not-found #particles-js {
         padding-left: 0;
     }
 
-    /*.page-template-contact-us .contact .address-ca .container-fluid {*/
-    /*padding-bottom: 35px;*/
-    /*max-width: 100%;*/
-
-    /*}*/
-
     .page-template-contact-us .contact .form .container-fluid {
         max-width: 100%;
     }
 
-    .page-template-about .words .slick-dots {
-        width: 100%;
-    }
 
-    .page-template-about .words .slide,
-    .page-template-about .words .slide * {
-        text-align: center;
-    }
-
-    .page-template-about .words p:after {
-        margin: 23px auto 0;
-    }
-
-    .page-template-about .words .slick-dots li {
-        margin: 0 auto;
-    }
-
-    .page-template-about .words .slick-dots li {
-        display: inline-block;
-    }
 
     .prefooter {
         text-align: center;
@@ -4494,15 +4376,6 @@ section.page-not-found #particles-js {
 
     /*project inner max 991 end*/
 }
-
-/*@media (max-width: 905px) {*/
-/*!*project inner max 905 start*!*/
-/*.move-section.with-border {     */
-/*bottom: 322px;*/
-/*}*/
-
-/*!*project inner max 905 end*!*/
-/*}*/
 
 /*xs*/
 @media (max-width: 768px) {
@@ -7540,20 +7413,6 @@ a.c-btn:empty {
     }
 }
 
-/*.parallax-mirror:after {*/
-/*content: ' ';*/
-/*width: 100%;*/
-/*height: 700px;*/
-/*background: #cf86d6;*/
-/*position: absolute;*/
-/*bottom: -649px;*/
-/*opacity: 0.8;*/
-/*z-index: 0;*/
-/*}*/
-
-/*.parallax-mirror {*/
-/*position: relative;*/
-/*}*/
 
 /**
  * iPad with portrait orientation.
