@@ -2149,7 +2149,8 @@ section.client-say .say-blocks {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 section.client-say .say-block,
@@ -2214,6 +2215,10 @@ section.client-say .say-block .signature strong {
 
 section.client-say .say-block .signature .from {
     line-height: 5px;
+}
+
+.say-block {
+    /*flex: 0 0 50%;*/
 }
 
 section.client-say .say-block:nth-of-type(odd) {
