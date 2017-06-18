@@ -3090,7 +3090,7 @@ form#GetInTouchForm button.c-btn {
     font-size: 22px;
     color: rgb(254, 254, 254);
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     line-height: 38px;
     text-align: center;
     letter-spacing: 2.2px;
