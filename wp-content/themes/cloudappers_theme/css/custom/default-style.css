@@ -3452,7 +3452,7 @@ section.page-not-found .container {
     overflow: hidden !important;
 }
 
-section.page-not-found h1 {
+section.page-not-found h1{
     font-family: "Source Sans Pro", sans-serif;
     font-weight: bold;
     font-size: 90px;
@@ -3463,6 +3463,15 @@ section.page-not-found h1 {
     margin: 0px;
     padding: 0px;
     text-shadow: 0px 0px 50px rgba(131, 131, 131, 0.5);
+}
+
+section.page-not-found p{
+    text-align: center;
+    margin:  0 auto;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+    max-width:50%;
+    font-size: 22px;
 }
 
 section.page-not-found h2 {
