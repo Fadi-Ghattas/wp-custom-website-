@@ -6442,8 +6442,7 @@ section.page-not-found #particles-js {
     }
 }
 
-@media (max-width: 416px) {
-    .navbar-inverse .navbar-toggle {
+@media (max-width: 416px) { .navbar-inverse .navbar-toggle {
         margin-top: 0;
     }
     .contact .address-ca #take-me-there {
