@@ -3580,6 +3580,9 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 768px) {
+    ul.filters li:nth-child(2) {
+        margin: 0 11px;
+    }
     /*General*/
     .mob {
         display: none;
