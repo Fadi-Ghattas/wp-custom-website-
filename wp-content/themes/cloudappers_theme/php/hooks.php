@@ -21,14 +21,76 @@ function project_custom_setup()
 function project_custom_login_logo()
 {
 	echo '<style type="text/css">
-            h1 a { background-image: url(' . get_bloginfo('template_directory') . '/imgs/logo.png) !important; }
+	        body {
+			    background: url('.get_stylesheet_directory_uri() . '/img/login-bg.png) cadetblue;
+    		    background-size: cover;
+			}
+			
+            h1 a {
+                background-image: url(' . get_bloginfo('template_directory') . '/img/CA-full-logo-w.png) !important;
+                width: 100% !important;
+                background-size: 100% !important;
+                height: 44px;
+                margin: 0 auto 0px;
+            }
+
+              .login form input.button-primary
+            {
+                background: #4dc2eb;
+                border-color: #4dc2eb;
+                -webkit-box-shadow: 0 1px 0 #4dc2eb;
+                box-shadow: 0 1px 0 #4dc2eb;
+                color: #fff;
+                text-decoration: none;
+                text-shadow: 0 -1px 1px #4dc2eb,1px 0 1px #4dc2eb,0 1px 1px #4dc2eb,-1px 0 1px #4dc2eb;
+            }
+
+            .login form input.button-primary:hover,
+            .login form input.button-primary:focus
+             {
+                background: #4dc2eb;
+                color: #fff;
+                border: 1px solid #4dc2eb;
+                box-shadow: 0px 0px 6px 0px #4dc2eb;
+                -webkit-box-shadow: 0px 0px 6px 0px #4dc2eb;
+                -moz-box-shadow: 0px 0px 6px 0px #4dc2eb;
+            }
+
+            form#loginform {
+                border: 1px solid #4dc2eb;
+                border-radius: 16px;
+                box-shadow: 0px 0px 15px 0px #4dc2eb;
+                -webkit-box-shadow: 0px 0px 15px 0px #4dc2eb;
+                -moz-box-shadow: 0px 0px 15px 0px #4dc2eb;
+                opacity: 1;
+            }
+            
+            .login #backtoblog a, .login #nav a {
+             	   color: #fff;
+             }
+             
+              a:focus {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                outline:none;
+            }
          </style>';
 }
 
-//add_action('login_head', 'project_custom_login_logo');
-
+add_action('login_head', 'project_custom_login_logo');
 
 add_action('init', 'remove_editor_init');
+
+function my_login_logo_url_title() {
+	return 'CLOUDAPPERS';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+function custom_loginlogo_url($url) {
+
+	return home_url();
+}
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
 
 function remove_editor_init()
 {
@@ -65,7 +127,6 @@ function remove_editor_init()
 	}
 }
 
-
 function add_defer_attribute($tag, $handle)
 {
 	// add script handles to the array below
@@ -80,7 +141,6 @@ function add_defer_attribute($tag, $handle)
 }
 
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
-
 
 function add_async_attribute($tag, $handle)
 {
