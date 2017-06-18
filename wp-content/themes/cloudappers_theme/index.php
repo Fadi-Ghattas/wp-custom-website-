@@ -263,7 +263,7 @@ get_template_part('template-part', 'topnav');
             </div>
             <div class="row join">
                 <div class="col-lg-12">
-                    <h2>I want to create amazing things with you!</h2>
+                    <h2>I want to create amazing things with CloudAppers!</h2>
                     <a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>
                 </div>
             </div>
