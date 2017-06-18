@@ -354,8 +354,9 @@ get_template_part('template-part', 'topnav');
 					</h1>
 
 				<div class="row say-blocks">
+					<?php $isSingle = sizeof($project['project_client_say_blocks']); ?>
 					<?php foreach ($project['project_client_say_blocks'] as $say) { ?>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 say-block" style="color: <?php echo $say['project_client_say_block_color'] ?>;">
+						<div class="col-xs-12 col-sm-12 <?php echo ($isSingle == 1 ? 'col-md-12 col-lg-12 single-say' : 'col-md-6 col-lg-6'); ?> say-block" style="color: <?php echo $say['project_client_say_block_color'] ?>;">
 							<div>
 								<?php echo $say['project_client_say_block']; ?>
 							</div>

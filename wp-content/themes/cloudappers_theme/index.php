@@ -57,12 +57,12 @@ get_template_part('template-part', 'topnav');
     <div class="home-slider">
 
         <?php foreach ($mainSlider as $slid) { ?>
-            <div class="slide">
-                <picture>
-                    <source srcset="<?php echo esc_url($slid['main_slide_image']['url']); ?>" media="(min-width: 768px)">
-                    <source srcset="<?php echo esc_url($slid['main_slide_mobile_image']['url']); ?>" media="(max-width: 767px)">
-                    <img src="<?php echo esc_url($slid['main_slide_image']['url']); ?>">
-                </picture>
+            <div class="slide" style="background-image: url('<?php echo esc_url($slid['main_slide_image']['url']); ?>') ;">
+<!--                <picture>-->
+<!--                    <source srcset="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--" media="(min-width: 768px)">-->
+<!--                    <source srcset="--><?php //echo esc_url($slid['main_slide_mobile_image']['url']); ?><!--" media="(max-width: 767px)">-->
+<!--                    <img src="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--">-->
+<!--                </picture>-->
                 <div class="container slide-desc">
                     <div class="row">
                         <div class="col-lg-12">
