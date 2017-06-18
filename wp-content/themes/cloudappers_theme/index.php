@@ -103,7 +103,7 @@ get_template_part('template-part', 'topnav');
                     <?php } ?>
                 <?php } ?>
                 <?php if (!empty($pageOptions['home_page_digital_showcase_hashtag_text'])) ?>
-                <p><?php echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?></p>
+<!--                <p>--><?php //echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?><!--</p>-->
             </div>
         </div>
     </div>
