@@ -233,6 +233,7 @@ header, nav, header img {
 }
 
 .navbar-inverse .navbar-nav > li > a {
+    font-size: 14px;
     line-height: 47px;
     padding-top: 0;
     padding-bottom: 0;
@@ -3325,10 +3326,10 @@ form#GetInTouchForm button.c-btn {
     position: relative;
     overflow: hidden;
     display: none;
-    background: white;
+    /* background: white; */
     margin: 0 -15px;
     text-align: center;
-     background: url("../../img/menu-bg.png") no-repeat top right;
+    /* background: url("../../img/menu-bg.png") no-repeat top right; */
     background-size: cover;
     padding: 109px 15px 0;
     /*background: linear-gradient(-10deg, rgb(255, 255, 255) 40%, #fff 40%, rgb(255, 255, 255) 60%, rgba(255, 253, 253, 0) 60%);*/
@@ -3357,6 +3358,7 @@ form#GetInTouchForm button.c-btn {
     height: 130px;
     width: 100%;
     border-top: 1px solid rgb(206, 206, 206);
+    background: #fff;
 }
 
 .top-header .social a,
@@ -3905,6 +3907,15 @@ section.page-not-found #particles-js {
     /*Menu*/
     .navbar-nav {
         float: left;
+    }
+
+    .navbar-inverse .navbar-nav > li:first-child > a{
+        padding-left: 0;
+    }
+
+    .navbar-header {
+        display: block;
+        float: none;
     }
 
     /*Home*/
@@ -5302,10 +5313,12 @@ section.page-not-found #particles-js {
     .top-header .nav-social {
         margin: 0;
     }
-
+    .top-header .copyright:after {content: ' ';position: absolute;top: -26px;right: -41%;width: 155%;background: #fff;height: 74px;transform: rotateZ(-7deg);z-index: -1;}
     .top-header .copyright {
         padding: 0;
         padding-bottom: 30px;
+        background: #fff;
+        position: relative;
     }
     .top-header .nav-social .copyright p {
         display: none;
@@ -6482,8 +6495,8 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 416px) { .navbar-inverse .navbar-toggle {
-        margin-top: 0;
-    }
+    margin-top: 0;
+}
     .contact .address-ca #take-me-there {
         width: 76vw;
     }
