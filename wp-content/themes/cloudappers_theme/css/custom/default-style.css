@@ -910,7 +910,7 @@ header, nav, header img {
     line-height: 47px;
     display: block;
     margin-top: 53px;
-    margin-left: 39px;
+    /*margin-left: 39px;*/
     border-radius: 4px;
     font-family: 'Raleway';
     font-weight: 700;
@@ -2933,6 +2933,13 @@ form#GetInTouchForm button.c-btn {
 #footer {
     padding-top: 42px;
     padding-bottom: 55px;
+}
+
+#footer p.open-time{
+    background: url(../../img/time.svg) no-repeat left center;
+    background-size: 20px 20px;
+    margin-top: 0;
+    line-height: 24px;
 }
 
 #footer .address-ca img {
