@@ -6376,7 +6376,7 @@ section.page-not-found #particles-js {
     .top-header .copyright:after {
         content: ' ';
         position: absolute;
-        top: -50px;
+        top: -56px;
         right: -90%;
         width: 200%;
         background: #fff;
