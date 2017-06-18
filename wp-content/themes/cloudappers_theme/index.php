@@ -57,12 +57,12 @@ get_template_part('template-part', 'topnav');
     <div class="home-slider">
 
         <?php foreach ($mainSlider as $slid) { ?>
-            <div class="slide">
-                <picture>
-                    <source srcset="<?php echo esc_url($slid['main_slide_image']['url']); ?>" media="(min-width: 768px)">
-                    <source srcset="<?php echo esc_url($slid['main_slide_mobile_image']['url']); ?>" media="(max-width: 767px)">
-                    <img src="<?php echo esc_url($slid['main_slide_image']['url']); ?>">
-                </picture>
+            <div class="slide" style="background-image: url('<?php echo esc_url($slid['main_slide_image']['url']); ?>') ;">
+<!--                <picture>-->
+<!--                    <source srcset="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--" media="(min-width: 768px)">-->
+<!--                    <source srcset="--><?php //echo esc_url($slid['main_slide_mobile_image']['url']); ?><!--" media="(max-width: 767px)">-->
+<!--                    <img src="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--">-->
+<!--                </picture>-->
                 <div class="container slide-desc">
                     <div class="row">
                         <div class="col-lg-12">
@@ -103,7 +103,7 @@ get_template_part('template-part', 'topnav');
                     <?php } ?>
                 <?php } ?>
                 <?php if (!empty($pageOptions['home_page_digital_showcase_hashtag_text'])) ?>
-                <p><?php echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?></p>
+<!--                <p>--><?php //echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?><!--</p>-->
             </div>
         </div>
     </div>
@@ -134,6 +134,7 @@ get_template_part('template-part', 'topnav');
             <?php foreach ($services as $service) { ?>
                 <div class="app col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
+                        <div class="liner-effect"></div>
                         <img src="<?php echo esc_url($service['service_icon']['url']); ?>"/>
                         <h1><?php echo $service['service_card_title']; ?></h1>
                         <div class="description"><?php echo $service['service_card_description']; ?></div>
@@ -310,7 +311,7 @@ get_template_part('template-part', 'topnav');
                                 <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="form-group note">
-                                <label for="note">What we need to know?</label>
+                                <label for="note">Tell us anything that's on your mind</label>
                                 <input type="text" class="form-control" id="note" name="note">
                             </div>
                             <button type="submit" class="c-btn">GET IN TOUCH</button>
