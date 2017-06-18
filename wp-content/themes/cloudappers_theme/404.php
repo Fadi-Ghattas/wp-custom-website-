@@ -7,8 +7,9 @@
 		</div>
 
 		<div class="container">
-			<div class="text"><h1> ERROR 404 </h1>
-				<h2><a href="<?php echo esc_url(home_url()); ?>">get me out of her<span>e</span></a></h2>
+			<div class="text"><h1> CRAP! </h1>
+                <p> Looks like you've hit a virtual roadblock. We'll work on making sure this never happens again.</p>
+				<h2><a href="<?php echo esc_url(home_url()); ?>"> GET ME OUTTA HERE!</a></h2>
 			</div>
 		</div>
 
