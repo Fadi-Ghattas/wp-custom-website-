@@ -140,32 +140,32 @@ get_template_part('template-part', 'topnav');
         <div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
     </section>
 <?php } ?>
-
-<?php if (!empty($sweetWords)) { ?>
-    <section class="words">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="words-slider">
-                        <?php foreach ($sweetWords as $sweetWord) { ?>
-                            <div class="slide">
-                                <div class="img-slide">
-                                    <img src="<?php echo esc_url($sweetWord['sweet_word_image']['url']); ?>"/>
-                                </div>
-                                <div class="info-slide">
-                                    <h6><?php echo $sweetWord['post_title']; ?></h6>
-                                    <div><?php echo $sweetWord['sweet_word']; ?></div>
-                                    <h5><?php echo $sweetWord['sweet_word_by']; ?></h5>
-                                    <h4><?php echo $sweetWord['sweet_word_by_info']; ?></h4>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php } ?>
+<!-- Disable sweet words for now -->
+<?php //if (!empty($sweetWords)) { ?>
+<!--    <section class="words">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12">-->
+<!--                    <div class="words-slider">-->
+<!--                        --><?php //foreach ($sweetWords as $sweetWord) { ?>
+<!--                            <div class="slide">-->
+<!--                                <div class="img-slide">-->
+<!--                                    <img src="--><?php //echo esc_url($sweetWord['sweet_word_image']['url']); ?><!--"/>-->
+<!--                                </div>-->
+<!--                                <div class="info-slide">-->
+<!--                                    <h6>--><?php //echo $sweetWord['post_title']; ?><!--</h6>-->
+<!--                                    <div>--><?php //echo $sweetWord['sweet_word']; ?><!--</div>-->
+<!--                                    <h5>--><?php //echo $sweetWord['sweet_word_by']; ?><!--</h5>-->
+<!--                                    <h4>--><?php //echo $sweetWord['sweet_word_by_info']; ?><!--</h4>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        --><?php //} ?>
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<?php //} ?>
 
     <section class="prefooter lazy-background"
              data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
