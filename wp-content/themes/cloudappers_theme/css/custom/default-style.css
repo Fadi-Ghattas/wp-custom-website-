@@ -2622,8 +2622,9 @@ section.project-url .next-project-btn {
 }
 
 .page-template-about .ouraim {
-    background-color: rgb(175, 175, 175);
+    /*background-color: rgb(175, 175, 175);*/
     padding: 47px 0 71px;
+    background-color: #81c0ee;
     position: relative;
 }
 
