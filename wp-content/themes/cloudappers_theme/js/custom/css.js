@@ -43,6 +43,10 @@ jQuery.lazyLoadXT.onload = function () {
 
 jQuery(function ($) {
 
+    if ($('.home').length){
+    	document.title='CloudAppers / Websites / Mobile Apps / UX & UI Design / Digital Startup Consultancy / Dubai UAE';
+	}
+
 	//focus events for input
 	jQuery('input,select,textarea,#cv_file').on('click focus', function () {
 		jQuery(this).parents('.form-group').find('label').addClass('focus')
