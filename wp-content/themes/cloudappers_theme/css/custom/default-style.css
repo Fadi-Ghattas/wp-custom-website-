@@ -233,6 +233,7 @@ header, nav, header img {
 }
 
 .navbar-inverse .navbar-nav > li > a {
+    font-size: 14px;
     line-height: 47px;
     padding-top: 0;
     padding-bottom: 0;
@@ -3905,6 +3906,15 @@ section.page-not-found #particles-js {
     /*Menu*/
     .navbar-nav {
         float: left;
+    }
+
+    .navbar-inverse .navbar-nav > li:first-child > a{
+        padding-left: 0;
+    }
+
+    .navbar-header {
+        display: block;
+        float: none;
     }
 
     /*Home*/
