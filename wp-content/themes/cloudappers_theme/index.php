@@ -329,7 +329,8 @@ get_template_part('template-part', 'topnav');
     <div class="copyright">
         <!--<img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?><!--" width="236px">-->
         <div>
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+<!--        <img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?><!--">-->
+            <embed src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?>" alt="CloudAppers"/>
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
         </div>
         <div id="footer">

@@ -15,8 +15,8 @@ wp_footer();
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  hidden-xs">
                     <div class="copyright">
                         <a href="<?php echo home_url(); ?>">
-<!--                            <embed src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?><!--">-->
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                            <embed src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?>">
+<!--                            <img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?><!--">-->
                         </a>
                         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
                     </div>
@@ -48,8 +48,8 @@ wp_footer();
                 <div class="mob hidden-lg hidden-md">
                     <div class="nav-social">
                         <div class="copyright">
-<!--                            <embed src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?><!--">-->
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                            <embed src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?>">
+<!--                            <img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?><!--">-->
                             <p>© 2008-2017 CloudAppers. All Rights Reserved</p>
                         </div>
                         <div class="social">

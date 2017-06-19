@@ -13,9 +13,9 @@
                                     <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri() . '/img/white-ca-icon@3x.svg' ?>" alt="CloudAppers"/>
                                 </a>
                                 <a class="logo-desk hidden-xs" href="<?php echo home_url(); ?>">
-<!--                                    <embed src="--><?php //echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?><!--" alt="CloudAppers"/>-->
-                                    <img src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?>" alt="CloudAppers"/>
-                                    <img class="hidden-md hidden-sm  img-float" src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.png' ?>" alt="CloudAppers"/>
+                                    <embed src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?>" alt="CloudAppers"/>
+<!--                                    <img src="--><?php //echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?><!--" alt="CloudAppers"/>-->
+                                    <embed class="hidden-md hidden-sm  img-float" src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon.svg' ?>" alt="CloudAppers"/>
                                 </a>
 
                                 <button id="nav-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
@@ -42,8 +42,8 @@
 
                             <div class="nav-social">
                                 <div class="copyright">
-<!--                                    <embed src="--><?php //echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?><!--" alt="CloudAppers"/>-->
-                                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
+                                    <embed src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?>" alt="CloudAppers"/>
+<!--                                    <img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?><!--">-->
                                     <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
                                 </div>
                                 <div class="social">
