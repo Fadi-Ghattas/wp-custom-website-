@@ -7563,4 +7563,7 @@ body.home.blog.modal-open {
         flex: 0 0 100%;
 
     }
+    .home .showcase a {
+        line-height: 5.04vw;
+    }
 }
