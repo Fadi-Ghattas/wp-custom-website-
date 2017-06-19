@@ -333,13 +333,22 @@ get_template_part('template-part', 'topnav');
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
         </div>
         <div id="footer">
-            <div class="social">
+            <div class="social hidden-xs">
                 <ul>
                     <li><a target="_blank" href="https://twitter.com/cloudappers">Twitter</a></li>
                     <li><a target="_blank" href="https://www.facebook.com/CloudAppers/">Facebook</a></li>
                     <li><a target="_blank" href="https://www.instagram.com/cloudappers/">Instagram</a></li>
                     <li><a target="_blank" href="https://www.behance.net/cloudappers/">Behance</a></li>
                 </ul>
+            </div>
+            <div class="mob hidden-lg hidden-md">
+                <div class="nav-social">
+                    <div class="social">
+                        <a class="facebook" href="#"></a>
+                        <a class="twitter" href="#"></a>
+                        <a class="instagram" href="#"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
