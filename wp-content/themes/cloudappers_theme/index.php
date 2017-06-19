@@ -328,8 +328,19 @@ get_template_part('template-part', 'topnav');
 
     <div class="copyright">
         <!--<img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?><!--" width="236px">-->
+        <div>
         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+        </div>
+        <div id="footer"><div class="social">
+                <ul>
+                    <li><a target="_blank" href="https://twitter.com/cloudappers">Twitter</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/CloudAppers/">Facebook</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/cloudappers/">Instagram</a></li>
+                    <li><a target="_blank" href="https://www.behance.net/cloudappers/">Behance</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 

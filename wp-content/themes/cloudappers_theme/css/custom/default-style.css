@@ -7531,3 +7531,23 @@ a.c-btn:empty {
 body.home.blog.modal-open {
     touch-action: pan-y;
 }
+.home .contact .copyright {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+.copyright #footer {
+    padding: 0;
+}
+@media (max-width: 767px) {
+    .home .contact .copyright {
+        flex-wrap: wrap;
+    }
+    .home .contact .copyright>div {
+        flex: 0 0 100%;
+
+    }
+}
