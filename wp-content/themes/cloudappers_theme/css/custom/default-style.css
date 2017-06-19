@@ -3566,7 +3566,12 @@ section.page-not-found #particles-js {
         /*-o-transition-duration: 0s !important;*/
         /*transition-duration: 0s !important;*/
     }
-
+    .top-header .social a, #footer .nav-social .social a {
+        width: calc(100% /3 - 5px);
+    }
+    .home .contact > div {
+        margin-top: 30px;
+    }
 }
 
 @supports (-ms-ime-align:auto) {
@@ -7549,7 +7554,7 @@ body.home.blog.modal-open {
     height: 200px;
     justify-content: center;
     align-items: center;
-    padding: 35px 15px;
+    padding: 35px 0px;
 }
 
 .copyright #footer {
