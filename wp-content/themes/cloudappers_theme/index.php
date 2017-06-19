@@ -332,7 +332,8 @@ get_template_part('template-part', 'topnav');
         <img src="<?php echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?>">
         <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
         </div>
-        <div id="footer"><div class="social">
+        <div id="footer">
+            <div class="social">
                 <ul>
                     <li><a target="_blank" href="https://twitter.com/cloudappers">Twitter</a></li>
                     <li><a target="_blank" href="https://www.facebook.com/CloudAppers/">Facebook</a></li>
