@@ -324,12 +324,16 @@ jQuery(function ($) {
     function services() {
         if ($('.home').length) {
             var widthOfFirstElement = $('.home .what-we-do .row > div:first-child').width();
+            var positionRight =  $('.home .what-we-do .row > div:first-child').position().left;
+
+
             var lastElement = $('.home .what-we-do .row > div:last-child');
             var widthOfLastElement = lastElement.width();
             var positionLeft = lastElement.position().left;
             var windowWidth = $(window).width();
 
-            $('.home .what-we-do .row > div:first-child .liner-effect').css("padding-left", 1000 + widthOfFirstElement);
+            $('.home .what-we-do .row > div:first-child .liner-effect').css("margin-left", -1 * positionRight);
+            $('.home .what-we-do .row > div:first-child .liner-effect').css("padding-left", positionRight + widthOfFirstElement);
             $('.home .what-we-do .row > div:last-child .liner-effect').css("width", windowWidth - (positionLeft + widthOfLastElement) + widthOfLastElement);
         }
     }

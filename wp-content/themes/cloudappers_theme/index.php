@@ -57,12 +57,15 @@ get_template_part('template-part', 'topnav');
     <div class="home-slider">
 
         <?php foreach ($mainSlider as $slid) { ?>
-            <div class="slide" style="background-image: url('<?php echo esc_url($slid['main_slide_image']['url']); ?>') ;">
-<!--                <picture>-->
-<!--                    <source srcset="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--" media="(min-width: 768px)">-->
-<!--                    <source srcset="--><?php //echo esc_url($slid['main_slide_mobile_image']['url']); ?><!--" media="(max-width: 767px)">-->
-<!--                    <img src="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--">-->
-<!--                </picture>-->
+            <div class="slide"
+                 style="background-image: url('<?php echo esc_url($slid['main_slide_image']['url']); ?>') ;">
+                <!--                <picture>-->
+                <!--                    <source srcset="-->
+                <?php //echo esc_url($slid['main_slide_image']['url']); ?><!--" media="(min-width: 768px)">-->
+                <!--                    <source srcset="-->
+                <?php //echo esc_url($slid['main_slide_mobile_image']['url']); ?><!--" media="(max-width: 767px)">-->
+                <!--                    <img src="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--">-->
+                <!--                </picture>-->
                 <div class="container slide-desc">
                     <div class="row">
                         <div class="col-lg-12">
@@ -74,7 +77,8 @@ get_template_part('template-part', 'topnav');
                                 <?php if (!empty($slid['main_slide_description'])) ?>
                                 <div class="description"><?php echo $slid['main_slide_description']; ?></div>
                                 <?php if (!empty($slid['main_slide_button_text']) && !empty($slid['main_slide_button_link_url'])) ?>
-                                <a class="c-btn"  target="_blank" href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><span><span> <?php echo $slid['main_slide_button_text']; ?></span></span></a>
+                                <a class="c-btn" target="_blank"
+                                   href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><span><span> <?php echo $slid['main_slide_button_text']; ?></span></span></a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +107,8 @@ get_template_part('template-part', 'topnav');
                     <?php } ?>
                 <?php } ?>
                 <?php if (!empty($pageOptions['home_page_digital_showcase_hashtag_text'])) ?>
-<!--                <p>--><?php //echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?><!--</p>-->
+                <!--                <p>-->
+                <?php //echo $pageOptions['home_page_digital_showcase_hashtag_text']; ?><!--</p>-->
             </div>
         </div>
     </div>
@@ -116,9 +121,9 @@ get_template_part('template-part', 'topnav');
 
                 <div class="client-row">
                     <?php foreach ($clients as $client) { ?>
-                        <a  href="<?php echo esc_url($client['client_website_url']); ?>"
+                        <a href="<?php echo esc_url($client['client_website_url']); ?>"
                            class="item  col-md-2 col-sm-3 col-xs-4" target="_blank"><img class=""
-                                                                         src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+                                                                                         src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
                     <?php } ?>
                 </div>
 
@@ -219,7 +224,8 @@ get_template_part('template-part', 'topnav');
             <div class="col-lg-7  col-md-12">
                 <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
                 <p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-                <a target="_blank" href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+                <a target="_blank" href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR
+                    PROJECT</a>
             </div>
         </div>
     </div>
@@ -241,22 +247,33 @@ get_template_part('template-part', 'topnav');
                     $hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
                     ?>
                     <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                            <section class="<?php echo $hover[$hoverCount]; ?>">
+                        <section class="<?php echo $hover[$hoverCount]; ?>">
+                            <a href="<?php echo esc_url(home_url('team')); ?>">
+                                <figure>
+                                    <!--<div class="lazy-loader-effect"></div>-->
+                                    <div class="loader">
+                                        <div class="square"></div>
+                                        <div class="square"></div>
+                                        <div class="square last"></div>
+                                        <div class="square clear"></div>
+                                        <div class="square"></div>
+                                        <div class="square last"></div>
+                                        <div class="square clear"></div>
+                                        <div class="square "></div>
+                                    </div>
+                                    <img class="img-lazy lazy-not-loaded lazy-loader"
+                                         data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"
+                                         alt="<?php echo $teamMember['post_title']; ?>"/>
+                                </figure>
+                            </a>
+                            <div class="overlay member-info">
                                 <a href="<?php echo esc_url(home_url('team')); ?>">
-                                    <figure>
-                                        <!--<div class="lazy-loader-effect"></div>-->
-                                        <div class="loader"><div class="square"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
-                                        <img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>" alt="<?php echo $teamMember['post_title']; ?>"/>
-                                    </figure>
+                                    <h5><?php echo $teamMember['post_title']; ?></h5>
+                                    <h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
                                 </a>
-                                <div class="overlay member-info">
-                                    <a href="<?php echo esc_url(home_url('team')); ?>">
-                                        <h5><?php echo $teamMember['post_title']; ?></h5>
-                                        <h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
-                                    </a>
-                                </div>
+                            </div>
 
-                            </section>
+                        </section>
                     </div>
                     <?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
                 } ?>
@@ -268,7 +285,9 @@ get_template_part('template-part', 'topnav');
                 </div>
             </div>
         </div>
+        <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">VIEW ALL</a></div>
     </section>
+
 <?php } ?>
 
 <section class="contact col-eq-height">
@@ -281,8 +300,12 @@ get_template_part('template-part', 'topnav');
                         <h6><?php echo $setting['settings_address_title']; ?></h6>
                         <div class="details">
                             <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                            <p class="mobile"><a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><?php echo $setting['settings_mobile_number']; ?></a></p>
-                            <p class="phone"><a href="tel:<?php echo $setting['settings_tel_number']; ?>"><?php echo $setting['settings_tel_number']; ?></a></p>
+                            <p class="mobile"><a
+                                        href="tel:<?php echo $setting['settings_mobile_number']; ?>"><?php echo $setting['settings_mobile_number']; ?></a>
+                            </p>
+                            <p class="phone"><a
+                                        href="tel:<?php echo $setting['settings_tel_number']; ?>"><?php echo $setting['settings_tel_number']; ?></a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -327,11 +350,13 @@ get_template_part('template-part', 'topnav');
     </div>
 
     <div class="copyright">
-        <!--<img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?><!--" width="236px">-->
+        <!--<img src="-->
+        <?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo@3x.svg'); ?><!--" width="236px">-->
         <div>
-<!--        <img src="--><?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?><!--">-->
+            <!--        <img src="-->
+            <?php //echo esc_url(get_template_directory_uri() . '/img/CA-full-logo.png'); ?><!--">-->
             <embed src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?>" alt="CloudAppers"/>
-        <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+            <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
         </div>
         <div id="footer">
             <div class="social hidden-xs">
