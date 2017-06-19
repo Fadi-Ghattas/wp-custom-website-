@@ -1745,6 +1745,7 @@ ul.filters {
     position: absolute;
     top: 28%;
     width: 100%;
+    padding-left: 3px;
 }
 
 .page-template-team ul.filters {
