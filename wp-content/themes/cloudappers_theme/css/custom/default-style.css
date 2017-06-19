@@ -384,7 +384,10 @@ header, nav, header img {
     min-height: 248px;
     text-align: center;
     color: white;
-    padding: 38px 0;
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home .showcase p {
@@ -3457,7 +3460,6 @@ form#GetInTouchForm button.c-btn {
 /*404 start*/
 section.page-not-found .container {
     width: 100%;
-    height: 100%;
     height: 100vh;
     overflow: hidden !important;
 }
@@ -3662,8 +3664,9 @@ section.page-not-found #particles-js {
         align-content: stretch;
     }
 
-    .home .what-we-do .col-eq-height [class*="col-"] {
-        height: auto;
+    .home .what-we-do .col-eq-height [class*="col-"],
+    .home .contact .col-eq-height [class*="col-"]{
+        height: auto ;
         display: block;
     }
 
@@ -3680,12 +3683,9 @@ section.page-not-found #particles-js {
         float: none;
         display: table-cell;
         vertical-align: top;
-        height: 100%;
+        min-height: 100%;
     }
 
-    /*.page-template-contact-us .contact .address-ca .container-fluid .row div:nth-child(1) {*/
-    /*padding-left: 0;*/
-    /*}*/
 
 }
 
@@ -3962,6 +3962,7 @@ section.page-not-found #particles-js {
         width: 100%;
         height: auto;
     }
+
 
     .home .contact .copyright {
         padding-left: 0;
