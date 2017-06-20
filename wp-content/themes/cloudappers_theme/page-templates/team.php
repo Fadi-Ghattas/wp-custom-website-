@@ -81,7 +81,7 @@ get_template_part('template-part', 'topnav');
 									</figure>
 									<div class="overlay member-info">
 										<h5><?php echo $teamMember['post_title']; ?></h5>
-										<h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
+										<h6><?php echo $teamMember['team_member_title']; ?></h6>
 									</div>
 								</section>
 							</div>

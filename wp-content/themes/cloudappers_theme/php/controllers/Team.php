@@ -28,6 +28,10 @@ class Team
             ],
             [
                 'acf' => 1,
+                'name' => 'team_member_title',
+            ],
+            [
+                'acf' => 1,
                 'name' => 'team_member_position',
                 'type' => 'position',
                 'relationship' => 1,

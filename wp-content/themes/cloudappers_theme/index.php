@@ -269,7 +269,7 @@ get_template_part('template-part', 'topnav');
                             <div class="overlay member-info">
                                 <a href="<?php echo esc_url(home_url('team')); ?>">
                                     <h5><?php echo $teamMember['post_title']; ?></h5>
-                                    <h6><?php echo $teamMember['team_member_position'][0]['post_title']; ?></h6>
+                                    <h6><?php echo $teamMember['team_member_title']; ?></h6>
                                 </a>
                             </div>
 
