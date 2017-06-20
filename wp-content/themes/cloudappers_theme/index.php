@@ -285,7 +285,7 @@ get_template_part('template-part', 'topnav');
                 </div>
             </div>
         </div>
-        <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">VIEW ALL</a></div>
+        <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">MEET THE WHOLE FAMILY</a></div>
     </section>
 
 <?php } ?>
