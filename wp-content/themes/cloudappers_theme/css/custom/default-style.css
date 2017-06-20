@@ -1803,7 +1803,7 @@ ul.filters li a {
     display: inline-block;
     cursor: pointer;
     z-index: 10;
-    min-width: 60px;
+    min-width: 65px;
 }
 
 ul.filters li:first-child a {
