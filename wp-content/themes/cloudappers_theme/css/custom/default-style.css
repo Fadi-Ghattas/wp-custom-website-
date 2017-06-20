@@ -930,17 +930,17 @@ header, nav, header img {
 }
 
 .contact .address-ca h6 {
-    background: url("../../img/white-ca-icon@3x.png") no-repeat left top;
-    background-size: 42px 43px;
+    background: url("../../img/white-ca-icon@3x.svg") no-repeat left -5px;
+    background-size: 45px 50px;
     padding: 16px 45px;
     padding-left: 65px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 0;
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 600;
     margin-top: 11px;
-    background-size: contain;
+    /*background-size: contain;*/
     /* line-height: 0.80; */
 }
 
