@@ -3791,7 +3791,7 @@ section.page-not-found #particles-js {
         transition: all 0.3s;
     }
 
-    .top-header.small img.img-float {
+    .top-header.small .img-float {
         visibility: visible;
         width: 50px;
         right: 100%;
