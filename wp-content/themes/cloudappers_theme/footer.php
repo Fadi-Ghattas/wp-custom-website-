@@ -28,12 +28,12 @@ wp_footer();
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  hidden-xs address-ca">
-<!--                    <img src="--><?php //echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.png' ?><!--"/>-->
+                <!--<img src="--><?php //echo get_stylesheet_directory_uri() . '/img/blue-CA-icon@3x.png' ?><!--"/>-->
                     <div class="details">
                         <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                        <p class="open-time">Open Sun to Thurs. 10am until 6pm</p>
-                        <a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><p class="mobile"><?php echo $setting['settings_mobile_number']; ?></p></a>
-<!--                        <a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--"><p class="phone">--><?php //echo $setting['settings_tel_number']; ?><!--</p></a>-->
+                        <p class="open-time">Open Sun to Thurs.<br> 10am  until 6pm</p>
+                        <a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><p class="phone"><?php echo $setting['settings_mobile_number']; ?></p></a>
+                    <!--<a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--"><p class="mobile">--><?php //echo $setting['settings_tel_number']; ?><!--</p></a>-->
                     </div>
                     <div class="social">
                         <ul>

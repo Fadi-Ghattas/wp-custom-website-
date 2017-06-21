@@ -300,9 +300,9 @@ get_template_part('template-part', 'topnav');
                         <h6><?php echo $setting['settings_address_title']; ?></h6>
                         <div class="details">
                             <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
-                            <p class="open-time">Open Sun to Thurs. 10am <br> until 6pm</p>
-                            <p class="mobile"><a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><?php echo $setting['settings_mobile_number']; ?></a></p>
-                            <!--                                <p class="phone"><a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--">--><?php //echo $setting['settings_tel_number']; ?><!--</a></p>-->
+                            <p class="open-time">Open Sun to Thurs.<br>10am until 6pm</p>
+                            <p class="phone"><a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><?php echo $setting['settings_mobile_number']; ?></a></p>
+                            <!--<p class="mobile"><a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--">--><?php //echo $setting['settings_tel_number']; ?><!--</a></p>-->
                         </div>
                     </div>
                     <div class="col-lg-6">
