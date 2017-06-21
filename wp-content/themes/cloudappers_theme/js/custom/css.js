@@ -69,6 +69,12 @@ jQuery(function ($) {
         })
     });
 
+    //brows cv onclick on field
+    $('.up-cv .file-caption').on('click',function () {
+        $('#cv_file').click();
+    });
+
+
     function checkVisible(elm, threshold, mode) {
         threshold = threshold || 0;
         mode = mode || 'visible';

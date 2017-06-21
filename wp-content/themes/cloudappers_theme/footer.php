@@ -140,7 +140,7 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
                             </div>
 
                             <!-- File Button -->
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-lg-12 up-cv">
                                 <label class="control-label" for="cv_file">Upload CV</label>
                                 <!--data-allowed-file-extensions='["docx", "doc", "ppt", "pdf"]'-->
                                 <input id="cv_file" name="cv_file" type="file" class="file"
