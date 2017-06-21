@@ -3103,7 +3103,7 @@ form#GetInTouchForm button.c-btn {
 
 #footer p.address-details {
 
-    background: url("../../img/address-pin-gray-icon@3x.svg") no-repeat left 5px;
+    background: url("../../img/address-pin-gray-icon@3x.svg") no-repeat 3px 5px;
     background-size: 15px 20px;
     margin-top: 0;
     line-height: 24px;
