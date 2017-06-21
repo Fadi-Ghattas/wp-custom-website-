@@ -177,8 +177,7 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
     </div>
 </div>
 
-<div id="map-popup" class="modal fade" role="dialog">
-
+    <div id="map-popup" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
@@ -192,7 +191,11 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
         </div>
     </div>
 </div>
+
+
 <?php } ?>
+</div>
+
 </div>
 </body>
 </html>
