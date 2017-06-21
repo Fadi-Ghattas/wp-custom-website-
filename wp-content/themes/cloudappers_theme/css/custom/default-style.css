@@ -3111,7 +3111,7 @@ form#GetInTouchForm button.c-btn {
 }
 
 #footer p.mobile {
-    background: url("../../img/mobile-gray-icon@3x.svg") no-repeat left center;
+    background: url("../../img/mobile-gray-icon@3x.svg") no-repeat 5px center;
     background-size: 10px 18px;
     color: rgb(52, 52, 52);
 

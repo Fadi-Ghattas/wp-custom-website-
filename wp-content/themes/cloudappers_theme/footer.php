@@ -32,7 +32,7 @@ wp_footer();
                     <div class="details">
                         <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
                         <p class="open-time">Open Sun to Thurs. 10am until 6pm</p>
-<!--                        <a href="tel:--><?php //echo $setting['settings_mobile_number']; ?><!--"><p class="mobile">--><?php //echo $setting['settings_mobile_number']; ?><!--</p></a>-->
+                        <a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><p class="mobile"><?php echo $setting['settings_mobile_number']; ?></p></a>
 <!--                        <a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--"><p class="phone">--><?php //echo $setting['settings_tel_number']; ?><!--</p></a>-->
                     </div>
                     <div class="social">
