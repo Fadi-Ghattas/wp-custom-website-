@@ -6484,6 +6484,8 @@ section.page-not-found #particles-js {
     }
 
     .page-template-team ul.filters {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
         column-count: 2;
     }
 
