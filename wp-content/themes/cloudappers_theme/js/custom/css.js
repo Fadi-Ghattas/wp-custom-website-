@@ -33,6 +33,7 @@ jQuery.lazyLoadXT.onload = function () {
                 itemSelector: '.show-case-item',
                 layoutMode: 'masonry',
                 percentPosition: true,
+
                 masonry: {
                     columnWidth: '.grid-sizer'
                 }
@@ -243,6 +244,7 @@ jQuery(function ($) {
             itemSelector: '.team-member',
             layoutMode: 'masonry',
             percentPosition: true,
+
             masonry: {
                 columnWidth: '.grid-sizer'
             }
