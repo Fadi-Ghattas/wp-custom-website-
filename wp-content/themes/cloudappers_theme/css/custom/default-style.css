@@ -7636,3 +7636,27 @@ body.home.blog.modal-open {
         line-height: 5.04vw;
     }
 }
+
+
+.mapmarker
+{
+    width: 200px;
+    height: 75px;
+    line-height: 1.5;
+    font-weight: 500;
+    border-radius: 5px;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+
+.markerbg
+{
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    background: url("../../img/blue-CA-icon@3x.png") no-repeat center;
+    background-size: cover;
+}
