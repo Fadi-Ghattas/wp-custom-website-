@@ -709,12 +709,14 @@ header, nav, header img {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 15px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .home .showyou .projects a > div h6 {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 34px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .home .showyou .projects > div {
@@ -1554,6 +1556,7 @@ section.some-of-show-cases .overlay h5 {
     margin-top: 0;
     margin-bottom: 13px;
     margin-top: 10px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 section.some-of-show-cases .overlay h6 {
@@ -1561,6 +1564,7 @@ section.some-of-show-cases .overlay h6 {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 31px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .page-template-projects .all-projects .word-background {
