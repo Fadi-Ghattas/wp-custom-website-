@@ -809,8 +809,8 @@ header, nav, header img {
     overflow: hidden;
 }
 
-.team .grid-container{
- padding: 0 15px;
+.team .grid-container {
+    padding: 0 15px;
 }
 
 .team .members {
@@ -993,7 +993,7 @@ body.home.blog.modal-open {
     margin-top: 19px;
 }
 
-.contact p.open-time{
+.contact p.open-time {
     background: url(../../img/white-time.svg) no-repeat left 5px;
     background-size: 20px 20px;
     margin-top: 0;
@@ -2972,13 +2972,12 @@ form#GetInTouchForm button.c-btn {
     padding-bottom: 55px;
 }
 
-#footer p.open-time{
+#footer p.open-time {
     background: url(../../img/time.svg) no-repeat left 5px;
     background-size: 20px 20px;
     margin-top: 0;
     line-height: 24px;
 }
-
 
 #footer .address-ca img {
     width: 56px;
@@ -3009,7 +3008,7 @@ form#GetInTouchForm button.c-btn {
     transition: 0.5s;
 }
 
-#footer .address-ca p{
+#footer .address-ca p {
     font-size: 14px;
     line-height: 1.714;
     text-align: left;
@@ -5549,6 +5548,10 @@ section.page-not-found #particles-js {
         padding: 3vw 15px;
     }
 
+    .team .view-all a {
+        font-size: 4.26vw;
+    }
+
     .home .contact .form-group,
     .contact .form-group.note {
         width: 100%;
@@ -6068,26 +6071,6 @@ section.page-not-found #particles-js {
         bottom: auto;
     }
 
-    /*.page-template-contact-us .contact .address-ca #take-me-there {*/
-    /*!*font-size: 14px;*!*/
-    /*color: rgb(255, 97, 27);*/
-    /*font-weight: bold;*/
-    /*text-transform: uppercase;*/
-    /*text-align: center;*/
-    /*!*width: 153px;*!*/
-    /*!*height: 47px;*!*/
-    /*box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);*/
-    /*!*line-height: 47px;*!*/
-    /*display: block;*/
-    /*margin-top: 8.5vw;*/
-    /*border-radius: 4px;*/
-    /*max-width: 63vw;*/
-    /*width: auto;*/
-    /*}*/
-    /*.page-template-contact-us .contact .address-ca a {*/
-    /*color: white;*/
-    /*font-family: "Open Sans";*/
-    /*}*/
     .page-template-contact-us .join .position h5,
     .page-template-contact-us .join .desc h5 {
         /*font-size: 28px;*/
@@ -6264,7 +6247,6 @@ section.page-not-found #particles-js {
         background: url(../../img/team.jpg) no-repeat center -50vh, url(../../img/team.jpg) no-repeat center;
         background-size: auto, cover;
         padding-top: 63px;
-        padding-bottom: 60px;
     }
 
     .home .team .join h2 {
@@ -6501,21 +6483,15 @@ section.page-not-found #particles-js {
         margin-top: 10px;
     }
 
-    /* General */
-    /*.home .slide-desc {*/
-    /*top: 20.33vw*/
-    /*}*/
-    /*.home .slide-desc a {*/
-    /*padding-top: 1vw;*/
-    /*}*/
-    /*.home .slid-content p {*/
-    /*font-size: 5.26vw;*/
-    /*line-height: 8.066vw;*/
-    /*}*/
-    /*.home .slider-container, .home .home-slider, .home .slick-list {*/
-    /*height: 140vw;*/
-    /*}*/
-    /*.container{background: purple; z-index: 5}*/
+    .page-template-team ul.filters {
+        column-count: 2;
+    }
+
+    .page-template-team ul.filters li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
     section.ca-page-header .sub-title {
         font-size: 50px;
         line-height: 58px;
@@ -7637,9 +7613,7 @@ body.home.blog.modal-open {
     }
 }
 
-
-.mapmarker
-{
+.mapmarker {
     width: 200px;
     height: 75px;
     line-height: 1.5;
@@ -7651,9 +7625,7 @@ body.home.blog.modal-open {
     font-size: 12px;
 }
 
-
-.markerbg
-{
+.markerbg {
     width: 75px;
     height: 75px;
     display: inline-block;
