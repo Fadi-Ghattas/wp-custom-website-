@@ -169,9 +169,6 @@ jQuery(function ($)
 
 	}
 
-    $(window).on('resize', function () {
-        initMap();
-    });
 
 	$(window).on('load', function () {
 		initMap();
