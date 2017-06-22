@@ -157,10 +157,6 @@ jQuery(function ($)
 
         });
 
-        // google.maps.event.addDomListener(window, 'resize', function() {
-        // });
-
-
         //popup
 		$('#map-popup').on('shown.bs.modal',function(){
 			google.maps.event.trigger(map2, "resize");
@@ -168,6 +164,12 @@ jQuery(function ($)
 		});
 
 	}
+
+
+    $(window).on("orientationchange",function(event){
+        google.maps.event.trigger(map, "resize");
+
+    });
 
 
 	$(window).on('load', function () {
