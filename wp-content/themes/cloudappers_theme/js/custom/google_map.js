@@ -80,7 +80,7 @@ jQuery(function ($)
 
 		var marker_content='<div class="markerbg"></div>'+
 			'<div class="mapmarker">' +
-			'<strong>CloudAppers FZ LLC</strong><br> ' +
+			'<strong>CloudAppers</strong><br> ' +
 			'Media company in Dubai, United Arab Emirates ' +
 			'</div>';
         var infowindow = new google.maps.InfoWindow({
@@ -98,6 +98,7 @@ jQuery(function ($)
 		};
 
 		var option1 = {
+
 			center: {
 				lat: parseFloat(script_const.pin_latitude),
 				lng: parseFloat(script_const.pin_altitude)
@@ -107,14 +108,16 @@ jQuery(function ($)
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
 			}
+
 		}
 
 		var option2 = {
+
 			center: {
 				lat: parseFloat(script_const.pin_latitude),
 				lng: parseFloat(script_const.pin_altitude)
 			},
-			zoom: 10,
+			zoom: 13,
 			scrollwheel: false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
@@ -133,10 +136,11 @@ jQuery(function ($)
 			map: map1,
 			icon: image,
 			title: '',
-			animation: google.maps.Animation.DROP,
+			animation: google.maps.Animation.DROP
 		});
         marker1.addListener('click', function() {
             infowindow.open(map1, marker1);
+            // map1.setCenter(marker1.getPosition());
         });
 
 		var marker = new google.maps.Marker({
@@ -145,16 +149,20 @@ jQuery(function ($)
 			icon: image,
 			title: '',
 			animation: google.maps.Animation.DROP,
-
 		});
         marker.addListener('click', function() {
             infowindow.open(map2, marker);
+            // map2.setCenter(marker.getPosition());
+
         });
 
 		$('#map-popup').on('shown.bs.modal',function(){
 			google.maps.event.trigger(map2, "resize");
 			return map2.setCenter(url);
 		});
+
+
+
 	}
 
 	$(window).on('load', function () {
