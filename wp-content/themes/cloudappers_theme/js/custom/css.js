@@ -70,7 +70,7 @@ jQuery(function ($) {
     });
 
     //brows cv onclick on field
-    $('.up-cv .file-caption').on('click',function () {
+    $('.up-cv .file-caption').on('click', function () {
         $('#cv_file').click();
     });
 
@@ -332,7 +332,7 @@ jQuery(function ($) {
     function services() {
         if ($('.home').length) {
             var widthOfFirstElement = $('.home .what-we-do .row > div:first-child').width();
-            var positionRight =  $('.home .what-we-do .row > div:first-child').position().left;
+            var positionRight = $('.home .what-we-do .row > div:first-child').position().left;
 
 
             var lastElement = $('.home .what-we-do .row > div:last-child');
@@ -345,5 +345,8 @@ jQuery(function ($) {
             $('.home .what-we-do .row > div:last-child .liner-effect').css("width", windowWidth - (positionLeft + widthOfLastElement) + widthOfLastElement);
         }
     }
+
+
+
 
 });
