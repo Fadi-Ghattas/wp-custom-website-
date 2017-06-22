@@ -47,16 +47,16 @@ jQuery(function ($) {
     if ($('.home').length) {
         document.title = 'CloudAppers / Websites / Mobile Apps / UX & UI Design / Digital Startup Consultancy / Dubai UAE';
     }
-    if ($('.about').length) {
+    if ($('.page-template-about').length) {
         document.title = 'CloudAppers / LET US show you what we can do for you / ABOUT US';
     }
-    if ($('.projects').length) {
+    if ($('.page-template-projects').length) {
         document.title = 'CloudAppers / LET US show you what we can do for you / PORTFOLIO';
     }
-    if ($('.services').length) {
+    if ($('.page-template-services').length) {
         document.title = 'CloudAppers / LET US show you what we can do for you / SERVICES';
     }
-    if ($('.contact-us').length) {
+    if ($('.page-template-contact-us').length) {
         document.title = 'CloudAppers / LET US show you what we can do for you / CONTACT US';
     }
     //focus events for input
