@@ -59,6 +59,14 @@ jQuery(function ($) {
     if ($('.page-template-contact-us').length) {
         document.title = 'CloudAppers / LET US show you what we can do for you / CONTACT US';
     }
+
+
+    //update tooltip
+    $('#menu-main-menu li:first-child a').prop('title', 'ABOUT US');
+    $('#menu-main-menu li:nth-child(2) a').prop('title', 'PORTFOLIO');
+    $('#menu-main-menu li:nth-child(3) a').prop('title', 'SERVICES');
+    $('#menu-main-menu li:nth-child(4) a').prop('title', 'CONTACT US');
+
     //focus events for input
     jQuery('input,select,textarea,#cv_file').on('click focus', function () {
         jQuery(this).parents('.form-group').find('label').addClass('focus')
