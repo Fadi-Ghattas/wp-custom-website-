@@ -131,12 +131,14 @@ if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
                             <div class="form-group col-lg-6">
                                 <label class="control-label" for="expected_salary">Expected Salary
                                     <span>$</span></label>
-                                <select id="expected_salary" name="expected_salary" class="form-control">
-                                    <option value=""></option>
-                                    <?php foreach ($jobsSalariesRanges as $ranges) { ?>
-                                        <option value="<?php echo $ranges['post_title']; ?>"><?php echo $ranges['post_title']; ?></option>
-                                    <?php } ?>
-                                </select>
+                                <input id="expected_salary" name="expected_salary" type="text"
+                                       class="form-control input-md"/>
+<!--                                <select id="expected_salary" name="expected_salary" class="form-control">-->
+<!--                                    <option value=""></option>-->
+<!--                                    --><?php //foreach ($jobsSalariesRanges as $ranges) { ?>
+<!--                                        <option value="--><?php //echo $ranges['post_title']; ?><!--">--><?php //echo $ranges['post_title']; ?><!--</option>-->
+<!--                                    --><?php //} ?>
+<!--                                </select>-->
                             </div>
 
                             <!-- File Button -->
