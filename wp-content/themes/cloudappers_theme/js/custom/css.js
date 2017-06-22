@@ -47,17 +47,17 @@ jQuery(function ($) {
     if ($('.home').length) {
         document.title = 'CloudAppers / Websites / Mobile Apps / UX & UI Design / Digital Startup Consultancy / Dubai UAE';
     }
-    if ($('.page-id-471').length) {
-        document.title = 'LET US show you what we can do for you';
+    if ($('.about').length) {
+        document.title = 'CloudAppers / LET US show you what we can do for you / ABOUT US';
     }
-    if ($('.page-id-469').length) {
-        document.title = 'Let us SHOW YOU what we can do for you';
+    if ($('.projects').length) {
+        document.title = 'CloudAppers / LET US show you what we can do for you / PORTFOLIO';
     }
-    if ($('.page-id-181').length) {
-        document.title = 'Let us show you WHAT WE CAN DO for you';
+    if ($('.services').length) {
+        document.title = 'CloudAppers / LET US show you what we can do for you / SERVICES';
     }
-    if ($('.page-id-474').length) {
-        document.title = 'Let us show you what we can do FOR YOU';
+    if ($('.contact-us').length) {
+        document.title = 'CloudAppers / LET US show you what we can do for you / CONTACT US';
     }
     //focus events for input
     jQuery('input,select,textarea,#cv_file').on('click focus', function () {

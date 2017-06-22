@@ -2,6 +2,8 @@ jQuery(function ($)
 {
 	var map1, map2;
 	function initMap() {
+
+
 		var customMapType = new google.maps.StyledMapType([
 			{
 				"featureType": "landscape.natural",
@@ -98,30 +100,29 @@ jQuery(function ($)
 		};
 
 		var option1 = {
-
 			center: {
-				lat: parseFloat(script_const.pin_latitude),
-				lng: parseFloat(script_const.pin_altitude)
+                lat: parseFloat('25.079910'),
+                lng: parseFloat(script_const.pin_altitude)
 			},
 			zoom: 13,
 			scrollwheel: false,
 			mapTypeControlOptions: {
-				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-			}
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId],
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            }
 
 		}
 
 		var option2 = {
-
 			center: {
-				lat: parseFloat(script_const.pin_latitude),
-				lng: parseFloat(script_const.pin_altitude)
+				lat: parseFloat('25.079910'),
+                lng: parseFloat(script_const.pin_altitude)
 			},
 			zoom: 13,
 			scrollwheel: false,
 			mapTypeControlOptions: {
-				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-			}
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId],
+            }
 		}
 
 		map1 = new google.maps.Map(document.getElementById("map"), option1);
@@ -156,14 +157,21 @@ jQuery(function ($)
 
         });
 
+        // google.maps.event.addDomListener(window, 'resize', function() {
+        // });
+
+
+        //popup
 		$('#map-popup').on('shown.bs.modal',function(){
 			google.maps.event.trigger(map2, "resize");
 			return map2.setCenter(url);
 		});
 
-
-
 	}
+
+    $(window).on('resize', function () {
+        initMap();
+    });
 
 	$(window).on('load', function () {
 		initMap();

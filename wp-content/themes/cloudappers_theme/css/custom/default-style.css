@@ -6396,6 +6396,11 @@ section.page-not-found #particles-js {
         width: 35px;
         height: 7px;
     }
+
+    .home .contact #map{
+        height: 150vw;
+    }
+
 }
 
 @media (max-width: 600px) {
