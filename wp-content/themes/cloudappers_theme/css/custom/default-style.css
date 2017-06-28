@@ -3751,11 +3751,14 @@ section.page-not-found #particles-js {
 
     .team .members > div {
         min-height: 280px;
+        margin: 0;
     }
 
     .team .members > div img {
         width: auto;
         height: 100%;
+        max-width: 100%;
+        margin: 0;
     }
 
     #JobModal .form-group:nth-child(10), #JobModal .form-group:nth-child(11), #JobModal .form-group:nth-child(12), #JobModal .form-group:nth-child(13) {
@@ -5208,7 +5211,7 @@ section.page-not-found #particles-js {
     }
 
     /* Client section */
-    .clients .item:nth-child(n+7) {
+    .clients .item:nth-child(n+8) {
         display: none;
     }
 
