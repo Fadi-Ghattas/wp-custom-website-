@@ -5211,7 +5211,7 @@ section.page-not-found #particles-js {
     }
 
     /* Client section */
-    .clients .item:nth-child(n+8) {
+    .page-template-about .clients .item:nth-child(n+8) {
         display: none;
     }
 
