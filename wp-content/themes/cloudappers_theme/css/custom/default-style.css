@@ -805,7 +805,7 @@ header, nav, header img {
 
 .team .members > div {
     padding: 0;
-    /*height: 280px;*/
+    height: 280px;
     overflow: hidden;
 }
 
@@ -4200,6 +4200,11 @@ section.page-not-found #particles-js {
     .page-template-about .words .slick-list.draggable {
         padding-top: 54px;
         margin-top: -54px;
+    }
+
+    /*Footer*/
+    #footer .footer-menu a{
+        padding-right: 25px;
     }
 
 }
