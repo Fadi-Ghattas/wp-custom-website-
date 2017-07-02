@@ -3758,7 +3758,7 @@ section.page-not-found #particles-js {
     .team .members > div img {
         width: auto;
         height: 100%;
-        max-width: 100%;
+        /*max-width: 100%;*/
         margin: 0;
     }
 
@@ -4201,6 +4201,8 @@ section.page-not-found #particles-js {
         padding-top: 54px;
         margin-top: -54px;
     }
+
+
 
     /*Footer*/
     #footer .footer-menu a{
@@ -6896,9 +6898,10 @@ a.c-btn:empty {
 .lazy-loader {
     /*background:url(loading.gif) 50% 50% no-repeat #fafafa;*/
     background: #81c0ee;
-    height: auto;
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
+
 
 .lazy-loader-effect {
     position: absolute;
