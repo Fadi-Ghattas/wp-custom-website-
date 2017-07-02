@@ -5472,7 +5472,8 @@ section.page-not-found #particles-js {
         overflow: visible;
     }
 
-    .top-header .nav-social .copyright img {
+    .top-header .nav-social .copyright img,
+    .top-header .nav-social .copyright embed {
         width: 50vw;
     }
 
