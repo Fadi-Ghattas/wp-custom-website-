@@ -168,7 +168,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                 <div class="col-lg-7  col-md-12">
                     <h1>Ready to make your idea happens?</h1>
                     <p>That's the spirits! Let's make history together</p>
-                    <a target="_blank" href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+                    <a href="<?php echo home_url('get-a-quote'); ?>" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
                 </div>
             </div>
         </div>

@@ -128,7 +128,7 @@ get_template_part('template-part', 'topnav');
                         <h6>Collaborations based on trust</h6>
                     </div>
                     <?php foreach ($clients as $client) { ?>
-                        <a href="<?php echo esc_url($client['client_website_url']); ?>"
+                        <a target="_blank" href="<?php echo esc_url($client['client_website_url']); ?>"
                            class="item  col-md-2 col-sm-3 col-xs-4">
                             <img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>">
                         </a>
@@ -178,7 +178,7 @@ get_template_part('template-part', 'topnav');
                 <div class="col-lg-7  col-md-12">
                     <h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
                     <p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-                    <a target="_blank" href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+                    <a href="<?php echo home_url('get-a-quote'); ?>" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
                 </div>
             </div>
         </div>

@@ -235,7 +235,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 				<div class="col-lg-7  col-md-12">
 					<h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
 					<p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-					<a target="_blank" href="https://cloudappers.typeform.com/to/dUDCpe" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+					<a href="<?php echo home_url('get-a-quote'); ?>" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
 				</div>
 			</div>
 		</div>
