@@ -3710,6 +3710,20 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 992px) {
+       .navbar-header {
+        display: inline-block;
+    }
+
+    .navbar-collapse.collapse {
+        display: inline-block !important;
+        float: right;
+    }
+
+    .nav > li:not(.c-btn) > a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 
     /*General*/
     .col-eq-height {
@@ -3976,6 +3990,7 @@ section.page-not-found #particles-js {
     }
 
     /*Menu*/
+
     .navbar-nav {
         float: left;
     }
