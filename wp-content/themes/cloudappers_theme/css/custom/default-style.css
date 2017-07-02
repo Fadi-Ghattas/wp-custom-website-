@@ -4028,6 +4028,10 @@ section.page-not-found #particles-js {
         margin-right: 0;
     }
 
+    .contact .form-group.ms{
+        min-height: 25px;
+    }
+
     .home .contact .form-group.note {
         width: 100%;
         max-width: 100%;
