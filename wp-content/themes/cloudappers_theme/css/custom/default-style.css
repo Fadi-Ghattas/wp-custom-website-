@@ -3710,19 +3710,6 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 992px) {
-       .navbar-header {
-        display: inline-block;
-    }
-
-    .navbar-collapse.collapse {
-        display: inline-block !important;
-        float: right;
-    }
-
-    .nav > li:not(.c-btn) > a {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 
 
     /*General*/
@@ -4226,6 +4213,22 @@ section.page-not-found #particles-js {
 
 }
 
+@media (min-width: 992px) and (max-width: 1199px){
+    .navbar-header {
+        display: inline-block !important;
+    }
+
+    .navbar-collapse.collapse {
+        display: inline-block !important;
+        float: right;
+    }
+
+    .nav > li:not(.c-btn) > a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
 /*sm*/
 @media (min-width: 768px) and (max-width: 992px) {
     /*.container{background: yellow; z-index: 5}*/
