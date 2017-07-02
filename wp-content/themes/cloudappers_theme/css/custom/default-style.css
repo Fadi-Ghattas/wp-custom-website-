@@ -3381,6 +3381,7 @@ form#GetInTouchForm button.c-btn {
 }
 
 .top-header .nav-social .copyright img,
+.top-header .nav-social .copyright embed,
 #footer .nav-social .copyright img {
     width: 100%;
     max-width: 560px;
@@ -6309,7 +6310,8 @@ section.page-not-found #particles-js {
         font-size: 3.5vw;
     }
 
-    .top-header .nav-social .copyright img {
+    .top-header .nav-social .copyright img,
+    .top-header .nav-social .copyright embed {
         width: 50vw;
     }
 
