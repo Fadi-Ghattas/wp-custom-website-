@@ -6898,9 +6898,15 @@ a.c-btn:empty {
 .lazy-loader {
     /*background:url(loading.gif) 50% 50% no-repeat #fafafa;*/
     background: #81c0ee;
+    height: auto;
+    width: 100%;
+}
+
+.team .lazy-loader {
     height: 100%;
     width: auto;
 }
+
 
 
 .lazy-loader-effect {
