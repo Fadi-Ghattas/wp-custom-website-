@@ -51,13 +51,13 @@ jQuery(function ($) {
         document.title = 'CloudAppers / LET US show you what we can do for you / ABOUT US';
     }
     if ($('.page-template-projects').length) {
-        document.title = 'CloudAppers / LET US show you what we can do for you / PORTFOLIO';
+        document.title = 'CloudAppers /  let us SHOW YOU  what we can do for you / PORTFOLIO';
     }
     if ($('.page-template-services').length) {
-        document.title = 'CloudAppers / LET US show you what we can do for you / SERVICES';
+        document.title = 'CloudAppers / let us show you WHAT WE CAN do for you / SERVICES';
     }
     if ($('.page-template-contact-us').length) {
-        document.title = 'CloudAppers / LET US show you what we can do for you / CONTACT US';
+        document.title = 'CloudAppers / let us show you what we can do FOR YOU / CONTACT US';
     }
 
 

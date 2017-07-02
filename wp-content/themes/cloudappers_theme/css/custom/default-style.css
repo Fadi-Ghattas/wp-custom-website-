@@ -805,7 +805,7 @@ header, nav, header img {
 
 .team .members > div {
     padding: 0;
-    height: 280px;
+    /*height: 280px;*/
     overflow: hidden;
 }
 
