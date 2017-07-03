@@ -292,6 +292,7 @@ get_template_part('template-part', 'topnav');
 
 <section class="contact col-eq-height">
     <div class="map col-lg-6">
+        <div class="map-mob-shadow"></div>
         <div id="map"></div>
         <div class="address-ca">
             <div class="container-fluid">

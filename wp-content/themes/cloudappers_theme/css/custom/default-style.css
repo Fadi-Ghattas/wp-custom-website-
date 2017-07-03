@@ -4077,7 +4077,7 @@ section.page-not-found #particles-js {
         float: none;
     }
 
-    .contact .map.col-lg-6:before {
+    .map-mob-shadow {
         content: '';
         display: block;
         width: 100%;
