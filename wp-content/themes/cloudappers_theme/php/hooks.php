@@ -156,3 +156,15 @@ function add_async_attribute($tag, $handle)
 }
 
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+// define the custom replacement callback
+function get_custom_sep() {
+	return  "/";
+}
+
+// define the action for register yoast_variable replacments
+function register_custom_yoast_variables() {
+	wpseo_register_var_replacement( '%%cloudappes_sep%%', 'get_custom_sep', 'advanced', 'Return the \ sep.' );
+}
+// Add action
+add_action('wpseo_register_extra_replacements', 'register_custom_yoast_variables', 10, 0);
