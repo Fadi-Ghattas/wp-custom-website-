@@ -448,6 +448,7 @@ header, nav, header img {
 .clients .item {
     height: 117px;
     display: inline-block;
+    cursor: default;
 }
 
 .clients .container {
