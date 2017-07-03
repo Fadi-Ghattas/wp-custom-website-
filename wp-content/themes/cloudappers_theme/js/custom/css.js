@@ -44,21 +44,21 @@ jQuery.lazyLoadXT.onload = function () {
 
 jQuery(function ($) {
     //Modify page titles
-    if ($('.home').length) {
-        document.title = 'CloudAppers / Websites / Mobile Apps / UX & UI Design / Digital Startup Consultancy / Dubai UAE';
-    }
-    if ($('.page-template-about').length) {
-        document.title = 'CloudAppers / LET US show you what we can do for you / ABOUT US';
-    }
-    if ($('.page-template-projects').length) {
-        document.title = 'CloudAppers /  let us SHOW YOU  what we can do for you / PORTFOLIO';
-    }
-    if ($('.page-template-services').length) {
-        document.title = 'CloudAppers / let us show you WHAT WE CAN do for you / SERVICES';
-    }
-    if ($('.page-template-contact-us').length) {
-        document.title = 'CloudAppers / let us show you what we can do FOR YOU / CONTACT US';
-    }
+    // if ($('.home').length) {
+    //     document.title = 'CloudAppers / Websites / Mobile Apps / UX & UI Design / Digital Startup Consultancy / Dubai UAE';
+    // }
+    // if ($('.page-template-about').length) {
+    //     document.title = 'CloudAppers / LET US show you what we can do for you / ABOUT US';
+    // }
+    // if ($('.page-template-projects').length) {
+    //     document.title = 'CloudAppers /  let us SHOW YOU  what we can do for you / PORTFOLIO';
+    // }
+    // if ($('.page-template-services').length) {
+    //     document.title = 'CloudAppers / let us show you WHAT WE CAN do for you / SERVICES';
+    // }
+    // if ($('.page-template-contact-us').length) {
+    //     document.title = 'CloudAppers / let us show you what we can do FOR YOU / CONTACT US';
+    // }
 
 
     //update tooltip
