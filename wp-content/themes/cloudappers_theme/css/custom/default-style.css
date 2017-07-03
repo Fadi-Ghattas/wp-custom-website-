@@ -3902,18 +3902,18 @@ section.page-not-found #particles-js {
         /*margin: 0 23px;*/
         position: relative;
         opacity: 0.5;
-        transition: 0.3s;
+        transition: 0.1s;
     }
 
     .clients .item:hover {
         opacity: 1;
-        transition: 0.3s;
+        transition: 0.1s;
     }
 
-    .page-template-clients .clients .item {
-        width: 146.25px;
-        height: 100px;
-    }
+    /*.page-template-clients .clients .item {*/
+        /*width: 146.25px;*/
+        /*height: 100px;*/
+    /*}*/
 
     .home .contact .form {
         padding-left: 54px;
@@ -5083,10 +5083,10 @@ section.page-not-found #particles-js {
 
     /*cards zoom effect end*/
     .clients .item:hover img {
-        -webkit-transform: scale(1.10);
-        -moz-transform: scale(1.10);
-        -o-transform: scale(1.10);
-        transform: scale(1.10);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
