@@ -164,7 +164,7 @@ function get_custom_sep() {
 
 // define the action for register yoast_variable replacments
 function register_custom_yoast_variables() {
-	wpseo_register_var_replacement( '%%cloudappes_sep%%', 'get_custom_sep', 'advanced', 'Return the \ sep.' );
+	wpseo_register_var_replacement( '%%cloudappes_sep%%', 'get_custom_sep', 'advanced', 'Return the / sep.' );
 }
 // Add action
 add_action('wpseo_register_extra_replacements', 'register_custom_yoast_variables', 10, 0);
