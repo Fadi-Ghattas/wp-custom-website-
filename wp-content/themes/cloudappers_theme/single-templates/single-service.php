@@ -114,7 +114,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="/to/dUDCpe" target="_blank" class="btn-view-all-show-cases c-btn sold-btn">
+		<a href="/get-a-quote/" class="btn-view-all-show-cases c-btn sold-btn">
 			I'M SOLD. LET'S GET STARTED
 		</a>
 	</section>
