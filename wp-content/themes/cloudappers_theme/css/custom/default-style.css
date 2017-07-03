@@ -6977,6 +6977,10 @@ a.c-btn:empty {
     width: auto;
 }
 
+.all-the-team.team .container {
+    width: 1199px;
+}
+
 
 
 .lazy-loader-effect {
