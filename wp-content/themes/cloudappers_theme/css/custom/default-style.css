@@ -2678,6 +2678,7 @@ section.project-url .next-project-btn {
     color: rgb(255, 255, 255);
     font-weight: 600;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .page-template-about .ouraim:after {
