@@ -148,7 +148,7 @@ jQuery(function ($)
 			infowindow.close(map1, marker1);
 		});
 
-		google.maps.event.addListener(map1,'click touchstart', function(event) {
+		google.maps.event.addListener(map1,'click', function(event) {
 			infowindow.close(map1, marker1);
 		});
 
