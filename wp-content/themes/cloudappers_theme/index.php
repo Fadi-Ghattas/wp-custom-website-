@@ -133,7 +133,7 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
-<section class="what-we-do">
+<section class="what-we-do" id="services">
     <div class="container">
         <div class="row col-eq-height">
             <?php foreach ($services as $service) { ?>
