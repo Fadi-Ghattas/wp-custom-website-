@@ -1468,7 +1468,12 @@ a.btn-view-all-show-cases.c-btn {
     color: #3c566a;
     box-shadow: none;
 }
-
+a.btn-view-all-show-cases.c-btn.sold-btn {
+    margin-top: 0;
+}
+.back-btn a.btn-view-all-show-cases.c-btn.sold-btn {
+    border-bottom: 1px solid rgb(248, 248, 248);
+}
 a.btn-view-all-show-cases.c-btn:hover {
     color: #ff6b2a !important;
     transition: 0.3s;
@@ -1634,8 +1639,10 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .service-details .description {
-    margin-bottom: 114px;
+    /*margin-bottom: 114px;*/
+    margin-bottom: 40px;
 }
+
 
 .service-details .description p {
     color: #6f6c6c;
@@ -4084,7 +4091,7 @@ section.page-not-found #particles-js {
         float: none;
     }
 
-    .contact .map.col-lg-6:before {
+    .map-mob-shadow {
         content: '';
         display: block;
         width: 100%;

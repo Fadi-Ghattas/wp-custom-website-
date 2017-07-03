@@ -133,7 +133,7 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
-<section class="what-we-do">
+<section class="what-we-do" id="services">
     <div class="container">
         <div class="row col-eq-height">
             <?php foreach ($services as $service) { ?>
@@ -292,6 +292,7 @@ get_template_part('template-part', 'topnav');
 
 <section class="contact col-eq-height">
     <div class="map col-lg-6">
+        <div class="map-mob-shadow"></div>
         <div id="map"></div>
         <div class="address-ca">
             <div class="container-fluid">
