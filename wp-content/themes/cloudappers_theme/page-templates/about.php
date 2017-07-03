@@ -133,7 +133,7 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 <?php if (!empty($team) && intval($homePageOptions['home_page_team_how_many_to_show'])) { ?>
-    <div class="home">
+    <div class="home about">
     <section class="team">
         <div class="container">
             <div class="row title">
