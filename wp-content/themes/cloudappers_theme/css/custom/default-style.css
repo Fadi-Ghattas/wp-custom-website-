@@ -3054,8 +3054,10 @@ form#GetInTouchForm button.c-btn {
 
 #footer .social ul li {
     font-size: 31px;
-    line-height: 33px;
+    line-height: 45px;
 }
+
+
 
 #footer .social ul li:first-child {
     color: #00a5ed;
@@ -3750,7 +3752,10 @@ section.page-not-found #particles-js {
 
 @media (min-width: 992px) {
 
-
+    /*footer*/
+    .copyrightdesk {
+        margin-top: 41px;
+    }
     /*General*/
     .col-eq-height {
         display: table;
