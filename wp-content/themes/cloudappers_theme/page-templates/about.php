@@ -47,6 +47,34 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
+
+
+<?php if (!empty($pageOptions['let_us_page_why_cloudappers_reasons_blocks'])) { ?>
+    <section class="why">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center main-title">
+                    <h1><?php echo $pageOptions['let_us_page_why_cloudappers_title']; ?></h1>
+                    <div><?php echo $pageOptions['let_us_page_why_cloudappers_subtitle']; ?></div>
+                </div>
+
+                <?php foreach ($pageOptions['let_us_page_why_cloudappers_reasons_blocks'] as $reason) { ?>
+                    <div class="why-desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="why-img">
+                            <img class="img-responsive"
+                                 src="<?php echo esc_url($reason['why_cloudappers_reason_block_icon']['url']); ?>"/>
+                        </div>
+                        <h3><?php echo $reason['why_cloudappers_reason_block_title']; ?></h3>
+                        <div><?php echo $reason['why_cloudappers_reason_block_description']; ?></div>
+                    </div>
+                <?php } ?>
+
+            </div>
+        </div>
+    </section>
+<?php } ?>
+
 <?php if (!empty($timesLines)) { ?>
     <section class="time">
         <h6><?php echo $pageOptions['let_us_page_time_line_title']; ?></h6>
@@ -79,46 +107,6 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
-<?php if (!empty($pageOptions['let_us_page_process_image'])) { ?>
-    <section class="process">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1><?php echo $pageOptions['let_us_page_process_title']; ?></h1>
-                    <div><?php echo $pageOptions['let_us_page_process_description']; ?></div>
-                    <img src="<?php echo $pageOptions['let_us_page_process_image']['url']; ?> "/>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php } ?>
-
-<?php if (!empty($pageOptions['let_us_page_why_cloudappers_reasons_blocks'])) { ?>
-    <section class="why">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center main-title">
-                    <h1><?php echo $pageOptions['let_us_page_why_cloudappers_title']; ?></h1>
-                    <div><?php echo $pageOptions['let_us_page_why_cloudappers_subtitle']; ?></div>
-                </div>
-
-                <?php foreach ($pageOptions['let_us_page_why_cloudappers_reasons_blocks'] as $reason) { ?>
-                    <div class="why-desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="why-img">
-                            <img class="img-responsive"
-                                 src="<?php echo esc_url($reason['why_cloudappers_reason_block_icon']['url']); ?>"/>
-                        </div>
-                        <h3><?php echo $reason['why_cloudappers_reason_block_title']; ?></h3>
-                        <div><?php echo $reason['why_cloudappers_reason_block_description']; ?></div>
-                    </div>
-                <?php } ?>
-
-            </div>
-        </div>
-    </section>
-<?php } ?>
-
 <?php if (!empty($clients) && intval($pageOptions['let_us_page_clients_how_many_to_show'])) { ?>
     <section class="clients">
         <div class="container">
@@ -138,6 +126,20 @@ get_template_part('template-part', 'topnav');
             </div>
         </div>
         <div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
+    </section>
+<?php } ?>
+
+<?php if (!empty($pageOptions['let_us_page_process_image'])) { ?>
+    <section class="process">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><?php echo $pageOptions['let_us_page_process_title']; ?></h1>
+                    <div><?php echo $pageOptions['let_us_page_process_description']; ?></div>
+                    <img src="<?php echo $pageOptions['let_us_page_process_image']['url']; ?> "/>
+                </div>
+            </div>
+        </div>
     </section>
 <?php } ?>
 <!-- Disable sweet words for now -->
