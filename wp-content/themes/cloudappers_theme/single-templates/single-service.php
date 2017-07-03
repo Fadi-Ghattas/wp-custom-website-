@@ -114,6 +114,9 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
+		<a href="/to/dUDCpe" target="_blank" class="btn-view-all-show-cases c-btn sold-btn">
+			I'M SOLD. LET'S GET STARTED
+		</a>
 	</section>
 
 <?php
@@ -129,6 +132,11 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 				</div>
 			</div>
 		</div>
+	</section>
+	<section class="back-btn">
+		<a href="<?=get_home_url()?>#services" class="btn-view-all-show-cases c-btn sold-btn">
+			BACK TO SERVICES
+		</a>
 	</section>
 <?php } ?>
 
