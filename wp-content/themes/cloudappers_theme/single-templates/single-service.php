@@ -174,7 +174,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<!--<h1>--><?php ////echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
-					<h1>RELATED PROJECTS</h1>
+					<h1>OTHER SERVICES</h1>
 				</div>
 
 				<?php $hover = ['green-card-hover', 'red-card-hover', 'purple-card-hover']; ?>
