@@ -109,7 +109,7 @@ get_template_part('template-part', 'topnav');
 					<div class="vertical-line"></div>
 					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
 					<div class="description">
-						<?php echo $service['service_description']; ?>
+						<?php echo strip_tags($service['service_description']); ?>
 					</div>
 				</div>
 			</div>
