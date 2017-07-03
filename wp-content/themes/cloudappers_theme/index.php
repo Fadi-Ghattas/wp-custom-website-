@@ -121,9 +121,9 @@ get_template_part('template-part', 'topnav');
 
                 <div class="client-row">
                     <?php foreach ($clients as $client) { ?>
-                        <a href="<?php echo esc_url($client['client_website_url']); ?>"
-                           class="item  col-md-2 col-sm-3 col-xs-4" target="_blank"><img class=""
-                                                                                         src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
+                        <a href="javascript:void(0);"
+                           class="item  col-md-2 col-sm-3 col-xs-4" target="_blank">
+                            <img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>"></a>
                     <?php } ?>
                 </div>
 

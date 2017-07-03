@@ -120,8 +120,8 @@ get_template_part('template-part', 'topnav');
                         <h6>Collaborations based on trust</h6>
                     </div>
                     <?php foreach ($clients as $client) { ?>
-                        <a target="_blank" href="<?php echo esc_url($client['client_website_url']); ?>"
-                           class="item  col-md-2 col-sm-3 col-xs-4">
+                        <a target="_blank" href="javascript: void(0);"
+                           class="item col-md-2 col-sm-3 col-xs-4">
                             <img class="" src="<?php echo esc_url($client['client_logo']['url']); ?>">
                         </a>
                     <?php } ?>
@@ -133,7 +133,7 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 <?php if (!empty($team) && intval($homePageOptions['home_page_team_how_many_to_show'])) { ?>
-    <div class="home">
+    <div class="home about">
     <section class="team">
         <div class="container">
             <div class="row title">
