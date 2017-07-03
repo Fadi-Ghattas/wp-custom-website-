@@ -225,7 +225,13 @@ function get_single_pod_data($pod_name, $pod_id, $pod_fields)
 					}
 
 				} else {
-					$singlePod[$field['name']] = get_field($field['name'], $pod_id);
+					if (isset($field['view'])) {
+						if ($field['view'] == 'display') {
+							$singlePod[$field['name']] = $pod->display($field['name']);
+						}
+					} else {
+						$singlePod[$field['name']] = get_field($field['name'], $pod_id);
+					}
 				}
 			}
 		} else {

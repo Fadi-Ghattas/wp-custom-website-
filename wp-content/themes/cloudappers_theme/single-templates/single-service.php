@@ -29,6 +29,7 @@ $fields = [
 	[
 		'acf' => 1,
 		'name' => 'service_description',
+		'view' => 'display'
 	],
 	[
 		'acf' => 1,
@@ -109,7 +110,7 @@ get_template_part('template-part', 'topnav');
 					<div class="vertical-line"></div>
 					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
 					<div class="description">
-						<?php echo $service['service_description']; ?>
+						<?php echo  $service['service_description']; ?>
 					</div>
 				</div>
 			</div>
