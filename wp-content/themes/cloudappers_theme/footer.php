@@ -26,7 +26,7 @@ wp_footer();
                         <a href="<?php echo esc_url(home_url('for-you')); ?>">FOR YOU</a>
                     </div>
                     <div class="copyright hidden-xs copyrightdesk">
-                        <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
+                        <p>© 2008-<?php echo date('Y'); ?> cloudappers. all rights reserved</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  hidden-xs address-ca">
