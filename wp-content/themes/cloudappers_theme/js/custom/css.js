@@ -338,7 +338,7 @@ jQuery(function ($) {
     });
 
     function services() {
-        if ($('.home').length) {
+        if ($('.home:not(.about)').length) {
             var widthOfFirstElement = $('.home .what-we-do .row > div:first-child').width();
             var positionRight = $('.home .what-we-do .row > div:first-child').position().left;
 
