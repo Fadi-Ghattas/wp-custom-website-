@@ -8,6 +8,8 @@
  */
 $homePagePost = get_page_by_path('home', OBJECT, 'page');
 $homePageOptions = acf_get_group_fields($homePagePost->ID);
+if (intval($homePageOptions['home_page_team_how_many_to_show']))
+    $team = Team::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_team_how_many_to_show'])]);
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
 
@@ -130,8 +132,8 @@ get_template_part('template-part', 'topnav');
         <div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
     </section>
 <?php } ?>
-
 <?php if (!empty($team) && intval($homePageOptions['home_page_team_how_many_to_show'])) { ?>
+    <div class="home">
     <section class="team">
         <div class="container">
             <div class="row title">
@@ -187,7 +189,7 @@ get_template_part('template-part', 'topnav');
         </div>
         <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">MEET THE WHOLE FAMILY</a></div>
     </section>
-
+    </div>
 <?php } ?>
 
 <?php if (!empty($pageOptions['let_us_page_process_image'])) { ?>
