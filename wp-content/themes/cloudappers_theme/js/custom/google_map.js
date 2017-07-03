@@ -144,11 +144,11 @@ jQuery(function ($)
             // map1.setCenter(marker1.getPosition());
         });
 
-		$('.map-mob-shadow').on('click touchstart', function() {
+		$('.map-mob-shadow').on("click touchstart", function() {
 			infowindow.close(map1, marker1);
 		});
 
-		google.maps.event.addListener(map1, "click", function(event) {
+		google.maps.event.addListener(map1, "click touchstart", function(event) {
 			infowindow.close(map1, marker1);
 		});
 
