@@ -139,10 +139,18 @@ jQuery(function ($)
 			title: '',
 			animation: google.maps.Animation.DROP
 		});
-        marker1.addListener('click', function() {
+        marker1.addListener('click touchstart', function() {
             infowindow.open(map1, marker1);
             // map1.setCenter(marker1.getPosition());
         });
+
+		$('.map-mob-shadow').on('click touchstart', function() {
+			infowindow.close(map1, marker1);
+		});
+
+		google.maps.event.addListener(map1, "click", function(event) {
+			infowindow.close(map1, marker1);
+		});
 
 		var marker = new google.maps.Marker({
 			position: url,
