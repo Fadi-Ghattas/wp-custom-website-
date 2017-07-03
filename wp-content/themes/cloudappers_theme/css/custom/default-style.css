@@ -3910,10 +3910,10 @@ section.page-not-found #particles-js {
         transition: 0.3s;
     }
 
-    .page-template-clients .clients .item {
-        width: 146.25px;
-        height: 100px;
-    }
+    /*.page-template-clients .clients .item {*/
+        /*width: 146.25px;*/
+        /*height: 100px;*/
+    /*}*/
 
     .home .contact .form {
         padding-left: 54px;
