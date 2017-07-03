@@ -351,7 +351,7 @@ header, nav, header img {
     font-weight: 300;
     color: #4d4e50;
     text-transform: uppercase;
-    line-height: 70px;
+    line-height: 40px;
     margin: 0;
 }
 
@@ -434,7 +434,9 @@ header, nav, header img {
 .home .showcase a span {
     font-size: 15px;
     text-transform: uppercase;
-    line-height: 2.933;
+    /*line-height: 2.933;*/
+    line-height: 2.0;
+    padding-bottom: 8px;
     color: rgb(118, 55, 26);
     letter-spacing: 0.75px;
     display: block;
