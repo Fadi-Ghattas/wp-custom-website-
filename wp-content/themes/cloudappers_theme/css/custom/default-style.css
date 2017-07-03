@@ -107,7 +107,7 @@ section.ca-page-header .title {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
     text-transform: uppercase;
 }
@@ -164,7 +164,7 @@ section.ca-page-banner p {
     letter-spacing: 2.2px;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 27px;
     /*text-transform: uppercase;*/
     line-height: 38px;
@@ -2457,9 +2457,9 @@ section.project-url .next-project-btn {
 
 /*About*/
 .page-template-about section.ca-page-header .title {
-    font-size: 47px;
+    font-size: 20px;
     line-height: 51px;
-    letter-spacing: 4.7px;
+    letter-spacing: 1.6px;
 }
 
 .page-template-about section.ca-page-header .sub-title {
@@ -2678,6 +2678,7 @@ section.project-url .next-project-btn {
     color: rgb(255, 255, 255);
     font-weight: 600;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .page-template-about .ouraim:after {
@@ -3150,7 +3151,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .blue-desc p {
     font-size: 27px;
     color: rgb(254, 254, 254);
-    font-weight: bold;
+    font-weight: 600;
     /*text-transform: uppercase;*/
     line-height: 38px;
     text-align: center;
