@@ -109,7 +109,7 @@ get_template_part('template-part', 'topnav');
 					<div class="vertical-line"></div>
 					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
 					<div class="description">
-						<?php echo str_replace($service['service_description'], ["<br>", "<br/>", "</br>"], "<br/>"); ?>
+						<?php echo str_replace(["<br>", "<br/>", "</br>"], "<br/>", $service['service_description']); ?>
 					</div>
 				</div>
 			</div>
