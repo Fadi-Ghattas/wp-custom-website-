@@ -29,6 +29,7 @@ $fields = [
 	[
 		'acf' => 1,
 		'name' => 'service_description',
+		'view' => 'display'
 	],
 	[
 		'acf' => 1,
@@ -109,7 +110,7 @@ get_template_part('template-part', 'topnav');
 					<div class="vertical-line"></div>
 					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
 					<div class="description">
-						<?php echo $service['service_description']; ?>
+						<?php echo  $service['service_description']; ?>
 					</div>
 				</div>
 			</div>
@@ -227,7 +228,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 					<?php ($col == 2 ? $col = 0 : $col++); ($mobHoverCount == 3 ? $mobHoverCount = 0 : $mobHoverCount++);} ?>
 			</div>
 		</div>
-		<a href="<?php echo esc_url(home_url('show-you')); ?>" class="btn-view-all-show-cases c-btn">
+		<a href="<?php echo esc_url(home_url('about-us')); ?>" class="btn-view-all-show-cases c-btn">
 			<span></span>
 			VIEW FULL SHOWCASE
 		</a>
