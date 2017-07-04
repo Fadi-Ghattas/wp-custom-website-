@@ -1909,7 +1909,6 @@ section.all-the-team .grid {
     margin-bottom: 53px;
 
 }
-
 /*.all-the-team  .row{*/
 /*padding: 0 15px;*/
 /*}*/
@@ -3779,6 +3778,9 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 1200px) {
+    .team .members > div:nth-child(4n - 1) {
+        left: 25% !important;
+    }
     .contact .address-ca .col-lg-6:nth-child(2) {
         padding-left: 0;
     }
