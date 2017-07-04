@@ -3785,6 +3785,8 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 1200px) {
+    .all-the-team  .members > div:nth-child(4n - 1) {
+        left: 25% !important;
     .team .members > div:nth-child(4n - 1) {
         /*left: 25% !important;*/
     }

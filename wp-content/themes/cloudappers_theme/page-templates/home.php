@@ -216,7 +216,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 
-		<div class="view-all"><a href="<?php echo esc_url(home_url('show-you')); ?>">VIEW FULL SHOWCASE</a></div>
+		<div class="view-all"><a href="<?php echo esc_url(home_url('portfolio')); ?>">VIEW FULL SHOWCASE</a></div>
 
 	</section>
 
