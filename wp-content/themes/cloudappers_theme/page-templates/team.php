@@ -45,8 +45,8 @@ get_template_part('template-part', 'topnav');
 
     <section class="all-the-team team">
         <div class="container">
-            <div class="row">
-
+<!--            <div class="row">-->
+                <div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
                     <ul class="filters">
                         <?php foreach ($positions as $position) { ?>
