@@ -68,7 +68,7 @@ wp_footer();
 <?php } ?>
 
 <?php
-if (is_home() || in_array(basename(get_page_template()), ['contact-us.php']) || in_array(basename(get_page_template()), ['about.php'])) {
+if (is_home() || in_array(basename(get_page_template()), ['home.php','contact-us.php','about.php'])) {
     $jobsLocations = JobLocation::viewAll();
     $jobsSalariesRanges = JobSalaryRange::viewAll();
     ?>
