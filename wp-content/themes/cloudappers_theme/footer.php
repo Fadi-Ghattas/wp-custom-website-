@@ -6,9 +6,10 @@ $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
 wp_footer();
 
+$r = basename(get_page_template());
 ?>
 
-<?php if (!is_home() || !in_array(basename(get_page_template()), ['home.php'])) { ?>
+<?php if (!is_home() && !in_array(basename(get_page_template()), ['home.php'])) { ?>
     <section id="footer">
         <div class="container">
             <div class="row">
