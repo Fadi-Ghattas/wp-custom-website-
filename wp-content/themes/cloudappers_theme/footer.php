@@ -8,7 +8,7 @@ wp_footer();
 
 ?>
 
-<?php if (!is_home()) { ?>
+<?php if (!is_home() || !in_array(basename(get_page_template()), ['home.php'])) { ?>
     <section id="footer">
         <div class="container">
             <div class="row">
