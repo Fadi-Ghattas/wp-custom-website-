@@ -58,7 +58,7 @@ function project_scripts()
 //	wp_enqueue_script('iframeResizer-window', get_template_directory_uri() . '/js/iframresizer/iframeResizer.contentWindow.min.js', ['jquery-min'], '1', FALSE);
 
 	if (is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
-		wp_enqueue_script('google_map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68&callback', ['jquery-min'], '1', TRUE);
+		wp_enqueue_script('google_map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDWs0rsi44WbJwTxkHdutuiLXXyQZ8pd68', ['jquery-min'], '1', TRUE);
 		wp_enqueue_script('google_map_js', get_template_directory_uri() . '/js/custom/google_map.js', ['jquery-min', 'google_map'], '2.10', TRUE);
 	}
 
