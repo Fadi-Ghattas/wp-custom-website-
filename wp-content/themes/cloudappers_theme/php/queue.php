@@ -36,7 +36,7 @@ function project_scripts()
 		'page_template' => basename(get_page_template()),
 	];
 
-	if (is_home() || in_array(basename(get_page_template()), ['home.php','contact-us.php'])) {
+	if (is_home() && in_array(basename(get_page_template()), ['home.php','contact-us.php'])) {
 		$homePagePost = get_page_by_path('home', OBJECT, 'page');
 		$pageOptions = acf_get_group_fields($homePagePost->ID);
 		$script_const['map_pins_url'] = esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']);
