@@ -161,7 +161,7 @@ section.ca-page-banner .container {
 }
 
 section.ca-page-banner p {
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -1527,7 +1527,7 @@ section.some-of-show-cases h1 {
     text-transform: uppercase;
     margin-top: 85px;
     margin-bottom: 54px;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
 }
 
 section.some-of-show-cases .show-case-item figure {
@@ -3166,7 +3166,7 @@ form#GetInTouchForm button.c-btn {
     /*text-transform: uppercase;*/
     line-height: 38px;
     text-align: center;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
