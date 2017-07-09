@@ -259,7 +259,7 @@ get_template_part('template-part', 'topnav');
 <?php if (!empty($project['project_slider'])) { ?>
 	<section class="project-slider" style="background: <?php echo $project['project_slider_section_background_color'];?>;">
 		<a href="#" class="move-section desk" data-index="1">
-			<div >
+			<div>
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>
@@ -280,11 +280,6 @@ get_template_part('template-part', 'topnav');
 
 <?php if(!empty($project['project_show_case_one_description'])) { ?>
 	<section class="show-case-one" style="background-color:<?php echo $project['project_show_case_one_description_background_color']; ?>;">
-<!--		<a href="#">-->
-<!--			<div class="move-section mob" data-index="2">-->
-<!--				<div class="icono-arrow1-down"></div>-->
-<!--			</div>-->
-<!--		</a>-->
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 description-container">
@@ -300,8 +295,8 @@ get_template_part('template-part', 'topnav');
 
 <?php if(!empty($project['project_show_case_one_image'])) { ?>
 	<section class="show-case-one-image" style="background: <?php echo $project['project_show_case_one_image_background_color']; ?>;">
-		<a href="#" class="move-section" data-index="2">
-			<div >
+		<a href="#" class="move-section desk" data-index="2">
+			<div>
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>
@@ -317,8 +312,8 @@ get_template_part('template-part', 'topnav');
 
 <?php if(!empty($project['project_show_case_two_background_image'])) { ?>
 	<section class="show-case-two" style="background: <?php echo $project['project_show_case_one_image_background_color']; ?>;">
-		<a href="#">
-			<div class="move-section" data-index="3">
+		<a href="#" class="move-section" data-index="3">
+			<div>
 				<div class="icono-arrow1-down"></div>
 			</div>
 		</a>

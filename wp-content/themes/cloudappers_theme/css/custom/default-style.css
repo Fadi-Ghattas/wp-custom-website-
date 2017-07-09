@@ -2411,6 +2411,7 @@ section.project-url .next-project-btn {
     z-index: 1;
     display: block;
     top: 0;
+    height: 24px;
 }
 
 .move-section .icono-arrow1-down {
