@@ -295,7 +295,7 @@ get_template_part('template-part', 'topnav');
 
 <?php if(!empty($project['project_show_case_one_image'])) { ?>
 	<section class="show-case-one-image" style="background: <?php echo $project['project_show_case_one_image_background_color']; ?>;">
-		<a href="#" class="move-section desk" data-index="2">
+		<a href="#" class="move-section" data-index="2">
 			<div>
 				<div class="icono-arrow1-down"></div>
 			</div>
