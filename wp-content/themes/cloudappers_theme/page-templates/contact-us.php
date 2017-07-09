@@ -98,6 +98,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
 
     <section class="contact col-eq-height">
         <div class="map col-lg-6">
+            <div class="map-mob-shadow"></div>
             <div id="map"></div>
             <div class="address-ca">
                 <div class="container-fluid">
