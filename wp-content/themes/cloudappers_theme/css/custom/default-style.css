@@ -5613,6 +5613,10 @@ section.page-not-found #particles-js {
 
     }
 
+    .home .showyou .view-all a:hover{
+        background-size: 45px;
+    }
+
     .home .what-we-do h1 {
         font-size: 6.4vw;
     }
