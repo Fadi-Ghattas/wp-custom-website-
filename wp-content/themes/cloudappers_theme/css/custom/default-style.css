@@ -1930,6 +1930,7 @@ section.all-the-team .grid {
  }
 
 
+
 .single-project #menu-item-494 a {
     color: #ff5f19;
     background: transparent;
@@ -3672,6 +3673,11 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 768px) {
+    .clients .item
+    {
+        opacity: 0.5;
+    }
+
     ul.filters li:nth-child(2) {
         margin: 0 11px;
     }
@@ -3919,7 +3925,6 @@ section.page-not-found #particles-js {
         display: inline-block;
         /*margin: 0 23px;*/
         position: relative;
-        opacity: 0.5;
         transition: 0.1s;
     }
 
