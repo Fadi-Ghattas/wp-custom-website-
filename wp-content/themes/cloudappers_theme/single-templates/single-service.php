@@ -45,26 +45,56 @@ $fields = [
 	],
 	[
 		'acf' => 1,
-		'name' => 'service_related_projects',
-		'type' => 'project',
+		'name' => 'service_related_services',
+		'type' => 'service',
 		'relationship' => 1,
 		'fields' => [
 			'id',
 			'post_title',
 			[
 				'acf' => 1,
-				'name' => 'project_card_title',
+				'name' => 'service_card_title',
 			],
 			[
 				'acf' => 1,
-				'name' => 'project_card_sub_title',
+				'name' => 'post_title',
 			],
 			[
 				'acf' => 1,
-				'name' => 'project_card_image',
+				'name' => 'service_card_description',
+			],
+			[
+				'acf' => 1,
+				'name' => 'service_description',
+			],
+			[
+				'acf' => 1,
+				'name' => 'service_icon',
 			],
 		],
 	],
+//	[
+//		'acf' => 1,
+//		'name' => 'service_related_projects',
+//		'type' => 'project',
+//		'relationship' => 1,
+//		'fields' => [
+//			'id',
+//			'post_title',
+//			[
+//				'acf' => 1,
+//				'name' => 'project_card_title',
+//			],
+//			[
+//				'acf' => 1,
+//				'name' => 'project_card_sub_title',
+//			],
+//			[
+//				'acf' => 1,
+//				'name' => 'project_card_image',
+//			],
+//		],
+//	],
 
 ];
 
@@ -182,7 +212,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 			<div class="row related-projects">
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<!--<h1>--><?php ////echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
+<!--				<h1>--><?php //echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
 					<h1>OTHER SERVICES</h1>
 				</div>
 
@@ -232,6 +262,38 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 			<span></span>
 			VIEW FULL SHOWCASE
 		</a>
+	</section>
+<?php } ?>
+
+<?php if(!empty($service['service_related_services'])) { ?>
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<!--					<h1>--><?php //echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
+					<h1>OTHER SERVICES</h1>
+				</div>
+				<?php
+				$col = 0;
+				$itemsCount = 0;
+				foreach ($service['service_related_services'] as $service) {
+					$title = (!empty($service['service_card_title']) ? $service['service_card_title'] : $service['post_title']);
+					$description = (!empty($service['service_card_description']) ? $service['service_card_description'] : $service['service_description']);
+					$description = limit_text_as_expert($service['id'], $description, 33, '#5d5f74', 0);
+					?>
+					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 service-item <?php echo $colPos; ?>">
+						<a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
+							<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" alt="<?php echo $title; ?>">
+							<h1 class="title"><?php echo $title; ?></h1>
+							<div class="description"><?php echo $description; ?></div>
+							<img class="more"
+								 src="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg'); ?>"/>
+						</a>
+					</article>
+					<?php  ($col == 2 ? $col = 0 : $col++);
+				} ?>
+			</div>
+		</div>
 	</section>
 <?php } ?>
 
