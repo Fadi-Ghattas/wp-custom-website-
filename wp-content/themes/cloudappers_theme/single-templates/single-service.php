@@ -235,9 +235,9 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 
 			</div>
 		</div>
-		<a href="<?php echo esc_url(home_url('about-us')); ?>" class="btn-view-all-show-cases c-btn">
+		<a href="<?php echo esc_url(home_url('services')); ?>/" class="btn-view-all-show-cases c-btn">
 			<span></span>
-			VIEW FULL SHOWCASE
+			VIEW FULL SERVICES
 		</a>
 	</section>
 <?php } ?>
