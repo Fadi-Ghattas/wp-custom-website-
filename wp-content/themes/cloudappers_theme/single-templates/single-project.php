@@ -374,7 +374,7 @@ get_template_part('template-part', 'topnav');
 
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 project-url-item">
 					<h1 class="title" style="color: <?php echo $project['project_url_title_color']; ?>;">
 						<?php echo $project['project_url_title']; ?>
 					</h1>
