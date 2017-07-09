@@ -157,7 +157,7 @@ get_template_part('template-part', 'topnav');
 				<?php } ?>
 			</div>
 		</div>
-		<div class="view-all"><a href="<?php echo esc_url(home_url('services')); ?>">VIEW ALL</a></div>
+		<div class="view-all"><a href="<?php echo esc_url(home_url('services')); ?>">VIEW ALL SERVICES</a></div>
 	</section>
 
 	<section class="showyou">

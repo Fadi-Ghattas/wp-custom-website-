@@ -395,15 +395,6 @@ header, nav, header img {
     font-size: 16px;
     line-height: 22px;
     margin: 0;
-    letter-spacing: 2px;
-}
-
-.home .showcase p:first-child {
-    letter-spacing: 2px;
-}
-
-.home .showcase > p:first-child {
-    letter-spacing: 1.92px;
 }
 
 .home .showcase a {
@@ -1672,7 +1663,7 @@ section.some-of-show-cases .overlay h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2.2px;
+    /*letter-spacing: 2.2px;*/
     line-height: 35px;
 }
 
@@ -1934,6 +1925,11 @@ section.all-the-team .grid {
 /*clients page end*/
 
 /*project details page start*/
+.double-container{
+    width: 100%;
+    overflow: hidden;
+ }
+
 
 .single-project #menu-item-494 a {
     color: #ff5f19;
@@ -5836,9 +5832,6 @@ section.page-not-found #particles-js {
         font-size: 24px;
     }
 
-    section.show-case-two{
-        overflow: hidden;
-    }
 
     /*prefooter*/
     .prefooter {
