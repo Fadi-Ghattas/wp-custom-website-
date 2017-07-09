@@ -334,7 +334,9 @@ get_template_part('template-part', 'topnav');
                 </div>
             </div>
         </div>
-        <img class="img-responsive" src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
+        <div class="duble-container">
+            <img class="img-responsive" src="<?php echo esc_url($project['project_show_case_two_background_image']['url']); ?>">
+        </div>
 	</section>
 <?php } ?>
 

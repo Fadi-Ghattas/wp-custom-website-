@@ -1934,6 +1934,11 @@ section.all-the-team .grid {
 /*clients page end*/
 
 /*project details page start*/
+.duble-container{
+    width: 100%;
+    overflow: hidden;
+ }
+
 
 .single-project #menu-item-494 a {
     color: #ff5f19;
@@ -5834,9 +5839,6 @@ section.page-not-found #particles-js {
         font-size: 24px;
     }
 
-    section.show-case-two{
-        overflow: hidden;
-    }
 
     /*prefooter*/
     .prefooter {
