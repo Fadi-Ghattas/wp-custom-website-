@@ -204,9 +204,9 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 
 
 <?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
-<?php if(!empty($service['service_related_projects'])) { ?>
+<?php if(!empty($service['service_related_services'])) { ?>
 <?php //$services_page_show_cases_background_image = (esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
-	<section class="some-of-show-cases">
+	<section class="some-of-show-cases services">
 		<span class="word-background">show you</span>
 		<div class="container">
 			<div class="row related-projects">
@@ -216,67 +216,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 					<h1>OTHER SERVICES</h1>
 				</div>
 
-				<?php $hover = ['green-card-hover', 'red-card-hover', 'purple-card-hover']; ?>
-				<?php $mobHover = ['purple-card-gradient', 'pink-card-gradient', 'blue-card-gradient', 'red-card-gradient']; ?>
-				<?php  $col = 0;$colPos =''; $mobHoverCount = 0;
-				foreach ($service['service_related_projects'] as $project) {
-					$title = (!empty($project['project_card_title']) ? $project['project_card_title'] : $project['post_title']);
-					if($col == 0) {
-						$colPos = 'col-lg-left col-sm-left col-xs-left';
-					} else if($col == 1) {
-						$colPos = 'col-lg-center col-sm-center col-xs-center';
-					} else if($col == 2) {
-						$colPos = 'col-lg-right col-sm-right col-xs-right';
-					}
-					$colPos = '';
-					?>
-					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 show-case-item zoom-effect <?php echo $colPos; ?>">
-						<section class="<?php echo $hover[$col]; ?>">
-							<figure>
-								<!--<div class="lazy-loader-effect"></div>-->
-								<div class="loader"><div class="square" ></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square"></div><div class="square last"></div><div class="square clear"></div><div class="square "></div></div>
-								<a  href="<?php echo esc_url(get_permalink($project['id'])); ?>">
-									<img class="img-lazy lazy-not-loaded lazy-loader" data-src="<?php echo esc_url($project['project_card_image']['url']); ?>" alt="<?php echo $title; ?>" />
-								</a>
-							</figure>
-							<a class="desk" href="<?php echo esc_url(get_permalink($project['id'])); ?>">
-								<div class="overlay bg-rotate">
-									<h5><?php echo $title; ?></h5>
-									<?php if (!empty($project['project_card_sub_title'])) ?>
-									<h6><?php echo $project['project_card_sub_title']; ?></h6>
-								</div>
-							</a>
-							<a class="mob <?php echo $mobHover[$mobHoverCount]; ?>" href="<?php echo esc_url(get_permalink($project['id'])); ?>">
-								<div >
-									<h5><?php echo $title; ?></h5>
-									<?php if (!empty($project['project_card_sub_title'])) ?>
-									<h6><?php echo $project['project_card_sub_title']; ?></h6>
-								</div>
-							</a>
-						</section>
-					</article>
-					<?php ($col == 2 ? $col = 0 : $col++); ($mobHoverCount == 3 ? $mobHoverCount = 0 : $mobHoverCount++);} ?>
-			</div>
-		</div>
-		<a href="<?php echo esc_url(home_url('about-us')); ?>" class="btn-view-all-show-cases c-btn">
-			<span></span>
-			VIEW FULL SHOWCASE
-		</a>
-	</section>
-<?php } ?>
-
-<?php if(!empty($service['service_related_services'])) { ?>
-	<section class="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<!--					<h1>--><?php //echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
-					<h1>OTHER SERVICES</h1>
-				</div>
-				<?php
-				$col = 0;
-				$itemsCount = 0;
-				foreach ($service['service_related_services'] as $service) {
+				<?php foreach ($service['service_related_services'] as $service) {
 					$title = (!empty($service['service_card_title']) ? $service['service_card_title'] : $service['post_title']);
 					$description = (!empty($service['service_card_description']) ? $service['service_card_description'] : $service['service_description']);
 					$description = limit_text_as_expert($service['id'], $description, 33, '#5d5f74', 0);
@@ -292,8 +232,13 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 					</article>
 					<?php  ($col == 2 ? $col = 0 : $col++);
 				} ?>
+
 			</div>
 		</div>
+		<a href="<?php echo esc_url(home_url('about-us')); ?>" class="btn-view-all-show-cases c-btn">
+			<span></span>
+			VIEW FULL SHOWCASE
+		</a>
 	</section>
 <?php } ?>
 
