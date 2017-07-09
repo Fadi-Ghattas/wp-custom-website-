@@ -21,10 +21,10 @@ $r = basename(get_page_template());
                         </a>
                     </div>
                     <div class="footer-menu">
-                        <a href="<?php echo esc_url(home_url('let-us')); ?>">LET US</a>
-                        <a href="<?php echo esc_url(home_url('show-you')); ?>">SHOW YOU</a>
-                        <a href="<?php echo esc_url(home_url('what-we-can-do')); ?>">WHAT WE CAN DO</a>
-                        <a href="<?php echo esc_url(home_url('for-you')); ?>">FOR YOU</a>
+                        <a href="<?php echo esc_url(home_url('about-us')); ?>/">LET US</a>
+                        <a href="<?php echo esc_url(home_url('portfolio')); ?>/">SHOW YOU</a>
+                        <a href="<?php echo esc_url(home_url('services')); ?>/">WHAT WE CAN DO</a>
+                        <a href="<?php echo esc_url(home_url('contact-us')); ?>/">FOR YOU</a>
                     </div>
                     <div class="copyright hidden-xs copyrightdesk">
                         <p>© 2008-<?php echo date('Y'); ?> cloudappers. all rights reserved</p>
