@@ -5919,7 +5919,7 @@ section.page-not-found #particles-js {
     section.ca-page-header .sub-title {
         font-size: 12vw;
         line-height: 12vw;
-        letter-spacing: 0.5vw
+        /*letter-spacing: 0.5vw*/
     }
 
     /*banner end*/
@@ -6590,8 +6590,8 @@ section.page-not-found #particles-js {
     }
 
     section.ca-page-header .sub-title {
-        font-size: 50px;
-        line-height: 58px;
+        /*font-size: 50px;*/
+        /*line-height: 58px;*/
     }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -6765,8 +6765,8 @@ section.page-not-found #particles-js {
     }
 
     section.ca-page-header .sub-title {
-        font-size: 35px;
-        line-height: 58px;
+        /*font-size: 35px;*/
+        /*line-height: 58px;*/
     }
 
     /*project details 320 start*/
