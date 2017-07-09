@@ -2431,6 +2431,7 @@ section.project-url .next-project-btn {
     margin-top: -132px;
     margin-bottom: 29px;
     text-align: inherit;
+    height: 100%;
 }
 
 .move-section.with-border > div {
