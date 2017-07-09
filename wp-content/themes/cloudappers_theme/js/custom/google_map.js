@@ -101,7 +101,7 @@ jQuery(function ($)
 
 		var option1 = {
 			center: {
-                lat: parseFloat('25.079910'),
+                lat: parseFloat(script_const.pin_latitude),
                 lng: parseFloat(script_const.pin_altitude)
 			},
 			zoom: 13,
@@ -115,7 +115,7 @@ jQuery(function ($)
 
 		var option2 = {
 			center: {
-				lat: parseFloat('25.079910'),
+				lat: parseFloat(script_const.pin_latitude),
                 lng: parseFloat(script_const.pin_altitude)
 			},
 			zoom: 13,
