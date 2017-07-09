@@ -292,26 +292,36 @@ jQuery(function ($) {
         });
 
         $('.move-section').on('click', function (event) {
-            var next = (parseInt($(this).attr('data-index')) + 1);
-            var $nextElement = $('.move-section[data-index="' + next + '"]');
-            if ($nextElement.length) {
-                if ($nextElement.length > 1) {
-                    $('.move-section[data-index="' + next + '"]').each(function (index) {
-                        if ($(this).is(':visible')) {
-                            $nextElement = $(this);
-                        }
-                    });
-                }
-                $('html, body').stop(true).animate({
-                    scrollTop: ($nextElement.offset().top - parseInt($('.top-header').height())) + 5
-                }, 1000);
-                return false;
-            } else {
-                $('html, body').stop(true).animate({
-                    scrollTop: ($('section.client-say').offset().top - parseInt($('.top-header').height())) + 5
-                }, 1000);
-                return false;
+            event.preventDefault();
+            var next_ele = $(this).parents("body").find(".move-section");
+            var $nextElement = next_ele.filter(":gt(" + (next_ele.index(this)) + ")").first();
+            var MenuView = 0;
+            if ($(window).width() > 767) {
+                MenuView = parseInt($('.top-header').height());
             }
+            if ($nextElement.length == 1) {
+                $('html, body').stop(true).animate({
+                    scrollTop: ($nextElement.offset().top - MenuView)
+                }, 1000);
+            } else if ($('section.client-say').length == 1) {
+                $('html, body').stop(true).animate({
+                    scrollTop: ($('section.client-say').offset().top - MenuView)
+                }, 1000);
+            } else if ($('section.project-url').length == 1) {
+                $('html, body').stop(true).animate({
+                    scrollTop: ($('section.project-url').offset().top - MenuView)
+                }, 1000);
+            } else if ($('section.prefooter').length == 1) {
+                $('html, body').stop(true).animate({
+                    scrollTop: ($('section.prefooter').offset().top - MenuView)
+                }, 1000);
+            }
+            else {
+                $('html, body').stop(true).animate({
+                    scrollTop: ($('body').offset().top)
+                }, 1000);
+            }
+            return false;
         });
     }
 

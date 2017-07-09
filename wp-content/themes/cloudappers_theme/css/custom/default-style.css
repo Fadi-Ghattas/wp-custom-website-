@@ -2121,7 +2121,7 @@ section.show-case-one-image .img-container img {
 
 section.show-case-two {
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 section.show-case-two .container {
@@ -2409,6 +2409,7 @@ section.project-url .next-project-btn {
     bottom: -28px;
     z-index: 1;
     display: block;
+    top: 0;
 }
 
 .move-section .icono-arrow1-down {
@@ -4630,7 +4631,10 @@ section.page-not-found #particles-js {
         max-width: none;
         margin-left: -50%;
         margin-right: -50%;
+       
     }
+
+
 
     section.project-header .project-header-container .header-text {
         margin-top: -30vw;
@@ -4996,6 +5000,8 @@ section.page-not-found #particles-js {
         transform: rotate(180deg);
         transition: 0.5s;
     }
+
+
 
     @-webkit-keyframes card-hover-in {
         0% {
@@ -5825,6 +5831,10 @@ section.page-not-found #particles-js {
     #JobModal #applied-position {
         display: none;
         font-size: 24px;
+    }
+
+    section.show-case-two{
+        overflow: hidden;
     }
 
     /*prefooter*/
