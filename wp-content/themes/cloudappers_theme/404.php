@@ -8,7 +8,8 @@
 
 		<div class="container">
 			<div class="text"><h1> CRAP! </h1>
-                <p> Looks like you've hit a virtual roadblock. We'll work on making sure this never happens again.</p>
+                <p> Looks like you've hit a virtual roadblock.</p>
+				<p>We'll work on making sure this never happens again.</p>
 				<h2><a href="<?php echo esc_url(home_url()); ?>"> GET ME OUTTA HERE!</a></h2>
 			</div>
 		</div>

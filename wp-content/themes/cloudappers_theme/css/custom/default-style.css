@@ -1363,6 +1363,10 @@ section.services {
     padding-bottom: 62px;
 }
 
+section.some-of-show-cases.services {
+    padding-bottom: 0px;
+}
+
 section.services .row:not(:last-child) {
     margin-bottom: 35px;
 }
@@ -1370,6 +1374,10 @@ section.services .row:not(:last-child) {
 section.services .service-item {
     margin-top: 68px;
     /*padding: 0 10px;*/
+}
+
+section.some-of-show-cases.services .service-item {
+    margin-top: 20px;
 }
 
 section.services .service-item.col-lg-left {
@@ -2281,6 +2289,10 @@ section.project-url .title {
     letter-spacing: 1.6px;
 }
 
+section.project-url .project-url-item {
+    margin-bottom: 56px;
+}
+
 section.project-url .url-name {
     color: #000;
     font-family: 'Raleway', sans-serif;
@@ -2366,7 +2378,6 @@ section.project-url .next-project-btn {
     text-transform: uppercase;
     display: block;
     padding: 23px 0;
-    margin-top: 56px;
     height: 100%;
     width: 100%;
     border-radius: 0px;
@@ -3551,7 +3562,7 @@ section.page-not-found h1 {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: bold;
     font-size: 90px;
-    letter-spacing: 8px;
+    /*letter-spacing: 8px;*/
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -3573,7 +3584,7 @@ section.page-not-found h2 {
     font-family: 'Raleway', sans-serif;
     /*font-size: 30px;*/
     /*font-weight: 600;*/
-    letter-spacing: 9px;
+    /*letter-spacing: 9px;*/
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -4000,6 +4011,9 @@ section.page-not-found #particles-js {
         margin-top: 102px;
     }
 
+    section.some-of-show-cases.services .service-item:nth-child(n + 4) {
+        margin-top: 20px;
+    }
 }
 
 /*md*/

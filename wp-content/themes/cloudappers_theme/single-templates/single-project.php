@@ -369,12 +369,12 @@ get_template_part('template-part', 'topnav');
 	</section>
 <?php } ?>
 
-<?php if(!empty($project['project_url'])) { ?>
+<section class="project-url" style="background: <?php echo $project['project_url_section_background_color']; ?>;">
+	<?php if(!empty($project['project_url'])) { ?>
 
-	<section class="project-url" style="background: <?php echo $project['project_url_section_background_color']; ?>;">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 project-url-item">
 					<h1 class="title" style="color: <?php echo $project['project_url_title_color']; ?>;">
 						<?php echo $project['project_url_title']; ?>
 					</h1>
@@ -385,13 +385,13 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn">
-			<span>NEXT PROJECT</span>
-			<div class="icono-arrow1-left"></div>
-		</a>
-	</section>
-<?php } ?>
+	<?php } ?>
 
+	<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn">
+		<span>NEXT PROJECT</span>
+		<div class="icono-arrow1-left"></div>
+	</a>
+</section>
 
 <section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
 		<div class="container">
