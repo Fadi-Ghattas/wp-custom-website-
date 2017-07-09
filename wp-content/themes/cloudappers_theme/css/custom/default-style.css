@@ -832,7 +832,6 @@ header, nav, header img {
     font-size: 33px;
     font-weight: bold;
     color: #fff;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .team .members .member-info h6 {
@@ -1929,6 +1928,7 @@ section.all-the-team .grid {
     width: 100%;
     overflow: hidden;
  }
+
 
 
 .single-project #menu-item-494 a {
@@ -3673,6 +3673,11 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 768px) {
+    .clients .item
+    {
+        opacity: 0.5;
+    }
+
     ul.filters li:nth-child(2) {
         margin: 0 11px;
     }
@@ -3920,7 +3925,6 @@ section.page-not-found #particles-js {
         display: inline-block;
         /*margin: 0 23px;*/
         position: relative;
-        opacity: 0.5;
         transition: 0.1s;
     }
 
@@ -5612,6 +5616,10 @@ section.page-not-found #particles-js {
         background-size: 45px;
         padding-left: 55px;
 
+    }
+
+    .home .showyou .view-all a:hover{
+        background-size: 45px;
     }
 
     .home .what-we-do h1 {
