@@ -115,7 +115,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="/get-a-quote/" class="btn-view-all-show-cases c-btn sold-btn">
+		<a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="btn-view-all-show-cases c-btn sold-btn">
 			I'M SOLD. LET'S GET STARTED
 		</a>
 	</section>
@@ -135,7 +135,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 		</div>
 	</section>
 	<section class="back-btn">
-		<a href="<?=get_home_url()?>#services" class="btn-view-all-show-cases c-btn sold-btn">
+		<a href="<?php echo esc_url(home_url('services')); ?>/" class="btn-view-all-show-cases c-btn sold-btn">
 			BACK TO SERVICES
 		</a>
 	</section>
@@ -244,7 +244,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 				<div class="col-lg-7  col-md-12">
 					<h1><?php echo $setting['settings_pre_footer_title']; ?></h1>
 					<p><?php echo $setting['settings_pre_footer_subtitle']; ?></p>
-					<a href="<?php echo home_url('get-a-quote'); ?>" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
+					<a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="c-btn">TELL US ABOUT YOUR PROJECT</a>
 				</div>
 			</div>
 		</div>
