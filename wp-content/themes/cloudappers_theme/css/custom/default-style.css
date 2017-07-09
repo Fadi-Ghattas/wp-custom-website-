@@ -2707,6 +2707,7 @@ section.project-url .next-project-btn {
 .page-template-about .clients {
     background: url("../../img/about-clients.jpg") no-repeat center 7%;
     background-size: cover;
+    border-bottom: 1px solid #fbfbfb;
 }
 
 .page-template-about .clients h6 {
