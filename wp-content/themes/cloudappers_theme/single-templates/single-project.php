@@ -273,11 +273,13 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
+	<?php if(!empty($project['project_show_case_one_description'])) { ?>
         <a href="#" class="move-section mob" data-index="2">
             <div >
                 <div class="icono-arrow1-down"></div>
             </div>
         </a>
+	<?php } ?>
 	</section>
 <?php } ?>
 
