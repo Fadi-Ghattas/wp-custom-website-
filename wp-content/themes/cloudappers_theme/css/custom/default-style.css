@@ -2381,10 +2381,10 @@ section.project-url .next-project-btn {
     font-weight: 700;
     font-size: 14px !important;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     padding: 23px 0;
     height: 100%;
-    width: 100%;
+    width: 50%;
     border-radius: 0px;
     line-height: 20px;
     border-top: 1px solid #f0f0f0;
@@ -2392,7 +2392,18 @@ section.project-url .next-project-btn {
     /*letter-spacing: 1.4px;*/
 }
 
-.next-project-btn .icono-arrow1-left {
+.prev-arr {
+    float: left;
+}
+
+.next-project-btn.prev-arr span{
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+
+.next-project-btn .icono-arrow1-left,
+.next-project-btn .icono-arrow1-right {
     width: 12px;
     height: 12px;
     color: #3c566a;
@@ -6711,6 +6722,14 @@ section.page-not-found #particles-js {
 
     a.logo-mob {
         margin-top: -5px;
+    }
+
+
+    section.project-url .next-project-btn
+    {
+        width: 100%;
+        display: block;
+        float: none;
     }
 
     /*project inner 408 end*/

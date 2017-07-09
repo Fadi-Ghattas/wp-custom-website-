@@ -389,17 +389,14 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	<?php } ?>
-
+    <a href="<?php echo get_permalink($previousProject[0]['id']); ?>" class="next-project-btn prev-arr">
+        <div class="icono-arrow1-right"></div>
+        <span>PREVIOUS PROJECT</span>
+    </a>
 	<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn">
 		<span>NEXT PROJECT</span>
 		<div class="icono-arrow1-left"></div>
 	</a>
-
-	<a href="<?php echo get_permalink($previousProject[0]['id']); ?>" class="next-project-btn">
-		<span>PREVIOUS PROJECT</span>
-		<div class="icono-arrow1-right"></div>
-	</a>
-
 </section>
 
 <section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
