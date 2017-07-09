@@ -2351,6 +2351,11 @@ section.project-url .url-name p {
     transform: rotate(135deg);
 }
 
+[class*="icono-arrow1"][class*="-right"] {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
 [class*="icono"] {
     position: relative;
     display: inline-block;
