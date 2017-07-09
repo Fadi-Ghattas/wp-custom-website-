@@ -98,6 +98,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
 
     <section class="contact col-eq-height">
         <div class="map col-lg-6">
+            <div class="map-mob-shadow"></div>
             <div id="map"></div>
             <div class="address-ca">
                 <div class="container-fluid">
@@ -167,7 +168,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                     <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/infographics-for-banner@3x.png' ?>">
                 </div>
                 <div class="col-lg-7  col-md-12">
-                    <h1>Ready to make your idea happens?</h1>
+                    <h1>Wanna bring your app idea to life?</h1>
 <!--                    <p>That's the spirits! Let's make history together</p>-->
                         <!--New feedback-->
                         <p>So do we. Let's make history together!</p>
