@@ -299,7 +299,7 @@ header, nav, header img {
     text-transform: uppercase;
     text-shadow: 0px 0px 84px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    letter-spacing: 14.463px;
+    /*letter-spacing: 14.463px;*/
     width: 100%;
     color: rgba(255, 255, 255, 0.6);
     word-break: break-all;
@@ -429,7 +429,7 @@ header, nav, header img {
     line-height: 2.0;
     padding-bottom: 8px;
     color: rgb(118, 55, 26);
-    letter-spacing: 0.75px;
+    /*letter-spacing: 0.75px;*/
     display: block;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
@@ -1007,7 +1007,7 @@ body.home.blog.modal-open {
     text-transform: uppercase;
     line-height: 0.946;
     margin-bottom: 76px;
-    letter-spacing: 7.4px;
+    /*letter-spacing: 7.4px;*/
 }
 
 .contact .form label {
@@ -1822,7 +1822,7 @@ ul.filters li a span {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    /*letter-spacing: 3px;*/
 }
 
 ul.filters li a span {
@@ -1981,7 +1981,7 @@ section.project-header .project-header-container .header-text .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
     margin-bottom: 4px;
 }
 
@@ -1997,7 +1997,7 @@ section.project-header .project-header-container .short-description p {
     font-weight: 300;
     font-size: 30px;
     line-height: 1.467;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
 }
 
 section.project-info {
@@ -2022,7 +2022,7 @@ section.project-info .title {
     font-size: 16px;
     margin-top: 52px;
     margin-bottom: 24px;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
 }
 
 section.project-info .description,
@@ -2146,7 +2146,7 @@ section.show-case-two .title {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 26px;
-    letter-spacing: 0.8px;
+    /*letter-spacing: 0.8px;*/
 }
 
 section.show-case-two .description,
@@ -2287,7 +2287,7 @@ section.project-url .title {
     font-weight: 700;
     margin-top: 80px;
     margin-bottom: 42px;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
 }
 
 section.project-url .project-url-item {
@@ -2303,7 +2303,7 @@ section.project-url .url-name p {
     margin-bottom: 22px;
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 3.6px;
+    /*letter-spacing: 3.6px;*/
 }
 
 [class*="icono-arrow1"] {
@@ -2393,6 +2393,12 @@ section.project-url .next-project-btn {
     /*letter-spacing: 1.4px;*/
 }
 
+section.project-url .next-project-btn.first-project
+{
+    width: 100%;
+    display: block;
+}
+
 .prev-arr {
     float: left;
 }
@@ -2417,7 +2423,7 @@ section.project-url .next-project-btn {
 .next-project-btn span {
     margin-right: 24px;
     font-size: 14px;
-    letter-spacing: 1.4px;
+    /*letter-spacing: 1.4px;*/
 }
 
 .next-project-btn:hover span,
@@ -2524,7 +2530,7 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.14;
-    letter-spacing: 4.8px;
+    /*letter-spacing: 4.8px;*/
     margin-bottom: 10px;
 }
 
@@ -2707,7 +2713,7 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.8px;
+    /*letter-spacing: 0.8px;*/
 }
 
 .page-template-about .ouraim p {
@@ -2744,7 +2750,7 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
     margin-bottom: 53px;
 }
 
@@ -2882,7 +2888,7 @@ section.project-url .next-project-btn {
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
 }
 
 .page-template-about .words p {
@@ -2893,7 +2899,7 @@ section.project-url .next-project-btn {
     /*max-width: 425px;*/
     margin-bottom: 63px;
     margin-top: 53px;
-    letter-spacing: 2.4px;
+    /*letter-spacing: 2.4px;*/
 }
 
 .page-template-about .words p:after {
@@ -2912,13 +2918,13 @@ section.project-url .next-project-btn {
     font-weight: bold;
     line-height: 1.688;
     text-align: left;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
     margin-bottom: 0;
 }
 
 .page-template-about .words h4 {
     color: #b3b3b3;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
     margin-top: 0;
 }
 
@@ -3243,7 +3249,7 @@ form#GetInTouchForm button.c-btn {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1.9px;
+    /*letter-spacing: 1.9px;*/
     margin: 0;
 }
 
@@ -3259,7 +3265,7 @@ form#GetInTouchForm button.c-btn {
     text-transform: uppercase;
     line-height: 0.946;
     text-align: center;
-    letter-spacing: 7.4px;
+    /*letter-spacing: 7.4px;*/
     margin-top: 5px;
 }
 
@@ -3278,14 +3284,14 @@ form#GetInTouchForm button.c-btn {
     font-size: 16px;
     color: rgb(136, 136, 136);
     font-weight: bold;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
 }
 
 .page-template-contact-us .join .position p {
     font-size: 24px;
     color: rgb(23, 23, 23);
     font-weight: bold;
-    letter-spacing: 2.4px;
+    /*letter-spacing: 2.4px;*/
 }
 
 .page-template-contact-us .join .position span {
@@ -3301,7 +3307,7 @@ form#GetInTouchForm button.c-btn {
     color: rgb(136, 136, 136);
     font-weight: bold;
     line-height: 4.375;
-    letter-spacing: 1.6px;
+    /*letter-spacing: 1.6px;*/
 }
 
 .page-template-contact-us .join .desc p {
@@ -3352,7 +3358,7 @@ form#GetInTouchForm button.c-btn {
     text-transform: uppercase;
     line-height: 0.946;
     margin-bottom: 49px;
-    letter-spacing: 7.4px;
+    /*letter-spacing: 7.4px;*/
     margin-top: 0;
 }
 
@@ -5413,7 +5419,7 @@ section.page-not-found #particles-js {
     }
 
     .home .contact .form h1 {
-        letter-spacing: 4px;
+        /*letter-spacing: 4px;*/
     }
 
     .home .slide-desc a > span {
@@ -5765,7 +5771,7 @@ section.page-not-found #particles-js {
         top: 18vw;
         right: 0;
         left: 0;
-        letter-spacing: 2px;
+        /*letter-spacing: 2px;*/
     }
 
     .home .showyou .bg-showyou {
@@ -5959,7 +5965,7 @@ section.page-not-found #particles-js {
         font-weight: 500;
         font-size: 4.8vw;
         line-height: 9vw;
-        letter-spacing: 0.48vw;
+        /*letter-spacing: 0.48vw;*/
     }
 
     section.ca-page-header .sub-title {
@@ -6164,7 +6170,7 @@ section.page-not-found #particles-js {
     .page-template-contact-us .join .title h1,
     .page-template-contact-us .contact .form h1 {
         font-size: 10vw;
-        letter-spacing: 1vw;
+        /*letter-spacing: 1vw;*/
         text-align: center;
         margin-bottom: 0;
     }
@@ -6176,7 +6182,7 @@ section.page-not-found #particles-js {
     .page-template-contact-us .join .title h6,
     .page-template-contact-us .contact .form h6 {
         font-size: 3.8vw;
-        letter-spacing: 0.38vw;
+        /*letter-spacing: 0.38vw;*/
         text-align: center;
     }
 
@@ -6412,11 +6418,11 @@ section.page-not-found #particles-js {
 
     section.page-not-found h1 {
         font-size: 15vw;
-        letter-spacing: 2vw;
+        /*letter-spacing: 2vw;*/
     }
 
     section.page-not-found h2 {
-        letter-spacing: 0.39113428943937417vw;
+        /*letter-spacing: 0.39113428943937417vw;*/
     }
 
     section.page-not-found h2 a {
