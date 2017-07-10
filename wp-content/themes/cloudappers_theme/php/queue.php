@@ -15,7 +15,6 @@ function project_scripts()
 		wp_deregister_script('wp-embed');
 	}
 
-
 	//CSS
 	wp_enqueue_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap/bootstrap/bootstrap.min.css', [], '2.0');
 	wp_enqueue_style('formValidationcss', get_template_directory_uri() . '/css/bootstrap/bootstrap/formValidation.min.css', [], '1.0');
