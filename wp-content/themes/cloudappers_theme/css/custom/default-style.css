@@ -1378,6 +1378,7 @@ section.services .service-item {
 
 section.some-of-show-cases.services .service-item {
     margin-top: 20px;
+    text-align: left;
 }
 
 section.services .service-item.col-lg-left {
