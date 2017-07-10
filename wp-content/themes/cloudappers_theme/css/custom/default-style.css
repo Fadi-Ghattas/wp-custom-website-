@@ -812,9 +812,9 @@ header, nav, header img {
 }
 
 .team .view-all {
-    margin-top: 104px;
+    margin-top: 40px;
     background: white;
-    border-bottom: 1px solid rgb(232, 243, 247);
+    border-bottom: 2px solid rgb(232, 243, 247);
 }
 
 .team .members .member-info {
@@ -2393,10 +2393,11 @@ section.project-url .next-project-btn {
     /*letter-spacing: 1.4px;*/
 }
 
-section.project-url .next-project-btn.first-project
-{
+section.project-url .next-project-btn.first-project,
+section.project-url .next-project-btn.prev-arr.last-project {
     width: 100%;
     display: block;
+    float: none;
 }
 
 .prev-arr {
