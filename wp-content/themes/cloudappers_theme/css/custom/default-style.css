@@ -2393,6 +2393,12 @@ section.project-url .next-project-btn {
     /*letter-spacing: 1.4px;*/
 }
 
+section.project-url .next-project-btn.first-project
+{
+    width: 100%;
+    display: block;
+}
+
 .prev-arr {
     float: left;
 }
