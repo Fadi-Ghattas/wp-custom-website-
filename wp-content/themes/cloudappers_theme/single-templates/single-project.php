@@ -176,6 +176,7 @@ $filters = ['limit' => -1, 'page' => 1, 'where' => "t.menu_order = {$next}", 'or
 $nextProject = ProjectModel::search((new ProjectModel())->pod_name, $fields, $filters);
 $filters = ['limit' => -1, 'page' => 1, 'where' => "t.menu_order = {$previous}", 'order_by' => 't.menu_order, t.post_date, project_is_featured.meta_value DESC'];
 $previousProject = ProjectModel::search((new ProjectModel())->pod_name, $fields, $filters);
+$projectsTotals = find_pod((new ProjectModel())->pod_name)->total();
 
 get_header();
 get_template_part('template-part', 'topnav');
@@ -389,14 +390,18 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	<?php } ?>
-    <a href="<?php echo get_permalink($previousProject[0]['id']); ?>" class="next-project-btn prev-arr">
+	<?php if ($previous != -1) { ?>
+    <a href="<?php echo get_permalink($previousProject[0]['id']); ?>" class="next-project-btn prev-arr <?php echo (intval($project['menu_order']) == $projectsTotals ? 'last-project' : ''); ?>">
         <div class="icono-arrow1-right"></div>
         <span>PREVIOUS PROJECT</span>
     </a>
-	<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn">
+	<?php } ?>
+	<?php if (intval($project['menu_order']) < $projectsTotals) { ?>
+	<a href="<?php echo get_permalink($nextProject[0]['id']); ?>" class="next-project-btn <?php echo ($previous == -1 ? 'first-project' : ''); ?>">
 		<span>NEXT PROJECT</span>
 		<div class="icono-arrow1-left"></div>
 	</a>
+	<?php } ?>
 </section>
 
 <section class="prefooter lazy-background" data-bg="<?php echo esc_url(get_stylesheet_directory_uri() . '/img/prefooter.png'); ?>">
