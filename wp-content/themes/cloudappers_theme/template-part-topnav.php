@@ -2,9 +2,6 @@
 
     <section class="top-menu">
         <div class="top-header">
-            <a href="<?php echo esc_url(home_url('services')); ?>/" class="service-back btn-view-all-show-cases c-btn sold-btn">
-                BACK TO WHAT WE CAN DO
-            </a>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -60,6 +57,9 @@
                     </div>
                 </div>
             </div>
+            <a href="<?php echo esc_url(home_url('services')); ?>/" class="service-back btn-view-all-show-cases c-btn sold-btn">
+                BACK TO WHAT WE CAN DO
+            </a>
         </div>
 
     </section>

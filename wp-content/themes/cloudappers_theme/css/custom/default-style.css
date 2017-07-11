@@ -179,6 +179,16 @@ header, nav, header img {
     -o-transition: all 1s; /* Opera */
 }
 
+.service-back.btn-view-all-show-cases.c-btn {
+    background: transparent;
+    position: fixed;
+    top: 121px;
+    color: white;
+    border-bottom: 1px solid white;
+    display: none;
+    transition: 1s;
+}
+
 .top-menu {
     position: absolute;
     top: 0;
@@ -1663,26 +1673,6 @@ section.some-of-show-cases .overlay h6 {
     height: 100vh;
     background-size: cover;
     position: relative;
-}
-
-.service-back.btn-view-all-show-cases.c-btn {
-    background: transparent;
-    position: fixed;
-    top: 121px;
-    color: white;
-    border-bottom: 1px solid white;
-    display: none;
-    transition: 1s;
-}
-
-.small .service-back.btn-view-all-show-cases.c-btn{
-    top:76px;
-    transition: 1s;
-
-}
-
-.single-service .service-back.btn-view-all-show-cases.c-btn {
-    display: block;
 }
 
 .branding .description {
@@ -3730,6 +3720,14 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 768px) {
+
+
+
+    .single-service .service-back.btn-view-all-show-cases.c-btn {
+        display: block;
+    }
+
+
     .clients .item
     {
         opacity: 0.5;
@@ -3847,6 +3845,10 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 1200px) {
+    .small .service-back.btn-view-all-show-cases.c-btn{
+        top:76px;
+        transition: 1s;
+    }
 
     .team .members > div:nth-child(4n - 1) {
         /*left: 25% !important;*/
@@ -4448,6 +4450,10 @@ section.page-not-found #particles-js {
 
 @media (max-width: 991px) {
 
+    .service-back.btn-view-all-show-cases.c-btn{
+        top:178px;
+    }
+
     .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
         vertical-align: top;
         margin-top: 58px;
@@ -4915,6 +4921,7 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 767px) {
+
 
     .home .showyou .projects > div:hover img {
         opacity: 0.04;
