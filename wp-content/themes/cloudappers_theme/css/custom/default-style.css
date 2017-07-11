@@ -1667,10 +1667,22 @@ section.some-of-show-cases .overlay h6 {
 
 .service-back.btn-view-all-show-cases.c-btn {
     background: transparent;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 121px;
     color: white;
     border-bottom: 1px solid white;
+    display: none;
+    transition: 1s;
+}
+
+.small .service-back.btn-view-all-show-cases.c-btn{
+    top:76px;
+    transition: 1s;
+
+}
+
+.single-service .service-back.btn-view-all-show-cases.c-btn {
+    display: block;
 }
 
 .branding .description {
