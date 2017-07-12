@@ -1668,6 +1668,7 @@ section.some-of-show-cases .overlay h6 {
     font-weight: 400;
     line-height: 1.875;
     max-width: 650px;
+    margin: 0 auto;
 }
 
 .branding {
@@ -1695,6 +1696,7 @@ section.some-of-show-cases .overlay h6 {
 .single-service section.info {
     position: relative;
     border-left: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
 }
 
 .full-center-vertical-divider {
