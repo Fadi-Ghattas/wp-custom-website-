@@ -149,9 +149,7 @@ get_template_part('template-part', 'topnav');
 				</div>
 			</div>
 		</div>
-		<a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="other-btn btn-view-all-show-cases c-btn sold-btn">
-			I'M SOLD. LET'S GET STARTED
-		</a>
+
 	</section>
 
 <?php
@@ -173,11 +171,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 <!--		</div>-->
 <!--	</section>-->
 
-	<section class="back-btn">
-		<a href="<?php echo esc_url(home_url('services')); ?>#all" class="btn-view-all-show-cases c-btn sold-btn">
-            BACK TO WHAT WE CAN DO
-		</a>
-	</section>
+
 <?php } ?>
 
 <?php if(!empty($service['service_infos'])) { ?>
@@ -210,19 +204,26 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 		</div>
 	</section>
 <?php } ?>
-
+    <a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="other-btn btn-view-all-show-cases c-btn sold-btn">
+        I'M SOLD. LET'S GET STARTED
+    </a>
+    <section class="back-btn">
+        <a href="<?php echo esc_url(home_url('services')); ?>#all" class="btn-view-all-show-cases c-btn sold-btn">
+            BACK TO WHAT WE CAN DO
+        </a>
+    </section>
 
 <?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
 <?php if(!empty($service['service_related_services'])) { ?>
 <?php //$services_page_show_cases_background_image = (esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
 	<section class="some-of-show-cases services">
-		<span class="word-background">show you</span>
+		<span class="word-background">WHAT WE CAN DO</span>
 		<div class="container">
 			<div class="row related-projects">
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <!--				<h1>--><?php //echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
-					<h1>OTHER SERVICES</h1>
+					<h1>OTHER THINGS WE CAN DO</h1>
 				</div>
 
 				<?php foreach ($service['service_related_services'] as $service) {

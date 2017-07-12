@@ -305,7 +305,7 @@ header, nav, header img {
     position: absolute;
     top: 8%;
     left: 0;
-    transform: translate(0, -50%);
+    /*transform: translate(0, -50%);*/
     text-transform: uppercase;
     text-shadow: 0px 0px 84px rgba(0, 0, 0, 0.1);
     color: #ffffff;
@@ -1611,7 +1611,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .single-service section.some-of-show-cases .word-background {
-    top: 16%;
+    top: 0%;
 }
 
 .service-details .icon-container {
@@ -1694,6 +1694,7 @@ section.some-of-show-cases .overlay h6 {
 
 .single-service section.info {
     position: relative;
+    border-left: 1px solid #ebebeb;
 }
 
 .full-center-vertical-divider {
@@ -4332,7 +4333,9 @@ section.page-not-found #particles-js {
         margin-top: -54px;
     }
 
-
+    .word-background {
+        font-size: 10vw;
+    }
 
     /*Footer*/
     #footer .footer-menu a{
