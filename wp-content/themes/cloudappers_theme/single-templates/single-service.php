@@ -116,7 +116,7 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
-    <a href="<?php echo esc_url(home_url('services')); ?>/#all-services" class="service-back btn-view-all-show-cases c-btn sold-btn">
+    <a href="<?php echo esc_url(home_url('services')); ?>#all-services" class="service-back btn-view-all-show-cases c-btn sold-btn">
      BACK TO WHAT WE CAN DO
     </a>
     <div class="main-wrapper">
@@ -174,7 +174,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 <!--	</section>-->
 
 	<section class="back-btn">
-		<a href="<?php echo esc_url(home_url('services')); ?>/#all-services" class="btn-view-all-show-cases c-btn sold-btn">
+		<a href="<?php echo esc_url(home_url('services')); ?>#all-services" class="btn-view-all-show-cases c-btn sold-btn">
             BACK TO WHAT WE CAN DO
 		</a>
 	</section>

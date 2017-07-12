@@ -363,7 +363,22 @@ jQuery(function ($) {
         }
     }
 
-
-
+    //scroll to services
+    if ($('.page-template-services').length)
+        if ($(window).width() > 1199){
+            $('html,body').animate({
+                scrollTop: $(window.location.hash).offset().top - 30
+            });
+        }
+   else if ($(window).width() > 991){
+        $('html,body').animate({
+            scrollTop: $(window.location.hash).offset().top - 75
+        });
+    }
+        else if ($(window).width() > 767){
+            $('html,body').animate({
+                scrollTop: $(window.location.hash).offset().top - 125
+            });
+        }
 
 });

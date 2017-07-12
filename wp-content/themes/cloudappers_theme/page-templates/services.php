@@ -31,18 +31,18 @@ get_template_part('template-part', 'topnav');
         </div>
     </section>
     <div class="main-wrapper">
-    <section class="ca-page-banner">
-        <div id="all-services" class="vertical-line"></div>
-        <div class="container">
+    <section class="ca-page-banner" >
+        <div class="vertical-line"></div>
+        <div class="container" >
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
                     <?php echo $pageOptions['services_page_message_section']; ?>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="services" >
+    </section>
+    <section class="services" id="all-services">
         <div class="container">
             <div class="row">
                 <?php
