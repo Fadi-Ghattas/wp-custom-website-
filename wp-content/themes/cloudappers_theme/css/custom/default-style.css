@@ -1460,7 +1460,6 @@ section.services .service-item .more:hover {
 }
 
 a.btn-view-all-show-cases.c-btn {
-    /*color: #ffffff;*/
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -1476,17 +1475,22 @@ a.btn-view-all-show-cases.c-btn {
     width: 100%;
     height: 70px;
     border-top: 1px solid rgb(248, 248, 248);
-    background: white;
-    color: #3c566a;
+    /*color: #ffffff;*/
     box-shadow: none;
 }
+
+a.btn-view-all-show-cases.c-btn:not(.other-btn):not(.service-back) {
+    background: white;
+    color: #3c566a;
+}
+
 a.btn-view-all-show-cases.c-btn.sold-btn {
     margin-top: 0;
 }
 .back-btn a.btn-view-all-show-cases.c-btn.sold-btn {
     border-bottom: 1px solid rgb(248, 248, 248);
 }
-a.btn-view-all-show-cases.c-btn:hover {
+a.btn-view-all-show-cases.c-btn:not(.other-btn):hover {
     color: #ff6b2a !important;
     transition: 0.3s;
 }
