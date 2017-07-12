@@ -368,7 +368,7 @@ jQuery(function ($) {
 
         if ($(window).width() > 1199) {
             $('html,body').animate({
-                scrollTop: $('#all-services').offset().top - 30},2000);
+                scrollTop: $('#all-services').offset().top - 30},1500);
         }
 
         else if ($(window).width() > 991 && $(window).width() < 1200) {
