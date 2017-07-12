@@ -364,21 +364,26 @@ jQuery(function ($) {
     }
 
     //scroll to services
-    if ($('.page-template-services').length)
-        if ($(window).width() > 1199){
+    if ($('.page-template-services').length) {
+
+        if ($(window).width() > 1199) {
             $('html,body').animate({
                 scrollTop: $(window.location.hash).offset().top - 30
             });
         }
-   else if ($(window).width() > 991){
-        $('html,body').animate({
-            scrollTop: $(window.location.hash).offset().top - 75
-        });
-    }
-        else if ($(window).width() > 767){
+
+        else if ($(window).width() > 991 && $(window).width() < 1200) {
+            $('html,body').animate({
+                scrollTop: $(window.location.hash).offset().top - 75
+            });
+        }
+
+        else if ($(window).width() > 767 && $(window).width() < 992) {
             $('html,body').animate({
                 scrollTop: $(window.location.hash).offset().top - 125
             });
         }
+    }
+
 
 });
