@@ -364,7 +364,7 @@ jQuery(function ($) {
     }
 
     //scroll to services
-    if ($('.page-template-services').length) {
+    if ($('.page-template-services').length && (window.location.hash).length ) {
 
         if ($(window).width() > 1199) {
             $('html,body').animate({
