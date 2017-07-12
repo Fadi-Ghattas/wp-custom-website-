@@ -181,7 +181,7 @@ header, nav, header img {
 
 .service-back.btn-view-all-show-cases.c-btn {
     background: transparent;
-    position: relative;
+    position: absolute;
     top: 121px;
     color: white;
     border-bottom: 1px solid white;

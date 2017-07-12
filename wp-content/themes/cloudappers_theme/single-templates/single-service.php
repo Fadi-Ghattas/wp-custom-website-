@@ -105,9 +105,7 @@ get_template_part('template-part', 'topnav');
 ?>
 
 <?php $services_page_header_image = (!empty($service['service_page_header_background_image']['url']) ? esc_url($service['service_page_header_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/new-services-background_1600x793_acf_cropped.png')); ?>
-    <a href="<?php echo esc_url(home_url('services')); ?>/#all-services" class="service-back btn-view-all-show-cases c-btn sold-btn">
-        BACK TO WHAT WE CAN DO
-    </a>
+
     <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
       <div class="container">
 			<div class="row">
@@ -118,6 +116,9 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
+    <a href="<?php echo esc_url(home_url('services')); ?>/#all-services" class="service-back btn-view-all-show-cases c-btn sold-btn">
+     BACK TO WHAT WE CAN DO
+    </a>
     <div class="main-wrapper">
 
 	<?php if (!empty($service['service_page_header_description'])){ ?>
