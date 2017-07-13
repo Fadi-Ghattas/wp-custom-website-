@@ -179,6 +179,16 @@ header, nav, header img {
     -o-transition: all 1s; /* Opera */
 }
 
+.service-back.btn-view-all-show-cases.c-btn {
+    background: transparent;
+    position: absolute;
+    top: 121px;
+    color: white;
+    border-bottom: 1px solid white;
+    display: none;
+    transition: 1s;
+}
+
 .top-menu {
     position: absolute;
     top: 0;
@@ -295,7 +305,7 @@ header, nav, header img {
     position: absolute;
     top: 8%;
     left: 0;
-    transform: translate(0, -50%);
+    /*transform: translate(0, -50%);*/
     text-transform: uppercase;
     text-shadow: 0px 0px 84px rgba(0, 0, 0, 0.1);
     color: #ffffff;
@@ -812,9 +822,9 @@ header, nav, header img {
 }
 
 .team .view-all {
-    margin-top: 104px;
+    margin-top: 40px;
     background: white;
-    border-bottom: 1px solid rgb(232, 243, 247);
+    border-bottom: 2px solid rgb(232, 243, 247);
 }
 
 .team .members .member-info {
@@ -1359,6 +1369,7 @@ label[for="expected_salary"] {
 
 /*services start*/
 
+
 section.services {
     padding-bottom: 62px;
 }
@@ -1450,7 +1461,6 @@ section.services .service-item .more:hover {
 }
 
 a.btn-view-all-show-cases.c-btn {
-    /*color: #ffffff;*/
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -1466,17 +1476,22 @@ a.btn-view-all-show-cases.c-btn {
     width: 100%;
     height: 70px;
     border-top: 1px solid rgb(248, 248, 248);
-    background: white;
-    color: #3c566a;
+    /*color: #ffffff;*/
     box-shadow: none;
 }
+
+a.btn-view-all-show-cases.c-btn:not(.other-btn):not(.service-back) {
+    background: white;
+    color: #3c566a;
+}
+
 a.btn-view-all-show-cases.c-btn.sold-btn {
     margin-top: 0;
 }
 .back-btn a.btn-view-all-show-cases.c-btn.sold-btn {
     border-bottom: 1px solid rgb(248, 248, 248);
 }
-a.btn-view-all-show-cases.c-btn:hover {
+a.btn-view-all-show-cases.c-btn:not(.other-btn):hover {
     color: #ff6b2a !important;
     transition: 0.3s;
 }
@@ -1596,7 +1611,7 @@ section.some-of-show-cases .overlay h6 {
 }
 
 .single-service section.some-of-show-cases .word-background {
-    top: 16%;
+    top: 0%;
 }
 
 .service-details .icon-container {
@@ -1652,6 +1667,8 @@ section.some-of-show-cases .overlay h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 1.875;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .branding {
@@ -1662,6 +1679,7 @@ section.some-of-show-cases .overlay h6 {
     justify-content: center;
     height: 100vh;
     background-size: cover;
+    position: relative;
 }
 
 .branding .description {
@@ -1677,6 +1695,8 @@ section.some-of-show-cases .overlay h6 {
 
 .single-service section.info {
     position: relative;
+    border-left: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
 }
 
 .full-center-vertical-divider {
@@ -2393,10 +2413,11 @@ section.project-url .next-project-btn {
     /*letter-spacing: 1.4px;*/
 }
 
-section.project-url .next-project-btn.first-project
-{
+section.project-url .next-project-btn.first-project,
+section.project-url .next-project-btn.prev-arr.last-project {
     width: 100%;
     display: block;
+    float: none;
 }
 
 .prev-arr {
@@ -3708,6 +3729,14 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 768px) {
+
+
+
+    .single-service .service-back.btn-view-all-show-cases.c-btn {
+        display: block;
+    }
+
+
     .clients .item
     {
         opacity: 0.5;
@@ -3825,6 +3854,10 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 1200px) {
+    .small .service-back.btn-view-all-show-cases.c-btn{
+        top:76px;
+        transition: 1s;
+    }
 
     .team .members > div:nth-child(4n - 1) {
         /*left: 25% !important;*/
@@ -4302,7 +4335,9 @@ section.page-not-found #particles-js {
         margin-top: -54px;
     }
 
-
+    .word-background {
+        font-size: 10vw;
+    }
 
     /*Footer*/
     #footer .footer-menu a{
@@ -4425,6 +4460,10 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 991px) {
+
+    .service-back.btn-view-all-show-cases.c-btn{
+        top:178px;
+    }
 
     .address-ca .container-fluid .row div.col-lg-6:nth-child(2) {
         vertical-align: top;
@@ -4893,6 +4932,7 @@ section.page-not-found #particles-js {
 }
 
 @media (min-width: 767px) {
+
 
     .home .showyou .projects > div:hover img {
         opacity: 0.04;

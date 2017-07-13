@@ -363,7 +363,25 @@ jQuery(function ($) {
         }
     }
 
+    //scroll to services
+    if ($('.page-template-services').length && (window.location.hash).length ) {
 
+        if ($(window).width() > 1199) {
+            $('html,body').animate({
+                scrollTop: $('#all-services').offset().top - 30},2000);
+        }
+
+        else if ($(window).width() > 991 && $(window).width() < 1200) {
+            $('html,body').animate({
+                scrollTop: $('#all-services').offset().top - 75},1500);
+
+        }
+
+        else if ($(window).width() > 767 && $(window).width() < 992) {
+            $('html,body').animate({
+                scrollTop: $('#all-services').offset().top - 125},1500);
+        }
+    }
 
 
 });

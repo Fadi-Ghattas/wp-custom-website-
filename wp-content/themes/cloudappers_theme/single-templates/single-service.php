@@ -105,8 +105,9 @@ get_template_part('template-part', 'topnav');
 ?>
 
 <?php $services_page_header_image = (!empty($service['service_page_header_background_image']['url']) ? esc_url($service['service_page_header_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/new-services-background_1600x793_acf_cropped.png')); ?>
-	<section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
-		<div class="container">
+
+    <section class="ca-page-header parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $services_page_header_image; ?>">
+      <div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p class="title"><?php echo $service['service_page_header_title']; ?></p>
@@ -115,6 +116,9 @@ get_template_part('template-part', 'topnav');
 			</div>
 		</div>
 	</section>
+    <a href="<?php echo esc_url(home_url('services')); ?>#all" class="service-back btn-view-all-show-cases c-btn sold-btn">
+     BACK TO WHAT WE CAN DO
+    </a>
     <div class="main-wrapper">
 
 	<?php if (!empty($service['service_page_header_description'])){ ?>
@@ -138,37 +142,36 @@ get_template_part('template-part', 'topnav');
 						<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" />
 					</div>
 					<div class="vertical-line"></div>
-					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
+					<h1 class="title center"><?php echo $service['post_title']; ?></h1>
 					<div class="description">
 						<?php echo  $service['service_description']; ?>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="btn-view-all-show-cases c-btn sold-btn">
-			I'M SOLD. LET'S GET STARTED
-		</a>
+
 	</section>
 
 <?php
 if(!empty($service['service_page_branding_message'])) {
 $service_branding_header_image = (!empty($service['service_page_branding_background_image']['url']) ? esc_url($service['service_page_branding_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/service_page_branding_background_image.png')); ?>
-	<section class="branding" style="background-image: url(<?php echo $service_branding_header_image; ?>);">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="description">
-						<?php echo $service['service_page_branding_message']; ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="back-btn">
-		<a href="<?php echo esc_url(home_url('services')); ?>/" class="btn-view-all-show-cases c-btn sold-btn">
-			BACK TO SERVICES
-		</a>
-	</section>
+
+<!--    <section class="branding" style='background-image: url(-->
+    <?php //echo $service_branding_header_image; ?>
+<!--    );'>-->
+
+<!--/*		<div class="container">*/-->
+<!--/*			<div class="row">*/-->
+<!--/*				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">*/-->
+<!--/*					<div class="description">*/-->
+<!--/*						*/--><?php ////echo $service['service_page_branding_message']; ?>
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+
 <?php } ?>
 
 <?php if(!empty($service['service_infos'])) { ?>
@@ -201,19 +204,26 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 		</div>
 	</section>
 <?php } ?>
-
+    <a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="other-btn btn-view-all-show-cases c-btn sold-btn">
+        I'M SOLD. LET'S GET STARTED
+    </a>
+    <section class="back-btn">
+        <a href="<?php echo esc_url(home_url('services')); ?>#all" class="btn-view-all-show-cases c-btn sold-btn">
+            BACK TO WHAT WE CAN DO
+        </a>
+    </section>
 
 <?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
 <?php if(!empty($service['service_related_services'])) { ?>
 <?php //$services_page_show_cases_background_image = (esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
 	<section class="some-of-show-cases services">
-		<span class="word-background">show you</span>
+		<span class="word-background">WHAT WE CAN DO</span>
 		<div class="container">
 			<div class="row related-projects">
 
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <!--				<h1>--><?php //echo $pageOptions['services_page_show_cases_title']; ?><!--</h1>-->
-					<h1>OTHER SERVICES</h1>
+					<h1>OTHER THINGS WE CAN DO</h1>
 				</div>
 
 				<?php foreach ($service['service_related_services'] as $service) {
