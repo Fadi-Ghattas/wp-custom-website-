@@ -6,10 +6,12 @@
  * Time: 1:14 PM
  * Template Name: AboutPage
  */
-$homePagePost = get_page_by_path('home', OBJECT, 'page');
-$homePageOptions = acf_get_group_fields($homePagePost->ID);
+$homePageID = get_option( 'page_on_front' );
+$homePageOptions = acf_get_group_fields($homePageID);
+
 if (intval($homePageOptions['home_page_team_how_many_to_show']))
     $team = Team::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_team_how_many_to_show'])]);
+
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
 

@@ -7,8 +7,8 @@
  * Template Name: HomePage
  */
 
-$homePagePost = get_page_by_path('home', OBJECT, 'page');
-$pageOptions = acf_get_group_fields($homePagePost->ID);
+$homePageID = get_option( 'page_on_front' );
+$pageOptions = acf_get_group_fields($homePageID);
 
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
