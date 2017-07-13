@@ -10,11 +10,11 @@ class PodsModel
 {
 	public static function search($podType, $fields = [], $filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => ''])
 	{
-		return queries::getAllPods($podType, $fields, $filters);
+		return get_pod_data($podType, $fields, $filters);
 	}
 
-	public static function findOne($podName, $podID, $pod_fields)
+	public static function findOne($podName, $podID, $podFields)
 	{
-		return  queries::getSinglePod($podName, $podID, $pod_fields);
+		return get_single_pod_data($podName, $podID, $podFields);
 	}
 }

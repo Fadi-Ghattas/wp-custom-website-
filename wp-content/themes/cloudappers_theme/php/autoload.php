@@ -15,7 +15,6 @@ require_once ("$dirName/pods.php");
 require_once ("$dirName/ajax.php");
 require_once ("$dirName/hooks.php");
 require_once ("$dirName/queue.php");
-require_once("$dirName/queries.php");
 
 require_once("$dirName/models/PodsModel.php");
 require_once("$dirName/views/ViewTemplate.php");
