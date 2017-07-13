@@ -82,6 +82,66 @@ get_template_part('template-part', 'topnav');
     </section>
 <?php } ?>
 
+<?php if (!empty($team) && intval($homePageOptions['home_page_team_how_many_to_show'])) { ?>
+    <div class="home about">
+        <section class="team">
+            <div class="container">
+                <div class="row title">
+                    <div class="col-lg-12">
+                        <h1><?php echo $homePageOptions['home_page_team_title']; ?></h1>
+                        <p><?php echo $homePageOptions['home_page_team_subtitle']; ?></p>
+                    </div>
+                </div>
+                <div class="row members">
+                    <?php
+                    $hoverCount = 0;
+                    foreach ($team as $teamMember) {
+                        $hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
+                        ?>
+                        <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <section class="<?php echo $hover[$hoverCount]; ?>">
+                                <a href="<?php echo esc_url(home_url('team')); ?>">
+                                    <figure>
+                                        <!--<div class="lazy-loader-effect"></div>-->
+                                        <div class="loader">
+                                            <div class="square"></div>
+                                            <div class="square"></div>
+                                            <div class="square last"></div>
+                                            <div class="square clear"></div>
+                                            <div class="square"></div>
+                                            <div class="square last"></div>
+                                            <div class="square clear"></div>
+                                            <div class="square "></div>
+                                        </div>
+                                        <img class="img-lazy lazy-not-loaded lazy-loader"
+                                             data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"
+                                             alt="<?php echo $teamMember['post_title']; ?>"/>
+                                    </figure>
+                                </a>
+                                <div class="overlay member-info">
+                                    <a href="<?php echo esc_url(home_url('team')); ?>">
+                                        <h5><?php echo $teamMember['post_title']; ?></h5>
+                                        <h6><?php echo $teamMember['team_member_title']; ?></h6>
+                                    </a>
+                                </div>
+
+                            </section>
+                        </div>
+                        <?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
+                    } ?>
+                </div>
+                <div class="row join">
+                    <div class="col-lg-12">
+                        <h2>I want to create amazing things with CloudAppers!</h2>
+                        <a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">MEET THE WHOLE FAMILY</a></div>
+        </section>
+    </div>
+<?php } ?>
+
 <?php if (!empty($timesLines)) { ?>
     <section class="time">
         <h6><?php echo $pageOptions['let_us_page_time_line_title']; ?></h6>
@@ -135,65 +195,7 @@ get_template_part('template-part', 'topnav');
         <div class="view-all"><a href="<?php echo home_url('clients'); ?>">VIEW ALL CLIENTS</a></div>
     </section>
 <?php } ?>
-<?php if (!empty($team) && intval($homePageOptions['home_page_team_how_many_to_show'])) { ?>
-    <div class="home about">
-    <section class="team">
-        <div class="container">
-            <div class="row title">
-                <div class="col-lg-12">
-                    <h1><?php echo $homePageOptions['home_page_team_title']; ?></h1>
-                    <p><?php echo $homePageOptions['home_page_team_subtitle']; ?></p>
-                </div>
-            </div>
-            <div class="row members">
-                <?php
-                $hoverCount = 0;
-                foreach ($team as $teamMember) {
-                    $hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
-                    ?>
-                    <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <section class="<?php echo $hover[$hoverCount]; ?>">
-                            <a href="<?php echo esc_url(home_url('team')); ?>">
-                                <figure>
-                                    <!--<div class="lazy-loader-effect"></div>-->
-                                    <div class="loader">
-                                        <div class="square"></div>
-                                        <div class="square"></div>
-                                        <div class="square last"></div>
-                                        <div class="square clear"></div>
-                                        <div class="square"></div>
-                                        <div class="square last"></div>
-                                        <div class="square clear"></div>
-                                        <div class="square "></div>
-                                    </div>
-                                    <img class="img-lazy lazy-not-loaded lazy-loader"
-                                         data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"
-                                         alt="<?php echo $teamMember['post_title']; ?>"/>
-                                </figure>
-                            </a>
-                            <div class="overlay member-info">
-                                <a href="<?php echo esc_url(home_url('team')); ?>">
-                                    <h5><?php echo $teamMember['post_title']; ?></h5>
-                                    <h6><?php echo $teamMember['team_member_title']; ?></h6>
-                                </a>
-                            </div>
 
-                        </section>
-                    </div>
-                    <?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
-                } ?>
-            </div>
-            <div class="row join">
-                <div class="col-lg-12">
-                    <h2>I want to create amazing things with CloudAppers!</h2>
-                    <a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>
-                </div>
-            </div>
-        </div>
-        <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">MEET THE WHOLE FAMILY</a></div>
-    </section>
-    </div>
-<?php } ?>
 
 <?php if (!empty($pageOptions['let_us_page_process_image'])) { ?>
     <section class="process">
