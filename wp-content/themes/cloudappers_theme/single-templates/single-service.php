@@ -142,7 +142,7 @@ get_template_part('template-part', 'topnav');
 						<img class="icon" src="<?php echo esc_url($service['service_icon']['url']); ?>" />
 					</div>
 					<div class="vertical-line"></div>
-					<h1 class="title center"><?php echo $service['post_title']; ?>.</h1>
+					<h1 class="title center"><?php echo $service['post_title']; ?></h1>
 					<div class="description">
 						<?php echo  $service['service_description']; ?>
 					</div>
