@@ -4337,7 +4337,7 @@ section.page-not-found #particles-js {
 /*sm*/
 @media (min-width: 768px) and (max-width: 992px) {
     /*.container{background: yellow; z-index: 5}*/
-    section.services .service-item {
+    section.some-of-show-cases.services .service-item {
         text-align: center;
         text-align: -moz-center;
         text-align: -webkit-center;
@@ -4608,7 +4608,7 @@ section.page-not-found #particles-js {
     }
 
     /*Services*/
-    section.services .service-item {
+    section.some-of-show-cases.services .service-item {
         text-align: center;
         text-align: -moz-center;
         text-align: -webkit-center;
