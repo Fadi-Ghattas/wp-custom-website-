@@ -3216,35 +3216,6 @@ form#GetInTouchForm button.c-btn {
     align-items: center;
 }
 
-.page-template-contact-us .ca-page-banner p {
-    font-size: 27px;
-    color: rgb(254, 254, 254);
-    font-weight: 600;
-    /*text-transform: uppercase;*/
-    line-height: 38px;
-    text-align: center;
-    /*letter-spacing: 2px;*/
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 90px;
-}
-
 .page-template-contact-us .join .row:not(.title):not(.table-title) {
     border-bottom: 1px solid #f6f4f4;
     padding-top: 56px;
