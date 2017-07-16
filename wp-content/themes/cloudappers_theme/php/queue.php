@@ -36,8 +36,8 @@ function project_scripts()
 	];
 
 	if (is_home() || in_array(basename(get_page_template()), ['home.php','contact-us.php'])) {
-		$homePagePost = get_page_by_path('home', OBJECT, 'page');
-		$pageOptions = acf_get_group_fields($homePagePost->ID);
+		$homePageID = get_option( 'page_on_front');
+		$pageOptions = acf_get_group_fields($homePageID);
 		$script_const['map_pins_url'] = esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']);
 		$script_const['pin_latitude'] = $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'];
 		$script_const['pin_altitude'] = $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'];

@@ -140,7 +140,7 @@ function add_defer_attribute($tag, $handle)
 	return $tag;
 }
 
-add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
+//add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 
 function add_async_attribute($tag, $handle)
 {
@@ -155,7 +155,7 @@ function add_async_attribute($tag, $handle)
 	return $tag;
 }
 
-add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+//add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
 
 // define the custom replacement callback
 function get_custom_sep() {

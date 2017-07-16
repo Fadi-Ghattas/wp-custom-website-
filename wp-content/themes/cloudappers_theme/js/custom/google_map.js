@@ -1,8 +1,9 @@
 jQuery(function ($)
 {
-	var map1, map2;
+
 	function initMap() {
 
+		var map1, map2;
 
 		var customMapType = new google.maps.StyledMapType([
 			{
