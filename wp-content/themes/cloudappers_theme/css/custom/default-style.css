@@ -1469,7 +1469,7 @@ a.btn-view-all-show-cases.c-btn {
     text-transform: uppercase;
     display: block;
     padding: 0px;
-    margin-top: 59px;
+    /*margin-top: 59px;*/
     height: 100%;
     width: 100%;
     border-radius: 0px;
@@ -5841,10 +5841,16 @@ section.page-not-found #particles-js {
 
     .home .showyou .projects a > div h5 {
         font-size: 6.5vw;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
     }
 
     .home .showyou .projects a > div h6 {
         font-size: 4.5vw;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
     }
 
     .home .showyou .container {
@@ -6163,6 +6169,7 @@ section.page-not-found #particles-js {
         text-align: -webkit-center;
         text-align: -moz-center;
         text-align: center;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     section.some-of-show-cases .show-case-item .mob h6 {
@@ -6173,6 +6180,7 @@ section.page-not-found #particles-js {
         text-align: -webkit-center;
         text-align: -moz-center;
         text-align: center;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     /*show you page end*/
