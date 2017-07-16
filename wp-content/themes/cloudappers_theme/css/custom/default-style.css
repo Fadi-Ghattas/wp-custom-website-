@@ -757,7 +757,7 @@ header, nav, header img {
     background: url("../../img/team.jpg") no-repeat center;
     background-size: cover;
     padding-top: 63px;
-    /*padding-bottom: 104px;*/
+    padding-bottom: 84px;
 }
 
 .home .team .title h1 {
@@ -863,7 +863,7 @@ header, nav, header img {
 .home .team .join a {
     border-radius: 4px;
     box-shadow: 0px 16px 19.74px 1.26px rgba(0, 0, 0, 0.1);
-    width: 153px;
+    /*width: 153px;*/
     height: 47px;
     line-height: 47px;
     font-size: 14px;
@@ -871,8 +871,9 @@ header, nav, header img {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    display: block;
-    margin: 40px auto 0;
+    display: inline-block;
+    margin: 68px 15px 0;
+    padding: 0 15px ;
 }
 
 .home .team .join h2 {
@@ -6360,6 +6361,7 @@ section.page-not-found #particles-js {
         /* line-height: 4.03vw; */
         /* padding: 3vw 15px; */
         height: 13vw;
+        margin: 8vw 15px 0;
     }
 
     .home .team .join a > span {
@@ -6429,6 +6431,7 @@ section.page-not-found #particles-js {
         background: url(../../img/team.jpg) no-repeat center -50vh, url(../../img/team.jpg) no-repeat center;
         background-size: auto, cover;
         padding-top: 63px;
+        padding-bottom: 10vw;
     }
 
     .home .team .join h2 {

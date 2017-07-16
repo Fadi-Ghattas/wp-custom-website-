@@ -133,11 +133,12 @@ get_template_part('template-part', 'topnav');
                 <div class="row join">
                     <div class="col-lg-12">
                         <h2>I want to create amazing things with CloudAppers!</h2>
-                        <a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>
+                        <a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>JOIN OUR FAMILY</span></span></a>
+                        <a href="<?php echo esc_url(home_url('team')); ?>" class="c-rbtn"><span><span>MEET OUR FAMILY</span></span></a>
                     </div>
                 </div>
             </div>
-            <div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">MEET THE WHOLE FAMILY</a></div>
+<!--            <div class="view-all"><a href="--><?php //echo esc_url(home_url('team')); ?><!--">MEET THE WHOLE FAMILY</a></div>-->
         </section>
     </div>
 <?php } ?>
