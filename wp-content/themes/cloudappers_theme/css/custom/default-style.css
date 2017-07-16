@@ -6176,6 +6176,15 @@ section.page-not-found #particles-js {
         line-height: 30px;
     }
 
+
+    .page-template-contact-us .join .desc p,
+    .page-template-contact-us .join .position,
+    .page-template-contact-us .join .desc
+    {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+    }
     .contact .form label {
         font-size: 4.8vw;
     }
@@ -6197,6 +6206,8 @@ section.page-not-found #particles-js {
         font-size: 3.8vw;
         /*letter-spacing: 0.38vw;*/
         text-align: center;
+        line-height: 30px;
+        margin-bottom: 20px;
     }
 
     .page-template-contact-us .contact .form-group,
@@ -6266,7 +6277,7 @@ section.page-not-found #particles-js {
 
     .page-template-contact-us .join .desc {
         /*padding-top: 74px;*/
-        padding-top: 9.8vw;
+        padding-top: 3vw;
     }
 
     .page-template-contact-us .join .apply a {
