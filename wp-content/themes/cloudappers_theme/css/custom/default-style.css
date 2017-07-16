@@ -757,7 +757,7 @@ header, nav, header img {
     background: url("../../img/team.jpg") no-repeat center;
     background-size: cover;
     padding-top: 63px;
-    padding-bottom: 84px;
+    padding-bottom: 77px;
 }
 
 .home .team .title h1 {
@@ -2764,7 +2764,6 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .clients {
     background: url("../../img/about-clients.jpg") no-repeat center 7%;
     background-size: cover;
-    border-bottom: 1px solid #fbfbfb;
 }
 
 .page-template-about .clients h6 {
@@ -5224,6 +5223,7 @@ section.page-not-found #particles-js {
         background-size: 90%;
         background: none;
         background-color: #fbfbfb;
+        border-bottom: 1px solid rgb(239, 239, 239);
     }
 
     .page-template-about .clients h6 {
