@@ -2723,14 +2723,14 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 }
 
-.page-template-about .ouraim {
-    /*background-color: rgb(175, 175, 175);*/
-    padding: 39px 0 47px;
-    background-color: #81c0ee;
-    position: relative;
-}
+/*.page-template-about .ouraim {*/
+    /*!*background-color: rgb(175, 175, 175);*!*/
+    /*padding: 39px 0 47px;*/
+    /*background-color: #81c0ee;*/
+    /*position: relative;*/
+/*}*/
 
-.page-template-about .ouraim h6 {
+.ca-page-banner h6 {
     font-size: 16px;
     color: rgb(218, 218, 218);
     font-weight: bold;
@@ -3192,7 +3192,7 @@ form#GetInTouchForm button.c-btn {
 }
 
 /***** Contact us page *****/
-.page-template-contact-us .blue-desc {
+.page-template-contact-us .ca-page-banner {
     background-color: #4ec1ea;
     position: relative;
     padding: 30px 0 30px 0;
@@ -3216,7 +3216,7 @@ form#GetInTouchForm button.c-btn {
     align-items: center;
 }
 
-.page-template-contact-us .blue-desc p {
+.page-template-contact-us .ca-page-banner p {
     font-size: 27px;
     color: rgb(254, 254, 254);
     font-weight: 600;
@@ -6200,9 +6200,9 @@ section.page-not-found #particles-js {
 
     /*show you page end*/
     /*Contact*/
-    .page-template-contact-us .blue-desc p {
-        /*font-size: 32px;*/
-        font-size: 4.2vw
+    section.ca-page-banner p {
+        font-size: 6vw;
+        line-height: 30px;
     }
 
     .contact .form label {
