@@ -207,11 +207,11 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
     <a href="<?php echo esc_url(home_url('get-a-quote')); ?>" class="other-btn btn-view-all-show-cases c-btn sold-btn">
         I'M SOLD. LET'S GET STARTED
     </a>
-    <section class="back-btn">
-        <a href="<?php echo esc_url(home_url('services')); ?>#all" class="btn-view-all-show-cases c-btn sold-btn">
-            BACK TO WHAT WE CAN DO
-        </a>
-    </section>
+<!--    <section class="back-btn">-->
+<!--        <a href="--><?php //echo esc_url(home_url('services')); ?><!--#all" class="btn-view-all-show-cases c-btn sold-btn">-->
+<!--            BACK TO WHAT WE CAN DO-->
+<!--        </a>-->
+<!--    </section>-->
 
 <?php //$services_page_show_cases_background_image = (!empty($pageOptions['services_page_show_cases_background_image']['url']) ? esc_url($pageOptions['services_page_show_cases_background_image']['url']) : esc_url(get_stylesheet_directory_uri() . '/img/services-show-you-background-section.jpg')); ?>
 <?php if(!empty($service['service_related_services'])) { ?>
