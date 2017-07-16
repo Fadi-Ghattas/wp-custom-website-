@@ -6160,6 +6160,9 @@ section.page-not-found #particles-js {
         font-family: 'Raleway', sans-serif;
         font-size: 6.4vw;
         font-weight: 300;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
     }
 
     section.some-of-show-cases .show-case-item .mob h6 {
@@ -6167,15 +6170,17 @@ section.page-not-found #particles-js {
         font-family: 'Raleway', sans-serif;
         font-size: 4.2vw;
         font-weight: 500;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
     }
 
     /*show you page end*/
     /*Contact*/
     section.ca-page-banner p {
         font-size: 6vw;
-        line-height: 30px;
+        line-height: 8vw;
     }
-
 
     .page-template-contact-us .join .desc p,
     .page-template-contact-us .join .position,
@@ -6206,8 +6211,8 @@ section.page-not-found #particles-js {
         font-size: 3.8vw;
         /*letter-spacing: 0.38vw;*/
         text-align: center;
-        line-height: 30px;
-        margin-bottom: 20px;
+        line-height: 8vw;
+        margin-bottom: 2vw;
     }
 
     .page-template-contact-us .contact .form-group,
