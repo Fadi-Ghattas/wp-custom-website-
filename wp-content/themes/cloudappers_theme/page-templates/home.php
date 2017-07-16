@@ -121,6 +121,26 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</section>
 
+    <section class="what-we-do" id="services">
+        <div class="container">
+            <div class="row col-eq-height">
+                <?php foreach ($services as $service) { ?>
+                    <div class="app col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
+                            <div class="liner-effect"></div>
+                            <img src="<?php echo esc_url($service['service_icon']['url']); ?>"/>
+                            <h1><?php echo $service['service_card_title']; ?></h1>
+                            <div class="description"><?php echo $service['service_card_description']; ?></div>
+                            <img class="more"
+                                 src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
+                        </a>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="view-all"><a href="<?php echo esc_url(home_url('services')); ?>">VIEW ALL SERVICES</a></div>
+    </section>
+
 <?php if (!empty($clients) && intval($pageOptions['home_page_clients_how_many_to_show'])) { ?>
 	<section class="clients">
 		<div class="container">
@@ -140,25 +160,7 @@ get_template_part('template-part', 'topnav');
 	</section>
 <?php } ?>
 
-	<section class="what-we-do" id="services">
-		<div class="container">
-			<div class="row col-eq-height">
-				<?php foreach ($services as $service) { ?>
-					<div class="app col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<a href="<?php echo esc_url(get_permalink($service['id'])); ?>">
-							<div class="liner-effect"></div>
-							<img src="<?php echo esc_url($service['service_icon']['url']); ?>"/>
-							<h1><?php echo $service['service_card_title']; ?></h1>
-							<div class="description"><?php echo $service['service_card_description']; ?></div>
-							<img class="more"
-								 src="<?php echo get_stylesheet_directory_uri() . '/img/more-grey-icon@3x.svg' ?>"/>
-						</a>
-					</div>
-				<?php } ?>
-			</div>
-		</div>
-		<div class="view-all"><a href="<?php echo esc_url(home_url('services')); ?>">VIEW ALL SERVICES</a></div>
-	</section>
+
 
 	<section class="showyou">
 		<div class="bg-showyou hidden-lg hidden-md"></div>
@@ -238,64 +240,65 @@ get_template_part('template-part', 'topnav');
 		</div>
 	</section>
 
-<?php if (!empty($team) && intval($pageOptions['home_page_team_how_many_to_show'])) { ?>
-	<section class="team">
-		<div class="container">
-			<div class="row title">
-				<div class="col-lg-12">
-					<h1><?php echo $pageOptions['home_page_team_title']; ?></h1>
-					<p><?php echo $pageOptions['home_page_team_subtitle']; ?></p>
-				</div>
-			</div>
-			<div class="row members">
-				<?php
-				$hoverCount = 0;
-				foreach ($team as $teamMember) {
-					$hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
-					?>
-					<div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
-						<section class="<?php echo $hover[$hoverCount]; ?>">
-							<a href="<?php echo esc_url(home_url('team')); ?>">
-								<figure>
-									<!--<div class="lazy-loader-effect"></div>-->
-									<div class="loader">
-										<div class="square"></div>
-										<div class="square"></div>
-										<div class="square last"></div>
-										<div class="square clear"></div>
-										<div class="square"></div>
-										<div class="square last"></div>
-										<div class="square clear"></div>
-										<div class="square "></div>
-									</div>
-									<img class="img-lazy lazy-not-loaded lazy-loader"
-										 data-src="<?php echo esc_url($teamMember['team_member_profile_image']['url']); ?>"
-										 alt="<?php echo $teamMember['post_title']; ?>"/>
-								</figure>
-							</a>
-							<div class="overlay member-info">
-								<a href="<?php echo esc_url(home_url('team')); ?>">
-									<h5><?php echo $teamMember['post_title']; ?></h5>
-									<h6><?php echo $teamMember['team_member_title']; ?></h6>
-								</a>
-							</div>
+<?php //if (!empty($team) && intval($pageOptions['home_page_team_how_many_to_show'])) { ?>
+<!--	<section class="team">-->
+<!--		<div class="container">-->
+<!--			<div class="row title">-->
+<!--				<div class="col-lg-12">-->
+<!--					<h1>--><?php //echo $pageOptions['home_page_team_title']; ?><!--</h1>-->
+<!--					<p>--><?php //echo $pageOptions['home_page_team_subtitle']; ?><!--</p>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="row members">-->
+<!--				--><?php
+//				$hoverCount = 0;
+//				foreach ($team as $teamMember) {
+//					$hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
+//					?>
+<!--					<div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">-->
+<!--						<section class="--><?php //echo $hover[$hoverCount]; ?><!--">-->
+<!--							<a href="--><?php //echo esc_url(home_url('team')); ?><!--">-->
+<!--								<figure>-->
+<!--									<!--<div class="lazy-loader-effect"></div>-->
+<!--									<div class="loader">-->
+<!--										<div class="square"></div>-->
+<!--										<div class="square"></div>-->
+<!--										<div class="square last"></div>-->
+<!--										<div class="square clear"></div>-->
+<!--										<div class="square"></div>-->
+<!--										<div class="square last"></div>-->
+<!--										<div class="square clear"></div>-->
+<!--										<div class="square "></div>-->
+<!--									</div>-->
+<!--									<img class="img-lazy lazy-not-loaded lazy-loader"-->
+<!--										 data-src="--><?php //echo esc_url($teamMember['team_member_profile_image']['url']); ?><!--"-->
+<!--										 alt="--><?php //echo $teamMember['post_title']; ?><!--"/>-->
+<!--								</figure>-->
+<!--							</a>-->
+<!--							<div class="overlay member-info">-->
+<!--								<a href="--><?php //echo esc_url(home_url('team')); ?><!--">-->
+<!--									<h5>--><?php //echo $teamMember['post_title']; ?><!--</h5>-->
+<!--									<h6>--><?php //echo $teamMember['team_member_title']; ?><!--</h6>-->
+<!--								</a>-->
+<!--							</div>-->
+<!---->
+<!--						</section>-->
+<!--					</div>-->
+<!--					--><?php //($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
+//				} ?>
+<!--			</div>-->
+<!--			<div class="row join">-->
+<!--				<div class="col-lg-12">-->
+<!--					<h2>I want to create amazing things with CloudAppers!</h2>-->
+<!--					<a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div class="view-all"><a href="--><?php //echo esc_url(home_url('team')); ?><!--">MEET THE WHOLE FAMILY</a></div>-->
+<!--	</section>-->
 
-						</section>
-					</div>
-					<?php ($hoverCount == 2 ? $hoverCount = 0 : $hoverCount++);
-				} ?>
-			</div>
-			<div class="row join">
-				<div class="col-lg-12">
-					<h2>I want to create amazing things with CloudAppers!</h2>
-					<a href="javascript:void(0)" id="take-me-in" class="c-rbtn"><span><span>TAKE ME IN</span></span></a>
-				</div>
-			</div>
-		</div>
-		<div class="view-all"><a href="<?php echo esc_url(home_url('team')); ?>">MEET THE WHOLE FAMILY</a></div>
-	</section>
-
-<?php } ?>
+<?php
+//} ?>
 
 	<section class="contact col-eq-height">
 		<div class="map col-lg-6">
