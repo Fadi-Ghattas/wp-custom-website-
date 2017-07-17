@@ -40,10 +40,10 @@ $r = basename(get_page_template());
                     </div>
                     <div class="social">
                         <ul>
-                            <li><a target="_blank" href="https://twitter.com/cloudappers">Twitter</a></li>
-                            <li><a target="_blank" href="https://www.facebook.com/CloudAppers/">Facebook</a></li>
-                            <li><a target="_blank" href="https://www.instagram.com/cloudappers/">Instagram</a></li>
-                            <li><a target="_blank" href="https://www.behance.net/cloudappers/">Behance</a></li>
+                            <li><a target="_blank" href="<?php echo esc_url($setting['twitter_link']); ?>">Twitter</a></li>
+                            <li><a target="_blank" href="<?php echo esc_url($setting['facebook_link']); ?>">Facebook</a></li>
+                            <li><a target="_blank" href="<?php echo esc_url($setting['instagram_link']); ?>">Instagram</a></li>
+                            <li><a target="_blank" href="<?php echo esc_url($setting['behance_link']); ?>">Behance</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,9 +56,9 @@ $r = basename(get_page_template());
                             <p>© 2008-2017 CloudAppers. All Rights Reserved</p>
                         </div>
                         <div class="social">
-                            <a class="facebook" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="instagram" href="#"></a>
+                            <a class="facebook" href="<?php echo esc_url($setting['facebook_link']); ?>"></a>
+                            <a class="twitter" href="<?php echo esc_url($setting['twitter_link']); ?>"></a>
+                            <a class="instagram" href="<?php echo esc_url($setting['instagram_link']); ?>"></a>
                         </div>
                     </div>
                 </div>

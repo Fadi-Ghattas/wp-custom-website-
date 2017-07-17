@@ -1,4 +1,10 @@
-<?php if (has_nav_menu('main_menu')) : ?>
+
+<?php
+
+if (has_nav_menu('main_menu')) :
+    $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
+    $setting = acf_get_group_fields($setting->ID);
+    ?>
 
     <section class="top-menu">
         <div class="top-header">
@@ -47,9 +53,9 @@
                                     <p>© 2008-<?php echo date('Y'); ?> CloudAppers. All Rights Reserved</p>
                                 </div>
                                 <div class="social">
-                                    <a class="facebook" href="#"></a>
-                                    <a class="twitter" href="#"></a>
-                                    <a class="instagram" href="#"></a>
+                                    <a class="facebook" href="<?php echo esc_url($setting['facebook_link']); ?>"></a>
+                                    <a class="twitter" href="<?php echo esc_url($setting['twitter_link']); ?>"></a>
+                                    <a class="instagram" href="<?php echo esc_url($setting['instagram_link']); ?>"></a>
                                 </div>
                             </div>
 
