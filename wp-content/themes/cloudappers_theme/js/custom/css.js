@@ -231,7 +231,7 @@ jQuery(function ($) {
             });
         });
 
-        $('ul.filters li').on('click focus hover active', function (event) {
+        $('ul.filters li').on('click focus hover active touchstart', function (event) {
             // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
@@ -239,7 +239,7 @@ jQuery(function ($) {
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
 
-        $('ul.filters li a').on('click focus hover active', function (event) {
+        $('ul.filters li a').on('click focus hover active touchstart', function (event) {
             // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
@@ -263,16 +263,16 @@ jQuery(function ($) {
             }
         });
 
-        $('ul.filters li').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
+        $('ul.filters li').on('click focus hover active', function (event) {
+            // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
 
-        $('ul.filters li a').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
+        $('ul.filters li a').on('click focus hover active', function (event) {
+            // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
