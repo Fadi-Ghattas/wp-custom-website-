@@ -5400,7 +5400,7 @@ section.page-not-found #particles-js {
         font-weight: 300;
         height: 8.73vw;
         margin-top: -2vw;
-        margin-bottom: 2vw;
+        /*margin-bottom: 2vw;*/
     }
 
     .home .showcase p:last-child {
