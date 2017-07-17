@@ -24,7 +24,7 @@ function project_scripts()
 //	if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
 	wp_enqueue_style('bootstrap-fileinput-css', get_template_directory_uri() . '/css/bootstrap/bootstrap-fileinput/css/fileinput.min.css', [], '1');
 //	}
-	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '5.17');
+	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '5.30');
 
 	//JQUERY
 	$script_const = [
@@ -36,8 +36,8 @@ function project_scripts()
 	];
 
 	if (is_home() || in_array(basename(get_page_template()), ['home.php','contact-us.php'])) {
-		$homePagePost = get_page_by_path('home', OBJECT, 'page');
-		$pageOptions = acf_get_group_fields($homePagePost->ID);
+		$homePageID = get_option( 'page_on_front');
+		$pageOptions = acf_get_group_fields($homePageID);
 		$script_const['map_pins_url'] = esc_url($pageOptions['home_page_map_pins'][0]['home_page_map_pin_image']['url']);
 		$script_const['pin_latitude'] = $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'];
 		$script_const['pin_altitude'] = $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'];
@@ -70,8 +70,8 @@ function project_scripts()
 //	}
 
 	//wp_enqueue_script('helpers_js', get_template_directory_uri() . '/js/custom/helpers.js', ['jquery-min'], '1.0', FALSE);
-	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '2.7', FALSE);
-	wp_enqueue_script('ajax_js', get_template_directory_uri() . '/js/custom/ajax.js', ['jquery-min'], '1.50', TRUE);
+	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '2.10', FALSE);
+	wp_enqueue_script('ajax_js', get_template_directory_uri() . '/js/custom/ajax.js', ['jquery-min'], '1.52', TRUE);
 	wp_enqueue_script('theme_js', get_template_directory_uri() . '/js/custom/theme.js', ['jquery-min'], '1.22', TRUE);
 
 	wp_localize_script('theme_js', 'script_const', $script_const);

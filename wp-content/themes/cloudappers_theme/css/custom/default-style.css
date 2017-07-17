@@ -1227,9 +1227,9 @@ body.home.blog.modal-open {
     color: #000;
 }
 
-#JobModal label.focus {
-    font-size: 16px;
-}
+/*#JobModal label.focus {*/
+    /*font-size: 16px;*/
+/*}*/
 
 #JobModal .form-group:nth-child(11) label {
     /* transform: translateY(44px); */
@@ -1469,7 +1469,7 @@ a.btn-view-all-show-cases.c-btn {
     text-transform: uppercase;
     display: block;
     padding: 0px;
-    margin-top: 59px;
+    /*margin-top: 59px;*/
     height: 100%;
     width: 100%;
     border-radius: 0px;
@@ -2723,14 +2723,14 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 }
 
-.page-template-about .ouraim {
-    /*background-color: rgb(175, 175, 175);*/
-    padding: 39px 0 47px;
-    background-color: #81c0ee;
-    position: relative;
-}
+/*.page-template-about .ouraim {*/
+    /*!*background-color: rgb(175, 175, 175);*!*/
+    /*padding: 39px 0 47px;*/
+    /*background-color: #81c0ee;*/
+    /*position: relative;*/
+/*}*/
 
-.page-template-about .ouraim h6 {
+.ca-page-banner h6 {
     font-size: 16px;
     color: rgb(218, 218, 218);
     font-weight: bold;
@@ -3193,7 +3193,7 @@ form#GetInTouchForm button.c-btn {
 }
 
 /***** Contact us page *****/
-.page-template-contact-us .blue-desc {
+.page-template-contact-us .ca-page-banner {
     background-color: #4ec1ea;
     position: relative;
     padding: 30px 0 30px 0;
@@ -3215,35 +3215,6 @@ form#GetInTouchForm button.c-btn {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.page-template-contact-us .blue-desc p {
-    font-size: 27px;
-    color: rgb(254, 254, 254);
-    font-weight: 600;
-    /*text-transform: uppercase;*/
-    line-height: 38px;
-    text-align: center;
-    /*letter-spacing: 2px;*/
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 90px;
 }
 
 .page-template-contact-us .join .row:not(.title):not(.table-title) {
@@ -4367,7 +4338,7 @@ section.page-not-found #particles-js {
 /*sm*/
 @media (min-width: 768px) and (max-width: 992px) {
     /*.container{background: yellow; z-index: 5}*/
-    section.services .service-item {
+    section.some-of-show-cases.services .service-item {
         text-align: center;
         text-align: -moz-center;
         text-align: -webkit-center;
@@ -4639,7 +4610,7 @@ section.page-not-found #particles-js {
     }
 
     /*Services*/
-    section.services .service-item {
+    section.some-of-show-cases.services .service-item {
         text-align: center;
         text-align: -moz-center;
         text-align: -webkit-center;
@@ -5877,10 +5848,16 @@ section.page-not-found #particles-js {
 
     .home .showyou .projects a > div h5 {
         font-size: 6.5vw;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
     }
 
     .home .showyou .projects a > div h6 {
         font-size: 4.5vw;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
     }
 
     .home .showyou .container {
@@ -6210,6 +6187,10 @@ section.page-not-found #particles-js {
         font-family: 'Raleway', sans-serif;
         font-size: 6.4vw;
         font-weight: 300;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     section.some-of-show-cases .show-case-item .mob h6 {
@@ -6217,15 +6198,27 @@ section.page-not-found #particles-js {
         font-family: 'Raleway', sans-serif;
         font-size: 4.2vw;
         font-weight: 500;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     /*show you page end*/
     /*Contact*/
-    .page-template-contact-us .blue-desc p {
-        /*font-size: 32px;*/
-        font-size: 4.2vw
+    section.ca-page-banner p {
+        font-size: 6vw;
+        line-height: 8vw;
     }
 
+    .page-template-contact-us .join .desc p,
+    .page-template-contact-us .join .position,
+    .page-template-contact-us .join .desc
+    {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+    }
     .contact .form label {
         font-size: 4.8vw;
     }
@@ -6247,6 +6240,8 @@ section.page-not-found #particles-js {
         font-size: 3.8vw;
         /*letter-spacing: 0.38vw;*/
         text-align: center;
+        line-height: 8vw;
+        margin-bottom: 2vw;
     }
 
     .page-template-contact-us .contact .form-group,
@@ -6316,7 +6311,7 @@ section.page-not-found #particles-js {
 
     .page-template-contact-us .join .desc {
         /*padding-top: 74px;*/
-        padding-top: 9.8vw;
+        padding-top: 3vw;
     }
 
     .page-template-contact-us .join .apply a {

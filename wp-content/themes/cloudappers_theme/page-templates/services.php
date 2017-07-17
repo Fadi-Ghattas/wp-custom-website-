@@ -31,7 +31,7 @@ get_template_part('template-part', 'topnav');
         </div>
     </section>
     <div class="main-wrapper">
-    <section class="ca-page-banner" >
+    <section class="ca-page-banner">
         <div class="vertical-line"></div>
         <div class="container" >
             <div class="row">

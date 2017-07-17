@@ -106,11 +106,11 @@ jQuery(function ($)
 					notEmpty: {
 						message: 'Your CV is required.'
 					},
-					// file: {
-					// 	extension: 'docx,doc,pdf,ppt,',
-					// 	maxSize: 10 * 1024 * 1024,
-					// 	message: 'The CV file must not exceed 10MB and it must be .docx, .doc, .pdf, .ppt',
-					// },
+					file: {
+						extension: 'docx,doc,pdf,ppt,',
+						maxSize: 10 * 1024 * 1024,
+						message: 'The CV file must not exceed 10MB and it must be .docx, .doc, .pdf, .ppt',
+					},
 				}
 			},
 		}

@@ -232,7 +232,7 @@ jQuery(function ($) {
         });
 
         $('ul.filters li').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
+            // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
@@ -240,7 +240,7 @@ jQuery(function ($) {
         });
 
         $('ul.filters li a').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
+            // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
@@ -263,16 +263,16 @@ jQuery(function ($) {
             }
         });
 
-        $('ul.filters li').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
+        $('ul.filters li').on('click focus hover active', function (event) {
+            // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).addClass('active');
             $isotope.isotope({filter: $(this).children('a').attr('data-type')});
         });
 
-        $('ul.filters li a').on('click focus hover active touchstart', function (event) {
-            event.stopPropagation();
+        $('ul.filters li a').on('click focus hover active', function (event) {
+            // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
             $(this).parent().addClass('active');
