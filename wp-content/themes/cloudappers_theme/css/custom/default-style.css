@@ -6001,6 +6001,15 @@ section.page-not-found #particles-js {
         height: 100%;
     }
 
+    .ca-page-banner h6 {
+        font-size: 3vw;
+    }
+
+    section.ca-page-banner p {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
     section.ca-page-header .title {
         font-weight: 500;
         font-size: 4.8vw;
@@ -6206,19 +6215,16 @@ section.page-not-found #particles-js {
 
     /*show you page end*/
     /*Contact*/
-    section.ca-page-banner p {
-        font-size: 6vw;
-        line-height: 8vw;
-    }
+
 
     .page-template-contact-us .join .desc p,
     .page-template-contact-us .join .position,
-    .page-template-contact-us .join .desc
-    {
+    .page-template-contact-us .join .desc {
         text-align: -webkit-center;
         text-align: -moz-center;
         text-align: center;
     }
+
     .contact .form label {
         font-size: 4.8vw;
     }
