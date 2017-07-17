@@ -383,5 +383,6 @@ jQuery(function ($) {
         }
     }
 
+    $('.parallax-window').parallax({imageSrc: 'http://localhost/cloudappers/wp-content/uploads/2017/05/show_you_page_header_image-1.jpg', androidFix:false});
 
 });
