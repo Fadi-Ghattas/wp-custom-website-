@@ -5829,7 +5829,7 @@ section.page-not-found #particles-js {
 
     .home .showyou .projects > div {
         height: auto;
-        max-height: 700px;
+        /*max-height: 700px;*/
         text-align: center;
         padding: 30px 30px 0px;
     }
