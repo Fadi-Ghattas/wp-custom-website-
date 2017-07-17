@@ -6747,9 +6747,8 @@ section.page-not-found #particles-js {
         position: absolute;
         content: '';
         height: 1.3333333333333333vw;
-        right: 37%;
-        left: 29%;
-        /* top: 0; */
+        right: 30%;
+        left: 30%;
         bottom: 0;
         display: block;
     }
