@@ -4616,6 +4616,12 @@ section.page-not-found #particles-js {
         text-align: -webkit-center;
     }
 
+    section.services .service-item {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+    }
+
     section.services .service-item p {
         text-align: center !important;
         text-align: -moz-center !important;
