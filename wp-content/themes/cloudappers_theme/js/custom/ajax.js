@@ -12,7 +12,7 @@ jQuery(function ($)
 		});
 	}).formValidation({
 		framework: 'bootstrap',
-		live: 'disabled',
+		// live: 'disabled',
 		icon: {
 			valid: 'glyphicon glyphicon-ok',
 			invalid: 'glyphicon glyphicon-remove',
