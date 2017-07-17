@@ -1227,9 +1227,9 @@ body.home.blog.modal-open {
     color: #000;
 }
 
-#JobModal label.focus {
-    font-size: 16px;
-}
+/*#JobModal label.focus {*/
+    /*font-size: 16px;*/
+/*}*/
 
 #JobModal .form-group:nth-child(11) label {
     /* transform: translateY(44px); */
