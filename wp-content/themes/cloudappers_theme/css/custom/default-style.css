@@ -3196,7 +3196,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .ca-page-banner {
     background-color: #4ec1ea;
     position: relative;
-    padding: 30px 0 30px 0;
+    padding: 40px 0 40px 0;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -3245,6 +3245,7 @@ form#GetInTouchForm button.c-btn {
     text-align: center;
     /*letter-spacing: 1.9px;*/
     margin: 0;
+    margin-bottom: 24px;
 }
 
 .page-template-contact-us .join .table-title {
@@ -4483,7 +4484,7 @@ section.page-not-found #particles-js {
     }
 
     .page-template-about section.ca-page-header .title {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .page-template-about .why p {
@@ -5949,8 +5950,8 @@ section.page-not-found #particles-js {
 
     .page-template-about section.ca-page-header .desc p,
     .page-template-about .ouraim p{
-        font-size: 4vw;
-        line-height: 6vw;
+        font-size: 4.8vw;
+        line-height: 7vw;
     }
 
     .page-template-about .ouraim h6 {
@@ -6009,11 +6010,11 @@ section.page-not-found #particles-js {
     }
 
     .ca-page-banner h6 {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     section.ca-page-banner p {
-        font-size: 4vw;
+        font-size: 4.8vw;
         line-height: 6vw;
     }
 
