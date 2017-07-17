@@ -4616,6 +4616,12 @@ section.page-not-found #particles-js {
         text-align: -webkit-center;
     }
 
+    section.services .service-item {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+    }
+
     section.services .service-item p {
         text-align: center !important;
         text-align: -moz-center !important;
@@ -5823,7 +5829,7 @@ section.page-not-found #particles-js {
 
     .home .showyou .projects > div {
         height: auto;
-        max-height: 700px;
+        /*max-height: 700px;*/
         text-align: center;
         padding: 30px 30px 0px;
     }
@@ -6745,9 +6751,8 @@ section.page-not-found #particles-js {
         position: absolute;
         content: '';
         height: 1.3333333333333333vw;
-        right: 37%;
-        left: 29%;
-        /* top: 0; */
+        right: 32%;
+        left: 33%;
         bottom: 0;
         display: block;
     }
