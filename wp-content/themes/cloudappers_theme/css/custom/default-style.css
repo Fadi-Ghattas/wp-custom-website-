@@ -5421,6 +5421,8 @@ section.page-not-found #particles-js {
     /*!* End Show section *!*/
     .top-header a img.img-responsive {
         /*background: rgba(84, 197, 231, 0.58);*/
+        max-width: 76%;
+        margin-top: 6px;
     }
 
     .home .slide img {
