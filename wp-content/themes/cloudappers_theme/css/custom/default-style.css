@@ -5406,7 +5406,7 @@ section.page-not-found #particles-js {
         font-weight: 300;
         height: 8.73vw;
         margin-top: -2vw;
-        margin-bottom: 2vw;
+        /*margin-bottom: 2vw;*/
     }
 
     .home .showcase p:last-child {
@@ -6174,6 +6174,10 @@ section.page-not-found #particles-js {
     .page-template-projects section.some-of-show-cases .show-case-item figure {
         width: 100%;
         height: 100%;
+    }
+
+    section.some-of-show-cases {
+        border-top: 0;
     }
 
     section.some-of-show-cases .show-case-item .desk {
