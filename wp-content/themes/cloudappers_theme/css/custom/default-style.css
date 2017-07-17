@@ -6170,6 +6170,10 @@ section.page-not-found #particles-js {
         height: 100%;
     }
 
+    section.some-of-show-cases {
+        border-top: 0;
+    }
+
     section.some-of-show-cases .show-case-item .desk {
         display: none;
     }
