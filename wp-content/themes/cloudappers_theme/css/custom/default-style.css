@@ -5184,6 +5184,14 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
+
+    .fixed_filter {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
     section.ca-page-banner p {
         font-size: 4vw;
         line-height: 6vw;
