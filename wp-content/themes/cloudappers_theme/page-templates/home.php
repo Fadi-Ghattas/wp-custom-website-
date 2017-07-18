@@ -378,9 +378,9 @@ get_template_part('template-part', 'topnav');
 				<div class="mob hidden-lg hidden-md">
 					<div class="nav-social">
 						<div class="social">
-							<a class="facebook" href="#"></a>
-							<a class="twitter" href="#"></a>
-							<a class="instagram" href="#"></a>
+							<a class="facebook" href="<?php echo esc_url($setting['facebook_link']); ?>"></a>
+							<a class="twitter" href="<?php echo esc_url($setting['twitter_link']); ?>"></a>
+							<a class="instagram" href="<?php echo esc_url($setting['instagram_link']); ?>"></a>
 						</div>
 					</div>
 				</div>
