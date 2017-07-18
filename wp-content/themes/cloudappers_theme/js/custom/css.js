@@ -232,6 +232,8 @@ jQuery(function ($) {
         });
 
         $('ul.filters li').on('click focus hover active touchstart', function (event) {
+            if ($(window).width() < 768)
+            $('html,body').animate({scrollTop: $('.all-projects ').offset().top},1000);
             // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
@@ -240,6 +242,8 @@ jQuery(function ($) {
         });
 
         $('ul.filters li a').on('click focus hover active touchstart', function (event) {
+            if ($(window).width() < 768)
+            $('html,body').animate({scrollTop: $('.all-projects ').offset().top },1000);
             // event.stopPropagation();
             event.preventDefault();
             $('ul.filters li').removeClass('active');
@@ -384,5 +388,26 @@ jQuery(function ($) {
     }
 
     // $('.parallax-window').parallax({imageSrc: 'http://localhost/cloudappers/wp-content/uploads/2017/05/show_you_page_header_image-1.jpg', androidFix:false});
+
+    if ($('.page-template-projects').length) {
+
+        // var stickyHeaderTop = $('.all-projects.some-of-show-cases').offset().top;
+        // var stickyHeaderBottom = $('.all-projects.some-of-show-cases').position().top + $('.all-projects.some-of-show-cases').outerHeight(true);
+        // var scrollBottom = $(window).scrollTop() + $(window).height();
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() >= $(".all-projects.some-of-show-cases").offset().top) {
+                $(".filters-wrapper").addClass("fixed_filter");
+            }
+            else {
+                $(".filters-wrapper").removeClass("fixed_filter");
+            }
+
+            if($(window).scrollTop() >= $(".prefooter").offset().top - 500) {
+                $(".filters-wrapper").removeClass("fixed_filter");
+            }
+
+        });
+    }
+
 
 });

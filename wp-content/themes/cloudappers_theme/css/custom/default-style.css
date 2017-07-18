@@ -5185,6 +5185,18 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
+
+    .fixed_filter {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .home .slide-desc h5 {
+        font-size: 5vw;
+    }
+
     section.ca-page-banner p {
         font-size: 4vw;
         line-height: 6vw;
@@ -5480,7 +5492,7 @@ section.page-not-found #particles-js {
     }
 
     .navbar-header {
-        padding-top: 20px;
+        padding-top: 12px;
     }
 
     .navbar-inverse .navbar-toggle {
@@ -5511,7 +5523,7 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse {
-        padding-top: 20px;
+        padding-top: 0;
     }
 
     .logo-mob {
@@ -5764,7 +5776,7 @@ section.page-not-found #particles-js {
     }
 
     .home .slide-desc h1 {
-        font-size: 15vw;
+        font-size: 16vw;
     }
 
     .home .slide-desc {
