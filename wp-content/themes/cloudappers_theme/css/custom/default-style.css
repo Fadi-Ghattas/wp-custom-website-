@@ -5414,7 +5414,7 @@ section.page-not-found #particles-js {
     }
 
     .home .showcase a span {
-        font-size: 3.73vw;
+        font-size: 3.5vw;
         color: #fff;
         font-weight: 300;
         height: 8.73vw;
@@ -5485,6 +5485,10 @@ section.page-not-found #particles-js {
 
     .desk {
         display: none;
+    }
+
+    .home .showcase a desk {
+        font-size: 22px;
     }
 
     .word-background {
@@ -5752,7 +5756,7 @@ section.page-not-found #particles-js {
         font-size: 4.8vw;
         color: black;
         border-bottom-width: 2px;
-        height: 75px;
+        height: 50px;
     }
 
     .home .contact .form-group.note {
@@ -6434,8 +6438,8 @@ section.page-not-found #particles-js {
     }
 
     #footer .mob .social {
-        margin-top: 7.466666666666667vw;
-        height: 21vw;
+        margin-top: 0;
+        height: 18vw;
         display: block;
     }
 
