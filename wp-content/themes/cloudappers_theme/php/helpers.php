@@ -350,41 +350,41 @@ function get_file_extension($file_type)
 	}
 }
 
-function upload_file($files, $upload_file_name, $upload_to_folder)
+function upload_file($file, $upload_file_name, $upload_to_folder)
 {
-	if (!empty($files)) {
+	if (!empty($file)) {
 
 		$files_uploaded = [];
 
-		foreach ($files as $key => $file) {
-			$upload_file_name = $upload_file_name . get_file_extension($file['type']);
-			$upload_dir = wp_upload_dir();
+//		foreach ($files as $key => $file) {
+		$upload_file_name = $upload_file_name . get_file_extension($file['type']);
+		$upload_dir = wp_upload_dir();
 
-			if (move_uploaded_file($file["tmp_name"], $upload_dir['basedir'] . "/".$upload_to_folder."/" . $upload_file_name)) {
-				$uploaded_file['file_name'] = $_POST['image_name'];
-				$uploaded_file['upload_url'] = $upload_dir['url'] . "/" . $upload_file_name;
+		if (move_uploaded_file($file["tmp_name"], $upload_dir['basedir'] . "/" . $upload_to_folder. "/" . $upload_file_name)) {
+			$uploaded_file['file_name'] = $_POST['image_name'];
+			$uploaded_file['upload_url'] = $upload_dir['baseurl'] . "/" . $upload_to_folder. "/" . $upload_file_name;
 
-				$attachment = [
-					'guid' => $uploaded_file['upload_url'],
-					'post_mime_type' => $file['type'],
-					'post_title' => $upload_file_name,
-					'post_content' => '',
-					'post_status' => 'inherit',
-				];
+			$attachment = [
+				'guid' => $uploaded_file['upload_url'],
+				'post_mime_type' => $file['type'],
+				'post_title' => $upload_file_name,
+				'post_content' => '',
+				'post_status' => 'inherit',
+			];
 
-				$uploaded_file['attach_id'] = wp_insert_attachment($attachment, $upload_dir['path'] . "/" . $upload_file_name);
-				require_once(ABSPATH . 'wp-admin/includes/image.php');
+			$uploaded_file['attach_id'] = wp_insert_attachment($attachment, $upload_dir['basedir'] . "/" . $upload_to_folder. "/"  . $upload_file_name);
+			require_once(ABSPATH . 'wp-admin/includes/image.php');
 
-				//Generate the metadata for the attachment, and update the database record.
-				$attach_data = wp_generate_attachment_metadata($uploaded_file['attach_id'], $upload_dir['path'] . "/" . $upload_file_name);
-				wp_update_attachment_metadata($uploaded_file['attach_id'], $attach_data);
+			//Generate the metadata for the attachment, and update the database record.
+			$attach_data = wp_generate_attachment_metadata($uploaded_file['attach_id'], $upload_dir['basedir'] . "/" .$upload_to_folder. "/"  . $upload_file_name);
+			wp_update_attachment_metadata($uploaded_file['attach_id'], $attach_data);
 
-				$files_uploaded[] = $uploaded_file;
-			}
-
-			return $files_uploaded;
-
+			$files_uploaded[] = $uploaded_file;
 		}
+
+		return $files_uploaded;
+
+//		}
 	}
 	return FALSE;
 }
