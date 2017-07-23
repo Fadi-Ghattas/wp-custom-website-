@@ -200,6 +200,10 @@ jQuery(function ($) {
         } else {
             $(".top-header").removeClass("small")
         }
+
+    });
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
         var st = $(this).scrollTop();
         if (st > lastScrollTop){
             jQuery('.navbar-inverse').removeClass('move');
@@ -209,7 +213,6 @@ jQuery(function ($) {
         }
         lastScrollTop = st;
     });
-
 
     //Menu button effect
     document.querySelector("#nav-toggle")
