@@ -7907,6 +7907,13 @@ body.home.blog.modal-open {
 }
 
 @media (max-width: 767px) {
+    .navbar-inverse.move {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.28);
+    }
     .home .contact .copyright {
         flex-wrap: wrap;
     }

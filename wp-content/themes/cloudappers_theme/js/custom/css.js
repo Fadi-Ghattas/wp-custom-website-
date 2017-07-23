@@ -200,6 +200,14 @@ jQuery(function ($) {
         } else {
             $(".top-header").removeClass("small")
         }
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop){
+            jQuery('.navbar-inverse').removeClass('move');
+            jQuery('.navbar-1-collapse').collapse('hide');
+        } else {
+            jQuery('.navbar-inverse').addClass('move');
+        }
+        lastScrollTop = st;
     });
 
 
