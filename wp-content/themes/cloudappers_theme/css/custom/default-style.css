@@ -6694,6 +6694,10 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 480px) {
+    section.project-url .next-project-btn:last-child {
+        text-align: right;
+        padding-right: 5px;
+    }
     [class*="icono-arrow1"]:before, .next-project-btn .icono-arrow1-left:before {
         width: 30px
     }
@@ -6889,6 +6893,10 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 320px) {
+    section.project-url .next-project-btn:last-child {
+        text-align: center;
+        padding-right: 0px;
+    }
     .navbar-inverse .navbar-toggle {
         margin-top: 0;
     }
