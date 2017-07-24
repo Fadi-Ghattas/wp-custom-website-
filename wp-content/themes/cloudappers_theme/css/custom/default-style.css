@@ -1456,6 +1456,7 @@ section.services .service-item .title {
 section.services .service-item .more {
     width: 39px;
     height: 18px;
+    margin: 30px 0;
 }
 
 section.services .service-item .more:hover {
@@ -4623,6 +4624,7 @@ section.page-not-found #particles-js {
         text-align: center;
         text-align: -moz-center;
         text-align: -webkit-center;
+        margin-top: 50px;
     }
 
     section.services .service-item {
