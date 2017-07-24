@@ -45,34 +45,33 @@ class Team
 
         if (isset($data['page'])) {
             if ($data['page'] == 'home') {
-//				$filters = ['limit' => intval($data['limit']), 'page' => 1, 'where' => 'team_member_featured.meta_value = 1', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
-                $filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
-
+				$filters = ['limit' => intval($data['limit']), 'page' => 1, 'where' => 'team_member_featured.meta_value = 1', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
+//              $filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
             }
         }
 
         $team = TeamModel::search((new TeamModel())->pod_name, $fields, $filters);
 
-        if (isset($data['page'])) {
-            if ($data['page'] == 'home') {
-                //Admins
-                $admins = array_slice($team, 0, 5);
-                //3 Team members
-                $other = array_slice($team, 5);
-                $keys = array_keys($other);
-                shuffle($other);
-                foreach ($keys as $key) {
-                    $new[$key] = $other[$key];
-                }
-
-                $member = array_slice($new, 0, 3);
-
-                if (!empty($member))
-                    $team = array_merge($admins, $member);
-                else
-                    $team = $admins;
-            }
-        }
+//        if (isset($data['page'])) {
+//            if ($data['page'] == 'home') {
+//                //Admins
+//                $admins = array_slice($team, 0, 5);
+//                //3 Team members
+//                $other = array_slice($team, 5);
+//                $keys = array_keys($other);
+//                shuffle($other);
+//                foreach ($keys as $key) {
+//                    $new[$key] = $other[$key];
+//                }
+//
+//                $member = array_slice($new, 0, 3);
+//
+//                if (!empty($member))
+//                    $team = array_merge($admins, $member);
+//                else
+//                    $team = $admins;
+//            }
+//        }
         return $team;
     }
 
