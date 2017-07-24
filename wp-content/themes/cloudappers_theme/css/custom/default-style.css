@@ -5974,6 +5974,9 @@ section.page-not-found #particles-js {
     .page-template-about .why p {
         line-height: 6.3vw;
     }
+    .page-template-about .why .main-title {
+        margin-bottom: 40px;
+    }
     .page-template-about .why .why-desc {
         padding: 0 15px;
     }
