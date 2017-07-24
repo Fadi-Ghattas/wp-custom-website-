@@ -1116,7 +1116,7 @@ body.home.blog.modal-open {
     color: black;
 }
 
-.team .members > div:before {
+.page-template-team .team .members > div:before {
     position: absolute;
     top: 30px;
     left: 8px;
@@ -3856,7 +3856,7 @@ section.page-not-found #particles-js {
     }
 
     .team .members > div {
-        min-height: 280px;
+        /*min-height: 280px;*/
         margin: 0;
         z-index: 0;
     }
@@ -4046,6 +4046,11 @@ section.page-not-found #particles-js {
     section.some-of-show-cases.services .service-item:nth-child(n + 4) {
         margin-top: 20px;
     }
+
+
+    .page-template-about .team .col-lg-2 {
+        width: 12.5%;
+    }
 }
 
 /*md*/
@@ -4074,6 +4079,7 @@ section.page-not-found #particles-js {
 
 
 @media (max-width: 1199px) {
+
     /*General*/
     body.home.blog.modal-open {
         overflow-y: hidden;

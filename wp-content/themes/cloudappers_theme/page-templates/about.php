@@ -10,7 +10,7 @@ $homePageID = get_option( 'page_on_front' );
 $homePageOptions = acf_get_group_fields($homePageID);
 
 if (intval($homePageOptions['home_page_team_how_many_to_show']))
-    $team = Team::viewAll(['page' => 'home', 'limit' => intval($pageOptions['home_page_team_how_many_to_show'])]);
+    $team = Team::viewAll(['page' => 'home', 'limit' => -1]);
 
 $setting = get_page_by_path('cloudappers-setting', OBJECT, 'page');
 $setting = acf_get_group_fields($setting->ID);
@@ -98,8 +98,8 @@ get_template_part('template-part', 'topnav');
                     foreach ($team as $teamMember) {
                         $hover = ['gradient-purple', 'gradient-pink', 'gradient-green'];
                         ?>
-                        <div class="responsive-loader col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                            <section class="<?php echo $hover[$hoverCount]; ?>">
+                        <div class="responsive-loader col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                            <section class="<?php //echo $hover[$hoverCount]; ?>">
                                 <a href="<?php echo esc_url(home_url('team')); ?>">
                                     <figure>
                                         <!--<div class="lazy-loader-effect"></div>-->
@@ -118,12 +118,12 @@ get_template_part('template-part', 'topnav');
                                              alt="<?php echo $teamMember['post_title']; ?>"/>
                                     </figure>
                                 </a>
-                                <div class="overlay member-info">
-                                    <a href="<?php echo esc_url(home_url('team')); ?>">
-                                        <h5><?php echo $teamMember['post_title']; ?></h5>
-                                        <h6><?php echo $teamMember['team_member_title']; ?></h6>
-                                    </a>
-                                </div>
+<!--                                <div class="overlay member-info">-->
+<!--                                    <a href="--><?php //echo esc_url(home_url('team')); ?><!--">-->
+<!--                                        <h5>--><?php //echo $teamMember['post_title']; ?><!--</h5>-->
+<!--                                        <h6>--><?php //echo $teamMember['team_member_title']; ?><!--</h6>-->
+<!--                                    </a>-->
+<!--                                </div>-->
 
                             </section>
                         </div>
