@@ -205,17 +205,19 @@ jQuery(function ($) {
     var lastScrollTop = 0;
     $(window).scroll(function(event){
         var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            jQuery('.navbar-inverse').removeClass('move');
-            jQuery('.navbar-1-collapse').collapse('hide');
-            jQuery('.top-header').removeClass('opened');
-            jQuery('#nav-toggle').removeClass('active');
-        } else {
-            if(st > 60) {
-                jQuery('.navbar-inverse').addClass('move');
-            }
-            else {
+        if(jQuery(window).width() < 601) {
+            if (st > lastScrollTop) {
                 jQuery('.navbar-inverse').removeClass('move');
+                jQuery('.navbar-1-collapse').collapse('hide');
+                jQuery('.top-header').removeClass('opened');
+                jQuery('#nav-toggle').removeClass('active');
+            } else {
+                if (st > 60) {
+                    jQuery('.navbar-inverse').addClass('move');
+                }
+                else {
+                    jQuery('.navbar-inverse').removeClass('move');
+                }
             }
         }
         lastScrollTop = st;
