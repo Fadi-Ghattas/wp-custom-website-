@@ -5891,7 +5891,7 @@ section.page-not-found #particles-js {
         height: auto;
         /*max-height: 700px;*/
         text-align: center;
-        padding: 30px 30px 0px;
+        padding: 30px 5px 0px;
     }
 
     .home .showyou .projects a {
@@ -6666,6 +6666,12 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
+    .team .container {
+        padding: 0 5px;
+    }
+    .team .grid-container {
+        padding: 0;
+    }
     /* Show you */
     .home .showyou .mob-title {
         top: 10vh;
@@ -6935,7 +6941,7 @@ section.page-not-found #particles-js {
 
 @media all and (device-width: 480px) and (orientation: landscape) {
     .home .showyou .projects > div {
-        padding: 30px 30px 160px;
+        padding: 30px 5px 160px;
     }
 }
 
