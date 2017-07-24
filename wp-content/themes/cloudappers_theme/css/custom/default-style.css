@@ -5666,7 +5666,14 @@ section.page-not-found #particles-js {
         border: 1px solid rgb(239, 239, 239);
         overflow: hidden;
     }
-
+    .clients .item:nth-child(1), .clients .item:nth-child(2), .clients .item:nth-child(3) {
+        border-top: 0;
+        border-bottom: 0
+    }
+    .clients .item:nth-child(3n-1) {border-right: 0;border-left: 0;}
+    .clients .item:nth-child(n+3) {
+        border-bottom: 0;
+    }
     .clients .container,
     .page-template-clients .clients .container {
         padding-top: 0;
@@ -5789,7 +5796,7 @@ section.page-not-found #particles-js {
     }
 
     .home .showyou {
-        border-top: 2px solid rgb(239, 239, 239);
+        border-top: 1px solid rgb(239, 239, 239);
         padding-top: 0;
         position: relative;
         overflow: hidden;
