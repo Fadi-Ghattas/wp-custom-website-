@@ -6421,7 +6421,7 @@ section.page-not-found #particles-js {
     }
 
     .page-template-contact-us .join .row:not(.title):not(.table-title) {
-        border-bottom: 2px solid #f6f4f4;
+        border-bottom: 1px solid #f6f4f4;
         /*padding-top: 52px;*/
         padding-top: 6.9vw;
         /*padding-bottom: 61px;*/
