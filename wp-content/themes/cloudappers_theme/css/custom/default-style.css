@@ -3857,6 +3857,7 @@ section.page-not-found #particles-js {
     .team .members > div {
         min-height: 280px;
         margin: 0;
+        z-index: 0;
     }
 
     .team .members > div img {
