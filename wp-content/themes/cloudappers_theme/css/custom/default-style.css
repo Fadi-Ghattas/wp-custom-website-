@@ -3857,6 +3857,7 @@ section.page-not-found #particles-js {
     .team .members > div {
         min-height: 280px;
         margin: 0;
+        z-index: 0;
     }
 
     .team .members > div img {
@@ -5518,6 +5519,7 @@ section.page-not-found #particles-js {
 
     .home .slid-content .description {
         margin-bottom: 30px;
+        padding: 0 15px;
     }
 
     /*Menu*/
@@ -5674,7 +5676,14 @@ section.page-not-found #particles-js {
         border: 1px solid rgb(239, 239, 239);
         overflow: hidden;
     }
-
+    .clients .item:nth-child(1), .clients .item:nth-child(2), .clients .item:nth-child(3) {
+        border-top: 0;
+        border-bottom: 0
+    }
+    .clients .item:nth-child(3n-1) {border-right: 0;border-left: 0;}
+    .clients .item:nth-child(n+3) {
+        border-bottom: 0;
+    }
     .clients .container,
     .page-template-clients .clients .container {
         padding-top: 0;
@@ -5797,7 +5806,7 @@ section.page-not-found #particles-js {
     }
 
     .home .showyou {
-        border-top: 2px solid rgb(239, 239, 239);
+        border-top: 1px solid rgb(239, 239, 239);
         padding-top: 0;
         position: relative;
         overflow: hidden;
@@ -5961,11 +5970,25 @@ section.page-not-found #particles-js {
         padding-bottom: 15px;
     }
 
-    .page-template-about section.ca-page-header .title,
     .page-template-about section.ca-page-header .sub-title {
         line-height: 2;
     }
-
+    .page-template-about section.ca-page-header .title {
+        line-height: 0;
+    }
+    section.ca-page-header .desc {
+        font-weight: 400;
+    }
+    .page-template-about .why .main-title p,
+    .page-template-about .why p {
+        line-height: 6.3vw;
+    }
+    .page-template-about .why .main-title {
+        margin-bottom: 40px;
+    }
+    .page-template-about .why {
+        padding-top: 30px;
+    }
     .page-template-about .why .why-desc {
         padding: 0 15px;
     }
@@ -5979,7 +6002,9 @@ section.page-not-found #particles-js {
         font-size: 4.8vw;
         line-height: 7vw;
     }
-
+    .page-template-about section.ca-page-header .desc p {
+        padding: 0 15px;
+    }
     .page-template-about .ouraim h6 {
         font-size: 3vw;
     }
@@ -6859,7 +6884,7 @@ section.page-not-found #particles-js {
     }
 
     .home .showyou .projects > div {
-        padding: 30px 30px 0px;
+        padding: 15px 15px 0px;
     }
 
     .home .showyou .projects a > div {
