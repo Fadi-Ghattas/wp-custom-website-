@@ -6735,6 +6735,9 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 600px) {
+    .home .team .members {
+        padding: 0 5px;
+    }
     .navbar-inverse .navbar-toggle {
         margin-top: 21px;
     }
