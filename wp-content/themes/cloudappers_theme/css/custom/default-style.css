@@ -5510,6 +5510,7 @@ section.page-not-found #particles-js {
 
     .home .slid-content .description {
         margin-bottom: 30px;
+        padding: 0 15px;
     }
 
     /*Menu*/
@@ -5969,7 +5970,8 @@ section.page-not-found #particles-js {
     section.ca-page-header .desc {
         font-weight: 400;
     }
-    .page-template-about .why .main-title p {
+    .page-template-about .why .main-title p,
+    .page-template-about .why p {
         line-height: 6.3vw;
     }
     .page-template-about .why .why-desc {
