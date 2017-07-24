@@ -1524,7 +1524,7 @@ section.some-of-show-cases {
 }
 
 .page-template-services section.some-of-show-cases .word-background {
-    top: 15%;
+    top: 0;
 }
 
 section.some-of-show-cases .show-case-item {
