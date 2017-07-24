@@ -4435,6 +4435,14 @@ section.page-not-found #particles-js {
 
 @media (max-width: 991px) {
 
+    .fixed_filter_tab .filters-container {
+        position: fixed;
+        z-index: 10;
+        top: 207px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
     .service-back.btn-view-all-show-cases.c-btn{
         top:178px;
     }

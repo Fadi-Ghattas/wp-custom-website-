@@ -252,7 +252,9 @@ jQuery(function ($) {
         });
 
         $('ul.filters li').on('click focus hover active touchstart', function (event) {
-            if ($(window).width() < 768)
+            if ($(window).width() > 767 && $(window).width() < 992)
+                $('html,body').animate({scrollTop: $('.all-projects ').offset().top - 150},1000);
+            else if ($(window).width() < 768)
             $('html,body').animate({scrollTop: $('.all-projects ').offset().top},1000);
             // event.stopPropagation();
             event.preventDefault();
@@ -262,7 +264,9 @@ jQuery(function ($) {
         });
 
         $('ul.filters li a').on('click focus hover active touchstart', function (event) {
-            if ($(window).width() < 768)
+            if ($(window).width() > 767 && $(window).width() < 992)
+                $('html,body').animate({scrollTop: $('.all-projects ').offset().top - 150},1000);
+            else if ($(window).width() < 768)
             $('html,body').animate({scrollTop: $('.all-projects ').offset().top },1000);
             // event.stopPropagation();
             event.preventDefault();
@@ -398,7 +402,6 @@ jQuery(function ($) {
         else if ($(window).width() > 991 && $(window).width() < 1200) {
             $('html,body').animate({
                 scrollTop: $('#all-services').offset().top - 75},1500);
-
         }
 
         else if ($(window).width() > 767 && $(window).width() < 992) {
@@ -409,12 +412,11 @@ jQuery(function ($) {
 
     // $('.parallax-window').parallax({imageSrc: 'http://localhost/cloudappers/wp-content/uploads/2017/05/show_you_page_header_image-1.jpg', androidFix:false});
 
-    if ($('.page-template-projects').length) {
 
-        // var stickyHeaderTop = $('.all-projects.some-of-show-cases').offset().top;
-        // var stickyHeaderBottom = $('.all-projects.some-of-show-cases').position().top + $('.all-projects.some-of-show-cases').outerHeight(true);
-        // var scrollBottom = $(window).scrollTop() + $(window).height();
+    //Filter projects
+    if ($('.page-template-projects').length) {
         $(document).on("scroll", function () {
+            //For mobile
             if ($(window).scrollTop() >= $(".all-projects.some-of-show-cases").offset().top) {
                 $(".filters-wrapper").addClass("fixed_filter");
             }
@@ -426,8 +428,19 @@ jQuery(function ($) {
                 $(".filters-wrapper").removeClass("fixed_filter");
             }
 
+            //For Tablet
+            if ($(window).scrollTop() >= $(".all-projects.some-of-show-cases").offset().top - 207) {
+                $(".filters-wrapper").addClass("fixed_filter_tab");
+            }
+            else {
+                $(".filters-wrapper").removeClass("fixed_filter_tab");
+            }
+
+            if($(window).scrollTop() >= $(".prefooter").offset().top - 250) {
+                $(".filters-wrapper").removeClass("fixed_filter_tab");
+            }
+
         });
     }
-
 
 });
