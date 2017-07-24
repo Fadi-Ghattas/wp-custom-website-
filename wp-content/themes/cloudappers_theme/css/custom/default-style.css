@@ -850,7 +850,7 @@ header, nav, header img {
     color: #fff;
 }
 
-.team .members > div:hover img {
+.page-template-team .team .members > div:hover img {
     visibility: hidden;
 }
 
