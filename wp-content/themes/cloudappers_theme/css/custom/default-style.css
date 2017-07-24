@@ -5960,11 +5960,18 @@ section.page-not-found #particles-js {
         padding-bottom: 15px;
     }
 
-    .page-template-about section.ca-page-header .title,
     .page-template-about section.ca-page-header .sub-title {
         line-height: 2;
     }
-
+    .page-template-about section.ca-page-header .title {
+        line-height: 0;
+    }
+    section.ca-page-header .desc {
+        font-weight: 400;
+    }
+    .page-template-about .why .main-title p {
+        line-height: 6.3vw;
+    }
     .page-template-about .why .why-desc {
         padding: 0 15px;
     }
@@ -5978,7 +5985,9 @@ section.page-not-found #particles-js {
         font-size: 4.8vw;
         line-height: 7vw;
     }
-
+    .page-template-about section.ca-page-header .desc p {
+        padding: 0 15px;
+    }
     .page-template-about .ouraim h6 {
         font-size: 3vw;
     }
