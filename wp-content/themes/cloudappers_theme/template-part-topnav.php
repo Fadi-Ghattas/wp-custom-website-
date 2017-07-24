@@ -21,7 +21,7 @@ if (has_nav_menu('main_menu')) :
                                 <a class="logo-desk hidden-xs" href="<?php echo home_url(); ?>">
                                     <embed class="hidden-md hidden-sm" src="<?php echo get_stylesheet_directory_uri() . '/img/CA-full-logo@3x.svg' ?>" alt="CloudAppers"/>
 <!--                                    <img src="--><?php //echo get_stylesheet_directory_uri() . '/img/CA-full-logo.png' ?><!--" alt="CloudAppers"/>-->
-                                    <embed class="img-float" src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon.svg' ?>" alt="CloudAppers"/>
+                                    <embed class="img-float hidden-md" src="<?php echo get_stylesheet_directory_uri() . '/img/blue-CA-icon.svg' ?>" alt="CloudAppers"/>
                                 </a>
 
                                 <button id="nav-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
