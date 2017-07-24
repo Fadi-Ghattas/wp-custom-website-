@@ -422,7 +422,7 @@ jQuery(function ($) {
                 $(".filters-wrapper").removeClass("fixed_filter");
             }
 
-            if($(window).scrollTop() >= $(".prefooter").offset().top - 500) {
+            if($(window).scrollTop() >= $(".prefooter").offset().top - 100) {
                 $(".filters-wrapper").removeClass("fixed_filter");
             }
 
