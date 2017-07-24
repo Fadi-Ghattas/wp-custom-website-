@@ -6239,7 +6239,7 @@ section.page-not-found #particles-js {
     }
 
     section.some-of-show-cases .show-case-item {
-        padding: 0px 10px;
+        padding: 0px 5px;
     }
 
     .page-template-projects section.some-of-show-cases .show-case-item.col-xs-left,
@@ -6542,7 +6542,7 @@ section.page-not-found #particles-js {
 
     .home .team .members {
         margin-top: 30px;
-        padding: 0 5px;
+        padding: 0 20px;
     }
 
     .home .team {
