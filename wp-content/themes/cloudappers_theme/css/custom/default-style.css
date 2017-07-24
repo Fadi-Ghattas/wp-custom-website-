@@ -8012,6 +8012,13 @@ body.home.blog.modal-open {
     .home .showcase a {
         line-height: 5.04vw;
     }
+    .page.page-id-562 .team .grid-container {
+        padding: 0;
+    }
+
+    .page.page-id-562 .container {
+        padding: 0 5px;
+    }
 }
 
 .mapmarker {
