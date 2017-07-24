@@ -6647,6 +6647,23 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 600px) {
+    .navbar-inverse.move {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.28);
+
+    }
+    .navbar-header {
+        padding-top: 5px
+    }
+    .navbar-header {
+        transition: all 0.5s ease-in-out
+    }
+    .navbar-inverse .navbar-toggle {
+        margin-top: 21px;
+    }
     .top-header .copyright:after {
         /*         content: ' ';
                 position: absolute;
@@ -6694,9 +6711,7 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 480px) {
-    .navbar-header {
-        padding-top: 5px;
-    }
+
     .navbar-inverse.move {
         position: fixed;
         width: 100%;
