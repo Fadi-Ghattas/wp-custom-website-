@@ -5612,7 +5612,7 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        font-size: 7.6vw;
+        font-size: 6vw;
         padding-top: 20px;
         padding-bottom: 35px;
         color: white;
@@ -5950,6 +5950,7 @@ section.page-not-found #particles-js {
 
     .page-template-about section.ca-page-header {
         min-height: 600px;
+        padding-bottom: 15px;
     }
 
     .page-template-about section.ca-page-header .title,
@@ -6668,9 +6669,9 @@ section.page-not-found #particles-js {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        font-size: 7vw;
+        font-size: 6vw;
         padding-top: 2.4vw;
-        padding-bottom: 3.8666666666666667vw;
+        padding-bottom: 3.8vw;
     }
 
     .logo-mob {
