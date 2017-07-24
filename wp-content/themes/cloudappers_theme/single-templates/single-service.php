@@ -247,7 +247,7 @@ $service_branding_header_image = (!empty($service['service_page_branding_backgro
 		</div>
 		<a href="<?php echo esc_url(home_url('services')); ?>/" class="btn-view-all-show-cases c-btn">
 			<span></span>
-			VIEW FULL SERVICES
+            BACK TO WHAT WE CAN DO
 		</a>
 	</section>
 <?php } ?>
