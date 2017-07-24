@@ -6694,6 +6694,16 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 480px) {
+    .navbar-header {
+        padding-top: 5px;
+    }
+    .navbar-inverse.move {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.28);
+    }
     section.project-url .next-project-btn:last-child {
         text-align: right;
         padding-right: 5px;
@@ -7907,13 +7917,7 @@ body.home.blog.modal-open {
 }
 
 @media (max-width: 767px) {
-    .navbar-inverse.move {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        background: rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.28);
-    }
+
     .home .contact .copyright {
         flex-wrap: wrap;
     }
