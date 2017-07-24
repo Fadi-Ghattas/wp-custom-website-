@@ -208,6 +208,7 @@ jQuery(function ($) {
         if (st > lastScrollTop){
             jQuery('.navbar-inverse').removeClass('move');
             jQuery('.navbar-1-collapse').collapse('hide');
+            jQuery('.top-header').removeClass('open');
         } else {
             if(st > 60) {
                 jQuery('.navbar-inverse').addClass('move');
