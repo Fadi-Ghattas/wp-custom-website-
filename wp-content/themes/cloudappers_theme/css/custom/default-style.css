@@ -4327,9 +4327,18 @@ section.page-not-found #particles-js {
     .logo-desk {
         max-width: 60px;
         margin-right: 30px;
+        max-height: 60px;
     }
     .navbar-header, .navbar-collapse.collapse {
         display: inline-block !important;
+    }
+    nav.navbar.navbar-inverse {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    ul#menu-main-menu {
+        padding-top: 0;
     }
 }
 
