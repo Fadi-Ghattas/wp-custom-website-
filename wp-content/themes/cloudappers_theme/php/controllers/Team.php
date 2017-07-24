@@ -45,8 +45,8 @@ class Team
 
         if (isset($data['page'])) {
             if ($data['page'] == 'home') {
-				$filters = ['limit' => intval($data['limit']), 'page' => 1, 'where' => 'team_member_featured.meta_value = 1', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
-//              $filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
+//				$filters = ['limit' => intval($data['limit']), 'page' => 1, 'where' => 'team_member_featured.meta_value = 1', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
+              $filters = ['limit' => -1, 'page' => 1, 'where' => '', 'order_by' => 't.menu_order, t.post_date, team_member_featured.meta_value DESC'];
             }
         }
 
