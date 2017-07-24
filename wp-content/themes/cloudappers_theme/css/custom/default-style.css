@@ -4331,6 +4331,7 @@ section.page-not-found #particles-js {
     }
     .navbar-header, .navbar-collapse.collapse {
         display: inline-block !important;
+        vertical-align: middle;
     }
     nav.navbar.navbar-inverse {
         margin: 0;
