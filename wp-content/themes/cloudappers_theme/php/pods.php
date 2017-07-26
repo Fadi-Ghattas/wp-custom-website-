@@ -162,7 +162,14 @@ function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'p
 					$pod[$field['name']] = $pods->$field['type']($field['name']);
 				}
 			} else {
-				$pod[$field] = $pods->raw($field);
+				if (isset($field['view']))
+				{
+					if ($field['view'] == 'display') {
+						$pod[$field['name']] = $pod->display($field['name']);
+					}
+				} else {
+					$pod[$field] = $pods->raw($field);
+				}
 			}
 		}
 		$data [] = $pod;
