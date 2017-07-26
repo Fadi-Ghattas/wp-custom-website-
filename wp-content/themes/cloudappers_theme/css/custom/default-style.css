@@ -5222,7 +5222,18 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
-
+    /* Team Page */
+    .page-template-team .row {
+        margin: 0;
+    }
+    .page-template-team .top-header>.container > .row {
+        margin: 0;
+        padding: 0;
+    }
+    .page-template-team .top-header>.container {
+        padding: 0;
+    }
+    /* Team Page End */
     .fixed_filter {
         position: fixed;
         top: 0;
