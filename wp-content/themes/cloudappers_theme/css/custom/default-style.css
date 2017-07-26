@@ -394,10 +394,10 @@ header, nav, header img {
     min-height: 248px;
     text-align: center;
     color: white;
-    padding: 22px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 50px 0 0;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
 }
 
 .home .showcase p {
