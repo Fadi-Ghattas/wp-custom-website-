@@ -25,6 +25,7 @@ class TimeLine
 			[
 				'acf' => 1,
 				'name' => 'timeline_description',
+				'view' => 'display'
 			],
 		];
 
