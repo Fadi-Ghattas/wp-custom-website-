@@ -153,7 +153,15 @@ function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'p
 						}
 
 					} else {
-						$pod[$field['name']] = get_field($field['name'], $pods->raw('id'));
+
+						if (isset($field['view'])) {
+							if ($field['view'] == 'display') {
+								$pod[$field['name']] = $pods->display($field['name']);
+							}
+						} else {
+							$pod[$field['name']] = get_field($field['name'], $pods->raw('id'));
+						}
+
 					}
 
 				} else if ($field['acf_image']) {
@@ -162,10 +170,9 @@ function get_pod_data($pod_name, $pod_fields, $pods_filters = ['limit' => -1, 'p
 					$pod[$field['name']] = $pods->$field['type']($field['name']);
 				}
 			} else {
-				if (isset($field['view']))
-				{
+				if (isset($field['view'])) {
 					if ($field['view'] == 'display') {
-						$pod[$field['name']] = $pod->display($field['name']);
+						$pod[$field['name']] = $pods->display($field['name']);
 					}
 				} else {
 					$pod[$field] = $pods->raw($field);
