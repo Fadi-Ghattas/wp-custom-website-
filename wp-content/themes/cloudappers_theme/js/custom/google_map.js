@@ -86,9 +86,9 @@ jQuery(function ($)
 			'<strong>CloudAppers</strong><br> ' +
 			'Media company in Dubai, United Arab Emirates ' +
 			'</div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: marker_content
-        });
+		var infowindow = new google.maps.InfoWindow({
+			content: marker_content
+		});
 
 		var image = {
 			url: script_const.map_pins_url,
@@ -102,28 +102,28 @@ jQuery(function ($)
 
 		var option1 = {
 			center: {
-                lat: parseFloat(script_const.pin_latitude),
-                lng: parseFloat(script_const.pin_altitude)
+				lat: parseFloat(script_const.pin_latitude),
+				lng: parseFloat(script_const.pin_altitude)
 			},
 			zoom: 13,
 			scrollwheel: false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId],
-                position: google.maps.ControlPosition.BOTTOM_CENTER
-            }
+				position: google.maps.ControlPosition.BOTTOM_CENTER
+			}
 
 		}
 
 		var option2 = {
 			center: {
 				lat: parseFloat(script_const.pin_latitude),
-                lng: parseFloat(script_const.pin_altitude)
+				lng: parseFloat(script_const.pin_altitude)
 			},
 			zoom: 13,
 			scrollwheel: false,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId],
-            }
+			}
 		}
 
 		map1 = new google.maps.Map(document.getElementById("map"), option1);
@@ -140,10 +140,10 @@ jQuery(function ($)
 			title: '',
 			animation: google.maps.Animation.DROP
 		});
-        marker1.addListener('click', function() {
-            infowindow.open(map1, marker1);
-            // map1.setCenter(marker1.getPosition());
-        });
+		marker1.addListener('click', function() {
+			infowindow.open(map1, marker1);
+			// map1.setCenter(marker1.getPosition());
+		});
 
 		$('.map-mob-shadow').on('click touchstart', function(event) {
 			infowindow.close(map1, marker1);
@@ -160,13 +160,13 @@ jQuery(function ($)
 			title: '',
 			animation: google.maps.Animation.DROP,
 		});
-        marker.addListener('click', function() {
-            infowindow.open(map2, marker);
-            // map2.setCenter(marker.getPosition());
+		marker.addListener('click', function() {
+			infowindow.open(map2, marker);
+			// map2.setCenter(marker.getPosition());
 
-        });
+		});
 
-        //popup
+		//popup
 		$('#map-popup').on('shown.bs.modal',function(){
 			google.maps.event.trigger(map2, "resize");
 			return map2.setCenter(url);
@@ -175,10 +175,10 @@ jQuery(function ($)
 	}
 
 
-    $(window).on("orientationchange",function(event){
-        google.maps.event.trigger(map, "resize");
+	$(window).on("orientationchange",function(event){
+		google.maps.event.trigger(map, "resize");
 
-    });
+	});
 
 
 	$(window).on('load', function () {

@@ -4,9 +4,9 @@ jQuery(function ($) {
         $('#JobModal').modal('show');
     });
 
-    $('#take-me-there').on('click', function (e) {
-        $('#map-popup').modal('show');
-    });
+    // $('#take-me-there').on('click', function (e) {
+    //     $('#map-popup').modal('show');
+    // });
 
 	$('.apply-for-position').on('click', function (e) {
 		$('#JobModal').modal('show');
