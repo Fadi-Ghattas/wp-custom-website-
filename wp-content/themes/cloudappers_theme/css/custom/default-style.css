@@ -2580,8 +2580,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     background-image: -ms-linear-gradient(-30deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
     font-size: 18px;
     line-height: 1.667;
-    padding-top: 73px;
-    padding-bottom: 144px;
+    padding: 73px 15px 144px;
     margin-bottom: 0;
 }
 
