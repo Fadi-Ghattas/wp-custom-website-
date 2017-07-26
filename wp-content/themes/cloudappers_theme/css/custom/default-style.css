@@ -394,10 +394,10 @@ header, nav, header img {
     min-height: 248px;
     text-align: center;
     color: white;
-    padding: 22px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 50px 0 0;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
 }
 
 .home .showcase p {
@@ -2580,8 +2580,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     background-image: -ms-linear-gradient(-30deg, rgb(224, 195, 252) 0%, rgb(78, 193, 234) 100%);
     font-size: 18px;
     line-height: 1.667;
-    padding-top: 73px;
-    padding-bottom: 144px;
+    padding: 73px 15px 144px;
     margin-bottom: 0;
 }
 
@@ -2834,7 +2833,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 .page-template-about .why .main-title p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(93, 95, 116);
     line-height: 1.875;
     text-align: center;
@@ -2855,7 +2854,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     color: rgb(93, 95, 116);
     line-height: 1.875;
     text-align: left;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .page-template-about .words {
@@ -5222,7 +5221,18 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 767px) {
-
+    /* Team Page */
+    .page-template-team .row {
+        margin: 0;
+    }
+    .page-template-team .top-header>.container > .row {
+        margin: 0;
+        padding: 0;
+    }
+    .page-template-team .top-header>.container {
+        padding: 0 !important;
+    }
+    /* Team Page End */
     .fixed_filter {
         position: fixed;
         top: 0;
@@ -6735,6 +6745,9 @@ section.page-not-found #particles-js {
 }
 
 @media (max-width: 600px) {
+    .home .team .members {
+        padding: 0 5px;
+    }
     .navbar-inverse .navbar-toggle {
         margin-top: 21px;
     }

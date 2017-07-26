@@ -24,7 +24,7 @@ function project_scripts()
 //	if(is_home() || in_array(basename(get_page_template()), ['contact-us.php'])) {
 	wp_enqueue_style('bootstrap-fileinput-css', get_template_directory_uri() . '/css/bootstrap/bootstrap-fileinput/css/fileinput.min.css', [], '1');
 //	}
-	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '5.52');
+	wp_enqueue_style('layout', get_template_directory_uri() . '/css/custom/default-style.css', [], '5.55');
 
 	//JQUERY
 	$script_const = [
@@ -70,7 +70,7 @@ function project_scripts()
 //	}
 
 	//wp_enqueue_script('helpers_js', get_template_directory_uri() . '/js/custom/helpers.js', ['jquery-min'], '1.0', FALSE);
-	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '2.196', FALSE);
+	wp_enqueue_script('css_js', get_template_directory_uri() . '/js/custom/css.js', ['jquery-min'], '2.197', FALSE);
 	wp_enqueue_script('ajax_js', get_template_directory_uri() . '/js/custom/ajax.js', ['jquery-min'], '1.52', TRUE);
 	wp_enqueue_script('theme_js', get_template_directory_uri() . '/js/custom/theme.js', ['jquery-min'], '1.22', TRUE);
 
