@@ -2833,7 +2833,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 .page-template-about .why .main-title p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(93, 95, 116);
     line-height: 1.875;
     text-align: center;
@@ -2854,7 +2854,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     color: rgb(93, 95, 116);
     line-height: 1.875;
     text-align: left;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .page-template-about .words {
