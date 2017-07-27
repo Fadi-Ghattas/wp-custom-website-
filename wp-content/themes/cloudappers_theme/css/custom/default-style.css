@@ -4472,6 +4472,10 @@ section.page-not-found #particles-js {
 
 @media (max-width: 991px) {
 
+    .page-template-about .history .slide {
+        max-width: 700px;
+    }
+
     .fixed_filter_tab .filters-container {
         position: fixed;
         z-index: 10;

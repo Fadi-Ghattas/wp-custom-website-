@@ -134,22 +134,6 @@ jQuery(function ($) {
                     slidesToScroll: 1,
                     centerMode: true
                 }
-            },
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    centerMode: true
-                }
-            },
-            {
-                breakpoint: 481,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true
-                }
             }
         ]
     });
