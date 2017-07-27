@@ -4604,6 +4604,21 @@ section.page-not-found #particles-js {
         width: 100%;
     }
 
+    .contact .form label,
+    #JobModal label {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #JobModal input, #JobModal select, #JobModal .file-caption, #JobModal textarea, .contact .form input {
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+        text-align-last: center;
+    }
+
     /*project inner max 991 end*/
 }
 
