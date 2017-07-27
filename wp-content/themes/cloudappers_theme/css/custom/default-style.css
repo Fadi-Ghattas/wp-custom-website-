@@ -3925,12 +3925,17 @@ section.page-not-found #particles-js {
         margin-bottom: 0;
     }
 
+    .top-header embed.img-float{
+        transition: all 1s;
+    }
+
     .top-header.small img,
     .top-header.small embed {
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s;
     }
+
 
     .top-header.small .img-float {
         visibility: visible;
@@ -3954,7 +3959,7 @@ section.page-not-found #particles-js {
         right: 0;
         left: 86%;
         top: -3px;
-        transition: all 1s;
+        transition: all 1s ;
     }
 
     .home .showyou .projects > div {
@@ -4479,7 +4484,7 @@ section.page-not-found #particles-js {
     .fixed_filter_tab .filters-container {
         position: fixed;
         z-index: 10;
-        top: 207px;
+        top: 117px;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
     }
