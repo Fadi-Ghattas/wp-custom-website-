@@ -2588,6 +2588,11 @@ section.project-url .next-project-btn.prev-arr.last-project {
     opacity: 0.5;
 }
 
+
+.page-template-about .history .slick-cloned:nth-child(2){
+    visibility: hidden;
+}
+
 .page-template-about .history .slide.slick-active {
     opacity: 1;
 }
@@ -2611,7 +2616,6 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .history .slide {
     max-width: 850px;
     width: 100%;
-    margin: 0 100px;
 }
 
 .page-template-about .history .slider-nav .slick-track {
@@ -4004,6 +4008,10 @@ section.page-not-found #particles-js {
     }
 
     /*About*/
+    .page-template-about .history .slide {
+        margin: 0 100px;
+    }
+
     .page-template-about .history .slider-nav .slick-list {
         margin-right: -30px;
         margin-left: -30px;
