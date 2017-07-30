@@ -178,14 +178,20 @@ jQuery(function ($) {
     });
 
     //Menu resize
-    $(document).on("scroll", function () {
-        if ($(document).scrollTop() > 100) {
-            $(".top-header").addClass("small");
+    $(window).on("scroll", function (event) {
+        var point = $(this).scrollTop();
+        if (point > lastScrollTop) {
+            if(!$(".top-header").hasClass("small")) {
+                $(".top-header").addClass("small");
+            }
         } else {
-            $(".top-header").removeClass("small")
+            if($(".top-header").hasClass("small")) {
+                $(".top-header").removeClass("small");
+            }
         }
-
+        lastScrollTop = point;
     });
+
     var lastScrollTop = 0;
     $(window).scroll(function(event){
         var st = $(this).scrollTop();
