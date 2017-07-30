@@ -168,3 +168,47 @@ function register_custom_yoast_variables() {
 }
 // Add action
 add_action('wpseo_register_extra_replacements', 'register_custom_yoast_variables', 10, 0);
+
+
+// Add the custom columns to the book post type:
+//add_filter( 'manage_team_member_posts_columns', 'set_custom_edit_team_member_columns' );
+//function set_custom_edit_team_member_columns($columns) {
+////	unset( $columns['author'] );
+////	$columns['book_author'] = __( 'Author', 'your_text_domain' );
+////	$columns['publisher'] = __( 'Publisher', 'your_text_domain' );
+//	$columns['image_profile'] = __( 'Image Profile', 'custom_fields' );
+//	return $columns;
+//}
+
+// Add the data to the custom columns for the book post type:
+//add_action( 'manage_team_member_custom_column' , 'custom_team_member_column', 10, 2 );
+//function custom_team_member_column( $column, $post_id ) {
+//
+//	switch ( $column ) {
+//		case 'image_profile' :
+//			echo $post_id;
+////		case 'book_author' :
+////			$terms = get_the_term_list( $post_id , 'book_author' , '' , ',' , '' );
+////			if ( is_string( $terms ) )
+////				echo $terms;
+////			else
+////				_e( 'Unable to get author(s)', 'your_text_domain' );
+////			break;
+////
+////		case 'publisher' :
+////			echo get_post_meta( $post_id , 'publisher' , true );
+////			break;
+//
+//	}
+//}
+
+
+//function remove_permalinks_fot_posts($return, $post_id, $new_title, $new_slug, $post)
+//{
+//	if($post->post_type == 'team_member') {
+//		return '';
+//	}
+//	return $return;
+//}
+//
+//add_filter('get_sample_permalink_html', 'remove_permalinks_fot_posts', 10, 5);

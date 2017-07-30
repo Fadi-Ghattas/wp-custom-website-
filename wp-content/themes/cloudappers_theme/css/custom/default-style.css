@@ -3929,11 +3929,18 @@ section.page-not-found #particles-js {
         transition: all 1s;
     }
 
-    .top-header.small img,
-    .top-header.small embed {
+    .top-header.small .logo-desk img.hidden-sm,
+    .top-header.small .logo-desk embed.hidden-sm {
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s;
+    }
+
+    .top-header .logo-desk img.hidden-sm,
+    .top-header .logo-desk embed.hidden-sm {
+        visibility: visible;
+        opacity: 1;
+        transition: all 2s;
     }
 
 
@@ -6534,6 +6541,10 @@ section.page-not-found #particles-js {
     #footer {
         padding-top: 5.6vw;
         padding-bottom: 0;
+    }
+
+    .page-template-projects #footer {
+        margin-bottom: 20vw;
     }
 
     #footer .mob .copyright p {
