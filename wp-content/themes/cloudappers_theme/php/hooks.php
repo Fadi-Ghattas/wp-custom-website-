@@ -179,11 +179,11 @@ add_action('wpseo_register_extra_replacements', 'register_custom_yoast_variables
 //	$columns['image_profile'] = __( 'Image Profile', 'custom_fields' );
 //	return $columns;
 //}
-
-// Add the data to the custom columns for the book post type:
-//add_action( 'manage_team_member_custom_column' , 'custom_team_member_column', 10, 2 );
-//function custom_team_member_column( $column, $post_id ) {
 //
+//// Add the data to the custom columns for the book post type:
+//add_action( 'manage_team_member_posts_custom_column' , 'custom_team_member_column', 10, 2 );
+//function custom_team_member_column( $column, $post_id ) {
+//	$x =1;
 //	switch ( $column ) {
 //		case 'image_profile' :
 //			echo $post_id;
@@ -203,12 +203,7 @@ add_action('wpseo_register_extra_replacements', 'register_custom_yoast_variables
 //}
 
 
-//function remove_permalinks_fot_posts($return, $post_id, $new_title, $new_slug, $post)
-//{
-//	if($post->post_type == 'team_member') {
-//		return '';
-//	}
-//	return $return;
-//}
-//
-//add_filter('get_sample_permalink_html', 'remove_permalinks_fot_posts', 10, 5);
+//Jigsaw::add_column('team_member', 'test', function($post_id){
+//	$page = get_post($post_id);
+//	echo wp_trim_words($$post_id);
+//}, 2);

@@ -1963,10 +1963,14 @@ section.all-the-team .grid {
 
 
 
-.single-project #menu-item-494 a {
+.single-project #menu-item-494 a,
+.page-template-team #menu-item-1148 a,
+.page-template-clients #menu-item-1148 a
+{
     color: #ff5f19;
     background: transparent;
 }
+
 
 .single-project .project-header .project-header-container .short-description {
     padding: 0 320px;
