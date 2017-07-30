@@ -178,18 +178,81 @@ jQuery(function ($) {
     });
 
     //Menu resize
-    $(window).on("scroll", function (event) {
-        var point = $(this).scrollTop();
-        if (point > lastScrollTop) {
-            if(!$(".top-header").hasClass("small")) {
-                $(".top-header").addClass("small");
-            }
-        } else {
-            if($(".top-header").hasClass("small")) {
-                $(".top-header").removeClass("small");
-            }
+
+    /**
+     * detect IE
+     * returns version of IE or false, if browser is not Internet Explorer
+     */
+    function detectIE() {
+        var ua = window.navigator.userAgent;
+
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+            // IE 10 or older => return version number
+            return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
         }
-        lastScrollTop = point;
+
+        var trident = ua.indexOf('Trident/');
+        if (trident > 0) {
+            // IE 11 => return version number
+            var rv = ua.indexOf('rv:');
+            return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+        }
+
+        var edge = ua.indexOf('Edge/');
+        if (edge > 0) {
+            // Edge (IE 12+) => return version number
+            return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+        }
+
+        // other browser
+        return false;
+    }
+
+    //Firefox
+    $(window).bind('DOMMouseScroll', function(e){
+        if(e.originalEvent.detail > 0) {
+            //scroll down
+            $(".top-header").addClass("small");
+        }else {
+            //scroll up
+            $(".top-header").removeClass("small");
+        }
+
+        //prevent page fom scrolling
+        // return false;
+    });
+
+    //IE, Opera, Safari
+    $(window).bind('mousewheel', function(e){
+        if(e.originalEvent.wheelDelta < 0) {
+            //scroll down
+            $(".top-header").addClass("small");
+        }else {
+            //scroll up
+            $(".top-header").removeClass("small");
+        }
+
+        //prevent page fom scrolling
+        // return false;
+    });
+
+    var _top  = $(this).scrollTop();
+    $(window).scroll( function (event) {
+
+        if(!detectIE) {
+            var _cur_top = $(window).scrollTop();
+            if (_top < _cur_top) {
+                // if(!$(".top-header").hasClass("small")) {
+                $(".top-header").addClass("small");
+                // }
+            } else {
+                // if($(".top-header").hasClass("small")) {
+                $(".top-header").removeClass("small");
+                // }
+            }
+            _top = _cur_top;
+        }
     });
 
     var lastScrollTop = 0;
