@@ -7,5 +7,5 @@
  */
 class TeamModel extends PodsModel
 {
-	public $pod_name = 'team_member';
+	public $pod_name = 'teammember';
 }
