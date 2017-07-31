@@ -115,7 +115,7 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                         <div class="col-lg-6 ">
                             <!-- <a class="c-rbtn" href="-->
                             <?php //echo esc_url('https://www.google.com/maps?q=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&ll=' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_latitude'] . ',' . $pageOptions['home_page_map_pins'][0]['home_page_map_pin_altitude'] . '&z=13'); ?><!--">take me there</a>-->
-                            <a id="take-me-there" href="javascript:void(0)" class="c-rbtn" href="">take me there</a>
+                            <a id="take-me-there" href="https://www.google.ae/maps/place/CloudAppers+FZ+LLC/@25.095842,55.154749,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f6b5b4131278b:0xabda34c413e04be6!8m2!3d25.095842!4d55.156943?hl=en" target="_blank" class="c-rbtn" href="">take me there</a>
                         </div>
                     </div>
                 </div>
