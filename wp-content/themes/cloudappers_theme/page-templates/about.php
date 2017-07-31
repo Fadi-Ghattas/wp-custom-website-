@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Fadi
- * Date: 05/11/17
- * Time: 1:14 PM
- * Template Name: AboutPage
- */
+
 $homePageID = get_option( 'page_on_front' );
 $homePageOptions = acf_get_group_fields($homePageID);
 
