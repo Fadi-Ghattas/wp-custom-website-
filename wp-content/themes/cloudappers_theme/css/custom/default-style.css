@@ -2462,7 +2462,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 .move-section {
     position: absolute;
-    width: 100%;
+    width: 3%;
     text-align: -webkit-center;
     text-align: -moz-center;
     text-align: center;
@@ -2471,6 +2471,9 @@ section.project-url .next-project-btn.prev-arr.last-project {
     display: block;
     top: 0;
     height: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .move-section .icono-arrow1-down {
@@ -2491,6 +2494,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     margin-bottom: 29px;
     text-align: inherit;
     height: 100%;
+    width: 5%;
 }
 
 .move-section.with-border > div {
