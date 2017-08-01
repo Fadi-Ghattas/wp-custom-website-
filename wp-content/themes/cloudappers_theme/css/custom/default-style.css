@@ -2,105 +2,8 @@
 version:   1.0
 date:      20/04/2017
 */
-
-/*@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../custom/fonts/Raleway/Raleway-Regular.eot');
-    src: url('../custom/fonts/Raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-Regular.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-Regular.svg#Raleway-Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewayExtraLight';
-    src: url('../custom/fonts/Raleway/Raleway-ExtraLight.eot');
-    src: url('../custom/fonts/Raleway/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-ExtraLight.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-ExtraLight.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-ExtraLight.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewayLight';
-    src: url('../custom/fonts/Raleway/Raleway-Light.eot');
-    src: url('../custom/fonts/Raleway/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-Light.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-Light.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-Light.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-Light.svg#Raleway-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewayMedium';
-    src: url('../custom/fonts/Raleway/Raleway-Medium.eot');
-    src: url('../custom/fonts/Raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-Medium.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-Medium.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-Medium.svg#Raleway-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewaySemiBold';
-    src: url('../custom/fonts/Raleway/Raleway-SemiBold.eot');
-    src: url('../custom/fonts/Raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewayBold';
-    src: url('../custom/fonts/Raleway/Raleway-Bold.eot');
-    src: url('../custom/fonts/Raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-Bold.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-Bold.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-Bold.svg#Raleway-Bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewayExtraBold';
-    src: url('../custom/fonts/Raleway/Raleway-ExtraBold.eot');
-    src: url('../custom/fonts/Raleway/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-ExtraBold.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'RalewayBlack';
-    src: url('../custom/fonts/Raleway/Raleway-Black.eot');
-    src: url('../custom/fonts/Raleway/Raleway-Black.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway/Raleway-Black.woff2') format('woff2'),
-    url('../custom/fonts/Raleway/Raleway-Black.woff') format('woff'),
-    url('../custom/fonts/Raleway/Raleway-Black.ttf') format('truetype'),
-    url('../custom/fonts/Raleway/Raleway-Black.svg#Raleway-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
 
 html, body {
     padding: 0;
@@ -202,7 +105,8 @@ section.ca-page-header p {
 section.ca-page-header .title {
     /*letter-spacing: 1.6px;*/
     color: #ffffff;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 20px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
     text-transform: uppercase;
@@ -211,7 +115,8 @@ section.ca-page-header .title {
 section.ca-page-header .sub-title {
     /*letter-spacing: 9px;*/
     color: #ffffff;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 90px;
     line-height: 108px;
     text-shadow: 0px 0px 19.74px rgba(131, 131, 131, 0.5);
@@ -222,7 +127,7 @@ section.ca-page-header .sub-title {
 section.ca-page-header .desc {
     font-size: 18px;
     color: rgb(255, 255, 255);
-    font-family: "RalewaySemiBold" , sans-serif;
+    font-weight: 600;
     line-height: 2.111;
     text-align: center;
 }
@@ -258,7 +163,8 @@ section.ca-page-banner .container {
 section.ca-page-banner p {
     /*letter-spacing: 2px;*/
     color: #ffffff;
-    font-family: 'RalewaySemiBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 27px;
     /*text-transform: uppercase;*/
     line-height: 38px;
@@ -372,7 +278,7 @@ header, nav, header img {
 .navbar-nav {
     float: right;
     padding-top: 10px;
-    font-family: 'RalewayBold' !important;
+    font-weight: bold;
 }
 
 .nav > li:not(.c-btn) > a {
@@ -394,7 +300,8 @@ header, nav, header img {
 
 .word-background {
     font-size: 144.63px;
-    font-family: 'RalewaySemiBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     position: absolute;
     top: 8%;
     left: 0;
@@ -451,7 +358,7 @@ header, nav, header img {
 
 .home .slide-desc h5 {
     font-size: 24px;
-    font-family: "RalewayLight" , sans-serif;
+    font-weight: 300;
     color: #4d4e50;
     text-transform: uppercase;
     line-height: 40px;
@@ -461,7 +368,7 @@ header, nav, header img {
 .home .slide-desc h1 {
     margin-top: 7px;
     font-size: 90px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 0.778;
     text-shadow: 0px 16px 19.74px rgba(110, 110, 110, 0.2);
@@ -495,7 +402,7 @@ header, nav, header img {
 }
 
 .home .showcase p {
-    font-family: "RalewayLight" , sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: 22px;
     margin: 0;
@@ -507,7 +414,7 @@ header, nav, header img {
     height: auto;
     padding: 15px 15px 0;
     font-size: 22px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 22px;
     margin: 24px 0 25px;
@@ -581,7 +488,7 @@ header, nav, header img {
 .view-all a {
     line-height: 70px;
     font-size: 14px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     color: #202020;
     display: inline-block;
     /*letter-spacing: 1px;*/
@@ -600,7 +507,7 @@ header, nav, header img {
     font-size: 16px;
     line-height: 1.875;
     padding-bottom: 75px;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
 }
 
 .home .what-we-do img {
@@ -655,7 +562,7 @@ header, nav, header img {
 .home .what-we-do .view-all a {
     line-height: 70px;
     font-size: 14px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     color: #202020;
     display: inline-block;
 }
@@ -682,7 +589,7 @@ header, nav, header img {
 .home .showyou .view-all a {
     line-height: 70px;
     font-size: 14px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     display: inline-block;
     color: #3c566a;
     background: url("../../img/viewall.png") no-repeat left;
@@ -723,7 +630,7 @@ header, nav, header img {
 
 .home .showyou .project-info a {
     font-size: 12px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     border-radius: 4px;
     width: 118px;
     height: 34px;
@@ -754,13 +661,13 @@ header, nav, header img {
 
 .home .showyou .project-info h5 {
     font-size: 24px;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
     margin-top: 16px;
 }
 
 .home .showyou .project-info h6 {
     font-size: 14px;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
     margin-top: 14px;
 }
 
@@ -806,14 +713,14 @@ header, nav, header img {
 
 .home .showyou .projects a > div h5 {
     font-size: 24px;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
     margin-bottom: 15px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .home .showyou .projects a > div h6 {
     font-size: 14px;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
     /*margin-bottom: 34px;*/
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -856,7 +763,7 @@ header, nav, header img {
 
 .home .team .title h1 {
     font-size: 74px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 0.946;
 }
@@ -865,13 +772,13 @@ header, nav, header img {
     font-size: 23px;
     line-height: 2.609;
     text-align: center;
-    font-family: "RalewayLight" , sans-serif;
+    font-weight: 300;
     margin-top: 5px;
 }
 
 .home .team .department a {
     font-size: 16px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 2.25;
     text-align: center;
@@ -935,7 +842,7 @@ header, nav, header img {
 
 .team .members .member-info h5 {
     font-size: 33px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     color: #fff;
 }
 
@@ -962,7 +869,7 @@ header, nav, header img {
     line-height: 47px;
     font-size: 14px;
     color: rgb(255, 97, 27);
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
@@ -973,8 +880,9 @@ header, nav, header img {
 .home .team .join h2 {
     font-size: 36px;
     margin-top: 72px;
+    font-weight: 300;
     text-align: center;
-    font-family: 'RalewayExtraLight' , sans-serif;
+    font-weight: 200;
 }
 
 .contact {
@@ -1019,6 +927,7 @@ header, nav, header img {
 .contact .address-ca #take-me-there {
     font-size: 14px;
     color: rgb(255, 97, 27);
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     width: 153px;
@@ -1029,7 +938,8 @@ header, nav, header img {
     margin-top: 53px;
     /*margin-left: 39px;*/
     border-radius: 4px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 .contact .address-ca #take-me-there:hover {
@@ -1045,7 +955,7 @@ header, nav, header img {
     padding-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    font-family: "RalewaySemiBold" , sans-serif;
+    font-weight: 600;
     margin-top: 11px;
     /*background-size: contain;*/
     /* line-height: 0.80; */
@@ -1058,7 +968,7 @@ body.home.blog.modal-open {
 
 .contact .address-ca p {
     font-size: 14px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans";
     line-height: 1.714;
     text-align: left;
     padding-left: 30px;
@@ -1106,7 +1016,7 @@ body.home.blog.modal-open {
 .home .contact .form h1 {
     font-size: 74px;
     color: rgb(255, 97, 27);
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 0.946;
     margin-bottom: 76px;
@@ -1118,7 +1028,7 @@ body.home.blog.modal-open {
     color: rgb(0, 0, 0);
     line-height: 1.778;
     padding-left: 7px;
-    font-family: "RalewayBold" , sans-serif;
+    font-weight: 400;
     margin-bottom: 0;
 }
 
@@ -1158,7 +1068,8 @@ body.home.blog.modal-open {
     width: 100%;
     max-width: 511px;
     font-size: 14px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
+
 }
 
 .home .contact .copyright img,
@@ -1261,14 +1172,14 @@ body.home.blog.modal-open {
 
 #JobModal .modal-header h2 {
     font-size: 48px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     margin-top: 41px;
     /* margin-bottom: -5px; */
 }
 
 #JobModal .modal-header h3 {
     font-size: 20px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     color: #6f6c6c;
     margin-top: 15px;
 }
@@ -1282,7 +1193,7 @@ body.home.blog.modal-open {
     box-shadow: none;
     border-bottom: 1px solid black;
     font-size: 18px;
-    font-family: "RalewayBold" , sans-serif;
+    font-weight: 400;
     color: #ff5f19;
     min-height: 35px;
     background: transparent;
@@ -1312,7 +1223,7 @@ body.home.blog.modal-open {
 
 #JobModal label {
     font-size: 18px;
-    font-family: "RalewayBold" , sans-serif;
+    font-weight: 400;
     margin: 0;
     color: #000;
 }
@@ -1364,8 +1275,9 @@ body.home.blog.modal-open {
 
 #JobModal button {
     border: 1px solid black;
+
     font-size: 16px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: 700;
 }
 
 #JobModal button.submit-btn {
@@ -1409,7 +1321,7 @@ body.home.blog.modal-open {
     /*line-height: 22px;*/
     color: rgb(94, 94, 94);
     opacity: 1;
-    font-family: 'RalewayExtraLight' , sans-serif;
+    font-weight: 200;
     margin-top: -28px;
     margin-right: 10px;
     transition: all 0.25s ease-in-out;
@@ -1419,7 +1331,7 @@ body.home.blog.modal-open {
 
 #JobModal label span {
     float: right;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
 }
 
 label[for="expected_salary"] {
@@ -1524,7 +1436,8 @@ section.services .service-item .description {
 section.services .service-item .description,
 section.services .service-item p {
     color: #6f6c6c;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     text-align: left !important;
@@ -1534,7 +1447,8 @@ section.services .service-item p {
 
 section.services .service-item .title {
     color: #202020;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 26px;
     margin-bottom: 19px;
     margin-top: 0;
@@ -1551,7 +1465,8 @@ section.services .service-item .more:hover {
 }
 
 a.btn-view-all-show-cases.c-btn {
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     display: block;
@@ -1625,7 +1540,8 @@ section.some-of-show-cases .show-case-item {
 
 section.some-of-show-cases h1 {
     color: #666666;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 85px;
@@ -1668,7 +1584,8 @@ section.some-of-show-cases .overlay p {
 }
 
 section.some-of-show-cases .overlay h5 {
-    font-family: "RalewayMedium" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 13px;
@@ -1677,7 +1594,8 @@ section.some-of-show-cases .overlay h5 {
 }
 
 section.some-of-show-cases .overlay h6 {
-    font-family: "RalewayMedium" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: 31px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -1734,7 +1652,8 @@ section.some-of-show-cases .overlay h6 {
 
 .service-details .title {
     font-size: 26px;
-    font-family: "RalewayExtraBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     margin-top: 44px;
     margin-bottom: 31px;
     color: #202020;
@@ -1749,7 +1668,8 @@ section.some-of-show-cases .overlay h6 {
 .service-details .description p {
     color: #6f6c6c;
     font-size: 16px;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     line-height: 1.875;
     max-width: 650px;
     margin: 0 auto;
@@ -1770,7 +1690,8 @@ section.some-of-show-cases .overlay h6 {
     align-self: center;
     color: #fefefe;
     font-size: 22px;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     /*letter-spacing: 2.2px;*/
     line-height: 35px;
@@ -1793,7 +1714,8 @@ section.some-of-show-cases .overlay h6 {
 
 .service-info-item .title {
     font-size: 26px;
-    font-family: "RalewayExtraBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     margin-top: 80px;
     margin-bottom: 25px;
     color: #202020;
@@ -1807,7 +1729,8 @@ section.some-of-show-cases .overlay h6 {
 .service-info-item .description p {
     color: #6f6c6c;
     font-size: 16px;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     line-height: 30px;
 }
 
@@ -1891,8 +1814,9 @@ ul.filters {
 ul.filters li {
     display: inline-block;
     color: #d0d0d0;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 700;
     padding: 0px 4px;
     cursor: pointer;
 }
@@ -1918,8 +1842,9 @@ ul.filters li {
 ul.filters li a,
 ul.filters li a span {
     color: #d0d0d0;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
     /*letter-spacing: 3px;*/
 }
@@ -2081,20 +2006,23 @@ section.project-header .project-header-container .header-text {
 }
 
 section.project-header .project-header-container .header-text .title {
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     /*letter-spacing: 1.6px;*/
     margin-bottom: 4px;
 }
 
 section.project-header .project-header-container .header-text .name {
-    font-family: 'RalewayBlack', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
     font-size: 38px;
     margin-bottom: 26px;
 }
 
 section.project-header .project-header-container .short-description p {
-    font-family: "RalewayLight" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     font-size: 30px;
     line-height: 1.467;
     /*letter-spacing: 1px;*/
@@ -2117,7 +2045,8 @@ section.project-info .project-info-row {
 
 section.project-info .title {
     color: #49aac9;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     margin-top: 52px;
     margin-bottom: 24px;
@@ -2128,7 +2057,8 @@ section.project-info .description,
 section.project-info .description p,
 section.project-info .description ul {
     color: #000000;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
 }
@@ -2203,7 +2133,8 @@ section.show-case-one .description-container {
 section.show-case-one .description,
 section.show-case-one .description p,
 section.show-case-one .description ul {
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 29px;
     line-height: 1.414;
 }
@@ -2239,8 +2170,9 @@ section.show-case-two .container {
 
 section.show-case-two .title {
     color: #49aac9;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 700;
     margin-bottom: 26px;
     /*letter-spacing: 0.8px;*/
 }
@@ -2249,8 +2181,9 @@ section.show-case-two .description,
 section.show-case-two .description p,
 section.show-case-two .description ul {
     color: #000000;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.875;
 }
 
@@ -2264,8 +2197,9 @@ section.client-say {
 
 section.client-say h1 {
     color: #fff;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 700;
     text-align: center;
     text-align: -moz-center;
     text-align: -webkit-center;
@@ -2288,8 +2222,9 @@ section.client-say .say-block,
 section.client-say .say-block p,
 section.client-say .say-block ul {
     color: #fff;
-    font-family: "RalewayBold" , sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     /*padding: 0;*/
 
 }
@@ -2304,7 +2239,7 @@ section.client-say .say-block p {
 
 section.client-say .say-block strong {
     font-size: 24px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: 700;
 }
 
 section.client-say .say-block:nth-of-type(even) {
@@ -2335,12 +2270,12 @@ section.client-say .say-block .signature {
 
 section.client-say .say-block .signature p {
     font-size: 11px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: 700;
 }
 
 section.client-say .say-block .signature strong {
     font-size: 14px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: 700;
 }
 
 section.client-say .say-block .signature .from {
@@ -2375,8 +2310,9 @@ section.project-url {
 
 section.project-url .title {
     color: #49aac9;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 700;
     margin-top: 80px;
     margin-bottom: 42px;
     /*letter-spacing: 1.6px;*/
@@ -2394,7 +2330,7 @@ section.project-url .url-name {
 section.project-url .url-name p {
     margin-bottom: 22px;
     font-size: 36px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: 700;
     /*letter-spacing: 3.6px;*/
 }
 
@@ -2470,7 +2406,8 @@ section.project-url .url-name p {
 
 section.project-url .next-project-btn {
     color: #2f4750;
-    font-family: 'RalewayBold', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size: 14px !important;
     text-transform: uppercase;
     display: inline-block;
@@ -2619,7 +2556,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .process h1 {
     font-size: 48px;
     color: rgb(85, 85, 85);
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.14;
     /*letter-spacing: 4.8px;*/
@@ -2632,7 +2569,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     line-height: 1.875;
     max-width: 515px;
     margin: 0 auto;
-    font-family: "RalewayMedium" , sans-serif;
+    font-weight: 500;
 }
 
 .page-template-about .process img {
@@ -2667,7 +2604,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 .page-template-about .history .slide h1 {
     font-size: 48px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.458;
     text-align: center;
@@ -2806,7 +2743,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .ca-page-banner h6 {
     font-size: 16px;
     color: rgb(218, 218, 218);
-    font-family: 'RalewayBold' , sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     /*letter-spacing: 0.8px;*/
@@ -2815,7 +2752,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .ouraim p {
     font-size: 27px;
     color: rgb(255, 255, 255);
-    font-family: "RalewaySemiBold", sans-serif;
+    font-weight: 600;
     text-align: center;
     /*letter-spacing: 2px;*/
 }
@@ -2843,7 +2780,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .clients h6 {
     font-size: 16px;
     color: rgb(85, 85, 85);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
     /*letter-spacing: 1.6px;*/
@@ -2861,7 +2798,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .time h6 {
     font-size: 16px;
     color: #666666;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 2;
     text-align: center;
@@ -2897,7 +2834,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .why .main-title h1 {
     font-size: 48px;
     color: rgb(85, 85, 85);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.458;
     text-align: center;
@@ -2906,7 +2843,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 .page-template-about .why .main-title p {
     font-size: 16px;
-    font-family: "RalewayBold", sans-serif;
+    font-weight: 400;
     color: rgb(93, 95, 116);
     line-height: 1.875;
     text-align: center;
@@ -2927,7 +2864,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
     color: rgb(93, 95, 116);
     line-height: 1.875;
     text-align: left;
-    font-family: "RalewayBold", sans-serif;
+    font-weight: 400;
 }
 
 .page-template-about .words {
@@ -2981,7 +2918,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .words h6 {
     font-size: 16px;
     color: rgb(102, 102, 102);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: left;
     /*letter-spacing: 1.6px;*/
@@ -3011,7 +2948,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .page-template-about .words h5 {
     font-size: 16px;
     color: rgb(47, 47, 47);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     line-height: 1.688;
     text-align: left;
     /*letter-spacing: 1.6px;*/
@@ -3066,7 +3003,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 
 .prefooter h1 {
     font-size: 40px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     line-height: 52px;
     margin: 0;
 }
@@ -3074,7 +3011,7 @@ section.project-url .next-project-btn.prev-arr.last-project {
 .prefooter p {
     font-size: 26px;
     line-height: 2;
-    font-family: "RalewayLight", sans-serif;
+    font-weight: 300;
 }
 
 form#GetInTouchForm button.c-btn {
@@ -3087,7 +3024,7 @@ form#GetInTouchForm button.c-btn {
     height: 54px;
     margin-top: 38px;
     font-size: 14px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 54px;
     text-align: center;
@@ -3141,7 +3078,7 @@ form#GetInTouchForm button.c-btn {
     color: rgb(52, 52, 52);
     line-height: 2.533;
     transition: 0.5s;
-    font-family: "RalewayMedium", sans-serif;
+    font-weight: 500;
 }
 
 #footer .footer-menu a:hover {
@@ -3161,7 +3098,7 @@ form#GetInTouchForm button.c-btn {
 #footer .address-ca {
     text-align: right;
     padding-top: 9px;
-    font-family: "RalewayMedium", sans-serif;
+    font-weight: 500;
 }
 
 #footer .address-ca .details {
@@ -3313,7 +3250,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .join .title h6 {
     font-size: 19px;
     color: rgb(93, 93, 93);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     /*letter-spacing: 1.9px;*/
@@ -3329,7 +3266,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .join .title h1 {
     font-size: 74px;
     color: rgb(78, 193, 234);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 0.946;
     text-align: center;
@@ -3351,20 +3288,20 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .join .desc h5 {
     font-size: 16px;
     color: rgb(136, 136, 136);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     /*letter-spacing: 1.6px;*/
 }
 
 .page-template-contact-us .join .position p {
     font-size: 24px;
     color: rgb(23, 23, 23);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     /*letter-spacing: 2.4px;*/
 }
 
 .page-template-contact-us .join .position span {
     font-size: 16px;
-    font-family: "RalewayLight", sans-serif;
+    font-weight: 300;
     color: rgb(36, 36, 36);
     display: block;
     letter-spacing: 0;
@@ -3373,7 +3310,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .join .desc h5 {
     font-size: 16px;
     color: rgb(136, 136, 136);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     line-height: 4.375;
     /*letter-spacing: 1.6px;*/
 }
@@ -3381,7 +3318,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .join .desc p {
     font-size: 16px;
     color: rgb(36, 36, 36);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     line-height: 1.875;
     text-align: left;
 }
@@ -3393,7 +3330,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .join .apply a {
     font-size: 14px;
     color: rgb(243, 252, 254);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 47px;
     float: right;
@@ -3422,7 +3359,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .contact .form h1 {
     font-size: 74px;
     color: rgb(255, 97, 27);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 0.946;
     margin-bottom: 49px;
@@ -3435,7 +3372,7 @@ form#GetInTouchForm button.c-btn {
     width: 100%;
     max-width: 504px;
     font-size: 14px;
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
 }
 
 .page-template-contact-us .contact .form-group:first-of-type,
@@ -3466,7 +3403,7 @@ form#GetInTouchForm button.c-btn {
 .page-template-contact-us .contact .form h6 {
     font-size: 19px;
     color: rgb(93, 93, 93);
-    font-family: 'RalewayBold', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -3673,9 +3610,13 @@ section.page-not-found p {
 
 section.page-not-found h2 {
     font-family: 'Raleway', sans-serif;
+    /*font-size: 30px;*/
+    /*font-weight: 600;*/
+    /*letter-spacing: 9px;*/
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    /*line-height: 50px;*/
     padding: 0px;
     margin: 0px;
 }
@@ -3684,6 +3625,7 @@ section.page-not-found h2 a {
     text-shadow: 0px 0px 50px rgba(131, 131, 131, 0.5);
     color: #fff;
     text-decoration: none;
+    /*border-bottom: 5px solid #fff;*/
     margin: 0;
     padding: 0;
     padding-bottom: 3px;
@@ -5011,7 +4953,7 @@ section.page-not-found #particles-js {
 
     section.client-say .say-block .signature .from {
         font-size: 3.2vw;
-        font-family: 'RalewayBold', sans-serif;
+        font-weight: 700;
         margin-top: 9px;
         line-height: initial;
     }
@@ -5519,7 +5461,7 @@ section.page-not-found #particles-js {
         right: 2px;
         top: -8px;
         font-size: 30px;
-        font-family: "RalewayMedium", sans-serif;
+        font-weight: 500;
         opacity: 0.5;
     }
 
@@ -5547,7 +5489,7 @@ section.page-not-found #particles-js {
 
         font-size: 4.3vw;
         line-height: 7.06vw;
-        font-family: "RalewayBold", sans-serif;
+        font-weight: 400;
         padding: 0 0px;
     }
 
@@ -5566,7 +5508,7 @@ section.page-not-found #particles-js {
     .home .showcase a span {
         font-size: 3.5vw;
         color: #fff;
-        font-family: "RalewayLight", sans-serif;
+        font-weight: 300;
         height: 8.73vw;
         margin-top: -2vw;
         /*margin-bottom: 2vw;*/
@@ -5850,7 +5792,7 @@ section.page-not-found #particles-js {
     .home .clients .view-all a,
     .home .showyou .view-all a {
         font-size: 4.26vw;
-        font-family: 'RalewayBold', sans-serif;
+        font-weight: bold;
         color: #454545;
         letter-spacing: 0px;
     }
@@ -5912,7 +5854,7 @@ section.page-not-found #particles-js {
 
     .contact .form input {
         text-align: center;
-        font-family: "RalewaySemiBold", sans-serif;
+        font-weight: 600;
         font-size: 4.8vw;
         color: black;
         border-bottom-width: 1px;
@@ -5969,7 +5911,7 @@ section.page-not-found #particles-js {
         text-align: center;
         font-size: 9.7vw;
         color: rgb(81, 81, 81);
-        font-family: 'RalewayBold', sans-serif;
+        font-weight: bold;
         text-transform: uppercase;
         position: absolute;
         /*top: 135px;*/
@@ -6121,7 +6063,7 @@ section.page-not-found #particles-js {
         line-height: 0;
     }
     section.ca-page-header .desc {
-        font-family: "RalewayBold", sans-serif;
+        font-weight: 400;
     }
     .page-template-about .why .main-title p,
     .page-template-about .why p {
@@ -6214,7 +6156,7 @@ section.page-not-found #particles-js {
     }
 
     section.ca-page-header .title {
-        font-family: "RalewayMedium", sans-serif;
+        font-weight: 500;
         font-size: 4.8vw;
         line-height: 9vw;
         /*letter-spacing: 0.48vw;*/
@@ -6400,8 +6342,9 @@ section.page-not-found #particles-js {
 
     section.some-of-show-cases .show-case-item .mob h5 {
         color: white;
+        font-family: 'Raleway', sans-serif;
         font-size: 6.4vw;
-        font-family: "RalewayLight", sans-serif;
+        font-weight: 300;
         text-align: -webkit-center;
         text-align: -moz-center;
         text-align: center;
@@ -6410,8 +6353,9 @@ section.page-not-found #particles-js {
 
     section.some-of-show-cases .show-case-item .mob h6 {
         color: white;
+        font-family: 'Raleway', sans-serif;
         font-size: 4.2vw;
-        font-family: "RalewayMedium", sans-serif;
+        font-weight: 500;
         text-align: -webkit-center;
         text-align: -moz-center;
         text-align: center;
@@ -6483,6 +6427,7 @@ section.page-not-found #particles-js {
 
     .page-template-contact-us .join .position h5,
     .page-template-contact-us .join .desc h5 {
+        /*font-size: 28px;*/
         font-size: 3.7vw;
     }
 
@@ -6491,27 +6436,36 @@ section.page-not-found #particles-js {
     }
 
     .page-template-contact-us .join .position p {
+        /*font-size: 38px;*/
         font-size: 5vw;
+        /*margin-top: 25px;*/
         margin-top: 3.3vw;
     }
 
     .page-template-contact-us .join .desc p {
+        /*font-size: 28px;*/
         font-size: 3.7vw;
+        /*margin-top: 36px;*/
         margin-top: 4.8vw;
+        /*line-height: 45px;*/
         line-height: 6vw;
     }
 
     .page-template-contact-us .join .position span {
+        /*font-size: 28px;*/
         font-size: 3.7vw;
-        font-family: "RalewayMedium", sans-serif;
+        font-weight: 500;
+        /*margin-top: 7px;*/
         margin-top: 0.9vw;
     }
 
     .page-template-contact-us .join .desc span {
+        /*font-size: 28px;*/
         font-size: 3.7vw;
     }
 
     .page-template-contact-us .join .desc {
+        /*padding-top: 74px;*/
         padding-top: 3vw;
     }
 
@@ -6666,7 +6620,7 @@ section.page-not-found #particles-js {
         height: 14vw;
         margin-top: 5.066666666666666vw;
         font-size: 4vw;
-        font-family: 'RalewayBold', sans-serif;
+        font-weight: bold;
         text-transform: uppercase;
         line-height: 54px;
         text-align: center;
@@ -7273,7 +7227,7 @@ section.page-not-found #particles-js {
     width: 153px;
     height: 47px;
     line-height: 47px;
-    font-family: 'RalewayBold';
+    font-weight: bold;
 
     /*new effect*/
     background-repeat: no-repeat;
@@ -8133,7 +8087,7 @@ body.home.blog.modal-open {
     width: 152px;
     min-height: 50px;
     line-height: 1.1;
-    font-family: "RalewayMedium", sans-serif;
+    font-weight: 500;
     border-radius: 5px;
     padding-left: 10px;
     display: inline-block;
