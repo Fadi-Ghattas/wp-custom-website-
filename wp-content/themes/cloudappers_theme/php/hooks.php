@@ -76,10 +76,7 @@ function project_custom_login_logo()
             }
          </style>';
 }
-
 add_action('login_head', 'project_custom_login_logo');
-
-add_action('init', 'remove_editor_init');
 
 function my_login_logo_url_title() {
 	return 'CLOUDAPPERS';
@@ -126,6 +123,7 @@ function remove_editor_init()
 		}
 	}
 }
+add_action('init', 'remove_editor_init');
 
 function add_defer_attribute($tag, $handle)
 {
