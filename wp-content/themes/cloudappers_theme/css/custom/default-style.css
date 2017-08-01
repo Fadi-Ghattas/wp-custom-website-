@@ -8,15 +8,14 @@ date:      20/04/2017
 
 @font-face {
     font-family: 'Raleway';
-    src: url('../custom/fonts/Raleway-Black.eot');
-    src: url('../custom/fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway-Black.woff2') format('woff2'),
-    url('../custom/fonts/Raleway-Black.woff') format('woff'),
-    url('../custom/fonts/Raleway-Black.ttf') format('truetype'),
-    url('../custom/fonts/Raleway-Black.svg#Raleway-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
+    src: url('../custom/fonts/Raleway-Regular.eot');
+    src: url('../custom/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../custom/fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../custom/fonts/Raleway-Regular.woff') format('woff'),
+    url('../custom/fonts/Raleway-Regular.ttf') format('truetype'),
+    url('../custom/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
 }
+
 
 
 @font-face {
