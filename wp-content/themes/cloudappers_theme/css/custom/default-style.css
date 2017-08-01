@@ -3,33 +3,20 @@ version:   1.0
 date:      20/04/2017
 */
 
-/*@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');*/
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../custom/fonts/Raleway-Regular.eot');
-    src: url('../custom/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway-Regular.woff2') format('woff2'),
-    url('../custom/fonts/Raleway-Regular.woff') format('woff'),
-    url('../custom/fonts/Raleway-Regular.ttf') format('truetype'),
-    url('../custom/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
-}
-
-
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../custom/fonts/OpenSans.eot');
-    src: url('../custom/fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/OpenSans.woff2') format('woff2'),
-    url('../custom/fonts/OpenSans.woff') format('woff'),
-    url('../custom/fonts/OpenSans.ttf') format('truetype'),
-    url('../custom/fonts/OpenSans.svg#OpenSans') format('svg');
-    font-weight: normal;
+    font-family: 'RalewayBold';
+    src: url('../custom/fonts/Raleway-Bold.eot');
+    src: url('../custom/fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../custom/fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../custom/fonts/Raleway-Bold.woff') format('woff'),
+    url('../custom/fonts/Raleway-Bold.ttf') format('truetype'),
+    url('../custom/fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
     font-style: normal;
 }
-
 
 html, body {
     padding: 0;
@@ -131,8 +118,7 @@ section.ca-page-header p {
 section.ca-page-header .title {
     /*letter-spacing: 1.6px;*/
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 20px;
     text-shadow: 0px 0px 19.74px rgba(210, 210, 210, 0.5);
     text-transform: uppercase;
@@ -141,8 +127,7 @@ section.ca-page-header .title {
 section.ca-page-header .sub-title {
     /*letter-spacing: 9px;*/
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 90px;
     line-height: 108px;
     text-shadow: 0px 0px 19.74px rgba(131, 131, 131, 0.5);
@@ -964,8 +949,7 @@ header, nav, header img {
     margin-top: 53px;
     /*margin-left: 39px;*/
     border-radius: 4px;
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: 'RalewayBold';
 }
 
 .contact .address-ca #take-me-there:hover {
@@ -1491,8 +1475,7 @@ section.services .service-item .more:hover {
 }
 
 a.btn-view-all-show-cases.c-btn {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     display: block;
@@ -1566,8 +1549,7 @@ section.some-of-show-cases .show-case-item {
 
 section.some-of-show-cases h1 {
     color: #666666;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 85px;
@@ -1716,8 +1698,7 @@ section.some-of-show-cases .overlay h6 {
     align-self: center;
     color: #fefefe;
     font-size: 22px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     text-transform: uppercase;
     /*letter-spacing: 2.2px;*/
     line-height: 35px;
@@ -1840,9 +1821,8 @@ ul.filters {
 ul.filters li {
     display: inline-block;
     color: #d0d0d0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     padding: 0px 4px;
     cursor: pointer;
 }
@@ -1868,9 +1848,8 @@ ul.filters li {
 ul.filters li a,
 ul.filters li a span {
     color: #d0d0d0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     text-transform: uppercase;
     /*letter-spacing: 3px;*/
 }
@@ -2032,8 +2011,7 @@ section.project-header .project-header-container .header-text {
 }
 
 section.project-header .project-header-container .header-text .title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
     /*letter-spacing: 1.6px;*/
     margin-bottom: 4px;
@@ -2071,8 +2049,7 @@ section.project-info .project-info-row {
 
 section.project-info .title {
     color: #49aac9;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
     margin-top: 52px;
     margin-bottom: 24px;
@@ -2196,9 +2173,8 @@ section.show-case-two .container {
 
 section.show-case-two .title {
     color: #49aac9;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     margin-bottom: 26px;
     /*letter-spacing: 0.8px;*/
 }
@@ -2223,9 +2199,8 @@ section.client-say {
 
 section.client-say h1 {
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     text-align: center;
     text-align: -moz-center;
     text-align: -webkit-center;
@@ -2336,9 +2311,8 @@ section.project-url {
 
 section.project-url .title {
     color: #49aac9;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 16px;
-    font-weight: 700;
     margin-top: 80px;
     margin-bottom: 42px;
     /*letter-spacing: 1.6px;*/
@@ -2432,8 +2406,7 @@ section.project-url .url-name p {
 
 section.project-url .next-project-btn {
     color: #2f4750;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-family: 'RalewayBold', sans-serif;
     font-size: 14px !important;
     text-transform: uppercase;
     display: inline-block;
