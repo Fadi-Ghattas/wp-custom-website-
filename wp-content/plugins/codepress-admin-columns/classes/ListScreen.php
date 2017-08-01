@@ -378,7 +378,10 @@ abstract class AC_ListScreen {
 		$columns = $this->get_columns();
 
 		foreach ( $columns as $column ) {
-			if ( $column->get_name() === $name ) {
+
+			// Do not do a var type check. All column names
+			// are stored as strings, even integers.
+			if ( $column->get_name() == $name ) {
 				return $column;
 			}
 		}
@@ -472,14 +475,21 @@ abstract class AC_ListScreen {
 			$this->set_original_columns( $this->get_stored_default_headings() );
 		}
 
-		return $this->original_columns;
+		return (array) $this->original_columns;
 	}
 
 	/**
 	 * @param array $columns
 	 */
 	public function set_original_columns( $columns ) {
-		$this->original_columns = $columns;
+		$this->original_columns = (array) $columns;
+	}
+
+	/**
+	 * Reset original columns
+	 */
+	public function reset_original_columns() {
+		$this->original_columns = null;
 	}
 
 	/**

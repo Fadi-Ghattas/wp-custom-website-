@@ -244,9 +244,11 @@ final class AC_TableScreen {
 			}
 
 			if ( $css_column_width ) : ?>
-                <style>
-                    <?php echo $css_column_width; ?>
-                </style>
+				<style>
+					@media screen and (min-width: 783px) {
+					<?php echo $css_column_width; ?>
+					}
+				</style>
 				<?php
 			endif;
 		}
@@ -388,12 +390,6 @@ final class AC_TableScreen {
 			return $columns;
 		}
 
-		// On first visit when stored headings are empty, we force get_columns() to be re-populated
-		if ( ! $this->current_list_screen->get_stored_default_headings() ) {
-			$this->current_list_screen->reset();
-			$this->current_list_screen->set_original_columns( null );
-		}
-
 		// Store default headings
 		if ( ! AC()->is_doing_ajax() ) {
 			$this->current_list_screen->save_default_headings( $columns );
@@ -412,6 +408,13 @@ final class AC_TableScreen {
 		// Add mandatory checkbox
 		if ( isset( $columns['cb'] ) ) {
 			$this->column_headings['cb'] = $columns['cb'];
+		}
+
+		// On first visit 'columns' can be empty, because they were put in memory before 'default headings'
+		// were stored. We force get_columns() to be re-populated.
+		if ( ! $this->current_list_screen->get_columns() ) {
+			$this->current_list_screen->reset();
+			$this->current_list_screen->reset_original_columns();
 		}
 
 		foreach ( $this->current_list_screen->get_columns() as $column ) {
