@@ -74,7 +74,7 @@ date:      20/04/2017
     url('../custom/fonts/Raleway/Raleway-Bold.woff') format('woff'),
     url('../custom/fonts/Raleway/Raleway-Bold.ttf') format('truetype'),
     url('../custom/fonts/Raleway/Raleway-Bold.svg#Raleway-Bold') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
