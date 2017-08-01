@@ -7,16 +7,17 @@ date:      20/04/2017
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../custom/fonts/Raleway-Regular.eot');
-    src: url('../custom/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../custom/fonts/Raleway-Regular.woff2') format('woff2'),
-    url('../custom/fonts/Raleway-Regular.woff') format('woff'),
-    url('../custom/fonts/Raleway-Regular.ttf') format('truetype'),
-    url('../custom/fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-family: 'Open Sans';
+    src: url('../custom/fonts/OpenSans.eot');
+    src: url('../custom/fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+    url('../custom/fonts/OpenSans.woff2') format('woff2'),
+    url('../custom/fonts/OpenSans.woff') format('woff'),
+    url('../custom/fonts/OpenSans.ttf') format('truetype'),
+    url('../custom/fonts/OpenSans.svg#OpenSans') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 
 @font-face {
     font-family: 'Open Sans';
