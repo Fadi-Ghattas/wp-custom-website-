@@ -372,7 +372,7 @@ header, nav, header img {
 .navbar-nav {
     float: right;
     padding-top: 10px;
-    font-family: 'RalewayBold' , sans-serif;
+    font-family: 'RalewayBold' !important;
 }
 
 .nav > li:not(.c-btn) > a {
