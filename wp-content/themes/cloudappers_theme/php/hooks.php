@@ -168,6 +168,12 @@ function register_custom_yoast_variables() {
 add_action('wpseo_register_extra_replacements', 'register_custom_yoast_variables', 10, 0);
 
 
+if (is_page(['cloudappers-setting']))
+{
+	wp_redirect(home_url());
+	exit();
+}
+
 Jigsaw::add_column('teammember', 'Profile Image', function($post_id){
 	$profileImage = get_field('team_member_profile_image', $post_id);
 	echo '<img src="'.$profileImage['sizes']['thumbnail'].'">';;
