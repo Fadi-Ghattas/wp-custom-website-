@@ -8106,3 +8106,7 @@ body.home.blog.modal-open {
     background: url("../../img/blue-CA-icon@3x.png") no-repeat center;
     background-size: cover;
 }
+
+#markerlnk {
+    color: black;
+}
