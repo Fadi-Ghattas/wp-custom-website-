@@ -111,7 +111,13 @@ jQuery(function ($)
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId],
 				position: google.maps.ControlPosition.BOTTOM_CENTER
-			}
+			},
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.LEFT_CENTER
+            },
+            streetViewControlOptions: {
+                position: google.maps.ControlPosition.LEFT_CENTER
+            }
 
 		}
 
