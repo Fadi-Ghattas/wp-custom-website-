@@ -81,12 +81,11 @@ jQuery(function ($)
 
 		var customMapTypeId = 'custom_style';
 
-		var marker_content='<a id="markerlnk" href="https://www.google.ae/maps/place/CloudAppers+FZ+LLC/@25.095842,55.154749,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f6b5b4131278b:0xabda34c413e04be6!8m2!3d25.095842!4d55.156943?hl=en" target="_blank" >'+
-			'<div class="markerbg"></div>' +
+		var marker_content='<div class="markerbg"></div>'+
 			'<div class="mapmarker">' +
 			'<strong>CloudAppers</strong><br> ' +
 			'Media company in Dubai, United Arab Emirates ' +
-			'</div></a>';
+			'</div><a id="markerlnk" href="https://www.google.ae/maps/place/CloudAppers+FZ+LLC/@25.095842,55.154749,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f6b5b4131278b:0xabda34c413e04be6!8m2!3d25.095842!4d55.156943?hl=en" target="_blank" >Open in Google Maps</a>';
 		var infowindow = new google.maps.InfoWindow({
 			content: marker_content
 		});
