@@ -8110,11 +8110,13 @@ body.home.blog.modal-open {
 }
 
 #markerlnk {
-    color: black;
+    color: #55c2eb;
     display: block;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 60px;
+    font-weight: 500;
+
 }
 .gmnoprint:nth-child(9)
 {
