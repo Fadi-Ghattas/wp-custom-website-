@@ -344,6 +344,30 @@ function get_file_extension($file_type)
 		case "application/pdf":
 			return '.pdf';
 			break;
+		case "application/pdf":
+			return '.pdf';
+			break;
+		case "application/msword":
+			return '.doc';
+			break;
+		case "application/msword":
+			return '.dot';
+			break;
+		case "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+			return '.docx';
+			break;
+		case "application/vnd.ms-excel":
+			return '.xls';
+			break;
+		case "application/vnd.ms-powerpoint":
+			return '.ppa';
+			break;
+		case "application/vnd.openxmlformats-officedocument.presentationml.presentation":
+			return '.pptx';
+			break;
+		case "application/vnd.openxmlformats-officedocument.presentationml.template":
+			return '.potx';
+			break;
 		default:
 			return FALSE;
 			break;
