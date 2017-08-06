@@ -8,7 +8,6 @@
 
 function ajaxApplyForJob()
 {
-
 	$response['error'] = 1;
 	$response['message_color'] = '#a94442';
 
