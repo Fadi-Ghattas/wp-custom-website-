@@ -496,4 +496,36 @@ jQuery(function ($) {
         });
     }
 
+    //Clients count (Home-about) page
+
+    $(window).on('resize load', function () {
+        $(".item").show();
+        FixClientsCount();
+    });
+
+    function FixClientsCount() {
+        if ($('.home , .page-template-about').length) {
+            $screensize=jQuery(window).width();
+            if ($screensize < 768) {
+                $ItemCount = 3;
+            }
+            else if ($screensize < 992) {
+                $ItemCount = 4;
+            }
+            else if ($screensize < 1200) {
+                $ItemCount = 6;
+            }
+            else {
+                $ItemCount = 7;
+            }
+
+            $total = $(".client-row  .item").length;
+            $remain = $total % $ItemCount;
+            if ($remain != 0) {
+                for (i = 0; i < $remain; i++) {
+                    $(".item:nth-child(" + ($total - i) + ")").hide();
+                }
+            }
+        }
+    }
 });
