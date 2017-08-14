@@ -44,6 +44,10 @@
 
 }
 
+[data-slug="admin-menu-editor"] {
+    display: none;
+}
+
 @media (max-width: 535px) {
     .dm-logo-wrap {
         width: 100%;

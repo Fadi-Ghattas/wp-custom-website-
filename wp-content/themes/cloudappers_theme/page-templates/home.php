@@ -64,15 +64,7 @@ get_template_part('template-part', 'topnav');
 		<div class="home-slider">
 
 			<?php foreach ($mainSlider as $slid) { ?>
-				<div class="slide"
-					 style="background-image: url('<?php echo esc_url($slid['main_slide_image']['url']); ?>') ;">
-					<!--                <picture>-->
-					<!--                    <source srcset="-->
-					<?php //echo esc_url($slid['main_slide_image']['url']); ?><!--" media="(min-width: 768px)">-->
-					<!--                    <source srcset="-->
-					<?php //echo esc_url($slid['main_slide_mobile_image']['url']); ?><!--" media="(max-width: 767px)">-->
-					<!--                    <img src="--><?php //echo esc_url($slid['main_slide_image']['url']); ?><!--">-->
-					<!--                </picture>-->
+				<div class="slide" style="background-image: url('<?php echo esc_url($slid['main_slide_image']['url']); ?>') ;">
 					<div class="container slide-desc">
 						<div class="row">
 							<div class="col-lg-12">
@@ -84,8 +76,7 @@ get_template_part('template-part', 'topnav');
 									<?php if (!empty($slid['main_slide_description'])) ?>
 									<div class="description"><?php echo $slid['main_slide_description']; ?></div>
 									<?php if (!empty($slid['main_slide_button_text']) && !empty($slid['main_slide_button_link_url'])) ?>
-									<a class="c-btn"
-									   href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><span><span> <?php echo $slid['main_slide_button_text']; ?></span></span></a>
+									<a class="c-btn" href="<?php echo esc_url($slid['main_slide_button_link_url']); ?>"><span><span> <?php echo $slid['main_slide_button_text']; ?></span></span></a>
 								</div>
 							</div>
 						</div>
