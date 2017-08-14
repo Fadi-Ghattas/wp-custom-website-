@@ -36,6 +36,7 @@ $r = basename(get_page_template());
                         <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
                         <p class="open-time">Open Sun to Thurs.<br> 10am  until 6pm</p>
                         <a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><p class="phone"><?php echo $setting['settings_mobile_number']; ?></p></a>
+                        <a href="mailto:<?php echo $setting['settings_company_email']; ?>"><p class="email"><?php echo $setting['settings_company_email']; ?></p></a>
                     <!--<a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--"><p class="mobile">--><?php //echo $setting['settings_tel_number']; ?><!--</p></a>-->
                     </div>
                     <div class="social">

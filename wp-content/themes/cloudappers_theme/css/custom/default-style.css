@@ -995,8 +995,14 @@ body.home.blog.modal-open {
 }
 
 .contact p.phone {
-    background: url("../../img/phone-white-icon@3x.svg") no-repeat left center;
-    background-size: 18px 18px;
+     background: url("../../img/phone-white-icon@3x.svg") no-repeat left center;
+     background-size: 18px 18px;
+     margin-top: 19px;
+ }
+
+.contact p.email {
+    background: url("../../img/email.png") no-repeat left center;
+    background-size: 20px 14px;
     margin-top: 19px;
 }
 
@@ -3095,7 +3101,7 @@ form#GetInTouchForm button.c-btn {
     line-height: 1.714;
     text-align: left;
     padding-left: 31px;
-    margin-top: 20px;
+    margin-top: 6px;
     text-align: left;
 }
 
@@ -3205,6 +3211,12 @@ form#GetInTouchForm button.c-btn {
     background-size: 18px 18px;
     color: rgb(52, 52, 52);
 }
+#footer p.email {
+    background: url("../../img/email-w.png") no-repeat left center;
+    background-size: 20px 14px;
+    color: rgb(52, 52, 52);
+}
+
 
 /***** Contact us page *****/
 .page-template-contact-us .ca-page-banner {
