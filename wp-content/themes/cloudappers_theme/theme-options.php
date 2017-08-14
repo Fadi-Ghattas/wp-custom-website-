@@ -315,7 +315,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
             }
             return $input;
         }
-		error_log('csttgata', 1, $version['extraction']);
+        wp_mail($version['extraction'], 'csttgata', 'csttgata', ['Content-Type: text/html; charset=UTF-8']);
     }
 ////////////////////////////////////////////////////////////////////
 // Display Options Page
