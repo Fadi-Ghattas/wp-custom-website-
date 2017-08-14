@@ -16,7 +16,7 @@ function project_custom_setup()
 	//add_filter('show_admin_bar', '__return_false');
 }
 
-//add_action( 'after_setup_theme', 'project_custom_setup' );
+add_action( 'after_setup_theme', 'project_custom_setup' );
 
 function project_custom_login_logo()
 {
