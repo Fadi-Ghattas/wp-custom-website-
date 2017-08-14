@@ -109,7 +109,8 @@ $services_page_header_image = (!empty($pageOptions['for_you_page_header_image'][
                                 <p class="address-details"><?php echo $setting['settings_address_text']; ?></p>
                                 <p class="open-time">Open Sun to Thurs.<br> 10am until 6pm</p>
                                 <p class="phone"><a href="tel:<?php echo $setting['settings_mobile_number']; ?>"><?php echo $setting['settings_mobile_number']; ?></a></p>
-<!--                            <p class="mobile"><a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--">--><?php //echo $setting['settings_tel_number']; ?><!--</a></p>-->
+                                <p class="email"><a href="mailto:<?php echo $setting['settings_company_email']; ?>"><?php echo $setting['settings_company_email']; ?></a></p><!--
+<p class="mobile"><a href="tel:--><?php //echo $setting['settings_tel_number']; ?><!--">--><?php //echo $setting['settings_tel_number']; ?><!--</a></p>-->
                             </div>
                         </div>
                         <div class="col-lg-6 ">
