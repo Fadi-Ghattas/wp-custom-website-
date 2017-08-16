@@ -44,7 +44,11 @@
 
 }
 
-[data-slug="admin-menu-editor"] {
+[data-slug="admin-menu-editor"],
+[data-slug="advanced-custom-fields-pro"],
+[data-slug="acf-image-crop-add-on"],
+[data-slug="pods"]
+{
     display: none;
 }
 
