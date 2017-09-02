@@ -23,7 +23,7 @@ function sendAdminNewJobRequestEmail($data)
 			$body = str_replace('{post_title}', $data['post_title'], $body);
 			$body = str_replace('{cv_email}', $data['cv_email'], $body);
 			$body = str_replace('{cv_phone}', $data['cv_phone'], $body);
-			$body = str_replace('{cv_location}', $data['cv_location'], $body);
+			$body = str_replace('{cv_location}', $data['cv_locationText'], $body);
 			$body = str_replace('{cv_state}', $data['cv_state'], $body);
 			$body = str_replace('{cv_applied_for_position}', $data['cv_applied_for_position'], $body);
 			$body = str_replace('{cv_years_of_experience}', $data['cv_years_of_experience'], $body);

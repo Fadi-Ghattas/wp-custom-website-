@@ -31,6 +31,7 @@ function ajaxApplyForJob()
 		'cv_email' => trim($_POST['email']),
 		'cv_phone' => trim($_POST['phone']),
 		'cv_location' => trim($_POST['location']),
+		'cv_locationText' => trim($_POST['locationText']),
 		'cv_years_of_experience' => trim($_POST['years_of_experience']),
 		'cv_expected_salary' => trim($_POST['expected_salary']),
 		'cv_info_one' => trim($_POST['cv_info_one']),

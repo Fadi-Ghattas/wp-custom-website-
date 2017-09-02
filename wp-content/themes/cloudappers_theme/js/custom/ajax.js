@@ -136,6 +136,7 @@ jQuery(function ($)
 			formData.append('email', $('#JobModal #email').val());
 			formData.append('phone', $('#JobModal #phone').val());
 			formData.append('location', $('#JobModal #location').val());
+			formData.append('locationText', $('#JobModal #location option:selected').text());
 			formData.append('years_of_experience', $('#JobModal #years_of_experience').val());
 			formData.append('expected_salary', $('#JobModal #expected_salary').val());
 			formData.append('cv_info_one', $('#JobModal #cv_info_one').val());
