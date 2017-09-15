@@ -14,7 +14,7 @@ function sendAdminNewJobRequestEmail($data)
 		foreach ($setting['jobs_emails'] as $email) {
 			$to = $email['job_email'];
 			$From = 'From: ' . $data['post_title'] . ' <' . $data['cv_email'] . '>';
-			$subject = 'Cloudappes | You\'ve received a new job request';
+			$subject = 'Cloudappers | You\'ve received a new job request';
 
 			$body = file_get_contents(get_stylesheet_directory() . '/email-templates/admin-new-job-request.html');
 			$body = str_replace('{home_url}', home_url(), $body);
@@ -51,7 +51,7 @@ function sendGetInTouchAdminEmail($data)
 		foreach ($setting['admins_emails'] as $email) {
 			$to = $email['admin_email'];
 			$From = 'From: ' . $data['name'] . ' <' . $data['email'] . '>';
-			$subject = 'Cloudappes | Some one want to get in touch with Cloudappers';
+			$subject = 'Cloudappers | Some one want to get in touch with Cloudappers';
 
 			$body = file_get_contents(get_stylesheet_directory() . '/email-templates/get-in-touch.html');
 			$body = str_replace('{home_url}', home_url(), $body);
